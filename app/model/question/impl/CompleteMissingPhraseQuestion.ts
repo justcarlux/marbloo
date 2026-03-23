@@ -1,4 +1,4 @@
-import Question from "../Question";
+import QuestionInstance from "../QuestionInstance";
 
 export interface CompleteMissingPhraseQuestionData {
     leftSide: string;
@@ -15,7 +15,7 @@ export interface CompleteMissingPhraseQuestionResult {
 
 export default class CompleteMissingPhraseQuestion<
     T extends CompleteMissingPhraseQuestionData,
-> extends Question<T> {
+> extends QuestionInstance<T> {
     public check(
         input: string,
     ): [string[], CompleteMissingPhraseQuestionResult] {

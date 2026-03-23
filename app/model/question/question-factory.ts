@@ -4,7 +4,8 @@ import CompleteCorrectVerbFormQuestion, {
 import CompleteCorrectVerbFormWithAuxiliarsQuestion, {
     CompleteCorrectVerbFormWithAuxiliarsQuestionData,
 } from "./impl/CompleteCorrectVerbFormWithAuxiliarsQuestion";
-import Question, { QuestionData, QuestionType } from "./Question";
+import QuestionInstance, { QuestionData } from "./QuestionInstance";
+import type { QuestionType } from "@/prisma/generated/prisma/enums";
 
 interface QuestionDataTypes {
     // Simple tenses
@@ -211,7 +212,7 @@ const completeCorrectVerbFormWithAuxiliarsVerbForm = {
 const questionInstanceProviders: {
     [Type in QuestionType]: (
         data: QuestionData<QuestionDataTypes[Type]>,
-    ) => Question<QuestionDataTypes[Type]>;
+    ) => QuestionInstance<QuestionDataTypes[Type]>;
 } = {
     // Simple tenses
     completePresentSimplePositiveStatementVerbForm:
@@ -299,9 +300,15 @@ export function createQuestionInstance<T extends QuestionType>({
     return questionInstanceProviders[type]({ type, data });
 }
 
-export function typedQuestionData<T extends QuestionType>(data: {
+export function typedQuestionData<T extends QuestionType>({
+    type,
+    data,
+}: {
     type: T;
     data: QuestionDataTypes[T];
 }): QuestionData<QuestionDataTypes[T]> {
-    return data;
+    return {
+        data,
+        type,
+    };
 }

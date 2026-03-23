@@ -1,0 +1,48 @@
+generator client {
+  provider = "prisma-client"
+  output   = "./generated/prisma"
+}
+
+datasource db {
+  provider = "mysql"
+}
+
+enum QuestionType {
+  // Simple tenses
+  completePresentSimplePositiveStatementVerbForm
+  completePresentSimpleNegativeStatementVerbForm
+  completePastSimplePositiveStatementVerbForm
+  completePastSimpleNegativeStatementVerbForm
+  completeFutureSimplePositiveStatementVerbForm
+  completeFutureSimpleNegativeStatementVerbForm
+
+  // Continuous tenses
+  completePresentContinuousPositiveStatementVerbForm
+  completePresentContinuousNegativeStatementVerbForm
+  completePastContinuousPositiveStatementVerbForm
+  completePastContinuousNegativeStatementVerbForm
+  completeFutureContinuousPositiveStatementVerbForm
+  completeFutureContinuousNegativeStatementVerbForm
+
+  // Perfect tenses
+  completePresentPerfectPositiveStatementVerbForm
+  completePresentPerfectNegativeStatementVerbForm
+  completePastPerfectPositiveStatementVerbForm
+  completePastPerfectNegativeStatementVerbForm
+  completeFuturePerfectPositiveStatementVerbForm
+  completeFuturePerfectNegativeStatementVerbForm
+
+  // Perfect continuous tenses
+  completePresentPerfectContinuousPositiveStatementVerbForm
+  completePresentPerfectContinuousNegativeStatementVerbForm
+  completePastPerfectContinuousPositiveStatementVerbForm
+  completePastPerfectContinuousNegativeStatementVerbForm
+  completeFuturePerfectContinuousPositiveStatementVerbForm
+  completeFuturePerfectContinuousNegativeStatementVerbForm
+}
+
+model Question {
+  id   String       @id
+  type QuestionType
+  data Json
+}

@@ -1,7 +1,9 @@
 import { CompleteCorrectVerbFormQuestionData } from "@/app/model/question/impl/CompleteCorrectVerbFormQuestion";
 import { CompleteCorrectVerbFormWithAuxiliarsQuestionData } from "@/app/model/question/impl/CompleteCorrectVerbFormWithAuxiliarsQuestion";
-import { QuestionData, QuestionType } from "@/app/model/question/Question";
+import { QuestionData } from "@/app/model/question/QuestionInstance";
 import CompleteMissingPhraseQuestionForm from "./impl/CompleteMissingPhraseQuestionForm";
+import { QuestionType } from "@/prisma/generated/prisma/enums";
+import { Question } from "@/prisma/generated/prisma/client";
 
 const completeMissingPhraseQuestionFormComponentProvider = (
     data: QuestionData<unknown>,
@@ -81,7 +83,7 @@ const componentProviders: {
 };
 
 export function createComponentForQuestionData(
-    data: QuestionData<unknown>,
+    data: QuestionData<unknown> | Question,
     handleNextQuestion: () => void,
 ) {
     return componentProviders[data.type](data, handleNextQuestion);

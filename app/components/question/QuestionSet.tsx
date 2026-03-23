@@ -1,12 +1,13 @@
 "use client";
 
-import { QuestionData } from "@/app/model/question/Question";
+import { QuestionData } from "@/app/model/question/QuestionInstance";
 import { motion } from "framer-motion";
 import { useState } from "react";
 import { createComponentForQuestionData } from "./question-component-factory";
+import { Question } from "@/prisma/generated/prisma/client";
 
 export interface QuestionWrapperProps {
-    questions: QuestionData<unknown>[];
+    questions: (QuestionData<unknown> | Question)[];
 }
 
 export default function QuestionSet({ questions }: QuestionWrapperProps) {

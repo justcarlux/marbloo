@@ -1,4 +1,4 @@
-import { QuestionData } from "../Question";
+import { QuestionData } from "../QuestionInstance";
 import CompleteMissingPhraseQuestion, {
     CompleteMissingPhraseQuestionData,
     CompleteMissingPhraseQuestionResult,

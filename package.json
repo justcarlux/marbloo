@@ -9,21 +9,28 @@
     "lint": "eslint"
   },
   "dependencies": {
+    "@prisma/adapter-mariadb": "^7.5.0",
+    "@prisma/client": "^7.5.0",
     "fastest-levenshtein": "^1.0.16",
     "markdown-to-jsx": "^9.7.9",
     "motion": "^12.36.0",
     "next": "^16.1.7",
+    "object-hash": "^3.0.0",
     "react": "19.2.3",
     "react-dom": "19.2.3",
+    "tsx": "^4.21.0",
     "use-sound": "^5.0.0"
   },
   "devDependencies": {
     "@tailwindcss/postcss": "^4",
     "@types/node": "^20",
+    "@types/object-hash": "^3.0.6",
     "@types/react": "^19",
     "@types/react-dom": "^19",
+    "dotenv": "^17.3.1",
     "eslint": "^9",
     "eslint-config-next": "16.1.6",
+    "prisma": "^7.5.0",
     "tailwindcss": "^4",
     "typescript": "^5"
   }

@@ -5,7 +5,7 @@ import { CompleteCorrectVerbFormWithAuxiliarsQuestionData } from "@/app/model/qu
 import CompleteMissingPhraseQuestion, {
     CompleteMissingPhraseQuestionResult,
 } from "@/app/model/question/impl/CompleteMissingPhraseQuestion";
-import { QuestionData } from "@/app/model/question/Question";
+import { QuestionData } from "@/app/model/question/QuestionInstance";
 import { createQuestionInstance } from "@/app/model/question/question-factory";
 import { getQuestionPromptByTitle } from "@/app/model/question/question-prompts";
 import { isButtonDebounceExpired } from "@/app/utils/button-debounce";

@@ -1,4 +1,4 @@
-import { QuestionType } from "./Question";
+import type { QuestionType } from "@/prisma/generated/prisma/enums";
 
 const questionTitles: {
     [key in QuestionType]: React.ReactNode;
