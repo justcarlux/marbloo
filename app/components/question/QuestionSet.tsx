@@ -10,13 +10,32 @@ export interface QuestionWrapperProps {
     questions: (QuestionData<unknown> | Question)[];
 }
 
+export type HandleCorrectFunction = ({
+    usedHint,
+}: {
+    usedHint: boolean;
+}) => void;
+
+export type HandleNextFunction = () => void;
+
 export default function QuestionSet({ questions }: QuestionWrapperProps) {
     const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
     const [currentProgressQuestionIndex, setCurrentProgressQuestionIndex] =
         useState(0);
+    const [questionStats, setQuestionStats] = useState<{
+        [key: string]: { finishedAt: Date; usedHint: boolean };
+    }>({});
 
-    const handleOnCorrect = () => {
+    const handleCorrect = ({ usedHint }: { usedHint: boolean }) => {
         setCurrentProgressQuestionIndex((currentValue) => currentValue + 1);
+        const currentQuestion = questions[currentQuestionIndex];
+        setQuestionStats((currentValue) => ({
+            ...currentValue,
+            [currentQuestion.id]: {
+                finishedAt: new Date(),
+                usedHint,
+            },
+        }));
     };
 
     const handleNextQuestion = () => {
@@ -55,7 +74,7 @@ export default function QuestionSet({ questions }: QuestionWrapperProps) {
                     <div key={currentQuestionIndex}>
                         {createComponentForQuestionData(
                             questions[currentQuestionIndex],
-                            handleOnCorrect,
+                            handleCorrect,
                             handleNextQuestion,
                         )}
                     </div>

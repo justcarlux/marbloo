@@ -1,14 +1,15 @@
 import { CompleteCorrectVerbFormQuestionData } from "@/app/model/question/impl/CompleteCorrectVerbFormQuestion";
 import { CompleteCorrectVerbFormWithAuxiliarsQuestionData } from "@/app/model/question/impl/CompleteCorrectVerbFormWithAuxiliarsQuestion";
 import { QuestionData } from "@/app/model/question/QuestionInstance";
-import CompleteMissingPhraseQuestionForm from "./impl/CompleteMissingPhraseQuestionForm";
-import { QuestionType } from "@/generated/prisma/enums";
 import { Question } from "@/generated/prisma/client";
+import { QuestionType } from "@/generated/prisma/enums";
+import CompleteMissingPhraseQuestionForm from "./impl/CompleteMissingPhraseQuestionForm";
+import { HandleCorrectFunction, HandleNextFunction } from "./QuestionSet";
 
 const completeMissingPhraseQuestionFormComponentProvider = (
     data: QuestionData<unknown>,
-    handleOnCorrect: () => void,
-    handleNextQuestion: () => void,
+    handleCorrect: HandleCorrectFunction,
+    handleNextQuestion: HandleNextFunction,
 ) => {
     return (
         <CompleteMissingPhraseQuestionForm
@@ -18,7 +19,7 @@ const completeMissingPhraseQuestionFormComponentProvider = (
                     | CompleteCorrectVerbFormWithAuxiliarsQuestionData
                 >
             }
-            handleOnCorrect={handleOnCorrect}
+            handleCorrect={handleCorrect}
             handleNextQuestion={handleNextQuestion}
         />
     );
@@ -27,8 +28,8 @@ const completeMissingPhraseQuestionFormComponentProvider = (
 const componentProviders: {
     [key in QuestionType]: (
         data: QuestionData<unknown>,
-        handleOnCorrect: () => void,
-        handleNextQuestion: () => void,
+        handleOnCorrect: HandleCorrectFunction,
+        handleNextQuestion: HandleNextFunction,
     ) => React.ReactElement;
 } = {
     // Simple tenses
@@ -87,12 +88,12 @@ const componentProviders: {
 
 export function createComponentForQuestionData(
     data: QuestionData<unknown> | Question,
-    handleOnCorrect: () => void,
-    handleNextQuestion: () => void,
+    handleCorrect: HandleCorrectFunction,
+    handleNextQuestion: HandleNextFunction,
 ) {
     return componentProviders[data.type](
         data,
-        handleOnCorrect,
+        handleCorrect,
         handleNextQuestion,
     );
 }

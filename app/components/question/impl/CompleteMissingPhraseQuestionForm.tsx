@@ -17,19 +17,20 @@ import Markdown from "markdown-to-jsx";
 import { useCallback, useEffect, useRef, useState } from "react";
 import { TbBulb, TbBulbOff } from "react-icons/tb";
 import useSound from "use-sound";
+import { HandleCorrectFunction, HandleNextFunction } from "../QuestionSet";
 
 interface CompleteMissingPhraseQuestionFormProps {
     questionData: QuestionData<
         | CompleteCorrectVerbFormQuestionData
         | CompleteCorrectVerbFormWithAuxiliarsQuestionData
     >;
-    handleOnCorrect: () => void;
-    handleNextQuestion: () => void;
+    handleCorrect: HandleCorrectFunction;
+    handleNextQuestion: HandleNextFunction;
 }
 
 export default function CompleteMissingPhraseQuestionForm({
     questionData,
-    handleOnCorrect,
+    handleCorrect: handleOnCorrect,
     handleNextQuestion,
 }: CompleteMissingPhraseQuestionFormProps) {
     const [playSuccess] = useSound("/sfx/success.mp3");
@@ -70,12 +71,13 @@ export default function CompleteMissingPhraseQuestionForm({
         setResult(questionResult);
         setIsError(!questionResult.success);
         if (questionResult.success) {
-            handleOnCorrect();
+            handleOnCorrect({ usedHint: showHint });
             playSuccess();
         } else {
             playFailure();
         }
     }, [
+        showHint,
         answer,
         handleOnCorrect,
         handleNextQuestion,
@@ -108,7 +110,7 @@ export default function CompleteMissingPhraseQuestionForm({
     return (
         <>
             <motion.h2
-                className="text-4xl text-gray-700 mb-8 leading-tight"
+                className="text-4xl text-primary mb-8 leading-tight"
                 initial={{ y: -20, opacity: 0 }}
                 animate={{ y: 0, opacity: 1 }}
             >
@@ -117,7 +119,7 @@ export default function CompleteMissingPhraseQuestionForm({
                 </div>
                 <div className="font-bold">
                     <span>{questionData.data.leftSide}</span>
-                    <span className="bg-blue-200 rounded-2xl p-2 mx-2 inline-block">
+                    <span className="bg-highlight rounded-2xl p-2 mx-2 inline-block">
                         {questionData.data.middle}
                     </span>
                     <span>{questionData.data.rightSide}</span>
@@ -143,7 +145,7 @@ export default function CompleteMissingPhraseQuestionForm({
                             initial={{ opacity: 0, y: 20 }}
                             animate={{ opacity: 1, y: 0 }}
                             exit={{ opacity: 0, y: -20 }}
-                            className="text-base mt-5 p-4 bg-blue-200 text-blue-500 rounded-xl border-2 border-blue-500 font-medium"
+                            className="text-base mt-5 p-4 bg-hint-bg text-hint-fg rounded-xl border-2 border-hint-fg font-medium"
                         >
                             <b>Hint: </b>
                             {getQuestionHintByType(questionData.type)}
@@ -170,8 +172,8 @@ export default function CompleteMissingPhraseQuestionForm({
                     }}
                     placeholder="Type your answer..."
                     disabled={result?.success}
-                    className={`w-full p-4 text-2xl border-4 rounded-2xl outline-none text-center font-medium transition-all text-black
-              ${isError ? "border-red-500" : "border-gray-300 focus:border-green-500 focus:shadow-lg focus:shadow-green-200"}`}
+                    className={`text-primary w-full p-4 text-2xl border-4 rounded-2xl outline-none text-center font-medium transition-all
+              ${isError ? "border-red-500" : "border-secondary focus:border-green-500 "}`}
                 />
             </motion.div>
 
@@ -183,7 +185,7 @@ export default function CompleteMissingPhraseQuestionForm({
                             initial={{ opacity: 0, y: 20 }}
                             animate={{ opacity: 1, y: 0 }}
                             exit={{ opacity: 0, y: -20 }}
-                            className="mt-5 p-4 bg-green-300 text-green-600 rounded-xl border-2 border-green-500 font-medium"
+                            className="mt-5 p-4 bg-success-bg text-success-fg rounded-xl border-2 border-success-fg font-medium"
                         >
                             <Markdown>{result.message!}</Markdown>
                         </motion.div>
@@ -193,7 +195,7 @@ export default function CompleteMissingPhraseQuestionForm({
                             initial={{ opacity: 0, y: 20 }}
                             animate={{ opacity: 1, y: 0 }}
                             exit={{ opacity: 0, y: -20 }}
-                            className="mt-5 p-4 bg-red-200 text-red-500 rounded-xl border-2 border-red-500 font-medium"
+                            className="mt-5 p-4 bg-error-bg text-error-fg rounded-xl border-2 border-error-fg font-medium"
                         >
                             {result.message}
                         </motion.div>
@@ -210,7 +212,7 @@ export default function CompleteMissingPhraseQuestionForm({
                     }
                     onClick={handleClear}
                     disabled={isClearButtonDisabled}
-                    className={`py-4 px-6 text-lg font-bold rounded-2xl transition-all disabled:opacity-60 bg-white text-gray-700 border-2 border-gray-300 ${!isClearButtonDisabled && "hover:shadow-lg hover:-translate-y-0.5"}`}
+                    className={`py-4 px-6 text-lg font-bold rounded-2xl transition-all disabled:opacity-60 bg-secondary text-primary border-2 border-secondary ${!isClearButtonDisabled && "hover:-translate-y-0.5"}`}
                 >
                     Clear
                 </motion.button>
@@ -220,11 +222,11 @@ export default function CompleteMissingPhraseQuestionForm({
                     whileTap={{ scale: 0.98 }}
                     onClick={handleSubmit}
                     disabled={!answer.trim()}
-                    className={`py-4 px-6 text-lg font-bold rounded-2xl uppercase tracking-wide transition-all disabled:opacity-60 disabled:cursor-not-allowed shadow-md
+                    className={`py-4 px-6 text-lg font-bold rounded-2xl uppercase tracking-wide transition-all disabled:opacity-60 disabled:cursor-not-allowed
                         ${
                             result?.success
-                                ? "bg-blue-500 text-white hover:shadow-lg hover:-translate-y-0.5"
-                                : "bg-green-500 text-white hover:shadow-lg hover:-translate-y-0.5 shadow-green-200"
+                                ? "bg-blue-500 text-white hover:-translate-y-0.5"
+                                : "bg-green-500 text-white hover:-translate-y-0.5"
                         }`}
                 >
                     {result?.success ? "Next" : "Check"}

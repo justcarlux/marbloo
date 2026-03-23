@@ -2,6 +2,7 @@ import type { QuestionType } from "@/generated/prisma/enums";
 import { distance as levenshteinDistance } from "fastest-levenshtein";
 
 export interface QuestionData<T> {
+    id: string;
     type: QuestionType;
     data: T;
 }
@@ -32,11 +33,17 @@ const acknowledgementPhrases = [
 ];
 
 export default abstract class QuestionInstance<T> {
+    protected readonly _id;
     protected readonly _type;
     private readonly _data;
-    public constructor({ type, data }: QuestionData<T>) {
+    public constructor({ id, type, data }: QuestionData<T>) {
+        this._id = id;
         this._type = type;
         this._data = data;
+    }
+
+    public get id() {
+        return this._id;
     }
 
     public get data() {

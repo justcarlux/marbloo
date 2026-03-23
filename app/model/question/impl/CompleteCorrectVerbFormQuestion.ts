@@ -19,10 +19,15 @@ export default class CompleteCorrectVerbFormQuestion extends CompleteMissingPhra
     }
 > {
     public constructor({
+        id,
         type,
         data,
     }: QuestionData<CompleteCorrectVerbFormQuestionData>) {
-        super({ type, data: { ...data, minWordCount: 1, maxWordCount: 1 } });
+        super({
+            id,
+            type,
+            data: { ...data, minWordCount: 1, maxWordCount: 1 },
+        });
     }
 
     public check(

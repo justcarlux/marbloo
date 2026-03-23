@@ -48,10 +48,12 @@ const completeCorrectVerbFormWithAuxiliarsVerbForm = {
     nonContinuous: {
         nonFuture: {
             positiveProvider: ({
+                id,
                 type,
                 data,
             }: QuestionData<CompleteCorrectVerbFormWithAuxiliarsQuestionData>) => {
                 return new CompleteCorrectVerbFormWithAuxiliarsQuestion({
+                    id,
                     type,
                     data,
                     continuousType: "none",
@@ -60,10 +62,12 @@ const completeCorrectVerbFormWithAuxiliarsVerbForm = {
                 });
             },
             negativeProvider: ({
+                id,
                 type,
                 data,
             }: QuestionData<CompleteCorrectVerbFormWithAuxiliarsQuestionData>) => {
                 return new CompleteCorrectVerbFormWithAuxiliarsQuestion({
+                    id,
                     type,
                     data,
                     continuousType: "none",
@@ -74,10 +78,12 @@ const completeCorrectVerbFormWithAuxiliarsVerbForm = {
         },
         future: {
             positiveProvider: ({
+                id,
                 type,
                 data,
             }: QuestionData<CompleteCorrectVerbFormWithAuxiliarsQuestionData>) => {
                 return new CompleteCorrectVerbFormWithAuxiliarsQuestion({
+                    id,
                     type,
                     data,
                     continuousType: "none",
@@ -86,10 +92,12 @@ const completeCorrectVerbFormWithAuxiliarsVerbForm = {
                 });
             },
             negativeProvider: ({
+                id,
                 type,
                 data,
             }: QuestionData<CompleteCorrectVerbFormWithAuxiliarsQuestionData>) => {
                 return new CompleteCorrectVerbFormWithAuxiliarsQuestion({
+                    id,
                     type,
                     data,
                     continuousType: "none",
@@ -102,10 +110,12 @@ const completeCorrectVerbFormWithAuxiliarsVerbForm = {
     nonPerfectContinuous: {
         nonFuture: {
             positiveProvider: ({
+                id,
                 type,
                 data,
             }: QuestionData<CompleteCorrectVerbFormWithAuxiliarsQuestionData>) => {
                 return new CompleteCorrectVerbFormWithAuxiliarsQuestion({
+                    id,
                     type,
                     data,
                     continuousType: "nonPerfect",
@@ -114,10 +124,12 @@ const completeCorrectVerbFormWithAuxiliarsVerbForm = {
                 });
             },
             negativeProvider: ({
+                id,
                 type,
                 data,
             }: QuestionData<CompleteCorrectVerbFormWithAuxiliarsQuestionData>) => {
                 return new CompleteCorrectVerbFormWithAuxiliarsQuestion({
+                    id,
                     type,
                     data,
                     continuousType: "nonPerfect",
@@ -128,10 +140,12 @@ const completeCorrectVerbFormWithAuxiliarsVerbForm = {
         },
         future: {
             positiveProvider: ({
+                id,
                 type,
                 data,
             }: QuestionData<CompleteCorrectVerbFormWithAuxiliarsQuestionData>) => {
                 return new CompleteCorrectVerbFormWithAuxiliarsQuestion({
+                    id,
                     type,
                     data,
                     continuousType: "nonPerfect",
@@ -140,10 +154,12 @@ const completeCorrectVerbFormWithAuxiliarsVerbForm = {
                 });
             },
             negativeProvider: ({
+                id,
                 type,
                 data,
             }: QuestionData<CompleteCorrectVerbFormWithAuxiliarsQuestionData>) => {
                 return new CompleteCorrectVerbFormWithAuxiliarsQuestion({
+                    id,
                     type,
                     data,
                     continuousType: "nonPerfect",
@@ -156,10 +172,12 @@ const completeCorrectVerbFormWithAuxiliarsVerbForm = {
     perfectContinuous: {
         nonFuture: {
             positiveProvider: ({
+                id,
                 type,
                 data,
             }: QuestionData<CompleteCorrectVerbFormWithAuxiliarsQuestionData>) => {
                 return new CompleteCorrectVerbFormWithAuxiliarsQuestion({
+                    id,
                     type,
                     data,
                     continuousType: "perfect",
@@ -168,10 +186,12 @@ const completeCorrectVerbFormWithAuxiliarsVerbForm = {
                 });
             },
             negativeProvider: ({
+                id,
                 type,
                 data,
             }: QuestionData<CompleteCorrectVerbFormWithAuxiliarsQuestionData>) => {
                 return new CompleteCorrectVerbFormWithAuxiliarsQuestion({
+                    id,
                     type,
                     data,
                     continuousType: "perfect",
@@ -182,10 +202,12 @@ const completeCorrectVerbFormWithAuxiliarsVerbForm = {
         },
         future: {
             positiveProvider: ({
+                id,
                 type,
                 data,
             }: QuestionData<CompleteCorrectVerbFormWithAuxiliarsQuestionData>) => {
                 return new CompleteCorrectVerbFormWithAuxiliarsQuestion({
+                    id,
                     type,
                     data,
                     continuousType: "perfect",
@@ -194,10 +216,12 @@ const completeCorrectVerbFormWithAuxiliarsVerbForm = {
                 });
             },
             negativeProvider: ({
+                id,
                 type,
                 data,
             }: QuestionData<CompleteCorrectVerbFormWithAuxiliarsQuestionData>) => {
                 return new CompleteCorrectVerbFormWithAuxiliarsQuestion({
+                    id,
                     type,
                     data,
                     continuousType: "perfect",
@@ -291,13 +315,15 @@ const questionInstanceProviders: {
 };
 
 export function createQuestionInstance<T extends QuestionType>({
+    id,
     type,
     data,
 }: {
+    id: string;
     type: T;
     data: QuestionDataTypes[T];
 }) {
-    return questionInstanceProviders[type]({ type, data });
+    return questionInstanceProviders[type]({ id, type, data });
 }
 
 export function typedQuestionData<T extends QuestionType>({
