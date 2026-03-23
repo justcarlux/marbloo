@@ -23,7 +23,7 @@ import completePastSimpleNegativeStatementVerbForm from "@/prisma/data/complete-
 import completePastSimplePositiveStatementVerbForm from "@/prisma/data/complete-verb-forms/simple/past/completePastSimplePositiveStatementVerbForm";
 import completePresentSimpleNegativeStatementVerbForm from "@/prisma/data/complete-verb-forms/simple/present/completePresentSimpleNegativeStatementVerbForm";
 import completePresentSimplePositiveStatementVerbForm from "@/prisma/data/complete-verb-forms/simple/present/completePresentSimplePositiveStatementVerbForm";
-import { PrismaMariaDb } from "@prisma/adapter-mariadb";
+import { PrismaPg } from "@prisma/adapter-pg";
 import { JsonObject } from "@prisma/client/runtime/client";
 import { QuestionData } from "../app/model/question/QuestionInstance";
 
@@ -61,15 +61,7 @@ const questionData: (QuestionData<unknown> & { id: string })[] = [
     ...completeFuturePerfectContinuousNegativeStatementVerbForm,
 ];
 
-const adapter = new PrismaMariaDb({
-    host: process.env.DATABASE_HOST,
-    port: process.env.DATABASE_PORT,
-    user: process.env.DATABASE_USER,
-    password: process.env.DATABASE_PASSWORD,
-    database: process.env.DATABASE_NAME,
-    connectionLimit: 5,
-});
-
+const adapter = new PrismaPg({ connectionString: process.env.DATABASE_URL });
 const prisma = new PrismaClient({ adapter });
 
 async function main() {

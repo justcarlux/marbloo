@@ -7,6 +7,7 @@ import { Question } from "@/generated/prisma/client";
 
 const completeMissingPhraseQuestionFormComponentProvider = (
     data: QuestionData<unknown>,
+    handleOnCorrect: () => void,
     handleNextQuestion: () => void,
 ) => {
     return (
@@ -17,6 +18,7 @@ const completeMissingPhraseQuestionFormComponentProvider = (
                     | CompleteCorrectVerbFormWithAuxiliarsQuestionData
                 >
             }
+            handleOnCorrect={handleOnCorrect}
             handleNextQuestion={handleNextQuestion}
         />
     );
@@ -25,6 +27,7 @@ const completeMissingPhraseQuestionFormComponentProvider = (
 const componentProviders: {
     [key in QuestionType]: (
         data: QuestionData<unknown>,
+        handleOnCorrect: () => void,
         handleNextQuestion: () => void,
     ) => React.ReactElement;
 } = {
@@ -84,7 +87,12 @@ const componentProviders: {
 
 export function createComponentForQuestionData(
     data: QuestionData<unknown> | Question,
+    handleOnCorrect: () => void,
     handleNextQuestion: () => void,
 ) {
-    return componentProviders[data.type](data, handleNextQuestion);
+    return componentProviders[data.type](
+        data,
+        handleOnCorrect,
+        handleNextQuestion,
+    );
 }

@@ -155,6 +155,68 @@ const questionTitles: {
     ),
 };
 
-export function getQuestionPromptByTitle(type: QuestionType) {
+const questionHints: {
+    [key in QuestionType]: React.ReactNode;
+} = {
+    // Simple tenses
+    completePresentSimplePositiveStatementVerbForm: "main verb (base form)",
+    completePresentSimpleNegativeStatementVerbForm:
+        "do/does + not + main verb (base form)",
+    completePastSimplePositiveStatementVerbForm: "main verb (past form)",
+    completePastSimpleNegativeStatementVerbForm:
+        "did + not + main verb (base form)",
+    completeFutureSimplePositiveStatementVerbForm:
+        "will + main verb (base form)",
+    completeFutureSimpleNegativeStatementVerbForm:
+        "will + not + main verb (base form)",
+
+    // Continuous tenses
+    completePresentContinuousPositiveStatementVerbForm:
+        "am/is/are + main verb (-ing)",
+    completePresentContinuousNegativeStatementVerbForm:
+        "am/is/are + not + main verb (-ing)",
+    completePastContinuousPositiveStatementVerbForm:
+        "was/were + main verb (-ing)",
+    completePastContinuousNegativeStatementVerbForm:
+        "was/were + not + main verb (-ing)",
+    completeFutureContinuousPositiveStatementVerbForm:
+        "will + be + main verb (-ing)",
+    completeFutureContinuousNegativeStatementVerbForm:
+        "will + not + be + main verb (-ing)",
+
+    // Perfect tenses
+    completePresentPerfectPositiveStatementVerbForm:
+        "have/has + main verb (past participle)",
+    completePresentPerfectNegativeStatementVerbForm:
+        "have/has + not + main verb (past participle)",
+    completePastPerfectPositiveStatementVerbForm:
+        "had + main verb (past participle)",
+    completePastPerfectNegativeStatementVerbForm:
+        "had + not + main verb (past participle)",
+    completeFuturePerfectPositiveStatementVerbForm:
+        "will + have + main verb (past participle)",
+    completeFuturePerfectNegativeStatementVerbForm:
+        "will + not + have + main verb (past participle)",
+
+    // Perfect continuous tenses
+    completePresentPerfectContinuousPositiveStatementVerbForm:
+        "have/has + been + main verb (-ing)",
+    completePresentPerfectContinuousNegativeStatementVerbForm:
+        "have/has + not + been + main verb (-ing)",
+    completePastPerfectContinuousPositiveStatementVerbForm:
+        "had + been + main verb (-ing)",
+    completePastPerfectContinuousNegativeStatementVerbForm:
+        "had + not + been + main verb (-ing)",
+    completeFuturePerfectContinuousPositiveStatementVerbForm:
+        "will + have + been + main verb (-ing)",
+    completeFuturePerfectContinuousNegativeStatementVerbForm:
+        "will + not + have + been + main verb (-ing)",
+};
+
+export function getQuestionPromptByType(type: QuestionType) {
     return questionTitles[type];
+}
+
+export function getQuestionHintByType(type: QuestionType) {
+    return questionHints[type];
 }

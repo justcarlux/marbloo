@@ -5,13 +5,17 @@ import { CompleteCorrectVerbFormWithAuxiliarsQuestionData } from "@/app/model/qu
 import CompleteMissingPhraseQuestion, {
     CompleteMissingPhraseQuestionResult,
 } from "@/app/model/question/impl/CompleteMissingPhraseQuestion";
-import { QuestionData } from "@/app/model/question/QuestionInstance";
 import { createQuestionInstance } from "@/app/model/question/question-factory";
-import { getQuestionPromptByTitle } from "@/app/model/question/question-prompts";
+import {
+    getQuestionHintByType,
+    getQuestionPromptByType,
+} from "@/app/model/question/question-prompts";
+import { QuestionData } from "@/app/model/question/QuestionInstance";
 import { isButtonDebounceExpired } from "@/app/utils/button-debounce";
 import { AnimatePresence, motion } from "framer-motion";
 import Markdown from "markdown-to-jsx";
 import { useCallback, useEffect, useRef, useState } from "react";
+import { TbBulb, TbBulbOff } from "react-icons/tb";
 import useSound from "use-sound";
 
 interface CompleteMissingPhraseQuestionFormProps {
@@ -19,17 +23,20 @@ interface CompleteMissingPhraseQuestionFormProps {
         | CompleteCorrectVerbFormQuestionData
         | CompleteCorrectVerbFormWithAuxiliarsQuestionData
     >;
+    handleOnCorrect: () => void;
     handleNextQuestion: () => void;
 }
 
 export default function CompleteMissingPhraseQuestionForm({
     questionData,
+    handleOnCorrect,
     handleNextQuestion,
 }: CompleteMissingPhraseQuestionFormProps) {
     const [playSuccess] = useSound("/sfx/success.mp3");
     const [playFailure] = useSound("/sfx/failure.mp3");
 
     const [lastSubmitted, setLastSubmitted] = useState(0);
+    const [showHint, setShowHint] = useState(false);
     const [answer, setAnswer] = useState("");
     const [result, setResult] =
         useState<CompleteMissingPhraseQuestionResult | null>(null);
@@ -63,12 +70,14 @@ export default function CompleteMissingPhraseQuestionForm({
         setResult(questionResult);
         setIsError(!questionResult.success);
         if (questionResult.success) {
+            handleOnCorrect();
             playSuccess();
         } else {
             playFailure();
         }
     }, [
         answer,
+        handleOnCorrect,
         handleNextQuestion,
         result,
         playSuccess,
@@ -88,9 +97,7 @@ export default function CompleteMissingPhraseQuestionForm({
                 handleSubmit();
             }
         };
-
         window.addEventListener("keydown", handleKeyDown);
-
         return () => {
             window.removeEventListener("keydown", handleKeyDown);
         };
@@ -99,23 +106,50 @@ export default function CompleteMissingPhraseQuestionForm({
     const isClearButtonDisabled = !answer || result?.success;
 
     return (
-        <div>
+        <>
             <motion.h2
                 className="text-4xl text-gray-700 mb-8 leading-tight"
                 initial={{ y: -20, opacity: 0 }}
                 animate={{ y: 0, opacity: 1 }}
-                transition={{ delay: 0.2 }}
             >
                 <div className="mb-4 text-base">
-                    {getQuestionPromptByTitle(questionData.type)}
+                    {getQuestionPromptByType(questionData.type)}
                 </div>
                 <div className="font-bold">
                     <span>{questionData.data.leftSide}</span>
-                    <span className="bg-blue-100 rounded-2xl p-2 mx-2 inline-block">
+                    <span className="bg-blue-200 rounded-2xl p-2 mx-2 inline-block">
                         {questionData.data.middle}
                     </span>
                     <span>{questionData.data.rightSide}</span>
+                    <div
+                        className="inline-block ml-3"
+                        onClick={() => setShowHint(true)}
+                    >
+                        {showHint ? (
+                            <TbBulb size={25} />
+                        ) : (
+                            <TbBulbOff
+                                size={25}
+                                className={`cursor-pointer transition-colors hover:text-gray-400`}
+                            />
+                        )}
+                    </div>
                 </div>
+
+                <AnimatePresence mode="wait">
+                    {showHint && (
+                        <motion.div
+                            key="hint"
+                            initial={{ opacity: 0, y: 20 }}
+                            animate={{ opacity: 1, y: 0 }}
+                            exit={{ opacity: 0, y: -20 }}
+                            className="text-base mt-5 p-4 bg-blue-200 text-blue-500 rounded-xl border-2 border-blue-500 font-medium"
+                        >
+                            <b>Hint: </b>
+                            {getQuestionHintByType(questionData.type)}
+                        </motion.div>
+                    )}
+                </AnimatePresence>
             </motion.h2>
 
             <motion.div
@@ -136,8 +170,8 @@ export default function CompleteMissingPhraseQuestionForm({
                     }}
                     placeholder="Type your answer..."
                     disabled={result?.success}
-                    className={`w-full p-4 text-2xl border-4 rounded-2xl outline-none text-center font-medium transition-all
-              ${isError ? "border-red-500 animate-shake" : "border-gray-200 focus:border-green-500 focus:shadow-lg focus:shadow-green-200"}`}
+                    className={`w-full p-4 text-2xl border-4 rounded-2xl outline-none text-center font-medium transition-all text-black
+              ${isError ? "border-red-500" : "border-gray-300 focus:border-green-500 focus:shadow-lg focus:shadow-green-200"}`}
                 />
             </motion.div>
 
@@ -149,7 +183,7 @@ export default function CompleteMissingPhraseQuestionForm({
                             initial={{ opacity: 0, y: 20 }}
                             animate={{ opacity: 1, y: 0 }}
                             exit={{ opacity: 0, y: -20 }}
-                            className="mt-5 p-4 bg-green-100 text-green-600 rounded-xl border-2 border-green-500 font-medium"
+                            className="mt-5 p-4 bg-green-300 text-green-600 rounded-xl border-2 border-green-500 font-medium"
                         >
                             <Markdown>{result.message!}</Markdown>
                         </motion.div>
@@ -159,7 +193,7 @@ export default function CompleteMissingPhraseQuestionForm({
                             initial={{ opacity: 0, y: 20 }}
                             animate={{ opacity: 1, y: 0 }}
                             exit={{ opacity: 0, y: -20 }}
-                            className="mt-5 p-4 bg-red-100 text-red-500 rounded-xl border-2 border-red-500 font-medium"
+                            className="mt-5 p-4 bg-red-200 text-red-500 rounded-xl border-2 border-red-500 font-medium"
                         >
                             {result.message}
                         </motion.div>
@@ -176,7 +210,7 @@ export default function CompleteMissingPhraseQuestionForm({
                     }
                     onClick={handleClear}
                     disabled={isClearButtonDisabled}
-                    className={`py-4 px-6 text-lg font-bold rounded-2xl transition-all disabled:opacity-60 bg-white text-gray-700 border-2 border-gray-200 ${!isClearButtonDisabled && "hover:shadow-lg hover:-translate-y-0.5"}`}
+                    className={`py-4 px-6 text-lg font-bold rounded-2xl transition-all disabled:opacity-60 bg-white text-gray-700 border-2 border-gray-300 ${!isClearButtonDisabled && "hover:shadow-lg hover:-translate-y-0.5"}`}
                 >
                     Clear
                 </motion.button>
@@ -196,6 +230,6 @@ export default function CompleteMissingPhraseQuestionForm({
                     {result?.success ? "Next" : "Check"}
                 </motion.button>
             </div>
-        </div>
+        </>
     );
 }

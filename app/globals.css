@@ -1,1 +1,9 @@
 @import "tailwindcss";
+
+@theme {
+    --color-surface: var(--color-slate-200);
+}
+
+.dark {
+    --color-surface: var(--color-slate-900);
+}
