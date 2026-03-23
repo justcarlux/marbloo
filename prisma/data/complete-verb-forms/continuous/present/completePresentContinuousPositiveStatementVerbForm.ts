@@ -2,6 +2,7 @@ import { typedQuestionData } from "../../../../../app/model/question/question-fa
 
 const completePresentContinuousPositiveStatementVerbForm = [
     typedQuestionData({
+        id: "7248b4378b5fa24c034c37cb0b6a03f1",
         type: "completePresentContinuousPositiveStatementVerbForm",
         data: {
             leftSide: "She",
@@ -15,6 +16,7 @@ const completePresentContinuousPositiveStatementVerbForm = [
         },
     }),
     typedQuestionData({
+        id: "4de1a458646b9d2a69d7d7d758a5e614",
         type: "completePresentContinuousPositiveStatementVerbForm",
         data: {
             leftSide: "They",
@@ -28,6 +30,7 @@ const completePresentContinuousPositiveStatementVerbForm = [
         },
     }),
     typedQuestionData({
+        id: "8ef3ab84360888eaf18ad302bcc1fec3",
         type: "completePresentContinuousPositiveStatementVerbForm",
         data: {
             leftSide: "The sun",
@@ -41,6 +44,7 @@ const completePresentContinuousPositiveStatementVerbForm = [
         },
     }),
     typedQuestionData({
+        id: "64fe0e1c4bd38080e4184ff4932e5cd3",
         type: "completePresentContinuousPositiveStatementVerbForm",
         data: {
             leftSide: "We",
@@ -54,6 +58,7 @@ const completePresentContinuousPositiveStatementVerbForm = [
         },
     }),
     typedQuestionData({
+        id: "fe64d74e797f944219fc0b1f8ff306a1",
         type: "completePresentContinuousPositiveStatementVerbForm",
         data: {
             leftSide: "The birds",
@@ -67,6 +72,7 @@ const completePresentContinuousPositiveStatementVerbForm = [
         },
     }),
     typedQuestionData({
+        id: "a403c59c138ab2e69e5b612c74791639",
         type: "completePresentContinuousPositiveStatementVerbForm",
         data: {
             leftSide: "I",
@@ -80,6 +86,7 @@ const completePresentContinuousPositiveStatementVerbForm = [
         },
     }),
     typedQuestionData({
+        id: "e14f946235234c048508a28ef3beadab",
         type: "completePresentContinuousPositiveStatementVerbForm",
         data: {
             leftSide: "He",
@@ -93,6 +100,7 @@ const completePresentContinuousPositiveStatementVerbForm = [
         },
     }),
     typedQuestionData({
+        id: "5c36a49992474476c90106378972112f",
         type: "completePresentContinuousPositiveStatementVerbForm",
         data: {
             leftSide: "You",
@@ -106,6 +114,7 @@ const completePresentContinuousPositiveStatementVerbForm = [
         },
     }),
     typedQuestionData({
+        id: "58904a188958dbe9c9d6605b8ba04273",
         type: "completePresentContinuousPositiveStatementVerbForm",
         data: {
             leftSide: "The water",
@@ -119,6 +128,7 @@ const completePresentContinuousPositiveStatementVerbForm = [
         },
     }),
     typedQuestionData({
+        id: "8ccab7725d433e1f123be5bb1c876465",
         type: "completePresentContinuousPositiveStatementVerbForm",
         data: {
             leftSide: "Scientists",
@@ -132,6 +142,7 @@ const completePresentContinuousPositiveStatementVerbForm = [
         },
     }),
     typedQuestionData({
+        id: "780fa36870c4bf477833e8347175c5e4",
         type: "completePresentContinuousPositiveStatementVerbForm",
         data: {
             leftSide: "My brother",
@@ -145,6 +156,7 @@ const completePresentContinuousPositiveStatementVerbForm = [
         },
     }),
     typedQuestionData({
+        id: "ad112a3dd1c264aa475bb3c3360a26a4",
         type: "completePresentContinuousPositiveStatementVerbForm",
         data: {
             leftSide: "The cat",
@@ -158,6 +170,7 @@ const completePresentContinuousPositiveStatementVerbForm = [
         },
     }),
     typedQuestionData({
+        id: "ee9f7e29db42bcfaec6fbf5533cd0ffe",
         type: "completePresentContinuousPositiveStatementVerbForm",
         data: {
             leftSide: "We",
@@ -171,6 +184,7 @@ const completePresentContinuousPositiveStatementVerbForm = [
         },
     }),
     typedQuestionData({
+        id: "5428b990f34da699ca9d180830d33ffe",
         type: "completePresentContinuousPositiveStatementVerbForm",
         data: {
             leftSide: "I",
@@ -184,6 +198,7 @@ const completePresentContinuousPositiveStatementVerbForm = [
         },
     }),
     typedQuestionData({
+        id: "2a154c0f121161fbbe8975a6b0ca40bb",
         type: "completePresentContinuousPositiveStatementVerbForm",
         data: {
             leftSide: "The technician",
@@ -197,6 +212,7 @@ const completePresentContinuousPositiveStatementVerbForm = [
         },
     }),
     typedQuestionData({
+        id: "e27e045abc7e4d2e136992aac8761fa6",
         type: "completePresentContinuousPositiveStatementVerbForm",
         data: {
             leftSide: "My parents",
@@ -210,6 +226,7 @@ const completePresentContinuousPositiveStatementVerbForm = [
         },
     }),
     typedQuestionData({
+        id: "b92361bb13b60a08f605e7fce05bb24c",
         type: "completePresentContinuousPositiveStatementVerbForm",
         data: {
             leftSide: "It",
@@ -223,6 +240,7 @@ const completePresentContinuousPositiveStatementVerbForm = [
         },
     }),
     typedQuestionData({
+        id: "5f72f839fd68e3d02779651aec7f7c1f",
         type: "completePresentContinuousPositiveStatementVerbForm",
         data: {
             leftSide: "The chef",
@@ -236,6 +254,7 @@ const completePresentContinuousPositiveStatementVerbForm = [
         },
     }),
     typedQuestionData({
+        id: "2b07cd8976c5563a249033a30cb80778",
         type: "completePresentContinuousPositiveStatementVerbForm",
         data: {
             leftSide: "You",
@@ -249,6 +268,7 @@ const completePresentContinuousPositiveStatementVerbForm = [
         },
     }),
     typedQuestionData({
+        id: "85c26f756a4179d1fd5aeaa6d5afea53",
         type: "completePresentContinuousPositiveStatementVerbForm",
         data: {
             leftSide: "I",
@@ -262,6 +282,7 @@ const completePresentContinuousPositiveStatementVerbForm = [
         },
     }),
     typedQuestionData({
+        id: "8d4fc59a5bdb066294ed7f16b9d6562d",
         type: "completePresentContinuousPositiveStatementVerbForm",
         data: {
             leftSide: "The students",
@@ -280,6 +301,7 @@ const completePresentContinuousPositiveStatementVerbForm = [
         },
     }),
     typedQuestionData({
+        id: "a2c5524224aad33479e0552322c0b318",
         type: "completePresentContinuousPositiveStatementVerbForm",
         data: {
             leftSide: "He",
@@ -293,6 +315,7 @@ const completePresentContinuousPositiveStatementVerbForm = [
         },
     }),
     typedQuestionData({
+        id: "0256281d49f319e70d266ea85daa7757",
         type: "completePresentContinuousPositiveStatementVerbForm",
         data: {
             leftSide: "The wind",
@@ -306,6 +329,7 @@ const completePresentContinuousPositiveStatementVerbForm = [
         },
     }),
     typedQuestionData({
+        id: "3a3463df83fcb47ce049d0144d76b170",
         type: "completePresentContinuousPositiveStatementVerbForm",
         data: {
             leftSide: "They",
@@ -319,6 +343,7 @@ const completePresentContinuousPositiveStatementVerbForm = [
         },
     }),
     typedQuestionData({
+        id: "706c8238cb20f07405a726d2ea2e22e8",
         type: "completePresentContinuousPositiveStatementVerbForm",
         data: {
             leftSide: "My friend",
@@ -332,6 +357,7 @@ const completePresentContinuousPositiveStatementVerbForm = [
         },
     }),
     typedQuestionData({
+        id: "a31aad6abcd862ea8be8fedb06afb602",
         type: "completePresentContinuousPositiveStatementVerbForm",
         data: {
             leftSide: "I",
@@ -345,6 +371,7 @@ const completePresentContinuousPositiveStatementVerbForm = [
         },
     }),
     typedQuestionData({
+        id: "268c0f57a53e97616c451420a4315710",
         type: "completePresentContinuousPositiveStatementVerbForm",
         data: {
             leftSide: "The baby",
@@ -358,6 +385,7 @@ const completePresentContinuousPositiveStatementVerbForm = [
         },
     }),
     typedQuestionData({
+        id: "83f95c8a20d74ae534ec218f22907e62",
         type: "completePresentContinuousPositiveStatementVerbForm",
         data: {
             leftSide: "We",
@@ -371,6 +399,7 @@ const completePresentContinuousPositiveStatementVerbForm = [
         },
     }),
     typedQuestionData({
+        id: "124a5e3784845d8aa88d32ff66ba3620",
         type: "completePresentContinuousPositiveStatementVerbForm",
         data: {
             leftSide: "The athlete",
@@ -384,6 +413,7 @@ const completePresentContinuousPositiveStatementVerbForm = [
         },
     }),
     typedQuestionData({
+        id: "88cc3db8682a36a60f333ec1482be1a6",
         type: "completePresentContinuousPositiveStatementVerbForm",
         data: {
             leftSide: "You",
@@ -397,6 +427,7 @@ const completePresentContinuousPositiveStatementVerbForm = [
         },
     }),
     typedQuestionData({
+        id: "6c6610f8554f6c150bd9c51828c511eb",
         type: "completePresentContinuousPositiveStatementVerbForm",
         data: {
             leftSide: "The engine",
@@ -410,6 +441,7 @@ const completePresentContinuousPositiveStatementVerbForm = [
         },
     }),
     typedQuestionData({
+        id: "47f49e11b49c9bd1f062a39be0f0d4d3",
         type: "completePresentContinuousPositiveStatementVerbForm",
         data: {
             leftSide: "They",
@@ -423,6 +455,7 @@ const completePresentContinuousPositiveStatementVerbForm = [
         },
     }),
     typedQuestionData({
+        id: "89b5bf6ebe004cd649e3fe18527ab407",
         type: "completePresentContinuousPositiveStatementVerbForm",
         data: {
             leftSide: "He",
@@ -441,6 +474,7 @@ const completePresentContinuousPositiveStatementVerbForm = [
         },
     }),
     typedQuestionData({
+        id: "1a30081b3d10a2a01ac6a5e1c46f3e43",
         type: "completePresentContinuousPositiveStatementVerbForm",
         data: {
             leftSide: "I",
@@ -454,6 +488,7 @@ const completePresentContinuousPositiveStatementVerbForm = [
         },
     }),
     typedQuestionData({
+        id: "a2e19752914b613facbb4357c5222256",
         type: "completePresentContinuousPositiveStatementVerbForm",
         data: {
             leftSide: "The flowers",
@@ -467,6 +502,7 @@ const completePresentContinuousPositiveStatementVerbForm = [
         },
     }),
     typedQuestionData({
+        id: "bdb567b6e3efdbf44378933ff76f9fe9",
         type: "completePresentContinuousPositiveStatementVerbForm",
         data: {
             leftSide: "She",
@@ -480,6 +516,7 @@ const completePresentContinuousPositiveStatementVerbForm = [
         },
     }),
     typedQuestionData({
+        id: "fa7cdb978a043f0f84c0459faf59923f",
         type: "completePresentContinuousPositiveStatementVerbForm",
         data: {
             leftSide: "We",
@@ -493,6 +530,7 @@ const completePresentContinuousPositiveStatementVerbForm = [
         },
     }),
     typedQuestionData({
+        id: "bb01a799df4e6a5df8de013d8c8c2738",
         type: "completePresentContinuousPositiveStatementVerbForm",
         data: {
             leftSide: "The gardener",
@@ -506,6 +544,7 @@ const completePresentContinuousPositiveStatementVerbForm = [
         },
     }),
     typedQuestionData({
+        id: "b83d3839215e9ec76fe8e5bdbbb9c0dd",
         type: "completePresentContinuousPositiveStatementVerbForm",
         data: {
             leftSide: "I",
@@ -519,6 +558,7 @@ const completePresentContinuousPositiveStatementVerbForm = [
         },
     }),
     typedQuestionData({
+        id: "9c9ba093c8c58311062681795960d89e",
         type: "completePresentContinuousPositiveStatementVerbForm",
         data: {
             leftSide: "The team",
@@ -532,6 +572,7 @@ const completePresentContinuousPositiveStatementVerbForm = [
         },
     }),
     typedQuestionData({
+        id: "e41396aa9bcd0068a7aa33b75324493f",
         type: "completePresentContinuousPositiveStatementVerbForm",
         data: {
             leftSide: "You",
@@ -545,6 +586,7 @@ const completePresentContinuousPositiveStatementVerbForm = [
         },
     }),
     typedQuestionData({
+        id: "6fe58ece32223ec71382e4b5de2fb341",
         type: "completePresentContinuousPositiveStatementVerbForm",
         data: {
             leftSide: "The company",
@@ -558,6 +600,7 @@ const completePresentContinuousPositiveStatementVerbForm = [
         },
     }),
     typedQuestionData({
+        id: "85c92b50bfe8973f94697e97759a0a4c",
         type: "completePresentContinuousPositiveStatementVerbForm",
         data: {
             leftSide: "I",
@@ -571,6 +614,7 @@ const completePresentContinuousPositiveStatementVerbForm = [
         },
     }),
     typedQuestionData({
+        id: "1610bfa729dfa2a50c858f7886d5f7f4",
         type: "completePresentContinuousPositiveStatementVerbForm",
         data: {
             leftSide: "The neighbors",
@@ -584,6 +628,7 @@ const completePresentContinuousPositiveStatementVerbForm = [
         },
     }),
     typedQuestionData({
+        id: "497bd396789e404ec32178666d113c25",
         type: "completePresentContinuousPositiveStatementVerbForm",
         data: {
             leftSide: "He",
@@ -597,6 +642,7 @@ const completePresentContinuousPositiveStatementVerbForm = [
         },
     }),
     typedQuestionData({
+        id: "c8b99a1dd4b691d7592284b7c7f176e7",
         type: "completePresentContinuousPositiveStatementVerbForm",
         data: {
             leftSide: "We",
@@ -610,6 +656,7 @@ const completePresentContinuousPositiveStatementVerbForm = [
         },
     }),
     typedQuestionData({
+        id: "5914ae1ba4a7f39365d39f307e31b271",
         type: "completePresentContinuousPositiveStatementVerbForm",
         data: {
             leftSide: "The rain",
@@ -623,6 +670,7 @@ const completePresentContinuousPositiveStatementVerbForm = [
         },
     }),
     typedQuestionData({
+        id: "9024266648ab54ab3bfc9713691164b1",
         type: "completePresentContinuousPositiveStatementVerbForm",
         data: {
             leftSide: "I",
@@ -636,6 +684,7 @@ const completePresentContinuousPositiveStatementVerbForm = [
         },
     }),
     typedQuestionData({
+        id: "c51ee64295e3b0039ce3fc5d8670563a",
         type: "completePresentContinuousPositiveStatementVerbForm",
         data: {
             leftSide: "The manager",
@@ -649,6 +698,7 @@ const completePresentContinuousPositiveStatementVerbForm = [
         },
     }),
     typedQuestionData({
+        id: "4802476fd5ca22ba0e2f6cab35e4c694",
         type: "completePresentContinuousPositiveStatementVerbForm",
         data: {
             leftSide: "They",
@@ -662,6 +712,7 @@ const completePresentContinuousPositiveStatementVerbForm = [
         },
     }),
     typedQuestionData({
+        id: "2c790274b3915bcbf77766a370c4b51e",
         type: "completePresentContinuousPositiveStatementVerbForm",
         data: {
             leftSide: "She",
@@ -675,6 +726,7 @@ const completePresentContinuousPositiveStatementVerbForm = [
         },
     }),
     typedQuestionData({
+        id: "40b82e877057aa1b8e93a8e1a5472d9f",
         type: "completePresentContinuousPositiveStatementVerbForm",
         data: {
             leftSide: "I",
@@ -688,6 +740,7 @@ const completePresentContinuousPositiveStatementVerbForm = [
         },
     }),
     typedQuestionData({
+        id: "baf1cde4b14a7d56562c8df28232f8d7",
         type: "completePresentContinuousPositiveStatementVerbForm",
         data: {
             leftSide: "The kids",
@@ -701,6 +754,7 @@ const completePresentContinuousPositiveStatementVerbForm = [
         },
     }),
     typedQuestionData({
+        id: "fbeebea42f9651a845915ed3a5efd15f",
         type: "completePresentContinuousPositiveStatementVerbForm",
         data: {
             leftSide: "He",
@@ -714,6 +768,7 @@ const completePresentContinuousPositiveStatementVerbForm = [
         },
     }),
     typedQuestionData({
+        id: "9131a925b5d59b1466c53fc663198ad2",
         type: "completePresentContinuousPositiveStatementVerbForm",
         data: {
             leftSide: "We",
@@ -727,6 +782,7 @@ const completePresentContinuousPositiveStatementVerbForm = [
         },
     }),
     typedQuestionData({
+        id: "3f67584e494eac1a0ed8033618d15995",
         type: "completePresentContinuousPositiveStatementVerbForm",
         data: {
             leftSide: "The stars",
@@ -740,6 +796,7 @@ const completePresentContinuousPositiveStatementVerbForm = [
         },
     }),
     typedQuestionData({
+        id: "bd76e5aeee03359388a80539e5ea55ce",
         type: "completePresentContinuousPositiveStatementVerbForm",
         data: {
             leftSide: "I",
@@ -753,6 +810,7 @@ const completePresentContinuousPositiveStatementVerbForm = [
         },
     }),
     typedQuestionData({
+        id: "0e3e4cd9184e83dee87bc27a936f625b",
         type: "completePresentContinuousPositiveStatementVerbForm",
         data: {
             leftSide: "The fire",
@@ -766,6 +824,7 @@ const completePresentContinuousPositiveStatementVerbForm = [
         },
     }),
     typedQuestionData({
+        id: "9efddf30c71020285bf853e63b72defc",
         type: "completePresentContinuousPositiveStatementVerbForm",
         data: {
             leftSide: "You",
@@ -779,6 +838,7 @@ const completePresentContinuousPositiveStatementVerbForm = [
         },
     }),
     typedQuestionData({
+        id: "b8c98acccce6f73a729d2ed8d3b2f11a",
         type: "completePresentContinuousPositiveStatementVerbForm",
         data: {
             leftSide: "The plane",
@@ -792,6 +852,7 @@ const completePresentContinuousPositiveStatementVerbForm = [
         },
     }),
     typedQuestionData({
+        id: "0cec7bdd478804019714d6c12fdfbf25",
         type: "completePresentContinuousPositiveStatementVerbForm",
         data: {
             leftSide: "I",
@@ -805,6 +866,7 @@ const completePresentContinuousPositiveStatementVerbForm = [
         },
     }),
     typedQuestionData({
+        id: "bae0f582f9266e0170691159bfeb7d08",
         type: "completePresentContinuousPositiveStatementVerbForm",
         data: {
             leftSide: "The students",
@@ -818,6 +880,7 @@ const completePresentContinuousPositiveStatementVerbForm = [
         },
     }),
     typedQuestionData({
+        id: "8734352343fd3549b034164298b125ba",
         type: "completePresentContinuousPositiveStatementVerbForm",
         data: {
             leftSide: "He",
@@ -831,6 +894,7 @@ const completePresentContinuousPositiveStatementVerbForm = [
         },
     }),
     typedQuestionData({
+        id: "364a442cf13987836feb943b023c69d1",
         type: "completePresentContinuousPositiveStatementVerbForm",
         data: {
             leftSide: "We",
@@ -844,6 +908,7 @@ const completePresentContinuousPositiveStatementVerbForm = [
         },
     }),
     typedQuestionData({
+        id: "91e956fc2c3a804662f2b2d2f03f799e",
         type: "completePresentContinuousPositiveStatementVerbForm",
         data: {
             leftSide: "The clock",
@@ -857,6 +922,7 @@ const completePresentContinuousPositiveStatementVerbForm = [
         },
     }),
     typedQuestionData({
+        id: "a2dc6357d71ef33248eb35df9e2e7b65",
         type: "completePresentContinuousPositiveStatementVerbForm",
         data: {
             leftSide: "I",
@@ -870,6 +936,7 @@ const completePresentContinuousPositiveStatementVerbForm = [
         },
     }),
     typedQuestionData({
+        id: "944913af1fcd57e24041586e3c14066e",
         type: "completePresentContinuousPositiveStatementVerbForm",
         data: {
             leftSide: "She",
@@ -883,6 +950,7 @@ const completePresentContinuousPositiveStatementVerbForm = [
         },
     }),
     typedQuestionData({
+        id: "65dbb4a7b1a1f00573e8d5695fb53200",
         type: "completePresentContinuousPositiveStatementVerbForm",
         data: {
             leftSide: "They",
@@ -896,6 +964,7 @@ const completePresentContinuousPositiveStatementVerbForm = [
         },
     }),
     typedQuestionData({
+        id: "4dc8e56ddfe438746fd3ad268c00c03f",
         type: "completePresentContinuousPositiveStatementVerbForm",
         data: {
             leftSide: "The dog",
@@ -909,6 +978,7 @@ const completePresentContinuousPositiveStatementVerbForm = [
         },
     }),
     typedQuestionData({
+        id: "ca7f76ef8d90c6f11ea1be5bf13c51ff",
         type: "completePresentContinuousPositiveStatementVerbForm",
         data: {
             leftSide: "We",
@@ -927,6 +997,7 @@ const completePresentContinuousPositiveStatementVerbForm = [
         },
     }),
     typedQuestionData({
+        id: "af328aa7b5db7dec6b38679bd2e9a8ff",
         type: "completePresentContinuousPositiveStatementVerbForm",
         data: {
             leftSide: "I",
@@ -940,6 +1011,7 @@ const completePresentContinuousPositiveStatementVerbForm = [
         },
     }),
     typedQuestionData({
+        id: "8247ab8893009cc660839e98d7382497",
         type: "completePresentContinuousPositiveStatementVerbForm",
         data: {
             leftSide: "The artist",
@@ -953,6 +1025,7 @@ const completePresentContinuousPositiveStatementVerbForm = [
         },
     }),
     typedQuestionData({
+        id: "051175a79aa4c40a852a7ba2ac4ac634",
         type: "completePresentContinuousPositiveStatementVerbForm",
         data: {
             leftSide: "You",
@@ -966,6 +1039,7 @@ const completePresentContinuousPositiveStatementVerbForm = [
         },
     }),
     typedQuestionData({
+        id: "fece69c65c23e18d2a15dce5d33af17e",
         type: "completePresentContinuousPositiveStatementVerbForm",
         data: {
             leftSide: "He",
@@ -984,6 +1058,7 @@ const completePresentContinuousPositiveStatementVerbForm = [
         },
     }),
     typedQuestionData({
+        id: "f66a0f327e1e8629dc0ee0804c613a07",
         type: "completePresentContinuousPositiveStatementVerbForm",
         data: {
             leftSide: "The audience",
@@ -997,6 +1072,7 @@ const completePresentContinuousPositiveStatementVerbForm = [
         },
     }),
     typedQuestionData({
+        id: "9e34c56a22dd8c4a698ced154a7d25c4",
         type: "completePresentContinuousPositiveStatementVerbForm",
         data: {
             leftSide: "We",
@@ -1010,6 +1086,7 @@ const completePresentContinuousPositiveStatementVerbForm = [
         },
     }),
     typedQuestionData({
+        id: "c8a60095731a8dbe8d1f7de7dffafbde",
         type: "completePresentContinuousPositiveStatementVerbForm",
         data: {
             leftSide: "I",
@@ -1023,6 +1100,7 @@ const completePresentContinuousPositiveStatementVerbForm = [
         },
     }),
     typedQuestionData({
+        id: "63033f417c9459a4b83362d6f715c4ab",
         type: "completePresentContinuousPositiveStatementVerbForm",
         data: {
             leftSide: "The cat",
@@ -1036,6 +1114,7 @@ const completePresentContinuousPositiveStatementVerbForm = [
         },
     }),
     typedQuestionData({
+        id: "b6136e86983dcb16e3ed8754d5c525a2",
         type: "completePresentContinuousPositiveStatementVerbForm",
         data: {
             leftSide: "She",
@@ -1049,6 +1128,7 @@ const completePresentContinuousPositiveStatementVerbForm = [
         },
     }),
     typedQuestionData({
+        id: "7a9d051e09a1a46f5b8de7e9d0804639",
         type: "completePresentContinuousPositiveStatementVerbForm",
         data: {
             leftSide: "They",
@@ -1062,6 +1142,7 @@ const completePresentContinuousPositiveStatementVerbForm = [
         },
     }),
     typedQuestionData({
+        id: "4765327ca2758957086130494c68cda0",
         type: "completePresentContinuousPositiveStatementVerbForm",
         data: {
             leftSide: "I",
@@ -1075,6 +1156,7 @@ const completePresentContinuousPositiveStatementVerbForm = [
         },
     }),
     typedQuestionData({
+        id: "653232d5d5cc2aee70765984480a9c4a",
         type: "completePresentContinuousPositiveStatementVerbForm",
         data: {
             leftSide: "He",
@@ -1088,6 +1170,7 @@ const completePresentContinuousPositiveStatementVerbForm = [
         },
     }),
     typedQuestionData({
+        id: "0a7cd3ec8f835e8ccb67ba426dd84046",
         type: "completePresentContinuousPositiveStatementVerbForm",
         data: {
             leftSide: "We",
@@ -1101,6 +1184,7 @@ const completePresentContinuousPositiveStatementVerbForm = [
         },
     }),
     typedQuestionData({
+        id: "bf5d7dd50c9067ce3e5f4460e3f31153",
         type: "completePresentContinuousPositiveStatementVerbForm",
         data: {
             leftSide: "The leaves",
@@ -1114,6 +1198,7 @@ const completePresentContinuousPositiveStatementVerbForm = [
         },
     }),
     typedQuestionData({
+        id: "70e04bd94370674ac84578a22a2e027e",
         type: "completePresentContinuousPositiveStatementVerbForm",
         data: {
             leftSide: "I",
@@ -1127,6 +1212,7 @@ const completePresentContinuousPositiveStatementVerbForm = [
         },
     }),
     typedQuestionData({
+        id: "e33d29f70b708342b3051fa9ff5c4c7d",
         type: "completePresentContinuousPositiveStatementVerbForm",
         data: {
             leftSide: "She",
@@ -1140,6 +1226,7 @@ const completePresentContinuousPositiveStatementVerbForm = [
         },
     }),
     typedQuestionData({
+        id: "76791bb665da1244af543e77e97cfe46",
         type: "completePresentContinuousPositiveStatementVerbForm",
         data: {
             leftSide: "The moon",
@@ -1153,6 +1240,7 @@ const completePresentContinuousPositiveStatementVerbForm = [
         },
     }),
     typedQuestionData({
+        id: "701389b1dba512734ab44ebb8885a481",
         type: "completePresentContinuousPositiveStatementVerbForm",
         data: {
             leftSide: "They",
@@ -1166,6 +1254,7 @@ const completePresentContinuousPositiveStatementVerbForm = [
         },
     }),
     typedQuestionData({
+        id: "9b3b672af30a749e6293ac96c82b1897",
         type: "completePresentContinuousPositiveStatementVerbForm",
         data: {
             leftSide: "I",
@@ -1179,6 +1268,7 @@ const completePresentContinuousPositiveStatementVerbForm = [
         },
     }),
     typedQuestionData({
+        id: "ed8f26f16084f51ab7e0d40b837682b1",
         type: "completePresentContinuousPositiveStatementVerbForm",
         data: {
             leftSide: "He",
@@ -1192,6 +1282,7 @@ const completePresentContinuousPositiveStatementVerbForm = [
         },
     }),
     typedQuestionData({
+        id: "56e635225d32fecf037a361b318cfa97",
         type: "completePresentContinuousPositiveStatementVerbForm",
         data: {
             leftSide: "We",
@@ -1205,6 +1296,7 @@ const completePresentContinuousPositiveStatementVerbForm = [
         },
     }),
     typedQuestionData({
+        id: "41cdca6e020f284e6f08781b3f77bd42",
         type: "completePresentContinuousPositiveStatementVerbForm",
         data: {
             leftSide: "The teacher",
@@ -1218,6 +1310,7 @@ const completePresentContinuousPositiveStatementVerbForm = [
         },
     }),
     typedQuestionData({
+        id: "1e3ebb450929feb7c669a8360e702a0b",
         type: "completePresentContinuousPositiveStatementVerbForm",
         data: {
             leftSide: "I",
@@ -1231,6 +1324,7 @@ const completePresentContinuousPositiveStatementVerbForm = [
         },
     }),
     typedQuestionData({
+        id: "6a0e43fe6065bde3617e26551862e547",
         type: "completePresentContinuousPositiveStatementVerbForm",
         data: {
             leftSide: "She",
@@ -1244,6 +1338,7 @@ const completePresentContinuousPositiveStatementVerbForm = [
         },
     }),
     typedQuestionData({
+        id: "35cd90bd4ae3571d5f0fae98896bbeeb",
         type: "completePresentContinuousPositiveStatementVerbForm",
         data: {
             leftSide: "They",
@@ -1257,6 +1352,7 @@ const completePresentContinuousPositiveStatementVerbForm = [
         },
     }),
     typedQuestionData({
+        id: "894315e7597805eb533b16ee550453ef",
         type: "completePresentContinuousPositiveStatementVerbForm",
         data: {
             leftSide: "I",
@@ -1270,6 +1366,7 @@ const completePresentContinuousPositiveStatementVerbForm = [
         },
     }),
     typedQuestionData({
+        id: "cd53d16021ea3284155c9f5bb63b832e",
         type: "completePresentContinuousPositiveStatementVerbForm",
         data: {
             leftSide: "He",
@@ -1283,6 +1380,7 @@ const completePresentContinuousPositiveStatementVerbForm = [
         },
     }),
     typedQuestionData({
+        id: "a06259b72118ae1f608c78e54d527342",
         type: "completePresentContinuousPositiveStatementVerbForm",
         data: {
             leftSide: "We",
@@ -1296,6 +1394,7 @@ const completePresentContinuousPositiveStatementVerbForm = [
         },
     }),
     typedQuestionData({
+        id: "316731e90fcaa721d89706aa843575ed",
         type: "completePresentContinuousPositiveStatementVerbForm",
         data: {
             leftSide: "The juice",
@@ -1309,6 +1408,7 @@ const completePresentContinuousPositiveStatementVerbForm = [
         },
     }),
     typedQuestionData({
+        id: "e5ce1fe28604d8abf5f47b135b155f1c",
         type: "completePresentContinuousPositiveStatementVerbForm",
         data: {
             leftSide: "The kids",

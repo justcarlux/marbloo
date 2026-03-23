@@ -1,4 +1,4 @@
-import { Prisma, Question } from "@/prisma/generated/prisma/client";
+import { Prisma, Question } from "@/generated/prisma/client";
 import QuestionSet from "./components/question/QuestionSet";
 import prisma from "./lib/prisma";
 

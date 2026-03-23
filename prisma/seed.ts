@@ -1,6 +1,4 @@
-import hash from "object-hash";
-import { QuestionData } from "../app/model/question/QuestionInstance";
-
+import { PrismaClient } from "@/generated/prisma/client";
 import completeFutureContinuousNegativeStatementVerbForm from "@/prisma/data/complete-verb-forms/continuous/future/completeFutureContinuousNegativeStatementVerbForm";
 import completeFutureContinuousPositiveStatementVerbForm from "@/prisma/data/complete-verb-forms/continuous/future/completeFutureContinuousPositiveStatementVerbForm";
 import completePastContinuousNegativeStatementVerbForm from "@/prisma/data/complete-verb-forms/continuous/past/completePastContinuousNegativeStatementVerbForm";
@@ -27,9 +25,9 @@ import completePresentSimpleNegativeStatementVerbForm from "@/prisma/data/comple
 import completePresentSimplePositiveStatementVerbForm from "@/prisma/data/complete-verb-forms/simple/present/completePresentSimplePositiveStatementVerbForm";
 import { PrismaMariaDb } from "@prisma/adapter-mariadb";
 import { JsonObject } from "@prisma/client/runtime/client";
-import { PrismaClient } from "./generated/prisma/client";
+import { QuestionData } from "../app/model/question/QuestionInstance";
 
-const questions: QuestionData<unknown>[] = [
+const questionData: (QuestionData<unknown> & { id: string })[] = [
     // Simple tenses
     ...completePresentSimplePositiveStatementVerbForm,
     ...completePresentSimpleNegativeStatementVerbForm,
@@ -71,23 +69,17 @@ const adapter = new PrismaMariaDb({
     database: process.env.DATABASE_NAME,
     connectionLimit: 5,
 });
+
 const prisma = new PrismaClient({ adapter });
 
 async function main() {
-    for (const question of questions) {
-        const id = hash(question);
-        await prisma.question.upsert({
-            where: { id },
-            update: {},
-            create: {
-                id,
-                type: question.type,
-                data: question.data as JsonObject,
-            },
-        });
-    }
+    await prisma.question.deleteMany({});
+    await prisma.question.createMany({
+        data: questionData as (QuestionData<unknown> & {
+            id: string;
+            data: JsonObject;
+        })[],
+    });
 }
 
-main()
-    .catch(console.error)
-    .finally(() => prisma.$disconnect());
+main().finally(() => prisma.$disconnect());

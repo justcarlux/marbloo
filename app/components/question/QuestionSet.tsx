@@ -4,7 +4,7 @@ import { QuestionData } from "@/app/model/question/QuestionInstance";
 import { motion } from "framer-motion";
 import { useState } from "react";
 import { createComponentForQuestionData } from "./question-component-factory";
-import { Question } from "@/prisma/generated/prisma/client";
+import { Question } from "@/generated/prisma/client";
 
 export interface QuestionWrapperProps {
     questions: (QuestionData<unknown> | Question)[];

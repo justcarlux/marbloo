@@ -2,8 +2,8 @@ import { CompleteCorrectVerbFormQuestionData } from "@/app/model/question/impl/C
 import { CompleteCorrectVerbFormWithAuxiliarsQuestionData } from "@/app/model/question/impl/CompleteCorrectVerbFormWithAuxiliarsQuestion";
 import { QuestionData } from "@/app/model/question/QuestionInstance";
 import CompleteMissingPhraseQuestionForm from "./impl/CompleteMissingPhraseQuestionForm";
-import { QuestionType } from "@/prisma/generated/prisma/enums";
-import { Question } from "@/prisma/generated/prisma/client";
+import { QuestionType } from "@/generated/prisma/enums";
+import { Question } from "@/generated/prisma/client";
 
 const completeMissingPhraseQuestionFormComponentProvider = (
     data: QuestionData<unknown>,

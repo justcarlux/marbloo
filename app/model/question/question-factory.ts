@@ -5,7 +5,7 @@ import CompleteCorrectVerbFormWithAuxiliarsQuestion, {
     CompleteCorrectVerbFormWithAuxiliarsQuestionData,
 } from "./impl/CompleteCorrectVerbFormWithAuxiliarsQuestion";
 import QuestionInstance, { QuestionData } from "./QuestionInstance";
-import type { QuestionType } from "@/prisma/generated/prisma/enums";
+import type { QuestionType } from "@/generated/prisma/enums";
 
 interface QuestionDataTypes {
     // Simple tenses
@@ -301,13 +301,16 @@ export function createQuestionInstance<T extends QuestionType>({
 }
 
 export function typedQuestionData<T extends QuestionType>({
+    id,
     type,
     data,
 }: {
+    id: string;
     type: T;
     data: QuestionDataTypes[T];
-}): QuestionData<QuestionDataTypes[T]> {
+}): QuestionData<QuestionDataTypes[T]> & { id: string } {
     return {
+        id,
         data,
         type,
     };
