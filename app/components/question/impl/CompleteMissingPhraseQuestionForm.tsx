@@ -35,6 +35,7 @@ export default function CompleteMissingPhraseQuestionForm({
 }: CompleteMissingPhraseQuestionFormProps) {
     const [playSuccess] = useSound("/sfx/success.mp3");
     const [playFailure] = useSound("/sfx/failure.mp3");
+    const [playHint] = useSound("/sfx/hint.mp3");
 
     const [lastSubmitted, setLastSubmitted] = useState(0);
     const [showHint, setShowHint] = useState(false);
@@ -52,6 +53,13 @@ export default function CompleteMissingPhraseQuestionForm({
     useEffect(() => {
         inputRef.current?.focus();
     }, []);
+
+    const handleShowHint = useCallback(() => {
+        if (showHint) return;
+
+        playHint();
+        setShowHint(true);
+    }, [showHint, playHint]);
 
     const handleSubmit = useCallback(() => {
         if (result && result.success) {
@@ -123,10 +131,7 @@ export default function CompleteMissingPhraseQuestionForm({
                         {questionData.data.middle}
                     </span>
                     <span>{questionData.data.rightSide}</span>
-                    <div
-                        className="inline-block ml-3"
-                        onClick={() => setShowHint(true)}
-                    >
+                    <div className="inline-block ml-3" onClick={handleShowHint}>
                         {showHint ? (
                             <TbBulb size={25} />
                         ) : (

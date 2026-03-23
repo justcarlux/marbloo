@@ -50,7 +50,7 @@ export default function QuestionSet({ questions }: QuestionWrapperProps) {
                 animate={{ scale: 1, opacity: 1, y: 0 }}
                 transition={{ type: "spring", duration: 0.5 }}
             >
-                <div className="w-full h-2 rounded-full overflow-hidden bg-gray-300 mb-2">
+                <div className="w-full h-2 rounded-full overflow-hidden bg-progress-bg mb-2">
                     <motion.div
                         className="h-full bg-green-500"
                         initial={{ width: 0 }}

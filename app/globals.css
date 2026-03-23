@@ -8,6 +8,7 @@
     --color-secondary: var(--color-gray-400);
     --color-highlight: var(--color-blue-200);
 
+    --color-progress-bg: var(--color-gray-300);
     --color-hint-fg: var(--color-blue-600);
     --color-hint-bg: var(--color-blue-300);
     --color-success-fg: var(--color-green-500);
@@ -22,10 +23,11 @@
     --color-secondary: var(--color-gray-600);
     --color-highlight: var(--color-blue-700);
 
+    --color-progress-bg: var(--color-gray-700);
     --color-hint-fg: var(--color-blue-300);
     --color-hint-bg: var(--color-blue-700);
     --color-success-fg: var(--color-green-100);
-    --color-success-bg: var(--color-green-500);
+    --color-success-bg: var(--color-green-700);
     --color-error-fg: var(--color-red-200);
-    --color-error-bg: var(--color-red-500);
+    --color-error-bg: var(--color-red-600);
 }
