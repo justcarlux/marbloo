@@ -159,7 +159,8 @@ const questionHints: {
     [key in QuestionType]: React.ReactNode;
 } = {
     // Simple tenses
-    completePresentSimplePositiveStatementVerbForm: "main verb (base form)",
+    completePresentSimplePositiveStatementVerbForm:
+        "main verb (base form + -s/-es in third-person singular)",
     completePresentSimpleNegativeStatementVerbForm:
         "do/does + not + main verb (base form)",
     completePastSimplePositiveStatementVerbForm: "main verb (past form)",

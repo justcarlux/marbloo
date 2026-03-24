@@ -18,6 +18,7 @@ import { useCallback, useEffect, useRef, useState } from "react";
 import { TbBulb, TbBulbOff } from "react-icons/tb";
 import useSound from "use-sound";
 import { HandleCorrectFunction, HandleNextFunction } from "../QuestionSet";
+import QuestionFormBottomPanel from "../QuestionFormBottomPanel";
 
 interface CompleteMissingPhraseQuestionFormProps {
     questionData: QuestionData<
@@ -113,8 +114,6 @@ export default function CompleteMissingPhraseQuestionForm({
         };
     }, [handleSubmit]);
 
-    const isClearButtonDisabled = !answer || result?.success;
-
     return (
         <>
             <motion.h2
@@ -207,36 +206,13 @@ export default function CompleteMissingPhraseQuestionForm({
                     ))}
             </AnimatePresence>
 
-            <div className="grid grid-cols-2 gap-4 mt-8">
-                <motion.button
-                    whileHover={
-                        !isClearButtonDisabled ? { scale: 1.02 } : undefined
-                    }
-                    whileTap={
-                        !isClearButtonDisabled ? { scale: 0.98 } : undefined
-                    }
-                    onClick={handleClear}
-                    disabled={isClearButtonDisabled}
-                    className={`py-4 px-6 text-lg font-bold rounded-2xl transition-all disabled:opacity-60 bg-secondary text-primary border-2 border-secondary ${!isClearButtonDisabled && "hover:-translate-y-0.5"}`}
-                >
-                    Clear
-                </motion.button>
-
-                <motion.button
-                    whileHover={{ scale: 1.02 }}
-                    whileTap={{ scale: 0.98 }}
-                    onClick={handleSubmit}
-                    disabled={!answer.trim()}
-                    className={`py-4 px-6 text-lg font-bold rounded-2xl uppercase tracking-wide transition-all disabled:opacity-60 disabled:cursor-not-allowed
-                        ${
-                            result?.success
-                                ? "bg-blue-500 text-white hover:-translate-y-0.5"
-                                : "bg-green-500 text-white hover:-translate-y-0.5"
-                        }`}
-                >
-                    {result?.success ? "Next" : "Check"}
-                </motion.button>
-            </div>
+            <QuestionFormBottomPanel
+                isClearButtonDisabled={!answer || !!result?.success}
+                isSuccessButtonDisabled={!answer.trim()}
+                isQuestionAnsweredCorrectly={!!result?.success}
+                handleSubmit={handleSubmit}
+                handleClear={handleClear}
+            />
         </>
     );
 }
