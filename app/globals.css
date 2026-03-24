@@ -22,7 +22,7 @@
 .dark {
     --color-surface: var(--color-slate-900);
     --color-primary: var(--color-slate-200);
-    --color-secondary: var(--color-gray-400);
+    --color-secondary: var(--color-gray-500);
     --color-accent: rgb(14, 25, 60);
     --color-highlight: var(--color-blue-700);
 

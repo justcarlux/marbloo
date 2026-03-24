@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import { ThemeProvider } from "next-themes";
-import ThemeToggleOverlay from "./components/ui/ThemeToggleOverlay";
+import BottomToolbar from "./components/ui/BottomToolbar";
 
 export const metadata: Metadata = {
     title: "Marbloo",
@@ -15,9 +15,9 @@ export default function RootLayout({
     return (
         <html lang="en" suppressHydrationWarning>
             <body className={`antialiased`}>
-                <div className="bg-surface transition-colors duration-200">
+                <div className="bg-surface transition-colors">
                     <ThemeProvider attribute="class">
-                        <ThemeToggleOverlay />
+                        <BottomToolbar />
                         {children}
                     </ThemeProvider>
                 </div>

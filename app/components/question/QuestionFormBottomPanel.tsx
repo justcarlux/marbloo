@@ -18,20 +18,14 @@ export default function QuestionFormBottomPanel({
     return (
         <div className="grid grid-cols-2 gap-4 mt-8">
             <motion.button
-                whileHover={
-                    !isClearButtonDisabled ? { scale: 1.02 } : undefined
-                }
-                whileTap={!isClearButtonDisabled ? { scale: 0.98 } : undefined}
                 onClick={handleClear}
                 disabled={isClearButtonDisabled}
-                className={`py-4 px-6 text-lg font-bold rounded-2xl transition-all disabled:opacity-60 bg-secondary text-primary border-2 border-secondary ${!isClearButtonDisabled && "hover:-translate-y-0.5"}`}
+                className={`py-4 px-6 text-lg font-bold rounded-2xl transition-all disabled:opacity-60 bg-secondary text-white border-2 border-secondary ${!isClearButtonDisabled && "hover:scale-102 active:scale-98"}`}
             >
                 Clear
             </motion.button>
 
             <motion.button
-                whileHover={{ scale: 1.02 }}
-                whileTap={{ scale: 0.98 }}
                 onClick={handleSubmit}
                 disabled={isSuccessButtonDisabled}
                 className={`py-4 px-6 text-lg font-bold rounded-2xl uppercase tracking-wide transition-all disabled:opacity-60
@@ -39,7 +33,7 @@ export default function QuestionFormBottomPanel({
                             isQuestionAnsweredCorrectly
                                 ? "bg-blue-500 text-white hover:-translate-y-0.5"
                                 : "bg-green-500 text-white hover:-translate-y-0.5"
-                        }`}
+                        } ${!isSuccessButtonDisabled && "hover:scale-102 active:scale-98"}`}
             >
                 {isQuestionAnsweredCorrectly ? "Next" : "Check"}
             </motion.button>
