@@ -6,6 +6,7 @@
     --color-surface: var(--color-slate-200);
     --color-primary: var(--color-gray-700);
     --color-secondary: var(--color-gray-400);
+    --color-accent: var(--color-blue-100);
     --color-highlight: var(--color-blue-200);
 
     --color-progress-bg: var(--color-gray-300);
@@ -21,6 +22,7 @@
     --color-surface: var(--color-slate-900);
     --color-primary: var(--color-slate-200);
     --color-secondary: var(--color-gray-600);
+    --color-accent: rgb(14, 25, 60);
     --color-highlight: var(--color-blue-700);
 
     --color-progress-bg: var(--color-gray-700);

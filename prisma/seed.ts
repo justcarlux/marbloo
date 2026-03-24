@@ -68,7 +68,6 @@ async function main() {
     await prisma.question.deleteMany({});
     await prisma.question.createMany({
         data: questionData as (QuestionData<unknown> & {
-            id: string;
             data: JsonObject;
         })[],
     });
