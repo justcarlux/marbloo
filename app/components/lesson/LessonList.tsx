@@ -1,12 +1,14 @@
 "use client";
 
 import { motion } from "framer-motion";
+import Link from "next/link";
 import { IconType } from "react-icons";
 
 interface LessonEntry {
     title: React.ReactNode;
     description: string;
     icon: IconType;
+    href: string;
 }
 
 interface LessonCategory {
@@ -55,26 +57,43 @@ export default function LessonList({ categories }: LessonListProps) {
                             animate="show"
                         >
                             {entries.map(
-                                ({ title, description, icon: Icon }, index) => (
-                                    <motion.div
-                                        key={index}
-                                        variants={{
-                                            hidden: { opacity: 0, scale: 0.9 },
-                                            show: { opacity: 1, scale: 1 },
-                                        }}
-                                        whileHover={{ scale: 1.02 }}
-                                        whileTap={{ scale: 0.98 }}
-                                        className="group relative overflow-hidden flex-1 min-w-[240px] sm:max-w-[240px] w-full sm:h-[260px] h-fit border-4 border-secondary rounded-2xl cursor-pointer transition-colors hover:border-primary bg-accent flex flex-col items-center justify-start text-center p-6"
-                                    >
-                                        <Icon className="w-12 h-12 text-primary group-hover:text-primary transition-colors mt-2 mb-4 shrink-0" />
-                                        <h3 className="text-xl font-bold text-primary mb-2 leading-tight px-2">
-                                            {title}
-                                        </h3>
-                                        <p className="text-sm text-secondary line-clamp-3 px-2">
-                                            {description}
-                                        </p>
-                                    </motion.div>
-                                ),
+                                (
+                                    { title, description, icon: Icon, href },
+                                    index,
+                                ) => {
+                                    return (
+                                        <Link
+                                            key={index}
+                                            href={href}
+                                            className="flex-1 min-w-60 sm:max-w-60"
+                                        >
+                                            <motion.div
+                                                key={index}
+                                                variants={{
+                                                    hidden: {
+                                                        opacity: 0,
+                                                        scale: 0.9,
+                                                    },
+                                                    show: {
+                                                        opacity: 1,
+                                                        scale: 1,
+                                                    },
+                                                }}
+                                                whileHover={{ scale: 1.02 }}
+                                                whileTap={{ scale: 0.98 }}
+                                                className="group relative overflow-hidden flex-1 min-w-60 sm:max-w-60 w-full sm:h-65 h-fit border-4 border-secondary rounded-2xl cursor-pointer transition-colors hover:border-primary bg-accent flex flex-col items-center justify-start text-center p-6"
+                                            >
+                                                <Icon className="w-12 h-12 text-primary group-hover:text-primary transition-colors mt-2 mb-4 shrink-0" />
+                                                <h3 className="text-xl font-bold text-primary mb-2 leading-tight px-2">
+                                                    {title}
+                                                </h3>
+                                                <p className="text-sm text-secondary line-clamp-3 px-2">
+                                                    {description}
+                                                </p>
+                                            </motion.div>
+                                        </Link>
+                                    );
+                                },
                             )}
                         </motion.div>
                     </section>
