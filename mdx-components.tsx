@@ -20,6 +20,12 @@ export function useMDXComponents(components: MDXComponents): MDXComponents {
                 className="text-lg text-primary/80 mb-6 leading-relaxed"
             />
         ),
+        li: (props) => (
+            <li
+                {...props}
+                className="text-lg text-primary/80 mb-1 leading-relaxed"
+            />
+        ),
         ...components,
     };
 }

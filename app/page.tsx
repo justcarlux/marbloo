@@ -1,5 +1,5 @@
-import GrammarLessonList from "./components/lesson/GrammarLessonList";
+import { redirect } from "next/navigation";
 
 export default async function HomePage() {
-    return <GrammarLessonList />;
+    redirect("/learning/grammar");
 }

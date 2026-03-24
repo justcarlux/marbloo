@@ -35,7 +35,6 @@
     ".next/types/**/*.ts",
     ".next/dev/types/**/*.ts",
     "**/*.mts",
-    "app/components/question/QuestionComponentFactory.txs"
   ],
   "exclude": [
     "node_modules"

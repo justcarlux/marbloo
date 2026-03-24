@@ -1,6 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
+import { Route } from "next";
 import Link from "next/link";
 import { IconType } from "react-icons";
 
@@ -8,7 +9,7 @@ interface LessonEntry {
     title: React.ReactNode;
     description: string;
     icon: IconType;
-    href: string;
+    href: Route;
 }
 
 interface LessonCategory {
@@ -81,7 +82,7 @@ export default function LessonList({ categories }: LessonListProps) {
                                                 }}
                                                 whileHover={{ scale: 1.02 }}
                                                 whileTap={{ scale: 0.98 }}
-                                                className="group relative overflow-hidden flex-1 min-w-60 sm:max-w-60 w-full sm:h-65 h-fit border-4 border-secondary rounded-2xl cursor-pointer transition-colors hover:border-primary bg-accent flex flex-col items-center justify-start text-center p-6"
+                                                className="relative overflow-hidden flex-1 min-w-60 sm:max-w-60 w-full sm:h-65 h-fit border-4 border-secondary rounded-2xl cursor-pointer transition-colors hover:border-primary bg-accent flex flex-col items-center justify-start text-center p-6"
                                             >
                                                 <Icon className="w-12 h-12 text-primary group-hover:text-primary transition-colors mt-2 mb-4 shrink-0" />
                                                 <h3 className="text-xl font-bold text-primary mb-2 leading-tight px-2">

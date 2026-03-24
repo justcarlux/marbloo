@@ -3,18 +3,9 @@ import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
     pageExtensions: ["js", "jsx", "md", "mdx", "ts", "tsx"],
+    typedRoutes: true,
 };
 
-/** @type {import('remark-gfm').Options} */
-const remarkGFMOptions = {
-    singleTilde: false,
-};
-
-const withMDX = createMDX({
-    options: {
-        remarkPlugins: [["remark-gfm", remarkGFMOptions]],
-        rehypePlugins: [],
-    },
-});
+const withMDX = createMDX();
 
 export default withMDX(nextConfig);

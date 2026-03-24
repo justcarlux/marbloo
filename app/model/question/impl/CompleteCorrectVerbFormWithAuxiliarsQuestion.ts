@@ -18,6 +18,7 @@ export default class CompleteCorrectVerbFormWithAuxiliarsQuestion extends Comple
     private readonly isFuture;
 
     public constructor({
+        id,
         data,
         type,
         continuousType,
@@ -29,6 +30,7 @@ export default class CompleteCorrectVerbFormWithAuxiliarsQuestion extends Comple
         isFuture: boolean;
     }) {
         super({
+            id,
             type,
             data,
         });
