@@ -46,3 +46,8 @@ model Question {
   type QuestionType
   data Json
 }
+
+model PracticeQuestionSet {
+  id        String   @id @default(uuid())
+  questions String[]
+}
