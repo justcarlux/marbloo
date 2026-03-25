@@ -15,7 +15,7 @@ export default function BottomToolbar() {
 
     return (
         <div className="fixed z-20 bottom-3 right-3 flex gap-2">
-            <AnimatePresence mode="wait">
+            <AnimatePresence mode="sync">
                 {backPath && (
                     <motion.div
                         key="back"
