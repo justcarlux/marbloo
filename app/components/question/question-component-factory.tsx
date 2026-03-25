@@ -4,12 +4,11 @@ import { QuestionData } from "@/app/model/question/QuestionInstance";
 import { Question } from "@/generated/prisma/client";
 import { QuestionType } from "@/generated/prisma/enums";
 import CompleteMissingPhraseQuestionForm from "./impl/CompleteMissingPhraseQuestionForm";
-import { HandleCorrectFunction, HandleNextFunction } from "./QuestionSet";
 
 const completeMissingPhraseQuestionFormComponentProvider = (
     data: QuestionData<unknown>,
-    handleCorrect: HandleCorrectFunction,
-    handleNextQuestion: HandleNextFunction,
+    handleCorrect: () => void,
+    handleNextQuestion: () => void,
 ) => {
     return (
         <CompleteMissingPhraseQuestionForm
@@ -28,8 +27,8 @@ const completeMissingPhraseQuestionFormComponentProvider = (
 const componentProviders: {
     [key in QuestionType]: (
         data: QuestionData<unknown>,
-        handleOnCorrect: HandleCorrectFunction,
-        handleNextQuestion: HandleNextFunction,
+        handleOnCorrect: () => void,
+        handleNextQuestion: () => void,
     ) => React.ReactElement;
 } = {
     // Simple tenses
@@ -88,8 +87,8 @@ const componentProviders: {
 
 export function createComponentForQuestionData(
     data: QuestionData<unknown> | Question,
-    handleCorrect: HandleCorrectFunction,
-    handleNextQuestion: HandleNextFunction,
+    handleCorrect: () => void,
+    handleNextQuestion: () => void,
 ) {
     return componentProviders[data.type](
         data,

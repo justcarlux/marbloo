@@ -3,6 +3,7 @@ import { ThemeProvider } from "next-themes";
 import { ToastContainer } from "react-toastify";
 import BottomToolbar from "./components/ui/BottomToolbar";
 import "./globals.css";
+import { BottomToolbarContextProvider } from "./contexts/BottomToolbarContext";
 
 export const metadata: Metadata = {
     title: "Marbloo",
@@ -15,12 +16,14 @@ export default function RootLayout({
 }>) {
     return (
         <html lang="en" suppressHydrationWarning>
-            <body className={`antialiased`}>
+            <body className="antialiased">
                 <div className="bg-surface transition-colors">
                     <ThemeProvider attribute="class">
-                        <BottomToolbar />
-                        <ToastContainer />
-                        {children}
+                        <BottomToolbarContextProvider>
+                            <BottomToolbar />
+                            <ToastContainer />
+                            {children}
+                        </BottomToolbarContextProvider>
                     </ThemeProvider>
                 </div>
             </body>

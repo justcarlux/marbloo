@@ -14,6 +14,8 @@
     "@next/mdx": "^16.2.1",
     "@prisma/adapter-pg": "^7.5.0",
     "@prisma/client": "^7.5.0",
+    "@supabase/ssr": "^0.9.0",
+    "@supabase/supabase-js": "^2.100.0",
     "@tailwindcss/typography": "^0.5.19",
     "@types/mdx": "^2.0.13",
     "fastest-levenshtein": "^1.0.16",

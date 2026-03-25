@@ -1,8 +1,8 @@
 "use client";
 
+import { useBottomToolbar } from "@/app/contexts/BottomToolbarContext";
 import { motion } from "framer-motion";
 import { Route } from "next";
-import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect } from "react";
 
@@ -11,16 +11,24 @@ interface LectureLayoutProps {
 }
 
 export default function LectureView({ children }: LectureLayoutProps) {
-    const pathname = usePathname() as Route;
-    const parentRoute = `/${pathname
-        .split("/")
-        .filter(Boolean)
-        .slice(0, -2)
-        .join("/")}` as Route;
-
+    const { setBackPath, setAllowsScrollingToTop } = useBottomToolbar();
+    const pathname = usePathname();
     useEffect(() => {
+        setBackPath(
+            `/${pathname
+                .split("/")
+                .filter(Boolean)
+                .slice(0, -2)
+                .join("/")}` as Route,
+        );
+        setAllowsScrollingToTop(true);
         window.scrollTo({ top: 0 });
-    }, []);
+
+        return () => {
+            setBackPath(null);
+            setAllowsScrollingToTop(false);
+        };
+    }, [pathname, setBackPath, setAllowsScrollingToTop]);
 
     return (
         <div className="min-h-screen px-8 pt-1 pb-8">
@@ -39,21 +47,6 @@ export default function LectureView({ children }: LectureLayoutProps) {
                                 prose-img:rounded-2xl prose-img:shadow-xl"
                 >
                     {children}
-                </motion.div>
-
-                <motion.div
-                    initial={{ opacity: 0 }}
-                    animate={{ opacity: 1 }}
-                    transition={{ delay: 0.4 }}
-                    className="mt-6 pt-8 flex flex-col items-center justify-center"
-                >
-                    <div className="w-full h-0.5 bg-primary rounded-full mb-6" />
-                    <Link
-                        href={parentRoute}
-                        className="w-fit px-8 py-3 bg-secondary text-white rounded-2xl font-bold text-lg hover:scale-102 active:scale-98 transition-all"
-                    >
-                        Go Back
-                    </Link>
                 </motion.div>
             </motion.div>
         </div>

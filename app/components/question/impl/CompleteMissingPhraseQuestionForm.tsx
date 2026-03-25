@@ -17,7 +17,6 @@ import Markdown from "markdown-to-jsx";
 import { useCallback, useEffect, useRef, useState } from "react";
 import { TbBulb, TbBulbOff } from "react-icons/tb";
 import useSound from "use-sound";
-import { HandleCorrectFunction, HandleNextFunction } from "../QuestionSet";
 import QuestionFormBottomPanel from "../QuestionFormBottomPanel";
 
 interface CompleteMissingPhraseQuestionFormProps {
@@ -25,13 +24,13 @@ interface CompleteMissingPhraseQuestionFormProps {
         | CompleteCorrectVerbFormQuestionData
         | CompleteCorrectVerbFormWithAuxiliarsQuestionData
     >;
-    handleCorrect: HandleCorrectFunction;
-    handleNextQuestion: HandleNextFunction;
+    handleCorrect: () => void;
+    handleNextQuestion: () => void;
 }
 
 export default function CompleteMissingPhraseQuestionForm({
     questionData,
-    handleCorrect: handleOnCorrect,
+    handleCorrect,
     handleNextQuestion,
 }: CompleteMissingPhraseQuestionFormProps) {
     const [playSuccess] = useSound("/sfx/success.mp3");
@@ -43,7 +42,6 @@ export default function CompleteMissingPhraseQuestionForm({
     const [answer, setAnswer] = useState("");
     const [result, setResult] =
         useState<CompleteMissingPhraseQuestionResult | null>(null);
-    const [isError, setIsError] = useState(false);
     const inputRef = useRef<HTMLInputElement>(null);
     const questionRef = useRef(
         createQuestionInstance(
@@ -74,21 +72,18 @@ export default function CompleteMissingPhraseQuestionForm({
         if (!answer.trim()) return;
 
         setResult(null);
-        setIsError(false);
 
         const [, questionResult] = questionRef.current.check(answer);
         setResult(questionResult);
-        setIsError(!questionResult.success);
         if (questionResult.success) {
-            handleOnCorrect({ usedHint: showHint });
+            handleCorrect();
             playSuccess();
         } else {
             playFailure();
         }
     }, [
-        showHint,
         answer,
-        handleOnCorrect,
+        handleCorrect,
         handleNextQuestion,
         result,
         playSuccess,
@@ -158,11 +153,7 @@ export default function CompleteMissingPhraseQuestionForm({
                 </AnimatePresence>
             </motion.h2>
 
-            <motion.div
-                className="mb-8"
-                animate={{ scale: result?.success ? 1.05 : 1 }}
-                transition={{ duration: 0.3 }}
-            >
+            <motion.div className="mb-8" transition={{ duration: 0.3 }}>
                 <input
                     ref={inputRef}
                     type="text"
@@ -171,13 +162,12 @@ export default function CompleteMissingPhraseQuestionForm({
                         setAnswer(e.target.value);
                         if (!e.target.value) {
                             setResult(null);
-                            setIsError(false);
                         }
                     }}
                     placeholder="Type your answer..."
                     disabled={result?.success}
                     className={`text-primary w-full p-4 text-2xl border-4 rounded-2xl outline-none text-center font-medium transition-all
-              ${isError ? "border-red-500" : "border-secondary focus:border-green-500 "}`}
+              ${result ? (!result.success ? "border-red-500" : "border-green-500 ") : ""}`}
                 />
             </motion.div>
 

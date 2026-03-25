@@ -6,10 +6,12 @@ import LessonList from "./LessonList";
 export default function GrammarLessonList() {
     return (
         <LessonList
+            category="grammar"
             categories={[
                 {
                     title: "Lectures",
                     icon: TbBook,
+                    cardHeight: 66,
                     entries: [
                         {
                             id: "lecture-verb-to-be",
@@ -69,6 +71,7 @@ export default function GrammarLessonList() {
                 {
                     title: "Practice - Complete the correct verb forms",
                     icon: TbBook,
+                    cardHeight: 70,
                     entries: [
                         {
                             id: "practice-complete-verb-form-simple-tenses",
@@ -77,7 +80,7 @@ export default function GrammarLessonList() {
                                 "Complete the missing verb form in simple tense sentences!",
                             icon: TbBook,
                             action: {
-                                type: "practice-session",
+                                type: "create-question-set",
                                 questionTypes: [
                                     "completePresentSimplePositiveStatementVerbForm",
                                     "completePresentSimpleNegativeStatementVerbForm",
@@ -96,7 +99,7 @@ export default function GrammarLessonList() {
                                 "Complete the missing verb form in continuous tense sentences!",
                             icon: TbBook,
                             action: {
-                                type: "practice-session",
+                                type: "create-question-set",
                                 questionTypes: [
                                     "completePresentContinuousPositiveStatementVerbForm",
                                     "completePresentContinuousNegativeStatementVerbForm",
@@ -115,7 +118,7 @@ export default function GrammarLessonList() {
                                 "Complete the missing verb form in perfect tense sentences!",
                             icon: TbBook,
                             action: {
-                                type: "practice-session",
+                                type: "create-question-set",
                                 questionTypes: [
                                     "completePresentPerfectPositiveStatementVerbForm",
                                     "completePresentPerfectNegativeStatementVerbForm",
@@ -134,7 +137,7 @@ export default function GrammarLessonList() {
                                 "Complete the missing verb form in perfect continuous tense sentences!",
                             icon: TbBook,
                             action: {
-                                type: "practice-session",
+                                type: "create-question-set",
                                 questionTypes: [
                                     "completePresentPerfectContinuousPositiveStatementVerbForm",
                                     "completePresentPerfectContinuousNegativeStatementVerbForm",

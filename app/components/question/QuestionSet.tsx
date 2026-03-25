@@ -1,41 +1,46 @@
 "use client";
 
+import { useBottomToolbar } from "@/app/contexts/BottomToolbarContext";
 import { QuestionData } from "@/app/model/question/QuestionInstance";
+import { QuestionSetCategory, Question } from "@/generated/prisma/client";
 import { motion } from "framer-motion";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { createComponentForQuestionData } from "./question-component-factory";
-import { Question } from "@/generated/prisma/client";
+import { updateQuestionSet } from "@/app/actions/question-sets";
 
 export interface QuestionWrapperProps {
+    category: QuestionSetCategory;
     questions: (QuestionData<unknown> | Question)[];
+    currentQuestionIndex: number;
 }
 
-export type HandleCorrectFunction = ({
-    usedHint,
-}: {
-    usedHint: boolean;
-}) => void;
+export default function QuestionSet({
+    category,
+    questions,
+    currentQuestionIndex: initialCurrentQuestionIndex,
+}: QuestionWrapperProps) {
+    const { setBackPath, setShouldClearQuestionSetOnExit } = useBottomToolbar();
 
-export type HandleNextFunction = () => void;
+    useEffect(() => {
+        setBackPath(`/learning/${category}`);
+        setShouldClearQuestionSetOnExit(true);
 
-export default function QuestionSet({ questions }: QuestionWrapperProps) {
-    const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
+        return () => {
+            setBackPath(null);
+            setShouldClearQuestionSetOnExit(false);
+        };
+    }, [category, setBackPath, setShouldClearQuestionSetOnExit]);
+
+    const [currentQuestionIndex, setCurrentQuestionIndex] = useState(
+        initialCurrentQuestionIndex,
+    );
     const [currentProgressQuestionIndex, setCurrentProgressQuestionIndex] =
-        useState(0);
-    const [questionStats, setQuestionStats] = useState<{
-        [key: string]: { finishedAt: Date; usedHint: boolean };
-    }>({});
+        useState(initialCurrentQuestionIndex);
 
-    const handleCorrect = ({ usedHint }: { usedHint: boolean }) => {
-        setCurrentProgressQuestionIndex((currentValue) => currentValue + 1);
-        const currentQuestion = questions[currentQuestionIndex];
-        setQuestionStats((currentValue) => ({
-            ...currentValue,
-            [currentQuestion.id]: {
-                finishedAt: new Date(),
-                usedHint,
-            },
-        }));
+    const handleCorrect = async () => {
+        const newQuestionIndex = currentQuestionIndex + 1;
+        setCurrentProgressQuestionIndex(newQuestionIndex);
+        await updateQuestionSet({ currentQuestionIndex: newQuestionIndex });
     };
 
     const handleNextQuestion = () => {

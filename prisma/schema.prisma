@@ -41,13 +41,19 @@ enum QuestionType {
   completeFuturePerfectContinuousNegativeStatementVerbForm
 }
 
+enum QuestionSetCategory {
+  grammar
+}
+
 model Question {
   id   String       @id
   type QuestionType
   data Json
 }
 
-model PracticeQuestionSet {
-  id        String   @id @default(uuid())
-  questions String[]
+model QuestionSet {
+  userId               String              @id
+  type                 QuestionSetCategory
+  questions            String[]
+  currentQuestionIndex Int
 }
