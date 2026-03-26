@@ -54,12 +54,19 @@ export default abstract class QuestionInstance<T> {
         return this._type;
     }
 
-    public prefixWithAcknowledgementPhrase(input: string) {
-        return `${
-            acknowledgementPhrases[
-                Math.floor(Math.random() * acknowledgementPhrases.length)
-            ]
-        } ${input}`;
+    public prefixWithAcknowledgementPhrase(content: React.ReactNode) {
+        return (
+            <>
+                {
+                    acknowledgementPhrases[
+                        Math.floor(
+                            Math.random() * acknowledgementPhrases.length,
+                        )
+                    ]
+                }{" "}
+                {content}
+            </>
+        );
     }
 
     public isCloseToCorrectWord(input: string, correctWord: string) {

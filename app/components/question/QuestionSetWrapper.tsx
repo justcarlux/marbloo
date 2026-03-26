@@ -1,50 +1,76 @@
 "use client";
 
+import { updateQuestionSet } from "@/app/actions/question-sets";
 import { useBottomToolbar } from "@/app/contexts/BottomToolbarContext";
 import { QuestionData } from "@/app/model/question/QuestionInstance";
-import { QuestionSetCategory, Question } from "@/generated/prisma/client";
+import type { Question, QuestionSet } from "@/generated/prisma/client";
 import { motion } from "framer-motion";
 import { useEffect, useState } from "react";
 import { createComponentForQuestionData } from "./question-component-factory";
-import { updateQuestionSet } from "@/app/actions/question-sets";
 
 export interface QuestionWrapperProps {
-    category: QuestionSetCategory;
+    questionSet: QuestionSet;
     questions: (QuestionData<unknown> | Question)[];
-    currentQuestionIndex: number;
 }
 
-export default function QuestionSet({
-    category,
+export default function QuestionSetWrapper({
+    questionSet: initialQuestionSet,
     questions,
-    currentQuestionIndex: initialCurrentQuestionIndex,
 }: QuestionWrapperProps) {
+    const [questionSet, setQuestionSet] = useState({ ...initialQuestionSet });
     const { setBackPath, setShouldClearQuestionSetOnExit } = useBottomToolbar();
 
     useEffect(() => {
-        setBackPath(`/learning/${category}`);
+        if (!initialQuestionSet.currentQuestionStartedAt) {
+            // eslint-disable-next-line react-hooks/set-state-in-effect
+            setQuestionSet((q) => ({
+                ...q,
+                currentQuestionStartedAt: new Date(),
+            }));
+        }
+    }, [initialQuestionSet.currentQuestionStartedAt]);
+
+    useEffect(() => {
+        updateQuestionSet({
+            currentQuestionIndex: questionSet.currentQuestionIndex,
+            currentQuestionHasUsedHint: questionSet.currentQuestionHasUsedHint,
+            currentQuestionStartedAt: questionSet.currentQuestionStartedAt,
+        });
+    }, [questionSet]);
+
+    useEffect(() => {
+        setBackPath(`/learning/${questionSet.type}`);
         setShouldClearQuestionSetOnExit(true);
 
         return () => {
             setBackPath(null);
             setShouldClearQuestionSetOnExit(false);
         };
-    }, [category, setBackPath, setShouldClearQuestionSetOnExit]);
+    }, [questionSet, setBackPath, setShouldClearQuestionSetOnExit]);
 
     const [currentQuestionIndex, setCurrentQuestionIndex] = useState(
-        initialCurrentQuestionIndex,
+        initialQuestionSet.currentQuestionIndex,
     );
     const [currentProgressQuestionIndex, setCurrentProgressQuestionIndex] =
-        useState(initialCurrentQuestionIndex);
+        useState(initialQuestionSet.currentQuestionIndex);
 
     const handleCorrect = async () => {
         const newQuestionIndex = currentQuestionIndex + 1;
         setCurrentProgressQuestionIndex(newQuestionIndex);
-        await updateQuestionSet({ currentQuestionIndex: newQuestionIndex });
+        setQuestionSet({
+            ...questionSet,
+            currentQuestionIndex: newQuestionIndex,
+            currentQuestionHasUsedHint: false,
+            currentQuestionStartedAt: null,
+        });
     };
 
     const handleNextQuestion = () => {
         setCurrentQuestionIndex((currentValue) => currentValue + 1);
+        setQuestionSet({
+            ...questionSet,
+            currentQuestionStartedAt: new Date(),
+        });
     };
 
     return (
@@ -65,7 +91,7 @@ export default function QuestionSet({
                         transition={{ duration: 0.5 }}
                     />
                 </div>
-                <div className="font-bold text-xl">
+                <div className="font-bold text-lg sm:text-xl">
                     {currentQuestionIndex + 1}/{questions.length}
                 </div>
             </motion.div>
@@ -79,6 +105,7 @@ export default function QuestionSet({
                     <div key={currentQuestionIndex}>
                         {createComponentForQuestionData(
                             questions[currentQuestionIndex],
+                            questionSet,
                             handleCorrect,
                             handleNextQuestion,
                         )}

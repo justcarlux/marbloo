@@ -29,7 +29,7 @@ export default function LoadingOverlay({ show }: LoadingOverlayProps) {
                     exit={{ opacity: 0 }}
                 >
                     <OrbitProgress dense size="medium" color="#32b5c7" />
-                    <p className="text-2xl font-medium text-primary">
+                    <p className="text-xl sm:text-2xl font-medium text-primary">
                         Loading...
                     </p>
                 </motion.div>

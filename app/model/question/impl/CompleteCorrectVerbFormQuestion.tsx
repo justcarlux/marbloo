@@ -43,7 +43,10 @@ export default class CompleteCorrectVerbFormQuestion extends CompleteMissingPhra
                 {
                     success: true,
                     message: this.prefixWithAcknowledgementPhrase(
-                        `The correct verb form for this sentence is: **${this.data.correctForm}**`,
+                        <>
+                            The correct verb form for this sentence is:{" "}
+                            <b>{this.data.correctForm}</b>
+                        </>,
                     ),
                 },
             ];

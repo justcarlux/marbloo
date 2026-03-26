@@ -10,7 +10,7 @@ export interface CompleteMissingPhraseQuestionData {
 
 export interface CompleteMissingPhraseQuestionResult {
     success: boolean;
-    message?: string;
+    message?: React.ReactNode;
 }
 
 export default class CompleteMissingPhraseQuestion<

@@ -13,23 +13,26 @@ import {
 import { QuestionData } from "@/app/model/question/QuestionInstance";
 import { isButtonDebounceExpired } from "@/app/utils/button-debounce";
 import { AnimatePresence, motion } from "framer-motion";
-import Markdown from "markdown-to-jsx";
 import { useCallback, useEffect, useRef, useState } from "react";
 import { TbBulb, TbBulbOff } from "react-icons/tb";
 import useSound from "use-sound";
 import QuestionFormBottomPanel from "../QuestionFormBottomPanel";
+import { QuestionSet } from "@/generated/prisma/client";
+import { updateQuestionSet } from "@/app/actions/question-sets";
 
 interface CompleteMissingPhraseQuestionFormProps {
     questionData: QuestionData<
         | CompleteCorrectVerbFormQuestionData
         | CompleteCorrectVerbFormWithAuxiliarsQuestionData
     >;
+    questionSet: QuestionSet;
     handleCorrect: () => void;
     handleNextQuestion: () => void;
 }
 
 export default function CompleteMissingPhraseQuestionForm({
     questionData,
+    questionSet,
     handleCorrect,
     handleNextQuestion,
 }: CompleteMissingPhraseQuestionFormProps) {
@@ -38,7 +41,9 @@ export default function CompleteMissingPhraseQuestionForm({
     const [playHint] = useSound("/sfx/hint.mp3");
 
     const [lastSubmitted, setLastSubmitted] = useState(0);
-    const [showHint, setShowHint] = useState(false);
+    const [showHint, setShowHint] = useState(
+        questionSet.currentQuestionHasUsedHint,
+    );
     const [answer, setAnswer] = useState("");
     const [result, setResult] =
         useState<CompleteMissingPhraseQuestionResult | null>(null);
@@ -53,12 +58,13 @@ export default function CompleteMissingPhraseQuestionForm({
         inputRef.current?.focus();
     }, []);
 
-    const handleShowHint = useCallback(() => {
-        if (showHint) return;
+    const handleShowHint = useCallback(async () => {
+        if (showHint || result?.success) return;
 
         playHint();
         setShowHint(true);
-    }, [showHint, playHint]);
+        await updateQuestionSet({ currentQuestionHasUsedHint: true });
+    }, [showHint, playHint, result]);
 
     const handleSubmit = useCallback(() => {
         if (result && result.success) {
@@ -112,7 +118,7 @@ export default function CompleteMissingPhraseQuestionForm({
     return (
         <>
             <motion.h2
-                className="text-4xl text-primary mb-8 leading-tight"
+                className="text-3xl sm:text-4xl text-primary mb-8 leading-tight"
                 initial={{ y: -20, opacity: 0 }}
                 animate={{ y: 0, opacity: 1 }}
             >
@@ -126,7 +132,7 @@ export default function CompleteMissingPhraseQuestionForm({
                     </span>
                     <span>{questionData.data.rightSide}</span>
                     <div className="inline-block ml-3" onClick={handleShowHint}>
-                        {showHint ? (
+                        {showHint || result?.success ? (
                             <TbBulb size={25} />
                         ) : (
                             <TbBulbOff
@@ -166,7 +172,7 @@ export default function CompleteMissingPhraseQuestionForm({
                     }}
                     placeholder="Type your answer..."
                     disabled={result?.success}
-                    className={`text-primary w-full p-4 text-2xl border-4 rounded-2xl outline-none text-center font-medium transition-all
+                    className={`text-primary w-full p-3 sm:p-4 text-xl sm:text-2xl border-3 sm:border-4 rounded-2xl outline-none text-center font-medium transition-all
               ${result ? (!result.success ? "border-red-500" : "border-green-500 ") : ""}`}
                 />
             </motion.div>
@@ -181,7 +187,7 @@ export default function CompleteMissingPhraseQuestionForm({
                             exit={{ opacity: 0, y: -20 }}
                             className="mt-5 p-4 bg-success-bg text-success-fg rounded-xl border-2 border-success-fg font-medium"
                         >
-                            <Markdown>{result.message!}</Markdown>
+                            {result.message!}
                         </motion.div>
                     ) : (
                         <motion.div

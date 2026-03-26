@@ -9,12 +9,11 @@ export default function GrammarLessonList() {
             category="grammar"
             categories={[
                 {
-                    title: "Lectures",
+                    title: "Lectures:",
+                    description: "Read and learn!",
                     icon: TbBook,
-                    cardHeight: 66,
                     entries: [
                         {
-                            id: "lecture-verb-to-be",
                             title: 'Verb "To Be"',
                             description:
                                 "Build your foundation with the most essential verb.",
@@ -25,7 +24,6 @@ export default function GrammarLessonList() {
                             },
                         },
                         {
-                            id: "lecture-simple-tenses",
                             title: "Simple Tenses",
                             description: "Express actions and states.",
                             icon: TbBook,
@@ -35,7 +33,6 @@ export default function GrammarLessonList() {
                             },
                         },
                         {
-                            id: "lecture-simple-tenses",
                             title: "Continuous Tenses",
                             description:
                                 "Describe actions happening right now or over time.",
@@ -46,7 +43,6 @@ export default function GrammarLessonList() {
                             },
                         },
                         {
-                            id: "lecture-simple-tenses",
                             title: "Perfect Tenses",
                             description: "Connect the past to the present.",
                             icon: TbBook,
@@ -56,7 +52,6 @@ export default function GrammarLessonList() {
                             },
                         },
                         {
-                            id: "lecture-simple-tenses",
                             title: "Perfect Continuous Tenses",
                             description:
                                 "Focus on the duration of ongoing actions.",
@@ -69,84 +64,245 @@ export default function GrammarLessonList() {
                     ],
                 },
                 {
-                    title: "Practice - Complete the correct verb forms",
+                    title: "Simple Tenses Practice:",
+                    description: "Complete statements and make questions!",
                     icon: TbBook,
-                    cardHeight: 70,
                     entries: [
                         {
-                            id: "practice-complete-verb-form-simple-tenses",
-                            title: "Simple Tenses",
+                            title: (
+                                <div>
+                                    <div>Complete:</div>
+                                    <div>Simple Present</div>
+                                </div>
+                            ),
                             description:
-                                "Complete the missing verb form in simple tense sentences!",
+                                "Complete positive and negative verb forms in simple present sentences!",
                             icon: TbBook,
                             action: {
                                 type: "create-question-set",
                                 questionTypes: [
                                     "completePresentSimplePositiveStatementVerbForm",
                                     "completePresentSimpleNegativeStatementVerbForm",
-                                    "completePastSimplePositiveStatementVerbForm",
-                                    "completePastSimpleNegativeStatementVerbForm",
-                                    "completeFutureSimplePositiveStatementVerbForm",
-                                    "completeFutureSimpleNegativeStatementVerbForm",
                                 ],
-                                limit: 20,
                             },
                         },
                         {
-                            id: "practice-complete-verb-form-continuous-tenses",
-                            title: "Continuous Tenses",
+                            title: (
+                                <div>
+                                    <div>Complete:</div>
+                                    <div>Simple Past</div>
+                                </div>
+                            ),
                             description:
-                                "Complete the missing verb form in continuous tense sentences!",
+                                "Complete positive and negative verb forms in simple past sentences!",
+                            icon: TbBook,
+                            action: {
+                                type: "create-question-set",
+                                questionTypes: [
+                                    "completePastSimplePositiveStatementVerbForm",
+                                    "completePastSimpleNegativeStatementVerbForm",
+                                ],
+                            },
+                        },
+                        {
+                            title: (
+                                <div>
+                                    <div>Complete:</div>
+                                    <div>Simple Future</div>
+                                </div>
+                            ),
+                            description:
+                                "Complete positive and negative verb forms in simple future sentences!",
+                            icon: TbBook,
+                            action: {
+                                type: "create-question-set",
+                                questionTypes: [
+                                    "completeFutureSimplePositiveStatementVerbForm",
+                                    "completeFutureSimpleNegativeStatementVerbForm",
+                                ],
+                            },
+                        },
+                    ],
+                },
+                {
+                    title: "Continuous Tenses Practice:",
+                    description: "Complete statements and make questions!",
+                    icon: TbBook,
+                    entries: [
+                        {
+                            title: (
+                                <div>
+                                    <div>Complete:</div>
+                                    <div>Present Continuous</div>
+                                </div>
+                            ),
+                            description:
+                                "Complete positive and negative verb forms in present continuous sentences!",
                             icon: TbBook,
                             action: {
                                 type: "create-question-set",
                                 questionTypes: [
                                     "completePresentContinuousPositiveStatementVerbForm",
                                     "completePresentContinuousNegativeStatementVerbForm",
-                                    "completePastContinuousPositiveStatementVerbForm",
-                                    "completePastContinuousNegativeStatementVerbForm",
-                                    "completeFutureContinuousPositiveStatementVerbForm",
-                                    "completeFutureContinuousNegativeStatementVerbForm",
                                 ],
-                                limit: 20,
                             },
                         },
                         {
-                            id: "practice-complete-verb-form-perfect-tenses",
-                            title: "Perfect Tenses",
+                            title: (
+                                <div>
+                                    <div>Complete:</div>
+                                    <div>Past Continuous</div>
+                                </div>
+                            ),
                             description:
-                                "Complete the missing verb form in perfect tense sentences!",
+                                "Complete positive and negative verb forms in past continuous sentences!",
+                            icon: TbBook,
+                            action: {
+                                type: "create-question-set",
+                                questionTypes: [
+                                    "completePastContinuousPositiveStatementVerbForm",
+                                    "completePastContinuousNegativeStatementVerbForm",
+                                ],
+                            },
+                        },
+                        {
+                            title: (
+                                <div>
+                                    <div>Complete:</div>
+                                    <div>Future Continuous</div>
+                                </div>
+                            ),
+                            description:
+                                "Complete positive and negative verb forms in future continuous sentences!",
+                            icon: TbBook,
+                            action: {
+                                type: "create-question-set",
+                                questionTypes: [
+                                    "completeFutureContinuousPositiveStatementVerbForm",
+                                    "completeFutureContinuousNegativeStatementVerbForm",
+                                ],
+                            },
+                        },
+                    ],
+                },
+                {
+                    title: "Perfect Tenses Practice:",
+                    description: "Complete statements and make questions!",
+                    icon: TbBook,
+                    entries: [
+                        {
+                            title: (
+                                <div>
+                                    <div>Complete:</div>
+                                    <div>Present Perfect</div>
+                                </div>
+                            ),
+                            description:
+                                "Complete positive and negative verb forms in present perfect sentences!",
                             icon: TbBook,
                             action: {
                                 type: "create-question-set",
                                 questionTypes: [
                                     "completePresentPerfectPositiveStatementVerbForm",
                                     "completePresentPerfectNegativeStatementVerbForm",
-                                    "completePastPerfectPositiveStatementVerbForm",
-                                    "completePastPerfectNegativeStatementVerbForm",
-                                    "completeFuturePerfectPositiveStatementVerbForm",
-                                    "completeFuturePerfectNegativeStatementVerbForm",
                                 ],
-                                limit: 20,
                             },
                         },
                         {
-                            id: "practice-complete-verb-form-perfect-continuous-tenses",
-                            title: "Perfect Continuous Tenses",
+                            title: (
+                                <div>
+                                    <div>Complete:</div>
+                                    <div>Past Perfect</div>
+                                </div>
+                            ),
                             description:
-                                "Complete the missing verb form in perfect continuous tense sentences!",
+                                "Complete positive and negative verb forms in past perfect sentences!",
+                            icon: TbBook,
+                            action: {
+                                type: "create-question-set",
+                                questionTypes: [
+                                    "completePastPerfectPositiveStatementVerbForm",
+                                    "completePastPerfectNegativeStatementVerbForm",
+                                ],
+                            },
+                        },
+                        {
+                            title: (
+                                <div>
+                                    <div>Complete:</div>
+                                    <div>Future Perfect</div>
+                                </div>
+                            ),
+                            description:
+                                "Complete positive and negative verb forms in future perfect sentences!",
+                            icon: TbBook,
+                            action: {
+                                type: "create-question-set",
+                                questionTypes: [
+                                    "completeFuturePerfectPositiveStatementVerbForm",
+                                    "completeFuturePerfectNegativeStatementVerbForm",
+                                ],
+                            },
+                        },
+                    ],
+                },
+                {
+                    title: "Perfect Continuous Tenses Practice:",
+                    description: "Complete statements and make questions!",
+                    icon: TbBook,
+                    entries: [
+                        {
+                            title: (
+                                <div>
+                                    <div>Complete:</div>
+                                    <div>Present Perfect Continuous</div>
+                                </div>
+                            ),
+                            description:
+                                "Complete positive and negative verb forms in present perfect continuous sentences!",
                             icon: TbBook,
                             action: {
                                 type: "create-question-set",
                                 questionTypes: [
                                     "completePresentPerfectContinuousPositiveStatementVerbForm",
                                     "completePresentPerfectContinuousNegativeStatementVerbForm",
+                                ],
+                            },
+                        },
+                        {
+                            title: (
+                                <div>
+                                    <div>Complete:</div>
+                                    <div>Past Perfect Continuous</div>
+                                </div>
+                            ),
+                            description:
+                                "Complete positive and negative verb forms in past perfect continuous sentences!",
+                            icon: TbBook,
+                            action: {
+                                type: "create-question-set",
+                                questionTypes: [
                                     "completePastPerfectContinuousPositiveStatementVerbForm",
                                     "completePastPerfectContinuousNegativeStatementVerbForm",
+                                ],
+                            },
+                        },
+                        {
+                            title: (
+                                <div>
+                                    <div>Complete:</div>
+                                    <div>Future Perfect Continuous</div>
+                                </div>
+                            ),
+                            description:
+                                "Complete positive and negative verb forms in future perfect continuous sentences!",
+                            icon: TbBook,
+                            action: {
+                                type: "create-question-set",
+                                questionTypes: [
                                     "completeFuturePerfectContinuousPositiveStatementVerbForm",
                                     "completeFuturePerfectContinuousNegativeStatementVerbForm",
                                 ],
-                                limit: 20,
                             },
                         },
                     ],

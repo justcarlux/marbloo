@@ -16,11 +16,11 @@ const BottomToolbarContext = createContext<BottomToolbarContextType | null>(
     null,
 );
 
-export const BottomToolbarContextProvider = ({
+export function BottomToolbarContextProvider({
     children,
 }: {
     children: React.ReactNode;
-}) => {
+}) {
     const [backPath, setBackPath] = useState<Route | null>(null);
     const [shouldClearQuestionSetOnExit, setShouldClearQuestionSetOnExit] =
         useState(false);
@@ -40,7 +40,7 @@ export const BottomToolbarContextProvider = ({
             {children}
         </BottomToolbarContext.Provider>
     );
-};
+}
 
 export const useBottomToolbar = () => {
     const context = useContext(BottomToolbarContext);

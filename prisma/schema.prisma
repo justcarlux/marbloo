@@ -52,8 +52,10 @@ model Question {
 }
 
 model QuestionSet {
-  userId               String              @id
-  type                 QuestionSetCategory
-  questions            String[]
-  currentQuestionIndex Int
+  userId                     String              @id
+  type                       QuestionSetCategory
+  questions                  String[]
+  currentQuestionIndex       Int
+  currentQuestionHasUsedHint Boolean
+  currentQuestionStartedAt   DateTime?
 }

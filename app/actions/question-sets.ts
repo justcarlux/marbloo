@@ -5,7 +5,7 @@ import prisma from "@/lib/prisma";
 import { distributeTotal } from "../utils/distribute-total";
 import { shuffleArray } from "../utils/shuffle-array";
 
-export type CreateQuestionSetErrorReason = "limit_too_short";
+export type CreateQuestionSetErrorReason = "amount_too_short";
 
 export type CreateQuestionSetResponse =
     | {
@@ -19,16 +19,16 @@ export type CreateQuestionSetResponse =
 export async function createQuestionSet(
     types: QuestionType[],
     category: QuestionSetCategory,
-    limit: number,
+    amount: number,
 ): Promise<CreateQuestionSetResponse> {
-    if (limit < 20) {
+    if (amount < 20) {
         return {
             success: false,
-            reason: "limit_too_short",
+            reason: "amount_too_short",
         };
     }
 
-    const distribution = distributeTotal(limit, types.length);
+    const distribution = distributeTotal(amount, types.length);
     const questions = shuffleArray(
         (
             await Promise.all(
@@ -56,6 +56,7 @@ export async function createQuestionSet(
             type: category,
             questions,
             currentQuestionIndex: 0,
+            currentQuestionHasUsedHint: false,
         },
     });
 
@@ -71,7 +72,7 @@ export async function updateQuestionSet({
 }: {
     currentQuestionIndex?: number;
     currentQuestionHasUsedHint?: boolean;
-    currentQuestionStartedAt?: Date;
+    currentQuestionStartedAt?: Date | null;
 }) {
     await prisma.questionSet.update({
         where: {
@@ -79,6 +80,8 @@ export async function updateQuestionSet({
         },
         data: {
             currentQuestionIndex,
+            currentQuestionHasUsedHint,
+            currentQuestionStartedAt,
         },
     });
 }

@@ -54,7 +54,12 @@ export default class CompleteCorrectVerbFormWithAuxiliarsQuestion extends Comple
                 {
                     success: true,
                     message: this.prefixWithAcknowledgementPhrase(
-                        `The correct verb form for this sentence is: **${auxiliary.join(" ")} ${this.data.correctForm}**`,
+                        <>
+                            The correct verb form for this sentence is:{" "}
+                            <b>
+                                {auxiliary.join(" ")} {this.data.correctForm}
+                            </b>
+                        </>,
                     ),
                 },
             ];

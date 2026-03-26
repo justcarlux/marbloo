@@ -31,7 +31,7 @@ export default function LectureView({ children }: LectureLayoutProps) {
     }, [pathname, setBackPath, setAllowsScrollingToTop]);
 
     return (
-        <div className="min-h-screen px-8 pt-1 pb-8">
+        <div className="min-h-screen px-6 sm:px-8 pt-1 pb-16">
             <motion.div
                 className="max-w-4xl mx-auto"
                 initial={{ opacity: 0, y: 20 }}

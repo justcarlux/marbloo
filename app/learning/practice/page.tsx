@@ -1,4 +1,4 @@
-import QuestionSet from "@/app/components/question/QuestionSet";
+import QuestionSetWrapper from "@/app/components/question/QuestionSetWrapper";
 import prisma from "@/lib/prisma";
 import { notFound } from "next/navigation";
 
@@ -17,10 +17,6 @@ export default async function GrammarPracticePage() {
         questionSet.questions,
     );
     return (
-        <QuestionSet
-            category={questionSet.type}
-            questions={questions}
-            currentQuestionIndex={questionSet.currentQuestionIndex}
-        />
+        <QuestionSetWrapper questionSet={questionSet} questions={questions} />
     );
 }

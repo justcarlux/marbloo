@@ -8,12 +8,12 @@
     --color-primary: var(--color-gray-700);
     --color-secondary: var(--color-gray-500);
     --color-accent: var(--color-blue-100);
-    --color-highlight: var(--color-blue-200);
+    --color-highlight: var(--color-blue-300);
 
     --color-progress-bg: var(--color-gray-300);
     --color-hint-fg: var(--color-blue-600);
-    --color-hint-bg: var(--color-blue-300);
-    --color-success-fg: var(--color-green-500);
+    --color-hint-bg: var(--color-blue-200);
+    --color-success-fg: var(--color-green-600);
     --color-success-bg: var(--color-green-200);
     --color-error-fg: var(--color-red-500);
     --color-error-bg: var(--color-red-200);

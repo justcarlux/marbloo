@@ -1,12 +1,13 @@
 import { CompleteCorrectVerbFormQuestionData } from "@/app/model/question/impl/CompleteCorrectVerbFormQuestion";
 import { CompleteCorrectVerbFormWithAuxiliarsQuestionData } from "@/app/model/question/impl/CompleteCorrectVerbFormWithAuxiliarsQuestion";
 import { QuestionData } from "@/app/model/question/QuestionInstance";
-import { Question } from "@/generated/prisma/client";
+import { Question, QuestionSet } from "@/generated/prisma/client";
 import { QuestionType } from "@/generated/prisma/enums";
 import CompleteMissingPhraseQuestionForm from "./impl/CompleteMissingPhraseQuestionForm";
 
 const completeMissingPhraseQuestionFormComponentProvider = (
     data: QuestionData<unknown>,
+    questionSet: QuestionSet,
     handleCorrect: () => void,
     handleNextQuestion: () => void,
 ) => {
@@ -18,6 +19,7 @@ const completeMissingPhraseQuestionFormComponentProvider = (
                     | CompleteCorrectVerbFormWithAuxiliarsQuestionData
                 >
             }
+            questionSet={questionSet}
             handleCorrect={handleCorrect}
             handleNextQuestion={handleNextQuestion}
         />
@@ -27,6 +29,7 @@ const completeMissingPhraseQuestionFormComponentProvider = (
 const componentProviders: {
     [key in QuestionType]: (
         data: QuestionData<unknown>,
+        questionSet: QuestionSet,
         handleOnCorrect: () => void,
         handleNextQuestion: () => void,
     ) => React.ReactElement;
@@ -87,11 +90,13 @@ const componentProviders: {
 
 export function createComponentForQuestionData(
     data: QuestionData<unknown> | Question,
+    questionSet: QuestionSet,
     handleCorrect: () => void,
     handleNextQuestion: () => void,
 ) {
     return componentProviders[data.type](
         data,
+        questionSet,
         handleCorrect,
         handleNextQuestion,
     );
