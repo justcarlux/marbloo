@@ -84,9 +84,15 @@ function LessonEntry({
             whileTap={{
                 scale: loading ? 1.0 : 0.98,
             }}
-            className={`${!loading && "hover:border-primary cursor-pointer"} relative overflow-hidden flex-1 min-w-60 sm:max-w-60 w-full not-sm:h-fit h-full border-4 border-secondary rounded-2xl transition-colors bg-accent flex flex-col items-center justify-start text-center px-3 py-4 sm:p-6`}
+            className={`${!loading && "hover:border-primary cursor-pointer"} relative overflow-hidden
+                        flex-1 min-w-60 sm:max-w-60 w-full not-sm:h-fit h-full border-4 border-secondary
+                        rounded-2xl transition-colors bg-accent flex flex-col items-center justify-start
+                        text-center px-3 py-4 sm:p-6`}
         >
-            <Icon className="w-12 h-12 text-primary group-hover:text-primary transition-colors mb-4 shrink-0" />
+            <Icon
+                className="w-12 h-12 text-primary group-hover:text-primary transition-colors
+                            mb-4 shrink-0"
+            />
             <h3 className="text-lg sm:text-xl font-bold text-primary mb-2 leading-tight px-2">
                 {title}
             </h3>
@@ -148,7 +154,8 @@ function LessonCategory({
     return (
         <section>
             <motion.h2
-                className="text-3xl sm:text-4xl text-primary leading-tight font-medium sm:text-left text-center"
+                className="text-3xl sm:text-4xl text-primary leading-tight font-medium
+                            sm:text-left text-center"
                 initial={{ opacity: 0, x: -20 }}
                 animate={{ opacity: 1, x: 0 }}
             >
@@ -223,14 +230,14 @@ export default function LessonList({ category, categories }: LessonListProps) {
         async (types: QuestionType[], amount: number) => {
             setLoading(true);
             try {
-                await wait(1_000);
+                await wait(1_500);
                 const questionSetResponse = await createQuestionSet({
                     types,
                     category,
                     amount,
                 });
                 if (questionSetResponse.success) {
-                    router.push(`/learning/practice` as Route);
+                    router.push("/learning/practice");
                 } else {
                     console.error(questionSetResponse.error);
                     toast(errorMessages[questionSetResponse.reason], {

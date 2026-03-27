@@ -8,8 +8,8 @@ import { z } from "zod";
 import { distributeTotal } from "../utils/distribute-total";
 import { shuffleArray } from "../utils/shuffle-array";
 
-const questionTypeSchema = z.nativeEnum(QuestionType);
-const questionSetCategorySchema = z.nativeEnum(QuestionSetCategory);
+const questionTypeSchema = z.enum(QuestionType);
+const questionSetCategorySchema = z.enum(QuestionSetCategory);
 
 const createQuestionSetSchema = z.object({
     types: z.array(questionTypeSchema).nonempty(),

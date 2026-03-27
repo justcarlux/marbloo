@@ -4,7 +4,6 @@ import type { NextConfig } from "next";
 const nextConfig: NextConfig = {
     pageExtensions: ["js", "jsx", "md", "mdx", "ts", "tsx"],
     typedRoutes: true,
-    allowedDevOrigins: ["192.168.50.7"],
 };
 
 const withMDX = createMDX();

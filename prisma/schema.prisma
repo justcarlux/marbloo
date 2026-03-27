@@ -9,8 +9,12 @@ datasource db {
 
 enum QuestionType {
   // "To be" verb
-  completePresentToBePositiveStatement
-  completePresentToBeNegativeStatement
+  completePresentToBePositiveStatementVerbForm
+  completePresentToBeNegativeStatementVerbForm
+  completePastToBePositiveStatementVerbForm
+  completePastToBeNegativeStatementVerbForm
+  completeFutureToBePositiveStatementVerbForm
+  completeFutureToBeNegativeStatementVerbForm
   // Simple tenses
   completePresentSimplePositiveStatementVerbForm
   completePresentSimpleNegativeStatementVerbForm

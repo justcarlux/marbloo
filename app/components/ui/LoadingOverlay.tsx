@@ -23,7 +23,8 @@ export default function LoadingOverlay({ show }: LoadingOverlayProps) {
         <AnimatePresence mode="wait">
             {show && (
                 <motion.div
-                    className="fixed w-full h-full bg-surface z-10 flex flex-col gap-3 items-center justify-center"
+                    className="fixed w-full h-full bg-surface z-10 flex flex-col gap-3
+                    items-center justify-center"
                     initial={{ opacity: 0 }}
                     animate={{ opacity: 1 }}
                     exit={{ opacity: 0 }}

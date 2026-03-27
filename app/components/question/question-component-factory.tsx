@@ -1,43 +1,36 @@
-import { CompleteCorrectVerbFormQuestionData } from "@/app/model/question/impl/CompleteCorrectVerbFormQuestion";
-import { CompleteCorrectVerbFormWithAuxiliarsQuestionData } from "@/app/model/question/impl/CompleteCorrectVerbFormWithAuxiliarsQuestion";
+import { CompleteMissingPhraseQuestionData } from "@/app/model/question/impl/CompleteMissingPhraseQuestion";
 import { QuestionData } from "@/app/model/question/QuestionInstance";
-import { Question, QuestionSet } from "@/generated/prisma/client";
+import { Question } from "@/generated/prisma/client";
 import { QuestionType } from "@/generated/prisma/enums";
 import CompleteMissingPhraseQuestionForm from "./impl/CompleteMissingPhraseQuestionForm";
 
 const completeMissingPhraseQuestionFormComponentProvider = (
     data: QuestionData<unknown>,
-    questionSet: QuestionSet,
-    handleCorrect: () => void,
-    handleNextQuestion: () => void,
 ) => {
     return (
         <CompleteMissingPhraseQuestionForm
             questionData={
-                data as QuestionData<
-                    | CompleteCorrectVerbFormQuestionData
-                    | CompleteCorrectVerbFormWithAuxiliarsQuestionData
-                >
+                data as QuestionData<CompleteMissingPhraseQuestionData>
             }
-            questionSet={questionSet}
-            handleCorrect={handleCorrect}
-            handleNextQuestion={handleNextQuestion}
         />
     );
 };
 
 const componentProviders: {
-    [key in QuestionType]: (
-        data: QuestionData<unknown>,
-        questionSet: QuestionSet,
-        handleOnCorrect: () => void,
-        handleNextQuestion: () => void,
-    ) => React.ReactElement;
+    [key in QuestionType]: (data: QuestionData<unknown>) => React.ReactElement;
 } = {
     // "To be" verb
-    completePresentToBePositiveStatement:
+    completePresentToBePositiveStatementVerbForm:
         completeMissingPhraseQuestionFormComponentProvider,
-    completePresentToBeNegativeStatement:
+    completePresentToBeNegativeStatementVerbForm:
+        completeMissingPhraseQuestionFormComponentProvider,
+    completePastToBePositiveStatementVerbForm:
+        completeMissingPhraseQuestionFormComponentProvider,
+    completePastToBeNegativeStatementVerbForm:
+        completeMissingPhraseQuestionFormComponentProvider,
+    completeFutureToBePositiveStatementVerbForm:
+        completeMissingPhraseQuestionFormComponentProvider,
+    completeFutureToBeNegativeStatementVerbForm:
         completeMissingPhraseQuestionFormComponentProvider,
     // Simple tenses
     completePresentSimplePositiveStatementVerbForm:
@@ -95,14 +88,6 @@ const componentProviders: {
 
 export function createComponentForQuestionData(
     data: QuestionData<unknown> | Question,
-    questionSet: QuestionSet,
-    handleCorrect: () => void,
-    handleNextQuestion: () => void,
 ) {
-    return componentProviders[data.type](
-        data,
-        questionSet,
-        handleCorrect,
-        handleNextQuestion,
-    );
+    return componentProviders[data.type](data);
 }

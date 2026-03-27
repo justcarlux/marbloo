@@ -72,7 +72,7 @@ export default function GrammarLessonList() {
                             title: (
                                 <div>
                                     <div>Complete:</div>
-                                    <div>Present Tense "To Be"</div>
+                                    <div>Present Tense</div>
                                 </div>
                             ),
                             description:
@@ -81,8 +81,8 @@ export default function GrammarLessonList() {
                             action: {
                                 type: "create-question-set",
                                 questionTypes: [
-                                    "completePresentToBePositiveStatement",
-                                    "completePresentToBeNegativeStatement",
+                                    "completePresentToBePositiveStatementVerbForm",
+                                    "completePresentToBeNegativeStatementVerbForm",
                                 ],
                             },
                         },
@@ -90,7 +90,7 @@ export default function GrammarLessonList() {
                             title: (
                                 <div>
                                     <div>Complete:</div>
-                                    <div>Past Tense "To Be"</div>
+                                    <div>Past Tense</div>
                                 </div>
                             ),
                             description:
@@ -98,14 +98,17 @@ export default function GrammarLessonList() {
                             icon: TbBook,
                             action: {
                                 type: "create-question-set",
-                                questionTypes: [],
+                                questionTypes: [
+                                    "completePastToBePositiveStatementVerbForm",
+                                    "completePastToBeNegativeStatementVerbForm",
+                                ],
                             },
                         },
                         {
                             title: (
                                 <div>
                                     <div>Complete:</div>
-                                    <div>Future Tense "To Be"</div>
+                                    <div>Future Tense</div>
                                 </div>
                             ),
                             description:
@@ -113,7 +116,10 @@ export default function GrammarLessonList() {
                             icon: TbBook,
                             action: {
                                 type: "create-question-set",
-                                questionTypes: [],
+                                questionTypes: [
+                                    "completeFutureToBePositiveStatementVerbForm",
+                                    "completeFutureToBeNegativeStatementVerbForm",
+                                ],
                             },
                         },
                     ],

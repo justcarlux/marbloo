@@ -12,8 +12,12 @@ import QuestionInstance, { QuestionData } from "./QuestionInstance";
 
 interface QuestionDataTypes {
     // "To be" verb
-    completePresentToBePositiveStatement: CompleteCorrectToBeVerbFormQuestionData;
-    completePresentToBeNegativeStatement: CompleteCorrectToBeVerbFormQuestionData;
+    completePresentToBePositiveStatementVerbForm: CompleteCorrectToBeVerbFormQuestionData;
+    completePresentToBeNegativeStatementVerbForm: CompleteCorrectToBeVerbFormQuestionData;
+    completePastToBePositiveStatementVerbForm: CompleteCorrectToBeVerbFormQuestionData;
+    completePastToBeNegativeStatementVerbForm: CompleteCorrectToBeVerbFormQuestionData;
+    completeFutureToBePositiveStatementVerbForm: CompleteCorrectToBeVerbFormQuestionData;
+    completeFutureToBeNegativeStatementVerbForm: CompleteCorrectToBeVerbFormQuestionData;
     // Simple tenses
     completePresentSimplePositiveStatementVerbForm: CompleteCorrectVerbFormQuestionData;
     completePresentSimpleNegativeStatementVerbForm: CompleteCorrectVerbFormWithAuxiliarsQuestionData;
@@ -264,9 +268,17 @@ const questionInstanceProviders: {
     ) => QuestionInstance<QuestionDataTypes[Type]>;
 } = {
     // "To be" verb
-    completePresentToBePositiveStatement:
+    completePresentToBePositiveStatementVerbForm:
         completeCorrectToBeVerbForm.positiveProvider,
-    completePresentToBeNegativeStatement:
+    completePresentToBeNegativeStatementVerbForm:
+        completeCorrectToBeVerbForm.negativeProvider,
+    completePastToBePositiveStatementVerbForm:
+        completeCorrectToBeVerbForm.positiveProvider,
+    completePastToBeNegativeStatementVerbForm:
+        completeCorrectToBeVerbForm.negativeProvider,
+    completeFutureToBePositiveStatementVerbForm:
+        completeCorrectToBeVerbForm.positiveProvider,
+    completeFutureToBeNegativeStatementVerbForm:
         completeCorrectToBeVerbForm.negativeProvider,
     // Simple tenses
     completePresentSimplePositiveStatementVerbForm:
@@ -344,16 +356,8 @@ const questionInstanceProviders: {
             .negativeProvider,
 };
 
-export function createQuestionInstance<T extends QuestionType>({
-    id,
-    type,
-    data,
-}: {
-    id: string;
-    type: T;
-    data: QuestionDataTypes[T];
-}) {
-    return questionInstanceProviders[type]({ id, type, data });
+export function createQuestionInstance(data: QuestionData<unknown>) {
+    return questionInstanceProviders[data.type](data as QuestionData<never>);
 }
 
 export function typedQuestionData<T extends QuestionType>({

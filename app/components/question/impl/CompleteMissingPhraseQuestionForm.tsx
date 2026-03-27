@@ -1,8 +1,8 @@
 "use client";
 
-import { CompleteCorrectVerbFormQuestionData } from "@/app/model/question/impl/CompleteCorrectVerbFormQuestion";
-import { CompleteCorrectVerbFormWithAuxiliarsQuestionData } from "@/app/model/question/impl/CompleteCorrectVerbFormWithAuxiliarsQuestion";
+import { useQuestionSet } from "@/app/contexts/QuestionSetContext";
 import CompleteMissingPhraseQuestion, {
+    CompleteMissingPhraseQuestionData,
     CompleteMissingPhraseQuestionResult,
 } from "@/app/model/question/impl/CompleteMissingPhraseQuestion";
 import { createQuestionInstance } from "@/app/model/question/question-factory";
@@ -17,25 +17,17 @@ import { useCallback, useEffect, useRef, useState } from "react";
 import { TbBulb, TbBulbOff } from "react-icons/tb";
 import useSound from "use-sound";
 import QuestionFormBottomPanel from "../QuestionFormBottomPanel";
-import { QuestionSet } from "@/generated/prisma/client";
-import { updateQuestionSet } from "@/app/actions/question-sets";
 
 interface CompleteMissingPhraseQuestionFormProps {
-    questionData: QuestionData<
-        | CompleteCorrectVerbFormQuestionData
-        | CompleteCorrectVerbFormWithAuxiliarsQuestionData
-    >;
-    questionSet: QuestionSet;
-    handleCorrect: () => void;
-    handleNextQuestion: () => void;
+    questionData: QuestionData<CompleteMissingPhraseQuestionData>;
 }
 
 export default function CompleteMissingPhraseQuestionForm({
     questionData,
-    questionSet,
-    handleCorrect,
-    handleNextQuestion,
 }: CompleteMissingPhraseQuestionFormProps) {
+    const { questionSet, setQuestionSet, handleCorrect, handleNextQuestion } =
+        useQuestionSet();
+
     const [playSuccess] = useSound("/sfx/success.mp3");
     const [playFailure] = useSound("/sfx/failure.mp3");
     const [playHint] = useSound("/sfx/hint.mp3");
@@ -63,7 +55,10 @@ export default function CompleteMissingPhraseQuestionForm({
 
         playHint();
         setShowHint(true);
-        await updateQuestionSet({ currentQuestionHasUsedHint: true });
+        setQuestionSet((questionSet) => ({
+            ...questionSet,
+            currentQuestionHasUsedHint: true,
+        }));
     }, [showHint, playHint, result]);
 
     const handleSubmit = useCallback(() => {
@@ -150,7 +145,8 @@ export default function CompleteMissingPhraseQuestionForm({
                             initial={{ opacity: 0, y: 20 }}
                             animate={{ opacity: 1, y: 0 }}
                             exit={{ opacity: 0, y: -20 }}
-                            className="text-base mt-5 p-4 bg-hint-bg text-hint-fg rounded-xl border-2 border-hint-fg font-medium"
+                            className="text-base mt-5 p-4 bg-hint-bg text-hint-fg
+                                        rounded-xl border-2 border-hint-fg font-medium"
                         >
                             <b>Hint: </b>
                             {getQuestionHintByType(questionData.type)}
@@ -172,8 +168,11 @@ export default function CompleteMissingPhraseQuestionForm({
                     }}
                     placeholder="Type your answer..."
                     disabled={result?.success}
-                    className={`text-primary w-full p-3 sm:p-4 text-xl sm:text-2xl border-3 sm:border-4 rounded-2xl outline-none text-center font-medium transition-all
-              ${result ? (!result.success ? "border-red-500" : "border-green-500 ") : ""}`}
+                    className={`text-primary w-full p-3 sm:p-4 text-xl sm:text-2xl border-3
+                                sm:border-4 rounded-2xl outline-none text-center font-medium transition-all
+                                ${result ? (!result.success ? "border-red-500" : "border-green-500 ") : ""}`}
+                    autoComplete="off"
+                    name="answer"
                 />
             </motion.div>
 
@@ -185,7 +184,8 @@ export default function CompleteMissingPhraseQuestionForm({
                             initial={{ opacity: 0, y: 20 }}
                             animate={{ opacity: 1, y: 0 }}
                             exit={{ opacity: 0, y: -20 }}
-                            className="mt-5 p-4 bg-success-bg text-success-fg rounded-xl border-2 border-success-fg font-medium"
+                            className="mt-5 p-4 bg-success-bg text-success-fg rounded-xl
+                                        border-2 border-success-fg font-medium"
                         >
                             {result.message!}
                         </motion.div>
@@ -195,7 +195,8 @@ export default function CompleteMissingPhraseQuestionForm({
                             initial={{ opacity: 0, y: 20 }}
                             animate={{ opacity: 1, y: 0 }}
                             exit={{ opacity: 0, y: -20 }}
-                            className="mt-5 p-4 bg-error-bg text-error-fg rounded-xl border-2 border-error-fg font-medium"
+                            className="mt-5 p-4 bg-error-bg text-error-fg rounded-xl border-2
+                                    border-error-fg font-medium"
                         >
                             {result.message}
                         </motion.div>

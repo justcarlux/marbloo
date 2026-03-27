@@ -26,13 +26,21 @@ import completePresentSimplePositiveStatementVerbForm from "@/prisma/data/comple
 import { PrismaPg } from "@prisma/adapter-pg";
 import { JsonObject } from "@prisma/client/runtime/client";
 import { QuestionData } from "../app/model/question/QuestionInstance";
-import completePresentToBePositiveStatement from "./data/complete-verb-forms/to-be/present/completePresentToBePositiveStatement";
-import completePresentToBeNegativeStatement from "./data/complete-verb-forms/to-be/present/completePresentToBeNegativeStatement";
+import completePresentToBePositiveStatementVerbForm from "./data/complete-verb-forms/to-be/present/completePresentToBePositiveStatementVerbForm";
+import completePresentToBeNegativeStatementVerbForm from "./data/complete-verb-forms/to-be/present/completePresentToBeNegativeStatementVerbForm";
+import completePastToBePositiveStatementVerbForm from "./data/complete-verb-forms/to-be/past/completePastToBePositiveStatementVerbForm";
+import completePastToBeNegativeStatementVerbForm from "./data/complete-verb-forms/to-be/past/completePastToBeNegativeStatementVerbForm";
+import completeFutureToBePositiveStatementVerbForm from "./data/complete-verb-forms/to-be/future/completeFutureToBePositiveStatementVerbForm";
+import completeFutureToBeNegativeStatementVerbForm from "./data/complete-verb-forms/to-be/future/completeFutureToBeNegativeStatementVerbForm";
 
 const questionData: QuestionData<unknown>[] = [
     // "To be" verb
-    ...completePresentToBePositiveStatement,
-    ...completePresentToBeNegativeStatement,
+    ...completePresentToBePositiveStatementVerbForm,
+    ...completePresentToBeNegativeStatementVerbForm,
+    ...completePastToBePositiveStatementVerbForm,
+    ...completePastToBeNegativeStatementVerbForm,
+    ...completeFutureToBePositiveStatementVerbForm,
+    ...completeFutureToBeNegativeStatementVerbForm,
     // Simple tenses
     ...completePresentSimplePositiveStatementVerbForm,
     ...completePresentSimpleNegativeStatementVerbForm,

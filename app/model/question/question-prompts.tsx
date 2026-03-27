@@ -4,16 +4,40 @@ const questionTitles: {
     [key in QuestionType]: React.ReactNode;
 } = {
     // "To be" verb
-    completePresentToBePositiveStatement: (
+    completePresentToBePositiveStatementVerbForm: (
         <>
-            Complete with the correct form of <b>&quot;to be&quot;</b> to make a{" "}
+            Complete with the correct form of <b>"to be"</b> to make a{" "}
             <b>positive present tense</b> sentence
         </>
     ),
-    completePresentToBeNegativeStatement: (
+    completePresentToBeNegativeStatementVerbForm: (
         <>
-            Complete with the correct form of <b>&quot;to be&quot;</b> to make a{" "}
+            Complete with the correct form of <b>"to be"</b> to make a{" "}
             <b>negative present tense</b> sentence
+        </>
+    ),
+    completePastToBePositiveStatementVerbForm: (
+        <>
+            Complete with the correct form of <b>"to be"</b> to make a{" "}
+            <b>positive past tense</b> sentence
+        </>
+    ),
+    completePastToBeNegativeStatementVerbForm: (
+        <>
+            Complete with the correct form of <b>"to be"</b> to make a{" "}
+            <b>negative past tense</b> sentence
+        </>
+    ),
+    completeFutureToBePositiveStatementVerbForm: (
+        <>
+            Complete with the correct form of <b>"to be"</b> to make a{" "}
+            <b>positive future tense</b> sentence
+        </>
+    ),
+    completeFutureToBeNegativeStatementVerbForm: (
+        <>
+            Complete with the correct form of <b>"to be"</b> to make a{" "}
+            <b>negative future tense</b> sentence
         </>
     ),
     // Simple tenses
@@ -172,8 +196,12 @@ const questionHints: {
     [key in QuestionType]: React.ReactNode;
 } = {
     // "To be" verb
-    completePresentToBePositiveStatement: "am/is/are",
-    completePresentToBeNegativeStatement: "am/is/are + not",
+    completePresentToBePositiveStatementVerbForm: "am/is/are",
+    completePresentToBeNegativeStatementVerbForm: "am/is/are + not",
+    completePastToBePositiveStatementVerbForm: "was/were",
+    completePastToBeNegativeStatementVerbForm: "was/were + not",
+    completeFutureToBePositiveStatementVerbForm: "will + be",
+    completeFutureToBeNegativeStatementVerbForm: "will + not + be",
     // Simple tenses
     completePresentSimplePositiveStatementVerbForm:
         "main verb (base form + -s/-es in third-person singular)",

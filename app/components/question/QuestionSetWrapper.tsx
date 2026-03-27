@@ -12,6 +12,7 @@ import { motion } from "framer-motion";
 import { useEffect, useState } from "react";
 import { createComponentForQuestionData } from "./question-component-factory";
 import { useRouter } from "next/navigation";
+import { QuestionSetContextProvider } from "@/app/contexts/QuestionSetContext";
 
 export interface QuestionWrapperProps {
     questionSet: QuestionSet;
@@ -123,14 +124,18 @@ export default function QuestionSetWrapper({
                     animate={{ scale: 1, opacity: 1 }}
                     transition={{ type: "spring", duration: 0.5 }}
                 >
-                    <div key={currentQuestionIndex}>
+                    {/* A key is set to this component in order to force a re-render on question change */}
+                    <QuestionSetContextProvider
+                        key={currentQuestionIndex}
+                        questionSet={questionSet}
+                        setQuestionSet={setQuestionSet}
+                        handleCorrect={handleCorrect}
+                        handleNextQuestion={handleNextQuestion}
+                    >
                         {createComponentForQuestionData(
                             questions[currentQuestionIndex],
-                            questionSet,
-                            handleCorrect,
-                            handleNextQuestion,
                         )}
-                    </div>
+                    </QuestionSetContextProvider>
                 </motion.div>
             </div>
         </>
