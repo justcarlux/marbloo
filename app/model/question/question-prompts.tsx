@@ -3,6 +3,19 @@ import type { QuestionType } from "@/generated/prisma/enums";
 const questionTitles: {
     [key in QuestionType]: React.ReactNode;
 } = {
+    // "To be" verb
+    completePresentToBePositiveStatement: (
+        <>
+            Complete with the correct form of <b>&quot;to be&quot;</b> to make a{" "}
+            <b>positive present tense</b> sentence
+        </>
+    ),
+    completePresentToBeNegativeStatement: (
+        <>
+            Complete with the correct form of <b>&quot;to be&quot;</b> to make a{" "}
+            <b>negative present tense</b> sentence
+        </>
+    ),
     // Simple tenses
     completePresentSimplePositiveStatementVerbForm: (
         <>
@@ -158,6 +171,9 @@ const questionTitles: {
 const questionHints: {
     [key in QuestionType]: React.ReactNode;
 } = {
+    // "To be" verb
+    completePresentToBePositiveStatement: "am/is/are",
+    completePresentToBeNegativeStatement: "am/is/are + not",
     // Simple tenses
     completePresentSimplePositiveStatementVerbForm:
         "main verb (base form + -s/-es in third-person singular)",
@@ -170,7 +186,6 @@ const questionHints: {
         "will + main verb (base form)",
     completeFutureSimpleNegativeStatementVerbForm:
         "will + not + main verb (base form)",
-
     // Continuous tenses
     completePresentContinuousPositiveStatementVerbForm:
         "am/is/are + main verb (-ing)",
@@ -184,7 +199,6 @@ const questionHints: {
         "will + be + main verb (-ing)",
     completeFutureContinuousNegativeStatementVerbForm:
         "will + not + be + main verb (-ing)",
-
     // Perfect tenses
     completePresentPerfectPositiveStatementVerbForm:
         "have/has + main verb (past participle)",
@@ -198,7 +212,6 @@ const questionHints: {
         "will + have + main verb (past participle)",
     completeFuturePerfectNegativeStatementVerbForm:
         "will + not + have + main verb (past participle)",
-
     // Perfect continuous tenses
     completePresentPerfectContinuousPositiveStatementVerbForm:
         "have/has + been + main verb (-ing)",

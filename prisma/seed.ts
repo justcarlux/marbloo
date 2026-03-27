@@ -26,8 +26,13 @@ import completePresentSimplePositiveStatementVerbForm from "@/prisma/data/comple
 import { PrismaPg } from "@prisma/adapter-pg";
 import { JsonObject } from "@prisma/client/runtime/client";
 import { QuestionData } from "../app/model/question/QuestionInstance";
+import completePresentToBePositiveStatement from "./data/complete-verb-forms/to-be/present/completePresentToBePositiveStatement";
+import completePresentToBeNegativeStatement from "./data/complete-verb-forms/to-be/present/completePresentToBeNegativeStatement";
 
-const questionData: (QuestionData<unknown> & { id: string })[] = [
+const questionData: QuestionData<unknown>[] = [
+    // "To be" verb
+    ...completePresentToBePositiveStatement,
+    ...completePresentToBeNegativeStatement,
     // Simple tenses
     ...completePresentSimplePositiveStatementVerbForm,
     ...completePresentSimpleNegativeStatementVerbForm,
@@ -35,7 +40,6 @@ const questionData: (QuestionData<unknown> & { id: string })[] = [
     ...completePastSimpleNegativeStatementVerbForm,
     ...completeFutureSimplePositiveStatementVerbForm,
     ...completeFutureSimpleNegativeStatementVerbForm,
-
     // Continuous tenses
     ...completePresentContinuousPositiveStatementVerbForm,
     ...completePresentContinuousNegativeStatementVerbForm,
@@ -43,7 +47,6 @@ const questionData: (QuestionData<unknown> & { id: string })[] = [
     ...completePastContinuousNegativeStatementVerbForm,
     ...completeFutureContinuousPositiveStatementVerbForm,
     ...completeFutureContinuousNegativeStatementVerbForm,
-
     // Perfect tenses
     ...completePresentPerfectPositiveStatementVerbForm,
     ...completePresentPerfectNegativeStatementVerbForm,
@@ -51,7 +54,6 @@ const questionData: (QuestionData<unknown> & { id: string })[] = [
     ...completePastPerfectNegativeStatementVerbForm,
     ...completeFuturePerfectPositiveStatementVerbForm,
     ...completeFuturePerfectNegativeStatementVerbForm,
-
     // Perfect continuous tenses
     ...completePresentPerfectContinuousPositiveStatementVerbForm,
     ...completePresentPerfectContinuousNegativeStatementVerbForm,
@@ -71,6 +73,7 @@ async function main() {
             data: JsonObject;
         })[],
     });
+    console.log(`Seeded ${questionData.length} questions to the database!`);
 }
 
 main().finally(() => prisma.$disconnect());

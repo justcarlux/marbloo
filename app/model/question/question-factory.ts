@@ -1,3 +1,7 @@
+import type { QuestionType } from "@/generated/prisma/enums";
+import CompleteCorrectToBeVerbFormQuestion, {
+    CompleteCorrectToBeVerbFormQuestionData,
+} from "./impl/CompleteCorrectToBeVerbFormQuestion";
 import CompleteCorrectVerbFormQuestion, {
     CompleteCorrectVerbFormQuestionData,
 } from "./impl/CompleteCorrectVerbFormQuestion";
@@ -5,9 +9,11 @@ import CompleteCorrectVerbFormWithAuxiliarsQuestion, {
     CompleteCorrectVerbFormWithAuxiliarsQuestionData,
 } from "./impl/CompleteCorrectVerbFormWithAuxiliarsQuestion";
 import QuestionInstance, { QuestionData } from "./QuestionInstance";
-import type { QuestionType } from "@/generated/prisma/enums";
 
 interface QuestionDataTypes {
+    // "To be" verb
+    completePresentToBePositiveStatement: CompleteCorrectToBeVerbFormQuestionData;
+    completePresentToBeNegativeStatement: CompleteCorrectToBeVerbFormQuestionData;
     // Simple tenses
     completePresentSimplePositiveStatementVerbForm: CompleteCorrectVerbFormQuestionData;
     completePresentSimpleNegativeStatementVerbForm: CompleteCorrectVerbFormWithAuxiliarsQuestionData;
@@ -37,6 +43,25 @@ interface QuestionDataTypes {
     completeFuturePerfectContinuousPositiveStatementVerbForm: CompleteCorrectVerbFormWithAuxiliarsQuestionData;
     completeFuturePerfectContinuousNegativeStatementVerbForm: CompleteCorrectVerbFormWithAuxiliarsQuestionData;
 }
+
+const completeCorrectToBeVerbForm = {
+    positiveProvider: (
+        data: QuestionData<CompleteCorrectToBeVerbFormQuestionData>,
+    ) => {
+        return new CompleteCorrectToBeVerbFormQuestion({
+            ...data,
+            isNegative: false,
+        });
+    },
+    negativeProvider: (
+        data: QuestionData<CompleteCorrectToBeVerbFormQuestionData>,
+    ) => {
+        return new CompleteCorrectToBeVerbFormQuestion({
+            ...data,
+            isNegative: true,
+        });
+    },
+};
 
 const completeCorrectVerbFormProvider = (
     data: QuestionData<CompleteCorrectVerbFormQuestionData>,
@@ -238,6 +263,11 @@ const questionInstanceProviders: {
         data: QuestionData<QuestionDataTypes[Type]>,
     ) => QuestionInstance<QuestionDataTypes[Type]>;
 } = {
+    // "To be" verb
+    completePresentToBePositiveStatement:
+        completeCorrectToBeVerbForm.positiveProvider,
+    completePresentToBeNegativeStatement:
+        completeCorrectToBeVerbForm.negativeProvider,
     // Simple tenses
     completePresentSimplePositiveStatementVerbForm:
         completeCorrectVerbFormProvider,

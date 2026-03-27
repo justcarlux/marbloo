@@ -9,6 +9,7 @@
     "lint": "eslint"
   },
   "dependencies": {
+    "@inquirer/prompts": "^8.3.2",
     "@mdx-js/loader": "^3.1.1",
     "@mdx-js/react": "^3.1.1",
     "@next/mdx": "^16.2.1",
@@ -31,7 +32,8 @@
     "react-toastify": "^11.0.5",
     "remark-gfm": "^4.0.1",
     "tsx": "^4.21.0",
-    "use-sound": "^5.0.0"
+    "use-sound": "^5.0.0",
+    "zod": "^4.3.6"
   },
   "devDependencies": {
     "@tailwindcss/postcss": "^4",
@@ -41,9 +43,10 @@
     "@types/react": "^19",
     "@types/react-dom": "^19",
     "dotenv": "^17.3.1",
-    "eslint": "^9",
-    "eslint-config-next": "16.1.6",
+    "eslint": "^10.1.0",
+    "eslint-config-next": "^0.2.4",
     "prisma": "^7.5.0",
+    "supabase": "^2.84.4",
     "tailwindcss": "^4",
     "typescript": "^5"
   }

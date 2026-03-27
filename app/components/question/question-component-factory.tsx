@@ -34,6 +34,11 @@ const componentProviders: {
         handleNextQuestion: () => void,
     ) => React.ReactElement;
 } = {
+    // "To be" verb
+    completePresentToBePositiveStatement:
+        completeMissingPhraseQuestionFormComponentProvider,
+    completePresentToBeNegativeStatement:
+        completeMissingPhraseQuestionFormComponentProvider,
     // Simple tenses
     completePresentSimplePositiveStatementVerbForm:
         completeMissingPhraseQuestionFormComponentProvider,

@@ -64,6 +64,61 @@ export default function GrammarLessonList() {
                     ],
                 },
                 {
+                    title: '"To Be" Verb Practice:',
+                    description: "Complete statements and make questions!",
+                    icon: TbBook,
+                    entries: [
+                        {
+                            title: (
+                                <div>
+                                    <div>Complete:</div>
+                                    <div>Present Tense "To Be"</div>
+                                </div>
+                            ),
+                            description:
+                                'Complete positive and negative "to be" verb forms in present tense sentences!',
+                            icon: TbBook,
+                            action: {
+                                type: "create-question-set",
+                                questionTypes: [
+                                    "completePresentToBePositiveStatement",
+                                    "completePresentToBeNegativeStatement",
+                                ],
+                            },
+                        },
+                        {
+                            title: (
+                                <div>
+                                    <div>Complete:</div>
+                                    <div>Past Tense "To Be"</div>
+                                </div>
+                            ),
+                            description:
+                                'Complete positive and negative "to be" verb forms in past tense sentences!',
+                            icon: TbBook,
+                            action: {
+                                type: "create-question-set",
+                                questionTypes: [],
+                            },
+                        },
+                        {
+                            title: (
+                                <div>
+                                    <div>Complete:</div>
+                                    <div>Future Tense "To Be"</div>
+                                </div>
+                            ),
+                            description:
+                                'Complete positive and negative "to be" verb forms in future tense sentences!',
+                            icon: TbBook,
+                            action: {
+                                type: "create-question-set",
+                                questionTypes: [],
+                            },
+                        },
+                    ],
+                },
+                {
                     title: "Simple Tenses Practice:",
                     description: "Complete statements and make questions!",
                     icon: TbBook,

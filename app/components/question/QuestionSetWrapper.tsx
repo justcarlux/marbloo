@@ -1,12 +1,17 @@
 "use client";
 
-import { updateQuestionSet } from "@/app/actions/question-sets";
+import {
+    createQuestionStatistic,
+    deleteQuestionSet,
+    updateQuestionSet,
+} from "@/app/actions/question-sets";
 import { useBottomToolbar } from "@/app/contexts/BottomToolbarContext";
 import { QuestionData } from "@/app/model/question/QuestionInstance";
 import type { Question, QuestionSet } from "@/generated/prisma/client";
 import { motion } from "framer-motion";
 import { useEffect, useState } from "react";
 import { createComponentForQuestionData } from "./question-component-factory";
+import { useRouter } from "next/navigation";
 
 export interface QuestionWrapperProps {
     questionSet: QuestionSet;
@@ -17,18 +22,15 @@ export default function QuestionSetWrapper({
     questionSet: initialQuestionSet,
     questions,
 }: QuestionWrapperProps) {
-    const [questionSet, setQuestionSet] = useState({ ...initialQuestionSet });
-    const { setBackPath, setShouldClearQuestionSetOnExit } = useBottomToolbar();
+    const router = useRouter();
+    const { backPath } = useBottomToolbar();
 
-    useEffect(() => {
-        if (!initialQuestionSet.currentQuestionStartedAt) {
-            // eslint-disable-next-line react-hooks/set-state-in-effect
-            setQuestionSet((q) => ({
-                ...q,
-                currentQuestionStartedAt: new Date(),
-            }));
-        }
-    }, [initialQuestionSet.currentQuestionStartedAt]);
+    const [questionSet, setQuestionSet] = useState<QuestionSet>({
+        ...initialQuestionSet,
+        currentQuestionStartedAt:
+            initialQuestionSet.currentQuestionStartedAt ?? new Date(),
+    });
+    const { setBackPath, setShouldClearQuestionSetOnExit } = useBottomToolbar();
 
     useEffect(() => {
         updateQuestionSet({
@@ -55,22 +57,41 @@ export default function QuestionSetWrapper({
         useState(initialQuestionSet.currentQuestionIndex);
 
     const handleCorrect = async () => {
+        console.log(
+            `took: ${((Date.now() - questionSet.currentQuestionStartedAt!.getTime()) / 1000).toFixed(2)}s | used hint: ${questionSet.currentQuestionHasUsedHint ? "yes" : "no"}`,
+        );
+
+        (async () => {
+            const success = await createQuestionStatistic({
+                questionId: questions[currentQuestionIndex].id,
+                hasUsedHint: questionSet.currentQuestionHasUsedHint,
+                time:
+                    Date.now() -
+                    questionSet.currentQuestionStartedAt!.getTime(),
+            });
+            if (!success) {
+                // if result is false, we can assume the user is trying to cheat
+                // this is pretty much the basic anti-cheat im willing to do right now
+                await deleteQuestionSet();
+                router.push(backPath!);
+            }
+        })();
         const newQuestionIndex = currentQuestionIndex + 1;
         setCurrentProgressQuestionIndex(newQuestionIndex);
-        setQuestionSet({
+        setQuestionSet((questionSet) => ({
             ...questionSet,
             currentQuestionIndex: newQuestionIndex,
             currentQuestionHasUsedHint: false,
             currentQuestionStartedAt: null,
-        });
+        }));
     };
 
     const handleNextQuestion = () => {
         setCurrentQuestionIndex((currentValue) => currentValue + 1);
-        setQuestionSet({
+        setQuestionSet((questionSet) => ({
             ...questionSet,
             currentQuestionStartedAt: new Date(),
-        });
+        }));
     };
 
     return (

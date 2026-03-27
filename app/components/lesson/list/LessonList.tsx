@@ -48,7 +48,7 @@ interface LessonListProps {
 const errorMessages: {
     [key in CreateQuestionSetErrorReason | "unknown"]: string;
 } = {
-    amount_too_short: "Question count is too short.",
+    validation_error: "Validation failed. Please try again.",
     unknown:
         "An error has ocurred when trying to create your practice session. Try again later.",
 };
@@ -224,14 +224,15 @@ export default function LessonList({ category, categories }: LessonListProps) {
             setLoading(true);
             try {
                 await wait(1_000);
-                const questionSetResponse = await createQuestionSet(
+                const questionSetResponse = await createQuestionSet({
                     types,
                     category,
                     amount,
-                );
+                });
                 if (questionSetResponse.success) {
                     router.push(`/learning/practice` as Route);
                 } else {
+                    console.error(questionSetResponse.error);
                     toast(errorMessages[questionSetResponse.reason], {
                         position: "bottom-right",
                         theme: theme ?? "light",
