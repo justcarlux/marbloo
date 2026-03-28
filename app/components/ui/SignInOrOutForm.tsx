@@ -3,7 +3,7 @@
 import { signIn, signUp, signInWithOAuth } from "@/app/actions/supabase-auth";
 import { motion } from "framer-motion";
 import { useRouter } from "next/navigation";
-import { SubmitEvent, useEffect, useState } from "react";
+import { SubmitEvent, useCallback, useEffect, useState } from "react";
 import { FaDiscord, FaGithub, FaGoogle } from "react-icons/fa";
 import {
     IoMdLock,
@@ -27,27 +27,30 @@ export default function SignInOrOutForm() {
         document.title = isSignUp ? "Sign Up | Marbloo" : "Sign In | Marbloo";
     }, [isSignUp]);
 
-    const handleSubmit = async (event: SubmitEvent<HTMLFormElement>) => {
-        event.preventDefault();
-        setIsLoading(true);
-        setError(null);
-        const result = isSignUp
-            ? await signUp({ email, password, displayName })
-            : await signIn({ email, password });
+    const handleSubmit = useCallback(
+        async (event: SubmitEvent<HTMLFormElement>) => {
+            event.preventDefault();
+            setIsLoading(true);
+            setError(null);
+            const result = isSignUp
+                ? await signUp({ email, password, displayName })
+                : await signIn({ email, password });
 
-        if (result.success) {
-            router.push("/learning");
-            return;
-        }
+            if (result.success) {
+                router.push("/learning");
+                return;
+            }
 
-        if (
-            result.reason === "validation_error" ||
-            result.reason === "auth_error"
-        ) {
-            setError(result.error);
-        }
-        setIsLoading(false);
-    };
+            if (
+                result.reason === "validation_error" ||
+                result.reason === "auth_error"
+            ) {
+                setError(result.error);
+            }
+            setIsLoading(false);
+        },
+        [setIsLoading, displayName, email, isSignUp, password, router],
+    );
 
     return (
         <div className="min-h-screen flex items-center justify-center sm:p-4">

@@ -5,7 +5,7 @@ import { useBottomToolbar } from "@/app/contexts/BottomToolbarContext";
 import { getAvatarUrl, getDisplayName } from "@/app/utils/users";
 import { User } from "@supabase/supabase-js";
 import { motion } from "framer-motion";
-import { SubmitEvent, useEffect, useState } from "react";
+import { SubmitEvent, useCallback, useEffect, useState } from "react";
 import { IoMdImage, IoMdMail, IoMdPerson } from "react-icons/io";
 import { OrbitProgress } from "react-loading-indicators";
 import { toast } from "react-toastify";
@@ -29,23 +29,26 @@ export default function ProfileSettingsForm({
         };
     }, [setShouldBackButtonAppear]);
 
-    const handleSubmit = async (event: SubmitEvent<HTMLFormElement>) => {
-        event.preventDefault();
-        setIsLoading(true);
+    const handleSubmit = useCallback(
+        async (event: SubmitEvent<HTMLFormElement>) => {
+            event.preventDefault();
+            setIsLoading(true);
 
-        const result = await updateProfile({
-            displayName,
-            avatarUrl,
-        });
+            const result = await updateProfile({
+                displayName,
+                avatarUrl,
+            });
 
-        if (result.success) {
-            toast.success("Profile updated successfully!");
-        } else {
-            toast.error(result.error || "Failed to update profile.");
-        }
+            if (result.success) {
+                toast.success("Profile updated successfully!");
+            } else {
+                toast.error(result.error || "Failed to update profile.");
+            }
 
-        setIsLoading(false);
-    };
+            setIsLoading(false);
+        },
+        [setIsLoading, displayName, avatarUrl],
+    );
 
     return (
         <motion.div
