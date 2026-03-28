@@ -2,7 +2,6 @@
 
 import { useBottomToolbar } from "@/app/contexts/BottomToolbarContext";
 import { motion } from "framer-motion";
-import { Route } from "next";
 import { usePathname } from "next/navigation";
 import { useEffect } from "react";
 
@@ -11,24 +10,19 @@ interface LectureLayoutProps {
 }
 
 export default function LectureView({ children }: LectureLayoutProps) {
-    const { setBackPath, setAllowsScrollingToTop } = useBottomToolbar();
+    const { setShouldBackButtonAppear, setAllowsScrollingToTop } =
+        useBottomToolbar();
     const pathname = usePathname();
     useEffect(() => {
-        setBackPath(
-            `/${pathname
-                .split("/")
-                .filter(Boolean)
-                .slice(0, -2)
-                .join("/")}` as Route,
-        );
+        setShouldBackButtonAppear(true);
         setAllowsScrollingToTop(true);
         window.scrollTo({ top: 0 });
 
         return () => {
-            setBackPath(null);
+            setShouldBackButtonAppear(false);
             setAllowsScrollingToTop(false);
         };
-    }, [pathname, setBackPath, setAllowsScrollingToTop]);
+    }, [pathname, setShouldBackButtonAppear, setAllowsScrollingToTop]);
 
     return (
         <div className="min-h-screen px-6 sm:px-8 pt-1 pb-16">

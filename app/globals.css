@@ -2,6 +2,7 @@
 @plugin "@tailwindcss/typography";
 
 @custom-variant dark (&:where(.dark, .dark *));
+@custom-variant hover (&:hover);
 
 @theme {
     --color-surface: var(--color-slate-200);

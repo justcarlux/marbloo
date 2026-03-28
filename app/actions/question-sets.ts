@@ -4,6 +4,7 @@ import type { ZodError } from "zod";
 
 import { QuestionSetCategory, QuestionType } from "@/generated/prisma/enums";
 import prisma from "@/lib/prisma";
+import { createSupabaseServerClient } from "@/lib/supabase/server-client";
 import { z } from "zod";
 import { distributeTotal } from "../utils/distribute-total";
 import { shuffleArray } from "../utils/shuffle-array";
@@ -29,7 +30,9 @@ const createQuestionStatisticSchema = z.object({
     time: z.number().int().nonnegative(),
 });
 
-export type CreateQuestionSetErrorReason = "validation_error";
+export type CreateQuestionSetErrorReason =
+    | "not_authenticated"
+    | "validation_error";
 
 export type CreateQuestionSetResponse =
     | {
@@ -38,12 +41,24 @@ export type CreateQuestionSetResponse =
     | {
           success: false;
           reason: CreateQuestionSetErrorReason;
-          error: ZodError;
+          error?: ZodError;
       };
 
 export async function createQuestionSet(
     input: z.input<typeof createQuestionSetSchema>,
 ): Promise<CreateQuestionSetResponse> {
+    const supabase = await createSupabaseServerClient();
+    const {
+        data: { user },
+    } = await supabase.auth.getUser();
+
+    if (!user) {
+        return {
+            success: false,
+            reason: "not_authenticated",
+        };
+    }
+
     const result = createQuestionSetSchema.safeParse(input);
 
     if (!result.success) {
@@ -72,7 +87,7 @@ export async function createQuestionSet(
 
     await prisma.questionSet.upsert({
         where: {
-            userId: "1",
+            userId: user.id,
         },
         update: {
             type: category,
@@ -80,7 +95,7 @@ export async function createQuestionSet(
             currentQuestionIndex: 0,
         },
         create: {
-            userId: "1",
+            userId: user.id,
             type: category,
             questions,
             currentQuestionIndex: 0,
@@ -89,7 +104,7 @@ export async function createQuestionSet(
     });
 
     await prisma.questionSetStatistic.deleteMany({
-        where: { questionSetUserId: "1" },
+        where: { questionSetUserId: user.id },
     });
 
     return {
@@ -100,6 +115,13 @@ export async function createQuestionSet(
 export async function updateQuestionSet(
     input: z.input<typeof updateQuestionSetSchema>,
 ) {
+    const supabase = await createSupabaseServerClient();
+    const {
+        data: { user },
+    } = await supabase.auth.getUser();
+
+    if (!user) return;
+
     const {
         currentQuestionIndex,
         currentQuestionHasUsedHint,
@@ -108,7 +130,7 @@ export async function updateQuestionSet(
 
     await prisma.questionSet.update({
         where: {
-            userId: "1",
+            userId: user.id,
         },
         data: {
             currentQuestionIndex,
@@ -119,20 +141,34 @@ export async function updateQuestionSet(
 }
 
 export async function deleteQuestionSet() {
+    const supabase = await createSupabaseServerClient();
+    const {
+        data: { user },
+    } = await supabase.auth.getUser();
+
+    if (!user) return;
+
     await prisma.questionSetStatistic.deleteMany({
-        where: { questionSetUserId: "1" },
+        where: { questionSetUserId: user.id },
     });
-    await prisma.questionSet.delete({ where: { userId: "1" } });
+    await prisma.questionSet.delete({ where: { userId: user.id } });
 }
 
 export async function createQuestionStatistic(
     input: z.input<typeof createQuestionStatisticSchema>,
 ): Promise<boolean> {
+    const supabase = await createSupabaseServerClient();
+    const {
+        data: { user },
+    } = await supabase.auth.getUser();
+
+    if (!user) return false;
+
     const { questionId, hasUsedHint, time } =
         createQuestionStatisticSchema.parse(input);
 
     const result = await prisma.questionSetStatistic.createMany({
-        data: [{ questionSetUserId: "1", questionId, hasUsedHint, time }],
+        data: [{ questionSetUserId: user.id, questionId, hasUsedHint, time }],
         skipDuplicates: true,
     });
 

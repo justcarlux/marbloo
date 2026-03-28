@@ -1,11 +1,10 @@
 "use client";
 
-import { Route } from "next";
 import React, { createContext, useContext, useState } from "react";
 
 interface BottomToolbarContextType {
-    backPath: Route | null;
-    setBackPath: (value: Route | null) => void;
+    shouldBackButtonAppear: boolean;
+    setShouldBackButtonAppear: (value: boolean) => void;
     shouldClearQuestionSetOnExit: boolean;
     setShouldClearQuestionSetOnExit: (value: boolean) => void;
     allowsScrollingToTop: boolean;
@@ -21,7 +20,7 @@ export function BottomToolbarContextProvider({
 }: {
     children: React.ReactNode;
 }) {
-    const [backPath, setBackPath] = useState<Route | null>(null);
+    const [shouldBackButtonAppear, setShouldBackButtonAppear] = useState(false);
     const [shouldClearQuestionSetOnExit, setShouldClearQuestionSetOnExit] =
         useState(false);
     const [allowsScrollingToTop, setAllowsScrollingToTop] = useState(false);
@@ -29,8 +28,8 @@ export function BottomToolbarContextProvider({
     return (
         <BottomToolbarContext.Provider
             value={{
-                backPath,
-                setBackPath,
+                shouldBackButtonAppear,
+                setShouldBackButtonAppear,
                 shouldClearQuestionSetOnExit,
                 setShouldClearQuestionSetOnExit,
                 allowsScrollingToTop,

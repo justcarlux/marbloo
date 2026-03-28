@@ -20,7 +20,7 @@ export default function GrammarLessonList() {
                             icon: TbBook,
                             action: {
                                 type: "href",
-                                href: "/learning/grammar/lectures/verb-to-be",
+                                href: "/learning/lectures/verb-to-be",
                             },
                         },
                         {
@@ -29,7 +29,7 @@ export default function GrammarLessonList() {
                             icon: TbBook,
                             action: {
                                 type: "href",
-                                href: "/learning/grammar/lectures/simple-tenses",
+                                href: "/learning/lectures/simple-tenses",
                             },
                         },
                         {
@@ -39,7 +39,7 @@ export default function GrammarLessonList() {
                             icon: TbBook,
                             action: {
                                 type: "href",
-                                href: "/learning/grammar/lectures/continuous-tenses",
+                                href: "/learning/lectures/continuous-tenses",
                             },
                         },
                         {
@@ -48,7 +48,7 @@ export default function GrammarLessonList() {
                             icon: TbBook,
                             action: {
                                 type: "href",
-                                href: "/learning/grammar/lectures/perfect-tenses",
+                                href: "/learning/lectures/perfect-tenses",
                             },
                         },
                         {
@@ -58,7 +58,7 @@ export default function GrammarLessonList() {
                             icon: TbBook,
                             action: {
                                 type: "href",
-                                href: "/learning/grammar/lectures/perfect-continuous-tenses",
+                                href: "/learning/lectures/perfect-continuous-tenses",
                             },
                         },
                     ],

@@ -3,40 +3,40 @@ import type { QuestionType } from "@/generated/prisma/enums";
 const questionTitles: {
     [key in QuestionType]: React.ReactNode;
 } = {
-    // "To be" verb
+    // &quot;to be&quot; verb
     completePresentToBePositiveStatementVerbForm: (
         <>
-            Complete with the correct form of <b>"to be"</b> to make a{" "}
+            Complete with the correct form of <b>&quot;to be&quot;</b> to make a{" "}
             <b>positive present tense</b> sentence
         </>
     ),
     completePresentToBeNegativeStatementVerbForm: (
         <>
-            Complete with the correct form of <b>"to be"</b> to make a{" "}
+            Complete with the correct form of <b>&quot;to be&quot;</b> to make a{" "}
             <b>negative present tense</b> sentence
         </>
     ),
     completePastToBePositiveStatementVerbForm: (
         <>
-            Complete with the correct form of <b>"to be"</b> to make a{" "}
+            Complete with the correct form of <b>&quot;to be&quot;</b> to make a{" "}
             <b>positive past tense</b> sentence
         </>
     ),
     completePastToBeNegativeStatementVerbForm: (
         <>
-            Complete with the correct form of <b>"to be"</b> to make a{" "}
+            Complete with the correct form of <b>&quot;to be&quot;</b> to make a{" "}
             <b>negative past tense</b> sentence
         </>
     ),
     completeFutureToBePositiveStatementVerbForm: (
         <>
-            Complete with the correct form of <b>"to be"</b> to make a{" "}
+            Complete with the correct form of <b>&quot;to be&quot;</b> to make a{" "}
             <b>positive future tense</b> sentence
         </>
     ),
     completeFutureToBeNegativeStatementVerbForm: (
         <>
-            Complete with the correct form of <b>"to be"</b> to make a{" "}
+            Complete with the correct form of <b>&quot;to be&quot;</b> to make a{" "}
             <b>negative future tense</b> sentence
         </>
     ),
@@ -195,7 +195,7 @@ const questionTitles: {
 const questionHints: {
     [key in QuestionType]: React.ReactNode;
 } = {
-    // "To be" verb
+    // &quot;to be&quot; verb
     completePresentToBePositiveStatementVerbForm: "am/is/are",
     completePresentToBeNegativeStatementVerbForm: "am/is/are + not",
     completePastToBePositiveStatementVerbForm: "was/were",

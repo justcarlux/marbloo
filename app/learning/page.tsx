@@ -1,7 +1,7 @@
 import GrammarLessonList from "@/app/components/lesson/list/GrammarLessonList";
 
 export const metadata = {
-    title: "Grammar Learning | Marbloo",
+    title: "Learning | Marbloo",
     description: "Learn and practice your grammar skills.",
 };
 

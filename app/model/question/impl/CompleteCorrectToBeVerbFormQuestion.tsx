@@ -47,14 +47,15 @@ export default class CompleteCorrectToBeVerbFormQuestion extends CompleteMissing
                     message: this.isNegative
                         ? this.prefixWithAcknowledgementPhrase(
                               <>
-                                  The correct negated "to be" verb form for this
-                                  sentence is: <b>{input.join(" ")}</b>
+                                  The correct negated &quot;to be&quot; verb
+                                  form for this sentence is:{" "}
+                                  <b>{input.join(" ")}</b>
                               </>,
                           )
                         : this.prefixWithAcknowledgementPhrase(
                               <>
-                                  The correct "to be" verb form for this
-                                  sentence is: <b>{input.join(" ")}</b>
+                                  The correct &quot;to be&quot; verb form for
+                                  this sentence is: <b>{input.join(" ")}</b>
                               </>,
                           ),
                 },

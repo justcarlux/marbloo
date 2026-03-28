@@ -48,6 +48,7 @@ interface LessonListProps {
 const errorMessages: {
     [key in CreateQuestionSetErrorReason | "unknown"]: string;
 } = {
+    not_authenticated: "You are not logged in.",
     validation_error: "Validation failed. Please try again.",
     unknown:
         "An error has ocurred when trying to create your practice session. Try again later.",
@@ -85,7 +86,7 @@ function LessonEntry({
                 scale: loading ? 1.0 : 0.98,
             }}
             className={`${!loading && "hover:border-primary cursor-pointer"} relative overflow-hidden
-                        flex-1 min-w-60 sm:max-w-60 w-full not-sm:h-fit h-full border-4 border-secondary
+                        flex-1 min-w-60 sm:max-w-60 w-full not-sm:h-fit h-full border border-secondary
                         rounded-2xl transition-colors bg-accent flex flex-col items-center justify-start
                         text-center px-3 py-4 sm:p-6`}
         >
@@ -214,21 +215,21 @@ function LessonCategory({
 
 export default function LessonList({ category, categories }: LessonListProps) {
     const { setAllowsScrollingToTop } = useBottomToolbar();
-    const [loading, setLoading] = useState(false);
+    const [isLoading, setIsLoading] = useState(false);
     const router = useRouter();
     const { theme } = useTheme();
 
     useEffect(() => {
-        if (loading) {
+        if (isLoading) {
             setAllowsScrollingToTop(false);
         } else {
             setAllowsScrollingToTop(true);
         }
-    }, [loading, setAllowsScrollingToTop]);
+    }, [isLoading, setAllowsScrollingToTop]);
 
     const handleCreateQuestionSet = useCallback(
         async (types: QuestionType[], amount: number) => {
-            setLoading(true);
+            setIsLoading(true);
             try {
                 await wait(1_500);
                 const questionSetResponse = await createQuestionSet({
@@ -245,7 +246,7 @@ export default function LessonList({ category, categories }: LessonListProps) {
                         theme: theme ?? "light",
                         type: "error",
                     });
-                    setLoading(false);
+                    setIsLoading(false);
                 }
             } catch (err: unknown) {
                 console.error(err);
@@ -254,7 +255,7 @@ export default function LessonList({ category, categories }: LessonListProps) {
                     theme: theme ?? "light",
                     type: "error",
                 });
-                setLoading(false);
+                setIsLoading(false);
             }
         },
         [router, theme, category],
@@ -262,14 +263,14 @@ export default function LessonList({ category, categories }: LessonListProps) {
 
     return (
         <>
-            <LoadingOverlay show={loading} />
+            <LoadingOverlay show={isLoading} />
             <div className="min-h-screen p-8 mx-auto flex flex-col gap-16">
                 {categories.map((data, index) => {
                     return (
                         <LessonCategory
                             key={index}
                             {...data}
-                            loading={loading}
+                            loading={isLoading}
                             handleCreateQuestionSet={handleCreateQuestionSet}
                         />
                     );

@@ -24,14 +24,14 @@ export default function QuestionSetWrapper({
     questions,
 }: QuestionWrapperProps) {
     const router = useRouter();
-    const { backPath } = useBottomToolbar();
 
     const [questionSet, setQuestionSet] = useState<QuestionSet>({
         ...initialQuestionSet,
         currentQuestionStartedAt:
             initialQuestionSet.currentQuestionStartedAt ?? new Date(),
     });
-    const { setBackPath, setShouldClearQuestionSetOnExit } = useBottomToolbar();
+    const { setShouldBackButtonAppear, setShouldClearQuestionSetOnExit } =
+        useBottomToolbar();
 
     useEffect(() => {
         updateQuestionSet({
@@ -42,14 +42,18 @@ export default function QuestionSetWrapper({
     }, [questionSet]);
 
     useEffect(() => {
-        setBackPath(`/learning/${questionSet.type}`);
+        setShouldBackButtonAppear(true);
         setShouldClearQuestionSetOnExit(true);
 
         return () => {
-            setBackPath(null);
+            setShouldBackButtonAppear(false);
             setShouldClearQuestionSetOnExit(false);
         };
-    }, [questionSet, setBackPath, setShouldClearQuestionSetOnExit]);
+    }, [
+        questionSet,
+        setShouldBackButtonAppear,
+        setShouldClearQuestionSetOnExit,
+    ]);
 
     const [currentQuestionIndex, setCurrentQuestionIndex] = useState(
         initialQuestionSet.currentQuestionIndex,
@@ -74,7 +78,7 @@ export default function QuestionSetWrapper({
                 // if result is false, we can assume the user is trying to cheat
                 // this is pretty much the basic anti-cheat im willing to do right now
                 await deleteQuestionSet();
-                router.push(backPath!);
+                router.back();
             }
         })();
         const newQuestionIndex = currentQuestionIndex + 1;

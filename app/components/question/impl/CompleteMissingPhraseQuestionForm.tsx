@@ -59,7 +59,7 @@ export default function CompleteMissingPhraseQuestionForm({
             ...questionSet,
             currentQuestionHasUsedHint: true,
         }));
-    }, [showHint, playHint, result]);
+    }, [showHint, playHint, setQuestionSet, result?.success]);
 
     const handleSubmit = useCallback(() => {
         if (result && result.success) {
