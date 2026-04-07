@@ -2,6 +2,7 @@
 
 import { signIn, signUp, signInWithOAuth } from "@/app/actions/supabase-auth";
 import { motion } from "framer-motion";
+import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { SubmitEvent, useCallback, useEffect, useState } from "react";
 import { FaDiscord, FaGithub, FaGoogle } from "react-icons/fa";
@@ -14,27 +15,20 @@ import {
 } from "react-icons/io";
 import { OrbitProgress } from "react-loading-indicators";
 
-export default function SignInOrOutForm() {
-    const [isSignUp, setIsSignUp] = useState(false);
+export default function SignUpForm() {
     const [isLoading, setIsLoading] = useState(false);
     const [error, setError] = useState<string | null>(null);
+    const [displayName, setDisplayName] = useState("");
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
-    const [displayName, setDisplayName] = useState("");
     const router = useRouter();
-
-    useEffect(() => {
-        document.title = isSignUp ? "Sign Up | Marbloo" : "Sign In | Marbloo";
-    }, [isSignUp]);
 
     const handleSubmit = useCallback(
         async (event: SubmitEvent<HTMLFormElement>) => {
             event.preventDefault();
             setIsLoading(true);
             setError(null);
-            const result = isSignUp
-                ? await signUp({ email, password, displayName })
-                : await signIn({ email, password });
+            const result = await signUp({ email, password, displayName });
 
             if (result.success) {
                 router.push("/learning");
@@ -49,7 +43,7 @@ export default function SignInOrOutForm() {
             }
             setIsLoading(false);
         },
-        [setIsLoading, displayName, email, isSignUp, password, router],
+        [setIsLoading, displayName, email, password, router],
     );
 
     return (
@@ -60,23 +54,14 @@ export default function SignInOrOutForm() {
                 className="w-full sm:max-w-md not-sm:h-dvh not-sm:flex not-sm:flex-col not-sm:justify-center bg-accent border-secondary sm:rounded-3xl p-8 shadow-2xl overflow-hidden not-sm:border-hidden sm:border"
             >
                 <div className="flex flex-col items-center mb-8">
-                    <motion.div
-                        animate={{ rotate: isSignUp ? 90 : 0 }}
-                        className="w-16 h-16 bg-primary rounded-2xl flex items-center justify-center mb-4"
-                    >
-                        {isSignUp ? (
-                            <IoMdPersonAdd className="w-8 h-8 text-surface rotate-270" />
-                        ) : (
-                            <IoMdLogIn className="w-8 h-8 text-surface" />
-                        )}
+                    <motion.div className="w-16 h-16 bg-primary rounded-2xl flex items-center justify-center mb-4">
+                        <IoMdPersonAdd className="w-8 h-8 text-surface rotate-270" />
                     </motion.div>
                     <h1 className="text-2xl sm:text-3xl font-bold text-primary">
-                        {isSignUp ? "Create Account" : "Welcome Back"}
+                        Create Account
                     </h1>
                     <p className="text-sm sm:text-base text-secondary mt-2">
-                        {isSignUp
-                            ? "Join now!"
-                            : "Log in to continue your journey!"}
+                        Join now!
                     </p>
                 </div>
 
@@ -87,23 +72,21 @@ export default function SignInOrOutForm() {
                 )}
 
                 <form className="space-y-4" onSubmit={handleSubmit}>
-                    {isSignUp && (
-                        <div className="relative">
-                            <IoMdPerson className="absolute left-4 top-1/2 -translate-y-1/2 text-secondary w-5 h-5" />
-                            <input
-                                name="displayName"
-                                type="text"
-                                placeholder="Display Name"
-                                required
-                                disabled={isLoading}
-                                value={displayName}
-                                onChange={(e) => setDisplayName(e.target.value)}
-                                className="text-sm sm:text-base w-full bg-surface border-2 border-secondary/30
+                    <div className="relative">
+                        <IoMdPerson className="absolute left-4 top-1/2 -translate-y-1/2 text-secondary w-5 h-5" />
+                        <input
+                            name="displayName"
+                            type="text"
+                            placeholder="Display Name"
+                            required
+                            disabled={isLoading}
+                            value={displayName}
+                            onChange={(e) => setDisplayName(e.target.value)}
+                            className="text-sm sm:text-base w-full bg-surface border-2 border-secondary/30
                                 rounded-2xl py-3 pl-12 pr-4 text-primary placeholder:text-secondary/50 focus:outline-none
                                 focus:border-primary transition-colors disabled:opacity-50"
-                            />
-                        </div>
-                    )}
+                        />
+                    </div>
                     <div className="relative">
                         <IoMdMail className="absolute left-4 top-1/2 -translate-y-1/2 text-secondary w-5 h-5" />
                         <input
@@ -142,7 +125,7 @@ export default function SignInOrOutForm() {
                         className="not-disabled:cursor-pointer w-full bg-primary text-surface font-bold py-4 rounded-2xl shadow-lg transition-colors not-disabled:hover:bg-primary/90 disabled:opacity-50 disabled:cursor-not-allowed mt-4"
                     >
                         <div className="flex items-center justify-center gap-1 text-sm sm:text-base">
-                            {isSignUp ? "Sign Up" : "Sign In"}
+                            Sign Up
                             {isLoading && (
                                 <div className="w-8 h-0 relative -top-3.75 scale-[0.4]">
                                     <OrbitProgress dense color="#32b5c7" />
@@ -187,21 +170,12 @@ export default function SignInOrOutForm() {
                 </div>
 
                 <div className="mt-8 text-center">
-                    <button
-                        onClick={() => {
-                            if (isLoading) return;
-                            setIsSignUp(!isSignUp);
-                            setError(null);
-                            setEmail("");
-                            setPassword("");
-                            setDisplayName("");
-                        }}
+                    <Link
                         className="text-sm sm:text-base text-primary font-semibold transition-colors hover:underline underline-offset-4 cursor-pointer"
+                        href="/login"
                     >
-                        {isSignUp
-                            ? "Already have an account? Sign In"
-                            : "Don't have an account? Sign Up"}
-                    </button>
+                        Already have an account? Log In
+                    </Link>
                 </div>
             </motion.div>
         </div>

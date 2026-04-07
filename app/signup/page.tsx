@@ -1,10 +1,10 @@
 import { Metadata } from "next";
-import LogInForm from "../components/ui/LogInForm";
+import SignUpForm from "../components/ui/SignUpForm";
 
 export const metadata: Metadata = {
-    title: "Log In | Marbloo",
+    title: "Sign Up | Marbloo",
 };
 
 export default function LoginPage() {
-    return <LogInForm />;
+    return <SignUpForm />;
 }
