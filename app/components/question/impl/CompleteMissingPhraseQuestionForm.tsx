@@ -18,6 +18,7 @@ import { useCallback, useEffect, useRef, useState } from "react";
 import { TbBulb, TbBulbOff } from "react-icons/tb";
 import useSound from "use-sound";
 import QuestionFormBottomPanel from "../QuestionFormBottomPanel";
+import { useSfx } from "@/app/contexts/SfxContext";
 
 interface CompleteMissingPhraseQuestionFormProps {
     questionData: QuestionData<CompleteMissingPhraseQuestionData>;
@@ -28,11 +29,9 @@ export default function CompleteMissingPhraseQuestionForm({
 }: CompleteMissingPhraseQuestionFormProps) {
     const { questionSet, setQuestionSet, handleCorrect, handleNextQuestion } =
         useQuestionSet();
+    const { playSuccess, playFailure, playHint } = useSfx();
 
-    const [playSuccess] = useSound("/sfx/success.mp3");
-    const [playFailure] = useSound("/sfx/failure.mp3");
-    const [playHint] = useSound("/sfx/hint.mp3");
-
+    const [attempts, setAttempts] = useState(0);
     const [lastSubmitted, setLastSubmitted] = useState(0);
     const [showHint, setShowHint] = useState(
         questionSet.currentQuestionHasUsedHint,
@@ -78,10 +77,11 @@ export default function CompleteMissingPhraseQuestionForm({
         const [, questionResult] = questionRef.current.check(answer);
         setResult(questionResult);
         if (questionResult.success) {
-            handleCorrect();
+            handleCorrect(answer, attempts + 1);
             playSuccess();
         } else {
             playFailure();
+            setAttempts((attempts) => attempts + 1);
         }
     }, [
         answer,

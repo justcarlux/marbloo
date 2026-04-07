@@ -18,6 +18,7 @@ import { useCallback, useEffect, useRef, useState } from "react";
 import { TbBulb, TbBulbOff } from "react-icons/tb";
 import useSound from "use-sound";
 import QuestionFormBottomPanel from "../QuestionFormBottomPanel";
+import { useSfx } from "@/app/contexts/SfxContext";
 
 interface AnswerChoicedQuestionFormProps {
     questionData: QuestionData<AnswerChoicedQuestionData>;
@@ -29,10 +30,9 @@ export default function AnswerChoicedQuestionForm({
     const { questionSet, setQuestionSet, handleCorrect, handleNextQuestion } =
         useQuestionSet();
 
-    const [playSuccess] = useSound("/sfx/success.mp3");
-    const [playFailure] = useSound("/sfx/failure.mp3");
-    const [playHint] = useSound("/sfx/hint.mp3");
+    const { playSuccess, playFailure, playHint } = useSfx();
 
+    const [attempts, setAttempts] = useState(0);
     const [lastSubmitted, setLastSubmitted] = useState(0);
     const [showHint, setShowHint] = useState(
         questionSet.currentQuestionHasUsedHint,
@@ -72,10 +72,11 @@ export default function AnswerChoicedQuestionForm({
         const questionResult = questionRef.current.check(selectedChoice);
         setResult(questionResult);
         if (questionResult.success) {
-            handleCorrect();
+            handleCorrect(selectedChoice.toString(), attempts + 1);
             playSuccess();
         } else {
             playFailure();
+            setAttempts((attempts) => attempts + 1);
         }
     }, [
         selectedChoice,
@@ -163,7 +164,7 @@ export default function AnswerChoicedQuestionForm({
                                 setResult(null);
                             }
                         }}
-                        className={`p-3 sm:p-4 text-lg sm:text-xl rounded-2xl border-3
+                        className={`p-3 text-lg sm:text-xl rounded-2xl border-3
                                     sm:border-4 cursor-pointer transition-all text-center font-medium
                                     ${
                                         result?.success
