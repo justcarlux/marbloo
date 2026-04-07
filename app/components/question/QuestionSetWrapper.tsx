@@ -61,7 +61,7 @@ export default function QuestionSetWrapper({
     const [currentProgressQuestionIndex, setCurrentProgressQuestionIndex] =
         useState(initialQuestionSet.currentQuestionIndex);
 
-    const handleCorrect = async () => {
+    const handleCorrect = async (answer: string, attempts: number) => {
         (async () => {
             const success = await createQuestionStatistic({
                 questionId: questions[currentQuestionIndex].id,
@@ -69,6 +69,8 @@ export default function QuestionSetWrapper({
                 time:
                     Date.now() -
                     questionSet.currentQuestionStartedAt!.getTime(),
+                answer,
+                attempts,
             });
             if (!success) {
                 // if result is false, we can assume the user is trying to cheat

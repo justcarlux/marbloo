@@ -15,11 +15,11 @@ const questionSetCategorySchema = z.enum(QuestionSetCategory);
 const createQuestionSetSchema = z.object({
     types: z.array(questionTypeSchema).nonempty(),
     category: questionSetCategorySchema,
-    amount: z.number().int().min(10),
+    amount: z.int().min(10),
 });
 
 const updateQuestionSetSchema = z.object({
-    currentQuestionIndex: z.number().int().nonnegative().optional(),
+    currentQuestionIndex: z.int().nonnegative().optional(),
     currentQuestionHasUsedHint: z.boolean().optional(),
     currentQuestionStartedAt: z.date().nullable().optional(),
 });
@@ -27,7 +27,9 @@ const updateQuestionSetSchema = z.object({
 const createQuestionStatisticSchema = z.object({
     questionId: z.string().min(1),
     hasUsedHint: z.boolean(),
-    time: z.number().int().nonnegative(),
+    time: z.int().nonnegative(),
+    answer: z.string(),
+    attempts: z.int().min(1),
 });
 
 export type CreateQuestionSetErrorReason =
@@ -164,11 +166,20 @@ export async function createQuestionStatistic(
 
     if (!user) return false;
 
-    const { questionId, hasUsedHint, time } =
+    const { questionId, hasUsedHint, time, answer, attempts } =
         createQuestionStatisticSchema.parse(input);
 
     const result = await prisma.questionSetStatistic.createMany({
-        data: [{ questionSetUserId: user.id, questionId, hasUsedHint, time }],
+        data: [
+            {
+                questionSetUserId: user.id,
+                questionId,
+                hasUsedHint,
+                time,
+                answer,
+                attempts,
+            },
+        ],
         skipDuplicates: true,
     });
 

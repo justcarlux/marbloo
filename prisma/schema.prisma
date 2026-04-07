@@ -75,6 +75,8 @@ model QuestionSetStatistic {
   questionId        String
   time              Int
   hasUsedHint       Boolean
+  answer            String
+  attempts          Int
 
   @@unique([questionSetUserId, questionId])
 }

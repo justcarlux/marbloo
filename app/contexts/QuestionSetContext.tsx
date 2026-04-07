@@ -11,7 +11,7 @@ import React, {
 interface QuestionSetContextType {
     questionSet: QuestionSet;
     setQuestionSet: Dispatch<SetStateAction<QuestionSet>>;
-    handleCorrect: () => void;
+    handleCorrect: (answer: string, attempts: number) => void;
     handleNextQuestion: () => void;
 }
 
