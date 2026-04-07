@@ -8,6 +8,8 @@ datasource db {
 }
 
 enum QuestionType {
+  // Grammar trivia
+  grammarTrivia
   // "To be" verb
   completePresentToBePositiveStatementVerbForm
   completePresentToBeNegativeStatementVerbForm

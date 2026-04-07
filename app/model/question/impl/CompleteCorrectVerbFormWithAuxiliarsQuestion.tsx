@@ -177,7 +177,7 @@ export default class CompleteCorrectVerbFormWithAuxiliarsQuestion extends Comple
                 : [],
             verb,
             isAuxiliaryCorrect: !!auxiliary,
-            isVerbCorrect: verb == this.data.correctForm,
+            isVerbCorrect: verb === this.data.correctForm,
         };
     }
 }

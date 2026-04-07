@@ -9,15 +9,14 @@ import "server-only";
 
 const adapter = new PrismaPg({ connectionString: process.env.DATABASE_URL });
 
-const _prisma = new PrismaClient({ adapter });
-const prisma = _prisma.$extends({
+const prisma = new PrismaClient({ adapter }).$extends({
     model: {
         question: {
             async findRandomlyByTypes(
                 questionTypes: QuestionType[],
                 limit: number,
             ): Promise<Question[]> {
-                return await _prisma.$queryRaw<Question[]>`
+                return await prisma.$queryRaw<Question[]>`
                     SELECT * FROM public."Question" 
                     WHERE type = ANY(${questionTypes}::"QuestionType"[])
                     ORDER BY RANDOM() 
@@ -30,7 +29,7 @@ const prisma = _prisma.$extends({
                 limit: number,
             ): Promise<string[]> {
                 return (
-                    await _prisma.$queryRaw<{ id: string }[]>`
+                    await prisma.$queryRaw<{ id: string }[]>`
                         SELECT id FROM public."Question" 
                         WHERE type = ANY(${questionTypes}::"QuestionType"[])
                         ORDER BY RANDOM() 

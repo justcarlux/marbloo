@@ -9,8 +9,13 @@ import CompleteCorrectVerbFormWithAuxiliarsQuestion, {
     CompleteCorrectVerbFormWithAuxiliarsQuestionData,
 } from "./impl/CompleteCorrectVerbFormWithAuxiliarsQuestion";
 import QuestionInstance, { QuestionData } from "./QuestionInstance";
+import AnswerChoicedQuestion, {
+    AnswerChoicedQuestionData,
+} from "./impl/AnswerChoicedQuestion";
 
 interface QuestionDataTypes {
+    // Grammar trivia
+    grammarTrivia: AnswerChoicedQuestionData;
     // "To be" verb
     completePresentToBePositiveStatementVerbForm: CompleteCorrectToBeVerbFormQuestionData;
     completePresentToBeNegativeStatementVerbForm: CompleteCorrectToBeVerbFormQuestionData;
@@ -47,6 +52,12 @@ interface QuestionDataTypes {
     completeFuturePerfectContinuousPositiveStatementVerbForm: CompleteCorrectVerbFormWithAuxiliarsQuestionData;
     completeFuturePerfectContinuousNegativeStatementVerbForm: CompleteCorrectVerbFormWithAuxiliarsQuestionData;
 }
+
+const answerChoicedQuestionProvider = (
+    data: QuestionData<AnswerChoicedQuestionData>,
+) => {
+    return new AnswerChoicedQuestion(data);
+};
 
 const completeCorrectToBeVerbForm = {
     positiveProvider: (
@@ -267,6 +278,8 @@ const questionInstanceProviders: {
         data: QuestionData<QuestionDataTypes[Type]>,
     ) => QuestionInstance<QuestionDataTypes[Type]>;
 } = {
+    // Grammar trivia
+    grammarTrivia: answerChoicedQuestionProvider,
     // "To be" verb
     completePresentToBePositiveStatementVerbForm:
         completeCorrectToBeVerbForm.positiveProvider,
@@ -368,7 +381,7 @@ export function typedQuestionData<T extends QuestionType>({
     id: string;
     type: T;
     data: QuestionDataTypes[T];
-}): QuestionData<QuestionDataTypes[T]> & { id: string } {
+}): QuestionData<QuestionDataTypes[T]> {
     return {
         id,
         data,

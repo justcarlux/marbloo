@@ -30,7 +30,7 @@ export default class CompleteMissingPhraseQuestion<
                 {
                     success: false,
                     message:
-                        this.data.minWordCount == 1
+                        this.data.minWordCount === 1
                             ? `You are meant to write 1 word!`
                             : `You are meant to write ${this.data.minWordCount} words!`,
                 },
@@ -42,7 +42,7 @@ export default class CompleteMissingPhraseQuestion<
                     {
                         success: false,
                         message:
-                            this.data.minWordCount == 1
+                            this.data.minWordCount === 1
                                 ? `You are meant to write at least 1 word!`
                                 : `You are meant to write at least ${this.data.minWordCount} words!`,
                     },
@@ -53,7 +53,7 @@ export default class CompleteMissingPhraseQuestion<
                     {
                         success: false,
                         message:
-                            this.data.maxWordCount == 1
+                            this.data.maxWordCount === 1
                                 ? `You cannot write more than 1 word!`
                                 : `You cannot write more than ${this.data.maxWordCount} words!`,
                     },

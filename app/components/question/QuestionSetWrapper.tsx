@@ -62,10 +62,6 @@ export default function QuestionSetWrapper({
         useState(initialQuestionSet.currentQuestionIndex);
 
     const handleCorrect = async () => {
-        console.log(
-            `took: ${((Date.now() - questionSet.currentQuestionStartedAt!.getTime()) / 1000).toFixed(2)}s | used hint: ${questionSet.currentQuestionHasUsedHint ? "yes" : "no"}`,
-        );
-
         (async () => {
             const success = await createQuestionStatistic({
                 questionId: questions[currentQuestionIndex].id,
@@ -99,15 +95,22 @@ export default function QuestionSetWrapper({
         }));
     };
 
+    const { type } = questions[currentQuestionIndex];
+    const shouldUseUnfixedLayout = type === "grammarTrivia";
+
     return (
-        <>
+        <div className="min-h-screen overflow-hidden">
             <motion.div
-                className="fixed w-[calc(100%-40px)] left-1/2 -translate-x-1/2 top-7 flex flex-col items-center"
+                className={
+                    shouldUseUnfixedLayout
+                        ? "flex flex-col items-center px-6 pt-6"
+                        : "fixed w-[calc(100%-40px)] left-1/2 -translate-x-1/2 top-7 flex flex-col items-center"
+                }
                 initial={{ scale: 0.9, opacity: 0, y: -20 }}
                 animate={{ scale: 1, opacity: 1, y: 0 }}
                 transition={{ type: "spring", duration: 0.5 }}
             >
-                <div className="w-full h-2 rounded-full overflow-hidden bg-progress-bg mb-2">
+                <div className="w-full h-2 rounded-full bg-progress-bg mb-2">
                     <motion.div
                         className="h-full bg-green-500"
                         initial={{ width: 0 }}
@@ -121,7 +124,11 @@ export default function QuestionSetWrapper({
                     {currentQuestionIndex + 1}/{questions.length}
                 </div>
             </motion.div>
-            <div className="min-h-screen bg-linear-to-br flex flex-col items-center justify-center font-sans overflow-hidden">
+            <div
+                className={`flex flex-col items-center justify-center font-sans ${
+                    shouldUseUnfixedLayout ? "bg-linear-to-br" : "min-h-screen"
+                }`}
+            >
                 <motion.div
                     className="max-w-4xl rounded-3xl p-5 w-full text-center relative"
                     initial={{ scale: 0.9, opacity: 0 }}
@@ -142,6 +149,6 @@ export default function QuestionSetWrapper({
                     </QuestionSetContextProvider>
                 </motion.div>
             </div>
-        </>
+        </div>
     );
 }

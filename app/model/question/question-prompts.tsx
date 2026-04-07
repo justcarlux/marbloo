@@ -3,7 +3,13 @@ import type { QuestionType } from "@/generated/prisma/enums";
 const questionTitles: {
     [key in QuestionType]: React.ReactNode;
 } = {
-    // &quot;to be&quot; verb
+    // Grammar trivia
+    grammarTrivia: (
+        <>
+            Select the <b>correct answer</b> for the question
+        </>
+    ),
+    // "To be" verb
     completePresentToBePositiveStatementVerbForm: (
         <>
             Complete with the correct form of <b>&quot;to be&quot;</b> to make a{" "}
@@ -193,9 +199,9 @@ const questionTitles: {
 };
 
 const questionHints: {
-    [key in QuestionType]: React.ReactNode;
+    [key in QuestionType]?: React.ReactNode;
 } = {
-    // &quot;to be&quot; verb
+    // "To be" verb
     completePresentToBePositiveStatementVerbForm: "am/is/are",
     completePresentToBeNegativeStatementVerbForm: "am/is/are + not",
     completePastToBePositiveStatementVerbForm: "was/were",
@@ -259,6 +265,12 @@ export function getQuestionPromptByType(type: QuestionType) {
     return questionTitles[type];
 }
 
-export function getQuestionHintByType(type: QuestionType) {
+export function getQuestionHintByType(
+    type: QuestionType,
+): React.ReactNode | undefined {
     return questionHints[type];
+}
+
+export function isQuestionHintAvailable(type: QuestionType) {
+    return type in questionHints;
 }

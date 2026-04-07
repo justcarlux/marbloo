@@ -2,6 +2,10 @@ import { createSupabaseServerClient } from "@/lib/supabase/server-client";
 import ProfileSettingsForm from "@/app/components/ui/ProfileSettingsForm";
 import { redirect } from "next/navigation";
 
+export const metadata = {
+    title: "Profile Settings | Marbloo",
+};
+
 export default async function ProfileSettingsPage() {
     const supabase = await createSupabaseServerClient();
     const {

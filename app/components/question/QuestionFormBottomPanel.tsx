@@ -20,7 +20,7 @@ export default function QuestionFormBottomPanel({
             <motion.button
                 onClick={handleClear}
                 disabled={isClearButtonDisabled}
-                className={`py-3 sm:py-4 px-6 text-lg font-bold rounded-2xl
+                className={`py-3 sm:py-4 px-6 text-base sm:text-lg font-bold rounded-2xl
                     transition-all disabled:opacity-60 bg-secondary text-white
                     border-2 border-secondary ${!isClearButtonDisabled && "hover:scale-102 active:scale-98"}`}
             >
@@ -30,7 +30,7 @@ export default function QuestionFormBottomPanel({
             <motion.button
                 onClick={handleSubmit}
                 disabled={isSuccessButtonDisabled}
-                className={`py-3 sm:py-4 px-6 text-lg font-bold rounded-2xl
+                className={`py-3 sm:py-4 px-6 text-base sm:text-lg font-bold rounded-2xl
                     tracking-wide transition-all disabled:opacity-60
                         ${
                             isQuestionAnsweredCorrectly

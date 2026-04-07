@@ -3,6 +3,18 @@ import { QuestionData } from "@/app/model/question/QuestionInstance";
 import { Question } from "@/generated/prisma/client";
 import { QuestionType } from "@/generated/prisma/enums";
 import CompleteMissingPhraseQuestionForm from "./impl/CompleteMissingPhraseQuestionForm";
+import AnswerChoicedQuestionForm from "./impl/AnswerChoicedQuestionForm";
+import { AnswerChoicedQuestionData } from "@/app/model/question/impl/AnswerChoicedQuestion";
+
+const answerChoicedQuestionComponentProvider = (
+    data: QuestionData<unknown>,
+) => {
+    return (
+        <AnswerChoicedQuestionForm
+            questionData={data as QuestionData<AnswerChoicedQuestionData>}
+        />
+    );
+};
 
 const completeMissingPhraseQuestionFormComponentProvider = (
     data: QuestionData<unknown>,
@@ -19,6 +31,8 @@ const completeMissingPhraseQuestionFormComponentProvider = (
 const componentProviders: {
     [key in QuestionType]: (data: QuestionData<unknown>) => React.ReactElement;
 } = {
+    // Grammar trivia
+    grammarTrivia: answerChoicedQuestionComponentProvider,
     // "To be" verb
     completePresentToBePositiveStatementVerbForm:
         completeMissingPhraseQuestionFormComponentProvider,

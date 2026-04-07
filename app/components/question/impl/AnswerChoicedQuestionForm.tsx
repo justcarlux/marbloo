@@ -1,10 +1,10 @@
 "use client";
 
 import { useQuestionSet } from "@/app/contexts/QuestionSetContext";
-import CompleteMissingPhraseQuestion, {
-    CompleteMissingPhraseQuestionData,
-    CompleteMissingPhraseQuestionResult,
-} from "@/app/model/question/impl/CompleteMissingPhraseQuestion";
+import AnswerChoicedQuestion, {
+    AnswerChoicedQuestionData,
+    AnswerChoicedQuestionResult,
+} from "@/app/model/question/impl/AnswerChoicedQuestion";
 import { createQuestionInstance } from "@/app/model/question/question-factory";
 import {
     getQuestionHintByType,
@@ -19,13 +19,13 @@ import { TbBulb, TbBulbOff } from "react-icons/tb";
 import useSound from "use-sound";
 import QuestionFormBottomPanel from "../QuestionFormBottomPanel";
 
-interface CompleteMissingPhraseQuestionFormProps {
-    questionData: QuestionData<CompleteMissingPhraseQuestionData>;
+interface AnswerChoicedQuestionFormProps {
+    questionData: QuestionData<AnswerChoicedQuestionData>;
 }
 
-export default function CompleteMissingPhraseQuestionForm({
+export default function AnswerChoicedQuestionForm({
     questionData,
-}: CompleteMissingPhraseQuestionFormProps) {
+}: AnswerChoicedQuestionFormProps) {
     const { questionSet, setQuestionSet, handleCorrect, handleNextQuestion } =
         useQuestionSet();
 
@@ -37,19 +37,13 @@ export default function CompleteMissingPhraseQuestionForm({
     const [showHint, setShowHint] = useState(
         questionSet.currentQuestionHasUsedHint,
     );
-    const [answer, setAnswer] = useState("");
-    const [result, setResult] =
-        useState<CompleteMissingPhraseQuestionResult | null>(null);
-    const inputRef = useRef<HTMLInputElement>(null);
-    const questionRef = useRef(
-        createQuestionInstance(
-            questionData,
-        ) as CompleteMissingPhraseQuestion<never>,
+    const [selectedChoice, setSelectedChoice] = useState<number | null>(null);
+    const [result, setResult] = useState<AnswerChoicedQuestionResult | null>(
+        null,
     );
-
-    useEffect(() => {
-        inputRef.current?.focus();
-    }, []);
+    const questionRef = useRef(
+        createQuestionInstance(questionData) as AnswerChoicedQuestion,
+    );
 
     const handleShowHint = useCallback(async () => {
         if (showHint || result?.success) return;
@@ -71,11 +65,11 @@ export default function CompleteMissingPhraseQuestionForm({
         if (!isButtonDebounceExpired(lastSubmitted)) return;
         setLastSubmitted(Date.now());
 
-        if (!answer.trim()) return;
+        if (selectedChoice === null) return;
 
         setResult(null);
 
-        const [, questionResult] = questionRef.current.check(answer);
+        const questionResult = questionRef.current.check(selectedChoice);
         setResult(questionResult);
         if (questionResult.success) {
             handleCorrect();
@@ -84,7 +78,7 @@ export default function CompleteMissingPhraseQuestionForm({
             playFailure();
         }
     }, [
-        answer,
+        selectedChoice,
         handleCorrect,
         handleNextQuestion,
         result,
@@ -94,14 +88,13 @@ export default function CompleteMissingPhraseQuestionForm({
     ]);
 
     const handleClear = useCallback(() => {
-        setAnswer("");
+        setSelectedChoice(null);
         setResult(null);
-        inputRef.current?.focus();
     }, []);
 
     useEffect(() => {
         const handleKeyDown = (event: KeyboardEvent) => {
-            if (event.key === "Enter") {
+            if (event.key === "Enter" && selectedChoice !== null) {
                 handleSubmit();
             }
         };
@@ -109,12 +102,12 @@ export default function CompleteMissingPhraseQuestionForm({
         return () => {
             window.removeEventListener("keydown", handleKeyDown);
         };
-    }, [handleSubmit]);
+    }, [handleSubmit, selectedChoice]);
 
     return (
         <>
             <motion.h2
-                className="text-3xl sm:text-4xl text-primary mb-8 leading-tight"
+                className="text-2xl sm:text-3xl text-primary mb-8 leading-tight"
                 initial={{ y: -20, opacity: 0 }}
                 animate={{ y: 0, opacity: 1 }}
             >
@@ -122,11 +115,7 @@ export default function CompleteMissingPhraseQuestionForm({
                     {getQuestionPromptByType(questionData.type)}
                 </div>
                 <div className="font-bold">
-                    <span>{questionData.data.leftSide}</span>
-                    <span className="bg-highlight rounded-2xl p-2 mx-2 inline-block">
-                        {questionData.data.middle}
-                    </span>
-                    <span>{questionData.data.rightSide}</span>
+                    <span>{questionData.data.prompt}</span>
                     {isQuestionHintAvailable(questionData.type) && (
                         <div
                             className="inline-block ml-3"
@@ -161,25 +150,37 @@ export default function CompleteMissingPhraseQuestionForm({
                 </AnimatePresence>
             </motion.h2>
 
-            <motion.div className="mb-8" transition={{ duration: 0.3 }}>
-                <input
-                    ref={inputRef}
-                    type="text"
-                    value={answer}
-                    onChange={(e) => {
-                        setAnswer(e.target.value);
-                        if (!e.target.value) {
-                            setResult(null);
-                        }
-                    }}
-                    placeholder="Type your answer..."
-                    disabled={result?.success}
-                    className={`text-primary w-full p-3 sm:p-4 text-xl sm:text-2xl border-3
-                                sm:border-4 rounded-2xl outline-none text-center font-medium transition-all
-                                ${result ? (!result.success ? "border-red-500" : "border-green-500 ") : ""}`}
-                    autoComplete="off"
-                    name="answer"
-                />
+            <motion.div
+                className="mb-8 space-y-3"
+                transition={{ duration: 0.3 }}
+            >
+                {questionData.data.choices.map((choice, index) => (
+                    <motion.div
+                        key={index}
+                        onClick={() => {
+                            if (!result?.success) {
+                                setSelectedChoice(index);
+                                setResult(null);
+                            }
+                        }}
+                        className={`p-3 sm:p-4 text-lg sm:text-xl rounded-2xl border-3
+                                    sm:border-4 cursor-pointer transition-all text-center font-medium
+                                    ${
+                                        result?.success
+                                            ? "border-green-500 bg-green-50 dark:bg-green-900/20"
+                                            : result &&
+                                                !result.success &&
+                                                selectedChoice === index
+                                              ? "border-red-500 bg-red-50 dark:bg-red-900/20"
+                                              : selectedChoice === index
+                                                ? "border-primary bg-primary/10"
+                                                : "border-gray-300 dark:border-gray-600 hover:border-primary/50"
+                                    }
+                                    ${result?.success ? "cursor-default" : "cursor-pointer"}`}
+                    >
+                        {choice}
+                    </motion.div>
+                ))}
             </motion.div>
 
             <AnimatePresence mode="wait">
@@ -210,8 +211,10 @@ export default function CompleteMissingPhraseQuestionForm({
             </AnimatePresence>
 
             <QuestionFormBottomPanel
-                isClearButtonDisabled={!answer || !!result?.success}
-                isSuccessButtonDisabled={!answer.trim()}
+                isClearButtonDisabled={
+                    selectedChoice === null || !!result?.success
+                }
+                isSuccessButtonDisabled={selectedChoice === null}
                 isQuestionAnsweredCorrectly={!!result?.success}
                 handleSubmit={handleSubmit}
                 handleClear={handleClear}

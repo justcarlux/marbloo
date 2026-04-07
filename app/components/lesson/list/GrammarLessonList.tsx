@@ -61,6 +61,16 @@ export default function GrammarLessonList() {
                                 href: "/learning/lectures/perfect-continuous-tenses",
                             },
                         },
+                        {
+                            title: "Trivia",
+                            description: "Practice your theory knowledge!",
+                            icon: TbBook,
+                            action: {
+                                type: "create-question-set",
+                                questionTypes: ["grammarTrivia"],
+                                amount: 10,
+                            },
+                        },
                     ],
                 },
                 {

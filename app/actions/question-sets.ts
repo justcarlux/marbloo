@@ -15,7 +15,7 @@ const questionSetCategorySchema = z.enum(QuestionSetCategory);
 const createQuestionSetSchema = z.object({
     types: z.array(questionTypeSchema).nonempty(),
     category: questionSetCategorySchema,
-    amount: z.number().int().min(20),
+    amount: z.number().int().min(10),
 });
 
 const updateQuestionSetSchema = z.object({
