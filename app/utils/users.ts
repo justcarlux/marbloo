@@ -17,5 +17,8 @@ export function getDisplayName(user: User): string {
 }
 
 export function getAvatarUrl(user: User) {
+    if (user.user_metadata?.custom_avatar_url) {
+        return user.user_metadata.custom_avatar_url;
+    }
     return user.user_metadata?.avatar_url;
 }

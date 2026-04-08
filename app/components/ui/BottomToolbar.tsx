@@ -41,7 +41,6 @@ export default function BottomToolbar() {
                                 if (shouldClearQuestionSetOnExit) {
                                     deleteQuestionSet();
                                 }
-                                // TODO: check if previous route exists or belongs to the same website
                                 router.back();
                             }}
                         >

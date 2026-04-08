@@ -1,11 +1,16 @@
 "use server";
 
-import { createSupabaseServerClient } from "@/lib/supabase/server-client";
+import {
+    getOrCreateSupabaseAdminClient,
+    createSupabaseServerClient,
+} from "@/lib/supabase/server-client";
 import { redirect } from "next/navigation";
 import { z } from "zod";
 import { Provider } from "@supabase/supabase-js";
 import { headers } from "next/headers";
 import { Route } from "next";
+import { revalidatePath } from "next/cache";
+import crypto from "crypto";
 
 const authSchema = z.object({
     email: z.email("Invalid email format"),
@@ -14,6 +19,10 @@ const authSchema = z.object({
         .string()
         .min(2, "Display name must be at least 2 characters long")
         .optional(),
+});
+
+const updateProfileSchema = z.object({
+    displayName: z.string().max(30).optional(),
 });
 
 export type AuthResponseErrorReason = "validation_error" | "auth_error";
@@ -35,7 +44,7 @@ export async function signIn(
         return {
             success: false,
             reason: "validation_error",
-            error: result.error.issues[0].message,
+            error: result.error.message,
         };
     }
 
@@ -63,7 +72,7 @@ export async function signUp(
         return {
             success: false,
             reason: "validation_error",
-            error: result.error.issues[0].message,
+            error: result.error.message,
         };
     }
 
@@ -109,16 +118,24 @@ export async function signInWithOAuth(provider: Provider) {
     }
 }
 
-export async function updateProfile(data: {
-    displayName?: string;
-    avatarUrl?: string;
-}) {
+export async function updateProfile(
+    input: z.input<typeof updateProfileSchema>,
+) {
+    const result = updateProfileSchema.safeParse(input);
+
+    if (!result.success) {
+        return {
+            success: false,
+            error: result.error.message,
+        };
+    }
+
+    const { displayName } = result.data;
     const supabase = await createSupabaseServerClient();
 
     const { error } = await supabase.auth.updateUser({
         data: {
-            display_name: data.displayName,
-            avatar_url: data.avatarUrl,
+            display_name: displayName,
         },
     });
 
@@ -126,7 +143,79 @@ export async function updateProfile(data: {
         return { success: false, error: error.message };
     }
 
+    revalidatePath("/", "layout");
     return { success: true };
+}
+
+export async function uploadAvatar(formData: FormData) {
+    const supabaseSession = await createSupabaseServerClient();
+    const {
+        data: { user },
+    } = await supabaseSession.auth.getUser();
+
+    if (!user) {
+        return { success: false, error: "User not authenticated" };
+    }
+
+    const supabaseAdmin = getOrCreateSupabaseAdminClient();
+    const file = formData.get("file") as File;
+
+    if (!file || !(file instanceof File)) {
+        return { success: false, error: "No file provided" };
+    }
+
+    const arrayBuffer = await file.arrayBuffer();
+    const hash = crypto
+        .createHash("sha256")
+        .update(Buffer.from(arrayBuffer))
+        .digest("hex");
+
+    const fileExt = file.name.split(".").pop();
+    const fileName = `${hash}.${fileExt}`;
+    const filePath = fileName;
+
+    const oldCustomAvatarUrl: string | undefined =
+        user.user_metadata?.custom_avatar_url;
+
+    const { error: uploadError } = await supabaseAdmin.storage
+        .from("avatars")
+        .upload(filePath, file, {
+            upsert: true,
+        });
+
+    if (uploadError) {
+        return { success: false, error: uploadError.message };
+    }
+
+    const {
+        data: { publicUrl },
+    } = supabaseAdmin.storage.from("avatars").getPublicUrl(filePath);
+
+    const { error: updateError } =
+        await supabaseAdmin.auth.admin.updateUserById(user.id, {
+            user_metadata: {
+                ...user.user_metadata,
+                custom_avatar_url: publicUrl,
+            },
+        });
+
+    if (updateError) {
+        return { success: false, error: updateError.message };
+    }
+
+    if (oldCustomAvatarUrl && oldCustomAvatarUrl !== publicUrl) {
+        const encodedPath = oldCustomAvatarUrl
+            .split("avatars/")
+            .pop()
+            ?.split("?")[0];
+        const oldPath = encodedPath ? decodeURIComponent(encodedPath) : null;
+        if (oldPath) {
+            await supabaseAdmin.storage.from("avatars").remove([oldPath]);
+        }
+    }
+
+    revalidatePath("/", "layout");
+    return { success: true, publicUrl };
 }
 
 export async function signOut() {

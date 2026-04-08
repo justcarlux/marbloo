@@ -37,10 +37,9 @@ export async function updateSession(request: NextRequest) {
         !user &&
         !request.nextUrl.pathname.startsWith("/login") &&
         !request.nextUrl.pathname.startsWith("/signup") &&
+        !request.nextUrl.pathname.startsWith("/auth") &&
         request.nextUrl.pathname !== "/"
     ) {
-        console.log("here");
-
         return NextResponse.redirect(new URL("/login", request.url));
     }
 

@@ -1,6 +1,7 @@
 "use client";
 
 import { useQuestionSet } from "@/app/contexts/QuestionSetContext";
+import { useSfx } from "@/app/contexts/SfxContext";
 import CompleteMissingPhraseQuestion, {
     CompleteMissingPhraseQuestionData,
     CompleteMissingPhraseQuestionResult,
@@ -16,9 +17,7 @@ import { isButtonDebounceExpired } from "@/app/utils/button-debounce";
 import { AnimatePresence, motion } from "framer-motion";
 import { useCallback, useEffect, useRef, useState } from "react";
 import { TbBulb, TbBulbOff } from "react-icons/tb";
-import useSound from "use-sound";
 import QuestionFormBottomPanel from "../QuestionFormBottomPanel";
-import { useSfx } from "@/app/contexts/SfxContext";
 
 interface CompleteMissingPhraseQuestionFormProps {
     questionData: QuestionData<CompleteMissingPhraseQuestionData>;
@@ -91,6 +90,7 @@ export default function CompleteMissingPhraseQuestionForm({
         playSuccess,
         playFailure,
         lastSubmitted,
+        attempts,
     ]);
 
     const handleClear = useCallback(() => {

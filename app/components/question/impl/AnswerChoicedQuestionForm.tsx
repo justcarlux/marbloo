@@ -16,7 +16,6 @@ import { isButtonDebounceExpired } from "@/app/utils/button-debounce";
 import { AnimatePresence, motion } from "framer-motion";
 import { useCallback, useEffect, useRef, useState } from "react";
 import { TbBulb, TbBulbOff } from "react-icons/tb";
-import useSound from "use-sound";
 import QuestionFormBottomPanel from "../QuestionFormBottomPanel";
 import { useSfx } from "@/app/contexts/SfxContext";
 
@@ -42,7 +41,9 @@ export default function AnswerChoicedQuestionForm({
         null,
     );
     const questionRef = useRef(
-        createQuestionInstance(questionData) as AnswerChoicedQuestion,
+        createQuestionInstance(
+            questionData,
+        ) as unknown as AnswerChoicedQuestion,
     );
 
     const handleShowHint = useCallback(async () => {
@@ -86,6 +87,7 @@ export default function AnswerChoicedQuestionForm({
         playSuccess,
         playFailure,
         lastSubmitted,
+        attempts,
     ]);
 
     const handleClear = useCallback(() => {

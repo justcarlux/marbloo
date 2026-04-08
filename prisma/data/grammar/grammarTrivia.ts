@@ -2,853 +2,340 @@ import { typedQuestionData } from "@/app/model/question/question-factory";
 
 const grammarTrivia = [
     typedQuestionData({
-        id: "fa401a4c3c455791d8f08c0781d24646",
+        id: "770c6ed6c97ab84a4cb4329c894bbc3d",
         type: "grammarTrivia",
         data: {
-            prompt: "Which form of the verb 'to be' is used with the first person singular (I) in the present tense?",
+            prompt: "What is the classification of the verb 'to be' in English?",
+            choices: [
+                "Regular verb",
+                "Irregular verb",
+                "Modal verb",
+                "Stative verb",
+            ],
+            correctChoiceIndex: 1,
+        },
+    }),
+    typedQuestionData({
+        id: "81351a294dda143cc232bb27980bb822",
+        type: "grammarTrivia",
+        data: {
+            prompt: "Which of these is a primary meaning of the verb 'to be'?",
+            choices: ["To possess", "To exist", "To move", "To desire"],
+            correctChoiceIndex: 1,
+        },
+    }),
+    typedQuestionData({
+        id: "dfd34126aa5d9cf91a4b89ec3f7e000e",
+        type: "grammarTrivia",
+        data: {
+            prompt: "In the present tense, which form of 'to be' is used with the subject 'I'?",
             choices: ["is", "are", "am", "be"],
             correctChoiceIndex: 2,
         },
     }),
     typedQuestionData({
-        id: "c04b66635472e368ca5668b58afd78cd",
+        id: "511ebc08b2ea15cb325de9daf050a8a2",
         type: "grammarTrivia",
         data: {
-            prompt: "How do you form a negative statement with the verb 'to be' in the present tense?",
+            prompt: "Which subjects use the form 'is' in the present tense?",
             choices: [
-                "Add 'do not' before the verb",
-                "Add 'not' after the verb",
-                "Change the verb to its past form",
-                "Invert the subject and the verb",
+                "I and you",
+                "Third person singular (he, she, it)",
+                "All plural subjects",
+                "Second person singular",
             ],
             correctChoiceIndex: 1,
         },
     }),
     typedQuestionData({
-        id: "5e4c200b43641bcbd791ed51946ff799",
+        id: "cb9985ff431af6d38ce10cdd3442a444",
         type: "grammarTrivia",
         data: {
-            prompt: "What is the correct form of 'to be' for 'She' in the present tense?",
-            choices: ["am", "are", "is", "were"],
+            prompt: "Which form of 'to be' is used for 'you' and all plural subjects in the present?",
+            choices: ["am", "is", "are", "were"],
             correctChoiceIndex: 2,
         },
     }),
     typedQuestionData({
-        id: "e84cd1ac5417a1f7ae1432f7811117ce",
+        id: "044b390d4d55017df1de756d483cbc6b",
         type: "grammarTrivia",
         data: {
-            prompt: "Which form of 'to be' is used for plural subjects like 'we' and 'they' in the past tense?",
-            choices: ["was", "were", "is", "are"],
+            prompt: "Which past tense form of 'to be' is used for the first person singular?",
+            choices: ["were", "was", "be", "am"],
             correctChoiceIndex: 1,
         },
     }),
     typedQuestionData({
-        id: "9ab01609ae553d068e633ba6ebb801aa",
+        id: "e846aed1fd9c685eeaee926c32bd3f49",
         type: "grammarTrivia",
         data: {
-            prompt: "In the future tense, what usually follows the modal auxiliary verb 'will'?",
-            choices: ["being", "been", "be", "is"],
+            prompt: "The past tense form 'were' is used with which subjects?",
+            choices: [
+                "I and he",
+                "She and it",
+                "Second person and plural subjects",
+                "Only third person plural",
+            ],
             correctChoiceIndex: 2,
         },
     }),
     typedQuestionData({
-        id: "40f3b22f57bd6bf0938d8a90f657ca3c",
+        id: "0509a224610d7c5f9c9878461d2cd9b3",
         type: "grammarTrivia",
         data: {
-            prompt: "What is the third-person singular ending for most verbs in the simple present tense?",
+            prompt: "In the future tense, where is the verb 'to be' placed?",
+            choices: [
+                "Before 'will'",
+                "After the modal 'will'",
+                "At the start of the sentence",
+                "After the complement",
+            ],
+            correctChoiceIndex: 1,
+        },
+    }),
+    typedQuestionData({
+        id: "abf8965504ae792defc5202201c574ab",
+        type: "grammarTrivia",
+        data: {
+            prompt: "How are negative statements formed with the verb 'to be'?",
+            choices: [
+                "Adding 'not' before the verb",
+                "Adding 'not' after the verb form",
+                "Using 'do not'",
+                "Using 'did not'",
+            ],
+            correctChoiceIndex: 1,
+        },
+    }),
+    typedQuestionData({
+        id: "536c9fba03633f0028b672a6ce19c83e",
+        type: "grammarTrivia",
+        data: {
+            prompt: "What is the rule for forming questions with the verb 'to be'?",
+            choices: [
+                "Add 'Do' at the start",
+                "Invert the verb and the subject",
+                "Add 'will' before the verb",
+                "Change the verb to base form",
+            ],
+            correctChoiceIndex: 1,
+        },
+    }),
+    typedQuestionData({
+        id: "e86035b0ac99246cb5c0c8c8851d7571",
+        type: "grammarTrivia",
+        data: {
+            prompt: "What is the main focus of Simple Tenses?",
+            choices: [
+                "Ongoing duration",
+                "The fact that an action happens",
+                "Completion in relation to others",
+                "Continuous aspect",
+            ],
+            correctChoiceIndex: 1,
+        },
+    }),
+    typedQuestionData({
+        id: "4218046cde1a68a94901562676cfac9d",
+        type: "grammarTrivia",
+        data: {
+            prompt: "What is added to the verb for third-person singular in Simple Present?",
             choices: ["-ing", "-ed", "-s or -es", "-en"],
             correctChoiceIndex: 2,
         },
     }),
     typedQuestionData({
-        id: "886ac60b683fc728ea195c198cae4595",
+        id: "983cf9aaa13e5f162deaed38618d17df",
         type: "grammarTrivia",
         data: {
-            prompt: "Which auxiliary verb is used to form questions in the simple present tense for 'I', 'you', 'we', and 'they'?",
-            choices: ["does", "do", "is", "are"],
+            prompt: "Which tense expresses facts or general truths?",
+            choices: [
+                "Simple Present",
+                "Present Continuous",
+                "Present Perfect",
+                "Simple Future",
+            ],
+            correctChoiceIndex: 0,
+        },
+    }),
+    typedQuestionData({
+        id: "c4a04222d4b8d20b50291f8c6cbdf0d7",
+        type: "grammarTrivia",
+        data: {
+            prompt: "Which tense is used to describe current habits and routines?",
+            choices: [
+                "Past Simple",
+                "Simple Present",
+                "Present Continuous",
+                "Future Simple",
+            ],
             correctChoiceIndex: 1,
         },
     }),
     typedQuestionData({
-        id: "37a75ec6871e12c554751f52c63c9425",
+        id: "6a6b6760fa712f2298de0041f4eaaa76",
         type: "grammarTrivia",
         data: {
-            prompt: "How is the simple past tense of regular verbs formed?",
+            prompt: "How do you form negative statements in Simple Present for third-person singular?",
+            choices: ["do + not", "does + not", "is + not", "did + not"],
+            correctChoiceIndex: 1,
+        },
+    }),
+    typedQuestionData({
+        id: "af05e81065433846aad41bf5c5de1935",
+        type: "grammarTrivia",
+        data: {
+            prompt: "Which auxiliary is used for questions in Simple Present for 'I, you, we, they'?",
+            choices: ["does", "do", "is", "am"],
+            correctChoiceIndex: 1,
+        },
+    }),
+    typedQuestionData({
+        id: "481e868cb1eef45109c72834306bcc8b",
+        type: "grammarTrivia",
+        data: {
+            prompt: "How is the Simple Past of regular verbs formed?",
             choices: [
                 "Adding -ing",
+                "Adding -s",
                 "Adding -ed",
-                "Using 'will'",
-                "Using 'have'",
-            ],
-            correctChoiceIndex: 1,
-        },
-    }),
-    typedQuestionData({
-        id: "8915306131ee4d734de6eb3048160736",
-        type: "grammarTrivia",
-        data: {
-            prompt: "What happens to the main verb in a negative simple past statement using 'did not'?",
-            choices: [
-                "It stays in the base form",
-                "It changes to the past form",
-                "It adds -ing",
-                "It adds -s",
-            ],
-            correctChoiceIndex: 0,
-        },
-    }),
-    typedQuestionData({
-        id: "6cb55694870dc07eb48707a9c6a8a1c3",
-        type: "grammarTrivia",
-        data: {
-            prompt: "Which auxiliary verb is commonly used to make predictions in the simple future tense?",
-            choices: ["have", "do", "will", "did"],
-            correctChoiceIndex: 2,
-        },
-    }),
-    typedQuestionData({
-        id: "e182051ac7e8918374a791ee9af210af",
-        type: "grammarTrivia",
-        data: {
-            prompt: "What is the structure of the present continuous tense?",
-            choices: [
-                "have + past participle",
-                "am/is/are + verb(-ing)",
-                "will + base verb",
-                "do/does + base verb",
-            ],
-            correctChoiceIndex: 1,
-        },
-    }),
-    typedQuestionData({
-        id: "5d9ce4f6f5f3757439c362b9b9e8fe54",
-        type: "grammarTrivia",
-        data: {
-            prompt: "Which tense is used for an action in progress at a specific moment in the past?",
-            choices: [
-                "Simple Past",
-                "Past Perfect",
-                "Past Continuous",
-                "Present Perfect",
+                "Changing the vowel",
             ],
             correctChoiceIndex: 2,
         },
     }),
     typedQuestionData({
-        id: "128227ce5b5d373a5d9577321003396f",
+        id: "3621fd41cf6f9bf4ca1ec004ee09219b",
         type: "grammarTrivia",
         data: {
-            prompt: "How is the future continuous tense formed?",
+            prompt: "What characterizes irregular verbs in the Simple Past?",
             choices: [
-                "will have + past participle",
-                "will be + verb(-ing)",
-                "am/is/are going to + verb",
-                "will + verb",
+                "They all end in -ed",
+                "They have unique forms to memorize",
+                "They don't have a past form",
+                "They use 'will'",
             ],
             correctChoiceIndex: 1,
         },
     }),
     typedQuestionData({
-        id: "166ea9dd464dfa72f5e6943aa52f494c",
+        id: "f0f451d59f3aa37a8ef001ec67e6c0a0",
         type: "grammarTrivia",
         data: {
-            prompt: "What auxiliary verbs are used in the present perfect tense?",
-            choices: ["do / does", "was / were", "have / has", "will / shall"],
-            correctChoiceIndex: 2,
-        },
-    }),
-    typedQuestionData({
-        id: "d6c0cef2fbd63bad30e5ceb378eef0d9",
-        type: "grammarTrivia",
-        data: {
-            prompt: "When is the past perfect tense used?",
-            choices: [
-                "For habits in the past",
-                "For an action completed before another past action",
-                "For actions happening now",
-                "For future plans",
-            ],
-            correctChoiceIndex: 1,
-        },
-    }),
-    typedQuestionData({
-        id: "f84e04fd0276a1be7888c3c77569ee7f",
-        type: "grammarTrivia",
-        data: {
-            prompt: "What is the structure of the future perfect tense?",
-            choices: [
-                "will be + verb(-ing)",
-                "will have + past participle",
-                "will + base verb",
-                "have been + verb(-ing)",
-            ],
-            correctChoiceIndex: 1,
-        },
-    }),
-    typedQuestionData({
-        id: "2daee43dcae8eff83aa3d9aac61332df",
-        type: "grammarTrivia",
-        data: {
-            prompt: "Which tense emphasizes the duration of an action that started in the past and continues now?",
+            prompt: "Which tense describes actions finished at a specific time in the past?",
             choices: [
                 "Present Perfect",
-                "Present Continuous",
-                "Present Perfect Continuous",
-                "Simple Present",
-            ],
-            correctChoiceIndex: 2,
-        },
-    }),
-    typedQuestionData({
-        id: "269ba95196ff1635703ef5d6bee27332",
-        type: "grammarTrivia",
-        data: {
-            prompt: "What is the form for the past perfect continuous tense?",
-            choices: [
-                "have been + verb(-ing)",
-                "had been + verb(-ing)",
-                "was + verb(-ing)",
-                "has been + verb(-ing)",
-            ],
-            correctChoiceIndex: 1,
-        },
-    }),
-    typedQuestionData({
-        id: "ded39cc37d1658e4c00833c3de898db7",
-        type: "grammarTrivia",
-        data: {
-            prompt: "How do you form a question in the future perfect continuous tense?",
-            choices: [
-                "Have + subject + been + verb-ing?",
-                "Will + subject + have been + verb-ing?",
-                "Subject + will + have been + verb-ing?",
-                "Did + subject + been + verb-ing?",
-            ],
-            correctChoiceIndex: 1,
-        },
-    }),
-    typedQuestionData({
-        id: "d8e3f863ab6e3df975c43753080eafb4",
-        type: "grammarTrivia",
-        data: {
-            prompt: "What is the negative form of 'She will be'?",
-            choices: [
-                "She not will be",
-                "She will be not",
-                "She will not be",
-                "She doesn't be",
-            ],
-            correctChoiceIndex: 2,
-        },
-    }),
-    typedQuestionData({
-        id: "1587c9618c8e145b69f7213fa9aacb42",
-        type: "grammarTrivia",
-        data: {
-            prompt: "Which form of 'to be' is used with 'You' in the past tense?",
-            choices: ["was", "were", "are", "be"],
-            correctChoiceIndex: 1,
-        },
-    }),
-    typedQuestionData({
-        id: "8edbb8c11a4be4829110a054a3d651ff",
-        type: "grammarTrivia",
-        data: {
-            prompt: "To form a question with 'to be', what is the correct word order?",
-            choices: [
-                "Subject + Verb + ?",
-                "Verb + Subject + ?",
-                "Do + Subject + Verb + ?",
-                "Will + Subject + Verb + ?",
-            ],
-            correctChoiceIndex: 1,
-        },
-    }),
-    typedQuestionData({
-        id: "0bc08c7e95874e14d2ca4a5e174cfd7e",
-        type: "grammarTrivia",
-        data: {
-            prompt: "What tense describes facts or general truths like 'Water boils at 100 degrees'?",
-            choices: [
-                "Simple Present",
-                "Present Continuous",
-                "Present Perfect",
-                "Simple Future",
-            ],
-            correctChoiceIndex: 0,
-        },
-    }),
-    typedQuestionData({
-        id: "8a6ba4bec10946da4abcf14ebe232dde",
-        type: "grammarTrivia",
-        data: {
-            prompt: "What is the negative contraction for 'does not'?",
-            choices: ["don't", "doen't", "doesn't", "did't"],
-            correctChoiceIndex: 2,
-        },
-    }),
-    typedQuestionData({
-        id: "004ce29cf0e4dc6efea4f724e0d788c6",
-        type: "grammarTrivia",
-        data: {
-            prompt: "In the sentence 'I have lived here for five years', what tense is being used?",
-            choices: [
-                "Simple Past",
-                "Present Perfect",
-                "Past Perfect",
-                "Present Continuous",
-            ],
-            correctChoiceIndex: 1,
-        },
-    }),
-    typedQuestionData({
-        id: "f9cbcc6402ee71384ac65357865bb811",
-        type: "grammarTrivia",
-        data: {
-            prompt: "Which tense is used to talk about life experiences at an unspecified time?",
-            choices: [
-                "Simple Past",
-                "Present Perfect",
-                "Past Perfect",
-                "Future Perfect",
-            ],
-            correctChoiceIndex: 1,
-        },
-    }),
-    typedQuestionData({
-        id: "74302895aa99a9a99be7a516ab6b39ab",
-        type: "grammarTrivia",
-        data: {
-            prompt: "What is the past participle of 'go'?",
-            choices: ["went", "goed", "gone", "going"],
-            correctChoiceIndex: 2,
-        },
-    }),
-    typedQuestionData({
-        id: "2dd526390f8b4b6f1039976183eebaac",
-        type: "grammarTrivia",
-        data: {
-            prompt: "How do you make the present continuous negative?",
-            choices: [
-                "Add 'not' before 'am/is/are'",
-                "Add 'not' after 'am/is/are'",
-                "Change the verb to base form",
-                "Use 'don't'",
-            ],
-            correctChoiceIndex: 1,
-        },
-    }),
-    typedQuestionData({
-        id: "9a7880413f2459f36eacfb6e52be9889",
-        type: "grammarTrivia",
-        data: {
-            prompt: "What tense is 'I was doing my homework when you called'?",
-            choices: [
                 "Simple Past",
                 "Past Continuous",
                 "Past Perfect",
-                "Present Continuous",
             ],
             correctChoiceIndex: 1,
         },
     }),
     typedQuestionData({
-        id: "1feeb043c8c4974efb6811c3e8f1cd2f",
+        id: "ef81c969a7076c16d34227d7385b1726",
         type: "grammarTrivia",
         data: {
-            prompt: "Which tense is formed with 'will have been + verb(-ing)'?",
+            prompt: "In a Simple Past negative statement, what form is the main verb in?",
             choices: [
-                "Future Perfect",
-                "Future Continuous",
-                "Future Perfect Continuous",
-                "Present Perfect Continuous",
-            ],
-            correctChoiceIndex: 2,
-        },
-    }),
-    typedQuestionData({
-        id: "5e7854278578207c6ef7e40ca66cf29d",
-        type: "grammarTrivia",
-        data: {
-            prompt: "What does the verb 'to be' mainly mean depending on context?",
-            choices: [
-                "To do or act",
-                "To exist, happen, or have characteristics",
-                "To possess or own",
-                "To move or go",
-            ],
-            correctChoiceIndex: 1,
-        },
-    }),
-    typedQuestionData({
-        id: "f136b1e5ad6c1d3771dccdd7471dcf9d",
-        type: "grammarTrivia",
-        data: {
-            prompt: "Which of these is the correct question form for 'She is a baker'?",
-            choices: [
-                "She is a baker?",
-                "Is she a baker?",
-                "Does she be a baker?",
-                "Is a baker she?",
-            ],
-            correctChoiceIndex: 1,
-        },
-    }),
-    typedQuestionData({
-        id: "f4922e729dea353ab21ae0db9503041c",
-        type: "grammarTrivia",
-        data: {
-            prompt: "For the subject 'It', what is the correct simple present form of 'walk'?",
-            choices: ["walk", "walks", "walking", "walked"],
-            correctChoiceIndex: 1,
-        },
-    }),
-    typedQuestionData({
-        id: "9d85763afedfae2956aca2b0c93410e6",
-        type: "grammarTrivia",
-        data: {
-            prompt: "What is the negative form of 'They live in a small apartment'?",
-            choices: [
-                "They live not in a small apartment",
-                "They don't live in a small apartment",
-                "They doesn't live in a small apartment",
-                "They not live in a small apartment",
-            ],
-            correctChoiceIndex: 1,
-        },
-    }),
-    typedQuestionData({
-        id: "c459a58926fb81be89abf0033cc42565",
-        type: "grammarTrivia",
-        data: {
-            prompt: "What auxiliary verb do you use to form a question in the simple past?",
-            choices: ["Do", "Does", "Did", "Have"],
-            correctChoiceIndex: 2,
-        },
-    }),
-    typedQuestionData({
-        id: "f732359851e38b504aebb4f5b8cef0ea",
-        type: "grammarTrivia",
-        data: {
-            prompt: "Identify the tense: 'By next week, I will have finished the project.'",
-            choices: [
-                "Future Simple",
-                "Future Continuous",
-                "Future Perfect",
-                "Future Perfect Continuous",
-            ],
-            correctChoiceIndex: 2,
-        },
-    }),
-    typedQuestionData({
-        id: "274f04763248ae990d667befe2c5d20e",
-        type: "grammarTrivia",
-        data: {
-            prompt: "Which tense is used for two actions happening at the same time in the past?",
-            choices: [
-                "Simple Past",
-                "Past Continuous",
-                "Past Perfect",
-                "Present Continuous",
-            ],
-            correctChoiceIndex: 1,
-        },
-    }),
-    typedQuestionData({
-        id: "104877839e10120166b04348b3e890f0",
-        type: "grammarTrivia",
-        data: {
-            prompt: "How do you form a negative in the future perfect tense?",
-            choices: [
-                "will + have not + past participle",
-                "will not + have + past participle",
-                "not will have + past participle",
-                "will have + past participle + not",
-            ],
-            correctChoiceIndex: 1,
-        },
-    }),
-    typedQuestionData({
-        id: "91a1fd19a0d7aeea59e5ef3f3cbd9781",
-        type: "grammarTrivia",
-        data: {
-            prompt: "What is the present participle of the verb 'study'?",
-            choices: ["studied", "studies", "studying", "study"],
-            correctChoiceIndex: 2,
-        },
-    }),
-    typedQuestionData({
-        id: "0f5edfa175044f7ded9a995b55dda721",
-        type: "grammarTrivia",
-        data: {
-            prompt: "Which tense can describe planned future arrangements?",
-            choices: [
-                "Simple Present",
-                "Present Continuous",
-                "Present Perfect",
-                "Past Continuous",
-            ],
-            correctChoiceIndex: 1,
-        },
-    }),
-    typedQuestionData({
-        id: "3950ef914f08f22512310d7f7cacb735",
-        type: "grammarTrivia",
-        data: {
-            prompt: "What is the past form of the irregular verb 'eat'?",
-            choices: ["eated", "ate", "aten", "eating"],
-            correctChoiceIndex: 1,
-        },
-    }),
-    typedQuestionData({
-        id: "e35260ce51a806b58ad821b579e4575f",
-        type: "grammarTrivia",
-        data: {
-            prompt: "Complete the sentence: 'She ___ been studying for three hours.' (Present Perfect Continuous)",
-            choices: ["have", "has", "had", "is"],
-            correctChoiceIndex: 1,
-        },
-    }),
-    typedQuestionData({
-        id: "cc590808b0a29cbd1b3542499950b78a",
-        type: "grammarTrivia",
-        data: {
-            prompt: "Which of these expresses a spontaneous decision?",
-            choices: [
-                "I am going to eat",
-                "I will answer the phone",
-                "I have eaten",
-                "I was eating",
-            ],
-            correctChoiceIndex: 1,
-        },
-    }),
-    typedQuestionData({
-        id: "e7b1dc3330685b4ed81151e4e1df8b6e",
-        type: "grammarTrivia",
-        data: {
-            prompt: "In the past perfect continuous, what is the sequence of auxiliary verbs?",
-            choices: ["have + been", "has + been", "had + been", "was + being"],
-            correctChoiceIndex: 2,
-        },
-    }),
-    typedQuestionData({
-        id: "0c0309200b77543ab43ad55a2ed93059",
-        type: "grammarTrivia",
-        data: {
-            prompt: "What is the future form of 'to be' for 'I'?",
-            choices: ["I am be", "I will be", "I will being", "I am going be"],
-            correctChoiceIndex: 1,
-        },
-    }),
-    typedQuestionData({
-        id: "59afb033be8d5b465fef6a2e26bc4c67",
-        type: "grammarTrivia",
-        data: {
-            prompt: "Choose the correct negative for 'I was':",
-            choices: ["I were not", "I was not", "I am not", "I did not was"],
-            correctChoiceIndex: 1,
-        },
-    }),
-    typedQuestionData({
-        id: "6a25131e5ec2549c3e3029785dfffbfb",
-        type: "grammarTrivia",
-        data: {
-            prompt: "Which tense is used for actions that started and finished at a specific time in the past?",
-            choices: [
-                "Simple Past",
-                "Past Continuous",
-                "Past Perfect",
-                "Present Perfect",
-            ],
-            correctChoiceIndex: 0,
-        },
-    }),
-    typedQuestionData({
-        id: "5e37466ead20ebc52c8bc5a177177499",
-        type: "grammarTrivia",
-        data: {
-            prompt: "To form a question in the future continuous, where does 'will' go?",
-            choices: [
-                "After the subject",
-                "Before the subject",
-                "After 'be'",
-                "At the end of the sentence",
-            ],
-            correctChoiceIndex: 1,
-        },
-    }),
-    typedQuestionData({
-        id: "ff7a4092a436ed12fb551796dbf06f3c",
-        type: "grammarTrivia",
-        data: {
-            prompt: "What auxiliary is used with 'She' in the simple present to make a question?",
-            choices: ["Do", "Does", "Has", "Is"],
-            correctChoiceIndex: 1,
-        },
-    }),
-    typedQuestionData({
-        id: "df03485f5e60c91857482b34a1316047",
-        type: "grammarTrivia",
-        data: {
-            prompt: "What does the present perfect continuous tense focus on?",
-            choices: [
-                "Completion",
-                "The fact it happened",
-                "Duration of the action",
-                "Future prediction",
-            ],
-            correctChoiceIndex: 2,
-        },
-    }),
-    typedQuestionData({
-        id: "8c45f8a5f33f63d320dba4c43d46068b",
-        type: "grammarTrivia",
-        data: {
-            prompt: "What is the correct negative for 'They were'?",
-            choices: [
-                "They was not",
-                "They were not",
-                "They are not",
-                "They did not were",
-            ],
-            correctChoiceIndex: 1,
-        },
-    }),
-    typedQuestionData({
-        id: "0886151ad1ebae18f385e8c779cad7f8",
-        type: "grammarTrivia",
-        data: {
-            prompt: "What is the structure of a present perfect question?",
-            choices: [
-                "Do + subject + have + past participle?",
-                "Has/Have + subject + past participle?",
-                "Subject + has/have + past participle?",
-                "Is + subject + past participle?",
-            ],
-            correctChoiceIndex: 1,
-        },
-    }),
-    typedQuestionData({
-        id: "ff7c1480b0964099b3fa9ec08bdcb9ae",
-        type: "grammarTrivia",
-        data: {
-            prompt: "Which tense uses 'had + past participle'?",
-            choices: [
-                "Present Perfect",
-                "Past Perfect",
-                "Past Simple",
-                "Future Perfect",
-            ],
-            correctChoiceIndex: 1,
-        },
-    }),
-    typedQuestionData({
-        id: "3741ef75d44412cd4cd11dd54b062cad",
-        type: "grammarTrivia",
-        data: {
-            prompt: "How do you form the negative of 'will be working'?",
-            choices: [
-                "will be not working",
-                "will not be working",
-                "not will be working",
-                "won't being working",
-            ],
-            correctChoiceIndex: 1,
-        },
-    }),
-    typedQuestionData({
-        id: "20ef85e1feffa608bdddf9070c6f7dc3",
-        type: "grammarTrivia",
-        data: {
-            prompt: "Which tense would you use to describe a state of being in the current moment?",
-            choices: [
-                "Simple Present",
-                "Simple Past",
-                "Future Continuous",
-                "Past Perfect",
-            ],
-            correctChoiceIndex: 0,
-        },
-    }),
-    typedQuestionData({
-        id: "aec4abb6cc1ba45ee8340886c8aaea94",
-        type: "grammarTrivia",
-        data: {
-            prompt: "What is the question form of 'I am meeting my teacher'?",
-            choices: [
-                "I am meeting my teacher?",
-                "Am I meeting my teacher?",
-                "Do I meeting my teacher?",
-                "Will I meet my teacher?",
-            ],
-            correctChoiceIndex: 1,
-        },
-    }),
-    typedQuestionData({
-        id: "712b5c6d76e0b6159ecf92ecb5208145",
-        type: "grammarTrivia",
-        data: {
-            prompt: "Which tense shows an action will be completed before a future time?",
-            choices: [
-                "Future Continuous",
-                "Future Simple",
-                "Future Perfect",
-                "Future Perfect Continuous",
-            ],
-            correctChoiceIndex: 2,
-        },
-    }),
-    typedQuestionData({
-        id: "051d5dc05c1b708e937f01ce66f54e2a",
-        type: "grammarTrivia",
-        data: {
-            prompt: "What is the auxiliary for 'they' in the present perfect?",
-            choices: ["has", "have", "are", "do"],
-            correctChoiceIndex: 1,
-        },
-    }),
-    typedQuestionData({
-        id: "8136f51e62277ca19eff64ce22a55e74",
-        type: "grammarTrivia",
-        data: {
-            prompt: "Identify the tense: 'I had been waiting for an hour.'",
-            choices: [
-                "Past Perfect",
-                "Past Continuous",
-                "Past Perfect Continuous",
-                "Present Perfect Continuous",
-            ],
-            correctChoiceIndex: 2,
-        },
-    }),
-    typedQuestionData({
-        id: "9247b7d5a9343ffde52438348fd4f770",
-        type: "grammarTrivia",
-        data: {
-            prompt: "What is the future continuous question for 'You will be using the computer'?",
-            choices: [
-                "Will you be using the computer?",
-                "Are you going to use the computer?",
-                "Will be you using the computer?",
-                "Have you been using the computer?",
-            ],
-            correctChoiceIndex: 0,
-        },
-    }),
-    typedQuestionData({
-        id: "0d765e27713423c3fe14d0e11f81143a",
-        type: "grammarTrivia",
-        data: {
-            prompt: "Which form of 'to be' is used with 'Luis and I' in the present?",
-            choices: ["am", "is", "are", "be"],
-            correctChoiceIndex: 2,
-        },
-    }),
-    typedQuestionData({
-        id: "a8f935c960d0b130ea672649436ef60a",
-        type: "grammarTrivia",
-        data: {
-            prompt: "How do you make the past perfect negative?",
-            choices: [
-                "Add 'not' after 'had'",
-                "Add 'not' before 'had'",
-                "Use 'didn't'",
-                "Use 'haven't'",
-            ],
-            correctChoiceIndex: 0,
-        },
-    }),
-    typedQuestionData({
-        id: "e89479e3879363f2b2249eaf6e227333",
-        type: "grammarTrivia",
-        data: {
-            prompt: "What is the base form of the verb 'wrote'?",
-            choices: ["written", "write", "writing", "writes"],
-            correctChoiceIndex: 1,
-        },
-    }),
-    typedQuestionData({
-        id: "6781f2e8ba4a7d2e3cf6711d8fb89abb",
-        type: "grammarTrivia",
-        data: {
-            prompt: "Which tense uses 'am/is/are going to' for plans?",
-            choices: [
-                "Simple Present",
-                "Simple Future",
-                "Present Continuous",
-                "Future Perfect",
-            ],
-            correctChoiceIndex: 1,
-        },
-    }),
-    typedQuestionData({
-        id: "f8403f9beb6dc92fe6754c7ed97bd8de",
-        type: "grammarTrivia",
-        data: {
-            prompt: "In the sentence 'She has finished her homework', 'finished' is the:",
-            choices: [
+                "Past form",
                 "Base form",
                 "Present participle",
                 "Past participle",
-                "Infinitive",
             ],
+            correctChoiceIndex: 1,
+        },
+    }),
+    typedQuestionData({
+        id: "756726949a029a8411554a556b8f71ec",
+        type: "grammarTrivia",
+        data: {
+            prompt: "Which auxiliary is used for Simple Past questions?",
+            choices: ["do", "does", "did", "was"],
             correctChoiceIndex: 2,
         },
     }),
     typedQuestionData({
-        id: "d3b644dacbeb90b101b70ce97a3fb238",
+        id: "b2dbf79f9b69bc11f6079369aaeb1293",
         type: "grammarTrivia",
         data: {
-            prompt: "What is the correct form for 'We' in the past perfect continuous?",
-            choices: [
-                "We had being",
-                "We had been",
-                "We have been",
-                "We was being",
-            ],
-            correctChoiceIndex: 1,
+            prompt: "What is the most common auxiliary for forming the Simple Future?",
+            choices: ["have", "do", "will", "be"],
+            correctChoiceIndex: 2,
         },
     }),
     typedQuestionData({
-        id: "014948e769e209b14782afd84b2e85a5",
+        id: "0bd040bf1aae3e96b7fed08c87cbb18d",
         type: "grammarTrivia",
         data: {
-            prompt: "Which tense is used for past habits that are no longer true?",
+            prompt: "Which future structure is preferred for describing plans?",
             choices: [
-                "Simple Past",
+                "will",
+                "am/is/are going to",
                 "Simple Present",
-                "Past Continuous",
-                "Past Perfect",
+                "Past Simple",
             ],
-            correctChoiceIndex: 0,
-        },
-    }),
-    typedQuestionData({
-        id: "133fb219610c4d4f9660bb956c316ef5",
-        type: "grammarTrivia",
-        data: {
-            prompt: "What is the contraction for 'will not'?",
-            choices: ["willn't", "won't", "win't", "wont"],
             correctChoiceIndex: 1,
         },
     }),
     typedQuestionData({
-        id: "03da2e9103a141704fc000fd2b43e027",
+        id: "b1f0e0cdb0875296fc0872ccdf8d0995",
         type: "grammarTrivia",
         data: {
-            prompt: "How do you form a question in the past perfect?",
+            prompt: "What is the purpose of the Simple Future tense?",
             choices: [
-                "Had + subject + past participle?",
-                "Have + subject + past participle?",
-                "Did + subject + past participle?",
-                "Was + subject + past participle?",
+                "Describe past habits",
+                "Make predictions or spontaneous decisions",
+                "Describe ongoing past acts",
+                "State general truths",
             ],
-            correctChoiceIndex: 0,
+            correctChoiceIndex: 1,
         },
     }),
     typedQuestionData({
-        id: "18678e2edb49e7fb9710265648d419eb",
+        id: "fae77387ead2ab0ff95c60ccb134ed49",
+        type: "grammarTrivia",
+        data: {
+            prompt: "How is a question formed in the Simple Future with 'will'?",
+            choices: [
+                "Add 'do' before 'will'",
+                "Invert 'will' and the subject",
+                "Add 'not' to 'will'",
+                "Change 'will' to 'would'",
+            ],
+            correctChoiceIndex: 1,
+        },
+    }),
+    typedQuestionData({
+        id: "ec96fc672c7f161c337f36250bef85ad",
+        type: "grammarTrivia",
+        data: {
+            prompt: "What do Continuous tenses describe?",
+            choices: [
+                "Completed actions",
+                "Actions in progress at a specific moment",
+                "Facts",
+                "Unspecified past time",
+            ],
+            correctChoiceIndex: 1,
+        },
+    }),
+    typedQuestionData({
+        id: "efe62e080ca09d173412dda836aaf03d",
+        type: "grammarTrivia",
+        data: {
+            prompt: "Which auxiliary and participle are used for Continuous tenses?",
+            choices: [
+                "have + past participle",
+                "be + present participle (-ing)",
+                "do + base form",
+                "will + base form",
+            ],
+            correctChoiceIndex: 1,
+        },
+    }),
+    typedQuestionData({
+        id: "06c403a7dc09ef0f9a0a1c28deb1ff1b",
         type: "grammarTrivia",
         data: {
             prompt: "Which tense describes actions happening right now?",
@@ -856,382 +343,900 @@ const grammarTrivia = [
                 "Simple Present",
                 "Present Continuous",
                 "Present Perfect",
-                "Present Perfect Continuous",
+                "Past Continuous",
             ],
             correctChoiceIndex: 1,
         },
     }),
     typedQuestionData({
-        id: "40c6b086ca00e5ba0504a5859c4829cc",
+        id: "fa6a4f10a36bbe6f48145187263bfa1e",
         type: "grammarTrivia",
         data: {
-            prompt: "What is the form of 'to be' for 'He/She/It' in the past tense?",
-            choices: ["were", "was", "be", "been"],
+            prompt: "Present Continuous can be used for future events that are...",
+            choices: [
+                "Unlikely",
+                "Spontaneous",
+                "Planned arrangements",
+                "Impossible",
+            ],
+            correctChoiceIndex: 2,
+        },
+    }),
+    typedQuestionData({
+        id: "cd7326ae62f363159e0b3ae18d5634d2",
+        type: "grammarTrivia",
+        data: {
+            prompt: "How is the negative formed in Present Continuous?",
+            choices: [
+                "Add 'not' after 'be'",
+                "Add 'not' before 'be'",
+                "Add 'not' after the main verb",
+                "Use 'don't'",
+            ],
+            correctChoiceIndex: 0,
+        },
+    }),
+    typedQuestionData({
+        id: "38396fca96dd5ace068d38fe7c553bee",
+        type: "grammarTrivia",
+        data: {
+            prompt: "What is the formula for Past Continuous?",
+            choices: [
+                "is/are + verb(-ing)",
+                "was/were + verb(-ing)",
+                "did + verb(-ing)",
+                "have been + verb(-ing)",
+            ],
             correctChoiceIndex: 1,
         },
     }),
     typedQuestionData({
-        id: "6fa2b70c1af5578a4573bca981814007",
+        id: "44ce4f9e32c85698036b0f8068120ddf",
         type: "grammarTrivia",
         data: {
-            prompt: "Which tense emphasizes how long an action will have been happening until a future point?",
+            prompt: "Which tense shows a past action was happening when another interrupted it?",
             choices: [
-                "Future Perfect",
+                "Simple Past",
+                "Past Continuous",
+                "Past Perfect",
                 "Future Continuous",
-                "Future Perfect Continuous",
+            ],
+            correctChoiceIndex: 1,
+        },
+    }),
+    typedQuestionData({
+        id: "bc88c2976c937cbad63dfd8982504631",
+        type: "grammarTrivia",
+        data: {
+            prompt: "How is a question formed in Past Continuous?",
+            choices: [
+                "Add 'did' at the start",
+                "Invert 'was/were' and the subject",
+                "Invert the main verb and subject",
+                "Add 'do'",
+            ],
+            correctChoiceIndex: 1,
+        },
+    }),
+    typedQuestionData({
+        id: "47e3cf5e65abc3216aa47c078dea37db",
+        type: "grammarTrivia",
+        data: {
+            prompt: "What is the formula for Future Continuous?",
+            choices: [
+                "will + verb(-ing)",
+                "will be + verb(-ing)",
+                "will have + verb(-ing)",
+                "be + verb(-ing)",
+            ],
+            correctChoiceIndex: 1,
+        },
+    }),
+    typedQuestionData({
+        id: "1c4ca1ab3aeed3c63ec8598cc2dc5d19",
+        type: "grammarTrivia",
+        data: {
+            prompt: "Which tense predicts what will be happening at a certain moment in the future?",
+            choices: [
                 "Future Simple",
+                "Future Continuous",
+                "Future Perfect",
+                "Present Continuous",
             ],
-            correctChoiceIndex: 2,
-        },
-    }),
-    typedQuestionData({
-        id: "f8a312209cee33ba294a694c6cb2dcc2",
-        type: "grammarTrivia",
-        data: {
-            prompt: "What is the negative of 'She has been studying'?",
-            choices: [
-                "She hasn't been studying",
-                "She has been not studying",
-                "She not has been studying",
-                "She doesn't has been studying",
-            ],
-            correctChoiceIndex: 0,
-        },
-    }),
-    typedQuestionData({
-        id: "b1aa5503caf421936a0e37aa0bc45373",
-        type: "grammarTrivia",
-        data: {
-            prompt: "What auxiliary verb is used for questions in the simple future?",
-            choices: ["Do", "Will", "Are", "Have"],
             correctChoiceIndex: 1,
         },
     }),
     typedQuestionData({
-        id: "e268cd43d44e1b25d46599c0ec74db4d",
+        id: "cb7003682e1498a86448e165c0c21eb2",
         type: "grammarTrivia",
         data: {
-            prompt: "Identify the tense: 'They have visited Japan three times.'",
+            prompt: "What do Perfect Tenses emphasize?",
+            choices: [
+                "Duration only",
+                "Completion and connection between times",
+                "Facts only",
+                "Spontaneous acts",
+            ],
+            correctChoiceIndex: 1,
+        },
+    }),
+    typedQuestionData({
+        id: "99c9c63344e5df0611074722eeeeee8e",
+        type: "grammarTrivia",
+        data: {
+            prompt: "What is the basic structure of Perfect Tenses?",
+            choices: [
+                "be + present participle",
+                "have + past participle",
+                "do + base form",
+                "will + base form",
+            ],
+            correctChoiceIndex: 1,
+        },
+    }),
+    typedQuestionData({
+        id: "17c1e69e3dbe80bde387ea2d58697b2c",
+        type: "grammarTrivia",
+        data: {
+            prompt: "Which tense describes actions at an unspecified past time connected to now?",
             choices: [
                 "Simple Past",
-                "Past Perfect",
                 "Present Perfect",
-                "Present Continuous",
-            ],
-            correctChoiceIndex: 2,
-        },
-    }),
-    typedQuestionData({
-        id: "3292b352f01d0be355049fb8917e394b",
-        type: "grammarTrivia",
-        data: {
-            prompt: "Which tense uses 'was/were + verb(-ing)'?",
-            choices: [
-                "Past Continuous",
-                "Present Continuous",
-                "Future Continuous",
                 "Past Perfect",
+                "Future Perfect",
             ],
-            correctChoiceIndex: 0,
+            correctChoiceIndex: 1,
         },
     }),
     typedQuestionData({
-        id: "defff365fe5834e96b839b40c3ad75b1",
+        id: "098b1b6ab55441c23d249dff25076407",
         type: "grammarTrivia",
         data: {
-            prompt: "What is the correct form of 'to be' for 'You' in the present?",
-            choices: ["am", "is", "are", "be"],
-            correctChoiceIndex: 2,
+            prompt: "Which auxiliary is used with 'he/she/it' in Present Perfect?",
+            choices: ["have", "has", "had", "is"],
+            correctChoiceIndex: 1,
         },
     }),
     typedQuestionData({
-        id: "ebc38198ef09d9053ae471893d53a5ed",
+        id: "80bc6892cc91215995eaf083c042c6b8",
         type: "grammarTrivia",
         data: {
-            prompt: "To make a question in the present continuous, what comes first?",
+            prompt: "Present Perfect is used for life experiences where the exact time is...",
             choices: [
-                "The subject",
-                "The main verb",
-                "The form of 'to be'",
-                "The word 'Do'",
+                "Specified",
+                "Important",
+                "Not important",
+                "In the future",
             ],
             correctChoiceIndex: 2,
         },
     }),
     typedQuestionData({
-        id: "925417dd4285ffd818992ed7df9fc275",
+        id: "46cf752128f40133371f4f1a67e89559",
         type: "grammarTrivia",
         data: {
-            prompt: "What is the past participle of 'eat'?",
-            choices: ["ate", "eating", "eaten", "eats"],
-            correctChoiceIndex: 2,
-        },
-    }),
-    typedQuestionData({
-        id: "db56eec88cb92c82f8a13b963795d46e",
-        type: "grammarTrivia",
-        data: {
-            prompt: "How do you form the negative of 'I will have finished'?",
+            prompt: "What is the formula for Past Perfect?",
             choices: [
-                "I will not have finished",
-                "I will have not finished",
-                "I not will have finished",
-                "I won't finished",
+                "have + past participle",
+                "has + past participle",
+                "had + past participle",
+                "did + past participle",
             ],
-            correctChoiceIndex: 0,
+            correctChoiceIndex: 2,
         },
     }),
     typedQuestionData({
-        id: "f064766998fb395e21f3ffccaa28ad69",
+        id: "ba1caf73d044c338a1e052a74dbf159f",
         type: "grammarTrivia",
         data: {
-            prompt: "Which tense is used to clarify which of two past events happened first?",
+            prompt: "Which tense describes an action completed before another past action?",
             choices: [
                 "Simple Past",
-                "Past Perfect",
                 "Past Continuous",
+                "Past Perfect",
                 "Present Perfect",
             ],
-            correctChoiceIndex: 1,
-        },
-    }),
-    typedQuestionData({
-        id: "aeeac818e9738210048228af8ceb87d7",
-        type: "grammarTrivia",
-        data: {
-            prompt: "What is the question for 'She will have graduated'?",
-            choices: [
-                "Will she have graduated?",
-                "Has she graduated?",
-                "Will have she graduated?",
-                "Does she will graduate?",
-            ],
-            correctChoiceIndex: 0,
-        },
-    }),
-    typedQuestionData({
-        id: "027fdbfc3d6a5f86280d0bfc5e87972e",
-        type: "grammarTrivia",
-        data: {
-            prompt: "Which tense describes a temporary situation happening around now?",
-            choices: [
-                "Simple Present",
-                "Present Continuous",
-                "Present Perfect",
-                "Present Perfect Continuous",
-            ],
-            correctChoiceIndex: 1,
-        },
-    }),
-    typedQuestionData({
-        id: "24f2ff93be99d860759c9cae37079e2b",
-        type: "grammarTrivia",
-        data: {
-            prompt: "What auxiliary is used in the past perfect continuous?",
-            choices: ["have", "has", "had", "was"],
             correctChoiceIndex: 2,
         },
     }),
     typedQuestionData({
-        id: "2439b369e966da1d5d725678676e8ce3",
+        id: "866939f1e4f381bc1df2240966ee5af7",
         type: "grammarTrivia",
         data: {
-            prompt: "How do you form the question: 'You were a basketball player'?",
+            prompt: "How is a negative statement formed in Past Perfect?",
             choices: [
-                "Were you a basketball player?",
-                "You were a basketball player?",
-                "Did you were a basketball player?",
-                "Was you a basketball player?",
+                "had + not + past participle",
+                "did + not + had",
+                "have + not + had",
+                "not + had",
             ],
             correctChoiceIndex: 0,
         },
     }),
     typedQuestionData({
-        id: "5a7f35abab32d6146d3de6d522d03654",
+        id: "71fdbbdd5de2b14622db0b0a7462f5fd",
         type: "grammarTrivia",
         data: {
-            prompt: "What tense is 'She is staying with her family this week'?",
+            prompt: "What is the structure of Future Perfect?",
             choices: [
-                "Simple Present",
-                "Present Continuous",
-                "Present Perfect",
+                "will + past participle",
+                "will have + past participle",
+                "will be + past participle",
+                "will has + past participle",
+            ],
+            correctChoiceIndex: 1,
+        },
+    }),
+    typedQuestionData({
+        id: "6b6e6be61de78f894fa29de5825ee945",
+        type: "grammarTrivia",
+        data: {
+            prompt: "Which tense describes an action to be completed before a specific future point?",
+            choices: [
+                "Future Simple",
                 "Future Continuous",
+                "Future Perfect",
+                "Present Perfect",
+            ],
+            correctChoiceIndex: 2,
+        },
+    }),
+    typedQuestionData({
+        id: "e835e6cd3835ad8a08307484ded88e54",
+        type: "grammarTrivia",
+        data: {
+            prompt: "How is a question formed in Future Perfect?",
+            choices: [
+                "Invert 'will' and the subject",
+                "Invert 'have' and the subject",
+                "Add 'do' at the start",
+                "Add 'did'",
+            ],
+            correctChoiceIndex: 0,
+        },
+    }),
+    typedQuestionData({
+        id: "89cf42481407b4506cfd435376de6b8c",
+        type: "grammarTrivia",
+        data: {
+            prompt: "What ideas do Perfect Continuous tenses combine?",
+            choices: [
+                "Fact and habit",
+                "Duration and completion/connection",
+                "Past and future",
+                "State and possession",
             ],
             correctChoiceIndex: 1,
         },
     }),
     typedQuestionData({
-        id: "41970ead62cc0dbb468202fefe464cd2",
+        id: "e1599d9ff228b68450ddec899fbe7eaf",
         type: "grammarTrivia",
         data: {
-            prompt: "In the future perfect continuous, the verb ends in:",
-            choices: ["-ed", "-en", "-ing", "base form"],
-            correctChoiceIndex: 2,
-        },
-    }),
-    typedQuestionData({
-        id: "f66005bb1cf1d9a46b0b44a6f9491f88",
-        type: "grammarTrivia",
-        data: {
-            prompt: "What is the negative form of 'Luis is in the park'?",
+            prompt: "What is the general formula for Perfect Continuous tenses?",
             choices: [
-                "Luis not is in the park",
-                "Luis is not in the park",
-                "Luis isn't in the park",
-                "Both B and C are correct",
+                "have/had + verb(-ing)",
+                "have/had + been + verb(-ing)",
+                "be + been + verb(-ing)",
+                "do + been + verb(-ing)",
             ],
-            correctChoiceIndex: 3,
+            correctChoiceIndex: 1,
         },
     }),
     typedQuestionData({
-        id: "de52169358cd4b2bce36397c90692a2b",
+        id: "11629cabfa81d541fe71e506038a8da9",
         type: "grammarTrivia",
         data: {
-            prompt: "Which tense is used for actions that recently stopped but have visible results?",
+            prompt: "Which tense describes an action starting in the past and continuing now?",
             choices: [
                 "Present Continuous",
                 "Present Perfect Continuous",
-                "Simple Past",
+                "Simple Present",
                 "Past Perfect",
             ],
             correctChoiceIndex: 1,
         },
     }),
     typedQuestionData({
-        id: "0e744c42a87fcd91cd717d051a66fb06",
+        id: "6fa0943328332c611955878094524937",
         type: "grammarTrivia",
         data: {
-            prompt: "In 'I will be flying to New York', 'flying' is a:",
+            prompt: "In Present Perfect Continuous, the focus is usually on...",
             choices: [
-                "Past participle",
+                "The result",
+                "The duration of the action",
+                "The specific time",
+                "The future intent",
+            ],
+            correctChoiceIndex: 1,
+        },
+    }),
+    typedQuestionData({
+        id: "4b3092dc10f96bf35efb885f55e1a1ad",
+        type: "grammarTrivia",
+        data: {
+            prompt: "What is the formula for Past Perfect Continuous?",
+            choices: [
+                "have been + verb(-ing)",
+                "has been + verb(-ing)",
+                "had been + verb(-ing)",
+                "was been + verb(-ing)",
+            ],
+            correctChoiceIndex: 2,
+        },
+    }),
+    typedQuestionData({
+        id: "a81303a16861a481bdd9ed7212c85cbd",
+        type: "grammarTrivia",
+        data: {
+            prompt: "Which tense emphasizes how long an action happened before another past event?",
+            choices: [
+                "Past Continuous",
+                "Past Perfect Continuous",
+                "Simple Past",
+                "Present Perfect",
+            ],
+            correctChoiceIndex: 1,
+        },
+    }),
+    typedQuestionData({
+        id: "3f954022b7c0e6de290f3f20634f1cd7",
+        type: "grammarTrivia",
+        data: {
+            prompt: "What is the formula for Future Perfect Continuous?",
+            choices: [
+                "will have + verb(-ing)",
+                "will be been + verb(-ing)",
+                "will have been + verb(-ing)",
+                "will has been + verb(-ing)",
+            ],
+            correctChoiceIndex: 2,
+        },
+    }),
+    typedQuestionData({
+        id: "cb6f3e0d464b1901fcc9ba828c8b89d0",
+        type: "grammarTrivia",
+        data: {
+            prompt: "Which tense describes duration up to a specific moment in the future?",
+            choices: [
+                "Future Continuous",
+                "Future Perfect",
+                "Future Perfect Continuous",
+                "Present Perfect",
+            ],
+            correctChoiceIndex: 2,
+        },
+    }),
+    typedQuestionData({
+        id: "a0fced5dc708d0a47712b81bdc4196ec",
+        type: "grammarTrivia",
+        data: {
+            prompt: "How is the negative formed in Future Perfect Continuous?",
+            choices: [
+                "will + not + have been + verb(-ing)",
+                "will have + not + been + verb(-ing)",
+                "will have been + not + verb(-ing)",
+                "won't have be",
+            ],
+            correctChoiceIndex: 0,
+        },
+    }),
+    typedQuestionData({
+        id: "0e5b8932f5d5f9fbe3ccbbce04e07778",
+        type: "grammarTrivia",
+        data: {
+            prompt: "Which auxiliary is inverted with the subject for questions in Future Perfect Continuous?",
+            choices: ["have", "been", "will", "main verb"],
+            correctChoiceIndex: 2,
+        },
+    }),
+    typedQuestionData({
+        id: "1fbf51b44516f93aff34bc7f286bc20b",
+        type: "grammarTrivia",
+        data: {
+            prompt: "What part of speech is 'not' in negative verb phrases?",
+            choices: [
+                "Auxiliary verb",
+                "Adverb used for negation",
+                "Main verb",
+                "Subject",
+            ],
+            correctChoiceIndex: 1,
+        },
+    }),
+    typedQuestionData({
+        id: "4b8e793e323fd6db827c26ee6f1dabab",
+        type: "grammarTrivia",
+        data: {
+            prompt: "In the present tense, what is the 'to be' form for 'Maria'?",
+            choices: ["am", "are", "is", "be"],
+            correctChoiceIndex: 2,
+        },
+    }),
+    typedQuestionData({
+        id: "efe409b3487ece4225ce405bc6487182",
+        type: "grammarTrivia",
+        data: {
+            prompt: "In the present tense, what is the 'to be' form for 'Luis and I'?",
+            choices: ["am", "is", "are", "were"],
+            correctChoiceIndex: 2,
+        },
+    }),
+    typedQuestionData({
+        id: "2f784ef470dc0147a3f990aa81825829",
+        type: "grammarTrivia",
+        data: {
+            prompt: "In the past tense, what is the 'to be' form for 'Pedro'?",
+            choices: ["were", "is", "was", "been"],
+            correctChoiceIndex: 2,
+        },
+    }),
+    typedQuestionData({
+        id: "1bd1ffbc0ccd7e33f2955da49710adaa",
+        type: "grammarTrivia",
+        data: {
+            prompt: "In the past tense, what is the 'to be' form for 'They'?",
+            choices: ["was", "were", "are", "been"],
+            correctChoiceIndex: 1,
+        },
+    }),
+    typedQuestionData({
+        id: "fa54af90d0e8b28ef6aa074de97db358",
+        type: "grammarTrivia",
+        data: {
+            prompt: "The negative contraction 'isn't' stands for...",
+            choices: ["is no", "is not", "is none", "is never"],
+            correctChoiceIndex: 1,
+        },
+    }),
+    typedQuestionData({
+        id: "e26641d4629b0120e60a76856711fe78",
+        type: "grammarTrivia",
+        data: {
+            prompt: "In Simple Present, verbs for 'he' often end in '-es' if the verb ends in...",
+            choices: [
+                "a vowel",
+                "a consonant",
+                "certain letters like 'o' or 'sh'",
+                "the letter 'y' only",
+            ],
+            correctChoiceIndex: 2,
+        },
+    }),
+    typedQuestionData({
+        id: "2b516cfb030c5ca24399fa731edb6d23",
+        type: "grammarTrivia",
+        data: {
+            prompt: "Simple Present describes states of being that are true in the...",
+            choices: ["Past", "Current moment", "Future", "Hypothetical"],
+            correctChoiceIndex: 1,
+        },
+    }),
+    typedQuestionData({
+        id: "bbe827fc16d059a85adb7053f2a59435",
+        type: "grammarTrivia",
+        data: {
+            prompt: "Negative Simple Present for 'they' uses which contraction?",
+            choices: ["doesn't", "don't", "isn't", "aren't"],
+            correctChoiceIndex: 1,
+        },
+    }),
+    typedQuestionData({
+        id: "4083814c3db577f336d99e338744d8f2",
+        type: "grammarTrivia",
+        data: {
+            prompt: "In a Simple Past question, why does the verb use its base form?",
+            choices: [
+                "Because 'did' carries the past meaning",
+                "Because the verb is irregular",
+                "Because it's a rule for 'to be'",
+                "It doesn't use base form",
+            ],
+            correctChoiceIndex: 0,
+        },
+    }),
+    typedQuestionData({
+        id: "2305b41f74dc66bdf1e425bfd7d1bec7",
+        type: "grammarTrivia",
+        data: {
+            prompt: "Simple Future predictions are often based on...",
+            choices: [
+                "Past habits",
+                "Opinion or knowledge",
+                "Present continuous acts",
+                "Completed events",
+            ],
+            correctChoiceIndex: 1,
+        },
+    }),
+    typedQuestionData({
+        id: "20a01999dedca8ff4f5c98f35cc52756",
+        type: "grammarTrivia",
+        data: {
+            prompt: "Spontaneous decisions at the moment of speaking use...",
+            choices: [
+                "Simple Present",
+                "Simple Future",
+                "Present Perfect",
+                "Going to",
+            ],
+            correctChoiceIndex: 1,
+        },
+    }),
+    typedQuestionData({
+        id: "a8a8aea2a64d9bbb39d792d823987b03",
+        type: "grammarTrivia",
+        data: {
+            prompt: "Present Continuous is used for situations that are...",
+            choices: [
+                "Permanent",
+                "Temporary",
+                "Completed",
+                "Universal truths",
+            ],
+            correctChoiceIndex: 1,
+        },
+    }),
+    typedQuestionData({
+        id: "06a2c80852b2df7c8e93eff3c185923d",
+        type: "grammarTrivia",
+        data: {
+            prompt: "A planned arrangement with a specific time mentioned often uses...",
+            choices: [
+                "Simple Present",
+                "Present Continuous",
+                "Simple Past",
+                "Future Perfect",
+            ],
+            correctChoiceIndex: 1,
+        },
+    }),
+    typedQuestionData({
+        id: "31061cdfe12af38270ef569df85ed4c9",
+        type: "grammarTrivia",
+        data: {
+            prompt: "The negative contraction 'wasn't' stands for...",
+            choices: ["was no", "was not", "was never", "was none"],
+            correctChoiceIndex: 1,
+        },
+    }),
+    typedQuestionData({
+        id: "49dca286e81bd42cf7de04c8d3a434ab",
+        type: "grammarTrivia",
+        data: {
+            prompt: "Future Continuous can politely ask about...",
+            choices: [
+                "Someone's past",
+                "Someone's plans",
+                "General truths",
+                "Spontaneous acts",
+            ],
+            correctChoiceIndex: 1,
+        },
+    }),
+    typedQuestionData({
+        id: "cd283e66a85ec8f0579a9e93b1881d66",
+        type: "grammarTrivia",
+        data: {
+            prompt: "In Present Perfect, the exact time of the action is...",
+            choices: [
+                "Mandatory",
+                "Unimportant",
+                "In the future",
+                "Always 'yesterday'",
+            ],
+            correctChoiceIndex: 1,
+        },
+    }),
+    typedQuestionData({
+        id: "435bbf47893d142231e831b2059b12b1",
+        type: "grammarTrivia",
+        data: {
+            prompt: "Present Perfect connects the past to the...",
+            choices: ["Distant past", "Present", "Future", "Hypothetical"],
+            correctChoiceIndex: 1,
+        },
+    }),
+    typedQuestionData({
+        id: "a2dc86191b8d83873a016730eeb016e7",
+        type: "grammarTrivia",
+        data: {
+            prompt: "Past Perfect clarifies which of two past events happened...",
+            choices: ["Simultaneously", "First", "Second", "Never"],
+            correctChoiceIndex: 1,
+        },
+    }),
+    typedQuestionData({
+        id: "4d3986337659b05e942b85b3bc92c760",
+        type: "grammarTrivia",
+        data: {
+            prompt: "The negative contraction 'hadn't' stands for...",
+            choices: ["had no", "had never", "had not", "had none"],
+            correctChoiceIndex: 2,
+        },
+    }),
+    typedQuestionData({
+        id: "2c6af55336a652344f0e9ce8859502e8",
+        type: "grammarTrivia",
+        data: {
+            prompt: "Future Perfect shows an action completed 'by' a certain...",
+            choices: ["Past time", "Future time", "Present habit", "Subject"],
+            correctChoiceIndex: 1,
+        },
+    }),
+    typedQuestionData({
+        id: "612770e5894dafb3cd8b0946182746a2",
+        type: "grammarTrivia",
+        data: {
+            prompt: "Which tense uses the structure 'have been' + verb ending in '-ing'?",
+            choices: [
+                "Present Perfect",
+                "Present Perfect Continuous",
+                "Past Perfect Continuous",
+                "Present Continuous",
+            ],
+            correctChoiceIndex: 1,
+        },
+    }),
+    typedQuestionData({
+        id: "b8a9442a4f114ba26b656fc91bd9541e",
+        type: "grammarTrivia",
+        data: {
+            prompt: "Present Perfect Continuous focus can be on actions with visible...",
+            choices: [
+                "Past results",
+                "Present results",
+                "Future results",
+                "No results",
+            ],
+            correctChoiceIndex: 1,
+        },
+    }),
+    typedQuestionData({
+        id: "2e7b47c7a53c6ff54757bbac45083249",
+        type: "grammarTrivia",
+        data: {
+            prompt: "Past Perfect Continuous describes an action continuing 'before'...",
+            choices: [
+                "Now",
+                "Another past action",
+                "A future plan",
+                "A routine",
+            ],
+            correctChoiceIndex: 1,
+        },
+    }),
+    typedQuestionData({
+        id: "3f6508953ca0a782bca44e1745eded39",
+        type: "grammarTrivia",
+        data: {
+            prompt: "The negative of Future Perfect uses 'won't have' followed by...",
+            choices: ["Base verb", "Past participle", "-ing verb", "Adjective"],
+            correctChoiceIndex: 1,
+        },
+    }),
+    typedQuestionData({
+        id: "6b12ea2f3008237f77900dd91f813534",
+        type: "grammarTrivia",
+        data: {
+            prompt: "To form a question in Present Perfect Continuous, place 'have/has'...",
+            choices: [
+                "After the subject",
+                "Before the subject",
+                "After 'been'",
+                "At the end",
+            ],
+            correctChoiceIndex: 1,
+        },
+    }),
+    typedQuestionData({
+        id: "c554dc81e4f64a86375e0f0226c33ef8",
+        type: "grammarTrivia",
+        data: {
+            prompt: "Future Perfect Continuous emphasizes the duration up to a...",
+            choices: ["Past point", "Future point", "Habit", "General truth"],
+            correctChoiceIndex: 1,
+        },
+    }),
+    typedQuestionData({
+        id: "cd74b8ab8636d5794fa87ca46d48dd09",
+        type: "grammarTrivia",
+        data: {
+            prompt: "In the 'going to' future, 'not' comes after which verb?",
+            choices: ["going", "to", "the 'to be' verb", "the main verb"],
+            correctChoiceIndex: 2,
+        },
+    }),
+    typedQuestionData({
+        id: "1c89beaa031410551ee95b9a554f0ee3",
+        type: "grammarTrivia",
+        data: {
+            prompt: "Which tense is formed by adding '-ed' to talk about past habits?",
+            choices: [
+                "Simple Past",
+                "Past Continuous",
+                "Present Perfect",
+                "Simple Present",
+            ],
+            correctChoiceIndex: 0,
+        },
+    }),
+    typedQuestionData({
+        id: "e2519aa9b1bed6f2809f1330a804fc77",
+        type: "grammarTrivia",
+        data: {
+            prompt: "Questions in Future Continuous start with which word?",
+            choices: ["Be", "Will", "Have", "Do"],
+            correctChoiceIndex: 1,
+        },
+    }),
+    typedQuestionData({
+        id: "77307b24f1562d6a884957a2ab1d978b",
+        type: "grammarTrivia",
+        data: {
+            prompt: "Present Perfect describes changes that occurred over...",
+            choices: [
+                "One second",
+                "Time",
+                "The future",
+                "Hypothetical planes",
+            ],
+            correctChoiceIndex: 1,
+        },
+    }),
+    typedQuestionData({
+        id: "5041920181578e8d9f4cc3c2227c1222",
+        type: "grammarTrivia",
+        data: {
+            prompt: "Past Perfect is often used with another action in which tense?",
+            choices: [
+                "Simple Past",
+                "Simple Present",
+                "Future Simple",
+                "Present Perfect",
+            ],
+            correctChoiceIndex: 0,
+        },
+    }),
+    typedQuestionData({
+        id: "b76b8f13905a6901bd2462ac703975b0",
+        type: "grammarTrivia",
+        data: {
+            prompt: "Future Perfect Continuous can be used to predict what will...",
+            choices: [
+                "Have finished",
+                "Be happening at a point",
+                "Have been happening",
+                "Be a fact",
+            ],
+            correctChoiceIndex: 2,
+        },
+    }),
+    typedQuestionData({
+        id: "a089d97bc032c12a9d2c4cb861d443e0",
+        type: "grammarTrivia",
+        data: {
+            prompt: "Which auxiliary is used for negation in Future Continuous?",
+            choices: ["don't", "won't", "hasn't", "didn't"],
+            correctChoiceIndex: 1,
+        },
+    }),
+    typedQuestionData({
+        id: "a2b02eea5a3eb922d84b58e98e292def",
+        type: "grammarTrivia",
+        data: {
+            prompt: "Continuous tenses are also known as...",
+            choices: [
+                "Simple tenses",
+                "Progressive tenses",
+                "Perfect tenses",
+                "Modal tenses",
+            ],
+            correctChoiceIndex: 1,
+        },
+    }),
+    typedQuestionData({
+        id: "efd0988411faa3b48adb788e3c15eafc",
+        type: "grammarTrivia",
+        data: {
+            prompt: "The base form of 'was' and 'were' is...",
+            choices: ["been", "being", "be", "is"],
+            correctChoiceIndex: 2,
+        },
+    }),
+    typedQuestionData({
+        id: "bb915c082cbb9595bcd1dbfec46ea0d5",
+        type: "grammarTrivia",
+        data: {
+            prompt: "In the sentence 'I have lived here', 'lived' is a...",
+            choices: [
                 "Present participle",
-                "Gerund",
+                "Past participle",
+                "Base form",
                 "Infinitive",
             ],
             correctChoiceIndex: 1,
         },
     }),
     typedQuestionData({
-        id: "0a5e91511164c0b82710cffd027398bf",
+        id: "34a0c18ca28c9cdc40e6a071f7462612",
         type: "grammarTrivia",
         data: {
-            prompt: "What is the auxiliary for 'He' in the present perfect continuous?",
-            choices: ["have", "has", "had", "is"],
+            prompt: "In 'She is walking', 'walking' is a...",
+            choices: [
+                "Past participle",
+                "Present participle",
+                "Base form",
+                "Gerund only",
+            ],
             correctChoiceIndex: 1,
         },
     }),
     typedQuestionData({
-        id: "09f9584c7d9c1aeb8d1fa389f97cec60",
+        id: "c9dd5051b574c6e36a842d057cd8972d",
         type: "grammarTrivia",
         data: {
-            prompt: "Complete the question: '___ they been traveling for months?' (Past Perfect Continuous)",
-            choices: ["Have", "Has", "Had", "Were"],
+            prompt: "Questions in Past Perfect start with...",
+            choices: ["Have", "Has", "Had", "Did"],
             correctChoiceIndex: 2,
         },
     }),
     typedQuestionData({
-        id: "0e74e8f78f542571ba65515b87eddfb7",
+        id: "9fa5f32a2b44bda034c1d021059aa54a",
         type: "grammarTrivia",
         data: {
-            prompt: "Which tense is used for spontaneous decisions?",
-            choices: [
-                "Simple Future (will)",
-                "Simple Future (going to)",
-                "Simple Present",
-                "Present Continuous",
-            ],
-            correctChoiceIndex: 0,
+            prompt: "Future Perfect Continuous structure includes how many auxiliaries?",
+            choices: ["One", "Two", "Three", "Zero"],
+            correctChoiceIndex: 2,
         },
     }),
     typedQuestionData({
-        id: "d2e52cc8936f26723ba84e257931986a",
+        id: "607ba0bb028b872ba598524d23b121cd",
         type: "grammarTrivia",
         data: {
-            prompt: "What is the question form of 'She walks to work'?",
+            prompt: "Simple Present is used for possessions that are true...",
             choices: [
-                "Walks she to work?",
-                "Does she walk to work?",
-                "Does she walks to work?",
-                "Is she walking to work?",
+                "In the past",
+                "In the current moment",
+                "In the future",
+                "Hypothetically",
             ],
             correctChoiceIndex: 1,
         },
     }),
     typedQuestionData({
-        id: "78e416509367def31aa754d3465160ce",
+        id: "e4e99c31d3ac613e834d6cd1d726297f",
         type: "grammarTrivia",
         data: {
-            prompt: "How is the future perfect continuous question structured?",
+            prompt: "Which tense uses 'am not', 'isn't', or 'aren't' for negation?",
             choices: [
-                "Will + subject + have been + verb-ing?",
-                "Subject + will + have been + verb-ing?",
-                "Have + subject + been + verb-ing?",
-                "Will + subject + been + verb-ing?",
+                "Simple Present 'to be'",
+                "Simple Past",
+                "Present Perfect",
+                "Future Perfect",
             ],
             correctChoiceIndex: 0,
         },
     }),
     typedQuestionData({
-        id: "1e2640c989d281590c6832652bfd30eb",
+        id: "7caf760bdd1395e82fa7d461c14aa7d1",
         type: "grammarTrivia",
         data: {
-            prompt: "Which tense describes an action in progress interrupted by another action?",
+            prompt: "In the structure 'will have been working', 'will' indicates...",
+            choices: ["Past", "Present", "Future", "Continuity"],
+            correctChoiceIndex: 2,
+        },
+    }),
+    typedQuestionData({
+        id: "bb0b9058ad065a8362a4791dc1752d67",
+        type: "grammarTrivia",
+        data: {
+            prompt: "The tense used for 'actions that started in the past and continue until now' is...",
             choices: [
                 "Simple Past",
-                "Past Continuous",
-                "Past Perfect",
-                "Present Continuous",
-            ],
-            correctChoiceIndex: 1,
-        },
-    }),
-    typedQuestionData({
-        id: "b966e5baa7994a730b4f5f7da4c08933",
-        type: "grammarTrivia",
-        data: {
-            prompt: "What is the negative of 'I have been feeling tired'?",
-            choices: [
-                "I have not been feeling tired",
-                "I haven't been feeling tired",
-                "I have been not feeling tired",
-                "Both A and B are correct",
-            ],
-            correctChoiceIndex: 3,
-        },
-    }),
-    typedQuestionData({
-        id: "a14894d5d91231094e3ae176d0300a0d",
-        type: "grammarTrivia",
-        data: {
-            prompt: "Identify the tense: 'By 2030, they will have been living there for a decade.'",
-            choices: [
-                "Future Perfect",
-                "Future Continuous",
-                "Future Perfect Continuous",
-                "Present Perfect Continuous",
-            ],
-            correctChoiceIndex: 2,
-        },
-    }),
-    typedQuestionData({
-        id: "b67dfc6061a0eb133692f466757312c6",
-        type: "grammarTrivia",
-        data: {
-            prompt: "What is the form of 'to be' used with 'Maria' in the present tense?",
-            choices: ["am", "are", "is", "were"],
-            correctChoiceIndex: 2,
-        },
-    }),
-    typedQuestionData({
-        id: "3502a75b164db7586bced46a01127dd0",
-        type: "grammarTrivia",
-        data: {
-            prompt: "In 'She hadn't already eaten', what is the tense?",
-            choices: [
                 "Present Perfect",
                 "Past Perfect",
-                "Simple Past",
-                "Past Continuous",
+                "Simple Present",
             ],
             correctChoiceIndex: 1,
         },

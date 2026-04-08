@@ -152,7 +152,7 @@ export default function LogInForm() {
                         className="text-sm sm:text-base text-primary font-semibold transition-colors hover:underline underline-offset-4 cursor-pointer"
                         href="/signup"
                     >
-                        Don't have an account? Sign Up
+                        Don&apos;t have an account? Sign Up
                     </Link>
                 </div>
             </motion.div>

@@ -1,18 +1,12 @@
 "use client";
 
-import { signIn, signUp, signInWithOAuth } from "@/app/actions/supabase-auth";
+import { signInWithOAuth, signUp } from "@/app/actions/supabase-auth";
 import { motion } from "framer-motion";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
-import { SubmitEvent, useCallback, useEffect, useState } from "react";
+import { SubmitEvent, useCallback, useState } from "react";
 import { FaDiscord, FaGithub, FaGoogle } from "react-icons/fa";
-import {
-    IoMdLock,
-    IoMdLogIn,
-    IoMdMail,
-    IoMdPerson,
-    IoMdPersonAdd,
-} from "react-icons/io";
+import { IoMdLock, IoMdMail, IoMdPerson, IoMdPersonAdd } from "react-icons/io";
 import { OrbitProgress } from "react-loading-indicators";
 
 export default function SignUpForm() {
