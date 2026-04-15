@@ -5,9 +5,12 @@ const completeFuturePerfectContinuousNegativeStatementVerbForm = [
         id: "728e0d8082b4141d052744bb025cceee",
         type: "completeFuturePerfectContinuousNegativeStatementVerbForm",
         data: {
-            leftSide: "They",
-            middle: "(work)",
-            rightSide: "here for a decade by next month.",
+            prompt: {
+                twoSided: true,
+                leftSide: "They",
+                middle: "(work)",
+                rightSide: "here for a decade by next month."
+            },
             minWordCount: 4,
             maxWordCount: 5,
             correctAuxiliars: [
@@ -22,9 +25,12 @@ const completeFuturePerfectContinuousNegativeStatementVerbForm = [
         id: "eb875d287d58d56046b07735a0ae4339",
         type: "completeFuturePerfectContinuousNegativeStatementVerbForm",
         data: {
-            leftSide: "She",
-            middle: "(study)",
-            rightSide: "long enough to pass the exam.",
+            prompt: {
+                twoSided: true,
+                leftSide: "She",
+                middle: "(study)",
+                rightSide: "long enough to pass the exam."
+            },
             minWordCount: 4,
             maxWordCount: 5,
             correctAuxiliars: [
@@ -39,9 +45,12 @@ const completeFuturePerfectContinuousNegativeStatementVerbForm = [
         id: "4f7603fee8432d6832615a14f67451b0",
         type: "completeFuturePerfectContinuousNegativeStatementVerbForm",
         data: {
-            leftSide: "I",
-            middle: "(wait)",
-            rightSide: "for more than an hour when you arrive.",
+            prompt: {
+                twoSided: true,
+                leftSide: "I",
+                middle: "(wait)",
+                rightSide: "for more than an hour when you arrive."
+            },
             minWordCount: 4,
             maxWordCount: 5,
             correctAuxiliars: [
@@ -56,9 +65,12 @@ const completeFuturePerfectContinuousNegativeStatementVerbForm = [
         id: "7c12483e9091ccfb4e35f3bd8a60f88e",
         type: "completeFuturePerfectContinuousNegativeStatementVerbForm",
         data: {
-            leftSide: "The team",
-            middle: "(train)",
-            rightSide: "together for very long by the time the season starts.",
+            prompt: {
+                twoSided: true,
+                leftSide: "The team",
+                middle: "(train)",
+                rightSide: "together for very long by the time the season starts."
+            },
             minWordCount: 4,
             maxWordCount: 5,
             correctAuxiliars: [
@@ -73,9 +85,12 @@ const completeFuturePerfectContinuousNegativeStatementVerbForm = [
         id: "ba67d2b8497606274b6d9065a06cb221",
         type: "completeFuturePerfectContinuousNegativeStatementVerbForm",
         data: {
-            leftSide: "We",
-            middle: "(travel)",
-            rightSide: "for 24 hours straight by tomorrow morning.",
+            prompt: {
+                twoSided: true,
+                leftSide: "We",
+                middle: "(travel)",
+                rightSide: "for 24 hours straight by tomorrow morning."
+            },
             minWordCount: 4,
             maxWordCount: 5,
             correctAuxiliars: [
@@ -90,9 +105,12 @@ const completeFuturePerfectContinuousNegativeStatementVerbForm = [
         id: "50ed20f5902a522a12343fcb82f8713d",
         type: "completeFuturePerfectContinuousNegativeStatementVerbForm",
         data: {
-            leftSide: "He",
-            middle: "(practice)",
-            rightSide: "the piano for three hours by dinner time.",
+            prompt: {
+                twoSided: true,
+                leftSide: "He",
+                middle: "(practice)",
+                rightSide: "the piano for three hours by dinner time."
+            },
             minWordCount: 4,
             maxWordCount: 5,
             correctAuxiliars: [
@@ -107,9 +125,12 @@ const completeFuturePerfectContinuousNegativeStatementVerbForm = [
         id: "3db22ed61e506751c55fd0401e8e6880",
         type: "completeFuturePerfectContinuousNegativeStatementVerbForm",
         data: {
-            leftSide: "The machine",
-            middle: "(run)",
-            rightSide: "continuously for a week.",
+            prompt: {
+                twoSided: true,
+                leftSide: "The machine",
+                middle: "(run)",
+                rightSide: "continuously for a week."
+            },
             minWordCount: 4,
             maxWordCount: 5,
             correctAuxiliars: [
@@ -124,9 +145,12 @@ const completeFuturePerfectContinuousNegativeStatementVerbForm = [
         id: "8d525a06c36bf9fe56c636eee5e2a955",
         type: "completeFuturePerfectContinuousNegativeStatementVerbForm",
         data: {
-            leftSide: "You",
-            middle: "(sleep)",
-            rightSide: "long enough to feel rested.",
+            prompt: {
+                twoSided: true,
+                leftSide: "You",
+                middle: "(sleep)",
+                rightSide: "long enough to feel rested."
+            },
             minWordCount: 4,
             maxWordCount: 5,
             correctAuxiliars: [
@@ -141,9 +165,12 @@ const completeFuturePerfectContinuousNegativeStatementVerbForm = [
         id: "deed687599be0fdd7d5272ad14a05447",
         type: "completeFuturePerfectContinuousNegativeStatementVerbForm",
         data: {
-            leftSide: "The scientists",
-            middle: "(observe)",
-            rightSide: "the stars for a full year by June.",
+            prompt: {
+                twoSided: true,
+                leftSide: "The scientists",
+                middle: "(observe)",
+                rightSide: "the stars for a full year by June."
+            },
             minWordCount: 4,
             maxWordCount: 5,
             correctAuxiliars: [
@@ -158,9 +185,12 @@ const completeFuturePerfectContinuousNegativeStatementVerbForm = [
         id: "d20a3be985153c60e07b27e942b55b5c",
         type: "completeFuturePerfectContinuousNegativeStatementVerbForm",
         data: {
-            leftSide: "It",
-            middle: "(snow)",
-            rightSide: "long enough to block the roads.",
+            prompt: {
+                twoSided: true,
+                leftSide: "It",
+                middle: "(snow)",
+                rightSide: "long enough to block the roads."
+            },
             minWordCount: 4,
             maxWordCount: 5,
             correctAuxiliars: [
@@ -175,9 +205,12 @@ const completeFuturePerfectContinuousNegativeStatementVerbForm = [
         id: "9b2a310a2fda3068a9ed9d8f76a9267c",
         type: "completeFuturePerfectContinuousNegativeStatementVerbForm",
         data: {
-            leftSide: "I",
-            middle: "(drive)",
-            rightSide: "for very long before the first stop.",
+            prompt: {
+                twoSided: true,
+                leftSide: "I",
+                middle: "(drive)",
+                rightSide: "for very long before the first stop."
+            },
             minWordCount: 4,
             maxWordCount: 5,
             correctAuxiliars: [
@@ -192,9 +225,12 @@ const completeFuturePerfectContinuousNegativeStatementVerbForm = [
         id: "9e19db7943c98b7575197f451193cfb1",
         type: "completeFuturePerfectContinuousNegativeStatementVerbForm",
         data: {
-            leftSide: "The chef",
-            middle: "(cook)",
-            rightSide: "for the whole day by the time guests arrive.",
+            prompt: {
+                twoSided: true,
+                leftSide: "The chef",
+                middle: "(cook)",
+                rightSide: "for the whole day by the time guests arrive."
+            },
             minWordCount: 4,
             maxWordCount: 5,
             correctAuxiliars: [
@@ -209,9 +245,12 @@ const completeFuturePerfectContinuousNegativeStatementVerbForm = [
         id: "9d9300a3c4ef34481de9f6dd72def991",
         type: "completeFuturePerfectContinuousNegativeStatementVerbForm",
         data: {
-            leftSide: "They",
-            middle: "(exercise)",
-            rightSide: "daily for a month by Friday.",
+            prompt: {
+                twoSided: true,
+                leftSide: "They",
+                middle: "(exercise)",
+                rightSide: "daily for a month by Friday."
+            },
             minWordCount: 4,
             maxWordCount: 5,
             correctAuxiliars: [
@@ -226,9 +265,12 @@ const completeFuturePerfectContinuousNegativeStatementVerbForm = [
         id: "2acd195f82c64226222e32df5abd776b",
         type: "completeFuturePerfectContinuousNegativeStatementVerbForm",
         data: {
-            leftSide: "She",
-            middle: "(teach)",
-            rightSide: "at this university for very long.",
+            prompt: {
+                twoSided: true,
+                leftSide: "She",
+                middle: "(teach)",
+                rightSide: "at this university for very long."
+            },
             minWordCount: 4,
             maxWordCount: 5,
             correctAuxiliars: [
@@ -243,9 +285,12 @@ const completeFuturePerfectContinuousNegativeStatementVerbForm = [
         id: "c4e3826c5bc4e1243aa776ab8480a72a",
         type: "completeFuturePerfectContinuousNegativeStatementVerbForm",
         data: {
-            leftSide: "We",
-            middle: "(negotiate)",
-            rightSide: "for two weeks by the deadline.",
+            prompt: {
+                twoSided: true,
+                leftSide: "We",
+                middle: "(negotiate)",
+                rightSide: "for two weeks by the deadline."
+            },
             minWordCount: 4,
             maxWordCount: 5,
             correctAuxiliars: [
@@ -260,9 +305,12 @@ const completeFuturePerfectContinuousNegativeStatementVerbForm = [
         id: "f4639844ac98d4c66dfee58606aa740c",
         type: "completeFuturePerfectContinuousNegativeStatementVerbForm",
         data: {
-            leftSide: "He",
-            middle: "(write)",
-            rightSide: "the novel for long when the publisher calls.",
+            prompt: {
+                twoSided: true,
+                leftSide: "He",
+                middle: "(write)",
+                rightSide: "the novel for long when the publisher calls."
+            },
             minWordCount: 4,
             maxWordCount: 5,
             correctAuxiliars: [
@@ -277,9 +325,12 @@ const completeFuturePerfectContinuousNegativeStatementVerbForm = [
         id: "a36b422539b31976d118317b20a92f97",
         type: "completeFuturePerfectContinuousNegativeStatementVerbForm",
         data: {
-            leftSide: "The garden",
-            middle: "(bloom)",
-            rightSide: "for very long before the frost.",
+            prompt: {
+                twoSided: true,
+                leftSide: "The garden",
+                middle: "(bloom)",
+                rightSide: "for very long before the frost."
+            },
             minWordCount: 4,
             maxWordCount: 5,
             correctAuxiliars: [
@@ -294,9 +345,12 @@ const completeFuturePerfectContinuousNegativeStatementVerbForm = [
         id: "9731d01452651326bccab1dd760587c6",
         type: "completeFuturePerfectContinuousNegativeStatementVerbForm",
         data: {
-            leftSide: "They",
-            middle: "(build)",
-            rightSide: "the house for more than a year.",
+            prompt: {
+                twoSided: true,
+                leftSide: "They",
+                middle: "(build)",
+                rightSide: "the house for more than a year."
+            },
             minWordCount: 4,
             maxWordCount: 5,
             correctAuxiliars: [
@@ -311,9 +365,12 @@ const completeFuturePerfectContinuousNegativeStatementVerbForm = [
         id: "b170a61b1792c617e6cfa256862f4851",
         type: "completeFuturePerfectContinuousNegativeStatementVerbForm",
         data: {
-            leftSide: "I",
-            middle: "(use)",
-            rightSide: "this laptop for five years by July.",
+            prompt: {
+                twoSided: true,
+                leftSide: "I",
+                middle: "(use)",
+                rightSide: "this laptop for five years by July."
+            },
             minWordCount: 4,
             maxWordCount: 5,
             correctAuxiliars: [
@@ -328,9 +385,12 @@ const completeFuturePerfectContinuousNegativeStatementVerbForm = [
         id: "4aac4dc83ccac7e9fa2365fac5a10939",
         type: "completeFuturePerfectContinuousNegativeStatementVerbForm",
         data: {
-            leftSide: "You",
-            middle: "(clean)",
-            rightSide: "for very long by the time I get home.",
+            prompt: {
+                twoSided: true,
+                leftSide: "You",
+                middle: "(clean)",
+                rightSide: "for very long by the time I get home."
+            },
             minWordCount: 4,
             maxWordCount: 5,
             correctAuxiliars: [
@@ -345,9 +405,12 @@ const completeFuturePerfectContinuousNegativeStatementVerbForm = [
         id: "671699571962531f06d32a85f45139ea",
         type: "completeFuturePerfectContinuousNegativeStatementVerbForm",
         data: {
-            leftSide: "You",
-            middle: "(clean)",
-            rightSide: "for very long by the time I get home.",
+            prompt: {
+                twoSided: true,
+                leftSide: "You",
+                middle: "(clean)",
+                rightSide: "for very long by the time I get home."
+            },
             minWordCount: 4,
             maxWordCount: 5,
             correctAuxiliars: [
@@ -362,9 +425,12 @@ const completeFuturePerfectContinuousNegativeStatementVerbForm = [
         id: "8fddd835c861df64e82db412912400a5",
         type: "completeFuturePerfectContinuousNegativeStatementVerbForm",
         data: {
-            leftSide: "She",
-            middle: "(work)",
-            rightSide: "there for ten years next month.",
+            prompt: {
+                twoSided: true,
+                leftSide: "She",
+                middle: "(work)",
+                rightSide: "there for ten years next month."
+            },
             minWordCount: 4,
             maxWordCount: 5,
             correctAuxiliars: [
@@ -379,9 +445,12 @@ const completeFuturePerfectContinuousNegativeStatementVerbForm = [
         id: "64a3b80e4a437ef0a5d839625e357666",
         type: "completeFuturePerfectContinuousNegativeStatementVerbForm",
         data: {
-            leftSide: "They",
-            middle: "(wait)",
-            rightSide: "for more than an hour when the bus arrives.",
+            prompt: {
+                twoSided: true,
+                leftSide: "They",
+                middle: "(wait)",
+                rightSide: "for more than an hour when the bus arrives."
+            },
             minWordCount: 4,
             maxWordCount: 5,
             correctAuxiliars: [
@@ -396,9 +465,12 @@ const completeFuturePerfectContinuousNegativeStatementVerbForm = [
         id: "99904d395cfaca878f1e7f891a40afb3",
         type: "completeFuturePerfectContinuousNegativeStatementVerbForm",
         data: {
-            leftSide: "I",
-            middle: "(live)",
-            rightSide: "in this city for long by 2030.",
+            prompt: {
+                twoSided: true,
+                leftSide: "I",
+                middle: "(live)",
+                rightSide: "in this city for long by 2030."
+            },
             minWordCount: 4,
             maxWordCount: 5,
             correctAuxiliars: [
@@ -413,9 +485,12 @@ const completeFuturePerfectContinuousNegativeStatementVerbForm = [
         id: "2b3eef888d828e07b1bf7b6ccce545bb",
         type: "completeFuturePerfectContinuousNegativeStatementVerbForm",
         data: {
-            leftSide: "We",
-            middle: "(study)",
-            rightSide: "all day by the time the exam starts.",
+            prompt: {
+                twoSided: true,
+                leftSide: "We",
+                middle: "(study)",
+                rightSide: "all day by the time the exam starts."
+            },
             minWordCount: 4,
             maxWordCount: 5,
             correctAuxiliars: [
@@ -430,9 +505,12 @@ const completeFuturePerfectContinuousNegativeStatementVerbForm = [
         id: "d48a35f0773b5d50d9abbbb7d923cab3",
         type: "completeFuturePerfectContinuousNegativeStatementVerbForm",
         data: {
-            leftSide: "The mechanics",
-            middle: "(fix)",
-            rightSide: "the car for long by tomorrow.",
+            prompt: {
+                twoSided: true,
+                leftSide: "The mechanics",
+                middle: "(fix)",
+                rightSide: "the car for long by tomorrow."
+            },
             minWordCount: 4,
             maxWordCount: 5,
             correctAuxiliars: [
@@ -447,9 +525,12 @@ const completeFuturePerfectContinuousNegativeStatementVerbForm = [
         id: "83e54169f38a09092793117630e7fb79",
         type: "completeFuturePerfectContinuousNegativeStatementVerbForm",
         data: {
-            leftSide: "He",
-            middle: "(drive)",
-            rightSide: "for six hours by the time he stops.",
+            prompt: {
+                twoSided: true,
+                leftSide: "He",
+                middle: "(drive)",
+                rightSide: "for six hours by the time he stops."
+            },
             minWordCount: 4,
             maxWordCount: 5,
             correctAuxiliars: [
@@ -464,9 +545,12 @@ const completeFuturePerfectContinuousNegativeStatementVerbForm = [
         id: "108c23a095e4f4aa396d6b79e2c9a696",
         type: "completeFuturePerfectContinuousNegativeStatementVerbForm",
         data: {
-            leftSide: "It",
-            middle: "(snow)",
-            rightSide: "for long before the sun comes out.",
+            prompt: {
+                twoSided: true,
+                leftSide: "It",
+                middle: "(snow)",
+                rightSide: "for long before the sun comes out."
+            },
             minWordCount: 4,
             maxWordCount: 5,
             correctAuxiliars: [
@@ -481,9 +565,12 @@ const completeFuturePerfectContinuousNegativeStatementVerbForm = [
         id: "45ef7e91ece52ff029146019d0abd10f",
         type: "completeFuturePerfectContinuousNegativeStatementVerbForm",
         data: {
-            leftSide: "The team",
-            middle: "(practice)",
-            rightSide: "since morning by 5 PM.",
+            prompt: {
+                twoSided: true,
+                leftSide: "The team",
+                middle: "(practice)",
+                rightSide: "since morning by 5 PM."
+            },
             minWordCount: 4,
             maxWordCount: 5,
             correctAuxiliars: [
@@ -498,9 +585,12 @@ const completeFuturePerfectContinuousNegativeStatementVerbForm = [
         id: "4a8b9ae1c689ba6f442a858e4a3eeea1",
         type: "completeFuturePerfectContinuousNegativeStatementVerbForm",
         data: {
-            leftSide: "You",
-            middle: "(sleep)",
-            rightSide: "for eight hours by then.",
+            prompt: {
+                twoSided: true,
+                leftSide: "You",
+                middle: "(sleep)",
+                rightSide: "for eight hours by then."
+            },
             minWordCount: 4,
             maxWordCount: 5,
             correctAuxiliars: [
@@ -515,9 +605,12 @@ const completeFuturePerfectContinuousNegativeStatementVerbForm = [
         id: "0d9763d3db43a74ec6a08ede4fa54d4a",
         type: "completeFuturePerfectContinuousNegativeStatementVerbForm",
         data: {
-            leftSide: "They",
-            middle: "(travel)",
-            rightSide: "for a month by Friday.",
+            prompt: {
+                twoSided: true,
+                leftSide: "They",
+                middle: "(travel)",
+                rightSide: "for a month by Friday."
+            },
             minWordCount: 4,
             maxWordCount: 5,
             correctAuxiliars: [
@@ -532,9 +625,12 @@ const completeFuturePerfectContinuousNegativeStatementVerbForm = [
         id: "83e9514f3c9e0aaefcc174d9aea49132",
         type: "completeFuturePerfectContinuousNegativeStatementVerbForm",
         data: {
-            leftSide: "The chef",
-            middle: "(cook)",
-            rightSide: "for long before the guests arrive.",
+            prompt: {
+                twoSided: true,
+                leftSide: "The chef",
+                middle: "(cook)",
+                rightSide: "for long before the guests arrive."
+            },
             minWordCount: 4,
             maxWordCount: 5,
             correctAuxiliars: [
@@ -549,9 +645,12 @@ const completeFuturePerfectContinuousNegativeStatementVerbForm = [
         id: "950bac7d6ac39612d708962c39762953",
         type: "completeFuturePerfectContinuousNegativeStatementVerbForm",
         data: {
-            leftSide: "I",
-            middle: "(write)",
-            rightSide: "for three hours by noon.",
+            prompt: {
+                twoSided: true,
+                leftSide: "I",
+                middle: "(write)",
+                rightSide: "for three hours by noon."
+            },
             minWordCount: 4,
             maxWordCount: 5,
             correctAuxiliars: [
@@ -566,9 +665,12 @@ const completeFuturePerfectContinuousNegativeStatementVerbForm = [
         id: "5557837270c79c2863cccf8a43e0c974",
         type: "completeFuturePerfectContinuousNegativeStatementVerbForm",
         data: {
-            leftSide: "We",
-            middle: "(talk)",
-            rightSide: "for very long when she calls.",
+            prompt: {
+                twoSided: true,
+                leftSide: "We",
+                middle: "(talk)",
+                rightSide: "for very long when she calls."
+            },
             minWordCount: 4,
             maxWordCount: 5,
             correctAuxiliars: [
@@ -583,9 +685,12 @@ const completeFuturePerfectContinuousNegativeStatementVerbForm = [
         id: "570154ec712641a514913c6e0093d37e",
         type: "completeFuturePerfectContinuousNegativeStatementVerbForm",
         data: {
-            leftSide: "She",
-            middle: "(exercise)",
-            rightSide: "for an hour by the time we meet.",
+            prompt: {
+                twoSided: true,
+                leftSide: "She",
+                middle: "(exercise)",
+                rightSide: "for an hour by the time we meet."
+            },
             minWordCount: 4,
             maxWordCount: 5,
             correctAuxiliars: [
@@ -600,9 +705,12 @@ const completeFuturePerfectContinuousNegativeStatementVerbForm = [
         id: "a6425ac70da6ff65cb325625df7c3350",
         type: "completeFuturePerfectContinuousNegativeStatementVerbForm",
         data: {
-            leftSide: "The students",
-            middle: "(test)",
-            rightSide: "for long by 10 AM.",
+            prompt: {
+                twoSided: true,
+                leftSide: "The students",
+                middle: "(test)",
+                rightSide: "for long by 10 AM."
+            },
             minWordCount: 4,
             maxWordCount: 5,
             correctAuxiliars: [
@@ -617,9 +725,12 @@ const completeFuturePerfectContinuousNegativeStatementVerbForm = [
         id: "c51afb88c73d748f72feb119ea38fe76",
         type: "completeFuturePerfectContinuousNegativeStatementVerbForm",
         data: {
-            leftSide: "He",
-            middle: "(read)",
-            rightSide: "that book for long by tonight.",
+            prompt: {
+                twoSided: true,
+                leftSide: "He",
+                middle: "(read)",
+                rightSide: "that book for long by tonight."
+            },
             minWordCount: 4,
             maxWordCount: 5,
             correctAuxiliars: [
@@ -634,9 +745,12 @@ const completeFuturePerfectContinuousNegativeStatementVerbForm = [
         id: "7b7508e2f2d6c6bf0135fc2596f37429",
         type: "completeFuturePerfectContinuousNegativeStatementVerbForm",
         data: {
-            leftSide: "They",
-            middle: "(play)",
-            rightSide: "since noon by the time we arrive.",
+            prompt: {
+                twoSided: true,
+                leftSide: "They",
+                middle: "(play)",
+                rightSide: "since noon by the time we arrive."
+            },
             minWordCount: 4,
             maxWordCount: 5,
             correctAuxiliars: [
@@ -651,9 +765,12 @@ const completeFuturePerfectContinuousNegativeStatementVerbForm = [
         id: "39361a9cee7ba5c522a48b3222d49a47",
         type: "completeFuturePerfectContinuousNegativeStatementVerbForm",
         data: {
-            leftSide: "I",
-            middle: "(wait)",
-            rightSide: "for long when the news breaks.",
+            prompt: {
+                twoSided: true,
+                leftSide: "I",
+                middle: "(wait)",
+                rightSide: "for long when the news breaks."
+            },
             minWordCount: 4,
             maxWordCount: 5,
             correctAuxiliars: [
@@ -668,9 +785,12 @@ const completeFuturePerfectContinuousNegativeStatementVerbForm = [
         id: "f71dd1e5266cf352a392c215d83c7ebc",
         type: "completeFuturePerfectContinuousNegativeStatementVerbForm",
         data: {
-            leftSide: "You",
-            middle: "(use)",
-            rightSide: "this computer for hours by 6 PM.",
+            prompt: {
+                twoSided: true,
+                leftSide: "You",
+                middle: "(use)",
+                rightSide: "this computer for hours by 6 PM."
+            },
             minWordCount: 4,
             maxWordCount: 5,
             correctAuxiliars: [
@@ -685,9 +805,12 @@ const completeFuturePerfectContinuousNegativeStatementVerbForm = [
         id: "1dcbdd03e0f2d1bb6fae8954ac2703fd",
         type: "completeFuturePerfectContinuousNegativeStatementVerbForm",
         data: {
-            leftSide: "The project",
-            middle: "(run)",
-            rightSide: "for long by the end of the year.",
+            prompt: {
+                twoSided: true,
+                leftSide: "The project",
+                middle: "(run)",
+                rightSide: "for long by the end of the year."
+            },
             minWordCount: 4,
             maxWordCount: 5,
             correctAuxiliars: [
@@ -702,9 +825,12 @@ const completeFuturePerfectContinuousNegativeStatementVerbForm = [
         id: "7cbac88357393d6c469d69272e35f711",
         type: "completeFuturePerfectContinuousNegativeStatementVerbForm",
         data: {
-            leftSide: "She",
-            middle: "(learn)",
-            rightSide: "French for long before her trip.",
+            prompt: {
+                twoSided: true,
+                leftSide: "She",
+                middle: "(learn)",
+                rightSide: "French for long before her trip."
+            },
             minWordCount: 4,
             maxWordCount: 5,
             correctAuxiliars: [
@@ -719,9 +845,12 @@ const completeFuturePerfectContinuousNegativeStatementVerbForm = [
         id: "fb54597d1041156f221f202ef394556f",
         type: "completeFuturePerfectContinuousNegativeStatementVerbForm",
         data: {
-            leftSide: "We",
-            middle: "(dance)",
-            rightSide: "for hours by midnight.",
+            prompt: {
+                twoSided: true,
+                leftSide: "We",
+                middle: "(dance)",
+                rightSide: "for hours by midnight."
+            },
             minWordCount: 4,
             maxWordCount: 5,
             correctAuxiliars: [
@@ -736,9 +865,12 @@ const completeFuturePerfectContinuousNegativeStatementVerbForm = [
         id: "6f4c8142aa9fec9e5432c760f5394b28",
         type: "completeFuturePerfectContinuousNegativeStatementVerbForm",
         data: {
-            leftSide: "He",
-            middle: "(stay)",
-            rightSide: "at that hotel for long by next week.",
+            prompt: {
+                twoSided: true,
+                leftSide: "He",
+                middle: "(stay)",
+                rightSide: "at that hotel for long by next week."
+            },
             minWordCount: 4,
             maxWordCount: 5,
             correctAuxiliars: [
@@ -753,9 +885,12 @@ const completeFuturePerfectContinuousNegativeStatementVerbForm = [
         id: "920a4e1181e1b147defa6ca9e89c9b9e",
         type: "completeFuturePerfectContinuousNegativeStatementVerbForm",
         data: {
-            leftSide: "They",
-            middle: "(swim)",
-            rightSide: "for an hour when the rain starts.",
+            prompt: {
+                twoSided: true,
+                leftSide: "They",
+                middle: "(swim)",
+                rightSide: "for an hour when the rain starts."
+            },
             minWordCount: 4,
             maxWordCount: 5,
             correctAuxiliars: [
@@ -770,9 +905,12 @@ const completeFuturePerfectContinuousNegativeStatementVerbForm = [
         id: "d9704c392ae5da4fd552f0b692d8530e",
         type: "completeFuturePerfectContinuousNegativeStatementVerbForm",
         data: {
-            leftSide: "I",
-            middle: "(garden)",
-            rightSide: "all afternoon by sunset.",
+            prompt: {
+                twoSided: true,
+                leftSide: "I",
+                middle: "(garden)",
+                rightSide: "all afternoon by sunset."
+            },
             minWordCount: 4,
             maxWordCount: 5,
             correctAuxiliars: [
@@ -787,9 +925,12 @@ const completeFuturePerfectContinuousNegativeStatementVerbForm = [
         id: "d6e9bc8d1d918120cc45952e69f7997d",
         type: "completeFuturePerfectContinuousNegativeStatementVerbForm",
         data: {
-            leftSide: "You",
-            middle: "(watch)",
-            rightSide: "TV for long before dinner.",
+            prompt: {
+                twoSided: true,
+                leftSide: "You",
+                middle: "(watch)",
+                rightSide: "TV for long before dinner."
+            },
             minWordCount: 4,
             maxWordCount: 5,
             correctAuxiliars: [
@@ -804,9 +945,12 @@ const completeFuturePerfectContinuousNegativeStatementVerbForm = [
         id: "6937fd2186df748224874356514ee2aa",
         type: "completeFuturePerfectContinuousNegativeStatementVerbForm",
         data: {
-            leftSide: "She",
-            middle: "(paint)",
-            rightSide: "for hours by the time you visit.",
+            prompt: {
+                twoSided: true,
+                leftSide: "She",
+                middle: "(paint)",
+                rightSide: "for hours by the time you visit."
+            },
             minWordCount: 4,
             maxWordCount: 5,
             correctAuxiliars: [
@@ -821,9 +965,12 @@ const completeFuturePerfectContinuousNegativeStatementVerbForm = [
         id: "e1b200d5acd080623ae8bf25b7eb9325",
         type: "completeFuturePerfectContinuousNegativeStatementVerbForm",
         data: {
-            leftSide: "They",
-            middle: "(sing)",
-            rightSide: "for long before the break.",
+            prompt: {
+                twoSided: true,
+                leftSide: "They",
+                middle: "(sing)",
+                rightSide: "for long before the break."
+            },
             minWordCount: 4,
             maxWordCount: 5,
             correctAuxiliars: [
@@ -838,9 +985,12 @@ const completeFuturePerfectContinuousNegativeStatementVerbForm = [
         id: "cadfc38c00543a5ef256854b28764488",
         type: "completeFuturePerfectContinuousNegativeStatementVerbForm",
         data: {
-            leftSide: "We",
-            middle: "(walk)",
-            rightSide: "for ten miles by noon.",
+            prompt: {
+                twoSided: true,
+                leftSide: "We",
+                middle: "(walk)",
+                rightSide: "for ten miles by noon."
+            },
             minWordCount: 4,
             maxWordCount: 5,
             correctAuxiliars: [
@@ -855,9 +1005,12 @@ const completeFuturePerfectContinuousNegativeStatementVerbForm = [
         id: "63d865b6c583ac264ef1b64fbc868b55",
         type: "completeFuturePerfectContinuousNegativeStatementVerbForm",
         data: {
-            leftSide: "He",
-            middle: "(listen)",
-            rightSide: "to music for long by then.",
+            prompt: {
+                twoSided: true,
+                leftSide: "He",
+                middle: "(listen)",
+                rightSide: "to music for long by then."
+            },
             minWordCount: 4,
             maxWordCount: 5,
             correctAuxiliars: [
@@ -872,9 +1025,12 @@ const completeFuturePerfectContinuousNegativeStatementVerbForm = [
         id: "e60c5c1b38fe5800c084d0691730e797",
         type: "completeFuturePerfectContinuousNegativeStatementVerbForm",
         data: {
-            leftSide: "I",
-            middle: "(build)",
-            rightSide: "the model for weeks by tomorrow.",
+            prompt: {
+                twoSided: true,
+                leftSide: "I",
+                middle: "(build)",
+                rightSide: "the model for weeks by tomorrow."
+            },
             minWordCount: 4,
             maxWordCount: 5,
             correctAuxiliars: [
@@ -889,9 +1045,12 @@ const completeFuturePerfectContinuousNegativeStatementVerbForm = [
         id: "67d896a31f2e9dd825a309c24f3647bc",
         type: "completeFuturePerfectContinuousNegativeStatementVerbForm",
         data: {
-            leftSide: "You",
-            middle: "(wait)",
-            rightSide: "since morning by 11 AM.",
+            prompt: {
+                twoSided: true,
+                leftSide: "You",
+                middle: "(wait)",
+                rightSide: "since morning by 11 AM."
+            },
             minWordCount: 4,
             maxWordCount: 5,
             correctAuxiliars: [
@@ -906,9 +1065,12 @@ const completeFuturePerfectContinuousNegativeStatementVerbForm = [
         id: "395e46c58ab97888885f7fd1c1388dfe",
         type: "completeFuturePerfectContinuousNegativeStatementVerbForm",
         data: {
-            leftSide: "She",
-            middle: "(prepare)",
-            rightSide: "for the party for long.",
+            prompt: {
+                twoSided: true,
+                leftSide: "She",
+                middle: "(prepare)",
+                rightSide: "for the party for long."
+            },
             minWordCount: 4,
             maxWordCount: 5,
             correctAuxiliars: [
@@ -923,9 +1085,12 @@ const completeFuturePerfectContinuousNegativeStatementVerbForm = [
         id: "13b46ed5406700c0a7216371f2d92d15",
         type: "completeFuturePerfectContinuousNegativeStatementVerbForm",
         data: {
-            leftSide: "They",
-            middle: "(argue)",
-            rightSide: "for long before they agree.",
+            prompt: {
+                twoSided: true,
+                leftSide: "They",
+                middle: "(argue)",
+                rightSide: "for long before they agree."
+            },
             minWordCount: 4,
             maxWordCount: 5,
             correctAuxiliars: [
@@ -940,9 +1105,12 @@ const completeFuturePerfectContinuousNegativeStatementVerbForm = [
         id: "d9f3e74a1c737832d701f14d636aa222",
         type: "completeFuturePerfectContinuousNegativeStatementVerbForm",
         data: {
-            leftSide: "I",
-            middle: "(program)",
-            rightSide: "for eight hours by tonight.",
+            prompt: {
+                twoSided: true,
+                leftSide: "I",
+                middle: "(program)",
+                rightSide: "for eight hours by tonight."
+            },
             minWordCount: 4,
             maxWordCount: 5,
             correctAuxiliars: [
@@ -957,9 +1125,12 @@ const completeFuturePerfectContinuousNegativeStatementVerbForm = [
         id: "196365c7b69ffa89a0a9f2b7d05d91ed",
         type: "completeFuturePerfectContinuousNegativeStatementVerbForm",
         data: {
-            leftSide: "The sun",
-            middle: "(shine)",
-            rightSide: "for long before it rains.",
+            prompt: {
+                twoSided: true,
+                leftSide: "The sun",
+                middle: "(shine)",
+                rightSide: "for long before it rains."
+            },
             minWordCount: 4,
             maxWordCount: 5,
             correctAuxiliars: [
@@ -974,9 +1145,12 @@ const completeFuturePerfectContinuousNegativeStatementVerbForm = [
         id: "51174e9d99af9e8fac4f3a75662c76b0",
         type: "completeFuturePerfectContinuousNegativeStatementVerbForm",
         data: {
-            leftSide: "We",
-            middle: "(run)",
-            rightSide: "for an hour by the time we finish.",
+            prompt: {
+                twoSided: true,
+                leftSide: "We",
+                middle: "(run)",
+                rightSide: "for an hour by the time we finish."
+            },
             minWordCount: 4,
             maxWordCount: 5,
             correctAuxiliars: [
@@ -991,9 +1165,12 @@ const completeFuturePerfectContinuousNegativeStatementVerbForm = [
         id: "23decb9eef66c06c33fd7badd7b78432",
         type: "completeFuturePerfectContinuousNegativeStatementVerbForm",
         data: {
-            leftSide: "She",
-            middle: "(cook)",
-            rightSide: "all day when you arrive.",
+            prompt: {
+                twoSided: true,
+                leftSide: "She",
+                middle: "(cook)",
+                rightSide: "all day when you arrive."
+            },
             minWordCount: 4,
             maxWordCount: 5,
             correctAuxiliars: [
@@ -1008,9 +1185,12 @@ const completeFuturePerfectContinuousNegativeStatementVerbForm = [
         id: "58e66b28d4757fa4f3d566e4f35ad7f4",
         type: "completeFuturePerfectContinuousNegativeStatementVerbForm",
         data: {
-            leftSide: "You",
-            middle: "(wait)",
-            rightSide: "for long by the time the plane lands.",
+            prompt: {
+                twoSided: true,
+                leftSide: "You",
+                middle: "(wait)",
+                rightSide: "for long by the time the plane lands."
+            },
             minWordCount: 4,
             maxWordCount: 5,
             correctAuxiliars: [
@@ -1025,9 +1205,12 @@ const completeFuturePerfectContinuousNegativeStatementVerbForm = [
         id: "7b52f068eccc3a6384b7a9e2741e3d53",
         type: "completeFuturePerfectContinuousNegativeStatementVerbForm",
         data: {
-            leftSide: "They",
-            middle: "(hunt)",
-            rightSide: "for hours by the time they find it.",
+            prompt: {
+                twoSided: true,
+                leftSide: "They",
+                middle: "(hunt)",
+                rightSide: "for hours by the time they find it."
+            },
             minWordCount: 4,
             maxWordCount: 5,
             correctAuxiliars: [
@@ -1042,9 +1225,12 @@ const completeFuturePerfectContinuousNegativeStatementVerbForm = [
         id: "8727a54c9a099d216f87ae2b8c8bcd29",
         type: "completeFuturePerfectContinuousNegativeStatementVerbForm",
         data: {
-            leftSide: "He",
-            middle: "(speak)",
-            rightSide: "for long when the meeting ends.",
+            prompt: {
+                twoSided: true,
+                leftSide: "He",
+                middle: "(speak)",
+                rightSide: "for long when the meeting ends."
+            },
             minWordCount: 4,
             maxWordCount: 5,
             correctAuxiliars: [
@@ -1059,9 +1245,12 @@ const completeFuturePerfectContinuousNegativeStatementVerbForm = [
         id: "35e1fc23ad06ac7d314cc6e27772952f",
         type: "completeFuturePerfectContinuousNegativeStatementVerbForm",
         data: {
-            leftSide: "I",
-            middle: "(search)",
-            rightSide: "for my keys for an hour.",
+            prompt: {
+                twoSided: true,
+                leftSide: "I",
+                middle: "(search)",
+                rightSide: "for my keys for an hour."
+            },
             minWordCount: 4,
             maxWordCount: 5,
             correctAuxiliars: [
@@ -1076,9 +1265,12 @@ const completeFuturePerfectContinuousNegativeStatementVerbForm = [
         id: "df039fc70ac60727c3758aa38a545bb7",
         type: "completeFuturePerfectContinuousNegativeStatementVerbForm",
         data: {
-            leftSide: "We",
-            middle: "(cycle)",
-            rightSide: "for long by sunset.",
+            prompt: {
+                twoSided: true,
+                leftSide: "We",
+                middle: "(cycle)",
+                rightSide: "for long by sunset."
+            },
             minWordCount: 4,
             maxWordCount: 5,
             correctAuxiliars: [
@@ -1093,9 +1285,12 @@ const completeFuturePerfectContinuousNegativeStatementVerbForm = [
         id: "29e599ad442326d344f87a3bb32a770f",
         type: "completeFuturePerfectContinuousNegativeStatementVerbForm",
         data: {
-            leftSide: "She",
-            middle: "(clean)",
-            rightSide: "the whole house by herself.",
+            prompt: {
+                twoSided: true,
+                leftSide: "She",
+                middle: "(clean)",
+                rightSide: "the whole house by herself."
+            },
             minWordCount: 4,
             maxWordCount: 5,
             correctAuxiliars: [
@@ -1110,9 +1305,12 @@ const completeFuturePerfectContinuousNegativeStatementVerbForm = [
         id: "46b79c100750fddd6647059041318b5e",
         type: "completeFuturePerfectContinuousNegativeStatementVerbForm",
         data: {
-            leftSide: "They",
-            middle: "(camp)",
-            rightSide: "for a week by next Sunday.",
+            prompt: {
+                twoSided: true,
+                leftSide: "They",
+                middle: "(camp)",
+                rightSide: "for a week by next Sunday."
+            },
             minWordCount: 4,
             maxWordCount: 5,
             correctAuxiliars: [
@@ -1127,9 +1325,12 @@ const completeFuturePerfectContinuousNegativeStatementVerbForm = [
         id: "3d026961d125dfa3ff772b0a1d868518",
         type: "completeFuturePerfectContinuousNegativeStatementVerbForm",
         data: {
-            leftSide: "I",
-            middle: "(help)",
-            rightSide: "them for long by tomorrow.",
+            prompt: {
+                twoSided: true,
+                leftSide: "I",
+                middle: "(help)",
+                rightSide: "them for long by tomorrow."
+            },
             minWordCount: 4,
             maxWordCount: 5,
             correctAuxiliars: [
@@ -1144,9 +1345,12 @@ const completeFuturePerfectContinuousNegativeStatementVerbForm = [
         id: "93d12463cfcd1930231b7f505bf132f5",
         type: "completeFuturePerfectContinuousNegativeStatementVerbForm",
         data: {
-            leftSide: "You",
-            middle: "(work)",
-            rightSide: "on the car for long.",
+            prompt: {
+                twoSided: true,
+                leftSide: "You",
+                middle: "(work)",
+                rightSide: "on the car for long."
+            },
             minWordCount: 4,
             maxWordCount: 5,
             correctAuxiliars: [
@@ -1161,9 +1365,12 @@ const completeFuturePerfectContinuousNegativeStatementVerbForm = [
         id: "080c980a6291104f1369035a2477255f",
         type: "completeFuturePerfectContinuousNegativeStatementVerbForm",
         data: {
-            leftSide: "He",
-            middle: "(study)",
-            rightSide: "since morning by 2 PM.",
+            prompt: {
+                twoSided: true,
+                leftSide: "He",
+                middle: "(study)",
+                rightSide: "since morning by 2 PM."
+            },
             minWordCount: 4,
             maxWordCount: 5,
             correctAuxiliars: [
@@ -1178,9 +1385,12 @@ const completeFuturePerfectContinuousNegativeStatementVerbForm = [
         id: "2f1f77e6dc718dbfbdf9ee11a1433066",
         type: "completeFuturePerfectContinuousNegativeStatementVerbForm",
         data: {
-            leftSide: "We",
-            middle: "(knit)",
-            rightSide: "that sweater for long by winter.",
+            prompt: {
+                twoSided: true,
+                leftSide: "We",
+                middle: "(knit)",
+                rightSide: "that sweater for long by winter."
+            },
             minWordCount: 4,
             maxWordCount: 5,
             correctAuxiliars: [
@@ -1195,9 +1405,12 @@ const completeFuturePerfectContinuousNegativeStatementVerbForm = [
         id: "15ff661bd5ff3db8ca3c16d79119d80a",
         type: "completeFuturePerfectContinuousNegativeStatementVerbForm",
         data: {
-            leftSide: "I",
-            middle: "(repair)",
-            rightSide: "the roof for long before it rains.",
+            prompt: {
+                twoSided: true,
+                leftSide: "I",
+                middle: "(repair)",
+                rightSide: "the roof for long before it rains."
+            },
             minWordCount: 4,
             maxWordCount: 5,
             correctAuxiliars: [
@@ -1212,9 +1425,12 @@ const completeFuturePerfectContinuousNegativeStatementVerbForm = [
         id: "72286416f07087f8bb5ee864d7dd0983",
         type: "completeFuturePerfectContinuousNegativeStatementVerbForm",
         data: {
-            leftSide: "They",
-            middle: "(shop)",
-            rightSide: "for long before the sale ends.",
+            prompt: {
+                twoSided: true,
+                leftSide: "They",
+                middle: "(shop)",
+                rightSide: "for long before the sale ends."
+            },
             minWordCount: 4,
             maxWordCount: 5,
             correctAuxiliars: [
@@ -1229,9 +1445,12 @@ const completeFuturePerfectContinuousNegativeStatementVerbForm = [
         id: "2b65aa8caabdff2731a63e9805de1a88",
         type: "completeFuturePerfectContinuousNegativeStatementVerbForm",
         data: {
-            leftSide: "She",
-            middle: "(wait)",
-            rightSide: "in line for an hour by then.",
+            prompt: {
+                twoSided: true,
+                leftSide: "She",
+                middle: "(wait)",
+                rightSide: "in line for an hour by then."
+            },
             minWordCount: 4,
             maxWordCount: 5,
             correctAuxiliars: [
@@ -1246,9 +1465,12 @@ const completeFuturePerfectContinuousNegativeStatementVerbForm = [
         id: "57f0d277e27b2ad5daf44d9300ee1cfa",
         type: "completeFuturePerfectContinuousNegativeStatementVerbForm",
         data: {
-            leftSide: "I",
-            middle: "(rest)",
-            rightSide: "for long before the guests arrive.",
+            prompt: {
+                twoSided: true,
+                leftSide: "I",
+                middle: "(rest)",
+                rightSide: "for long before the guests arrive."
+            },
             minWordCount: 4,
             maxWordCount: 5,
             correctAuxiliars: [
@@ -1263,9 +1485,12 @@ const completeFuturePerfectContinuousNegativeStatementVerbForm = [
         id: "fb20d9262e73287272de25c2a23caa88",
         type: "completeFuturePerfectContinuousNegativeStatementVerbForm",
         data: {
-            leftSide: "You",
-            middle: "(climb)",
-            rightSide: "for long by the time you reach the peak.",
+            prompt: {
+                twoSided: true,
+                leftSide: "You",
+                middle: "(climb)",
+                rightSide: "for long by the time you reach the peak."
+            },
             minWordCount: 4,
             maxWordCount: 5,
             correctAuxiliars: [
@@ -1280,9 +1505,12 @@ const completeFuturePerfectContinuousNegativeStatementVerbForm = [
         id: "65ed98ca925ccdb946f0c0dd5efa57aa",
         type: "completeFuturePerfectContinuousNegativeStatementVerbForm",
         data: {
-            leftSide: "The sun",
-            middle: "(burn)",
-            rightSide: "for billions of years more.",
+            prompt: {
+                twoSided: true,
+                leftSide: "The sun",
+                middle: "(burn)",
+                rightSide: "for billions of years more."
+            },
             minWordCount: 4,
             maxWordCount: 5,
             correctAuxiliars: [
@@ -1297,9 +1525,12 @@ const completeFuturePerfectContinuousNegativeStatementVerbForm = [
         id: "767ea717710c81afc36c4e09d51930ea",
         type: "completeFuturePerfectContinuousNegativeStatementVerbForm",
         data: {
-            leftSide: "We",
-            middle: "(sail)",
-            rightSide: "for long before reaching land.",
+            prompt: {
+                twoSided: true,
+                leftSide: "We",
+                middle: "(sail)",
+                rightSide: "for long before reaching land."
+            },
             minWordCount: 4,
             maxWordCount: 5,
             correctAuxiliars: [
@@ -1314,9 +1545,12 @@ const completeFuturePerfectContinuousNegativeStatementVerbForm = [
         id: "0940fc7abae7ad720ee40f35ead87dc5",
         type: "completeFuturePerfectContinuousNegativeStatementVerbForm",
         data: {
-            leftSide: "They",
-            middle: "(host)",
-            rightSide: "the event for long by midnight.",
+            prompt: {
+                twoSided: true,
+                leftSide: "They",
+                middle: "(host)",
+                rightSide: "the event for long by midnight."
+            },
             minWordCount: 4,
             maxWordCount: 5,
             correctAuxiliars: [
@@ -1331,9 +1565,12 @@ const completeFuturePerfectContinuousNegativeStatementVerbForm = [
         id: "ff804f938177faea74d8e83bff72b708",
         type: "completeFuturePerfectContinuousNegativeStatementVerbForm",
         data: {
-            leftSide: "He",
-            middle: "(teach)",
-            rightSide: "here for thirty years next term.",
+            prompt: {
+                twoSided: true,
+                leftSide: "He",
+                middle: "(teach)",
+                rightSide: "here for thirty years next term."
+            },
             minWordCount: 4,
             maxWordCount: 5,
             correctAuxiliars: [
@@ -1348,9 +1585,12 @@ const completeFuturePerfectContinuousNegativeStatementVerbForm = [
         id: "5337875a2df6a0f7652a19b27188ceca",
         type: "completeFuturePerfectContinuousNegativeStatementVerbForm",
         data: {
-            leftSide: "I",
-            middle: "(plan)",
-            rightSide: "for very long by tomorrow.",
+            prompt: {
+                twoSided: true,
+                leftSide: "I",
+                middle: "(plan)",
+                rightSide: "for very long by tomorrow."
+            },
             minWordCount: 4,
             maxWordCount: 5,
             correctAuxiliars: [
@@ -1365,9 +1605,12 @@ const completeFuturePerfectContinuousNegativeStatementVerbForm = [
         id: "6a99d6d2cb7c162e9d7c752ab9dd794d",
         type: "completeFuturePerfectContinuousNegativeStatementVerbForm",
         data: {
-            leftSide: "She",
-            middle: "(sing)",
-            rightSide: "for an hour by the finale.",
+            prompt: {
+                twoSided: true,
+                leftSide: "She",
+                middle: "(sing)",
+                rightSide: "for an hour by the finale."
+            },
             minWordCount: 4,
             maxWordCount: 5,
             correctAuxiliars: [
@@ -1382,9 +1625,12 @@ const completeFuturePerfectContinuousNegativeStatementVerbForm = [
         id: "31af7e2d078190a9aa7cd0a2a608ffb1",
         type: "completeFuturePerfectContinuousNegativeStatementVerbForm",
         data: {
-            leftSide: "We",
-            middle: "(hike)",
-            rightSide: "for five hours by noon.",
+            prompt: {
+                twoSided: true,
+                leftSide: "We",
+                middle: "(hike)",
+                rightSide: "for five hours by noon."
+            },
             minWordCount: 4,
             maxWordCount: 5,
             correctAuxiliars: [
@@ -1399,9 +1645,12 @@ const completeFuturePerfectContinuousNegativeStatementVerbForm = [
         id: "ec964f15497887d0fd1e3aa562a9c1e1",
         type: "completeFuturePerfectContinuousNegativeStatementVerbForm",
         data: {
-            leftSide: "They",
-            middle: "(discuss)",
-            rightSide: "the issue for long.",
+            prompt: {
+                twoSided: true,
+                leftSide: "They",
+                middle: "(discuss)",
+                rightSide: "the issue for long."
+            },
             minWordCount: 4,
             maxWordCount: 5,
             correctAuxiliars: [
@@ -1416,9 +1665,12 @@ const completeFuturePerfectContinuousNegativeStatementVerbForm = [
         id: "319633a205a03085d905c7048704bde8",
         type: "completeFuturePerfectContinuousNegativeStatementVerbForm",
         data: {
-            leftSide: "I",
-            middle: "(fish)",
-            rightSide: "for long before I catch one.",
+            prompt: {
+                twoSided: true,
+                leftSide: "I",
+                middle: "(fish)",
+                rightSide: "for long before I catch one."
+            },
             minWordCount: 4,
             maxWordCount: 5,
             correctAuxiliars: [
@@ -1433,9 +1685,12 @@ const completeFuturePerfectContinuousNegativeStatementVerbForm = [
         id: "111406c69f00fce71cefb8caf63b26fb",
         type: "completeFuturePerfectContinuousNegativeStatementVerbForm",
         data: {
-            leftSide: "You",
-            middle: "(act)",
-            rightSide: "in that play for long by then.",
+            prompt: {
+                twoSided: true,
+                leftSide: "You",
+                middle: "(act)",
+                rightSide: "in that play for long by then."
+            },
             minWordCount: 4,
             maxWordCount: 5,
             correctAuxiliars: [
@@ -1450,9 +1705,12 @@ const completeFuturePerfectContinuousNegativeStatementVerbForm = [
         id: "e7a254b137f7346f6abd43dd0542d3c1",
         type: "completeFuturePerfectContinuousNegativeStatementVerbForm",
         data: {
-            leftSide: "She",
-            middle: "(sketch)",
-            rightSide: "for an hour by sunset.",
+            prompt: {
+                twoSided: true,
+                leftSide: "She",
+                middle: "(sketch)",
+                rightSide: "for an hour by sunset."
+            },
             minWordCount: 4,
             maxWordCount: 5,
             correctAuxiliars: [
@@ -1467,9 +1725,12 @@ const completeFuturePerfectContinuousNegativeStatementVerbForm = [
         id: "5033dc2a8f2040d82c13c5281115b2ae",
         type: "completeFuturePerfectContinuousNegativeStatementVerbForm",
         data: {
-            leftSide: "We",
-            middle: "(explore)",
-            rightSide: "for long before it gets dark.",
+            prompt: {
+                twoSided: true,
+                leftSide: "We",
+                middle: "(explore)",
+                rightSide: "for long before it gets dark."
+            },
             minWordCount: 4,
             maxWordCount: 5,
             correctAuxiliars: [
@@ -1484,9 +1745,12 @@ const completeFuturePerfectContinuousNegativeStatementVerbForm = [
         id: "7073a19d1c48f7dcc5ee8804d4e8a221",
         type: "completeFuturePerfectContinuousNegativeStatementVerbForm",
         data: {
-            leftSide: "He",
-            middle: "(wait)",
-            rightSide: "for long at the airport.",
+            prompt: {
+                twoSided: true,
+                leftSide: "He",
+                middle: "(wait)",
+                rightSide: "for long at the airport."
+            },
             minWordCount: 4,
             maxWordCount: 5,
             correctAuxiliars: [
@@ -1501,9 +1765,12 @@ const completeFuturePerfectContinuousNegativeStatementVerbForm = [
         id: "06bf8258bc37fde3e33667e5a3d58aa9",
         type: "completeFuturePerfectContinuousNegativeStatementVerbForm",
         data: {
-            leftSide: "They",
-            middle: "(practice)",
-            rightSide: "the piano for long.",
+            prompt: {
+                twoSided: true,
+                leftSide: "They",
+                middle: "(practice)",
+                rightSide: "the piano for long."
+            },
             minWordCount: 4,
             maxWordCount: 5,
             correctAuxiliars: [
@@ -1518,9 +1785,12 @@ const completeFuturePerfectContinuousNegativeStatementVerbForm = [
         id: "92c73efff0256d230c1ec0d5917e7167",
         type: "completeFuturePerfectContinuousNegativeStatementVerbForm",
         data: {
-            leftSide: "I",
-            middle: "(bake)",
-            rightSide: "for three hours by 4 PM.",
+            prompt: {
+                twoSided: true,
+                leftSide: "I",
+                middle: "(bake)",
+                rightSide: "for three hours by 4 PM."
+            },
             minWordCount: 4,
             maxWordCount: 5,
             correctAuxiliars: [
@@ -1535,9 +1805,12 @@ const completeFuturePerfectContinuousNegativeStatementVerbForm = [
         id: "6d3963a7a07ee1ee9406b8d0380d7b71",
         type: "completeFuturePerfectContinuousNegativeStatementVerbForm",
         data: {
-            leftSide: "She",
-            middle: "(organize)",
-            rightSide: "the files for long.",
+            prompt: {
+                twoSided: true,
+                leftSide: "She",
+                middle: "(organize)",
+                rightSide: "the files for long."
+            },
             minWordCount: 4,
             maxWordCount: 5,
             correctAuxiliars: [
@@ -1552,9 +1825,12 @@ const completeFuturePerfectContinuousNegativeStatementVerbForm = [
         id: "4b8c795657abf9fe1dbe56e37d270815",
         type: "completeFuturePerfectContinuousNegativeStatementVerbForm",
         data: {
-            leftSide: "We",
-            middle: "(drive)",
-            rightSide: "all night by tomorrow morning.",
+            prompt: {
+                twoSided: true,
+                leftSide: "We",
+                middle: "(drive)",
+                rightSide: "all night by tomorrow morning."
+            },
             minWordCount: 4,
             maxWordCount: 5,
             correctAuxiliars: [
@@ -1569,9 +1845,12 @@ const completeFuturePerfectContinuousNegativeStatementVerbForm = [
         id: "4271d54c25229e25ef7f147cd7ab15d1",
         type: "completeFuturePerfectContinuousNegativeStatementVerbForm",
         data: {
-            leftSide: "They",
-            middle: "(research)",
-            rightSide: "the topic for weeks.",
+            prompt: {
+                twoSided: true,
+                leftSide: "They",
+                middle: "(research)",
+                rightSide: "the topic for weeks."
+            },
             minWordCount: 4,
             maxWordCount: 5,
             correctAuxiliars: [
@@ -1586,9 +1865,12 @@ const completeFuturePerfectContinuousNegativeStatementVerbForm = [
         id: "01ec6330e0bc3d68b7378da1b41dba3a",
         type: "completeFuturePerfectContinuousNegativeStatementVerbForm",
         data: {
-            leftSide: "I",
-            middle: "(watch)",
-            rightSide: "the stars for long by then.",
+            prompt: {
+                twoSided: true,
+                leftSide: "I",
+                middle: "(watch)",
+                rightSide: "the stars for long by then."
+            },
             minWordCount: 4,
             maxWordCount: 5,
             correctAuxiliars: [
@@ -1603,9 +1885,12 @@ const completeFuturePerfectContinuousNegativeStatementVerbForm = [
         id: "a16b1ec3cbdf44ae64897ddd95773ec3",
         type: "completeFuturePerfectContinuousNegativeStatementVerbForm",
         data: {
-            leftSide: "You",
-            middle: "(listen)",
-            rightSide: "to the lecture for long.",
+            prompt: {
+                twoSided: true,
+                leftSide: "You",
+                middle: "(listen)",
+                rightSide: "to the lecture for long."
+            },
             minWordCount: 4,
             maxWordCount: 5,
             correctAuxiliars: [
@@ -1620,9 +1905,12 @@ const completeFuturePerfectContinuousNegativeStatementVerbForm = [
         id: "13c6bfcefe0e29e58ee26b9c1841b217",
         type: "completeFuturePerfectContinuousNegativeStatementVerbForm",
         data: {
-            leftSide: "She",
-            middle: "(sew)",
-            rightSide: "the quilt for long by May.",
+            prompt: {
+                twoSided: true,
+                leftSide: "She",
+                middle: "(sew)",
+                rightSide: "the quilt for long by May."
+            },
             minWordCount: 4,
             maxWordCount: 5,
             correctAuxiliars: [
@@ -1637,9 +1925,12 @@ const completeFuturePerfectContinuousNegativeStatementVerbForm = [
         id: "ce37b4c33dd0cefd5e917de69a9ad59a",
         type: "completeFuturePerfectContinuousNegativeStatementVerbForm",
         data: {
-            leftSide: "We",
-            middle: "(travel)",
-            rightSide: "since dawn by 6 PM.",
+            prompt: {
+                twoSided: true,
+                leftSide: "We",
+                middle: "(travel)",
+                rightSide: "since dawn by 6 PM."
+            },
             minWordCount: 4,
             maxWordCount: 5,
             correctAuxiliars: [
@@ -1654,9 +1945,12 @@ const completeFuturePerfectContinuousNegativeStatementVerbForm = [
         id: "8aef33d29fc04e461fc061c472846620",
         type: "completeFuturePerfectContinuousNegativeStatementVerbForm",
         data: {
-            leftSide: "They",
-            middle: "(work)",
-            rightSide: "in the garden for long.",
+            prompt: {
+                twoSided: true,
+                leftSide: "They",
+                middle: "(work)",
+                rightSide: "in the garden for long."
+            },
             minWordCount: 4,
             maxWordCount: 5,
             correctAuxiliars: [
@@ -1671,9 +1965,12 @@ const completeFuturePerfectContinuousNegativeStatementVerbForm = [
         id: "34bb600190a0b47ea48e45dd4e256c7c",
         type: "completeFuturePerfectContinuousNegativeStatementVerbForm",
         data: {
-            leftSide: "I",
-            middle: "(repair)",
-            rightSide: "the fence for very long.",
+            prompt: {
+                twoSided: true,
+                leftSide: "I",
+                middle: "(repair)",
+                rightSide: "the fence for very long."
+            },
             minWordCount: 4,
             maxWordCount: 5,
             correctAuxiliars: [
@@ -1688,9 +1985,12 @@ const completeFuturePerfectContinuousNegativeStatementVerbForm = [
         id: "381fbade79cccb375f5ae8e479812f9d",
         type: "completeFuturePerfectContinuousNegativeStatementVerbForm",
         data: {
-            leftSide: "He",
-            middle: "(cook)",
-            rightSide: "since noon by 7 PM.",
+            prompt: {
+                twoSided: true,
+                leftSide: "He",
+                middle: "(cook)",
+                rightSide: "since noon by 7 PM."
+            },
             minWordCount: 4,
             maxWordCount: 5,
             correctAuxiliars: [

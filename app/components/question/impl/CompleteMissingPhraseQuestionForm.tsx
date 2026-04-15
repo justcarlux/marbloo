@@ -122,11 +122,17 @@ export default function CompleteMissingPhraseQuestionForm({
                     {getQuestionPromptByType(questionData.type)}
                 </div>
                 <div className="font-bold">
-                    <span>{questionData.data.leftSide}</span>
-                    <span className="bg-highlight rounded-2xl p-2 mx-2 inline-block">
-                        {questionData.data.middle}
-                    </span>
-                    <span>{questionData.data.rightSide}</span>
+                    {questionData.data.prompt.twoSided ? (
+                        <>
+                            <span>{questionData.data.prompt.leftSide}</span>
+                            <span className="bg-highlight rounded-2xl p-2 mx-2 inline-block">
+                                {questionData.data.prompt.middle}
+                            </span>
+                            <span>{questionData.data.prompt.rightSide}</span>
+                        </>
+                    ) : (
+                        <span>{questionData.data.prompt.text}</span>
+                    )}
                     {isQuestionHintAvailable(questionData.type) && (
                         <div
                             className="inline-block ml-3"

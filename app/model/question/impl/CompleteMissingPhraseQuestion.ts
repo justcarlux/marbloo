@@ -1,11 +1,16 @@
 import QuestionInstance from "../QuestionInstance";
 
 export interface CompleteMissingPhraseQuestionData {
-    leftSide: string;
-    middle: string;
-    rightSide: string;
-    minWordCount: number;
-    maxWordCount: number;
+    prompt:
+        | {
+              twoSided: true;
+              leftSide: string;
+              middle: string;
+              rightSide: string;
+          }
+        | { twoSided: false; text: string };
+    minWordCount?: number;
+    maxWordCount?: number;
 }
 
 export interface CompleteMissingPhraseQuestionResult {
@@ -22,6 +27,8 @@ export default class CompleteMissingPhraseQuestion<
         input = input.trim().toLowerCase();
         const words = input.split(/ +/g);
         if (
+            this.data.minWordCount &&
+            this.data.maxWordCount &&
             this.data.minWordCount === this.data.maxWordCount &&
             words.length !== this.data.minWordCount
         ) {
@@ -36,7 +43,10 @@ export default class CompleteMissingPhraseQuestion<
                 },
             ];
         } else {
-            if (words.length < this.data.minWordCount) {
+            if (
+                this.data.minWordCount &&
+                words.length < this.data.minWordCount
+            ) {
                 return [
                     words,
                     {
@@ -47,7 +57,10 @@ export default class CompleteMissingPhraseQuestion<
                                 : `You are meant to write at least ${this.data.minWordCount} words!`,
                     },
                 ];
-            } else if (words.length > this.data.maxWordCount) {
+            } else if (
+                this.data.maxWordCount &&
+                words.length > this.data.maxWordCount
+            ) {
                 return [
                     words,
                     {

@@ -5,9 +5,12 @@ const completePresentSimplePositiveStatementVerbForm = [
         id: "36fe02458272c9dae46c418097393c6c",
         type: "completePresentSimplePositiveStatementVerbForm",
         data: {
-            leftSide: "He",
-            middle: "(like)",
-            rightSide: "to cook.",
+            prompt: {
+                twoSided: true,
+                leftSide: "He",
+                middle: "(like)",
+                rightSide: "to cook."
+            },
             correctForm: "likes",
             incorrectForms: ["like", "liked", "liking"],
         },
@@ -16,9 +19,12 @@ const completePresentSimplePositiveStatementVerbForm = [
         id: "4be0588ef50564c05b232e03a9efc9d6",
         type: "completePresentSimplePositiveStatementVerbForm",
         data: {
-            leftSide: "She",
-            middle: "(go)",
-            rightSide: "to the gym every morning.",
+            prompt: {
+                twoSided: true,
+                leftSide: "She",
+                middle: "(go)",
+                rightSide: "to the gym every morning."
+            },
             correctForm: "goes",
             incorrectForms: ["go", "goed", "going"],
         },
@@ -27,9 +33,12 @@ const completePresentSimplePositiveStatementVerbForm = [
         id: "d4bac2832b69678e2838e3662c4e03b3",
         type: "completePresentSimplePositiveStatementVerbForm",
         data: {
-            leftSide: "They",
-            middle: "(speak)",
-            rightSide: "English fluently.",
+            prompt: {
+                twoSided: true,
+                leftSide: "They",
+                middle: "(speak)",
+                rightSide: "English fluently."
+            },
             correctForm: "speak",
             incorrectForms: ["speaks", "speaking", "spoke"],
         },
@@ -38,9 +47,12 @@ const completePresentSimplePositiveStatementVerbForm = [
         id: "26b65f240c58fd44dc1f79b65481c954",
         type: "completePresentSimplePositiveStatementVerbForm",
         data: {
-            leftSide: "I",
-            middle: "(drink)",
-            rightSide: "tea instead of coffee.",
+            prompt: {
+                twoSided: true,
+                leftSide: "I",
+                middle: "(drink)",
+                rightSide: "tea instead of coffee."
+            },
             correctForm: "drink",
             incorrectForms: ["drinks", "drank", "drinking"],
         },
@@ -49,9 +61,12 @@ const completePresentSimplePositiveStatementVerbForm = [
         id: "2cdcd9e271eb57750d4ff7d2767075b9",
         type: "completePresentSimplePositiveStatementVerbForm",
         data: {
-            leftSide: "The sun",
-            middle: "(rise)",
-            rightSide: "in the east.",
+            prompt: {
+                twoSided: true,
+                leftSide: "The sun",
+                middle: "(rise)",
+                rightSide: "in the east."
+            },
             correctForm: "rises",
             incorrectForms: ["rise", "rising", "rose"],
         },
@@ -60,9 +75,12 @@ const completePresentSimplePositiveStatementVerbForm = [
         id: "d15c59911cb573e80125e0c5b9b26b4b",
         type: "completePresentSimplePositiveStatementVerbForm",
         data: {
-            leftSide: "We",
-            middle: "(live)",
-            rightSide: "in a small apartment.",
+            prompt: {
+                twoSided: true,
+                leftSide: "We",
+                middle: "(live)",
+                rightSide: "in a small apartment."
+            },
             correctForm: "live",
             incorrectForms: ["lives", "living", "lived"],
         },
@@ -71,9 +89,12 @@ const completePresentSimplePositiveStatementVerbForm = [
         id: "46b3964ca2dedc3fd969866475581a9d",
         type: "completePresentSimplePositiveStatementVerbForm",
         data: {
-            leftSide: "You",
-            middle: "(play)",
-            rightSide: "the guitar beautifully.",
+            prompt: {
+                twoSided: true,
+                leftSide: "You",
+                middle: "(play)",
+                rightSide: "the guitar beautifully."
+            },
             correctForm: "play",
             incorrectForms: ["plays", "playing", "played"],
         },
@@ -82,9 +103,12 @@ const completePresentSimplePositiveStatementVerbForm = [
         id: "bdbb5e42295e75eb9fb14a5e4bcf8b23",
         type: "completePresentSimplePositiveStatementVerbForm",
         data: {
-            leftSide: "It",
-            middle: "(rain)",
-            rightSide: "a lot in Seattle.",
+            prompt: {
+                twoSided: true,
+                leftSide: "It",
+                middle: "(rain)",
+                rightSide: "a lot in Seattle."
+            },
             correctForm: "rains",
             incorrectForms: ["rain", "raining", "rained"],
         },
@@ -93,9 +117,12 @@ const completePresentSimplePositiveStatementVerbForm = [
         id: "12537a74754468695c641c72ed9dcdfd",
         type: "completePresentSimplePositiveStatementVerbForm",
         data: {
-            leftSide: "My brother",
-            middle: "(work)",
-            rightSide: "at a bank.",
+            prompt: {
+                twoSided: true,
+                leftSide: "My brother",
+                middle: "(work)",
+                rightSide: "at a bank."
+            },
             correctForm: "works",
             incorrectForms: ["work", "working", "worked"],
         },
@@ -104,9 +131,12 @@ const completePresentSimplePositiveStatementVerbForm = [
         id: "70a47954f6206aad35e0ba9c8b2a4f7b",
         type: "completePresentSimplePositiveStatementVerbForm",
         data: {
-            leftSide: "Dogs",
-            middle: "(bark)",
-            rightSide: "at strangers.",
+            prompt: {
+                twoSided: true,
+                leftSide: "Dogs",
+                middle: "(bark)",
+                rightSide: "at strangers."
+            },
             correctForm: "bark",
             incorrectForms: ["barks", "barking", "barked"],
         },
@@ -115,9 +145,12 @@ const completePresentSimplePositiveStatementVerbForm = [
         id: "8985bc56c73e171c6d97051f060079db",
         type: "completePresentSimplePositiveStatementVerbForm",
         data: {
-            leftSide: "She",
-            middle: "(wash)",
-            rightSide: "her hair twice a week.",
+            prompt: {
+                twoSided: true,
+                leftSide: "She",
+                middle: "(wash)",
+                rightSide: "her hair twice a week."
+            },
             correctForm: "washes",
             incorrectForms: ["wash", "washing", "washed"],
         },
@@ -126,9 +159,12 @@ const completePresentSimplePositiveStatementVerbForm = [
         id: "cb6860a2ae0d9a58c645a1eb390424d4",
         type: "completePresentSimplePositiveStatementVerbForm",
         data: {
-            leftSide: "I",
-            middle: "(read)",
-            rightSide: "the newspaper every day.",
+            prompt: {
+                twoSided: true,
+                leftSide: "I",
+                middle: "(read)",
+                rightSide: "the newspaper every day."
+            },
             correctForm: "read",
             incorrectForms: ["reads", "reading", "red"],
         },
@@ -137,9 +173,12 @@ const completePresentSimplePositiveStatementVerbForm = [
         id: "f7cba84f3218ff7aed4743274117c50c",
         type: "completePresentSimplePositiveStatementVerbForm",
         data: {
-            leftSide: "He",
-            middle: "(study)",
-            rightSide: "hard for his exams.",
+            prompt: {
+                twoSided: true,
+                leftSide: "He",
+                middle: "(study)",
+                rightSide: "hard for his exams."
+            },
             correctForm: "studies",
             incorrectForms: ["study", "studying", "studied"],
         },
@@ -148,9 +187,12 @@ const completePresentSimplePositiveStatementVerbForm = [
         id: "0d9ef14cd1a2606891cc416738b48bc0",
         type: "completePresentSimplePositiveStatementVerbForm",
         data: {
-            leftSide: "They",
-            middle: "(travel)",
-            rightSide: "to Japan every winter.",
+            prompt: {
+                twoSided: true,
+                leftSide: "They",
+                middle: "(travel)",
+                rightSide: "to Japan every winter."
+            },
             correctForm: "travel",
             incorrectForms: ["travels", "traveling", "traveled"],
         },
@@ -159,9 +201,12 @@ const completePresentSimplePositiveStatementVerbForm = [
         id: "13de7c76f216c434da1c8b2457a70818",
         type: "completePresentSimplePositiveStatementVerbForm",
         data: {
-            leftSide: "The plane",
-            middle: "(take)",
-            rightSide: "off at 9 PM.",
+            prompt: {
+                twoSided: true,
+                leftSide: "The plane",
+                middle: "(take)",
+                rightSide: "off at 9 PM."
+            },
             correctForm: "takes",
             incorrectForms: ["take", "taking", "took"],
         },
@@ -170,9 +215,12 @@ const completePresentSimplePositiveStatementVerbForm = [
         id: "1a078a48a4a9b6f834240481bf49b5f6",
         type: "completePresentSimplePositiveStatementVerbForm",
         data: {
-            leftSide: "We",
-            middle: "(eat)",
-            rightSide: "dinner together at 7.",
+            prompt: {
+                twoSided: true,
+                leftSide: "We",
+                middle: "(eat)",
+                rightSide: "dinner together at 7."
+            },
             correctForm: "eat",
             incorrectForms: ["eats", "eating", "ate"],
         },
@@ -181,9 +229,12 @@ const completePresentSimplePositiveStatementVerbForm = [
         id: "389b1e6d5789af19dc5bfd783c8fa4d4",
         type: "completePresentSimplePositiveStatementVerbForm",
         data: {
-            leftSide: "Water",
-            middle: "(boil)",
-            rightSide: "at 100 degrees Celsius.",
+            prompt: {
+                twoSided: true,
+                leftSide: "Water",
+                middle: "(boil)",
+                rightSide: "at 100 degrees Celsius."
+            },
             correctForm: "boils",
             incorrectForms: ["boil", "boiling", "boiled"],
         },
@@ -192,9 +243,12 @@ const completePresentSimplePositiveStatementVerbForm = [
         id: "643bd3a5a0abc2af370d9d758d93c768",
         type: "completePresentSimplePositiveStatementVerbForm",
         data: {
-            leftSide: "My sister",
-            middle: "(dance)",
-            rightSide: "professionally.",
+            prompt: {
+                twoSided: true,
+                leftSide: "My sister",
+                middle: "(dance)",
+                rightSide: "professionally."
+            },
             correctForm: "dances",
             incorrectForms: ["dance", "dancing", "danced"],
         },
@@ -203,9 +257,12 @@ const completePresentSimplePositiveStatementVerbForm = [
         id: "fa58fc3dd9c827794115d067bb4cf880",
         type: "completePresentSimplePositiveStatementVerbForm",
         data: {
-            leftSide: "Cats",
-            middle: "(sleep)",
-            rightSide: "most of the day.",
+            prompt: {
+                twoSided: true,
+                leftSide: "Cats",
+                middle: "(sleep)",
+                rightSide: "most of the day."
+            },
             correctForm: "sleep",
             incorrectForms: ["sleeps", "sleeping", "slept"],
         },
@@ -214,9 +271,12 @@ const completePresentSimplePositiveStatementVerbForm = [
         id: "af386238dfe0de9781b839932d32ed7f",
         type: "completePresentSimplePositiveStatementVerbForm",
         data: {
-            leftSide: "He",
-            middle: "(fix)",
-            rightSide: "broken computers.",
+            prompt: {
+                twoSided: true,
+                leftSide: "He",
+                middle: "(fix)",
+                rightSide: "broken computers."
+            },
             correctForm: "fixes",
             incorrectForms: ["fix", "fixing", "fixed"],
         },
@@ -225,9 +285,12 @@ const completePresentSimplePositiveStatementVerbForm = [
         id: "d55c79125f5954b65bbd00e737282fef",
         type: "completePresentSimplePositiveStatementVerbForm",
         data: {
-            leftSide: "The teacher",
-            middle: "(explain)",
-            rightSide: "things clearly.",
+            prompt: {
+                twoSided: true,
+                leftSide: "The teacher",
+                middle: "(explain)",
+                rightSide: "things clearly."
+            },
             correctForm: "explains",
             incorrectForms: ["explain", "explaining", "explained"],
         },
@@ -236,9 +299,12 @@ const completePresentSimplePositiveStatementVerbForm = [
         id: "4b9fa0504c4b7c1fe7d436f69dae5368",
         type: "completePresentSimplePositiveStatementVerbForm",
         data: {
-            leftSide: "I",
-            middle: "(think)",
-            rightSide: "you are right.",
+            prompt: {
+                twoSided: true,
+                leftSide: "I",
+                middle: "(think)",
+                rightSide: "you are right."
+            },
             correctForm: "think",
             incorrectForms: ["thinks", "thinking", "thought"],
         },
@@ -247,9 +313,12 @@ const completePresentSimplePositiveStatementVerbForm = [
         id: "06a6de29dd824ff4c17df7e8059060cf",
         type: "completePresentSimplePositiveStatementVerbForm",
         data: {
-            leftSide: "Birds",
-            middle: "(fly)",
-            rightSide: "south for winter.",
+            prompt: {
+                twoSided: true,
+                leftSide: "Birds",
+                middle: "(fly)",
+                rightSide: "south for winter."
+            },
             correctForm: "fly",
             incorrectForms: ["flies", "flying", "flew"],
         },
@@ -258,9 +327,12 @@ const completePresentSimplePositiveStatementVerbForm = [
         id: "1a5e47974df0db53793633a9dfbde08c",
         type: "completePresentSimplePositiveStatementVerbForm",
         data: {
-            leftSide: "She",
-            middle: "(miss)",
-            rightSide: "her family a lot.",
+            prompt: {
+                twoSided: true,
+                leftSide: "She",
+                middle: "(miss)",
+                rightSide: "her family a lot."
+            },
             correctForm: "misses",
             incorrectForms: ["miss", "missing", "missed"],
         },
@@ -269,9 +341,12 @@ const completePresentSimplePositiveStatementVerbForm = [
         id: "0232f8b2dd93bb760f72b31df229e52f",
         type: "completePresentSimplePositiveStatementVerbForm",
         data: {
-            leftSide: "They",
-            middle: "(buy)",
-            rightSide: "groceries on Fridays.",
+            prompt: {
+                twoSided: true,
+                leftSide: "They",
+                middle: "(buy)",
+                rightSide: "groceries on Fridays."
+            },
             correctForm: "buy",
             incorrectForms: ["buys", "buying", "bought"],
         },
@@ -280,9 +355,12 @@ const completePresentSimplePositiveStatementVerbForm = [
         id: "0ed076e0e3e81d2eac35906f11a26fb8",
         type: "completePresentSimplePositiveStatementVerbForm",
         data: {
-            leftSide: "The clock",
-            middle: "(tick)",
-            rightSide: "very loudly.",
+            prompt: {
+                twoSided: true,
+                leftSide: "The clock",
+                middle: "(tick)",
+                rightSide: "very loudly."
+            },
             correctForm: "ticks",
             incorrectForms: ["tick", "ticking", "ticked"],
         },
@@ -291,9 +369,12 @@ const completePresentSimplePositiveStatementVerbForm = [
         id: "7f6b062dd0eb0b8c146cd9032112f335",
         type: "completePresentSimplePositiveStatementVerbForm",
         data: {
-            leftSide: "We",
-            middle: "(need)",
-            rightSide: "more time to finish.",
+            prompt: {
+                twoSided: true,
+                leftSide: "We",
+                middle: "(need)",
+                rightSide: "more time to finish."
+            },
             correctForm: "need",
             incorrectForms: ["needs", "needing", "needed"],
         },
@@ -302,9 +383,12 @@ const completePresentSimplePositiveStatementVerbForm = [
         id: "cf070006c85b2eae661f4df93bd28e0f",
         type: "completePresentSimplePositiveStatementVerbForm",
         data: {
-            leftSide: "You",
-            middle: "(know)",
-            rightSide: "what I mean.",
+            prompt: {
+                twoSided: true,
+                leftSide: "You",
+                middle: "(know)",
+                rightSide: "what I mean."
+            },
             correctForm: "know",
             incorrectForms: ["knows", "knowing", "knew"],
         },
@@ -313,9 +397,12 @@ const completePresentSimplePositiveStatementVerbForm = [
         id: "8ccd5c74a5220d66ec908c13653cb5ef",
         type: "completePresentSimplePositiveStatementVerbForm",
         data: {
-            leftSide: "He",
-            middle: "(catch)",
-            rightSide: "the early train.",
+            prompt: {
+                twoSided: true,
+                leftSide: "He",
+                middle: "(catch)",
+                rightSide: "the early train."
+            },
             correctForm: "catches",
             incorrectForms: ["catch", "catching", "caught"],
         },
@@ -324,9 +411,12 @@ const completePresentSimplePositiveStatementVerbForm = [
         id: "7eb18f18232d622a7bab34019baf4887",
         type: "completePresentSimplePositiveStatementVerbForm",
         data: {
-            leftSide: "She",
-            middle: "(teach)",
-            rightSide: "math at the college.",
+            prompt: {
+                twoSided: true,
+                leftSide: "She",
+                middle: "(teach)",
+                rightSide: "math at the college."
+            },
             correctForm: "teaches",
             incorrectForms: ["teach", "teaching", "taught"],
         },
@@ -335,9 +425,12 @@ const completePresentSimplePositiveStatementVerbForm = [
         id: "6b046d4d4e8d917baa9d41372fc63f43",
         type: "completePresentSimplePositiveStatementVerbForm",
         data: {
-            leftSide: "Plants",
-            middle: "(need)",
-            rightSide: "sunlight to grow.",
+            prompt: {
+                twoSided: true,
+                leftSide: "Plants",
+                middle: "(need)",
+                rightSide: "sunlight to grow."
+            },
             correctForm: "need",
             incorrectForms: ["needs", "needing", "needed"],
         },
@@ -346,9 +439,12 @@ const completePresentSimplePositiveStatementVerbForm = [
         id: "0cda43d45f2579f4217b870b1f37245f",
         type: "completePresentSimplePositiveStatementVerbForm",
         data: {
-            leftSide: "I",
-            middle: "(believe)",
-            rightSide: "in your potential.",
+            prompt: {
+                twoSided: true,
+                leftSide: "I",
+                middle: "(believe)",
+                rightSide: "in your potential."
+            },
             correctForm: "believe",
             incorrectForms: ["believes", "believing", "believed"],
         },
@@ -357,9 +453,12 @@ const completePresentSimplePositiveStatementVerbForm = [
         id: "d78b5073200362235ab5c07fa7ffd1ac",
         type: "completePresentSimplePositiveStatementVerbForm",
         data: {
-            leftSide: "The train",
-            middle: "(arrive)",
-            rightSide: "at noon.",
+            prompt: {
+                twoSided: true,
+                leftSide: "The train",
+                middle: "(arrive)",
+                rightSide: "at noon."
+            },
             correctForm: "arrives",
             incorrectForms: ["arrive", "arriving", "arrived"],
         },
@@ -368,9 +467,12 @@ const completePresentSimplePositiveStatementVerbForm = [
         id: "02bd9ff3397e03baa6d704e52ca63de4",
         type: "completePresentSimplePositiveStatementVerbForm",
         data: {
-            leftSide: "They",
-            middle: "(watch)",
-            rightSide: "the news at 6 PM.",
+            prompt: {
+                twoSided: true,
+                leftSide: "They",
+                middle: "(watch)",
+                rightSide: "the news at 6 PM."
+            },
             correctForm: "watch",
             incorrectForms: ["watches", "watching", "watched"],
         },
@@ -379,9 +481,12 @@ const completePresentSimplePositiveStatementVerbForm = [
         id: "6d6d0e4334321feca633ce47eeb339d3",
         type: "completePresentSimplePositiveStatementVerbForm",
         data: {
-            leftSide: "He",
-            middle: "(try)",
-            rightSide: "to do his best.",
+            prompt: {
+                twoSided: true,
+                leftSide: "He",
+                middle: "(try)",
+                rightSide: "to do his best."
+            },
             correctForm: "tries",
             incorrectForms: ["try", "trying", "tried"],
         },
@@ -390,9 +495,12 @@ const completePresentSimplePositiveStatementVerbForm = [
         id: "1fe6e092cdceebdf681ffe655e2f6246",
         type: "completePresentSimplePositiveStatementVerbForm",
         data: {
-            leftSide: "It",
-            middle: "(smell)",
-            rightSide: "delicious in here.",
+            prompt: {
+                twoSided: true,
+                leftSide: "It",
+                middle: "(smell)",
+                rightSide: "delicious in here."
+            },
             correctForm: "smells",
             incorrectForms: ["smell", "smelling", "smelled"],
         },
@@ -401,9 +509,12 @@ const completePresentSimplePositiveStatementVerbForm = [
         id: "c5c5b3a967cdb0c6b44039d5928e120e",
         type: "completePresentSimplePositiveStatementVerbForm",
         data: {
-            leftSide: "She",
-            middle: "(brush)",
-            rightSide: "her teeth regularly.",
+            prompt: {
+                twoSided: true,
+                leftSide: "She",
+                middle: "(brush)",
+                rightSide: "her teeth regularly."
+            },
             correctForm: "brushes",
             incorrectForms: ["brush", "brushing", "brushed"],
         },
@@ -412,9 +523,12 @@ const completePresentSimplePositiveStatementVerbForm = [
         id: "7ff23e08a651a78364d4487859628ca9",
         type: "completePresentSimplePositiveStatementVerbForm",
         data: {
-            leftSide: "We",
-            middle: "(feel)",
-            rightSide: "happy today.",
+            prompt: {
+                twoSided: true,
+                leftSide: "We",
+                middle: "(feel)",
+                rightSide: "happy today."
+            },
             correctForm: "feel",
             incorrectForms: ["feels", "feeling", "felt"],
         },
@@ -423,9 +537,12 @@ const completePresentSimplePositiveStatementVerbForm = [
         id: "0f8da928bd710c9a1f0dfa64ae7e2647",
         type: "completePresentSimplePositiveStatementVerbForm",
         data: {
-            leftSide: "Computers",
-            middle: "(process)",
-            rightSide: "data quickly.",
+            prompt: {
+                twoSided: true,
+                leftSide: "Computers",
+                middle: "(process)",
+                rightSide: "data quickly."
+            },
             correctForm: "process",
             incorrectForms: ["processes", "processing", "processed"],
         },
@@ -434,9 +551,12 @@ const completePresentSimplePositiveStatementVerbForm = [
         id: "fbf182b229fafae6071ef99363f1b1e2",
         type: "completePresentSimplePositiveStatementVerbForm",
         data: {
-            leftSide: "He",
-            middle: "(wear)",
-            rightSide: "a uniform at work.",
+            prompt: {
+                twoSided: true,
+                leftSide: "He",
+                middle: "(wear)",
+                rightSide: "a uniform at work."
+            },
             correctForm: "wears",
             incorrectForms: ["wear", "wearing", "wore"],
         },
@@ -445,9 +565,12 @@ const completePresentSimplePositiveStatementVerbForm = [
         id: "1fbedb4b8297b3c9aaaafe29f7fdacd4",
         type: "completePresentSimplePositiveStatementVerbForm",
         data: {
-            leftSide: "I",
-            middle: "(use)",
-            rightSide: "this app every day.",
+            prompt: {
+                twoSided: true,
+                leftSide: "I",
+                middle: "(use)",
+                rightSide: "this app every day."
+            },
             correctForm: "use",
             incorrectForms: ["uses", "using", "used"],
         },
@@ -456,9 +579,12 @@ const completePresentSimplePositiveStatementVerbForm = [
         id: "00869e25ab317481798e12933fe0bc1e",
         type: "completePresentSimplePositiveStatementVerbForm",
         data: {
-            leftSide: "The store",
-            middle: "(close)",
-            rightSide: "at midnight.",
+            prompt: {
+                twoSided: true,
+                leftSide: "The store",
+                middle: "(close)",
+                rightSide: "at midnight."
+            },
             correctForm: "closes",
             incorrectForms: ["close", "closing", "closed"],
         },
@@ -467,9 +593,12 @@ const completePresentSimplePositiveStatementVerbForm = [
         id: "92e2ff83f3682edf76af44b9add07846",
         type: "completePresentSimplePositiveStatementVerbForm",
         data: {
-            leftSide: "She",
-            middle: "(paint)",
-            rightSide: "landscapes.",
+            prompt: {
+                twoSided: true,
+                leftSide: "She",
+                middle: "(paint)",
+                rightSide: "landscapes."
+            },
             correctForm: "paints",
             incorrectForms: ["paint", "painting", "painted"],
         },
@@ -478,9 +607,12 @@ const completePresentSimplePositiveStatementVerbForm = [
         id: "379d60a45fad392254f0272428739915",
         type: "completePresentSimplePositiveStatementVerbForm",
         data: {
-            leftSide: "They",
-            middle: "(practice)",
-            rightSide: "piano for hours.",
+            prompt: {
+                twoSided: true,
+                leftSide: "They",
+                middle: "(practice)",
+                rightSide: "piano for hours."
+            },
             correctForm: "practice",
             incorrectForms: ["practices", "practicing", "practiced"],
         },
@@ -489,9 +621,12 @@ const completePresentSimplePositiveStatementVerbForm = [
         id: "d7d45e844b11b6b6aceb22ca52281071",
         type: "completePresentSimplePositiveStatementVerbForm",
         data: {
-            leftSide: "He",
-            middle: "(write)",
-            rightSide: "short stories.",
+            prompt: {
+                twoSided: true,
+                leftSide: "He",
+                middle: "(write)",
+                rightSide: "short stories."
+            },
             correctForm: "writes",
             incorrectForms: ["write", "writing", "wrote"],
         },
@@ -500,9 +635,12 @@ const completePresentSimplePositiveStatementVerbForm = [
         id: "22af0031667b027de25f6b22dfb40f70",
         type: "completePresentSimplePositiveStatementVerbForm",
         data: {
-            leftSide: "We",
-            middle: "(listen)",
-            rightSide: "to music while working.",
+            prompt: {
+                twoSided: true,
+                leftSide: "We",
+                middle: "(listen)",
+                rightSide: "to music while working."
+            },
             correctForm: "listen",
             incorrectForms: ["listens", "listening", "listened"],
         },
@@ -511,9 +649,12 @@ const completePresentSimplePositiveStatementVerbForm = [
         id: "b0c504e288ad5c66f039bef05c78dcb0",
         type: "completePresentSimplePositiveStatementVerbForm",
         data: {
-            leftSide: "The dog",
-            middle: "(wag)",
-            rightSide: "its tail when happy.",
+            prompt: {
+                twoSided: true,
+                leftSide: "The dog",
+                middle: "(wag)",
+                rightSide: "its tail when happy."
+            },
             correctForm: "wags",
             incorrectForms: ["wag", "wagging", "wagged"],
         },
@@ -522,9 +663,12 @@ const completePresentSimplePositiveStatementVerbForm = [
         id: "7156c5f308df02ebd3862fc6e3c1520d",
         type: "completePresentSimplePositiveStatementVerbForm",
         data: {
-            leftSide: "I",
-            middle: "(hope)",
-            rightSide: "you have a nice day.",
+            prompt: {
+                twoSided: true,
+                leftSide: "I",
+                middle: "(hope)",
+                rightSide: "you have a nice day."
+            },
             correctForm: "hope",
             incorrectForms: ["hopes", "hoping", "hoped"],
         },
@@ -533,9 +677,12 @@ const completePresentSimplePositiveStatementVerbForm = [
         id: "d73eef8c155db60c3bbea664c0187b27",
         type: "completePresentSimplePositiveStatementVerbForm",
         data: {
-            leftSide: "She",
-            middle: "(understand)",
-            rightSide: "the problem.",
+            prompt: {
+                twoSided: true,
+                leftSide: "She",
+                middle: "(understand)",
+                rightSide: "the problem."
+            },
             correctForm: "understands",
             incorrectForms: ["understand", "understanding", "understood"],
         },
@@ -544,9 +691,12 @@ const completePresentSimplePositiveStatementVerbForm = [
         id: "1c89cb9d327b7820cfe63665111671f7",
         type: "completePresentSimplePositiveStatementVerbForm",
         data: {
-            leftSide: "He",
-            middle: "(run)",
-            rightSide: "five miles a day.",
+            prompt: {
+                twoSided: true,
+                leftSide: "He",
+                middle: "(run)",
+                rightSide: "five miles a day."
+            },
             correctForm: "runs",
             incorrectForms: ["run", "running", "ran"],
         },
@@ -555,9 +705,12 @@ const completePresentSimplePositiveStatementVerbForm = [
         id: "84f85730c03b1c4976081b32c320d6f8",
         type: "completePresentSimplePositiveStatementVerbForm",
         data: {
-            leftSide: "The earth",
-            middle: "(revolve)",
-            rightSide: "around the sun.",
+            prompt: {
+                twoSided: true,
+                leftSide: "The earth",
+                middle: "(revolve)",
+                rightSide: "around the sun."
+            },
             correctForm: "revolves",
             incorrectForms: ["revolve", "revolving", "revolved"],
         },
@@ -566,9 +719,12 @@ const completePresentSimplePositiveStatementVerbForm = [
         id: "28a0d3f33f7e53ea89ce75169e0dba90",
         type: "completePresentSimplePositiveStatementVerbForm",
         data: {
-            leftSide: "They",
-            middle: "(share)",
-            rightSide: "everything.",
+            prompt: {
+                twoSided: true,
+                leftSide: "They",
+                middle: "(share)",
+                rightSide: "everything."
+            },
             correctForm: "share",
             incorrectForms: ["shares", "sharing", "shared"],
         },
@@ -577,9 +733,12 @@ const completePresentSimplePositiveStatementVerbForm = [
         id: "89d9594de32571ca000e14d06c6200ba",
         type: "completePresentSimplePositiveStatementVerbForm",
         data: {
-            leftSide: "I",
-            middle: "(forget)",
-            rightSide: "names easily.",
+            prompt: {
+                twoSided: true,
+                leftSide: "I",
+                middle: "(forget)",
+                rightSide: "names easily."
+            },
             correctForm: "forget",
             incorrectForms: ["forgets", "forgetting", "forgot"],
         },
@@ -588,9 +747,12 @@ const completePresentSimplePositiveStatementVerbForm = [
         id: "816ee68c91597ba2b8f6e64b0b80528a",
         type: "completePresentSimplePositiveStatementVerbForm",
         data: {
-            leftSide: "She",
-            middle: "(mix)",
-            rightSide: "the ingredients well.",
+            prompt: {
+                twoSided: true,
+                leftSide: "She",
+                middle: "(mix)",
+                rightSide: "the ingredients well."
+            },
             correctForm: "mixes",
             incorrectForms: ["mix", "mixing", "mixed"],
         },
@@ -599,9 +761,12 @@ const completePresentSimplePositiveStatementVerbForm = [
         id: "50df71e9673bb5c28fd3c30214f3a2d8",
         type: "completePresentSimplePositiveStatementVerbForm",
         data: {
-            leftSide: "He",
-            middle: "(pay)",
-            rightSide: "the bills on time.",
+            prompt: {
+                twoSided: true,
+                leftSide: "He",
+                middle: "(pay)",
+                rightSide: "the bills on time."
+            },
             correctForm: "pays",
             incorrectForms: ["pay", "paying", "paid"],
         },
@@ -610,9 +775,12 @@ const completePresentSimplePositiveStatementVerbForm = [
         id: "84bb0c982537b1e71f9d13e5c44b8186",
         type: "completePresentSimplePositiveStatementVerbForm",
         data: {
-            leftSide: "We",
-            middle: "(walk)",
-            rightSide: "to the park.",
+            prompt: {
+                twoSided: true,
+                leftSide: "We",
+                middle: "(walk)",
+                rightSide: "to the park."
+            },
             correctForm: "walk",
             incorrectForms: ["walks", "walking", "walked"],
         },
@@ -621,9 +789,12 @@ const completePresentSimplePositiveStatementVerbForm = [
         id: "6ed06db96b80076be0ced72a6f64f4c7",
         type: "completePresentSimplePositiveStatementVerbForm",
         data: {
-            leftSide: "You",
-            middle: "(look)",
-            rightSide: "great today.",
+            prompt: {
+                twoSided: true,
+                leftSide: "You",
+                middle: "(look)",
+                rightSide: "great today."
+            },
             correctForm: "look",
             incorrectForms: ["looks", "looking", "looked"],
         },
@@ -632,9 +803,12 @@ const completePresentSimplePositiveStatementVerbForm = [
         id: "8ed59334dd35b7d2c86d6988b373416f",
         type: "completePresentSimplePositiveStatementVerbForm",
         data: {
-            leftSide: "It",
-            middle: "(seem)",
-            rightSide: "very simple.",
+            prompt: {
+                twoSided: true,
+                leftSide: "It",
+                middle: "(seem)",
+                rightSide: "very simple."
+            },
             correctForm: "seems",
             incorrectForms: ["seem", "seeming", "seemed"],
         },
@@ -643,9 +817,12 @@ const completePresentSimplePositiveStatementVerbForm = [
         id: "9083e06da16b65bbabdf90a245efb616",
         type: "completePresentSimplePositiveStatementVerbForm",
         data: {
-            leftSide: "She",
-            middle: "(push)",
-            rightSide: "the heavy door.",
+            prompt: {
+                twoSided: true,
+                leftSide: "She",
+                middle: "(push)",
+                rightSide: "the heavy door."
+            },
             correctForm: "pushes",
             incorrectForms: ["push", "pushing", "pushed"],
         },
@@ -654,9 +831,12 @@ const completePresentSimplePositiveStatementVerbForm = [
         id: "c06859649db9a68216b7cc3df0448880",
         type: "completePresentSimplePositiveStatementVerbForm",
         data: {
-            leftSide: "I",
-            middle: "(clean)",
-            rightSide: "my room on Saturdays.",
+            prompt: {
+                twoSided: true,
+                leftSide: "I",
+                middle: "(clean)",
+                rightSide: "my room on Saturdays."
+            },
             correctForm: "clean",
             incorrectForms: ["cleans", "cleaning", "cleaned"],
         },
@@ -665,9 +845,12 @@ const completePresentSimplePositiveStatementVerbForm = [
         id: "322f84385b868c90ea9ab8cf4887aba9",
         type: "completePresentSimplePositiveStatementVerbForm",
         data: {
-            leftSide: "He",
-            middle: "(finish)",
-            rightSide: "his work early.",
+            prompt: {
+                twoSided: true,
+                leftSide: "He",
+                middle: "(finish)",
+                rightSide: "his work early."
+            },
             correctForm: "finishes",
             incorrectForms: ["finish", "finishing", "finished"],
         },
@@ -676,9 +859,12 @@ const completePresentSimplePositiveStatementVerbForm = [
         id: "5e2aa9ea56f9b56085144566a6b6c25b",
         type: "completePresentSimplePositiveStatementVerbForm",
         data: {
-            leftSide: "They",
-            middle: "(laugh)",
-            rightSide: "at his jokes.",
+            prompt: {
+                twoSided: true,
+                leftSide: "They",
+                middle: "(laugh)",
+                rightSide: "at his jokes."
+            },
             correctForm: "laugh",
             incorrectForms: ["laughs", "laughing", "laughed"],
         },
@@ -687,9 +873,12 @@ const completePresentSimplePositiveStatementVerbForm = [
         id: "123d6669cdfe0c46221e554391d40a9c",
         type: "completePresentSimplePositiveStatementVerbForm",
         data: {
-            leftSide: "The wind",
-            middle: "(blow)",
-            rightSide: "softly.",
+            prompt: {
+                twoSided: true,
+                leftSide: "The wind",
+                middle: "(blow)",
+                rightSide: "softly."
+            },
             correctForm: "blows",
             incorrectForms: ["blow", "blowing", "blew"],
         },
@@ -698,9 +887,12 @@ const completePresentSimplePositiveStatementVerbForm = [
         id: "a862469321bf4ef84eb6916718f42112",
         type: "completePresentSimplePositiveStatementVerbForm",
         data: {
-            leftSide: "We",
-            middle: "(wait)",
-            rightSide: "for the bus.",
+            prompt: {
+                twoSided: true,
+                leftSide: "We",
+                middle: "(wait)",
+                rightSide: "for the bus."
+            },
             correctForm: "wait",
             incorrectForms: ["waits", "waiting", "waited"],
         },
@@ -709,9 +901,12 @@ const completePresentSimplePositiveStatementVerbForm = [
         id: "686d56d09ffda835a15bbb6a066903f9",
         type: "completePresentSimplePositiveStatementVerbForm",
         data: {
-            leftSide: "She",
-            middle: "(sell)",
-            rightSide: "handmade crafts.",
+            prompt: {
+                twoSided: true,
+                leftSide: "She",
+                middle: "(sell)",
+                rightSide: "handmade crafts."
+            },
             correctForm: "sells",
             incorrectForms: ["sell", "selling", "sold"],
         },
@@ -720,9 +915,12 @@ const completePresentSimplePositiveStatementVerbForm = [
         id: "e7e97a99986995df1befb82d0cb50d64",
         type: "completePresentSimplePositiveStatementVerbForm",
         data: {
-            leftSide: "He",
-            middle: "(break)",
-            rightSide: "things easily.",
+            prompt: {
+                twoSided: true,
+                leftSide: "He",
+                middle: "(break)",
+                rightSide: "things easily."
+            },
             correctForm: "breaks",
             incorrectForms: ["break", "breaking", "broke"],
         },
@@ -731,9 +929,12 @@ const completePresentSimplePositiveStatementVerbForm = [
         id: "08dcca19ac3def1386b5b4a3370d89bd",
         type: "completePresentSimplePositiveStatementVerbForm",
         data: {
-            leftSide: "I",
-            middle: "(sing)",
-            rightSide: "in the shower.",
+            prompt: {
+                twoSided: true,
+                leftSide: "I",
+                middle: "(sing)",
+                rightSide: "in the shower."
+            },
             correctForm: "sing",
             incorrectForms: ["sings", "singing", "sang"],
         },
@@ -742,9 +943,12 @@ const completePresentSimplePositiveStatementVerbForm = [
         id: "76641431cddc8230d46656477ac2f190",
         type: "completePresentSimplePositiveStatementVerbForm",
         data: {
-            leftSide: "They",
-            middle: "(build)",
-            rightSide: "new houses.",
+            prompt: {
+                twoSided: true,
+                leftSide: "They",
+                middle: "(build)",
+                rightSide: "new houses."
+            },
             correctForm: "build",
             incorrectForms: ["builds", "building", "built"],
         },
@@ -753,9 +957,12 @@ const completePresentSimplePositiveStatementVerbForm = [
         id: "fad251bba64137caf724b55d650b8305",
         type: "completePresentSimplePositiveStatementVerbForm",
         data: {
-            leftSide: "She",
-            middle: "(draw)",
-            rightSide: "beautiful portraits.",
+            prompt: {
+                twoSided: true,
+                leftSide: "She",
+                middle: "(draw)",
+                rightSide: "beautiful portraits."
+            },
             correctForm: "draws",
             incorrectForms: ["draw", "drawing", "drew"],
         },
@@ -764,9 +971,12 @@ const completePresentSimplePositiveStatementVerbForm = [
         id: "03edcbfbd335f76ebf4929554c8a119f",
         type: "completePresentSimplePositiveStatementVerbForm",
         data: {
-            leftSide: "He",
-            middle: "(climb)",
-            rightSide: "trees.",
+            prompt: {
+                twoSided: true,
+                leftSide: "He",
+                middle: "(climb)",
+                rightSide: "trees."
+            },
             correctForm: "climbs",
             incorrectForms: ["climb", "climbing", "climbed"],
         },
@@ -775,9 +985,12 @@ const completePresentSimplePositiveStatementVerbForm = [
         id: "0c15ab1e7c96f9834c1fae5097346c77",
         type: "completePresentSimplePositiveStatementVerbForm",
         data: {
-            leftSide: "We",
-            middle: "(save)",
-            rightSide: "money for a trip.",
+            prompt: {
+                twoSided: true,
+                leftSide: "We",
+                middle: "(save)",
+                rightSide: "money for a trip."
+            },
             correctForm: "save",
             incorrectForms: ["saves", "saving", "saved"],
         },
@@ -786,9 +999,12 @@ const completePresentSimplePositiveStatementVerbForm = [
         id: "0ff7df9cc68654b4bd5b75d722c5af89",
         type: "completePresentSimplePositiveStatementVerbForm",
         data: {
-            leftSide: "The baby",
-            middle: "(cry)",
-            rightSide: "when hungry.",
+            prompt: {
+                twoSided: true,
+                leftSide: "The baby",
+                middle: "(cry)",
+                rightSide: "when hungry."
+            },
             correctForm: "cries",
             incorrectForms: ["cry", "crying", "cried"],
         },
@@ -797,9 +1013,12 @@ const completePresentSimplePositiveStatementVerbForm = [
         id: "bd777971f108d18c2ca365eeefa0ea99",
         type: "completePresentSimplePositiveStatementVerbForm",
         data: {
-            leftSide: "I",
-            middle: "(love)",
-            rightSide: "sunny days.",
+            prompt: {
+                twoSided: true,
+                leftSide: "I",
+                middle: "(love)",
+                rightSide: "sunny days."
+            },
             correctForm: "love",
             incorrectForms: ["loves", "loving", "loved"],
         },
@@ -808,9 +1027,12 @@ const completePresentSimplePositiveStatementVerbForm = [
         id: "421c96ca6ddd97f91b61c247afeea92f",
         type: "completePresentSimplePositiveStatementVerbForm",
         data: {
-            leftSide: "She",
-            middle: "(choose)",
-            rightSide: "the red dress.",
+            prompt: {
+                twoSided: true,
+                leftSide: "She",
+                middle: "(choose)",
+                rightSide: "the red dress."
+            },
             correctForm: "chooses",
             incorrectForms: ["choose", "choosing", "chose"],
         },
@@ -819,9 +1041,12 @@ const completePresentSimplePositiveStatementVerbForm = [
         id: "7edfa78b110725e61ac6047c67c7ec3b",
         type: "completePresentSimplePositiveStatementVerbForm",
         data: {
-            leftSide: "He",
-            middle: "(send)",
-            rightSide: "many emails.",
+            prompt: {
+                twoSided: true,
+                leftSide: "He",
+                middle: "(send)",
+                rightSide: "many emails."
+            },
             correctForm: "sends",
             incorrectForms: ["send", "sending", "sent"],
         },
@@ -830,9 +1055,12 @@ const completePresentSimplePositiveStatementVerbForm = [
         id: "4916e7afb11027cdfbe4b837eeef0035",
         type: "completePresentSimplePositiveStatementVerbForm",
         data: {
-            leftSide: "They",
-            middle: "(find)",
-            rightSide: "it difficult.",
+            prompt: {
+                twoSided: true,
+                leftSide: "They",
+                middle: "(find)",
+                rightSide: "it difficult."
+            },
             correctForm: "find",
             incorrectForms: ["finds", "finding", "found"],
         },
@@ -841,9 +1069,12 @@ const completePresentSimplePositiveStatementVerbForm = [
         id: "9263a0a597cb723135de38ea375a6ed4",
         type: "completePresentSimplePositiveStatementVerbForm",
         data: {
-            leftSide: "We",
-            middle: "(bring)",
-            rightSide: "our own lunch.",
+            prompt: {
+                twoSided: true,
+                leftSide: "We",
+                middle: "(bring)",
+                rightSide: "our own lunch."
+            },
             correctForm: "bring",
             incorrectForms: ["brings", "bringing", "brought"],
         },
@@ -852,9 +1083,12 @@ const completePresentSimplePositiveStatementVerbForm = [
         id: "17d32dd5e3c8b2ffdbe3bb81939b451d",
         type: "completePresentSimplePositiveStatementVerbForm",
         data: {
-            leftSide: "I",
-            middle: "(want)",
-            rightSide: "to learn more.",
+            prompt: {
+                twoSided: true,
+                leftSide: "I",
+                middle: "(want)",
+                rightSide: "to learn more."
+            },
             correctForm: "want",
             incorrectForms: ["wants", "wanting", "wanted"],
         },
@@ -863,9 +1097,12 @@ const completePresentSimplePositiveStatementVerbForm = [
         id: "3554f42965d3b1b7e65ef98fef2d864f",
         type: "completePresentSimplePositiveStatementVerbForm",
         data: {
-            leftSide: "She",
-            middle: "(keep)",
-            rightSide: "her room tidy.",
+            prompt: {
+                twoSided: true,
+                leftSide: "She",
+                middle: "(keep)",
+                rightSide: "her room tidy."
+            },
             correctForm: "keeps",
             incorrectForms: ["keep", "keeping", "kept"],
         },
@@ -874,9 +1111,12 @@ const completePresentSimplePositiveStatementVerbForm = [
         id: "2b354e0b13f0ac118fa86ddf58701f59",
         type: "completePresentSimplePositiveStatementVerbForm",
         data: {
-            leftSide: "He",
-            middle: "(tell)",
-            rightSide: "funny stories.",
+            prompt: {
+                twoSided: true,
+                leftSide: "He",
+                middle: "(tell)",
+                rightSide: "funny stories."
+            },
             correctForm: "tells",
             incorrectForms: ["tell", "telling", "told"],
         },
@@ -885,9 +1125,12 @@ const completePresentSimplePositiveStatementVerbForm = [
         id: "adc8f7d115b80e46f211d682326b77ef",
         type: "completePresentSimplePositiveStatementVerbForm",
         data: {
-            leftSide: "They",
-            middle: "(spend)",
-            rightSide: "too much time online.",
+            prompt: {
+                twoSided: true,
+                leftSide: "They",
+                middle: "(spend)",
+                rightSide: "too much time online."
+            },
             correctForm: "spend",
             incorrectForms: ["spends", "spending", "spent"],
         },
@@ -896,9 +1139,12 @@ const completePresentSimplePositiveStatementVerbForm = [
         id: "1b6e3813a9b0fdfc3d6ce04ddfae3a5e",
         type: "completePresentSimplePositiveStatementVerbForm",
         data: {
-            leftSide: "The cat",
-            middle: "(jump)",
-            rightSide: "on the table.",
+            prompt: {
+                twoSided: true,
+                leftSide: "The cat",
+                middle: "(jump)",
+                rightSide: "on the table."
+            },
             correctForm: "jumps",
             incorrectForms: ["jump", "jumping", "jumped"],
         },
@@ -907,9 +1153,12 @@ const completePresentSimplePositiveStatementVerbForm = [
         id: "3e1b7275e3619b324110da06726996c5",
         type: "completePresentSimplePositiveStatementVerbForm",
         data: {
-            leftSide: "I",
-            middle: "(agree)",
-            rightSide: "with your plan.",
+            prompt: {
+                twoSided: true,
+                leftSide: "I",
+                middle: "(agree)",
+                rightSide: "with your plan."
+            },
             correctForm: "agree",
             incorrectForms: ["agrees", "agreeing", "agreed"],
         },
@@ -918,9 +1167,12 @@ const completePresentSimplePositiveStatementVerbForm = [
         id: "1bf9e3a690260c4e49d7be54ce3b2680",
         type: "completePresentSimplePositiveStatementVerbForm",
         data: {
-            leftSide: "She",
-            middle: "(prefer)",
-            rightSide: "classical music.",
+            prompt: {
+                twoSided: true,
+                leftSide: "She",
+                middle: "(prefer)",
+                rightSide: "classical music."
+            },
             correctForm: "prefers",
             incorrectForms: ["prefer", "preferring", "preferred"],
         },
@@ -929,9 +1181,12 @@ const completePresentSimplePositiveStatementVerbForm = [
         id: "e6271ca5e0d10f84429a26d4d7a344c4",
         type: "completePresentSimplePositiveStatementVerbForm",
         data: {
-            leftSide: "He",
-            middle: "(speak)",
-            rightSide: "three languages.",
+            prompt: {
+                twoSided: true,
+                leftSide: "He",
+                middle: "(speak)",
+                rightSide: "three languages."
+            },
             correctForm: "speaks",
             incorrectForms: ["speak", "speaking", "spoke"],
         },
@@ -940,9 +1195,12 @@ const completePresentSimplePositiveStatementVerbForm = [
         id: "fce7fad55ba7022b4b2690307c754c3f",
         type: "completePresentSimplePositiveStatementVerbForm",
         data: {
-            leftSide: "We",
-            middle: "(visit)",
-            rightSide: "our grandparents.",
+            prompt: {
+                twoSided: true,
+                leftSide: "We",
+                middle: "(visit)",
+                rightSide: "our grandparents."
+            },
             correctForm: "visit",
             incorrectForms: ["visits", "visiting", "visited"],
         },
@@ -951,9 +1209,12 @@ const completePresentSimplePositiveStatementVerbForm = [
         id: "5533ceeb4fe14ad6f42f4f2385bfee02",
         type: "completePresentSimplePositiveStatementVerbForm",
         data: {
-            leftSide: "I",
-            middle: "(feel)",
-            rightSide: "tired tonight.",
+            prompt: {
+                twoSided: true,
+                leftSide: "I",
+                middle: "(feel)",
+                rightSide: "tired tonight."
+            },
             correctForm: "feel",
             incorrectForms: ["feels", "feeling", "felt"],
         },
@@ -962,9 +1223,12 @@ const completePresentSimplePositiveStatementVerbForm = [
         id: "2bed8138a9b40cb09c12d7b6073652f9",
         type: "completePresentSimplePositiveStatementVerbForm",
         data: {
-            leftSide: "She",
-            middle: "(smoke)",
-            rightSide: "occasionally.",
+            prompt: {
+                twoSided: true,
+                leftSide: "She",
+                middle: "(smoke)",
+                rightSide: "occasionally."
+            },
             correctForm: "smokes",
             incorrectForms: ["smoke", "smoking", "smoked"],
         },
@@ -973,9 +1237,12 @@ const completePresentSimplePositiveStatementVerbForm = [
         id: "ac5bd848e090d5005d96920f29d8b2eb",
         type: "completePresentSimplePositiveStatementVerbForm",
         data: {
-            leftSide: "They",
-            middle: "(wear)",
-            rightSide: "fancy clothes.",
+            prompt: {
+                twoSided: true,
+                leftSide: "They",
+                middle: "(wear)",
+                rightSide: "fancy clothes."
+            },
             correctForm: "wear",
             incorrectForms: ["wears", "wearing", "wore"],
         },
@@ -984,9 +1251,12 @@ const completePresentSimplePositiveStatementVerbForm = [
         id: "b056c2da6cf747c2c2744ea4c19530d9",
         type: "completePresentSimplePositiveStatementVerbForm",
         data: {
-            leftSide: "He",
-            middle: "(swim)",
-            rightSide: "in the lake.",
+            prompt: {
+                twoSided: true,
+                leftSide: "He",
+                middle: "(swim)",
+                rightSide: "in the lake."
+            },
             correctForm: "swims",
             incorrectForms: ["swim", "swimming", "swam"],
         },
@@ -995,9 +1265,12 @@ const completePresentSimplePositiveStatementVerbForm = [
         id: "4b42a46bfc993a6d67f9bd0b331aaf9d",
         type: "completePresentSimplePositiveStatementVerbForm",
         data: {
-            leftSide: "The bird",
-            middle: "(sing)",
-            rightSide: "sweetly.",
+            prompt: {
+                twoSided: true,
+                leftSide: "The bird",
+                middle: "(sing)",
+                rightSide: "sweetly."
+            },
             correctForm: "sings",
             incorrectForms: ["sing", "singing", "sang"],
         },
@@ -1006,9 +1279,12 @@ const completePresentSimplePositiveStatementVerbForm = [
         id: "3c79d8a555e42680ecd5bcbaa2a25d24",
         type: "completePresentSimplePositiveStatementVerbForm",
         data: {
-            leftSide: "I",
-            middle: "(forget)",
-            rightSide: "to lock the door.",
+            prompt: {
+                twoSided: true,
+                leftSide: "I",
+                middle: "(forget)",
+                rightSide: "to lock the door."
+            },
             correctForm: "forget",
             incorrectForms: ["forgets", "forgetting", "forgot"],
         },
@@ -1017,9 +1293,12 @@ const completePresentSimplePositiveStatementVerbForm = [
         id: "70734ef1693edd989c8747f97e243c70",
         type: "completePresentSimplePositiveStatementVerbForm",
         data: {
-            leftSide: "She",
-            middle: "(talk)",
-            rightSide: "too much.",
+            prompt: {
+                twoSided: true,
+                leftSide: "She",
+                middle: "(talk)",
+                rightSide: "too much."
+            },
             correctForm: "talks",
             incorrectForms: ["talk", "talking", "talked"],
         },
@@ -1028,9 +1307,12 @@ const completePresentSimplePositiveStatementVerbForm = [
         id: "08d9415d383b217bb93f911b9fb347ae",
         type: "completePresentSimplePositiveStatementVerbForm",
         data: {
-            leftSide: "He",
-            middle: "(buy)",
-            rightSide: "fresh bread.",
+            prompt: {
+                twoSided: true,
+                leftSide: "He",
+                middle: "(buy)",
+                rightSide: "fresh bread."
+            },
             correctForm: "buys",
             incorrectForms: ["buy", "buying", "bought"],
         },
@@ -1039,9 +1321,12 @@ const completePresentSimplePositiveStatementVerbForm = [
         id: "c17b8b3a33a12dedac8c13898f28423a",
         type: "completePresentSimplePositiveStatementVerbForm",
         data: {
-            leftSide: "We",
-            middle: "(start)",
-            rightSide: "at 8 AM.",
+            prompt: {
+                twoSided: true,
+                leftSide: "We",
+                middle: "(start)",
+                rightSide: "at 8 AM."
+            },
             correctForm: "start",
             incorrectForms: ["starts", "starting", "started"],
         },
@@ -1050,9 +1335,12 @@ const completePresentSimplePositiveStatementVerbForm = [
         id: "2ae5ea0bfa83e117b5e6acc08d51f662",
         type: "completePresentSimplePositiveStatementVerbForm",
         data: {
-            leftSide: "They",
-            middle: "(ask)",
-            rightSide: "many questions.",
+            prompt: {
+                twoSided: true,
+                leftSide: "They",
+                middle: "(ask)",
+                rightSide: "many questions."
+            },
             correctForm: "ask",
             incorrectForms: ["asks", "asking", "asked"],
         },
@@ -1061,9 +1349,12 @@ const completePresentSimplePositiveStatementVerbForm = [
         id: "d8dd2a4aea09eb5a83af3dddc978c192",
         type: "completePresentSimplePositiveStatementVerbForm",
         data: {
-            leftSide: "I",
-            middle: "(follow)",
-            rightSide: "the news.",
+            prompt: {
+                twoSided: true,
+                leftSide: "I",
+                middle: "(follow)",
+                rightSide: "the news."
+            },
             correctForm: "follow",
             incorrectForms: ["follows", "following", "followed"],
         },
@@ -1072,9 +1363,12 @@ const completePresentSimplePositiveStatementVerbForm = [
         id: "b60f40515c784d13cb3f209c60a24eab",
         type: "completePresentSimplePositiveStatementVerbForm",
         data: {
-            leftSide: "She",
-            middle: "(help)",
-            rightSide: "her friends.",
+            prompt: {
+                twoSided: true,
+                leftSide: "She",
+                middle: "(help)",
+                rightSide: "her friends."
+            },
             correctForm: "helps",
             incorrectForms: ["help", "helping", "helped"],
         },
@@ -1083,9 +1377,12 @@ const completePresentSimplePositiveStatementVerbForm = [
         id: "26f76ba28b2312b15643de656c90d28d",
         type: "completePresentSimplePositiveStatementVerbForm",
         data: {
-            leftSide: "He",
-            middle: "(drive)",
-            rightSide: "carefully.",
+            prompt: {
+                twoSided: true,
+                leftSide: "He",
+                middle: "(drive)",
+                rightSide: "carefully."
+            },
             correctForm: "drives",
             incorrectForms: ["drive", "driving", "drove"],
         },
@@ -1094,9 +1391,12 @@ const completePresentSimplePositiveStatementVerbForm = [
         id: "bd42b37f5aae0d1f3cf54ab8f3c6d0f4",
         type: "completePresentSimplePositiveStatementVerbForm",
         data: {
-            leftSide: "We",
-            middle: "(enjoy)",
-            rightSide: "the movie.",
+            prompt: {
+                twoSided: true,
+                leftSide: "We",
+                middle: "(enjoy)",
+                rightSide: "the movie."
+            },
             correctForm: "enjoy",
             incorrectForms: ["enjoys", "enjoying", "enjoyed"],
         },

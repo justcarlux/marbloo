@@ -5,9 +5,12 @@ const completeFutureToBePositiveStatementVerbForm = [
         id: "022f220308a91880ddf0a89eeec249c8",
         type: "completeFutureToBePositiveStatementVerbForm",
         data: {
-            leftSide: "I",
-            middle: "(to be)",
-            rightSide: "a student.",
+            prompt: {
+                twoSided: true,
+                leftSide: "I",
+                middle: "(to be)",
+                rightSide: "a student."
+            },
             correctForms: [["will", "be"]],
             incorrectForms: [["am"], ["is"], ["were"], ["be"]],
             maxWordCount: 2,
@@ -18,9 +21,12 @@ const completeFutureToBePositiveStatementVerbForm = [
         id: "8917a94e9f185d37b72dc83555910836",
         type: "completeFutureToBePositiveStatementVerbForm",
         data: {
-            leftSide: "He",
-            middle: "(to be)",
-            rightSide: "at the gym.",
+            prompt: {
+                twoSided: true,
+                leftSide: "He",
+                middle: "(to be)",
+                rightSide: "at the gym."
+            },
             correctForms: [["will", "be"]],
             incorrectForms: [["is"], ["was"], ["been"], ["be"]],
             maxWordCount: 2,
@@ -31,9 +37,12 @@ const completeFutureToBePositiveStatementVerbForm = [
         id: "ad6720d8d06fbbf6cf94ffd1d5cdca8f",
         type: "completeFutureToBePositiveStatementVerbForm",
         data: {
-            leftSide: "They",
-            middle: "(to be)",
-            rightSide: "very loud.",
+            prompt: {
+                twoSided: true,
+                leftSide: "They",
+                middle: "(to be)",
+                rightSide: "very loud."
+            },
             correctForms: [["will", "be"]],
             incorrectForms: [["are"], ["were"], ["been"], ["be"]],
             maxWordCount: 2,
@@ -44,9 +53,12 @@ const completeFutureToBePositiveStatementVerbForm = [
         id: "bb442f85dce27f1a4a47a44ac7cbe287",
         type: "completeFutureToBePositiveStatementVerbForm",
         data: {
-            leftSide: "She",
-            middle: "(to be)",
-            rightSide: "tired.",
+            prompt: {
+                twoSided: true,
+                leftSide: "She",
+                middle: "(to be)",
+                rightSide: "tired."
+            },
             correctForms: [["will", "be"]],
             incorrectForms: [["is"], ["was"], ["am"], ["be"]],
             maxWordCount: 2,
@@ -57,9 +69,12 @@ const completeFutureToBePositiveStatementVerbForm = [
         id: "9d56bcf07cfc77049a552c6c0c65ba93",
         type: "completeFutureToBePositiveStatementVerbForm",
         data: {
-            leftSide: "We",
-            middle: "(to be)",
-            rightSide: "in Rome.",
+            prompt: {
+                twoSided: true,
+                leftSide: "We",
+                middle: "(to be)",
+                rightSide: "in Rome."
+            },
             correctForms: [["will", "be"]],
             incorrectForms: [["are"], ["were"], ["am"], ["been"]],
             maxWordCount: 2,
@@ -70,9 +85,12 @@ const completeFutureToBePositiveStatementVerbForm = [
         id: "7df16f902abb995bbd8428e910e08d6a",
         type: "completeFutureToBePositiveStatementVerbForm",
         data: {
-            leftSide: "It",
-            middle: "(to be)",
-            rightSide: "sunny.",
+            prompt: {
+                twoSided: true,
+                leftSide: "It",
+                middle: "(to be)",
+                rightSide: "sunny."
+            },
             correctForms: [["will", "be"]],
             incorrectForms: [["is"], ["was"], ["be"], ["am"]],
             maxWordCount: 2,
@@ -83,9 +101,12 @@ const completeFutureToBePositiveStatementVerbForm = [
         id: "f1e5e1647cae60e1ea206ee8b1fb8d4d",
         type: "completeFutureToBePositiveStatementVerbForm",
         data: {
-            leftSide: "You",
-            middle: "(to be)",
-            rightSide: "late.",
+            prompt: {
+                twoSided: true,
+                leftSide: "You",
+                middle: "(to be)",
+                rightSide: "late."
+            },
             correctForms: [["will", "be"]],
             incorrectForms: [["are"], ["were"], ["is"], ["am"]],
             maxWordCount: 2,
@@ -96,9 +117,12 @@ const completeFutureToBePositiveStatementVerbForm = [
         id: "1a4a03828f2eec59f854f04d593e6fad",
         type: "completeFutureToBePositiveStatementVerbForm",
         data: {
-            leftSide: "The cat",
-            middle: "(to be)",
-            rightSide: "hungry.",
+            prompt: {
+                twoSided: true,
+                leftSide: "The cat",
+                middle: "(to be)",
+                rightSide: "hungry."
+            },
             correctForms: [["will", "be"]],
             incorrectForms: [["is"], ["was"], ["were"], ["be"]],
             maxWordCount: 2,
@@ -109,9 +133,12 @@ const completeFutureToBePositiveStatementVerbForm = [
         id: "43e46441c36e78c72a9a348bab67ad4f",
         type: "completeFutureToBePositiveStatementVerbForm",
         data: {
-            leftSide: "The trees",
-            middle: "(to be)",
-            rightSide: "tall.",
+            prompt: {
+                twoSided: true,
+                leftSide: "The trees",
+                middle: "(to be)",
+                rightSide: "tall."
+            },
             correctForms: [["will", "be"]],
             incorrectForms: [["are"], ["were"], ["been"], ["be"]],
             maxWordCount: 2,
@@ -122,9 +149,12 @@ const completeFutureToBePositiveStatementVerbForm = [
         id: "bfd3a3e8ae261c713fc9811488af0616",
         type: "completeFutureToBePositiveStatementVerbForm",
         data: {
-            leftSide: "I",
-            middle: "(to be)",
-            rightSide: "happy.",
+            prompt: {
+                twoSided: true,
+                leftSide: "I",
+                middle: "(to be)",
+                rightSide: "happy."
+            },
             correctForms: [["will", "be"]],
             incorrectForms: [["am"], ["was"], ["is"], ["be"]],
             maxWordCount: 2,
@@ -135,9 +165,12 @@ const completeFutureToBePositiveStatementVerbForm = [
         id: "66a6ae2234024d96e2cbb0e177218cab",
         type: "completeFutureToBePositiveStatementVerbForm",
         data: {
-            leftSide: "The movie",
-            middle: "(to be)",
-            rightSide: "scary.",
+            prompt: {
+                twoSided: true,
+                leftSide: "The movie",
+                middle: "(to be)",
+                rightSide: "scary."
+            },
             correctForms: [["will", "be"]],
             incorrectForms: [["is"], ["was"], ["were"], ["be"]],
             maxWordCount: 2,
@@ -148,9 +181,12 @@ const completeFutureToBePositiveStatementVerbForm = [
         id: "cae07bc654151f58088a5176e5c502f3",
         type: "completeFutureToBePositiveStatementVerbForm",
         data: {
-            leftSide: "The apples",
-            middle: "(to be)",
-            rightSide: "sour.",
+            prompt: {
+                twoSided: true,
+                leftSide: "The apples",
+                middle: "(to be)",
+                rightSide: "sour."
+            },
             correctForms: [["will", "be"]],
             incorrectForms: [["are"], ["were"], ["is"], ["be"]],
             maxWordCount: 2,
@@ -161,9 +197,12 @@ const completeFutureToBePositiveStatementVerbForm = [
         id: "19268ef79034f3b601b6a2c48eb56fdc",
         type: "completeFutureToBePositiveStatementVerbForm",
         data: {
-            leftSide: "My dad",
-            middle: "(to be)",
-            rightSide: "a pilot.",
+            prompt: {
+                twoSided: true,
+                leftSide: "My dad",
+                middle: "(to be)",
+                rightSide: "a pilot."
+            },
             correctForms: [["will", "be"]],
             incorrectForms: [["is"], ["was"], ["were"], ["be"]],
             maxWordCount: 2,
@@ -174,9 +213,12 @@ const completeFutureToBePositiveStatementVerbForm = [
         id: "dc8e65932a4daa699735ec111663a348",
         type: "completeFutureToBePositiveStatementVerbForm",
         data: {
-            leftSide: "Our friends",
-            middle: "(to be)",
-            rightSide: "outside.",
+            prompt: {
+                twoSided: true,
+                leftSide: "Our friends",
+                middle: "(to be)",
+                rightSide: "outside."
+            },
             correctForms: [["will", "be"]],
             incorrectForms: [["are"], ["were"], ["is"], ["be"]],
             maxWordCount: 2,
@@ -187,9 +229,12 @@ const completeFutureToBePositiveStatementVerbForm = [
         id: "fe18448e81438ca8defb74ae0ac0fd01",
         type: "completeFutureToBePositiveStatementVerbForm",
         data: {
-            leftSide: "The coffee",
-            middle: "(to be)",
-            rightSide: "cold.",
+            prompt: {
+                twoSided: true,
+                leftSide: "The coffee",
+                middle: "(to be)",
+                rightSide: "cold."
+            },
             correctForms: [["will", "be"]],
             incorrectForms: [["is"], ["was"], ["were"], ["be"]],
             maxWordCount: 2,
@@ -200,9 +245,12 @@ const completeFutureToBePositiveStatementVerbForm = [
         id: "f9adcb41a27a44b61cdd84400427f863",
         type: "completeFutureToBePositiveStatementVerbForm",
         data: {
-            leftSide: "You",
-            middle: "(to be)",
-            rightSide: "helpful.",
+            prompt: {
+                twoSided: true,
+                leftSide: "You",
+                middle: "(to be)",
+                rightSide: "helpful."
+            },
             correctForms: [["will", "be"]],
             incorrectForms: [["are"], ["were"], ["is"], ["be"]],
             maxWordCount: 2,
@@ -213,9 +261,12 @@ const completeFutureToBePositiveStatementVerbForm = [
         id: "9141ab005512b39e540913c028f22987",
         type: "completeFutureToBePositiveStatementVerbForm",
         data: {
-            leftSide: "The sky",
-            middle: "(to be)",
-            rightSide: "dark.",
+            prompt: {
+                twoSided: true,
+                leftSide: "The sky",
+                middle: "(to be)",
+                rightSide: "dark."
+            },
             correctForms: [["will", "be"]],
             incorrectForms: [["is"], ["was"], ["were"], ["be"]],
             maxWordCount: 2,
@@ -226,9 +277,12 @@ const completeFutureToBePositiveStatementVerbForm = [
         id: "b7dad32ac1b1c05c29fa785f5e08b382",
         type: "completeFutureToBePositiveStatementVerbForm",
         data: {
-            leftSide: "They",
-            middle: "(to be)",
-            rightSide: "rich.",
+            prompt: {
+                twoSided: true,
+                leftSide: "They",
+                middle: "(to be)",
+                rightSide: "rich."
+            },
             correctForms: [["will", "be"]],
             incorrectForms: [["are"], ["were"], ["is"], ["be"]],
             maxWordCount: 2,
@@ -239,9 +293,12 @@ const completeFutureToBePositiveStatementVerbForm = [
         id: "dc86c8e67163f361d93ca0a5b15aa462",
         type: "completeFutureToBePositiveStatementVerbForm",
         data: {
-            leftSide: "She",
-            middle: "(to be)",
-            rightSide: "an artist.",
+            prompt: {
+                twoSided: true,
+                leftSide: "She",
+                middle: "(to be)",
+                rightSide: "an artist."
+            },
             correctForms: [["will", "be"]],
             incorrectForms: [["is"], ["was"], ["were"], ["be"]],
             maxWordCount: 2,
@@ -252,9 +309,12 @@ const completeFutureToBePositiveStatementVerbForm = [
         id: "aa986d278e7020b8c81052d2786f68ad",
         type: "completeFutureToBePositiveStatementVerbForm",
         data: {
-            leftSide: "I",
-            middle: "(to be)",
-            rightSide: "ready.",
+            prompt: {
+                twoSided: true,
+                leftSide: "I",
+                middle: "(to be)",
+                rightSide: "ready."
+            },
             correctForms: [["will", "be"]],
             incorrectForms: [["am"], ["was"], ["were"], ["be"]],
             maxWordCount: 2,
@@ -265,9 +325,12 @@ const completeFutureToBePositiveStatementVerbForm = [
         id: "74217c2365190295850a8448d6775c4d",
         type: "completeFutureToBePositiveStatementVerbForm",
         data: {
-            leftSide: "The window",
-            middle: "(to be)",
-            rightSide: "broken.",
+            prompt: {
+                twoSided: true,
+                leftSide: "The window",
+                middle: "(to be)",
+                rightSide: "broken."
+            },
             correctForms: [["will", "be"]],
             incorrectForms: [["is"], ["was"], ["been"], ["be"]],
             maxWordCount: 2,
@@ -278,9 +341,12 @@ const completeFutureToBePositiveStatementVerbForm = [
         id: "a018b275acc44705e14b74aef417735f",
         type: "completeFutureToBePositiveStatementVerbForm",
         data: {
-            leftSide: "We",
-            middle: "(to be)",
-            rightSide: "thirsty.",
+            prompt: {
+                twoSided: true,
+                leftSide: "We",
+                middle: "(to be)",
+                rightSide: "thirsty."
+            },
             correctForms: [["will", "be"]],
             incorrectForms: [["are"], ["were"], ["been"], ["be"]],
             maxWordCount: 2,
@@ -291,9 +357,12 @@ const completeFutureToBePositiveStatementVerbForm = [
         id: "3051f855d4213529327107058b0887ce",
         type: "completeFutureToBePositiveStatementVerbForm",
         data: {
-            leftSide: "The water",
-            middle: "(to be)",
-            rightSide: "freezing.",
+            prompt: {
+                twoSided: true,
+                leftSide: "The water",
+                middle: "(to be)",
+                rightSide: "freezing."
+            },
             correctForms: [["will", "be"]],
             incorrectForms: [["is"], ["was"], ["been"], ["be"]],
             maxWordCount: 2,
@@ -304,9 +373,12 @@ const completeFutureToBePositiveStatementVerbForm = [
         id: "e9dc97e47bc04a284a315a0ef3094612",
         type: "completeFutureToBePositiveStatementVerbForm",
         data: {
-            leftSide: "You",
-            middle: "(to be)",
-            rightSide: "correct.",
+            prompt: {
+                twoSided: true,
+                leftSide: "You",
+                middle: "(to be)",
+                rightSide: "correct."
+            },
             correctForms: [["will", "be"]],
             incorrectForms: [["are"], ["were"], ["is"], ["be"]],
             maxWordCount: 2,
@@ -317,9 +389,12 @@ const completeFutureToBePositiveStatementVerbForm = [
         id: "5f49990d58814438c32294b396f23bc6",
         type: "completeFutureToBePositiveStatementVerbForm",
         data: {
-            leftSide: "They",
-            middle: "(to be)",
-            rightSide: "at school.",
+            prompt: {
+                twoSided: true,
+                leftSide: "They",
+                middle: "(to be)",
+                rightSide: "at school."
+            },
             correctForms: [["will", "be"]],
             incorrectForms: [["are"], ["were"], ["been"], ["be"]],
             maxWordCount: 2,
@@ -330,9 +405,12 @@ const completeFutureToBePositiveStatementVerbForm = [
         id: "28015f8e0f1a0015495063f8c925b13b",
         type: "completeFutureToBePositiveStatementVerbForm",
         data: {
-            leftSide: "It",
-            middle: "(to be)",
-            rightSide: "midnight.",
+            prompt: {
+                twoSided: true,
+                leftSide: "It",
+                middle: "(to be)",
+                rightSide: "midnight."
+            },
             correctForms: [["will", "be"]],
             incorrectForms: [["is"], ["was"], ["been"], ["be"]],
             maxWordCount: 2,
@@ -343,9 +421,12 @@ const completeFutureToBePositiveStatementVerbForm = [
         id: "07cd9afdd820ac3b0dcc40c268bac21a",
         type: "completeFutureToBePositiveStatementVerbForm",
         data: {
-            leftSide: "The building",
-            middle: "(to be)",
-            rightSide: "old.",
+            prompt: {
+                twoSided: true,
+                leftSide: "The building",
+                middle: "(to be)",
+                rightSide: "old."
+            },
             correctForms: [["will", "be"]],
             incorrectForms: [["is"], ["was"], ["been"], ["be"]],
             maxWordCount: 2,
@@ -356,9 +437,12 @@ const completeFutureToBePositiveStatementVerbForm = [
         id: "443d0e94f54fe60ef9d03994e61c202a",
         type: "completeFutureToBePositiveStatementVerbForm",
         data: {
-            leftSide: "We",
-            middle: "(to be)",
-            rightSide: "alone.",
+            prompt: {
+                twoSided: true,
+                leftSide: "We",
+                middle: "(to be)",
+                rightSide: "alone."
+            },
             correctForms: [["will", "be"]],
             incorrectForms: [["are"], ["were"], ["been"], ["be"]],
             maxWordCount: 2,
@@ -369,9 +453,12 @@ const completeFutureToBePositiveStatementVerbForm = [
         id: "786288af63894e1bf42e90219dc01d53",
         type: "completeFutureToBePositiveStatementVerbForm",
         data: {
-            leftSide: "I",
-            middle: "(to be)",
-            rightSide: "busy.",
+            prompt: {
+                twoSided: true,
+                leftSide: "I",
+                middle: "(to be)",
+                rightSide: "busy."
+            },
             correctForms: [["will", "be"]],
             incorrectForms: [["am"], ["was"], ["were"], ["be"]],
             maxWordCount: 2,
@@ -382,9 +469,12 @@ const completeFutureToBePositiveStatementVerbForm = [
         id: "4e3da7e407fd3734dfc38fff08f2b727",
         type: "completeFutureToBePositiveStatementVerbForm",
         data: {
-            leftSide: "She",
-            middle: "(to be)",
-            rightSide: "kind.",
+            prompt: {
+                twoSided: true,
+                leftSide: "She",
+                middle: "(to be)",
+                rightSide: "kind."
+            },
             correctForms: [["will", "be"]],
             incorrectForms: [["is"], ["was"], ["been"], ["be"]],
             maxWordCount: 2,
@@ -395,9 +485,12 @@ const completeFutureToBePositiveStatementVerbForm = [
         id: "cf8c6658414478f3ff48f22ac0e225a8",
         type: "completeFutureToBePositiveStatementVerbForm",
         data: {
-            leftSide: "The birds",
-            middle: "(to be)",
-            rightSide: "loud.",
+            prompt: {
+                twoSided: true,
+                leftSide: "The birds",
+                middle: "(to be)",
+                rightSide: "loud."
+            },
             correctForms: [["will", "be"]],
             incorrectForms: [["are"], ["were"], ["is"], ["be"]],
             maxWordCount: 2,
@@ -408,9 +501,12 @@ const completeFutureToBePositiveStatementVerbForm = [
         id: "af3d2fe4be906afb3df8b4aa296ec6bb",
         type: "completeFutureToBePositiveStatementVerbForm",
         data: {
-            leftSide: "It",
-            middle: "(to be)",
-            rightSide: "a mistake.",
+            prompt: {
+                twoSided: true,
+                leftSide: "It",
+                middle: "(to be)",
+                rightSide: "a mistake."
+            },
             correctForms: [["will", "be"]],
             incorrectForms: [["is"], ["was"], ["been"], ["be"]],
             maxWordCount: 2,
@@ -421,9 +517,12 @@ const completeFutureToBePositiveStatementVerbForm = [
         id: "4b08fe35323d835d5cf1307a4e929bf3",
         type: "completeFutureToBePositiveStatementVerbForm",
         data: {
-            leftSide: "The students",
-            middle: "(to be)",
-            rightSide: "quiet.",
+            prompt: {
+                twoSided: true,
+                leftSide: "The students",
+                middle: "(to be)",
+                rightSide: "quiet."
+            },
             correctForms: [["will", "be"]],
             incorrectForms: [["are"], ["were"], ["been"], ["be"]],
             maxWordCount: 2,
@@ -434,9 +533,12 @@ const completeFutureToBePositiveStatementVerbForm = [
         id: "8b9da0a15d32a4c68686b4d78ce252ba",
         type: "completeFutureToBePositiveStatementVerbForm",
         data: {
-            leftSide: "The street",
-            middle: "(to be)",
-            rightSide: "empty.",
+            prompt: {
+                twoSided: true,
+                leftSide: "The street",
+                middle: "(to be)",
+                rightSide: "empty."
+            },
             correctForms: [["will", "be"]],
             incorrectForms: [["is"], ["was"], ["been"], ["be"]],
             maxWordCount: 2,
@@ -447,9 +549,12 @@ const completeFutureToBePositiveStatementVerbForm = [
         id: "38f83d0d589adc52e11d6fdf6fa344df",
         type: "completeFutureToBePositiveStatementVerbForm",
         data: {
-            leftSide: "They",
-            middle: "(to be)",
-            rightSide: "angry.",
+            prompt: {
+                twoSided: true,
+                leftSide: "They",
+                middle: "(to be)",
+                rightSide: "angry."
+            },
             correctForms: [["will", "be"]],
             incorrectForms: [["are"], ["were"], ["been"], ["be"]],
             maxWordCount: 2,
@@ -460,9 +565,12 @@ const completeFutureToBePositiveStatementVerbForm = [
         id: "254911662d7a77b00bcee3bea042bcb2",
         type: "completeFutureToBePositiveStatementVerbForm",
         data: {
-            leftSide: "You",
-            middle: "(to be)",
-            rightSide: "lucky.",
+            prompt: {
+                twoSided: true,
+                leftSide: "You",
+                middle: "(to be)",
+                rightSide: "lucky."
+            },
             correctForms: [["will", "be"]],
             incorrectForms: [["are"], ["were"], ["been"], ["be"]],
             maxWordCount: 2,
@@ -473,9 +581,12 @@ const completeFutureToBePositiveStatementVerbForm = [
         id: "57535b97fbfee8af6ed467ccee5c45d9",
         type: "completeFutureToBePositiveStatementVerbForm",
         data: {
-            leftSide: "He",
-            middle: "(to be)",
-            rightSide: "afraid.",
+            prompt: {
+                twoSided: true,
+                leftSide: "He",
+                middle: "(to be)",
+                rightSide: "afraid."
+            },
             correctForms: [["will", "be"]],
             incorrectForms: [["is"], ["was"], ["been"], ["be"]],
             maxWordCount: 2,
@@ -486,9 +597,12 @@ const completeFutureToBePositiveStatementVerbForm = [
         id: "7d31b514ed4c330107aa57b8ae79a3a4",
         type: "completeFutureToBePositiveStatementVerbForm",
         data: {
-            leftSide: "I",
-            middle: "(to be)",
-            rightSide: "from Spain.",
+            prompt: {
+                twoSided: true,
+                leftSide: "I",
+                middle: "(to be)",
+                rightSide: "from Spain."
+            },
             correctForms: [["will", "be"]],
             incorrectForms: [["am"], ["was"], ["been"], ["be"]],
             maxWordCount: 2,
@@ -499,9 +613,12 @@ const completeFutureToBePositiveStatementVerbForm = [
         id: "91041ff01450706cf81bdb4b32072548",
         type: "completeFutureToBePositiveStatementVerbForm",
         data: {
-            leftSide: "The box",
-            middle: "(to be)",
-            rightSide: "heavy.",
+            prompt: {
+                twoSided: true,
+                leftSide: "The box",
+                middle: "(to be)",
+                rightSide: "heavy."
+            },
             correctForms: [["will", "be"]],
             incorrectForms: [["is"], ["was"], ["been"], ["be"]],
             maxWordCount: 2,
@@ -512,9 +629,12 @@ const completeFutureToBePositiveStatementVerbForm = [
         id: "4e1ce367deeb72d55952bcd55f66c37d",
         type: "completeFutureToBePositiveStatementVerbForm",
         data: {
-            leftSide: "We",
-            middle: "(to be)",
-            rightSide: "excited.",
+            prompt: {
+                twoSided: true,
+                leftSide: "We",
+                middle: "(to be)",
+                rightSide: "excited."
+            },
             correctForms: [["will", "be"]],
             incorrectForms: [["are"], ["were"], ["been"], ["be"]],
             maxWordCount: 2,
@@ -525,9 +645,12 @@ const completeFutureToBePositiveStatementVerbForm = [
         id: "0e5fc3ae0c88b5d8a7f81747f6fc62ab",
         type: "completeFutureToBePositiveStatementVerbForm",
         data: {
-            leftSide: "The cake",
-            middle: "(to be)",
-            rightSide: "yummy.",
+            prompt: {
+                twoSided: true,
+                leftSide: "The cake",
+                middle: "(to be)",
+                rightSide: "yummy."
+            },
             correctForms: [["will", "be"]],
             incorrectForms: [["is"], ["was"], ["been"], ["be"]],
             maxWordCount: 2,
@@ -538,9 +661,12 @@ const completeFutureToBePositiveStatementVerbForm = [
         id: "c8ddba77ac916f6db61f9864038b28de",
         type: "completeFutureToBePositiveStatementVerbForm",
         data: {
-            leftSide: "You",
-            middle: "(to be)",
-            rightSide: "my partner.",
+            prompt: {
+                twoSided: true,
+                leftSide: "You",
+                middle: "(to be)",
+                rightSide: "my partner."
+            },
             correctForms: [["will", "be"]],
             incorrectForms: [["are"], ["were"], ["been"], ["be"]],
             maxWordCount: 2,
@@ -551,9 +677,12 @@ const completeFutureToBePositiveStatementVerbForm = [
         id: "e96e090afc127e08246bc9436a704e6f",
         type: "completeFutureToBePositiveStatementVerbForm",
         data: {
-            leftSide: "They",
-            middle: "(to be)",
-            rightSide: "at the library.",
+            prompt: {
+                twoSided: true,
+                leftSide: "They",
+                middle: "(to be)",
+                rightSide: "at the library."
+            },
             correctForms: [["will", "be"]],
             incorrectForms: [["are"], ["were"], ["been"], ["be"]],
             maxWordCount: 2,
@@ -564,9 +693,12 @@ const completeFutureToBePositiveStatementVerbForm = [
         id: "0cfc099a83b9375203592d68a7655d1e",
         type: "completeFutureToBePositiveStatementVerbForm",
         data: {
-            leftSide: "The sun",
-            middle: "(to be)",
-            rightSide: "bright.",
+            prompt: {
+                twoSided: true,
+                leftSide: "The sun",
+                middle: "(to be)",
+                rightSide: "bright."
+            },
             correctForms: [["will", "be"]],
             incorrectForms: [["is"], ["was"], ["been"], ["be"]],
             maxWordCount: 2,
@@ -577,9 +709,12 @@ const completeFutureToBePositiveStatementVerbForm = [
         id: "0d7d979c14b5b95c1247cd45057027e6",
         type: "completeFutureToBePositiveStatementVerbForm",
         data: {
-            leftSide: "I",
-            middle: "(to be)",
-            rightSide: "asleep.",
+            prompt: {
+                twoSided: true,
+                leftSide: "I",
+                middle: "(to be)",
+                rightSide: "asleep."
+            },
             correctForms: [["will", "be"]],
             incorrectForms: [["am"], ["was"], ["were"], ["be"]],
             maxWordCount: 2,
@@ -590,9 +725,12 @@ const completeFutureToBePositiveStatementVerbForm = [
         id: "1f5ef41b2443186cc722e758f651bd35",
         type: "completeFutureToBePositiveStatementVerbForm",
         data: {
-            leftSide: "The shoes",
-            middle: "(to be)",
-            rightSide: "tight.",
+            prompt: {
+                twoSided: true,
+                leftSide: "The shoes",
+                middle: "(to be)",
+                rightSide: "tight."
+            },
             correctForms: [["will", "be"]],
             incorrectForms: [["are"], ["were"], ["been"], ["be"]],
             maxWordCount: 2,
@@ -603,9 +741,12 @@ const completeFutureToBePositiveStatementVerbForm = [
         id: "0ebcdf4a8537f7799dc262b0f9dcb517",
         type: "completeFutureToBePositiveStatementVerbForm",
         data: {
-            leftSide: "She",
-            middle: "(to be)",
-            rightSide: "twenty.",
+            prompt: {
+                twoSided: true,
+                leftSide: "She",
+                middle: "(to be)",
+                rightSide: "twenty."
+            },
             correctForms: [["will", "be"]],
             incorrectForms: [["is"], ["was"], ["been"], ["be"]],
             maxWordCount: 2,
@@ -616,9 +757,12 @@ const completeFutureToBePositiveStatementVerbForm = [
         id: "3f5fe18686768e2a0d16ff5f396bc788",
         type: "completeFutureToBePositiveStatementVerbForm",
         data: {
-            leftSide: "We",
-            middle: "(to be)",
-            rightSide: "early.",
+            prompt: {
+                twoSided: true,
+                leftSide: "We",
+                middle: "(to be)",
+                rightSide: "early."
+            },
             correctForms: [["will", "be"]],
             incorrectForms: [["are"], ["were"], ["been"], ["be"]],
             maxWordCount: 2,
@@ -629,9 +773,12 @@ const completeFutureToBePositiveStatementVerbForm = [
         id: "909659848661e078f443440d4edce837",
         type: "completeFutureToBePositiveStatementVerbForm",
         data: {
-            leftSide: "The door",
-            middle: "(to be)",
-            rightSide: "closed.",
+            prompt: {
+                twoSided: true,
+                leftSide: "The door",
+                middle: "(to be)",
+                rightSide: "closed."
+            },
             correctForms: [["will", "be"]],
             incorrectForms: [["is"], ["was"], ["been"], ["be"]],
             maxWordCount: 2,
@@ -642,9 +789,12 @@ const completeFutureToBePositiveStatementVerbForm = [
         id: "670c8d35199293a81e5c5c0a0ada5e42",
         type: "completeFutureToBePositiveStatementVerbForm",
         data: {
-            leftSide: "It",
-            middle: "(to be)",
-            rightSide: "perfect.",
+            prompt: {
+                twoSided: true,
+                leftSide: "It",
+                middle: "(to be)",
+                rightSide: "perfect."
+            },
             correctForms: [["will", "be"]],
             incorrectForms: [["is"], ["was"], ["been"], ["be"]],
             maxWordCount: 2,
@@ -655,9 +805,12 @@ const completeFutureToBePositiveStatementVerbForm = [
         id: "313f6a44c2d6c8da330127f1d872c70e",
         type: "completeFutureToBePositiveStatementVerbForm",
         data: {
-            leftSide: "They",
-            middle: "(to be)",
-            rightSide: "tired.",
+            prompt: {
+                twoSided: true,
+                leftSide: "They",
+                middle: "(to be)",
+                rightSide: "tired."
+            },
             correctForms: [["will", "be"]],
             incorrectForms: [["are"], ["were"], ["been"], ["be"]],
             maxWordCount: 2,
@@ -668,9 +821,12 @@ const completeFutureToBePositiveStatementVerbForm = [
         id: "1533e740503971271a51d9f0cfe1fccd",
         type: "completeFutureToBePositiveStatementVerbForm",
         data: {
-            leftSide: "You",
-            middle: "(to be)",
-            rightSide: "sick.",
+            prompt: {
+                twoSided: true,
+                leftSide: "You",
+                middle: "(to be)",
+                rightSide: "sick."
+            },
             correctForms: [["will", "be"]],
             incorrectForms: [["are"], ["were"], ["been"], ["be"]],
             maxWordCount: 2,
@@ -681,9 +837,12 @@ const completeFutureToBePositiveStatementVerbForm = [
         id: "d53d03cabac07f9542fb77c03544c5c9",
         type: "completeFutureToBePositiveStatementVerbForm",
         data: {
-            leftSide: "The flowers",
-            middle: "(to be)",
-            rightSide: "red.",
+            prompt: {
+                twoSided: true,
+                leftSide: "The flowers",
+                middle: "(to be)",
+                rightSide: "red."
+            },
             correctForms: [["will", "be"]],
             incorrectForms: [["are"], ["were"], ["been"], ["be"]],
             maxWordCount: 2,
@@ -694,9 +853,12 @@ const completeFutureToBePositiveStatementVerbForm = [
         id: "1182d9fb67de96a4153e3fe8279bdfd9",
         type: "completeFutureToBePositiveStatementVerbForm",
         data: {
-            leftSide: "I",
-            middle: "(to be)",
-            rightSide: "at home.",
+            prompt: {
+                twoSided: true,
+                leftSide: "I",
+                middle: "(to be)",
+                rightSide: "at home."
+            },
             correctForms: [["will", "be"]],
             incorrectForms: [["am"], ["was"], ["were"], ["be"]],
             maxWordCount: 2,
@@ -707,9 +869,12 @@ const completeFutureToBePositiveStatementVerbForm = [
         id: "9fb44fedb9f86d7075256b5f814766f6",
         type: "completeFutureToBePositiveStatementVerbForm",
         data: {
-            leftSide: "The car",
-            middle: "(to be)",
-            rightSide: "blue.",
+            prompt: {
+                twoSided: true,
+                leftSide: "The car",
+                middle: "(to be)",
+                rightSide: "blue."
+            },
             correctForms: [["will", "be"]],
             incorrectForms: [["is"], ["was"], ["been"], ["be"]],
             maxWordCount: 2,
@@ -720,9 +885,12 @@ const completeFutureToBePositiveStatementVerbForm = [
         id: "56e847f5ef96a2ba0e2ac82446e5dfd8",
         type: "completeFutureToBePositiveStatementVerbForm",
         data: {
-            leftSide: "She",
-            middle: "(to be)",
-            rightSide: "beautiful.",
+            prompt: {
+                twoSided: true,
+                leftSide: "She",
+                middle: "(to be)",
+                rightSide: "beautiful."
+            },
             correctForms: [["will", "be"]],
             incorrectForms: [["is"], ["was"], ["been"], ["be"]],
             maxWordCount: 2,
@@ -733,9 +901,12 @@ const completeFutureToBePositiveStatementVerbForm = [
         id: "a3eab35f4b7dbad0a932138ccecf2297",
         type: "completeFutureToBePositiveStatementVerbForm",
         data: {
-            leftSide: "The keys",
-            middle: "(to be)",
-            rightSide: "on the table.",
+            prompt: {
+                twoSided: true,
+                leftSide: "The keys",
+                middle: "(to be)",
+                rightSide: "on the table."
+            },
             correctForms: [["will", "be"]],
             incorrectForms: [["are"], ["were"], ["been"], ["be"]],
             maxWordCount: 2,
@@ -746,9 +917,12 @@ const completeFutureToBePositiveStatementVerbForm = [
         id: "05a0a96b60ae93e5b7e1a3b4fda88bfd",
         type: "completeFutureToBePositiveStatementVerbForm",
         data: {
-            leftSide: "We",
-            middle: "(to be)",
-            rightSide: "happy.",
+            prompt: {
+                twoSided: true,
+                leftSide: "We",
+                middle: "(to be)",
+                rightSide: "happy."
+            },
             correctForms: [["will", "be"]],
             incorrectForms: [["are"], ["were"], ["been"], ["be"]],
             maxWordCount: 2,
@@ -759,9 +933,12 @@ const completeFutureToBePositiveStatementVerbForm = [
         id: "cd1d41e0cb19843bee1a239c89305b03",
         type: "completeFutureToBePositiveStatementVerbForm",
         data: {
-            leftSide: "He",
-            middle: "(to be)",
-            rightSide: "sad.",
+            prompt: {
+                twoSided: true,
+                leftSide: "He",
+                middle: "(to be)",
+                rightSide: "sad."
+            },
             correctForms: [["will", "be"]],
             incorrectForms: [["is"], ["was"], ["been"], ["be"]],
             maxWordCount: 2,
@@ -772,9 +949,12 @@ const completeFutureToBePositiveStatementVerbForm = [
         id: "18ca1c32ebd6a2d573af1e3e603ac7c4",
         type: "completeFutureToBePositiveStatementVerbForm",
         data: {
-            leftSide: "The soup",
-            middle: "(to be)",
-            rightSide: "salty.",
+            prompt: {
+                twoSided: true,
+                leftSide: "The soup",
+                middle: "(to be)",
+                rightSide: "salty."
+            },
             correctForms: [["will", "be"]],
             incorrectForms: [["is"], ["was"], ["been"], ["be"]],
             maxWordCount: 2,
@@ -785,9 +965,12 @@ const completeFutureToBePositiveStatementVerbForm = [
         id: "b3870d011cc4c358f9b06dce8d44fe24",
         type: "completeFutureToBePositiveStatementVerbForm",
         data: {
-            leftSide: "They",
-            middle: "(to be)",
-            rightSide: "in the garden.",
+            prompt: {
+                twoSided: true,
+                leftSide: "They",
+                middle: "(to be)",
+                rightSide: "in the garden."
+            },
             correctForms: [["will", "be"]],
             incorrectForms: [["are"], ["were"], ["been"], ["be"]],
             maxWordCount: 2,
@@ -798,9 +981,12 @@ const completeFutureToBePositiveStatementVerbForm = [
         id: "b0a5f0dbf3c9d114a18bcf4f89de8d5b",
         type: "completeFutureToBePositiveStatementVerbForm",
         data: {
-            leftSide: "I",
-            middle: "(to be)",
-            rightSide: "cold.",
+            prompt: {
+                twoSided: true,
+                leftSide: "I",
+                middle: "(to be)",
+                rightSide: "cold."
+            },
             correctForms: [["will", "be"]],
             incorrectForms: [["am"], ["was"], ["been"], ["be"]],
             maxWordCount: 2,
@@ -811,9 +997,12 @@ const completeFutureToBePositiveStatementVerbForm = [
         id: "83aa2dcfa36f052af4df0da70b15d0e7",
         type: "completeFutureToBePositiveStatementVerbForm",
         data: {
-            leftSide: "The light",
-            middle: "(to be)",
-            rightSide: "green.",
+            prompt: {
+                twoSided: true,
+                leftSide: "The light",
+                middle: "(to be)",
+                rightSide: "green."
+            },
             correctForms: [["will", "be"]],
             incorrectForms: [["is"], ["was"], ["been"], ["be"]],
             maxWordCount: 2,
@@ -824,9 +1013,12 @@ const completeFutureToBePositiveStatementVerbForm = [
         id: "5e1fb8f0652612be0af803116e4ca830",
         type: "completeFutureToBePositiveStatementVerbForm",
         data: {
-            leftSide: "You",
-            middle: "(to be)",
-            rightSide: "fast.",
+            prompt: {
+                twoSided: true,
+                leftSide: "You",
+                middle: "(to be)",
+                rightSide: "fast."
+            },
             correctForms: [["will", "be"]],
             incorrectForms: [["are"], ["were"], ["been"], ["be"]],
             maxWordCount: 2,
@@ -837,9 +1029,12 @@ const completeFutureToBePositiveStatementVerbForm = [
         id: "a4fe213d4914e845d2ec4a5e5b1236d3",
         type: "completeFutureToBePositiveStatementVerbForm",
         data: {
-            leftSide: "She",
-            middle: "(to be)",
-            rightSide: "a teacher.",
+            prompt: {
+                twoSided: true,
+                leftSide: "She",
+                middle: "(to be)",
+                rightSide: "a teacher."
+            },
             correctForms: [["will", "be"]],
             incorrectForms: [["is"], ["was"], ["been"], ["be"]],
             maxWordCount: 2,
@@ -850,9 +1045,12 @@ const completeFutureToBePositiveStatementVerbForm = [
         id: "d6db8f625f60f6bed07f208299332bc1",
         type: "completeFutureToBePositiveStatementVerbForm",
         data: {
-            leftSide: "It",
-            middle: "(to be)",
-            rightSide: "difficult.",
+            prompt: {
+                twoSided: true,
+                leftSide: "It",
+                middle: "(to be)",
+                rightSide: "difficult."
+            },
             correctForms: [["will", "be"]],
             incorrectForms: [["is"], ["was"], ["been"], ["be"]],
             maxWordCount: 2,
@@ -863,9 +1061,12 @@ const completeFutureToBePositiveStatementVerbForm = [
         id: "3fb9c29828b68b76d3287979e38de3c8",
         type: "completeFutureToBePositiveStatementVerbForm",
         data: {
-            leftSide: "We",
-            middle: "(to be)",
-            rightSide: "ready.",
+            prompt: {
+                twoSided: true,
+                leftSide: "We",
+                middle: "(to be)",
+                rightSide: "ready."
+            },
             correctForms: [["will", "be"]],
             incorrectForms: [["are"], ["were"], ["been"], ["be"]],
             maxWordCount: 2,
@@ -876,9 +1077,12 @@ const completeFutureToBePositiveStatementVerbForm = [
         id: "b86d43c149e1225679952ba4464754e4",
         type: "completeFutureToBePositiveStatementVerbForm",
         data: {
-            leftSide: "The phone",
-            middle: "(to be)",
-            rightSide: "loud.",
+            prompt: {
+                twoSided: true,
+                leftSide: "The phone",
+                middle: "(to be)",
+                rightSide: "loud."
+            },
             correctForms: [["will", "be"]],
             incorrectForms: [["is"], ["was"], ["been"], ["be"]],
             maxWordCount: 2,
@@ -889,9 +1093,12 @@ const completeFutureToBePositiveStatementVerbForm = [
         id: "7c2dac9b154878fb3124092322aec892",
         type: "completeFutureToBePositiveStatementVerbForm",
         data: {
-            leftSide: "They",
-            middle: "(to be)",
-            rightSide: "nice.",
+            prompt: {
+                twoSided: true,
+                leftSide: "They",
+                middle: "(to be)",
+                rightSide: "nice."
+            },
             correctForms: [["will", "be"]],
             incorrectForms: [["are"], ["were"], ["been"], ["be"]],
             maxWordCount: 2,
@@ -902,9 +1109,12 @@ const completeFutureToBePositiveStatementVerbForm = [
         id: "9f974bac1f59df252740a9b0485f17f2",
         type: "completeFutureToBePositiveStatementVerbForm",
         data: {
-            leftSide: "I",
-            middle: "(to be)",
-            rightSide: "thirteen.",
+            prompt: {
+                twoSided: true,
+                leftSide: "I",
+                middle: "(to be)",
+                rightSide: "thirteen."
+            },
             correctForms: [["will", "be"]],
             incorrectForms: [["am"], ["was"], ["been"], ["be"]],
             maxWordCount: 2,
@@ -915,9 +1125,12 @@ const completeFutureToBePositiveStatementVerbForm = [
         id: "9efd855adf6f7c6c2d59a0cb03b5ae66",
         type: "completeFutureToBePositiveStatementVerbForm",
         data: {
-            leftSide: "The beach",
-            middle: "(to be)",
-            rightSide: "crowded.",
+            prompt: {
+                twoSided: true,
+                leftSide: "The beach",
+                middle: "(to be)",
+                rightSide: "crowded."
+            },
             correctForms: [["will", "be"]],
             incorrectForms: [["is"], ["was"], ["been"], ["be"]],
             maxWordCount: 2,
@@ -928,9 +1141,12 @@ const completeFutureToBePositiveStatementVerbForm = [
         id: "cbc271e75d1d2a19cc8eea27bd730c4c",
         type: "completeFutureToBePositiveStatementVerbForm",
         data: {
-            leftSide: "You",
-            middle: "(to be)",
-            rightSide: "polite.",
+            prompt: {
+                twoSided: true,
+                leftSide: "You",
+                middle: "(to be)",
+                rightSide: "polite."
+            },
             correctForms: [["will", "be"]],
             incorrectForms: [["are"], ["were"], ["been"], ["be"]],
             maxWordCount: 2,
@@ -941,9 +1157,12 @@ const completeFutureToBePositiveStatementVerbForm = [
         id: "1bf04de603b05560c047d7d01ef0d5d6",
         type: "completeFutureToBePositiveStatementVerbForm",
         data: {
-            leftSide: "She",
-            middle: "(to be)",
-            rightSide: "at the party.",
+            prompt: {
+                twoSided: true,
+                leftSide: "She",
+                middle: "(to be)",
+                rightSide: "at the party."
+            },
             correctForms: [["will", "be"]],
             incorrectForms: [["is"], ["was"], ["been"], ["be"]],
             maxWordCount: 2,
@@ -954,9 +1173,12 @@ const completeFutureToBePositiveStatementVerbForm = [
         id: "1b6ee92622e32034fce7863627a32f57",
         type: "completeFutureToBePositiveStatementVerbForm",
         data: {
-            leftSide: "We",
-            middle: "(to be)",
-            rightSide: "at the movies.",
+            prompt: {
+                twoSided: true,
+                leftSide: "We",
+                middle: "(to be)",
+                rightSide: "at the movies."
+            },
             correctForms: [["will", "be"]],
             incorrectForms: [["are"], ["were"], ["been"], ["be"]],
             maxWordCount: 2,
@@ -967,9 +1189,12 @@ const completeFutureToBePositiveStatementVerbForm = [
         id: "e68ede59ff46ec8a8567b9c0353515e0",
         type: "completeFutureToBePositiveStatementVerbForm",
         data: {
-            leftSide: "The dog",
-            middle: "(to be)",
-            rightSide: "brave.",
+            prompt: {
+                twoSided: true,
+                leftSide: "The dog",
+                middle: "(to be)",
+                rightSide: "brave."
+            },
             correctForms: [["will", "be"]],
             incorrectForms: [["is"], ["was"], ["been"], ["be"]],
             maxWordCount: 2,
@@ -980,9 +1205,12 @@ const completeFutureToBePositiveStatementVerbForm = [
         id: "307499b12f498ea152fe8bf72dd86cc1",
         type: "completeFutureToBePositiveStatementVerbForm",
         data: {
-            leftSide: "They",
-            middle: "(to be)",
-            rightSide: "at the office.",
+            prompt: {
+                twoSided: true,
+                leftSide: "They",
+                middle: "(to be)",
+                rightSide: "at the office."
+            },
             correctForms: [["will", "be"]],
             incorrectForms: [["are"], ["were"], ["been"], ["be"]],
             maxWordCount: 2,
@@ -993,9 +1221,12 @@ const completeFutureToBePositiveStatementVerbForm = [
         id: "1f4e7310507a84eb63266da6febca08e",
         type: "completeFutureToBePositiveStatementVerbForm",
         data: {
-            leftSide: "I",
-            middle: "(to be)",
-            rightSide: "nervous.",
+            prompt: {
+                twoSided: true,
+                leftSide: "I",
+                middle: "(to be)",
+                rightSide: "nervous."
+            },
             correctForms: [["will", "be"]],
             incorrectForms: [["am"], ["was"], ["been"], ["be"]],
             maxWordCount: 2,
@@ -1006,9 +1237,12 @@ const completeFutureToBePositiveStatementVerbForm = [
         id: "0935b43db6c8d2dd3c2e7e7e8d5f7605",
         type: "completeFutureToBePositiveStatementVerbForm",
         data: {
-            leftSide: "The mirror",
-            middle: "(to be)",
-            rightSide: "dirty.",
+            prompt: {
+                twoSided: true,
+                leftSide: "The mirror",
+                middle: "(to be)",
+                rightSide: "dirty."
+            },
             correctForms: [["will", "be"]],
             incorrectForms: [["is"], ["was"], ["been"], ["be"]],
             maxWordCount: 2,
@@ -1019,9 +1253,12 @@ const completeFutureToBePositiveStatementVerbForm = [
         id: "fed86603cec0732801a00cc9e27c05fd",
         type: "completeFutureToBePositiveStatementVerbForm",
         data: {
-            leftSide: "You",
-            middle: "(to be)",
-            rightSide: "smart.",
+            prompt: {
+                twoSided: true,
+                leftSide: "You",
+                middle: "(to be)",
+                rightSide: "smart."
+            },
             correctForms: [["will", "be"]],
             incorrectForms: [["are"], ["were"], ["been"], ["be"]],
             maxWordCount: 2,
@@ -1032,9 +1269,12 @@ const completeFutureToBePositiveStatementVerbForm = [
         id: "26b308dc943b3c443ab9a3e2afffa931",
         type: "completeFutureToBePositiveStatementVerbForm",
         data: {
-            leftSide: "The soup",
-            middle: "(to be)",
-            rightSide: "tasty.",
+            prompt: {
+                twoSided: true,
+                leftSide: "The soup",
+                middle: "(to be)",
+                rightSide: "tasty."
+            },
             correctForms: [["will", "be"]],
             incorrectForms: [["is"], ["was"], ["been"], ["be"]],
             maxWordCount: 2,
@@ -1045,9 +1285,12 @@ const completeFutureToBePositiveStatementVerbForm = [
         id: "bd6235bb6d5ae315c4218289dfa886c8",
         type: "completeFutureToBePositiveStatementVerbForm",
         data: {
-            leftSide: "We",
-            middle: "(to be)",
-            rightSide: "excited.",
+            prompt: {
+                twoSided: true,
+                leftSide: "We",
+                middle: "(to be)",
+                rightSide: "excited."
+            },
             correctForms: [["will", "be"]],
             incorrectForms: [["are"], ["were"], ["been"], ["be"]],
             maxWordCount: 2,
@@ -1058,9 +1301,12 @@ const completeFutureToBePositiveStatementVerbForm = [
         id: "27a5df4fd780750577a03aee07f5c12e",
         type: "completeFutureToBePositiveStatementVerbForm",
         data: {
-            leftSide: "She",
-            middle: "(to be)",
-            rightSide: "sleepy.",
+            prompt: {
+                twoSided: true,
+                leftSide: "She",
+                middle: "(to be)",
+                rightSide: "sleepy."
+            },
             correctForms: [["will", "be"]],
             incorrectForms: [["is"], ["was"], ["been"], ["be"]],
             maxWordCount: 2,
@@ -1071,9 +1317,12 @@ const completeFutureToBePositiveStatementVerbForm = [
         id: "779ae2e3b0ff89131b114939058010d6",
         type: "completeFutureToBePositiveStatementVerbForm",
         data: {
-            leftSide: "It",
-            middle: "(to be)",
-            rightSide: "a long day.",
+            prompt: {
+                twoSided: true,
+                leftSide: "It",
+                middle: "(to be)",
+                rightSide: "a long day."
+            },
             correctForms: [["will", "be"]],
             incorrectForms: [["is"], ["was"], ["been"], ["be"]],
             maxWordCount: 2,
@@ -1084,9 +1333,12 @@ const completeFutureToBePositiveStatementVerbForm = [
         id: "7477db73b8993c16263b4376b4f999a3",
         type: "completeFutureToBePositiveStatementVerbForm",
         data: {
-            leftSide: "They",
-            middle: "(to be)",
-            rightSide: "in the library.",
+            prompt: {
+                twoSided: true,
+                leftSide: "They",
+                middle: "(to be)",
+                rightSide: "in the library."
+            },
             correctForms: [["will", "be"]],
             incorrectForms: [["are"], ["were"], ["been"], ["be"]],
             maxWordCount: 2,
@@ -1097,9 +1349,12 @@ const completeFutureToBePositiveStatementVerbForm = [
         id: "be5e767d24d768c85979dcac1a6adb28",
         type: "completeFutureToBePositiveStatementVerbForm",
         data: {
-            leftSide: "You",
-            middle: "(to be)",
-            rightSide: "brave.",
+            prompt: {
+                twoSided: true,
+                leftSide: "You",
+                middle: "(to be)",
+                rightSide: "brave."
+            },
             correctForms: [["will", "be"]],
             incorrectForms: [["are"], ["were"], ["been"], ["be"]],
             maxWordCount: 2,
@@ -1110,9 +1365,12 @@ const completeFutureToBePositiveStatementVerbForm = [
         id: "f2d1f0f8dc6b34b9bdc324ba60b00fde",
         type: "completeFutureToBePositiveStatementVerbForm",
         data: {
-            leftSide: "The teacher",
-            middle: "(to be)",
-            rightSide: "angry.",
+            prompt: {
+                twoSided: true,
+                leftSide: "The teacher",
+                middle: "(to be)",
+                rightSide: "angry."
+            },
             correctForms: [["will", "be"]],
             incorrectForms: [["is"], ["was"], ["been"], ["be"]],
             maxWordCount: 2,
@@ -1123,9 +1381,12 @@ const completeFutureToBePositiveStatementVerbForm = [
         id: "e68c23f69c2ec7f826c1be2edef970a7",
         type: "completeFutureToBePositiveStatementVerbForm",
         data: {
-            leftSide: "I",
-            middle: "(to be)",
-            rightSide: "certain.",
+            prompt: {
+                twoSided: true,
+                leftSide: "I",
+                middle: "(to be)",
+                rightSide: "certain."
+            },
             correctForms: [["will", "be"]],
             incorrectForms: [["am"], ["was"], ["been"], ["be"]],
             maxWordCount: 2,
@@ -1136,9 +1397,12 @@ const completeFutureToBePositiveStatementVerbForm = [
         id: "8d53f326729c3fac5903051c1fb71d83",
         type: "completeFutureToBePositiveStatementVerbForm",
         data: {
-            leftSide: "The children",
-            middle: "(to be)",
-            rightSide: "at home.",
+            prompt: {
+                twoSided: true,
+                leftSide: "The children",
+                middle: "(to be)",
+                rightSide: "at home."
+            },
             correctForms: [["will", "be"]],
             incorrectForms: [["are"], ["were"], ["been"], ["be"]],
             maxWordCount: 2,
@@ -1149,9 +1413,12 @@ const completeFutureToBePositiveStatementVerbForm = [
         id: "7ead4d3fcddb173b575138a35a137f4c",
         type: "completeFutureToBePositiveStatementVerbForm",
         data: {
-            leftSide: "She",
-            middle: "(to be)",
-            rightSide: "a doctor.",
+            prompt: {
+                twoSided: true,
+                leftSide: "She",
+                middle: "(to be)",
+                rightSide: "a doctor."
+            },
             correctForms: [["will", "be"]],
             incorrectForms: [["is"], ["was"], ["been"], ["be"]],
             maxWordCount: 2,
@@ -1162,9 +1429,12 @@ const completeFutureToBePositiveStatementVerbForm = [
         id: "ecf2e33baf80a2eb4dceb54726725342",
         type: "completeFutureToBePositiveStatementVerbForm",
         data: {
-            leftSide: "The weather",
-            middle: "(to be)",
-            rightSide: "windy.",
+            prompt: {
+                twoSided: true,
+                leftSide: "The weather",
+                middle: "(to be)",
+                rightSide: "windy."
+            },
             correctForms: [["will", "be"]],
             incorrectForms: [["is"], ["was"], ["been"], ["be"]],
             maxWordCount: 2,
@@ -1175,9 +1445,12 @@ const completeFutureToBePositiveStatementVerbForm = [
         id: "6f0ff943bf040b0aeced7094de8af1be",
         type: "completeFutureToBePositiveStatementVerbForm",
         data: {
-            leftSide: "We",
-            middle: "(to be)",
-            rightSide: "at the airport.",
+            prompt: {
+                twoSided: true,
+                leftSide: "We",
+                middle: "(to be)",
+                rightSide: "at the airport."
+            },
             correctForms: [["will", "be"]],
             incorrectForms: [["are"], ["were"], ["been"], ["be"]],
             maxWordCount: 2,
@@ -1188,9 +1461,12 @@ const completeFutureToBePositiveStatementVerbForm = [
         id: "c2335b2b1fb55961c56a17599d4f69d7",
         type: "completeFutureToBePositiveStatementVerbForm",
         data: {
-            leftSide: "It",
-            middle: "(to be)",
-            rightSide: "a secret.",
+            prompt: {
+                twoSided: true,
+                leftSide: "It",
+                middle: "(to be)",
+                rightSide: "a secret."
+            },
             correctForms: [["will", "be"]],
             incorrectForms: [["is"], ["was"], ["been"], ["be"]],
             maxWordCount: 2,
@@ -1201,9 +1477,12 @@ const completeFutureToBePositiveStatementVerbForm = [
         id: "6fee8184e9fb86587ce82a604cb8947f",
         type: "completeFutureToBePositiveStatementVerbForm",
         data: {
-            leftSide: "You",
-            middle: "(to be)",
-            rightSide: "at the museum.",
+            prompt: {
+                twoSided: true,
+                leftSide: "You",
+                middle: "(to be)",
+                rightSide: "at the museum."
+            },
             correctForms: [["will", "be"]],
             incorrectForms: [["are"], ["were"], ["been"], ["be"]],
             maxWordCount: 2,
@@ -1214,9 +1493,12 @@ const completeFutureToBePositiveStatementVerbForm = [
         id: "c17d8cb504d3aebfbb35c1954fea9a99",
         type: "completeFutureToBePositiveStatementVerbForm",
         data: {
-            leftSide: "The mountains",
-            middle: "(to be)",
-            rightSide: "high.",
+            prompt: {
+                twoSided: true,
+                leftSide: "The mountains",
+                middle: "(to be)",
+                rightSide: "high."
+            },
             correctForms: [["will", "be"]],
             incorrectForms: [["are"], ["were"], ["been"], ["be"]],
             maxWordCount: 2,
@@ -1227,9 +1509,12 @@ const completeFutureToBePositiveStatementVerbForm = [
         id: "1d79fdf0f709b68d301338ca47d17f2b",
         type: "completeFutureToBePositiveStatementVerbForm",
         data: {
-            leftSide: "I",
-            middle: "(to be)",
-            rightSide: "there.",
+            prompt: {
+                twoSided: true,
+                leftSide: "I",
+                middle: "(to be)",
+                rightSide: "there."
+            },
             correctForms: [["will", "be"]],
             incorrectForms: [["am"], ["was"], ["been"], ["be"]],
             maxWordCount: 2,
@@ -1240,9 +1525,12 @@ const completeFutureToBePositiveStatementVerbForm = [
         id: "1078eaa5804f3b0fc539d70f55d67e59",
         type: "completeFutureToBePositiveStatementVerbForm",
         data: {
-            leftSide: "The story",
-            middle: "(to be)",
-            rightSide: "long.",
+            prompt: {
+                twoSided: true,
+                leftSide: "The story",
+                middle: "(to be)",
+                rightSide: "long."
+            },
             correctForms: [["will", "be"]],
             incorrectForms: [["is"], ["was"], ["been"], ["be"]],
             maxWordCount: 2,
@@ -1253,9 +1541,12 @@ const completeFutureToBePositiveStatementVerbForm = [
         id: "421b26bf935e7e3e930af61de4aa276d",
         type: "completeFutureToBePositiveStatementVerbForm",
         data: {
-            leftSide: "They",
-            middle: "(to be)",
-            rightSide: "ready.",
+            prompt: {
+                twoSided: true,
+                leftSide: "They",
+                middle: "(to be)",
+                rightSide: "ready."
+            },
             correctForms: [["will", "be"]],
             incorrectForms: [["are"], ["were"], ["been"], ["be"]],
             maxWordCount: 2,
@@ -1266,9 +1557,12 @@ const completeFutureToBePositiveStatementVerbForm = [
         id: "7cae2d0eee81b9730e2075f63b8e1f2c",
         type: "completeFutureToBePositiveStatementVerbForm",
         data: {
-            leftSide: "He",
-            middle: "(to be)",
-            rightSide: "a student.",
+            prompt: {
+                twoSided: true,
+                leftSide: "He",
+                middle: "(to be)",
+                rightSide: "a student."
+            },
             correctForms: [["will", "be"]],
             incorrectForms: [["is"], ["was"], ["been"], ["be"]],
             maxWordCount: 2,
@@ -1279,9 +1573,12 @@ const completeFutureToBePositiveStatementVerbForm = [
         id: "bdc89937470888cddbb1253c468557ca",
         type: "completeFutureToBePositiveStatementVerbForm",
         data: {
-            leftSide: "We",
-            middle: "(to be)",
-            rightSide: "at the stadium.",
+            prompt: {
+                twoSided: true,
+                leftSide: "We",
+                middle: "(to be)",
+                rightSide: "at the stadium."
+            },
             correctForms: [["will", "be"]],
             incorrectForms: [["are"], ["were"], ["been"], ["be"]],
             maxWordCount: 2,
@@ -1292,9 +1589,12 @@ const completeFutureToBePositiveStatementVerbForm = [
         id: "5713aaa7238ced338656bd855bae693b",
         type: "completeFutureToBePositiveStatementVerbForm",
         data: {
-            leftSide: "It",
-            middle: "(to be)",
-            rightSide: "very cold.",
+            prompt: {
+                twoSided: true,
+                leftSide: "It",
+                middle: "(to be)",
+                rightSide: "very cold."
+            },
             correctForms: [["will", "be"]],
             incorrectForms: [["is"], ["was"], ["been"], ["be"]],
             maxWordCount: 2,

@@ -5,9 +5,12 @@ const completePastPerfectNegativeStatementVerbForm = [
         id: "0cedc4bf64b87754c5cefe7071b67530",
         type: "completePastPerfectNegativeStatementVerbForm",
         data: {
-            leftSide: "They",
-            middle: "(visit)",
-            rightSide: "Europe before that summer.",
+            prompt: {
+                twoSided: true,
+                leftSide: "They",
+                middle: "(visit)",
+                rightSide: "Europe before that summer."
+            },
             minWordCount: 2,
             maxWordCount: 3,
             correctAuxiliars: [["had", "not"], ["hadn't"]],
@@ -19,9 +22,12 @@ const completePastPerfectNegativeStatementVerbForm = [
         id: "e7806aa88e85da453d7217f0ba844ed9",
         type: "completePastPerfectNegativeStatementVerbForm",
         data: {
-            leftSide: "She",
-            middle: "(finish)",
-            rightSide: "the report when the boss asked.",
+            prompt: {
+                twoSided: true,
+                leftSide: "She",
+                middle: "(finish)",
+                rightSide: "the report when the boss asked."
+            },
             minWordCount: 2,
             maxWordCount: 3,
             correctAuxiliars: [["had", "not"], ["hadn't"]],
@@ -33,9 +39,12 @@ const completePastPerfectNegativeStatementVerbForm = [
         id: "74d720dbcb2f7960caae4173334f4a39",
         type: "completePastPerfectNegativeStatementVerbForm",
         data: {
-            leftSide: "We",
-            middle: "(eat)",
-            rightSide: "anything before the meeting started.",
+            prompt: {
+                twoSided: true,
+                leftSide: "We",
+                middle: "(eat)",
+                rightSide: "anything before the meeting started."
+            },
             minWordCount: 2,
             maxWordCount: 3,
             correctAuxiliars: [["had", "not"], ["hadn't"]],
@@ -47,9 +56,12 @@ const completePastPerfectNegativeStatementVerbForm = [
         id: "28b9614302f784ff4c80bf78ea057a58",
         type: "completePastPerfectNegativeStatementVerbForm",
         data: {
-            leftSide: "I",
-            middle: "(see)",
-            rightSide: "that man until yesterday.",
+            prompt: {
+                twoSided: true,
+                leftSide: "I",
+                middle: "(see)",
+                rightSide: "that man until yesterday."
+            },
             minWordCount: 2,
             maxWordCount: 3,
             correctAuxiliars: [["had", "not"], ["hadn't"]],
@@ -61,9 +73,12 @@ const completePastPerfectNegativeStatementVerbForm = [
         id: "38fee1dd91abf80c1f112bf00f0b2dec",
         type: "completePastPerfectNegativeStatementVerbForm",
         data: {
-            leftSide: "The train",
-            middle: "(leave)",
-            rightSide: "the station when we arrived.",
+            prompt: {
+                twoSided: true,
+                leftSide: "The train",
+                middle: "(leave)",
+                rightSide: "the station when we arrived."
+            },
             minWordCount: 2,
             maxWordCount: 3,
             correctAuxiliars: [["had", "not"], ["hadn't"]],
@@ -75,9 +90,12 @@ const completePastPerfectNegativeStatementVerbForm = [
         id: "f95a431143d3d811c87e2c59c0b5ba93",
         type: "completePastPerfectNegativeStatementVerbForm",
         data: {
-            leftSide: "He",
-            middle: "(study)",
-            rightSide: "French before moving to Paris.",
+            prompt: {
+                twoSided: true,
+                leftSide: "He",
+                middle: "(study)",
+                rightSide: "French before moving to Paris."
+            },
             minWordCount: 2,
             maxWordCount: 3,
             correctAuxiliars: [["had", "not"], ["hadn't"]],
@@ -89,9 +107,12 @@ const completePastPerfectNegativeStatementVerbForm = [
         id: "d057854b945c8951d440a87f846d194c",
         type: "completePastPerfectNegativeStatementVerbForm",
         data: {
-            leftSide: "The children",
-            middle: "(sleep)",
-            rightSide: "when the storm began.",
+            prompt: {
+                twoSided: true,
+                leftSide: "The children",
+                middle: "(sleep)",
+                rightSide: "when the storm began."
+            },
             minWordCount: 2,
             maxWordCount: 3,
             correctAuxiliars: [["had", "not"], ["hadn't"]],
@@ -103,9 +124,12 @@ const completePastPerfectNegativeStatementVerbForm = [
         id: "d0c96a8e4c16887044554760bf65d593",
         type: "completePastPerfectNegativeStatementVerbForm",
         data: {
-            leftSide: "You",
-            middle: "(read)",
-            rightSide: "the book before the movie came out.",
+            prompt: {
+                twoSided: true,
+                leftSide: "You",
+                middle: "(read)",
+                rightSide: "the book before the movie came out."
+            },
             minWordCount: 2,
             maxWordCount: 3,
             correctAuxiliars: [["had", "not"], ["hadn't"]],
@@ -117,9 +141,12 @@ const completePastPerfectNegativeStatementVerbForm = [
         id: "81273a37e9f2cc238636cb4f2ba52a17",
         type: "completePastPerfectNegativeStatementVerbForm",
         data: {
-            leftSide: "The company",
-            middle: "(hire)",
-            rightSide: "any staff before October.",
+            prompt: {
+                twoSided: true,
+                leftSide: "The company",
+                middle: "(hire)",
+                rightSide: "any staff before October."
+            },
             minWordCount: 2,
             maxWordCount: 3,
             correctAuxiliars: [["had", "not"], ["hadn't"]],
@@ -131,9 +158,12 @@ const completePastPerfectNegativeStatementVerbForm = [
         id: "597f356ca06116f5d02a7fedcb24e70b",
         type: "completePastPerfectNegativeStatementVerbForm",
         data: {
-            leftSide: "The pilot",
-            middle: "(land)",
-            rightSide: "the plane before the radio failed.",
+            prompt: {
+                twoSided: true,
+                leftSide: "The pilot",
+                middle: "(land)",
+                rightSide: "the plane before the radio failed."
+            },
             minWordCount: 2,
             maxWordCount: 3,
             correctAuxiliars: [["had", "not"], ["hadn't"]],
@@ -145,9 +175,12 @@ const completePastPerfectNegativeStatementVerbForm = [
         id: "e63d45900a1570189d3bcc26a07c1c1f",
         type: "completePastPerfectNegativeStatementVerbForm",
         data: {
-            leftSide: "We",
-            middle: "(find)",
-            rightSide: "a solution until the expert arrived.",
+            prompt: {
+                twoSided: true,
+                leftSide: "We",
+                middle: "(find)",
+                rightSide: "a solution until the expert arrived."
+            },
             minWordCount: 2,
             maxWordCount: 3,
             correctAuxiliars: [["had", "not"], ["hadn't"]],
@@ -159,9 +192,12 @@ const completePastPerfectNegativeStatementVerbForm = [
         id: "1a8ecf322b8afdf0cbde2d28a4c477fc",
         type: "completePastPerfectNegativeStatementVerbForm",
         data: {
-            leftSide: "I",
-            middle: "(hear)",
-            rightSide: "the song before that night.",
+            prompt: {
+                twoSided: true,
+                leftSide: "I",
+                middle: "(hear)",
+                rightSide: "the song before that night."
+            },
             minWordCount: 2,
             maxWordCount: 3,
             correctAuxiliars: [["had", "not"], ["hadn't"]],
@@ -173,9 +209,12 @@ const completePastPerfectNegativeStatementVerbForm = [
         id: "55476e7557df350c154bb64f74c8f547",
         type: "completePastPerfectNegativeStatementVerbForm",
         data: {
-            leftSide: "They",
-            middle: "(fix)",
-            rightSide: "the car when they went on the trip.",
+            prompt: {
+                twoSided: true,
+                leftSide: "They",
+                middle: "(fix)",
+                rightSide: "the car when they went on the trip."
+            },
             minWordCount: 2,
             maxWordCount: 3,
             correctAuxiliars: [["had", "not"], ["hadn't"]],
@@ -187,9 +226,12 @@ const completePastPerfectNegativeStatementVerbForm = [
         id: "8b5da735bda4bd3699d696e6c3533764",
         type: "completePastPerfectNegativeStatementVerbForm",
         data: {
-            leftSide: "The sun",
-            middle: "(set)",
-            rightSide: "when the hike ended.",
+            prompt: {
+                twoSided: true,
+                leftSide: "The sun",
+                middle: "(set)",
+                rightSide: "when the hike ended."
+            },
             minWordCount: 2,
             maxWordCount: 3,
             correctAuxiliars: [["had", "not"], ["hadn't"]],
@@ -201,9 +243,12 @@ const completePastPerfectNegativeStatementVerbForm = [
         id: "61040df81f46170fb3c21532a823d8a4",
         type: "completePastPerfectNegativeStatementVerbForm",
         data: {
-            leftSide: "She",
-            middle: "(tell)",
-            rightSide: "me the truth until last week.",
+            prompt: {
+                twoSided: true,
+                leftSide: "She",
+                middle: "(tell)",
+                rightSide: "me the truth until last week."
+            },
             minWordCount: 2,
             maxWordCount: 3,
             correctAuxiliars: [["had", "not"], ["hadn't"]],
@@ -215,9 +260,12 @@ const completePastPerfectNegativeStatementVerbForm = [
         id: "64d88402bc23ccbbbf2814a825481952",
         type: "completePastPerfectNegativeStatementVerbForm",
         data: {
-            leftSide: "We",
-            middle: "(buy)",
-            rightSide: "the tickets when we got to the gate.",
+            prompt: {
+                twoSided: true,
+                leftSide: "We",
+                middle: "(buy)",
+                rightSide: "the tickets when we got to the gate."
+            },
             minWordCount: 2,
             maxWordCount: 3,
             correctAuxiliars: [["had", "not"], ["hadn't"]],
@@ -229,9 +277,12 @@ const completePastPerfectNegativeStatementVerbForm = [
         id: "1f9274f01295cfe2c017c156fc36e5ff",
         type: "completePastPerfectNegativeStatementVerbForm",
         data: {
-            leftSide: "I",
-            middle: "(write)",
-            rightSide: "the letter until you reminded me.",
+            prompt: {
+                twoSided: true,
+                leftSide: "I",
+                middle: "(write)",
+                rightSide: "the letter until you reminded me."
+            },
             minWordCount: 2,
             maxWordCount: 3,
             correctAuxiliars: [["had", "not"], ["hadn't"]],
@@ -243,9 +294,12 @@ const completePastPerfectNegativeStatementVerbForm = [
         id: "20bda6a716bc1f3eb3911c6755f61ef1",
         type: "completePastPerfectNegativeStatementVerbForm",
         data: {
-            leftSide: "He",
-            middle: "(win)",
-            rightSide: "any matches before that season.",
+            prompt: {
+                twoSided: true,
+                leftSide: "He",
+                middle: "(win)",
+                rightSide: "any matches before that season."
+            },
             minWordCount: 2,
             maxWordCount: 3,
             correctAuxiliars: [["had", "not"], ["hadn't"]],
@@ -257,9 +311,12 @@ const completePastPerfectNegativeStatementVerbForm = [
         id: "4d0917064f4a755ac92c649521c72d13",
         type: "completePastPerfectNegativeStatementVerbForm",
         data: {
-            leftSide: "The movie",
-            middle: "(start)",
-            rightSide: "when we sat down.",
+            prompt: {
+                twoSided: true,
+                leftSide: "The movie",
+                middle: "(start)",
+                rightSide: "when we sat down."
+            },
             minWordCount: 2,
             maxWordCount: 3,
             correctAuxiliars: [["had", "not"], ["hadn't"]],
@@ -271,9 +328,12 @@ const completePastPerfectNegativeStatementVerbForm = [
         id: "35620a1eb6686f2ab77fb6ee92a21d04",
         type: "completePastPerfectNegativeStatementVerbForm",
         data: {
-            leftSide: "She",
-            middle: "(meet)",
-            rightSide: "him before the party.",
+            prompt: {
+                twoSided: true,
+                leftSide: "She",
+                middle: "(meet)",
+                rightSide: "him before the party."
+            },
             minWordCount: 2,
             maxWordCount: 3,
             correctAuxiliars: [["had", "not"], ["hadn't"]],
@@ -285,9 +345,12 @@ const completePastPerfectNegativeStatementVerbForm = [
         id: "274885ea2650601bfc6dcedc287a1637",
         type: "completePastPerfectNegativeStatementVerbForm",
         data: {
-            leftSide: "The snow",
-            middle: "(melt)",
-            rightSide: "when the winter began.",
+            prompt: {
+                twoSided: true,
+                leftSide: "The snow",
+                middle: "(melt)",
+                rightSide: "when the winter began."
+            },
             minWordCount: 2,
             maxWordCount: 3,
             correctAuxiliars: [["had", "not"], ["hadn't"]],
@@ -299,9 +362,12 @@ const completePastPerfectNegativeStatementVerbForm = [
         id: "6cf9dbc07f118d9fc57443375cbffc7d",
         type: "completePastPerfectNegativeStatementVerbForm",
         data: {
-            leftSide: "They",
-            middle: "(reach)",
-            rightSide: "the top before noon.",
+            prompt: {
+                twoSided: true,
+                leftSide: "They",
+                middle: "(reach)",
+                rightSide: "the top before noon."
+            },
             minWordCount: 2,
             maxWordCount: 3,
             correctAuxiliars: [["had", "not"], ["hadn't"]],
@@ -313,9 +379,12 @@ const completePastPerfectNegativeStatementVerbForm = [
         id: "5d78cc2367a002f5895a16382866d481",
         type: "completePastPerfectNegativeStatementVerbForm",
         data: {
-            leftSide: "The teacher",
-            middle: "(grade)",
-            rightSide: "the exams until Monday.",
+            prompt: {
+                twoSided: true,
+                leftSide: "The teacher",
+                middle: "(grade)",
+                rightSide: "the exams until Monday."
+            },
             minWordCount: 2,
             maxWordCount: 3,
             correctAuxiliars: [["had", "not"], ["hadn't"]],
@@ -327,9 +396,12 @@ const completePastPerfectNegativeStatementVerbForm = [
         id: "0ea2e946847494624a310b75835d50ff",
         type: "completePastPerfectNegativeStatementVerbForm",
         data: {
-            leftSide: "I",
-            middle: "(bring)",
-            rightSide: "my umbrella because it wasn't raining.",
+            prompt: {
+                twoSided: true,
+                leftSide: "I",
+                middle: "(bring)",
+                rightSide: "my umbrella because it wasn't raining."
+            },
             minWordCount: 2,
             maxWordCount: 3,
             correctAuxiliars: [["had", "not"], ["hadn't"]],
@@ -341,9 +413,12 @@ const completePastPerfectNegativeStatementVerbForm = [
         id: "4463e23cf8cb92c036abf7ae034d490a",
         type: "completePastPerfectNegativeStatementVerbForm",
         data: {
-            leftSide: "The cat",
-            middle: "(eat)",
-            rightSide: "the food until the dog left.",
+            prompt: {
+                twoSided: true,
+                leftSide: "The cat",
+                middle: "(eat)",
+                rightSide: "the food until the dog left."
+            },
             minWordCount: 2,
             maxWordCount: 3,
             correctAuxiliars: [["had", "not"], ["hadn't"]],
@@ -355,9 +430,12 @@ const completePastPerfectNegativeStatementVerbForm = [
         id: "adaa371f36d1bf938c3535a3f8a0be35",
         type: "completePastPerfectNegativeStatementVerbForm",
         data: {
-            leftSide: "We",
-            middle: "(understand)",
-            rightSide: "the rules until he explained.",
+            prompt: {
+                twoSided: true,
+                leftSide: "We",
+                middle: "(understand)",
+                rightSide: "the rules until he explained."
+            },
             minWordCount: 2,
             maxWordCount: 3,
             correctAuxiliars: [["had", "not"], ["hadn't"]],
@@ -369,9 +447,12 @@ const completePastPerfectNegativeStatementVerbForm = [
         id: "cda93d24849ff74d3fe6facd8ca72dcf",
         type: "completePastPerfectNegativeStatementVerbForm",
         data: {
-            leftSide: "She",
-            middle: "(drive)",
-            rightSide: "a truck before this job.",
+            prompt: {
+                twoSided: true,
+                leftSide: "She",
+                middle: "(drive)",
+                rightSide: "a truck before this job."
+            },
             minWordCount: 2,
             maxWordCount: 3,
             correctAuxiliars: [["had", "not"], ["hadn't"]],
@@ -383,9 +464,12 @@ const completePastPerfectNegativeStatementVerbForm = [
         id: "30d77ba2910ed608568d3ca6d66f25fb",
         type: "completePastPerfectNegativeStatementVerbForm",
         data: {
-            leftSide: "The water",
-            middle: "(freeze)",
-            rightSide: "by the time we arrived.",
+            prompt: {
+                twoSided: true,
+                leftSide: "The water",
+                middle: "(freeze)",
+                rightSide: "by the time we arrived."
+            },
             minWordCount: 2,
             maxWordCount: 3,
             correctAuxiliars: [["had", "not"], ["hadn't"]],
@@ -397,9 +481,12 @@ const completePastPerfectNegativeStatementVerbForm = [
         id: "8c7d4284318c06c0b403082a29c27d3e",
         type: "completePastPerfectNegativeStatementVerbForm",
         data: {
-            leftSide: "He",
-            middle: "(choose)",
-            rightSide: "a major before the deadline.",
+            prompt: {
+                twoSided: true,
+                leftSide: "He",
+                middle: "(choose)",
+                rightSide: "a major before the deadline."
+            },
             minWordCount: 2,
             maxWordCount: 3,
             correctAuxiliars: [["had", "not"], ["hadn't"]],
@@ -411,9 +498,12 @@ const completePastPerfectNegativeStatementVerbForm = [
         id: "735b57909e2b9b504f584edd1077c6ac",
         type: "completePastPerfectNegativeStatementVerbForm",
         data: {
-            leftSide: "I",
-            middle: "(know)",
-            rightSide: "him for very long.",
+            prompt: {
+                twoSided: true,
+                leftSide: "I",
+                middle: "(know)",
+                rightSide: "him for very long."
+            },
             minWordCount: 2,
             maxWordCount: 3,
             correctAuxiliars: [["had", "not"], ["hadn't"]],
@@ -425,9 +515,12 @@ const completePastPerfectNegativeStatementVerbForm = [
         id: "2c71b9f7dce2a156dcc3dc020ad730d7",
         type: "completePastPerfectNegativeStatementVerbForm",
         data: {
-            leftSide: "They",
-            middle: "(receive)",
-            rightSide: "the package when I called.",
+            prompt: {
+                twoSided: true,
+                leftSide: "They",
+                middle: "(receive)",
+                rightSide: "the package when I called."
+            },
             minWordCount: 2,
             maxWordCount: 3,
             correctAuxiliars: [["had", "not"], ["hadn't"]],
@@ -439,9 +532,12 @@ const completePastPerfectNegativeStatementVerbForm = [
         id: "334416456181566cd98c2c06bb9aa49e",
         type: "completePastPerfectNegativeStatementVerbForm",
         data: {
-            leftSide: "The phone",
-            middle: "(ring)",
-            rightSide: "until he walked in.",
+            prompt: {
+                twoSided: true,
+                leftSide: "The phone",
+                middle: "(ring)",
+                rightSide: "until he walked in."
+            },
             minWordCount: 2,
             maxWordCount: 3,
             correctAuxiliars: [["had", "not"], ["hadn't"]],
@@ -453,9 +549,12 @@ const completePastPerfectNegativeStatementVerbForm = [
         id: "982b2226e296e7fa2ec119c5e9074474",
         type: "completePastPerfectNegativeStatementVerbForm",
         data: {
-            leftSide: "We",
-            middle: "(spend)",
-            rightSide: "the money before the sale.",
+            prompt: {
+                twoSided: true,
+                leftSide: "We",
+                middle: "(spend)",
+                rightSide: "the money before the sale."
+            },
             minWordCount: 2,
             maxWordCount: 3,
             correctAuxiliars: [["had", "not"], ["hadn't"]],
@@ -467,9 +566,12 @@ const completePastPerfectNegativeStatementVerbForm = [
         id: "519ed362b52aa8e78cad1e50ccbe6f76",
         type: "completePastPerfectNegativeStatementVerbForm",
         data: {
-            leftSide: "She",
-            middle: "(lose)",
-            rightSide: "hope before the rescue.",
+            prompt: {
+                twoSided: true,
+                leftSide: "She",
+                middle: "(lose)",
+                rightSide: "hope before the rescue."
+            },
             minWordCount: 2,
             maxWordCount: 3,
             correctAuxiliars: [["had", "not"], ["hadn't"]],
@@ -481,9 +583,12 @@ const completePastPerfectNegativeStatementVerbForm = [
         id: "4d05382cad5790a1b47f4b33e618538a",
         type: "completePastPerfectNegativeStatementVerbForm",
         data: {
-            leftSide: "The building",
-            middle: "(fall)",
-            rightSide: "when the fire started.",
+            prompt: {
+                twoSided: true,
+                leftSide: "The building",
+                middle: "(fall)",
+                rightSide: "when the fire started."
+            },
             minWordCount: 2,
             maxWordCount: 3,
             correctAuxiliars: [["had", "not"], ["hadn't"]],
@@ -495,9 +600,12 @@ const completePastPerfectNegativeStatementVerbForm = [
         id: "39e392b24ae683a928ce32de849095b1",
         type: "completePastPerfectNegativeStatementVerbForm",
         data: {
-            leftSide: "I",
-            middle: "(forget)",
-            rightSide: "my keys at home.",
+            prompt: {
+                twoSided: true,
+                leftSide: "I",
+                middle: "(forget)",
+                rightSide: "my keys at home."
+            },
             minWordCount: 2,
             maxWordCount: 3,
             correctAuxiliars: [["had", "not"], ["hadn't"]],
@@ -509,9 +617,12 @@ const completePastPerfectNegativeStatementVerbForm = [
         id: "5f628934c9273496837d82aedec7abc1",
         type: "completePastPerfectNegativeStatementVerbForm",
         data: {
-            leftSide: "He",
-            middle: "(pay)",
-            rightSide: "the bill until the waiter came.",
+            prompt: {
+                twoSided: true,
+                leftSide: "He",
+                middle: "(pay)",
+                rightSide: "the bill until the waiter came."
+            },
             minWordCount: 2,
             maxWordCount: 3,
             correctAuxiliars: [["had", "not"], ["hadn't"]],
@@ -523,9 +634,12 @@ const completePastPerfectNegativeStatementVerbForm = [
         id: "25adbadace84afaafed226b3e76e7139",
         type: "completePastPerfectNegativeStatementVerbForm",
         data: {
-            leftSide: "They",
-            middle: "(begin)",
-            rightSide: "the concert when we sat.",
+            prompt: {
+                twoSided: true,
+                leftSide: "They",
+                middle: "(begin)",
+                rightSide: "the concert when we sat."
+            },
             minWordCount: 2,
             maxWordCount: 3,
             correctAuxiliars: [["had", "not"], ["hadn't"]],
@@ -537,9 +651,12 @@ const completePastPerfectNegativeStatementVerbForm = [
         id: "966e3c88ac48cfe1e11fa4b076c81514",
         type: "completePastPerfectNegativeStatementVerbForm",
         data: {
-            leftSide: "The artist",
-            middle: "(paint)",
-            rightSide: "the portrait before the show.",
+            prompt: {
+                twoSided: true,
+                leftSide: "The artist",
+                middle: "(paint)",
+                rightSide: "the portrait before the show."
+            },
             minWordCount: 2,
             maxWordCount: 3,
             correctAuxiliars: [["had", "not"], ["hadn't"]],
@@ -551,9 +668,12 @@ const completePastPerfectNegativeStatementVerbForm = [
         id: "12fb3ab50e23b64a4bcce26c3ea1c56b",
         type: "completePastPerfectNegativeStatementVerbForm",
         data: {
-            leftSide: "We",
-            middle: "(send)",
-            rightSide: "the email before the deadline.",
+            prompt: {
+                twoSided: true,
+                leftSide: "We",
+                middle: "(send)",
+                rightSide: "the email before the deadline."
+            },
             minWordCount: 2,
             maxWordCount: 3,
             correctAuxiliars: [["had", "not"], ["hadn't"]],
@@ -565,9 +685,12 @@ const completePastPerfectNegativeStatementVerbForm = [
         id: "7ff0c348a386df1784e8540dd4c3ca88",
         type: "completePastPerfectNegativeStatementVerbForm",
         data: {
-            leftSide: "I",
-            middle: "(break)",
-            rightSide: "any rules before today.",
+            prompt: {
+                twoSided: true,
+                leftSide: "I",
+                middle: "(break)",
+                rightSide: "any rules before today."
+            },
             minWordCount: 2,
             maxWordCount: 3,
             correctAuxiliars: [["had", "not"], ["hadn't"]],
@@ -579,9 +702,12 @@ const completePastPerfectNegativeStatementVerbForm = [
         id: "9cfe7651bf4f1de06368be64cb1509c2",
         type: "completePastPerfectNegativeStatementVerbForm",
         data: {
-            leftSide: "She",
-            middle: "(speak)",
-            rightSide: "to him before the incident.",
+            prompt: {
+                twoSided: true,
+                leftSide: "She",
+                middle: "(speak)",
+                rightSide: "to him before the incident."
+            },
             minWordCount: 2,
             maxWordCount: 3,
             correctAuxiliars: [["had", "not"], ["hadn't"]],
@@ -593,9 +719,12 @@ const completePastPerfectNegativeStatementVerbForm = [
         id: "8d507bded5d6b774f2b102589bfbbb74",
         type: "completePastPerfectNegativeStatementVerbForm",
         data: {
-            leftSide: "The flowers",
-            middle: "(die)",
-            rightSide: "when the gardener arrived.",
+            prompt: {
+                twoSided: true,
+                leftSide: "The flowers",
+                middle: "(die)",
+                rightSide: "when the gardener arrived."
+            },
             minWordCount: 2,
             maxWordCount: 3,
             correctAuxiliars: [["had", "not"], ["hadn't"]],
@@ -607,9 +736,12 @@ const completePastPerfectNegativeStatementVerbForm = [
         id: "f6d3e0bac2c7d237ddc0edf7d526b256",
         type: "completePastPerfectNegativeStatementVerbForm",
         data: {
-            leftSide: "They",
-            middle: "(sell)",
-            rightSide: "the house before moving.",
+            prompt: {
+                twoSided: true,
+                leftSide: "They",
+                middle: "(sell)",
+                rightSide: "the house before moving."
+            },
             minWordCount: 2,
             maxWordCount: 3,
             correctAuxiliars: [["had", "not"], ["hadn't"]],
@@ -621,9 +753,12 @@ const completePastPerfectNegativeStatementVerbForm = [
         id: "dc974996968fecd415afd8b41ae2fb80",
         type: "completePastPerfectNegativeStatementVerbForm",
         data: {
-            leftSide: "He",
-            middle: "(wear)",
-            rightSide: "that suit before the gala.",
+            prompt: {
+                twoSided: true,
+                leftSide: "He",
+                middle: "(wear)",
+                rightSide: "that suit before the gala."
+            },
             minWordCount: 2,
             maxWordCount: 3,
             correctAuxiliars: [["had", "not"], ["hadn't"]],
@@ -635,9 +770,12 @@ const completePastPerfectNegativeStatementVerbForm = [
         id: "de2e86003a57bcd4ca904b120d18c813",
         type: "completePastPerfectNegativeStatementVerbForm",
         data: {
-            leftSide: "We",
-            middle: "(clean)",
-            rightSide: " the house before the guests.",
+            prompt: {
+                twoSided: true,
+                leftSide: "We",
+                middle: "(clean)",
+                rightSide: " the house before the guests."
+            },
             minWordCount: 2,
             maxWordCount: 3,
             correctAuxiliars: [["had", "not"], ["hadn't"]],
@@ -649,9 +787,12 @@ const completePastPerfectNegativeStatementVerbForm = [
         id: "ef4157a8d08b6118c37ce7fb489d9711",
         type: "completePastPerfectNegativeStatementVerbForm",
         data: {
-            leftSide: "I",
-            middle: "(draw)",
-            rightSide: "the map before getting lost.",
+            prompt: {
+                twoSided: true,
+                leftSide: "I",
+                middle: "(draw)",
+                rightSide: "the map before getting lost."
+            },
             minWordCount: 2,
             maxWordCount: 3,
             correctAuxiliars: [["had", "not"], ["hadn't"]],
@@ -663,9 +804,12 @@ const completePastPerfectNegativeStatementVerbForm = [
         id: "1e7ea607b5591df432793f9472d6d5b3",
         type: "completePastPerfectNegativeStatementVerbForm",
         data: {
-            leftSide: "She",
-            middle: "(think)",
-            rightSide: "about the problem until now.",
+            prompt: {
+                twoSided: true,
+                leftSide: "She",
+                middle: "(think)",
+                rightSide: "about the problem until now."
+            },
             minWordCount: 2,
             maxWordCount: 3,
             correctAuxiliars: [["had", "not"], ["hadn't"]],
@@ -677,9 +821,12 @@ const completePastPerfectNegativeStatementVerbForm = [
         id: "3c034dfc007780acbe233e2999808269",
         type: "completePastPerfectNegativeStatementVerbForm",
         data: {
-            leftSide: "The glass",
-            middle: "(break)",
-            rightSide: "before I touched it.",
+            prompt: {
+                twoSided: true,
+                leftSide: "The glass",
+                middle: "(break)",
+                rightSide: "before I touched it."
+            },
             minWordCount: 2,
             maxWordCount: 3,
             correctAuxiliars: [["had", "not"], ["hadn't"]],
@@ -691,9 +838,12 @@ const completePastPerfectNegativeStatementVerbForm = [
         id: "acd312dab1cebfaebacc1e89213274ef",
         type: "completePastPerfectNegativeStatementVerbForm",
         data: {
-            leftSide: "They",
-            middle: "(build)",
-            rightSide: "the fence when I checked.",
+            prompt: {
+                twoSided: true,
+                leftSide: "They",
+                middle: "(build)",
+                rightSide: "the fence when I checked."
+            },
             minWordCount: 2,
             maxWordCount: 3,
             correctAuxiliars: [["had", "not"], ["hadn't"]],
@@ -705,9 +855,12 @@ const completePastPerfectNegativeStatementVerbForm = [
         id: "10e7c9de68bcd8bd880480abfd2702e8",
         type: "completePastPerfectNegativeStatementVerbForm",
         data: {
-            leftSide: "He",
-            middle: "(hide)",
-            rightSide: "the key in the garden.",
+            prompt: {
+                twoSided: true,
+                leftSide: "He",
+                middle: "(hide)",
+                rightSide: "the key in the garden."
+            },
             minWordCount: 2,
             maxWordCount: 3,
             correctAuxiliars: [["had", "not"], ["hadn't"]],
@@ -719,9 +872,12 @@ const completePastPerfectNegativeStatementVerbForm = [
         id: "2fc0c79e7907e8273338aa3870cc0300",
         type: "completePastPerfectNegativeStatementVerbForm",
         data: {
-            leftSide: "We",
-            middle: "(invite)",
-            rightSide: "her before the change.",
+            prompt: {
+                twoSided: true,
+                leftSide: "We",
+                middle: "(invite)",
+                rightSide: "her before the change."
+            },
             minWordCount: 2,
             maxWordCount: 3,
             correctAuxiliars: [["had", "not"], ["hadn't"]],
@@ -733,9 +889,12 @@ const completePastPerfectNegativeStatementVerbForm = [
         id: "06f18ba4136dabad886eb559f05a09be",
         type: "completePastPerfectNegativeStatementVerbForm",
         data: {
-            leftSide: "I",
-            middle: "(swim)",
-            rightSide: "in the ocean before today.",
+            prompt: {
+                twoSided: true,
+                leftSide: "I",
+                middle: "(swim)",
+                rightSide: "in the ocean before today."
+            },
             minWordCount: 2,
             maxWordCount: 3,
             correctAuxiliars: [["had", "not"], ["hadn't"]],
@@ -747,9 +906,12 @@ const completePastPerfectNegativeStatementVerbForm = [
         id: "f609ca6e74fd2420ea0f647edd65bc89",
         type: "completePastPerfectNegativeStatementVerbForm",
         data: {
-            leftSide: "They",
-            middle: "(take)",
-            rightSide: "the test when I saw them.",
+            prompt: {
+                twoSided: true,
+                leftSide: "They",
+                middle: "(take)",
+                rightSide: "the test when I saw them."
+            },
             minWordCount: 2,
             maxWordCount: 3,
             correctAuxiliars: [["had", "not"], ["hadn't"]],
@@ -761,9 +923,12 @@ const completePastPerfectNegativeStatementVerbForm = [
         id: "02bf4252880b9fc1ba22ec72186fcc6d",
         type: "completePastPerfectNegativeStatementVerbForm",
         data: {
-            leftSide: "She",
-            middle: "(sing)",
-            rightSide: "in public before the show.",
+            prompt: {
+                twoSided: true,
+                leftSide: "She",
+                middle: "(sing)",
+                rightSide: "in public before the show."
+            },
             minWordCount: 2,
             maxWordCount: 3,
             correctAuxiliars: [["had", "not"], ["hadn't"]],
@@ -775,9 +940,12 @@ const completePastPerfectNegativeStatementVerbForm = [
         id: "8489ac06e9e59476b1d6cfa50c161170",
         type: "completePastPerfectNegativeStatementVerbForm",
         data: {
-            leftSide: "The driver",
-            middle: "(stop)",
-            rightSide: "before the red light.",
+            prompt: {
+                twoSided: true,
+                leftSide: "The driver",
+                middle: "(stop)",
+                rightSide: "before the red light."
+            },
             minWordCount: 2,
             maxWordCount: 3,
             correctAuxiliars: [["had", "not"], ["hadn't"]],
@@ -789,9 +957,12 @@ const completePastPerfectNegativeStatementVerbForm = [
         id: "b79e924a07b40fbcf7ecbd9df730e026",
         type: "completePastPerfectNegativeStatementVerbForm",
         data: {
-            leftSide: "We",
-            middle: "(see)",
-            rightSide: "the doctor until noon.",
+            prompt: {
+                twoSided: true,
+                leftSide: "We",
+                middle: "(see)",
+                rightSide: "the doctor until noon."
+            },
             minWordCount: 2,
             maxWordCount: 3,
             correctAuxiliars: [["had", "not"], ["hadn't"]],
@@ -803,9 +974,12 @@ const completePastPerfectNegativeStatementVerbForm = [
         id: "217f0619eb6866b7bcdddf5243133940",
         type: "completePastPerfectNegativeStatementVerbForm",
         data: {
-            leftSide: "He",
-            middle: "(grow)",
-            rightSide: "much before the summer.",
+            prompt: {
+                twoSided: true,
+                leftSide: "He",
+                middle: "(grow)",
+                rightSide: "much before the summer."
+            },
             minWordCount: 2,
             maxWordCount: 3,
             correctAuxiliars: [["had", "not"], ["hadn't"]],
@@ -817,9 +991,12 @@ const completePastPerfectNegativeStatementVerbForm = [
         id: "31bdedabe9c6a26549f3aee88983201f",
         type: "completePastPerfectNegativeStatementVerbForm",
         data: {
-            leftSide: "I",
-            middle: "(make)",
-            rightSide: "a mistake until then.",
+            prompt: {
+                twoSided: true,
+                leftSide: "I",
+                middle: "(make)",
+                rightSide: "a mistake until then."
+            },
             minWordCount: 2,
             maxWordCount: 3,
             correctAuxiliars: [["had", "not"], ["hadn't"]],
@@ -831,9 +1008,12 @@ const completePastPerfectNegativeStatementVerbForm = [
         id: "a87fc91613b5c57fdff94bca2813fc37",
         type: "completePastPerfectNegativeStatementVerbForm",
         data: {
-            leftSide: "They",
-            middle: "(catch)",
-            rightSide: "any fish when we left.",
+            prompt: {
+                twoSided: true,
+                leftSide: "They",
+                middle: "(catch)",
+                rightSide: "any fish when we left."
+            },
             minWordCount: 2,
             maxWordCount: 3,
             correctAuxiliars: [["had", "not"], ["hadn't"]],
@@ -845,9 +1025,12 @@ const completePastPerfectNegativeStatementVerbForm = [
         id: "99ab1c83e387f752e9d6149052fc83fa",
         type: "completePastPerfectNegativeStatementVerbForm",
         data: {
-            leftSide: "She",
-            middle: "(drink)",
-            rightSide: "her coffee yet.",
+            prompt: {
+                twoSided: true,
+                leftSide: "She",
+                middle: "(drink)",
+                rightSide: "her coffee yet."
+            },
             minWordCount: 2,
             maxWordCount: 3,
             correctAuxiliars: [["had", "not"], ["hadn't"]],
@@ -859,9 +1042,12 @@ const completePastPerfectNegativeStatementVerbForm = [
         id: "b6d27bf6ab2b1b12d14446e3c1fc8a6b",
         type: "completePastPerfectNegativeStatementVerbForm",
         data: {
-            leftSide: "The baby",
-            middle: "(cry)",
-            rightSide: "until the mother came.",
+            prompt: {
+                twoSided: true,
+                leftSide: "The baby",
+                middle: "(cry)",
+                rightSide: "until the mother came."
+            },
             minWordCount: 2,
             maxWordCount: 3,
             correctAuxiliars: [["had", "not"], ["hadn't"]],
@@ -873,9 +1059,12 @@ const completePastPerfectNegativeStatementVerbForm = [
         id: "e4e3146fd4300fd74f5fb752e6010202",
         type: "completePastPerfectNegativeStatementVerbForm",
         data: {
-            leftSide: "We",
-            middle: "(throw)",
-            rightSide: "the trash away.",
+            prompt: {
+                twoSided: true,
+                leftSide: "We",
+                middle: "(throw)",
+                rightSide: "the trash away."
+            },
             minWordCount: 2,
             maxWordCount: 3,
             correctAuxiliars: [["had", "not"], ["hadn't"]],
@@ -887,9 +1076,12 @@ const completePastPerfectNegativeStatementVerbForm = [
         id: "f2c492cedbd563f7b198f4d64205d789",
         type: "completePastPerfectNegativeStatementVerbForm",
         data: {
-            leftSide: "He",
-            middle: "(run)",
-            rightSide: "a marathon before that day.",
+            prompt: {
+                twoSided: true,
+                leftSide: "He",
+                middle: "(run)",
+                rightSide: "a marathon before that day."
+            },
             minWordCount: 2,
             maxWordCount: 3,
             correctAuxiliars: [["had", "not"], ["hadn't"]],
@@ -901,9 +1093,12 @@ const completePastPerfectNegativeStatementVerbForm = [
         id: "1a9d4ac652da8be7dd0c77f85a6bbac8",
         type: "completePastPerfectNegativeStatementVerbForm",
         data: {
-            leftSide: "I",
-            middle: "(pay)",
-            rightSide: "the rent when he asked.",
+            prompt: {
+                twoSided: true,
+                leftSide: "I",
+                middle: "(pay)",
+                rightSide: "the rent when he asked."
+            },
             minWordCount: 2,
             maxWordCount: 3,
             correctAuxiliars: [["had", "not"], ["hadn't"]],
@@ -915,9 +1110,12 @@ const completePastPerfectNegativeStatementVerbForm = [
         id: "5e5064402834eb05e3974b3f6c183d92",
         type: "completePastPerfectNegativeStatementVerbForm",
         data: {
-            leftSide: "The wind",
-            middle: "(blow)",
-            rightSide: "so hard before the storm.",
+            prompt: {
+                twoSided: true,
+                leftSide: "The wind",
+                middle: "(blow)",
+                rightSide: "so hard before the storm."
+            },
             minWordCount: 2,
             maxWordCount: 3,
             correctAuxiliars: [["had", "not"], ["hadn't"]],
@@ -929,9 +1127,12 @@ const completePastPerfectNegativeStatementVerbForm = [
         id: "a7ec086e0f4d1735f80ea309d39c3d9b",
         type: "completePastPerfectNegativeStatementVerbForm",
         data: {
-            leftSide: "She",
-            middle: "(teach)",
-            rightSide: "English before moving here.",
+            prompt: {
+                twoSided: true,
+                leftSide: "She",
+                middle: "(teach)",
+                rightSide: "English before moving here."
+            },
             minWordCount: 2,
             maxWordCount: 3,
             correctAuxiliars: [["had", "not"], ["hadn't"]],
@@ -943,9 +1144,12 @@ const completePastPerfectNegativeStatementVerbForm = [
         id: "1ea14601b01e0762a7fcb931cb1c1494",
         type: "completePastPerfectNegativeStatementVerbForm",
         data: {
-            leftSide: "We",
-            middle: "(buy)",
-            rightSide: "a house until last year.",
+            prompt: {
+                twoSided: true,
+                leftSide: "We",
+                middle: "(buy)",
+                rightSide: "a house until last year."
+            },
             minWordCount: 2,
             maxWordCount: 3,
             correctAuxiliars: [["had", "not"], ["hadn't"]],
@@ -957,9 +1161,12 @@ const completePastPerfectNegativeStatementVerbForm = [
         id: "3dccc2695fb3c94b69fdc8806e6a9245",
         type: "completePastPerfectNegativeStatementVerbForm",
         data: {
-            leftSide: "They",
-            middle: "(keep)",
-            rightSide: "the secret for very long.",
+            prompt: {
+                twoSided: true,
+                leftSide: "They",
+                middle: "(keep)",
+                rightSide: "the secret for very long."
+            },
             minWordCount: 2,
             maxWordCount: 3,
             correctAuxiliars: [["had", "not"], ["hadn't"]],
@@ -971,9 +1178,12 @@ const completePastPerfectNegativeStatementVerbForm = [
         id: "acf392015931d711048198e787eb8ae0",
         type: "completePastPerfectNegativeStatementVerbForm",
         data: {
-            leftSide: "I",
-            middle: "(sleep)",
-            rightSide: "much before the exam.",
+            prompt: {
+                twoSided: true,
+                leftSide: "I",
+                middle: "(sleep)",
+                rightSide: "much before the exam."
+            },
             minWordCount: 2,
             maxWordCount: 3,
             correctAuxiliars: [["had", "not"], ["hadn't"]],
@@ -985,9 +1195,12 @@ const completePastPerfectNegativeStatementVerbForm = [
         id: "ad10199bbee82c9c76911c122cf3db1c",
         type: "completePastPerfectNegativeStatementVerbForm",
         data: {
-            leftSide: "He",
-            middle: "(read)",
-            rightSide: "the newspaper that morning.",
+            prompt: {
+                twoSided: true,
+                leftSide: "He",
+                middle: "(read)",
+                rightSide: "the newspaper that morning."
+            },
             minWordCount: 2,
             maxWordCount: 3,
             correctAuxiliars: [["had", "not"], ["hadn't"]],
@@ -999,9 +1212,12 @@ const completePastPerfectNegativeStatementVerbForm = [
         id: "4cf3f06839d5ab7d89820fe1d922cbf2",
         type: "completePastPerfectNegativeStatementVerbForm",
         data: {
-            leftSide: "The snow",
-            middle: "(fall)",
-            rightSide: "until late at night.",
+            prompt: {
+                twoSided: true,
+                leftSide: "The snow",
+                middle: "(fall)",
+                rightSide: "until late at night."
+            },
             minWordCount: 2,
             maxWordCount: 3,
             correctAuxiliars: [["had", "not"], ["hadn't"]],
@@ -1013,9 +1229,12 @@ const completePastPerfectNegativeStatementVerbForm = [
         id: "a67683ca5885a612a834c6c866bb2125",
         type: "completePastPerfectNegativeStatementVerbForm",
         data: {
-            leftSide: "She",
-            middle: "(sink)",
-            rightSide: "into the chair before speaking.",
+            prompt: {
+                twoSided: true,
+                leftSide: "She",
+                middle: "(sink)",
+                rightSide: "into the chair before speaking."
+            },
             minWordCount: 2,
             maxWordCount: 3,
             correctAuxiliars: [["had", "not"], ["hadn't"]],
@@ -1027,9 +1246,12 @@ const completePastPerfectNegativeStatementVerbForm = [
         id: "a95d47d4f70f1fede82b4cb3a244dbc4",
         type: "completePastPerfectNegativeStatementVerbForm",
         data: {
-            leftSide: "We",
-            middle: "(fight)",
-            rightSide: "before the incident occurred.",
+            prompt: {
+                twoSided: true,
+                leftSide: "We",
+                middle: "(fight)",
+                rightSide: "before the incident occurred."
+            },
             minWordCount: 2,
             maxWordCount: 3,
             correctAuxiliars: [["had", "not"], ["hadn't"]],
@@ -1041,9 +1263,12 @@ const completePastPerfectNegativeStatementVerbForm = [
         id: "dc5acd34008c601d5a54683c1f2ce3b1",
         type: "completePastPerfectNegativeStatementVerbForm",
         data: {
-            leftSide: "I",
-            middle: "(choose)",
-            rightSide: "my outfit for the day.",
+            prompt: {
+                twoSided: true,
+                leftSide: "I",
+                middle: "(choose)",
+                rightSide: "my outfit for the day."
+            },
             minWordCount: 2,
             maxWordCount: 3,
             correctAuxiliars: [["had", "not"], ["hadn't"]],
@@ -1055,9 +1280,12 @@ const completePastPerfectNegativeStatementVerbForm = [
         id: "87c9b4e46f694d1c78f3f23715c0bcd3",
         type: "completePastPerfectNegativeStatementVerbForm",
         data: {
-            leftSide: "They",
-            middle: "(leave)",
-            rightSide: "the door unlocked.",
+            prompt: {
+                twoSided: true,
+                leftSide: "They",
+                middle: "(leave)",
+                rightSide: "the door unlocked."
+            },
             minWordCount: 2,
             maxWordCount: 3,
             correctAuxiliars: [["had", "not"], ["hadn't"]],
@@ -1069,9 +1297,12 @@ const completePastPerfectNegativeStatementVerbForm = [
         id: "6efdd386aff59daeece1294167a51feb",
         type: "completePastPerfectNegativeStatementVerbForm",
         data: {
-            leftSide: "He",
-            middle: "(begin)",
-            rightSide: "the project on time.",
+            prompt: {
+                twoSided: true,
+                leftSide: "He",
+                middle: "(begin)",
+                rightSide: "the project on time."
+            },
             minWordCount: 2,
             maxWordCount: 3,
             correctAuxiliars: [["had", "not"], ["hadn't"]],
@@ -1083,9 +1314,12 @@ const completePastPerfectNegativeStatementVerbForm = [
         id: "2c4e8a7a99efa39fb3283b1cac1efe89",
         type: "completePastPerfectNegativeStatementVerbForm",
         data: {
-            leftSide: "She",
-            middle: "(cut)",
-            rightSide: "the cake until everyone was there.",
+            prompt: {
+                twoSided: true,
+                leftSide: "She",
+                middle: "(cut)",
+                rightSide: "the cake until everyone was there."
+            },
             minWordCount: 2,
             maxWordCount: 3,
             correctAuxiliars: [["had", "not"], ["hadn't"]],
@@ -1097,9 +1331,12 @@ const completePastPerfectNegativeStatementVerbForm = [
         id: "050fe76d46b5fa873a7252290bf90199",
         type: "completePastPerfectNegativeStatementVerbForm",
         data: {
-            leftSide: "We",
-            middle: "(bring)",
-            rightSide: "enough food for everyone.",
+            prompt: {
+                twoSided: true,
+                leftSide: "We",
+                middle: "(bring)",
+                rightSide: "enough food for everyone."
+            },
             minWordCount: 2,
             maxWordCount: 3,
             correctAuxiliars: [["had", "not"], ["hadn't"]],
@@ -1111,9 +1348,12 @@ const completePastPerfectNegativeStatementVerbForm = [
         id: "e55a14c32d841fef0d92eca8b2c8a5d2",
         type: "completePastPerfectNegativeStatementVerbForm",
         data: {
-            leftSide: "They",
-            middle: "(shake)",
-            rightSide: "hands after the game.",
+            prompt: {
+                twoSided: true,
+                leftSide: "They",
+                middle: "(shake)",
+                rightSide: "hands after the game."
+            },
             minWordCount: 2,
             maxWordCount: 3,
             correctAuxiliars: [["had", "not"], ["hadn't"]],
@@ -1125,9 +1365,12 @@ const completePastPerfectNegativeStatementVerbForm = [
         id: "fe17be71cd83deee7863230d54ea015f",
         type: "completePastPerfectNegativeStatementVerbForm",
         data: {
-            leftSide: "I",
-            middle: "(steal)",
-            rightSide: "anything in my life.",
+            prompt: {
+                twoSided: true,
+                leftSide: "I",
+                middle: "(steal)",
+                rightSide: "anything in my life."
+            },
             minWordCount: 2,
             maxWordCount: 3,
             correctAuxiliars: [["had", "not"], ["hadn't"]],
@@ -1139,9 +1382,12 @@ const completePastPerfectNegativeStatementVerbForm = [
         id: "3b9e077e8cbe16e6eb54958848b13e62",
         type: "completePastPerfectNegativeStatementVerbForm",
         data: {
-            leftSide: "He",
-            middle: "(fly)",
-            rightSide: "in a plane before today.",
+            prompt: {
+                twoSided: true,
+                leftSide: "He",
+                middle: "(fly)",
+                rightSide: "in a plane before today."
+            },
             minWordCount: 2,
             maxWordCount: 3,
             correctAuxiliars: [["had", "not"], ["hadn't"]],
@@ -1153,9 +1399,12 @@ const completePastPerfectNegativeStatementVerbForm = [
         id: "ade502caed20ab566ec9ba0c0e490e97",
         type: "completePastPerfectNegativeStatementVerbForm",
         data: {
-            leftSide: "The dog",
-            middle: "(bite)",
-            rightSide: "anyone until that moment.",
+            prompt: {
+                twoSided: true,
+                leftSide: "The dog",
+                middle: "(bite)",
+                rightSide: "anyone until that moment."
+            },
             minWordCount: 2,
             maxWordCount: 3,
             correctAuxiliars: [["had", "not"], ["hadn't"]],
@@ -1167,9 +1416,12 @@ const completePastPerfectNegativeStatementVerbForm = [
         id: "7310b049a353fcc19106f28b95512cee",
         type: "completePastPerfectNegativeStatementVerbForm",
         data: {
-            leftSide: "We",
-            middle: "(stick)",
-            rightSide: "the poster to the wall.",
+            prompt: {
+                twoSided: true,
+                leftSide: "We",
+                middle: "(stick)",
+                rightSide: "the poster to the wall."
+            },
             minWordCount: 2,
             maxWordCount: 3,
             correctAuxiliars: [["had", "not"], ["hadn't"]],
@@ -1181,9 +1433,12 @@ const completePastPerfectNegativeStatementVerbForm = [
         id: "e0ea99d48036da275409c7984ab9e518",
         type: "completePastPerfectNegativeStatementVerbForm",
         data: {
-            leftSide: "She",
-            middle: "(dig)",
-            rightSide: "the hole deep enough.",
+            prompt: {
+                twoSided: true,
+                leftSide: "She",
+                middle: "(dig)",
+                rightSide: "the hole deep enough."
+            },
             minWordCount: 2,
             maxWordCount: 3,
             correctAuxiliars: [["had", "not"], ["hadn't"]],
@@ -1195,9 +1450,12 @@ const completePastPerfectNegativeStatementVerbForm = [
         id: "95e60a9afa4741b7e32234ab82dc35c7",
         type: "completePastPerfectNegativeStatementVerbForm",
         data: {
-            leftSide: "I",
-            middle: "(ride)",
-            rightSide: "a horse before.",
+            prompt: {
+                twoSided: true,
+                leftSide: "I",
+                middle: "(ride)",
+                rightSide: "a horse before."
+            },
             minWordCount: 2,
             maxWordCount: 3,
             correctAuxiliars: [["had", "not"], ["hadn't"]],
@@ -1209,9 +1467,12 @@ const completePastPerfectNegativeStatementVerbForm = [
         id: "5cdb83a7e917758623d33a33da088dc6",
         type: "completePastPerfectNegativeStatementVerbForm",
         data: {
-            leftSide: "They",
-            middle: "(swim)",
-            rightSide: "in that lake before.",
+            prompt: {
+                twoSided: true,
+                leftSide: "They",
+                middle: "(swim)",
+                rightSide: "in that lake before."
+            },
             minWordCount: 2,
             maxWordCount: 3,
             correctAuxiliars: [["had", "not"], ["hadn't"]],
@@ -1223,9 +1484,12 @@ const completePastPerfectNegativeStatementVerbForm = [
         id: "82ebadbb511360948308ec1ec49c906e",
         type: "completePastPerfectNegativeStatementVerbForm",
         data: {
-            leftSide: "He",
-            middle: "(become)",
-            rightSide: "famous when I met him.",
+            prompt: {
+                twoSided: true,
+                leftSide: "He",
+                middle: "(become)",
+                rightSide: "famous when I met him."
+            },
             minWordCount: 2,
             maxWordCount: 3,
             correctAuxiliars: [["had", "not"], ["hadn't"]],
@@ -1237,9 +1501,12 @@ const completePastPerfectNegativeStatementVerbForm = [
         id: "58912000cdb3cdea934b8bb2ab3508e8",
         type: "completePastPerfectNegativeStatementVerbForm",
         data: {
-            leftSide: "We",
-            middle: "(fall)",
-            rightSide: "asleep when you arrived.",
+            prompt: {
+                twoSided: true,
+                leftSide: "We",
+                middle: "(fall)",
+                rightSide: "asleep when you arrived."
+            },
             minWordCount: 2,
             maxWordCount: 3,
             correctAuxiliars: [["had", "not"], ["hadn't"]],
@@ -1251,9 +1518,12 @@ const completePastPerfectNegativeStatementVerbForm = [
         id: "58b31b263c5bb06296593f0ca60a1df5",
         type: "completePastPerfectNegativeStatementVerbForm",
         data: {
-            leftSide: "I",
-            middle: "(do)",
-            rightSide: "the dishes yet.",
+            prompt: {
+                twoSided: true,
+                leftSide: "I",
+                middle: "(do)",
+                rightSide: "the dishes yet."
+            },
             minWordCount: 2,
             maxWordCount: 3,
             correctAuxiliars: [["had", "not"], ["hadn't"]],
@@ -1265,9 +1535,12 @@ const completePastPerfectNegativeStatementVerbForm = [
         id: "d0ec76bff42684c307453b74e87a273d",
         type: "completePastPerfectNegativeStatementVerbForm",
         data: {
-            leftSide: "She",
-            middle: "(throw)",
-            rightSide: "the ball far enough.",
+            prompt: {
+                twoSided: true,
+                leftSide: "She",
+                middle: "(throw)",
+                rightSide: "the ball far enough."
+            },
             minWordCount: 2,
             maxWordCount: 3,
             correctAuxiliars: [["had", "not"], ["hadn't"]],
@@ -1279,9 +1552,12 @@ const completePastPerfectNegativeStatementVerbForm = [
         id: "c305b40f30a9ca984262a19ac9174a5f",
         type: "completePastPerfectNegativeStatementVerbForm",
         data: {
-            leftSide: "They",
-            middle: "(see)",
-            rightSide: "the mountains before.",
+            prompt: {
+                twoSided: true,
+                leftSide: "They",
+                middle: "(see)",
+                rightSide: "the mountains before."
+            },
             minWordCount: 2,
             maxWordCount: 3,
             correctAuxiliars: [["had", "not"], ["hadn't"]],
@@ -1293,9 +1569,12 @@ const completePastPerfectNegativeStatementVerbForm = [
         id: "e8af7c2bc1f6fcd8e9bd6c1bf58c4baa",
         type: "completePastPerfectNegativeStatementVerbForm",
         data: {
-            leftSide: "He",
-            middle: "(go)",
-            rightSide: "to the gym that week.",
+            prompt: {
+                twoSided: true,
+                leftSide: "He",
+                middle: "(go)",
+                rightSide: "to the gym that week."
+            },
             minWordCount: 2,
             maxWordCount: 3,
             correctAuxiliars: [["had", "not"], ["hadn't"]],
@@ -1307,9 +1586,12 @@ const completePastPerfectNegativeStatementVerbForm = [
         id: "7351808463f78f3a6faba006aa0ebce2",
         type: "completePastPerfectNegativeStatementVerbForm",
         data: {
-            leftSide: "We",
-            middle: "(win)",
-            rightSide: "the trophy until today.",
+            prompt: {
+                twoSided: true,
+                leftSide: "We",
+                middle: "(win)",
+                rightSide: "the trophy until today."
+            },
             minWordCount: 2,
             maxWordCount: 3,
             correctAuxiliars: [["had", "not"], ["hadn't"]],
@@ -1321,9 +1603,12 @@ const completePastPerfectNegativeStatementVerbForm = [
         id: "dd84a1150cd06c0d23da7b3ca30026ca",
         type: "completePastPerfectNegativeStatementVerbForm",
         data: {
-            leftSide: "I",
-            middle: "(know)",
-            rightSide: "the secret until she spoke.",
+            prompt: {
+                twoSided: true,
+                leftSide: "I",
+                middle: "(know)",
+                rightSide: "the secret until she spoke."
+            },
             minWordCount: 2,
             maxWordCount: 3,
             correctAuxiliars: [["had", "not"], ["hadn't"]],
@@ -1335,9 +1620,12 @@ const completePastPerfectNegativeStatementVerbForm = [
         id: "465a4ad6911129827f4776b6857a7b3e",
         type: "completePastPerfectNegativeStatementVerbForm",
         data: {
-            leftSide: "She",
-            middle: "(sell)",
-            rightSide: "her car when I asked.",
+            prompt: {
+                twoSided: true,
+                leftSide: "She",
+                middle: "(sell)",
+                rightSide: "her car when I asked."
+            },
             minWordCount: 2,
             maxWordCount: 3,
             correctAuxiliars: [["had", "not"], ["hadn't"]],
@@ -1349,9 +1637,12 @@ const completePastPerfectNegativeStatementVerbForm = [
         id: "b98ac55235198d5c2f75e52e288af87f",
         type: "completePastPerfectNegativeStatementVerbForm",
         data: {
-            leftSide: "They",
-            middle: "(build)",
-            rightSide: "the wall by sunset.",
+            prompt: {
+                twoSided: true,
+                leftSide: "They",
+                middle: "(build)",
+                rightSide: "the wall by sunset."
+            },
             minWordCount: 2,
             maxWordCount: 3,
             correctAuxiliars: [["had", "not"], ["hadn't"]],
@@ -1363,9 +1654,12 @@ const completePastPerfectNegativeStatementVerbForm = [
         id: "2719e1378c755ce9c271c6cc6ec8bbb3",
         type: "completePastPerfectNegativeStatementVerbForm",
         data: {
-            leftSide: "He",
-            middle: "(speak)",
-            rightSide: "to his parents yet.",
+            prompt: {
+                twoSided: true,
+                leftSide: "He",
+                middle: "(speak)",
+                rightSide: "to his parents yet."
+            },
             minWordCount: 2,
             maxWordCount: 3,
             correctAuxiliars: [["had", "not"], ["hadn't"]],
@@ -1377,9 +1671,12 @@ const completePastPerfectNegativeStatementVerbForm = [
         id: "f69fcc64b9dafc03ddc8da7c3a7f1945",
         type: "completePastPerfectNegativeStatementVerbForm",
         data: {
-            leftSide: "I",
-            middle: "(spend)",
-            rightSide: "all my savings yet.",
+            prompt: {
+                twoSided: true,
+                leftSide: "I",
+                middle: "(spend)",
+                rightSide: "all my savings yet."
+            },
             minWordCount: 2,
             maxWordCount: 3,
             correctAuxiliars: [["had", "not"], ["hadn't"]],
@@ -1391,9 +1688,12 @@ const completePastPerfectNegativeStatementVerbForm = [
         id: "705d1261cd9f326b9e5c3fe79b1700ff",
         type: "completePastPerfectNegativeStatementVerbForm",
         data: {
-            leftSide: "We",
-            middle: "(take)",
-            rightSide: "the keys before leaving.",
+            prompt: {
+                twoSided: true,
+                leftSide: "We",
+                middle: "(take)",
+                rightSide: "the keys before leaving."
+            },
             minWordCount: 2,
             maxWordCount: 3,
             correctAuxiliars: [["had", "not"], ["hadn't"]],

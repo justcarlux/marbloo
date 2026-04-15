@@ -5,9 +5,12 @@ const completePresentSimpleNegativeStatementVerbForm = [
         id: "e65cecd1313c3914bc33dadc0cad0e91",
         type: "completePresentSimpleNegativeStatementVerbForm",
         data: {
-            leftSide: "She",
-            middle: "(like)",
-            rightSide: "him.",
+            prompt: {
+                twoSided: true,
+                leftSide: "She",
+                middle: "(like)",
+                rightSide: "him."
+            },
             minWordCount: 2,
             maxWordCount: 3,
             correctAuxiliars: [["does", "not"], ["doesn't"]],
@@ -19,9 +22,12 @@ const completePresentSimpleNegativeStatementVerbForm = [
         id: "de3f547aa25145aae63ef8c910a842cf",
         type: "completePresentSimpleNegativeStatementVerbForm",
         data: {
-            leftSide: "I",
-            middle: "(know)",
-            rightSide: "the answer.",
+            prompt: {
+                twoSided: true,
+                leftSide: "I",
+                middle: "(know)",
+                rightSide: "the answer."
+            },
             minWordCount: 2,
             maxWordCount: 3,
             correctAuxiliars: [["do", "not"], ["don't"]],
@@ -33,9 +39,12 @@ const completePresentSimpleNegativeStatementVerbForm = [
         id: "d28a44da2b166911839e3d7f88547fac",
         type: "completePresentSimpleNegativeStatementVerbForm",
         data: {
-            leftSide: "He",
-            middle: "(smoke)",
-            rightSide: "anymore.",
+            prompt: {
+                twoSided: true,
+                leftSide: "He",
+                middle: "(smoke)",
+                rightSide: "anymore."
+            },
             minWordCount: 2,
             maxWordCount: 3,
             correctAuxiliars: [["does", "not"], ["doesn't"]],
@@ -47,9 +56,12 @@ const completePresentSimpleNegativeStatementVerbForm = [
         id: "11eee4b8b7e22968c2224da49f7a9d17",
         type: "completePresentSimpleNegativeStatementVerbForm",
         data: {
-            leftSide: "They",
-            middle: "(live)",
-            rightSide: "in London.",
+            prompt: {
+                twoSided: true,
+                leftSide: "They",
+                middle: "(live)",
+                rightSide: "in London."
+            },
             minWordCount: 2,
             maxWordCount: 3,
             correctAuxiliars: [["do", "not"], ["don't"]],
@@ -61,9 +73,12 @@ const completePresentSimpleNegativeStatementVerbForm = [
         id: "73affa9c829e969fbd26f778d4b2ae99",
         type: "completePresentSimpleNegativeStatementVerbForm",
         data: {
-            leftSide: "We",
-            middle: "(need)",
-            rightSide: "your help.",
+            prompt: {
+                twoSided: true,
+                leftSide: "We",
+                middle: "(need)",
+                rightSide: "your help."
+            },
             minWordCount: 2,
             maxWordCount: 3,
             correctAuxiliars: [["do", "not"], ["don't"]],
@@ -75,9 +90,12 @@ const completePresentSimpleNegativeStatementVerbForm = [
         id: "145c5d92b3f04534a68f3674278db33c",
         type: "completePresentSimpleNegativeStatementVerbForm",
         data: {
-            leftSide: "It",
-            middle: "(rain)",
-            rightSide: "often here.",
+            prompt: {
+                twoSided: true,
+                leftSide: "It",
+                middle: "(rain)",
+                rightSide: "often here."
+            },
             minWordCount: 2,
             maxWordCount: 3,
             correctAuxiliars: [["does", "not"], ["doesn't"]],
@@ -89,9 +107,12 @@ const completePresentSimpleNegativeStatementVerbForm = [
         id: "177cddc96538d3bc952d295796b49441",
         type: "completePresentSimpleNegativeStatementVerbForm",
         data: {
-            leftSide: "You",
-            middle: "(understand)",
-            rightSide: "the lesson.",
+            prompt: {
+                twoSided: true,
+                leftSide: "You",
+                middle: "(understand)",
+                rightSide: "the lesson."
+            },
             minWordCount: 2,
             maxWordCount: 3,
             correctAuxiliars: [["do", "not"], ["don't"]],
@@ -103,9 +124,12 @@ const completePresentSimpleNegativeStatementVerbForm = [
         id: "a1a8ecefc5252e09c2c03a93d7d6cf6f",
         type: "completePresentSimpleNegativeStatementVerbForm",
         data: {
-            leftSide: "The cat",
-            middle: "(eat)",
-            rightSide: "fish.",
+            prompt: {
+                twoSided: true,
+                leftSide: "The cat",
+                middle: "(eat)",
+                rightSide: "fish."
+            },
             minWordCount: 2,
             maxWordCount: 3,
             correctAuxiliars: [["does", "not"], ["doesn't"]],
@@ -117,9 +141,12 @@ const completePresentSimpleNegativeStatementVerbForm = [
         id: "34d081a07abf368ede84f2ac05d6539d",
         type: "completePresentSimpleNegativeStatementVerbForm",
         data: {
-            leftSide: "My parents",
-            middle: "(watch)",
-            rightSide: "TV at night.",
+            prompt: {
+                twoSided: true,
+                leftSide: "My parents",
+                middle: "(watch)",
+                rightSide: "TV at night."
+            },
             minWordCount: 2,
             maxWordCount: 3,
             correctAuxiliars: [["do", "not"], ["don't"]],
@@ -131,9 +158,12 @@ const completePresentSimpleNegativeStatementVerbForm = [
         id: "a2181035c9b3ddd5c703ace4cea659d6",
         type: "completePresentSimpleNegativeStatementVerbForm",
         data: {
-            leftSide: "She",
-            middle: "(speak)",
-            rightSide: "French.",
+            prompt: {
+                twoSided: true,
+                leftSide: "She",
+                middle: "(speak)",
+                rightSide: "French."
+            },
             minWordCount: 2,
             maxWordCount: 3,
             correctAuxiliars: [["does", "not"], ["doesn't"]],
@@ -145,9 +175,12 @@ const completePresentSimpleNegativeStatementVerbForm = [
         id: "94fb69d0d56da9f844e1a27d0caa063d",
         type: "completePresentSimpleNegativeStatementVerbForm",
         data: {
-            leftSide: "I",
-            middle: "(drink)",
-            rightSide: "coffee.",
+            prompt: {
+                twoSided: true,
+                leftSide: "I",
+                middle: "(drink)",
+                rightSide: "coffee."
+            },
             minWordCount: 2,
             maxWordCount: 3,
             correctAuxiliars: [["do", "not"], ["don't"]],
@@ -159,9 +192,12 @@ const completePresentSimpleNegativeStatementVerbForm = [
         id: "f6a4d52d63329e1861094c43085e41e4",
         type: "completePresentSimpleNegativeStatementVerbForm",
         data: {
-            leftSide: "They",
-            middle: "(play)",
-            rightSide: "video games.",
+            prompt: {
+                twoSided: true,
+                leftSide: "They",
+                middle: "(play)",
+                rightSide: "video games."
+            },
             minWordCount: 2,
             maxWordCount: 3,
             correctAuxiliars: [["do", "not"], ["don't"]],
@@ -173,9 +209,12 @@ const completePresentSimpleNegativeStatementVerbForm = [
         id: "149e2c86ed7882e3309c880710471611",
         type: "completePresentSimpleNegativeStatementVerbForm",
         data: {
-            leftSide: "He",
-            middle: "(want)",
-            rightSide: "to go home.",
+            prompt: {
+                twoSided: true,
+                leftSide: "He",
+                middle: "(want)",
+                rightSide: "to go home."
+            },
             minWordCount: 2,
             maxWordCount: 3,
             correctAuxiliars: [["does", "not"], ["doesn't"]],
@@ -187,9 +226,12 @@ const completePresentSimpleNegativeStatementVerbForm = [
         id: "ef3709362ff4731b396c86ff5b209a81",
         type: "completePresentSimpleNegativeStatementVerbForm",
         data: {
-            leftSide: "We",
-            middle: "(believe)",
-            rightSide: "ghosts.",
+            prompt: {
+                twoSided: true,
+                leftSide: "We",
+                middle: "(believe)",
+                rightSide: "ghosts."
+            },
             minWordCount: 2,
             maxWordCount: 3,
             correctAuxiliars: [["do", "not"], ["don't"]],
@@ -201,9 +243,12 @@ const completePresentSimpleNegativeStatementVerbForm = [
         id: "a80f473c9b622e08221c05d68d584e9b",
         type: "completePresentSimpleNegativeStatementVerbForm",
         data: {
-            leftSide: "The bus",
-            middle: "(stop)",
-            rightSide: "here.",
+            prompt: {
+                twoSided: true,
+                leftSide: "The bus",
+                middle: "(stop)",
+                rightSide: "here."
+            },
             minWordCount: 2,
             maxWordCount: 3,
             correctAuxiliars: [["does", "not"], ["doesn't"]],
@@ -215,9 +260,12 @@ const completePresentSimpleNegativeStatementVerbForm = [
         id: "a7290c560d38589a043c35fea6d9d842",
         type: "completePresentSimpleNegativeStatementVerbForm",
         data: {
-            leftSide: "I",
-            middle: "(have)",
-            rightSide: "a car.",
+            prompt: {
+                twoSided: true,
+                leftSide: "I",
+                middle: "(have)",
+                rightSide: "a car."
+            },
             minWordCount: 2,
             maxWordCount: 3,
             correctAuxiliars: [["do", "not"], ["don't"]],
@@ -229,9 +277,12 @@ const completePresentSimpleNegativeStatementVerbForm = [
         id: "6448b072a913ef2309b4cb58731c56fd",
         type: "completePresentSimpleNegativeStatementVerbForm",
         data: {
-            leftSide: "She",
-            middle: "(wear)",
-            rightSide: "jewelry.",
+            prompt: {
+                twoSided: true,
+                leftSide: "She",
+                middle: "(wear)",
+                rightSide: "jewelry."
+            },
             minWordCount: 2,
             maxWordCount: 3,
             correctAuxiliars: [["does", "not"], ["doesn't"]],
@@ -243,9 +294,12 @@ const completePresentSimpleNegativeStatementVerbForm = [
         id: "3dd14723126f15bb8db2766e62892c09",
         type: "completePresentSimpleNegativeStatementVerbForm",
         data: {
-            leftSide: "They",
-            middle: "(study)",
-            rightSide: "on Sundays.",
+            prompt: {
+                twoSided: true,
+                leftSide: "They",
+                middle: "(study)",
+                rightSide: "on Sundays."
+            },
             minWordCount: 2,
             maxWordCount: 3,
             correctAuxiliars: [["do", "not"], ["don't"]],
@@ -257,9 +311,12 @@ const completePresentSimpleNegativeStatementVerbForm = [
         id: "eddec5213a60a5923d8392fdea51d402",
         type: "completePresentSimpleNegativeStatementVerbForm",
         data: {
-            leftSide: "He",
-            middle: "(remember)",
-            rightSide: "me.",
+            prompt: {
+                twoSided: true,
+                leftSide: "He",
+                middle: "(remember)",
+                rightSide: "me."
+            },
             minWordCount: 2,
             maxWordCount: 3,
             correctAuxiliars: [["does", "not"], ["doesn't"]],
@@ -271,9 +328,12 @@ const completePresentSimpleNegativeStatementVerbForm = [
         id: "6e5bfca5b23c89b0f173b1f9ce076948",
         type: "completePresentSimpleNegativeStatementVerbForm",
         data: {
-            leftSide: "We",
-            middle: "(work)",
-            rightSide: "on Saturdays.",
+            prompt: {
+                twoSided: true,
+                leftSide: "We",
+                middle: "(work)",
+                rightSide: "on Saturdays."
+            },
             minWordCount: 2,
             maxWordCount: 3,
             correctAuxiliars: [["do", "not"], ["don't"]],
@@ -285,9 +345,12 @@ const completePresentSimpleNegativeStatementVerbForm = [
         id: "b8f32194217282ae93ea753f50e94027",
         type: "completePresentSimpleNegativeStatementVerbForm",
         data: {
-            leftSide: "You",
-            middle: "(listen)",
-            rightSide: "to me.",
+            prompt: {
+                twoSided: true,
+                leftSide: "You",
+                middle: "(listen)",
+                rightSide: "to me."
+            },
             minWordCount: 2,
             maxWordCount: 3,
             correctAuxiliars: [["do", "not"], ["don't"]],
@@ -299,9 +362,12 @@ const completePresentSimpleNegativeStatementVerbForm = [
         id: "7919d7dec52ca85337ead6a28a94b9ab",
         type: "completePresentSimpleNegativeStatementVerbForm",
         data: {
-            leftSide: "It",
-            middle: "(seem)",
-            rightSide: "important.",
+            prompt: {
+                twoSided: true,
+                leftSide: "It",
+                middle: "(seem)",
+                rightSide: "important."
+            },
             minWordCount: 2,
             maxWordCount: 3,
             correctAuxiliars: [["does", "not"], ["doesn't"]],
@@ -313,9 +379,12 @@ const completePresentSimpleNegativeStatementVerbForm = [
         id: "ae69b19bb4ea69592ac6c7a5e98e5dee",
         type: "completePresentSimpleNegativeStatementVerbForm",
         data: {
-            leftSide: "She",
-            middle: "(read)",
-            rightSide: "the news.",
+            prompt: {
+                twoSided: true,
+                leftSide: "She",
+                middle: "(read)",
+                rightSide: "the news."
+            },
             minWordCount: 2,
             maxWordCount: 3,
             correctAuxiliars: [["does", "not"], ["doesn't"]],
@@ -327,9 +396,12 @@ const completePresentSimpleNegativeStatementVerbForm = [
         id: "9c2d864a2d69c68bb9789eba7e8aa081",
         type: "completePresentSimpleNegativeStatementVerbForm",
         data: {
-            leftSide: "I",
-            middle: "(feel)",
-            rightSide: "cold.",
+            prompt: {
+                twoSided: true,
+                leftSide: "I",
+                middle: "(feel)",
+                rightSide: "cold."
+            },
             minWordCount: 2,
             maxWordCount: 3,
             correctAuxiliars: [["do", "not"], ["don't"]],
@@ -341,9 +413,12 @@ const completePresentSimpleNegativeStatementVerbForm = [
         id: "3a55657f673e752d04109832252ebfed",
         type: "completePresentSimpleNegativeStatementVerbForm",
         data: {
-            leftSide: "They",
-            middle: "(arrive)",
-            rightSide: "on time.",
+            prompt: {
+                twoSided: true,
+                leftSide: "They",
+                middle: "(arrive)",
+                rightSide: "on time."
+            },
             minWordCount: 2,
             maxWordCount: 3,
             correctAuxiliars: [["do", "not"], ["don't"]],
@@ -355,9 +430,12 @@ const completePresentSimpleNegativeStatementVerbForm = [
         id: "55e8ae7713623ec816bcf7e60b5b4c9a",
         type: "completePresentSimpleNegativeStatementVerbForm",
         data: {
-            leftSide: "He",
-            middle: "(buy)",
-            rightSide: "cheap clothes.",
+            prompt: {
+                twoSided: true,
+                leftSide: "He",
+                middle: "(buy)",
+                rightSide: "cheap clothes."
+            },
             minWordCount: 2,
             maxWordCount: 3,
             correctAuxiliars: [["does", "not"], ["doesn't"]],
@@ -369,9 +447,12 @@ const completePresentSimpleNegativeStatementVerbForm = [
         id: "eef537998d269ab4df6a6516d198024d",
         type: "completePresentSimpleNegativeStatementVerbForm",
         data: {
-            leftSide: "We",
-            middle: "(see)",
-            rightSide: "the problem.",
+            prompt: {
+                twoSided: true,
+                leftSide: "We",
+                middle: "(see)",
+                rightSide: "the problem."
+            },
             minWordCount: 2,
             maxWordCount: 3,
             correctAuxiliars: [["do", "not"], ["don't"]],
@@ -383,9 +464,12 @@ const completePresentSimpleNegativeStatementVerbForm = [
         id: "eeab51142dbadbcc64e6d8ca907f7286",
         type: "completePresentSimpleNegativeStatementVerbForm",
         data: {
-            leftSide: "You",
-            middle: "(pay)",
-            rightSide: "the bills.",
+            prompt: {
+                twoSided: true,
+                leftSide: "You",
+                middle: "(pay)",
+                rightSide: "the bills."
+            },
             minWordCount: 2,
             maxWordCount: 3,
             correctAuxiliars: [["do", "not"], ["don't"]],
@@ -397,9 +481,12 @@ const completePresentSimpleNegativeStatementVerbForm = [
         id: "ff0774de271782a839f8a9e0776ff015",
         type: "completePresentSimpleNegativeStatementVerbForm",
         data: {
-            leftSide: "She",
-            middle: "(think)",
-            rightSide: "about it.",
+            prompt: {
+                twoSided: true,
+                leftSide: "She",
+                middle: "(think)",
+                rightSide: "about it."
+            },
             minWordCount: 2,
             maxWordCount: 3,
             correctAuxiliars: [["does", "not"], ["doesn't"]],
@@ -411,9 +498,12 @@ const completePresentSimpleNegativeStatementVerbForm = [
         id: "1b8ec415cb020ca09c09387e49612324",
         type: "completePresentSimpleNegativeStatementVerbForm",
         data: {
-            leftSide: "I",
-            middle: "(forget)",
-            rightSide: "your face.",
+            prompt: {
+                twoSided: true,
+                leftSide: "I",
+                middle: "(forget)",
+                rightSide: "your face."
+            },
             minWordCount: 2,
             maxWordCount: 3,
             correctAuxiliars: [["do", "not"], ["don't"]],
@@ -425,9 +515,12 @@ const completePresentSimpleNegativeStatementVerbForm = [
         id: "14cf5e4497953c184d97c3a534cd412d",
         type: "completePresentSimpleNegativeStatementVerbForm",
         data: {
-            leftSide: "The sun",
-            middle: "(rise)",
-            rightSide: "in the West.",
+            prompt: {
+                twoSided: true,
+                leftSide: "The sun",
+                middle: "(rise)",
+                rightSide: "in the West."
+            },
             minWordCount: 2,
             maxWordCount: 3,
             correctAuxiliars: [["does", "not"], ["doesn't"]],
@@ -439,9 +532,12 @@ const completePresentSimpleNegativeStatementVerbForm = [
         id: "703b4e22e6ecdc326b627054315f6dca",
         type: "completePresentSimpleNegativeStatementVerbForm",
         data: {
-            leftSide: "They",
-            middle: "(bring)",
-            rightSide: "their kids.",
+            prompt: {
+                twoSided: true,
+                leftSide: "They",
+                middle: "(bring)",
+                rightSide: "their kids."
+            },
             minWordCount: 2,
             maxWordCount: 3,
             correctAuxiliars: [["do", "not"], ["don't"]],
@@ -453,9 +549,12 @@ const completePresentSimpleNegativeStatementVerbForm = [
         id: "d27c0b4c0ca21c6100591bb01b08e532",
         type: "completePresentSimpleNegativeStatementVerbForm",
         data: {
-            leftSide: "He",
-            middle: "(teach)",
-            rightSide: "math.",
+            prompt: {
+                twoSided: true,
+                leftSide: "He",
+                middle: "(teach)",
+                rightSide: "math."
+            },
             minWordCount: 2,
             maxWordCount: 3,
             correctAuxiliars: [["does", "not"], ["doesn't"]],
@@ -467,9 +566,12 @@ const completePresentSimpleNegativeStatementVerbForm = [
         id: "a525a90fa9716b7d76dc5076e8b628e5",
         type: "completePresentSimpleNegativeStatementVerbForm",
         data: {
-            leftSide: "We",
-            middle: "(use)",
-            rightSide: "this room.",
+            prompt: {
+                twoSided: true,
+                leftSide: "We",
+                middle: "(use)",
+                rightSide: "this room."
+            },
             minWordCount: 2,
             maxWordCount: 3,
             correctAuxiliars: [["do", "not"], ["don't"]],
@@ -481,9 +583,12 @@ const completePresentSimpleNegativeStatementVerbForm = [
         id: "02099cd2a9586782d2630d0ff80ab903",
         type: "completePresentSimpleNegativeStatementVerbForm",
         data: {
-            leftSide: "She",
-            middle: "(sell)",
-            rightSide: "her house.",
+            prompt: {
+                twoSided: true,
+                leftSide: "She",
+                middle: "(sell)",
+                rightSide: "her house."
+            },
             minWordCount: 2,
             maxWordCount: 3,
             correctAuxiliars: [["does", "not"], ["doesn't"]],
@@ -495,9 +600,12 @@ const completePresentSimpleNegativeStatementVerbForm = [
         id: "c3ba680a22f22428aa593f9d23262e12",
         type: "completePresentSimpleNegativeStatementVerbForm",
         data: {
-            leftSide: "I",
-            middle: "(write)",
-            rightSide: "letters.",
+            prompt: {
+                twoSided: true,
+                leftSide: "I",
+                middle: "(write)",
+                rightSide: "letters."
+            },
             minWordCount: 2,
             maxWordCount: 3,
             correctAuxiliars: [["do", "not"], ["don't"]],
@@ -509,9 +617,12 @@ const completePresentSimpleNegativeStatementVerbForm = [
         id: "ee210fb78b984876f9a6e4af2f0fbe2c",
         type: "completePresentSimpleNegativeStatementVerbForm",
         data: {
-            leftSide: "The plant",
-            middle: "(grow)",
-            rightSide: "well here.",
+            prompt: {
+                twoSided: true,
+                leftSide: "The plant",
+                middle: "(grow)",
+                rightSide: "well here."
+            },
             minWordCount: 2,
             maxWordCount: 3,
             correctAuxiliars: [["does", "not"], ["doesn't"]],
@@ -523,9 +634,12 @@ const completePresentSimpleNegativeStatementVerbForm = [
         id: "8e1e8740c6821abf851513c50244cfac",
         type: "completePresentSimpleNegativeStatementVerbForm",
         data: {
-            leftSide: "They",
-            middle: "(run)",
-            rightSide: "fast.",
+            prompt: {
+                twoSided: true,
+                leftSide: "They",
+                middle: "(run)",
+                rightSide: "fast."
+            },
             minWordCount: 2,
             maxWordCount: 3,
             correctAuxiliars: [["do", "not"], ["don't"]],
@@ -537,9 +651,12 @@ const completePresentSimpleNegativeStatementVerbForm = [
         id: "8b1585a27410a06c74d13389c7924e9c",
         type: "completePresentSimpleNegativeStatementVerbForm",
         data: {
-            leftSide: "He",
-            middle: "(lose)",
-            rightSide: "his keys.",
+            prompt: {
+                twoSided: true,
+                leftSide: "He",
+                middle: "(lose)",
+                rightSide: "his keys."
+            },
             minWordCount: 2,
             maxWordCount: 3,
             correctAuxiliars: [["does", "not"], ["doesn't"]],
@@ -551,9 +668,12 @@ const completePresentSimpleNegativeStatementVerbForm = [
         id: "324a58055cd4570357127be63cfe7523",
         type: "completePresentSimpleNegativeStatementVerbForm",
         data: {
-            leftSide: "We",
-            middle: "(make)",
-            rightSide: "mistakes.",
+            prompt: {
+                twoSided: true,
+                leftSide: "We",
+                middle: "(make)",
+                rightSide: "mistakes."
+            },
             minWordCount: 2,
             maxWordCount: 3,
             correctAuxiliars: [["do", "not"], ["don't"]],
@@ -565,9 +685,12 @@ const completePresentSimpleNegativeStatementVerbForm = [
         id: "416afed18e1f479210b4eca1158c0b74",
         type: "completePresentSimpleNegativeStatementVerbForm",
         data: {
-            leftSide: "You",
-            middle: "(call)",
-            rightSide: "me daily.",
+            prompt: {
+                twoSided: true,
+                leftSide: "You",
+                middle: "(call)",
+                rightSide: "me daily."
+            },
             minWordCount: 2,
             maxWordCount: 3,
             correctAuxiliars: [["do", "not"], ["don't"]],
@@ -579,9 +702,12 @@ const completePresentSimpleNegativeStatementVerbForm = [
         id: "6a48852b181d4d397073383d7638de7c",
         type: "completePresentSimpleNegativeStatementVerbForm",
         data: {
-            leftSide: "She",
-            middle: "(keep)",
-            rightSide: "the secret.",
+            prompt: {
+                twoSided: true,
+                leftSide: "She",
+                middle: "(keep)",
+                rightSide: "the secret."
+            },
             minWordCount: 2,
             maxWordCount: 3,
             correctAuxiliars: [["does", "not"], ["doesn't"]],
@@ -593,9 +719,12 @@ const completePresentSimpleNegativeStatementVerbForm = [
         id: "3e69d5cdcbab6e17fabae41750438293",
         type: "completePresentSimpleNegativeStatementVerbForm",
         data: {
-            leftSide: "I",
-            middle: "(sing)",
-            rightSide: "well.",
+            prompt: {
+                twoSided: true,
+                leftSide: "I",
+                middle: "(sing)",
+                rightSide: "well."
+            },
             minWordCount: 2,
             maxWordCount: 3,
             correctAuxiliars: [["do", "not"], ["don't"]],
@@ -607,9 +736,12 @@ const completePresentSimpleNegativeStatementVerbForm = [
         id: "425dad19476ebd799b3ea798cc053474",
         type: "completePresentSimpleNegativeStatementVerbForm",
         data: {
-            leftSide: "They",
-            middle: "(find)",
-            rightSide: "it easy.",
+            prompt: {
+                twoSided: true,
+                leftSide: "They",
+                middle: "(find)",
+                rightSide: "it easy."
+            },
             minWordCount: 2,
             maxWordCount: 3,
             correctAuxiliars: [["do", "not"], ["don't"]],
@@ -621,9 +753,12 @@ const completePresentSimpleNegativeStatementVerbForm = [
         id: "d4518bd71ddf3da5149f9ca2ade2f6ea",
         type: "completePresentSimpleNegativeStatementVerbForm",
         data: {
-            leftSide: "He",
-            middle: "(break)",
-            rightSide: "the rules.",
+            prompt: {
+                twoSided: true,
+                leftSide: "He",
+                middle: "(break)",
+                rightSide: "the rules."
+            },
             minWordCount: 2,
             maxWordCount: 3,
             correctAuxiliars: [["does", "not"], ["doesn't"]],
@@ -635,9 +770,12 @@ const completePresentSimpleNegativeStatementVerbForm = [
         id: "ecefc95ac83779f6b630b775c4ac5190",
         type: "completePresentSimpleNegativeStatementVerbForm",
         data: {
-            leftSide: "We",
-            middle: "(spend)",
-            rightSide: "much money.",
+            prompt: {
+                twoSided: true,
+                leftSide: "We",
+                middle: "(spend)",
+                rightSide: "much money."
+            },
             minWordCount: 2,
             maxWordCount: 3,
             correctAuxiliars: [["do", "not"], ["don't"]],
@@ -649,9 +787,12 @@ const completePresentSimpleNegativeStatementVerbForm = [
         id: "adda0c7faba2305f30210f52275f50da",
         type: "completePresentSimpleNegativeStatementVerbForm",
         data: {
-            leftSide: "She",
-            middle: "(tell)",
-            rightSide: "lies.",
+            prompt: {
+                twoSided: true,
+                leftSide: "She",
+                middle: "(tell)",
+                rightSide: "lies."
+            },
             minWordCount: 2,
             maxWordCount: 3,
             correctAuxiliars: [["does", "not"], ["doesn't"]],
@@ -663,9 +804,12 @@ const completePresentSimpleNegativeStatementVerbForm = [
         id: "8af97be7f049070090cc3f1dc24cfe17",
         type: "completePresentSimpleNegativeStatementVerbForm",
         data: {
-            leftSide: "I",
-            middle: "(sleep)",
-            rightSide: "enough.",
+            prompt: {
+                twoSided: true,
+                leftSide: "I",
+                middle: "(sleep)",
+                rightSide: "enough."
+            },
             minWordCount: 2,
             maxWordCount: 3,
             correctAuxiliars: [["do", "not"], ["don't"]],
@@ -677,9 +821,12 @@ const completePresentSimpleNegativeStatementVerbForm = [
         id: "cde12f50c13dab591fca7604607e29d3",
         type: "completePresentSimpleNegativeStatementVerbForm",
         data: {
-            leftSide: "They",
-            middle: "(wash)",
-            rightSide: "the car.",
+            prompt: {
+                twoSided: true,
+                leftSide: "They",
+                middle: "(wash)",
+                rightSide: "the car."
+            },
             minWordCount: 2,
             maxWordCount: 3,
             correctAuxiliars: [["do", "not"], ["don't"]],
@@ -691,9 +838,12 @@ const completePresentSimpleNegativeStatementVerbForm = [
         id: "4228bdde4d3ea1e9bab63bdb7b351369",
         type: "completePresentSimpleNegativeStatementVerbForm",
         data: {
-            leftSide: "He",
-            middle: "(finish)",
-            rightSide: "early.",
+            prompt: {
+                twoSided: true,
+                leftSide: "He",
+                middle: "(finish)",
+                rightSide: "early."
+            },
             minWordCount: 2,
             maxWordCount: 3,
             correctAuxiliars: [["does", "not"], ["doesn't"]],
@@ -705,9 +855,12 @@ const completePresentSimpleNegativeStatementVerbForm = [
         id: "8526691ddd2bfa6aecc132039747c2c1",
         type: "completePresentSimpleNegativeStatementVerbForm",
         data: {
-            leftSide: "We",
-            middle: "(travel)",
-            rightSide: "by train.",
+            prompt: {
+                twoSided: true,
+                leftSide: "We",
+                middle: "(travel)",
+                rightSide: "by train."
+            },
             minWordCount: 2,
             maxWordCount: 3,
             correctAuxiliars: [["do", "not"], ["don't"]],
@@ -719,9 +872,12 @@ const completePresentSimpleNegativeStatementVerbForm = [
         id: "fcd95aec61579774ceff125c2cb71a10",
         type: "completePresentSimpleNegativeStatementVerbForm",
         data: {
-            leftSide: "You",
-            middle: "(swim)",
-            rightSide: "in winter.",
+            prompt: {
+                twoSided: true,
+                leftSide: "You",
+                middle: "(swim)",
+                rightSide: "in winter."
+            },
             minWordCount: 2,
             maxWordCount: 3,
             correctAuxiliars: [["do", "not"], ["don't"]],
@@ -733,9 +889,12 @@ const completePresentSimpleNegativeStatementVerbForm = [
         id: "17cde676234df7b510b68131bc0d1889",
         type: "completePresentSimpleNegativeStatementVerbForm",
         data: {
-            leftSide: "She",
-            middle: "(cook)",
-            rightSide: "meat.",
+            prompt: {
+                twoSided: true,
+                leftSide: "She",
+                middle: "(cook)",
+                rightSide: "meat."
+            },
             minWordCount: 2,
             maxWordCount: 3,
             correctAuxiliars: [["does", "not"], ["doesn't"]],
@@ -747,9 +906,12 @@ const completePresentSimpleNegativeStatementVerbForm = [
         id: "99359ad0cad5f211f4b9841eaddc898f",
         type: "completePresentSimpleNegativeStatementVerbForm",
         data: {
-            leftSide: "I",
-            middle: "(dance)",
-            rightSide: "often.",
+            prompt: {
+                twoSided: true,
+                leftSide: "I",
+                middle: "(dance)",
+                rightSide: "often."
+            },
             minWordCount: 2,
             maxWordCount: 3,
             correctAuxiliars: [["do", "not"], ["don't"]],
@@ -761,9 +923,12 @@ const completePresentSimpleNegativeStatementVerbForm = [
         id: "7077a1aea5e4f2579790678109436c4d",
         type: "completePresentSimpleNegativeStatementVerbForm",
         data: {
-            leftSide: "They",
-            middle: "(listen)",
-            rightSide: "to jazz.",
+            prompt: {
+                twoSided: true,
+                leftSide: "They",
+                middle: "(listen)",
+                rightSide: "to jazz."
+            },
             minWordCount: 2,
             maxWordCount: 3,
             correctAuxiliars: [["do", "not"], ["don't"]],
@@ -775,9 +940,12 @@ const completePresentSimpleNegativeStatementVerbForm = [
         id: "8830d5587fbe318a66d92287935c62ab",
         type: "completePresentSimpleNegativeStatementVerbForm",
         data: {
-            leftSide: "He",
-            middle: "(ride)",
-            rightSide: "a bike.",
+            prompt: {
+                twoSided: true,
+                leftSide: "He",
+                middle: "(ride)",
+                rightSide: "a bike."
+            },
             minWordCount: 2,
             maxWordCount: 3,
             correctAuxiliars: [["does", "not"], ["doesn't"]],
@@ -789,9 +957,12 @@ const completePresentSimpleNegativeStatementVerbForm = [
         id: "75c48554191ed72947cbf0b67865477a",
         type: "completePresentSimpleNegativeStatementVerbForm",
         data: {
-            leftSide: "We",
-            middle: "(send)",
-            rightSide: "emails.",
+            prompt: {
+                twoSided: true,
+                leftSide: "We",
+                middle: "(send)",
+                rightSide: "emails."
+            },
             minWordCount: 2,
             maxWordCount: 3,
             correctAuxiliars: [["do", "not"], ["don't"]],
@@ -803,9 +974,12 @@ const completePresentSimpleNegativeStatementVerbForm = [
         id: "8f361b09e9b3bdf5f2ba7a5d33be9c52",
         type: "completePresentSimpleNegativeStatementVerbForm",
         data: {
-            leftSide: "She",
-            middle: "(clean)",
-            rightSide: "her room.",
+            prompt: {
+                twoSided: true,
+                leftSide: "She",
+                middle: "(clean)",
+                rightSide: "her room."
+            },
             minWordCount: 2,
             maxWordCount: 3,
             correctAuxiliars: [["does", "not"], ["doesn't"]],
@@ -817,9 +991,12 @@ const completePresentSimpleNegativeStatementVerbForm = [
         id: "9e1f5727e5cf2563fcc929529ce7e51c",
         type: "completePresentSimpleNegativeStatementVerbForm",
         data: {
-            leftSide: "I",
-            middle: "(draw)",
-            rightSide: "well.",
+            prompt: {
+                twoSided: true,
+                leftSide: "I",
+                middle: "(draw)",
+                rightSide: "well."
+            },
             minWordCount: 2,
             maxWordCount: 3,
             correctAuxiliars: [["do", "not"], ["don't"]],
@@ -831,9 +1008,12 @@ const completePresentSimpleNegativeStatementVerbForm = [
         id: "f25c01eddc4f1501f306d8703d40d114",
         type: "completePresentSimpleNegativeStatementVerbForm",
         data: {
-            leftSide: "They",
-            middle: "(build)",
-            rightSide: "houses.",
+            prompt: {
+                twoSided: true,
+                leftSide: "They",
+                middle: "(build)",
+                rightSide: "houses."
+            },
             minWordCount: 2,
             maxWordCount: 3,
             correctAuxiliars: [["do", "not"], ["don't"]],
@@ -845,9 +1025,12 @@ const completePresentSimpleNegativeStatementVerbForm = [
         id: "cc1082925e06094e81ac15d4618f235b",
         type: "completePresentSimpleNegativeStatementVerbForm",
         data: {
-            leftSide: "He",
-            middle: "(shave)",
-            rightSide: "every day.",
+            prompt: {
+                twoSided: true,
+                leftSide: "He",
+                middle: "(shave)",
+                rightSide: "every day."
+            },
             minWordCount: 2,
             maxWordCount: 3,
             correctAuxiliars: [["does", "not"], ["doesn't"]],
@@ -859,9 +1042,12 @@ const completePresentSimpleNegativeStatementVerbForm = [
         id: "f51ae0430de72873863a46a0d84f39e4",
         type: "completePresentSimpleNegativeStatementVerbForm",
         data: {
-            leftSide: "We",
-            middle: "(invite)",
-            rightSide: "strangers.",
+            prompt: {
+                twoSided: true,
+                leftSide: "We",
+                middle: "(invite)",
+                rightSide: "strangers."
+            },
             minWordCount: 2,
             maxWordCount: 3,
             correctAuxiliars: [["do", "not"], ["don't"]],
@@ -873,9 +1059,12 @@ const completePresentSimpleNegativeStatementVerbForm = [
         id: "494f82c10fa8b4d4d7a7da0bea42b614",
         type: "completePresentSimpleNegativeStatementVerbForm",
         data: {
-            leftSide: "She",
-            middle: "(close)",
-            rightSide: "the door.",
+            prompt: {
+                twoSided: true,
+                leftSide: "She",
+                middle: "(close)",
+                rightSide: "the door."
+            },
             minWordCount: 2,
             maxWordCount: 3,
             correctAuxiliars: [["does", "not"], ["doesn't"]],
@@ -887,9 +1076,12 @@ const completePresentSimpleNegativeStatementVerbForm = [
         id: "cb9fcf355ae0301577ff02a41e7ab98e",
         type: "completePresentSimpleNegativeStatementVerbForm",
         data: {
-            leftSide: "I",
-            middle: "(wait)",
-            rightSide: "for him.",
+            prompt: {
+                twoSided: true,
+                leftSide: "I",
+                middle: "(wait)",
+                rightSide: "for him."
+            },
             minWordCount: 2,
             maxWordCount: 3,
             correctAuxiliars: [["do", "not"], ["don't"]],
@@ -901,9 +1093,12 @@ const completePresentSimpleNegativeStatementVerbForm = [
         id: "684a0245ecf6823c1129be04c09d8642",
         type: "completePresentSimpleNegativeStatementVerbForm",
         data: {
-            leftSide: "They",
-            middle: "(share)",
-            rightSide: "their food.",
+            prompt: {
+                twoSided: true,
+                leftSide: "They",
+                middle: "(share)",
+                rightSide: "their food."
+            },
             minWordCount: 2,
             maxWordCount: 3,
             correctAuxiliars: [["do", "not"], ["don't"]],
@@ -915,9 +1110,12 @@ const completePresentSimpleNegativeStatementVerbForm = [
         id: "c874972c5f45b9172e5cdabfb5cd45ed",
         type: "completePresentSimpleNegativeStatementVerbForm",
         data: {
-            leftSide: "He",
-            middle: "(drive)",
-            rightSide: "to work.",
+            prompt: {
+                twoSided: true,
+                leftSide: "He",
+                middle: "(drive)",
+                rightSide: "to work."
+            },
             minWordCount: 2,
             maxWordCount: 3,
             correctAuxiliars: [["does", "not"], ["doesn't"]],
@@ -929,9 +1127,12 @@ const completePresentSimpleNegativeStatementVerbForm = [
         id: "15a62e5dd0ea4aa1d8bec00ed60182ee",
         type: "completePresentSimpleNegativeStatementVerbForm",
         data: {
-            leftSide: "We",
-            middle: "(join)",
-            rightSide: "the club.",
+            prompt: {
+                twoSided: true,
+                leftSide: "We",
+                middle: "(join)",
+                rightSide: "the club."
+            },
             minWordCount: 2,
             maxWordCount: 3,
             correctAuxiliars: [["do", "not"], ["don't"]],
@@ -943,9 +1144,12 @@ const completePresentSimpleNegativeStatementVerbForm = [
         id: "25f9c3e2d8cf08b93d6ca31b4b465643",
         type: "completePresentSimpleNegativeStatementVerbForm",
         data: {
-            leftSide: "She",
-            middle: "(open)",
-            rightSide: "the shop.",
+            prompt: {
+                twoSided: true,
+                leftSide: "She",
+                middle: "(open)",
+                rightSide: "the shop."
+            },
             minWordCount: 2,
             maxWordCount: 3,
             correctAuxiliars: [["does", "not"], ["doesn't"]],
@@ -957,9 +1161,12 @@ const completePresentSimpleNegativeStatementVerbForm = [
         id: "7575d5de9e1bf70272f8fded6b94c6bf",
         type: "completePresentSimpleNegativeStatementVerbForm",
         data: {
-            leftSide: "I",
-            middle: "(pay)",
-            rightSide: "tax.",
+            prompt: {
+                twoSided: true,
+                leftSide: "I",
+                middle: "(pay)",
+                rightSide: "tax."
+            },
             minWordCount: 2,
             maxWordCount: 3,
             correctAuxiliars: [["do", "not"], ["don't"]],
@@ -971,9 +1178,12 @@ const completePresentSimpleNegativeStatementVerbForm = [
         id: "cd7c7fb081dd43720e2cd0772828377b",
         type: "completePresentSimpleNegativeStatementVerbForm",
         data: {
-            leftSide: "They",
-            middle: "(stay)",
-            rightSide: "at hotels.",
+            prompt: {
+                twoSided: true,
+                leftSide: "They",
+                middle: "(stay)",
+                rightSide: "at hotels."
+            },
             minWordCount: 2,
             maxWordCount: 3,
             correctAuxiliars: [["do", "not"], ["don't"]],
@@ -985,9 +1195,12 @@ const completePresentSimpleNegativeStatementVerbForm = [
         id: "e871cf3ac6fa7ed7cc9123d09a0edb24",
         type: "completePresentSimpleNegativeStatementVerbForm",
         data: {
-            leftSide: "He",
-            middle: "(sit)",
-            rightSide: "in the front.",
+            prompt: {
+                twoSided: true,
+                leftSide: "He",
+                middle: "(sit)",
+                rightSide: "in the front."
+            },
             minWordCount: 2,
             maxWordCount: 3,
             correctAuxiliars: [["does", "not"], ["doesn't"]],
@@ -999,9 +1212,12 @@ const completePresentSimpleNegativeStatementVerbForm = [
         id: "ba02714f9ee9c6074b37135dd9ede794",
         type: "completePresentSimpleNegativeStatementVerbForm",
         data: {
-            leftSide: "We",
-            middle: "(promise)",
-            rightSide: "anything.",
+            prompt: {
+                twoSided: true,
+                leftSide: "We",
+                middle: "(promise)",
+                rightSide: "anything."
+            },
             minWordCount: 2,
             maxWordCount: 3,
             correctAuxiliars: [["do", "not"], ["don't"]],
@@ -1013,9 +1229,12 @@ const completePresentSimpleNegativeStatementVerbForm = [
         id: "4640820f509427eb2de5a232bf00d2f3",
         type: "completePresentSimpleNegativeStatementVerbForm",
         data: {
-            leftSide: "She",
-            middle: "(paint)",
-            rightSide: "landscapes.",
+            prompt: {
+                twoSided: true,
+                leftSide: "She",
+                middle: "(paint)",
+                rightSide: "landscapes."
+            },
             minWordCount: 2,
             maxWordCount: 3,
             correctAuxiliars: [["does", "not"], ["doesn't"]],
@@ -1027,9 +1246,12 @@ const completePresentSimpleNegativeStatementVerbForm = [
         id: "c708de6a4476430477dd83d4e9e0361c",
         type: "completePresentSimpleNegativeStatementVerbForm",
         data: {
-            leftSide: "I",
-            middle: "(agree)",
-            rightSide: "with you.",
+            prompt: {
+                twoSided: true,
+                leftSide: "I",
+                middle: "(agree)",
+                rightSide: "with you."
+            },
             minWordCount: 2,
             maxWordCount: 3,
             correctAuxiliars: [["do", "not"], ["don't"]],
@@ -1041,9 +1263,12 @@ const completePresentSimpleNegativeStatementVerbForm = [
         id: "785575a519f519cbe0456b964cac9510",
         type: "completePresentSimpleNegativeStatementVerbForm",
         data: {
-            leftSide: "They",
-            middle: "(repair)",
-            rightSide: "bikes.",
+            prompt: {
+                twoSided: true,
+                leftSide: "They",
+                middle: "(repair)",
+                rightSide: "bikes."
+            },
             minWordCount: 2,
             maxWordCount: 3,
             correctAuxiliars: [["do", "not"], ["don't"]],
@@ -1055,9 +1280,12 @@ const completePresentSimpleNegativeStatementVerbForm = [
         id: "074d6942121da7d7ea46a51410ac9169",
         type: "completePresentSimpleNegativeStatementVerbForm",
         data: {
-            leftSide: "He",
-            middle: "(laugh)",
-            rightSide: "at jokes.",
+            prompt: {
+                twoSided: true,
+                leftSide: "He",
+                middle: "(laugh)",
+                rightSide: "at jokes."
+            },
             minWordCount: 2,
             maxWordCount: 3,
             correctAuxiliars: [["does", "not"], ["doesn't"]],
@@ -1069,9 +1297,12 @@ const completePresentSimpleNegativeStatementVerbForm = [
         id: "9cad9b9e8614e4d65a5712010eabbfb7",
         type: "completePresentSimpleNegativeStatementVerbForm",
         data: {
-            leftSide: "We",
-            middle: "(push)",
-            rightSide: "the door.",
+            prompt: {
+                twoSided: true,
+                leftSide: "We",
+                middle: "(push)",
+                rightSide: "the door."
+            },
             minWordCount: 2,
             maxWordCount: 3,
             correctAuxiliars: [["do", "not"], ["don't"]],
@@ -1083,9 +1314,12 @@ const completePresentSimpleNegativeStatementVerbForm = [
         id: "5a00c78b0ed0a397df45874a51408fba",
         type: "completePresentSimpleNegativeStatementVerbForm",
         data: {
-            leftSide: "She",
-            middle: "(pull)",
-            rightSide: "the lever.",
+            prompt: {
+                twoSided: true,
+                leftSide: "She",
+                middle: "(pull)",
+                rightSide: "the lever."
+            },
             minWordCount: 2,
             maxWordCount: 3,
             correctAuxiliars: [["does", "not"], ["doesn't"]],
@@ -1097,9 +1331,12 @@ const completePresentSimpleNegativeStatementVerbForm = [
         id: "921a03e7114c9294f948f02d050727e7",
         type: "completePresentSimpleNegativeStatementVerbForm",
         data: {
-            leftSide: "I",
-            middle: "(ask)",
-            rightSide: "questions.",
+            prompt: {
+                twoSided: true,
+                leftSide: "I",
+                middle: "(ask)",
+                rightSide: "questions."
+            },
             minWordCount: 2,
             maxWordCount: 3,
             correctAuxiliars: [["do", "not"], ["don't"]],
@@ -1111,9 +1348,12 @@ const completePresentSimpleNegativeStatementVerbForm = [
         id: "1960156101c960381df7698bbf2ea8fb",
         type: "completePresentSimpleNegativeStatementVerbForm",
         data: {
-            leftSide: "They",
-            middle: "(shout)",
-            rightSide: "at me.",
+            prompt: {
+                twoSided: true,
+                leftSide: "They",
+                middle: "(shout)",
+                rightSide: "at me."
+            },
             minWordCount: 2,
             maxWordCount: 3,
             correctAuxiliars: [["do", "not"], ["don't"]],
@@ -1125,9 +1365,12 @@ const completePresentSimpleNegativeStatementVerbForm = [
         id: "f5fe8783613c9e20721426f9a89edcf6",
         type: "completePresentSimpleNegativeStatementVerbForm",
         data: {
-            leftSide: "He",
-            middle: "(answer)",
-            rightSide: "the phone.",
+            prompt: {
+                twoSided: true,
+                leftSide: "He",
+                middle: "(answer)",
+                rightSide: "the phone."
+            },
             minWordCount: 2,
             maxWordCount: 3,
             correctAuxiliars: [["does", "not"], ["doesn't"]],
@@ -1139,9 +1382,12 @@ const completePresentSimpleNegativeStatementVerbForm = [
         id: "43944aeba5df941b564e2ddb5d041715",
         type: "completePresentSimpleNegativeStatementVerbForm",
         data: {
-            leftSide: "We",
-            middle: "(follow)",
-            rightSide: "the rules.",
+            prompt: {
+                twoSided: true,
+                leftSide: "We",
+                middle: "(follow)",
+                rightSide: "the rules."
+            },
             minWordCount: 2,
             maxWordCount: 3,
             correctAuxiliars: [["do", "not"], ["don't"]],
@@ -1153,9 +1399,12 @@ const completePresentSimpleNegativeStatementVerbForm = [
         id: "460f50784cbf13e53bd70c945b4365b4",
         type: "completePresentSimpleNegativeStatementVerbForm",
         data: {
-            leftSide: "She",
-            middle: "(visit)",
-            rightSide: "museums.",
+            prompt: {
+                twoSided: true,
+                leftSide: "She",
+                middle: "(visit)",
+                rightSide: "museums."
+            },
             minWordCount: 2,
             maxWordCount: 3,
             correctAuxiliars: [["does", "not"], ["doesn't"]],
@@ -1167,9 +1416,12 @@ const completePresentSimpleNegativeStatementVerbForm = [
         id: "ededd4741fbb4f0c21aa7ab6dfb16109",
         type: "completePresentSimpleNegativeStatementVerbForm",
         data: {
-            leftSide: "I",
-            middle: "(climb)",
-            rightSide: "mountains.",
+            prompt: {
+                twoSided: true,
+                leftSide: "I",
+                middle: "(climb)",
+                rightSide: "mountains."
+            },
             minWordCount: 2,
             maxWordCount: 3,
             correctAuxiliars: [["do", "not"], ["don't"]],
@@ -1181,9 +1433,12 @@ const completePresentSimpleNegativeStatementVerbForm = [
         id: "8d0a2e6032e6503b747c11aef512e40b",
         type: "completePresentSimpleNegativeStatementVerbForm",
         data: {
-            leftSide: "They",
-            middle: "(collect)",
-            rightSide: "stamps.",
+            prompt: {
+                twoSided: true,
+                leftSide: "They",
+                middle: "(collect)",
+                rightSide: "stamps."
+            },
             minWordCount: 2,
             maxWordCount: 3,
             correctAuxiliars: [["do", "not"], ["don't"]],
@@ -1195,9 +1450,12 @@ const completePresentSimpleNegativeStatementVerbForm = [
         id: "5f64e1d98483d7c5dd38fe854253130e",
         type: "completePresentSimpleNegativeStatementVerbForm",
         data: {
-            leftSide: "He",
-            middle: "(marry)",
-            rightSide: "her.",
+            prompt: {
+                twoSided: true,
+                leftSide: "He",
+                middle: "(marry)",
+                rightSide: "her."
+            },
             minWordCount: 2,
             maxWordCount: 3,
             correctAuxiliars: [["does", "not"], ["doesn't"]],
@@ -1209,9 +1467,12 @@ const completePresentSimpleNegativeStatementVerbForm = [
         id: "a077fcba2b2b94f44ec149db38413081",
         type: "completePresentSimpleNegativeStatementVerbForm",
         data: {
-            leftSide: "We",
-            middle: "(order)",
-            rightSide: "pizza.",
+            prompt: {
+                twoSided: true,
+                leftSide: "We",
+                middle: "(order)",
+                rightSide: "pizza."
+            },
             minWordCount: 2,
             maxWordCount: 3,
             correctAuxiliars: [["do", "not"], ["don't"]],
@@ -1223,9 +1484,12 @@ const completePresentSimpleNegativeStatementVerbForm = [
         id: "e0694d4c95350f42280bd07f2bfb7ed6",
         type: "completePresentSimpleNegativeStatementVerbForm",
         data: {
-            leftSide: "She",
-            middle: "(borrow)",
-            rightSide: "money.",
+            prompt: {
+                twoSided: true,
+                leftSide: "She",
+                middle: "(borrow)",
+                rightSide: "money."
+            },
             minWordCount: 2,
             maxWordCount: 3,
             correctAuxiliars: [["does", "not"], ["doesn't"]],
@@ -1237,9 +1501,12 @@ const completePresentSimpleNegativeStatementVerbForm = [
         id: "837b2912f290968d5106fd0c6605b218",
         type: "completePresentSimpleNegativeStatementVerbForm",
         data: {
-            leftSide: "I",
-            middle: "(prefer)",
-            rightSide: "tea.",
+            prompt: {
+                twoSided: true,
+                leftSide: "I",
+                middle: "(prefer)",
+                rightSide: "tea."
+            },
             minWordCount: 2,
             maxWordCount: 3,
             correctAuxiliars: [["do", "not"], ["don't"]],
@@ -1251,9 +1518,12 @@ const completePresentSimpleNegativeStatementVerbForm = [
         id: "67de3d21ac2c7651b4f60d01c24bbbc5",
         type: "completePresentSimpleNegativeStatementVerbForm",
         data: {
-            leftSide: "They",
-            middle: "(save)",
-            rightSide: "money.",
+            prompt: {
+                twoSided: true,
+                leftSide: "They",
+                middle: "(save)",
+                rightSide: "money."
+            },
             minWordCount: 2,
             maxWordCount: 3,
             correctAuxiliars: [["do", "not"], ["don't"]],
@@ -1265,9 +1535,12 @@ const completePresentSimpleNegativeStatementVerbForm = [
         id: "cbf0a0396723c038003b0eadb45d1782",
         type: "completePresentSimpleNegativeStatementVerbForm",
         data: {
-            leftSide: "He",
-            middle: "(print)",
-            rightSide: "the photos.",
+            prompt: {
+                twoSided: true,
+                leftSide: "He",
+                middle: "(print)",
+                rightSide: "the photos."
+            },
             minWordCount: 2,
             maxWordCount: 3,
             correctAuxiliars: [["does", "not"], ["doesn't"]],
@@ -1279,9 +1552,12 @@ const completePresentSimpleNegativeStatementVerbForm = [
         id: "846fec43693598f6946aea36e531faa7",
         type: "completePresentSimpleNegativeStatementVerbForm",
         data: {
-            leftSide: "We",
-            middle: "(hate)",
-            rightSide: "waiting.",
+            prompt: {
+                twoSided: true,
+                leftSide: "We",
+                middle: "(hate)",
+                rightSide: "waiting."
+            },
             minWordCount: 2,
             maxWordCount: 3,
             correctAuxiliars: [["do", "not"], ["don't"]],
@@ -1293,9 +1569,12 @@ const completePresentSimpleNegativeStatementVerbForm = [
         id: "f94c7ceac6fcdb64f29a9cca8666ab10",
         type: "completePresentSimpleNegativeStatementVerbForm",
         data: {
-            leftSide: "She",
-            middle: "(laugh)",
-            rightSide: "much.",
+            prompt: {
+                twoSided: true,
+                leftSide: "She",
+                middle: "(laugh)",
+                rightSide: "much."
+            },
             minWordCount: 2,
             maxWordCount: 3,
             correctAuxiliars: [["does", "not"], ["doesn't"]],
@@ -1307,9 +1586,12 @@ const completePresentSimpleNegativeStatementVerbForm = [
         id: "841a499b5b30487d86c6e95f02457e48",
         type: "completePresentSimpleNegativeStatementVerbForm",
         data: {
-            leftSide: "I",
-            middle: "(cry)",
-            rightSide: "in public.",
+            prompt: {
+                twoSided: true,
+                leftSide: "I",
+                middle: "(cry)",
+                rightSide: "in public."
+            },
             minWordCount: 2,
             maxWordCount: 3,
             correctAuxiliars: [["do", "not"], ["don't"]],
@@ -1321,9 +1603,12 @@ const completePresentSimpleNegativeStatementVerbForm = [
         id: "2d4169535c20f82049fec08b6dfa5cda",
         type: "completePresentSimpleNegativeStatementVerbForm",
         data: {
-            leftSide: "They",
-            middle: "(try)",
-            rightSide: "hard.",
+            prompt: {
+                twoSided: true,
+                leftSide: "They",
+                middle: "(try)",
+                rightSide: "hard."
+            },
             minWordCount: 2,
             maxWordCount: 3,
             correctAuxiliars: [["do", "not"], ["don't"]],
@@ -1335,9 +1620,12 @@ const completePresentSimpleNegativeStatementVerbForm = [
         id: "eb587bd456141eb0ef47ce2c5f1cc54a",
         type: "completePresentSimpleNegativeStatementVerbForm",
         data: {
-            leftSide: "He",
-            middle: "(fix)",
-            rightSide: "cars.",
+            prompt: {
+                twoSided: true,
+                leftSide: "He",
+                middle: "(fix)",
+                rightSide: "cars."
+            },
             minWordCount: 2,
             maxWordCount: 3,
             correctAuxiliars: [["does", "not"], ["doesn't"]],
@@ -1349,9 +1637,12 @@ const completePresentSimpleNegativeStatementVerbForm = [
         id: "4cd123a0fd8fc15877015419828667fc",
         type: "completePresentSimpleNegativeStatementVerbForm",
         data: {
-            leftSide: "We",
-            middle: "(guess)",
-            rightSide: "the answer.",
+            prompt: {
+                twoSided: true,
+                leftSide: "We",
+                middle: "(guess)",
+                rightSide: "the answer."
+            },
             minWordCount: 2,
             maxWordCount: 3,
             correctAuxiliars: [["do", "not"], ["don't"]],
@@ -1363,9 +1654,12 @@ const completePresentSimpleNegativeStatementVerbForm = [
         id: "1f65dea8ab1210664a67190d5fc14ba0",
         type: "completePresentSimpleNegativeStatementVerbForm",
         data: {
-            leftSide: "She",
-            middle: "(pass)",
-            rightSide: "exams.",
+            prompt: {
+                twoSided: true,
+                leftSide: "She",
+                middle: "(pass)",
+                rightSide: "exams."
+            },
             minWordCount: 2,
             maxWordCount: 3,
             correctAuxiliars: [["does", "not"], ["doesn't"]],
@@ -1377,9 +1671,12 @@ const completePresentSimpleNegativeStatementVerbForm = [
         id: "318a6f95659ba490b2c6eeb50b07397a",
         type: "completePresentSimpleNegativeStatementVerbForm",
         data: {
-            leftSide: "I",
-            middle: "(touch)",
-            rightSide: "that.",
+            prompt: {
+                twoSided: true,
+                leftSide: "I",
+                middle: "(touch)",
+                rightSide: "that."
+            },
             minWordCount: 2,
             maxWordCount: 3,
             correctAuxiliars: [["do", "not"], ["don't"]],
@@ -1391,9 +1688,12 @@ const completePresentSimpleNegativeStatementVerbForm = [
         id: "0a81353ba2de09f3dff64acbb52db366",
         type: "completePresentSimpleNegativeStatementVerbForm",
         data: {
-            leftSide: "They",
-            middle: "(cross)",
-            rightSide: "the street.",
+            prompt: {
+                twoSided: true,
+                leftSide: "They",
+                middle: "(cross)",
+                rightSide: "the street."
+            },
             minWordCount: 2,
             maxWordCount: 3,
             correctAuxiliars: [["do", "not"], ["don't"]],

@@ -5,9 +5,12 @@ const completeFutureToBeNegativeStatementVerbForm = [
         id: "1ef4aa30d238acd200ef90205aee7b2b",
         type: "completeFutureToBeNegativeStatementVerbForm",
         data: {
-            leftSide: "I",
-            middle: "(to be)",
-            rightSide: "a student.",
+            prompt: {
+                twoSided: true,
+                leftSide: "I",
+                middle: "(to be)",
+                rightSide: "a student."
+            },
             correctForms: [
                 ["will", "not", "be"],
                 ["won't", "be"],
@@ -21,9 +24,12 @@ const completeFutureToBeNegativeStatementVerbForm = [
         id: "9c5b43d9a8064a5a6a840b72b3795f25",
         type: "completeFutureToBeNegativeStatementVerbForm",
         data: {
-            leftSide: "He",
-            middle: "(to be)",
-            rightSide: "at the gym.",
+            prompt: {
+                twoSided: true,
+                leftSide: "He",
+                middle: "(to be)",
+                rightSide: "at the gym."
+            },
             correctForms: [
                 ["will", "not", "be"],
                 ["won't", "be"],
@@ -37,9 +43,12 @@ const completeFutureToBeNegativeStatementVerbForm = [
         id: "6c0eded4c6cedabb32ce55bbcfbeb006",
         type: "completeFutureToBeNegativeStatementVerbForm",
         data: {
-            leftSide: "They",
-            middle: "(to be)",
-            rightSide: "very loud.",
+            prompt: {
+                twoSided: true,
+                leftSide: "They",
+                middle: "(to be)",
+                rightSide: "very loud."
+            },
             correctForms: [
                 ["will", "not", "be"],
                 ["won't", "be"],
@@ -58,9 +67,12 @@ const completeFutureToBeNegativeStatementVerbForm = [
         id: "32fcb571b4e474eb48b8c261919d4eea",
         type: "completeFutureToBeNegativeStatementVerbForm",
         data: {
-            leftSide: "She",
-            middle: "(to be)",
-            rightSide: "tired.",
+            prompt: {
+                twoSided: true,
+                leftSide: "She",
+                middle: "(to be)",
+                rightSide: "tired."
+            },
             correctForms: [
                 ["will", "not", "be"],
                 ["won't", "be"],
@@ -74,9 +86,12 @@ const completeFutureToBeNegativeStatementVerbForm = [
         id: "b99d8d4ed030906cf8ddb34107071d07",
         type: "completeFutureToBeNegativeStatementVerbForm",
         data: {
-            leftSide: "We",
-            middle: "(to be)",
-            rightSide: "in Rome.",
+            prompt: {
+                twoSided: true,
+                leftSide: "We",
+                middle: "(to be)",
+                rightSide: "in Rome."
+            },
             correctForms: [
                 ["will", "not", "be"],
                 ["won't", "be"],
@@ -90,9 +105,12 @@ const completeFutureToBeNegativeStatementVerbForm = [
         id: "b79072edfb07384cf3d42cab3646bef5",
         type: "completeFutureToBeNegativeStatementVerbForm",
         data: {
-            leftSide: "It",
-            middle: "(to be)",
-            rightSide: "sunny.",
+            prompt: {
+                twoSided: true,
+                leftSide: "It",
+                middle: "(to be)",
+                rightSide: "sunny."
+            },
             correctForms: [
                 ["will", "not", "be"],
                 ["won't", "be"],
@@ -106,9 +124,12 @@ const completeFutureToBeNegativeStatementVerbForm = [
         id: "e15f63e25cff4f11d9e69b84d1891b58",
         type: "completeFutureToBeNegativeStatementVerbForm",
         data: {
-            leftSide: "You",
-            middle: "(to be)",
-            rightSide: "late.",
+            prompt: {
+                twoSided: true,
+                leftSide: "You",
+                middle: "(to be)",
+                rightSide: "late."
+            },
             correctForms: [
                 ["will", "not", "be"],
                 ["won't", "be"],
@@ -122,9 +143,12 @@ const completeFutureToBeNegativeStatementVerbForm = [
         id: "0467d03dc9fadb9ea11103e08bc2de3a",
         type: "completeFutureToBeNegativeStatementVerbForm",
         data: {
-            leftSide: "The cat",
-            middle: "(to be)",
-            rightSide: "hungry.",
+            prompt: {
+                twoSided: true,
+                leftSide: "The cat",
+                middle: "(to be)",
+                rightSide: "hungry."
+            },
             correctForms: [
                 ["will", "not", "be"],
                 ["won't", "be"],
@@ -138,9 +162,12 @@ const completeFutureToBeNegativeStatementVerbForm = [
         id: "5c261bc9809cc4161609523b015d1fa2",
         type: "completeFutureToBeNegativeStatementVerbForm",
         data: {
-            leftSide: "The trees",
-            middle: "(to be)",
-            rightSide: "tall.",
+            prompt: {
+                twoSided: true,
+                leftSide: "The trees",
+                middle: "(to be)",
+                rightSide: "tall."
+            },
             correctForms: [
                 ["will", "not", "be"],
                 ["won't", "be"],
@@ -154,9 +181,12 @@ const completeFutureToBeNegativeStatementVerbForm = [
         id: "a259beae2af108d836a5aa73bb76ccac",
         type: "completeFutureToBeNegativeStatementVerbForm",
         data: {
-            leftSide: "I",
-            middle: "(to be)",
-            rightSide: "happy.",
+            prompt: {
+                twoSided: true,
+                leftSide: "I",
+                middle: "(to be)",
+                rightSide: "happy."
+            },
             correctForms: [
                 ["will", "not", "be"],
                 ["won't", "be"],
@@ -170,9 +200,12 @@ const completeFutureToBeNegativeStatementVerbForm = [
         id: "8353547f5a6ab11fea9414d7f5eda6a1",
         type: "completeFutureToBeNegativeStatementVerbForm",
         data: {
-            leftSide: "The movie",
-            middle: "(to be)",
-            rightSide: "scary.",
+            prompt: {
+                twoSided: true,
+                leftSide: "The movie",
+                middle: "(to be)",
+                rightSide: "scary."
+            },
             correctForms: [
                 ["will", "not", "be"],
                 ["won't", "be"],
@@ -186,9 +219,12 @@ const completeFutureToBeNegativeStatementVerbForm = [
         id: "63ec261d22e936f6364d0f59dc1eaa44",
         type: "completeFutureToBeNegativeStatementVerbForm",
         data: {
-            leftSide: "The apples",
-            middle: "(to be)",
-            rightSide: "sour.",
+            prompt: {
+                twoSided: true,
+                leftSide: "The apples",
+                middle: "(to be)",
+                rightSide: "sour."
+            },
             correctForms: [
                 ["will", "not", "be"],
                 ["won't", "be"],
@@ -202,9 +238,12 @@ const completeFutureToBeNegativeStatementVerbForm = [
         id: "b2b494465e290a852ff407d6337848fd",
         type: "completeFutureToBeNegativeStatementVerbForm",
         data: {
-            leftSide: "My dad",
-            middle: "(to be)",
-            rightSide: "a pilot.",
+            prompt: {
+                twoSided: true,
+                leftSide: "My dad",
+                middle: "(to be)",
+                rightSide: "a pilot."
+            },
             correctForms: [
                 ["will", "not", "be"],
                 ["won't", "be"],
@@ -218,9 +257,12 @@ const completeFutureToBeNegativeStatementVerbForm = [
         id: "d5d7f2702193842002e1aeb7127ba53b",
         type: "completeFutureToBeNegativeStatementVerbForm",
         data: {
-            leftSide: "Our friends",
-            middle: "(to be)",
-            rightSide: "outside.",
+            prompt: {
+                twoSided: true,
+                leftSide: "Our friends",
+                middle: "(to be)",
+                rightSide: "outside."
+            },
             correctForms: [
                 ["will", "not", "be"],
                 ["won't", "be"],
@@ -234,9 +276,12 @@ const completeFutureToBeNegativeStatementVerbForm = [
         id: "d3721314cac5d10ec0387db403b3b278",
         type: "completeFutureToBeNegativeStatementVerbForm",
         data: {
-            leftSide: "The coffee",
-            middle: "(to be)",
-            rightSide: "cold.",
+            prompt: {
+                twoSided: true,
+                leftSide: "The coffee",
+                middle: "(to be)",
+                rightSide: "cold."
+            },
             correctForms: [
                 ["will", "not", "be"],
                 ["won't", "be"],
@@ -250,9 +295,12 @@ const completeFutureToBeNegativeStatementVerbForm = [
         id: "68bb9494965323e17292bebd92108470",
         type: "completeFutureToBeNegativeStatementVerbForm",
         data: {
-            leftSide: "You",
-            middle: "(to be)",
-            rightSide: "helpful.",
+            prompt: {
+                twoSided: true,
+                leftSide: "You",
+                middle: "(to be)",
+                rightSide: "helpful."
+            },
             correctForms: [
                 ["will", "not", "be"],
                 ["won't", "be"],
@@ -266,9 +314,12 @@ const completeFutureToBeNegativeStatementVerbForm = [
         id: "ed2cda38ddda3ab99fffc312f38acfa5",
         type: "completeFutureToBeNegativeStatementVerbForm",
         data: {
-            leftSide: "The sky",
-            middle: "(to be)",
-            rightSide: "dark.",
+            prompt: {
+                twoSided: true,
+                leftSide: "The sky",
+                middle: "(to be)",
+                rightSide: "dark."
+            },
             correctForms: [
                 ["will", "not", "be"],
                 ["won't", "be"],
@@ -282,9 +333,12 @@ const completeFutureToBeNegativeStatementVerbForm = [
         id: "c35127b9644ddbf2ad1541edbfbab19d",
         type: "completeFutureToBeNegativeStatementVerbForm",
         data: {
-            leftSide: "They",
-            middle: "(to be)",
-            rightSide: "rich.",
+            prompt: {
+                twoSided: true,
+                leftSide: "They",
+                middle: "(to be)",
+                rightSide: "rich."
+            },
             correctForms: [
                 ["will", "not", "be"],
                 ["won't", "be"],
@@ -298,9 +352,12 @@ const completeFutureToBeNegativeStatementVerbForm = [
         id: "ba0bf9bd7b4d3be97295c59d91ca83e9",
         type: "completeFutureToBeNegativeStatementVerbForm",
         data: {
-            leftSide: "She",
-            middle: "(to be)",
-            rightSide: "an artist.",
+            prompt: {
+                twoSided: true,
+                leftSide: "She",
+                middle: "(to be)",
+                rightSide: "an artist."
+            },
             correctForms: [
                 ["will", "not", "be"],
                 ["won't", "be"],
@@ -314,9 +371,12 @@ const completeFutureToBeNegativeStatementVerbForm = [
         id: "99470285df30f3170e11d795a7c1dd31",
         type: "completeFutureToBeNegativeStatementVerbForm",
         data: {
-            leftSide: "I",
-            middle: "(to be)",
-            rightSide: "ready.",
+            prompt: {
+                twoSided: true,
+                leftSide: "I",
+                middle: "(to be)",
+                rightSide: "ready."
+            },
             correctForms: [
                 ["will", "not", "be"],
                 ["won't", "be"],
@@ -330,9 +390,12 @@ const completeFutureToBeNegativeStatementVerbForm = [
         id: "b60518a20ea57fd3fb577802eec97e6d",
         type: "completeFutureToBeNegativeStatementVerbForm",
         data: {
-            leftSide: "The window",
-            middle: "(to be)",
-            rightSide: "broken.",
+            prompt: {
+                twoSided: true,
+                leftSide: "The window",
+                middle: "(to be)",
+                rightSide: "broken."
+            },
             correctForms: [
                 ["will", "not", "be"],
                 ["won't", "be"],
@@ -346,9 +409,12 @@ const completeFutureToBeNegativeStatementVerbForm = [
         id: "5b4c0d37b2e378190ac95b8710889799",
         type: "completeFutureToBeNegativeStatementVerbForm",
         data: {
-            leftSide: "We",
-            middle: "(to be)",
-            rightSide: "thirsty.",
+            prompt: {
+                twoSided: true,
+                leftSide: "We",
+                middle: "(to be)",
+                rightSide: "thirsty."
+            },
             correctForms: [
                 ["will", "not", "be"],
                 ["won't", "be"],
@@ -362,9 +428,12 @@ const completeFutureToBeNegativeStatementVerbForm = [
         id: "164794ed5c21a302cd756f3312c059e7",
         type: "completeFutureToBeNegativeStatementVerbForm",
         data: {
-            leftSide: "The water",
-            middle: "(to be)",
-            rightSide: "freezing.",
+            prompt: {
+                twoSided: true,
+                leftSide: "The water",
+                middle: "(to be)",
+                rightSide: "freezing."
+            },
             correctForms: [
                 ["will", "not", "be"],
                 ["won't", "be"],
@@ -378,9 +447,12 @@ const completeFutureToBeNegativeStatementVerbForm = [
         id: "01bcdd1de15e38ffe694629dd43710e2",
         type: "completeFutureToBeNegativeStatementVerbForm",
         data: {
-            leftSide: "You",
-            middle: "(to be)",
-            rightSide: "correct.",
+            prompt: {
+                twoSided: true,
+                leftSide: "You",
+                middle: "(to be)",
+                rightSide: "correct."
+            },
             correctForms: [
                 ["will", "not", "be"],
                 ["won't", "be"],
@@ -394,9 +466,12 @@ const completeFutureToBeNegativeStatementVerbForm = [
         id: "616ae8764661c985fd063ec22b53b189",
         type: "completeFutureToBeNegativeStatementVerbForm",
         data: {
-            leftSide: "They",
-            middle: "(to be)",
-            rightSide: "at school.",
+            prompt: {
+                twoSided: true,
+                leftSide: "They",
+                middle: "(to be)",
+                rightSide: "at school."
+            },
             correctForms: [
                 ["will", "not", "be"],
                 ["won't", "be"],
@@ -410,9 +485,12 @@ const completeFutureToBeNegativeStatementVerbForm = [
         id: "37d6d1c6301d463d6c4a0138a98958d1",
         type: "completeFutureToBeNegativeStatementVerbForm",
         data: {
-            leftSide: "It",
-            middle: "(to be)",
-            rightSide: "midnight.",
+            prompt: {
+                twoSided: true,
+                leftSide: "It",
+                middle: "(to be)",
+                rightSide: "midnight."
+            },
             correctForms: [
                 ["will", "not", "be"],
                 ["won't", "be"],
@@ -426,9 +504,12 @@ const completeFutureToBeNegativeStatementVerbForm = [
         id: "56573a904b9284062209551448eb6c2c",
         type: "completeFutureToBeNegativeStatementVerbForm",
         data: {
-            leftSide: "The building",
-            middle: "(to be)",
-            rightSide: "old.",
+            prompt: {
+                twoSided: true,
+                leftSide: "The building",
+                middle: "(to be)",
+                rightSide: "old."
+            },
             correctForms: [
                 ["will", "not", "be"],
                 ["won't", "be"],
@@ -442,9 +523,12 @@ const completeFutureToBeNegativeStatementVerbForm = [
         id: "2366742426e083ce976065aa262e4ece",
         type: "completeFutureToBeNegativeStatementVerbForm",
         data: {
-            leftSide: "We",
-            middle: "(to be)",
-            rightSide: "alone.",
+            prompt: {
+                twoSided: true,
+                leftSide: "We",
+                middle: "(to be)",
+                rightSide: "alone."
+            },
             correctForms: [
                 ["will", "not", "be"],
                 ["won't", "be"],
@@ -458,9 +542,12 @@ const completeFutureToBeNegativeStatementVerbForm = [
         id: "18d0c848f4634f88dac970540d1e41fa",
         type: "completeFutureToBeNegativeStatementVerbForm",
         data: {
-            leftSide: "I",
-            middle: "(to be)",
-            rightSide: "busy.",
+            prompt: {
+                twoSided: true,
+                leftSide: "I",
+                middle: "(to be)",
+                rightSide: "busy."
+            },
             correctForms: [
                 ["will", "not", "be"],
                 ["won't", "be"],
@@ -474,9 +561,12 @@ const completeFutureToBeNegativeStatementVerbForm = [
         id: "f4e2633fc70bbf9ceea14e1e538c2cb3",
         type: "completeFutureToBeNegativeStatementVerbForm",
         data: {
-            leftSide: "She",
-            middle: "(to be)",
-            rightSide: "kind.",
+            prompt: {
+                twoSided: true,
+                leftSide: "She",
+                middle: "(to be)",
+                rightSide: "kind."
+            },
             correctForms: [
                 ["will", "not", "be"],
                 ["won't", "be"],
@@ -490,9 +580,12 @@ const completeFutureToBeNegativeStatementVerbForm = [
         id: "7237d9c805f0ef44e739fedfedc41763",
         type: "completeFutureToBeNegativeStatementVerbForm",
         data: {
-            leftSide: "The birds",
-            middle: "(to be)",
-            rightSide: "loud.",
+            prompt: {
+                twoSided: true,
+                leftSide: "The birds",
+                middle: "(to be)",
+                rightSide: "loud."
+            },
             correctForms: [
                 ["will", "not", "be"],
                 ["won't", "be"],
@@ -506,9 +599,12 @@ const completeFutureToBeNegativeStatementVerbForm = [
         id: "c8b956b393824f2c48c2696d057174e2",
         type: "completeFutureToBeNegativeStatementVerbForm",
         data: {
-            leftSide: "It",
-            middle: "(to be)",
-            rightSide: "a mistake.",
+            prompt: {
+                twoSided: true,
+                leftSide: "It",
+                middle: "(to be)",
+                rightSide: "a mistake."
+            },
             correctForms: [
                 ["will", "not", "be"],
                 ["won't", "be"],
@@ -522,9 +618,12 @@ const completeFutureToBeNegativeStatementVerbForm = [
         id: "9d0ecbf864c850b3e2cccf5d228f3ca8",
         type: "completeFutureToBeNegativeStatementVerbForm",
         data: {
-            leftSide: "The students",
-            middle: "(to be)",
-            rightSide: "quiet.",
+            prompt: {
+                twoSided: true,
+                leftSide: "The students",
+                middle: "(to be)",
+                rightSide: "quiet."
+            },
             correctForms: [
                 ["will", "not", "be"],
                 ["won't", "be"],
@@ -538,9 +637,12 @@ const completeFutureToBeNegativeStatementVerbForm = [
         id: "0a267457a3590e0299b4409d464bbc39",
         type: "completeFutureToBeNegativeStatementVerbForm",
         data: {
-            leftSide: "The street",
-            middle: "(to be)",
-            rightSide: "empty.",
+            prompt: {
+                twoSided: true,
+                leftSide: "The street",
+                middle: "(to be)",
+                rightSide: "empty."
+            },
             correctForms: [
                 ["will", "not", "be"],
                 ["won't", "be"],
@@ -554,9 +656,12 @@ const completeFutureToBeNegativeStatementVerbForm = [
         id: "5c21c5ac7429950f8e51f7b87f4ecee7",
         type: "completeFutureToBeNegativeStatementVerbForm",
         data: {
-            leftSide: "They",
-            middle: "(to be)",
-            rightSide: "angry.",
+            prompt: {
+                twoSided: true,
+                leftSide: "They",
+                middle: "(to be)",
+                rightSide: "angry."
+            },
             correctForms: [
                 ["will", "not", "be"],
                 ["won't", "be"],
@@ -570,9 +675,12 @@ const completeFutureToBeNegativeStatementVerbForm = [
         id: "13a369b0b244f67a8c88a8e6149e2774",
         type: "completeFutureToBeNegativeStatementVerbForm",
         data: {
-            leftSide: "You",
-            middle: "(to be)",
-            rightSide: "lucky.",
+            prompt: {
+                twoSided: true,
+                leftSide: "You",
+                middle: "(to be)",
+                rightSide: "lucky."
+            },
             correctForms: [
                 ["will", "not", "be"],
                 ["won't", "be"],
@@ -586,9 +694,12 @@ const completeFutureToBeNegativeStatementVerbForm = [
         id: "cab5b4744886c16f8a8348e31536d01b",
         type: "completeFutureToBeNegativeStatementVerbForm",
         data: {
-            leftSide: "He",
-            middle: "(to be)",
-            rightSide: "afraid.",
+            prompt: {
+                twoSided: true,
+                leftSide: "He",
+                middle: "(to be)",
+                rightSide: "afraid."
+            },
             correctForms: [
                 ["will", "not", "be"],
                 ["won't", "be"],
@@ -602,9 +713,12 @@ const completeFutureToBeNegativeStatementVerbForm = [
         id: "56999d84a03b21066f1c3938a119dfa4",
         type: "completeFutureToBeNegativeStatementVerbForm",
         data: {
-            leftSide: "I",
-            middle: "(to be)",
-            rightSide: "from Spain.",
+            prompt: {
+                twoSided: true,
+                leftSide: "I",
+                middle: "(to be)",
+                rightSide: "from Spain."
+            },
             correctForms: [
                 ["will", "not", "be"],
                 ["won't", "be"],
@@ -618,9 +732,12 @@ const completeFutureToBeNegativeStatementVerbForm = [
         id: "fc60947aae80062fde77fbcd6c32dd9d",
         type: "completeFutureToBeNegativeStatementVerbForm",
         data: {
-            leftSide: "The box",
-            middle: "(to be)",
-            rightSide: "heavy.",
+            prompt: {
+                twoSided: true,
+                leftSide: "The box",
+                middle: "(to be)",
+                rightSide: "heavy."
+            },
             correctForms: [
                 ["will", "not", "be"],
                 ["won't", "be"],
@@ -634,9 +751,12 @@ const completeFutureToBeNegativeStatementVerbForm = [
         id: "05479bab8aaea8ddf7f566049fca1d56",
         type: "completeFutureToBeNegativeStatementVerbForm",
         data: {
-            leftSide: "We",
-            middle: "(to be)",
-            rightSide: "excited.",
+            prompt: {
+                twoSided: true,
+                leftSide: "We",
+                middle: "(to be)",
+                rightSide: "excited."
+            },
             correctForms: [
                 ["will", "not", "be"],
                 ["won't", "be"],
@@ -650,9 +770,12 @@ const completeFutureToBeNegativeStatementVerbForm = [
         id: "de8b7651978c94c8913fc06bce6b472e",
         type: "completeFutureToBeNegativeStatementVerbForm",
         data: {
-            leftSide: "The cake",
-            middle: "(to be)",
-            rightSide: "yummy.",
+            prompt: {
+                twoSided: true,
+                leftSide: "The cake",
+                middle: "(to be)",
+                rightSide: "yummy."
+            },
             correctForms: [
                 ["will", "not", "be"],
                 ["won't", "be"],
@@ -666,9 +789,12 @@ const completeFutureToBeNegativeStatementVerbForm = [
         id: "524c8efac99c49a638872305a6d96ca0",
         type: "completeFutureToBeNegativeStatementVerbForm",
         data: {
-            leftSide: "You",
-            middle: "(to be)",
-            rightSide: "my partner.",
+            prompt: {
+                twoSided: true,
+                leftSide: "You",
+                middle: "(to be)",
+                rightSide: "my partner."
+            },
             correctForms: [
                 ["will", "not", "be"],
                 ["won't", "be"],
@@ -682,9 +808,12 @@ const completeFutureToBeNegativeStatementVerbForm = [
         id: "a585946717127c8cf501d4f5de8d61b5",
         type: "completeFutureToBeNegativeStatementVerbForm",
         data: {
-            leftSide: "They",
-            middle: "(to be)",
-            rightSide: "at the library.",
+            prompt: {
+                twoSided: true,
+                leftSide: "They",
+                middle: "(to be)",
+                rightSide: "at the library."
+            },
             correctForms: [
                 ["will", "not", "be"],
                 ["won't", "be"],
@@ -698,9 +827,12 @@ const completeFutureToBeNegativeStatementVerbForm = [
         id: "4774eeb53b4f5bc325a795c1c7979969",
         type: "completeFutureToBeNegativeStatementVerbForm",
         data: {
-            leftSide: "The sun",
-            middle: "(to be)",
-            rightSide: "bright.",
+            prompt: {
+                twoSided: true,
+                leftSide: "The sun",
+                middle: "(to be)",
+                rightSide: "bright."
+            },
             correctForms: [
                 ["will", "not", "be"],
                 ["won't", "be"],
@@ -714,9 +846,12 @@ const completeFutureToBeNegativeStatementVerbForm = [
         id: "006a68549471b4bebf8c61e8ea5beaed",
         type: "completeFutureToBeNegativeStatementVerbForm",
         data: {
-            leftSide: "I",
-            middle: "(to be)",
-            rightSide: "asleep.",
+            prompt: {
+                twoSided: true,
+                leftSide: "I",
+                middle: "(to be)",
+                rightSide: "asleep."
+            },
             correctForms: [
                 ["will", "not", "be"],
                 ["won't", "be"],
@@ -730,9 +865,12 @@ const completeFutureToBeNegativeStatementVerbForm = [
         id: "6a4cbd4c9e511c509e64e0e0de7cc574",
         type: "completeFutureToBeNegativeStatementVerbForm",
         data: {
-            leftSide: "The shoes",
-            middle: "(to be)",
-            rightSide: "tight.",
+            prompt: {
+                twoSided: true,
+                leftSide: "The shoes",
+                middle: "(to be)",
+                rightSide: "tight."
+            },
             correctForms: [
                 ["will", "not", "be"],
                 ["won't", "be"],
@@ -746,9 +884,12 @@ const completeFutureToBeNegativeStatementVerbForm = [
         id: "8799998a949b9a03115b56dfff09d0d3",
         type: "completeFutureToBeNegativeStatementVerbForm",
         data: {
-            leftSide: "She",
-            middle: "(to be)",
-            rightSide: "twenty.",
+            prompt: {
+                twoSided: true,
+                leftSide: "She",
+                middle: "(to be)",
+                rightSide: "twenty."
+            },
             correctForms: [
                 ["will", "not", "be"],
                 ["won't", "be"],
@@ -762,9 +903,12 @@ const completeFutureToBeNegativeStatementVerbForm = [
         id: "27fd7144082daeaafcb110b019ce9048",
         type: "completeFutureToBeNegativeStatementVerbForm",
         data: {
-            leftSide: "We",
-            middle: "(to be)",
-            rightSide: "early.",
+            prompt: {
+                twoSided: true,
+                leftSide: "We",
+                middle: "(to be)",
+                rightSide: "early."
+            },
             correctForms: [
                 ["will", "not", "be"],
                 ["won't", "be"],
@@ -778,9 +922,12 @@ const completeFutureToBeNegativeStatementVerbForm = [
         id: "7e2b7436e36f45c25ad7f9c81b0142d0",
         type: "completeFutureToBeNegativeStatementVerbForm",
         data: {
-            leftSide: "The door",
-            middle: "(to be)",
-            rightSide: "closed.",
+            prompt: {
+                twoSided: true,
+                leftSide: "The door",
+                middle: "(to be)",
+                rightSide: "closed."
+            },
             correctForms: [
                 ["will", "not", "be"],
                 ["won't", "be"],
@@ -794,9 +941,12 @@ const completeFutureToBeNegativeStatementVerbForm = [
         id: "abc2cb540d627eb40f2fc4d2c322a538",
         type: "completeFutureToBeNegativeStatementVerbForm",
         data: {
-            leftSide: "It",
-            middle: "(to be)",
-            rightSide: "perfect.",
+            prompt: {
+                twoSided: true,
+                leftSide: "It",
+                middle: "(to be)",
+                rightSide: "perfect."
+            },
             correctForms: [
                 ["will", "not", "be"],
                 ["won't", "be"],
@@ -810,9 +960,12 @@ const completeFutureToBeNegativeStatementVerbForm = [
         id: "40960f3c42356f12eeb079e302cd842f",
         type: "completeFutureToBeNegativeStatementVerbForm",
         data: {
-            leftSide: "They",
-            middle: "(to be)",
-            rightSide: "tired.",
+            prompt: {
+                twoSided: true,
+                leftSide: "They",
+                middle: "(to be)",
+                rightSide: "tired."
+            },
             correctForms: [
                 ["will", "not", "be"],
                 ["won't", "be"],
@@ -826,9 +979,12 @@ const completeFutureToBeNegativeStatementVerbForm = [
         id: "98adc4cb8c5a2fdb2304cc2bfec5ee2c",
         type: "completeFutureToBeNegativeStatementVerbForm",
         data: {
-            leftSide: "You",
-            middle: "(to be)",
-            rightSide: "sick.",
+            prompt: {
+                twoSided: true,
+                leftSide: "You",
+                middle: "(to be)",
+                rightSide: "sick."
+            },
             correctForms: [
                 ["will", "not", "be"],
                 ["won't", "be"],
@@ -842,9 +998,12 @@ const completeFutureToBeNegativeStatementVerbForm = [
         id: "38826b36828945f2bc4e98de78a7f60d",
         type: "completeFutureToBeNegativeStatementVerbForm",
         data: {
-            leftSide: "The flowers",
-            middle: "(to be)",
-            rightSide: "red.",
+            prompt: {
+                twoSided: true,
+                leftSide: "The flowers",
+                middle: "(to be)",
+                rightSide: "red."
+            },
             correctForms: [
                 ["will", "not", "be"],
                 ["won't", "be"],
@@ -858,9 +1017,12 @@ const completeFutureToBeNegativeStatementVerbForm = [
         id: "42506474d7c3b54b7add9dcfef9ed7e8",
         type: "completeFutureToBeNegativeStatementVerbForm",
         data: {
-            leftSide: "I",
-            middle: "(to be)",
-            rightSide: "at home.",
+            prompt: {
+                twoSided: true,
+                leftSide: "I",
+                middle: "(to be)",
+                rightSide: "at home."
+            },
             correctForms: [
                 ["will", "not", "be"],
                 ["won't", "be"],
@@ -874,9 +1036,12 @@ const completeFutureToBeNegativeStatementVerbForm = [
         id: "c47ccaffe9a15c8e7906afdbc3c834b1",
         type: "completeFutureToBeNegativeStatementVerbForm",
         data: {
-            leftSide: "The car",
-            middle: "(to be)",
-            rightSide: "blue.",
+            prompt: {
+                twoSided: true,
+                leftSide: "The car",
+                middle: "(to be)",
+                rightSide: "blue."
+            },
             correctForms: [
                 ["will", "not", "be"],
                 ["won't", "be"],
@@ -890,9 +1055,12 @@ const completeFutureToBeNegativeStatementVerbForm = [
         id: "22020b750af21b04d9ac2681f648ac97",
         type: "completeFutureToBeNegativeStatementVerbForm",
         data: {
-            leftSide: "She",
-            middle: "(to be)",
-            rightSide: "beautiful.",
+            prompt: {
+                twoSided: true,
+                leftSide: "She",
+                middle: "(to be)",
+                rightSide: "beautiful."
+            },
             correctForms: [
                 ["will", "not", "be"],
                 ["won't", "be"],
@@ -906,9 +1074,12 @@ const completeFutureToBeNegativeStatementVerbForm = [
         id: "7d9c8906f7aea15a41a50c83bd35f9de",
         type: "completeFutureToBeNegativeStatementVerbForm",
         data: {
-            leftSide: "The keys",
-            middle: "(to be)",
-            rightSide: "on the table.",
+            prompt: {
+                twoSided: true,
+                leftSide: "The keys",
+                middle: "(to be)",
+                rightSide: "on the table."
+            },
             correctForms: [
                 ["will", "not", "be"],
                 ["won't", "be"],
@@ -922,9 +1093,12 @@ const completeFutureToBeNegativeStatementVerbForm = [
         id: "12038a011f2b53552ce1173096634b28",
         type: "completeFutureToBeNegativeStatementVerbForm",
         data: {
-            leftSide: "We",
-            middle: "(to be)",
-            rightSide: "happy.",
+            prompt: {
+                twoSided: true,
+                leftSide: "We",
+                middle: "(to be)",
+                rightSide: "happy."
+            },
             correctForms: [
                 ["will", "not", "be"],
                 ["won't", "be"],
@@ -938,9 +1112,12 @@ const completeFutureToBeNegativeStatementVerbForm = [
         id: "b3d8e4be09a6d8b8e18ae0a55655a9ed",
         type: "completeFutureToBeNegativeStatementVerbForm",
         data: {
-            leftSide: "He",
-            middle: "(to be)",
-            rightSide: "sad.",
+            prompt: {
+                twoSided: true,
+                leftSide: "He",
+                middle: "(to be)",
+                rightSide: "sad."
+            },
             correctForms: [
                 ["will", "not", "be"],
                 ["won't", "be"],
@@ -954,9 +1131,12 @@ const completeFutureToBeNegativeStatementVerbForm = [
         id: "b35a95327dc877422896649901b4fead",
         type: "completeFutureToBeNegativeStatementVerbForm",
         data: {
-            leftSide: "The soup",
-            middle: "(to be)",
-            rightSide: "salty.",
+            prompt: {
+                twoSided: true,
+                leftSide: "The soup",
+                middle: "(to be)",
+                rightSide: "salty."
+            },
             correctForms: [
                 ["will", "not", "be"],
                 ["won't", "be"],
@@ -970,9 +1150,12 @@ const completeFutureToBeNegativeStatementVerbForm = [
         id: "aa34fc40397b9dd7795f06f1f5c8c0ce",
         type: "completeFutureToBeNegativeStatementVerbForm",
         data: {
-            leftSide: "They",
-            middle: "(to be)",
-            rightSide: "in the garden.",
+            prompt: {
+                twoSided: true,
+                leftSide: "They",
+                middle: "(to be)",
+                rightSide: "in the garden."
+            },
             correctForms: [
                 ["will", "not", "be"],
                 ["won't", "be"],
@@ -986,9 +1169,12 @@ const completeFutureToBeNegativeStatementVerbForm = [
         id: "5c00bbd268508cd08b062477244eb8f4",
         type: "completeFutureToBeNegativeStatementVerbForm",
         data: {
-            leftSide: "I",
-            middle: "(to be)",
-            rightSide: "cold.",
+            prompt: {
+                twoSided: true,
+                leftSide: "I",
+                middle: "(to be)",
+                rightSide: "cold."
+            },
             correctForms: [
                 ["will", "not", "be"],
                 ["won't", "be"],
@@ -1002,9 +1188,12 @@ const completeFutureToBeNegativeStatementVerbForm = [
         id: "9a597759cb54078e14278a909b725f43",
         type: "completeFutureToBeNegativeStatementVerbForm",
         data: {
-            leftSide: "The light",
-            middle: "(to be)",
-            rightSide: "green.",
+            prompt: {
+                twoSided: true,
+                leftSide: "The light",
+                middle: "(to be)",
+                rightSide: "green."
+            },
             correctForms: [
                 ["will", "not", "be"],
                 ["won't", "be"],
@@ -1018,9 +1207,12 @@ const completeFutureToBeNegativeStatementVerbForm = [
         id: "a7ebae9ced09585e6257aaf897e9bace",
         type: "completeFutureToBeNegativeStatementVerbForm",
         data: {
-            leftSide: "You",
-            middle: "(to be)",
-            rightSide: "fast.",
+            prompt: {
+                twoSided: true,
+                leftSide: "You",
+                middle: "(to be)",
+                rightSide: "fast."
+            },
             correctForms: [
                 ["will", "not", "be"],
                 ["won't", "be"],
@@ -1034,9 +1226,12 @@ const completeFutureToBeNegativeStatementVerbForm = [
         id: "97197135d9f5bdad039944a531a0789c",
         type: "completeFutureToBeNegativeStatementVerbForm",
         data: {
-            leftSide: "She",
-            middle: "(to be)",
-            rightSide: "a teacher.",
+            prompt: {
+                twoSided: true,
+                leftSide: "She",
+                middle: "(to be)",
+                rightSide: "a teacher."
+            },
             correctForms: [
                 ["will", "not", "be"],
                 ["won't", "be"],
@@ -1050,9 +1245,12 @@ const completeFutureToBeNegativeStatementVerbForm = [
         id: "6558214cc25929e6b16c40a7024c0af4",
         type: "completeFutureToBeNegativeStatementVerbForm",
         data: {
-            leftSide: "It",
-            middle: "(to be)",
-            rightSide: "difficult.",
+            prompt: {
+                twoSided: true,
+                leftSide: "It",
+                middle: "(to be)",
+                rightSide: "difficult."
+            },
             correctForms: [
                 ["will", "not", "be"],
                 ["won't", "be"],
@@ -1066,9 +1264,12 @@ const completeFutureToBeNegativeStatementVerbForm = [
         id: "17c65c6d23ec0d9ade734a20fad79c0c",
         type: "completeFutureToBeNegativeStatementVerbForm",
         data: {
-            leftSide: "We",
-            middle: "(to be)",
-            rightSide: "ready.",
+            prompt: {
+                twoSided: true,
+                leftSide: "We",
+                middle: "(to be)",
+                rightSide: "ready."
+            },
             correctForms: [
                 ["will", "not", "be"],
                 ["won't", "be"],
@@ -1082,9 +1283,12 @@ const completeFutureToBeNegativeStatementVerbForm = [
         id: "80b117544fe4a957bebf8002b2c9a12e",
         type: "completeFutureToBeNegativeStatementVerbForm",
         data: {
-            leftSide: "The phone",
-            middle: "(to be)",
-            rightSide: "loud.",
+            prompt: {
+                twoSided: true,
+                leftSide: "The phone",
+                middle: "(to be)",
+                rightSide: "loud."
+            },
             correctForms: [
                 ["will", "not", "be"],
                 ["won't", "be"],
@@ -1098,9 +1302,12 @@ const completeFutureToBeNegativeStatementVerbForm = [
         id: "f0e3362f0309562642351daa6ef53782",
         type: "completeFutureToBeNegativeStatementVerbForm",
         data: {
-            leftSide: "They",
-            middle: "(to be)",
-            rightSide: "nice.",
+            prompt: {
+                twoSided: true,
+                leftSide: "They",
+                middle: "(to be)",
+                rightSide: "nice."
+            },
             correctForms: [
                 ["will", "not", "be"],
                 ["won't", "be"],
@@ -1114,9 +1321,12 @@ const completeFutureToBeNegativeStatementVerbForm = [
         id: "f73da4c732e1d4197e95497ed84c07cc",
         type: "completeFutureToBeNegativeStatementVerbForm",
         data: {
-            leftSide: "I",
-            middle: "(to be)",
-            rightSide: "thirteen.",
+            prompt: {
+                twoSided: true,
+                leftSide: "I",
+                middle: "(to be)",
+                rightSide: "thirteen."
+            },
             correctForms: [
                 ["will", "not", "be"],
                 ["won't", "be"],
@@ -1130,9 +1340,12 @@ const completeFutureToBeNegativeStatementVerbForm = [
         id: "b74a110d01945046e5466bd899d5e8df",
         type: "completeFutureToBeNegativeStatementVerbForm",
         data: {
-            leftSide: "The beach",
-            middle: "(to be)",
-            rightSide: "crowded.",
+            prompt: {
+                twoSided: true,
+                leftSide: "The beach",
+                middle: "(to be)",
+                rightSide: "crowded."
+            },
             correctForms: [
                 ["will", "not", "be"],
                 ["won't", "be"],
@@ -1146,9 +1359,12 @@ const completeFutureToBeNegativeStatementVerbForm = [
         id: "769630f4bb61a867a9d31dfc2f92e7ba",
         type: "completeFutureToBeNegativeStatementVerbForm",
         data: {
-            leftSide: "You",
-            middle: "(to be)",
-            rightSide: "polite.",
+            prompt: {
+                twoSided: true,
+                leftSide: "You",
+                middle: "(to be)",
+                rightSide: "polite."
+            },
             correctForms: [
                 ["will", "not", "be"],
                 ["won't", "be"],
@@ -1162,9 +1378,12 @@ const completeFutureToBeNegativeStatementVerbForm = [
         id: "090b38f0b7dffac6c8888b6b0a8bdef4",
         type: "completeFutureToBeNegativeStatementVerbForm",
         data: {
-            leftSide: "She",
-            middle: "(to be)",
-            rightSide: "at the party.",
+            prompt: {
+                twoSided: true,
+                leftSide: "She",
+                middle: "(to be)",
+                rightSide: "at the party."
+            },
             correctForms: [
                 ["will", "not", "be"],
                 ["won't", "be"],
@@ -1178,9 +1397,12 @@ const completeFutureToBeNegativeStatementVerbForm = [
         id: "35adfcad0884f9b475d60ae9852a42bd",
         type: "completeFutureToBeNegativeStatementVerbForm",
         data: {
-            leftSide: "We",
-            middle: "(to be)",
-            rightSide: "at the movies.",
+            prompt: {
+                twoSided: true,
+                leftSide: "We",
+                middle: "(to be)",
+                rightSide: "at the movies."
+            },
             correctForms: [
                 ["will", "not", "be"],
                 ["won't", "be"],
@@ -1194,9 +1416,12 @@ const completeFutureToBeNegativeStatementVerbForm = [
         id: "f82b00736208d3e053ec48297a0c4765",
         type: "completeFutureToBeNegativeStatementVerbForm",
         data: {
-            leftSide: "The dog",
-            middle: "(to be)",
-            rightSide: "brave.",
+            prompt: {
+                twoSided: true,
+                leftSide: "The dog",
+                middle: "(to be)",
+                rightSide: "brave."
+            },
             correctForms: [
                 ["will", "not", "be"],
                 ["won't", "be"],
@@ -1210,9 +1435,12 @@ const completeFutureToBeNegativeStatementVerbForm = [
         id: "608c22cae9a5591fc6ad2d3a8b2d1857",
         type: "completeFutureToBeNegativeStatementVerbForm",
         data: {
-            leftSide: "They",
-            middle: "(to be)",
-            rightSide: "at the office.",
+            prompt: {
+                twoSided: true,
+                leftSide: "They",
+                middle: "(to be)",
+                rightSide: "at the office."
+            },
             correctForms: [
                 ["will", "not", "be"],
                 ["won't", "be"],
@@ -1226,9 +1454,12 @@ const completeFutureToBeNegativeStatementVerbForm = [
         id: "b14f41c68e8bba22de5c6389544f75ea",
         type: "completeFutureToBeNegativeStatementVerbForm",
         data: {
-            leftSide: "I",
-            middle: "(to be)",
-            rightSide: "nervous.",
+            prompt: {
+                twoSided: true,
+                leftSide: "I",
+                middle: "(to be)",
+                rightSide: "nervous."
+            },
             correctForms: [
                 ["will", "not", "be"],
                 ["won't", "be"],
@@ -1242,9 +1473,12 @@ const completeFutureToBeNegativeStatementVerbForm = [
         id: "0acd98527227665d6db19e035de657a0",
         type: "completeFutureToBeNegativeStatementVerbForm",
         data: {
-            leftSide: "The mirror",
-            middle: "(to be)",
-            rightSide: "dirty.",
+            prompt: {
+                twoSided: true,
+                leftSide: "The mirror",
+                middle: "(to be)",
+                rightSide: "dirty."
+            },
             correctForms: [
                 ["will", "not", "be"],
                 ["won't", "be"],
@@ -1258,9 +1492,12 @@ const completeFutureToBeNegativeStatementVerbForm = [
         id: "cdae879d6df2a9f5653d38b0b3d317a0",
         type: "completeFutureToBeNegativeStatementVerbForm",
         data: {
-            leftSide: "You",
-            middle: "(to be)",
-            rightSide: "smart.",
+            prompt: {
+                twoSided: true,
+                leftSide: "You",
+                middle: "(to be)",
+                rightSide: "smart."
+            },
             correctForms: [
                 ["will", "not", "be"],
                 ["won't", "be"],
@@ -1274,9 +1511,12 @@ const completeFutureToBeNegativeStatementVerbForm = [
         id: "fa50cbaefc01f224ab71d3ae3488e941",
         type: "completeFutureToBeNegativeStatementVerbForm",
         data: {
-            leftSide: "The soup",
-            middle: "(to be)",
-            rightSide: "tasty.",
+            prompt: {
+                twoSided: true,
+                leftSide: "The soup",
+                middle: "(to be)",
+                rightSide: "tasty."
+            },
             correctForms: [
                 ["will", "not", "be"],
                 ["won't", "be"],
@@ -1290,9 +1530,12 @@ const completeFutureToBeNegativeStatementVerbForm = [
         id: "33b3a0d28b0b5d0f31406eff0dc41055",
         type: "completeFutureToBeNegativeStatementVerbForm",
         data: {
-            leftSide: "We",
-            middle: "(to be)",
-            rightSide: "excited.",
+            prompt: {
+                twoSided: true,
+                leftSide: "We",
+                middle: "(to be)",
+                rightSide: "excited."
+            },
             correctForms: [
                 ["will", "not", "be"],
                 ["won't", "be"],
@@ -1306,9 +1549,12 @@ const completeFutureToBeNegativeStatementVerbForm = [
         id: "2a30ccd68eadeafdebcf5eb93034e4bf",
         type: "completeFutureToBeNegativeStatementVerbForm",
         data: {
-            leftSide: "She",
-            middle: "(to be)",
-            rightSide: "sleepy.",
+            prompt: {
+                twoSided: true,
+                leftSide: "She",
+                middle: "(to be)",
+                rightSide: "sleepy."
+            },
             correctForms: [
                 ["will", "not", "be"],
                 ["won't", "be"],
@@ -1322,9 +1568,12 @@ const completeFutureToBeNegativeStatementVerbForm = [
         id: "2c32f986a507403435bbc398ee8b7115",
         type: "completeFutureToBeNegativeStatementVerbForm",
         data: {
-            leftSide: "It",
-            middle: "(to be)",
-            rightSide: "a long day.",
+            prompt: {
+                twoSided: true,
+                leftSide: "It",
+                middle: "(to be)",
+                rightSide: "a long day."
+            },
             correctForms: [
                 ["will", "not", "be"],
                 ["won't", "be"],
@@ -1338,9 +1587,12 @@ const completeFutureToBeNegativeStatementVerbForm = [
         id: "f50931b8030957ed9fb1e9714a30271b",
         type: "completeFutureToBeNegativeStatementVerbForm",
         data: {
-            leftSide: "They",
-            middle: "(to be)",
-            rightSide: "in the library.",
+            prompt: {
+                twoSided: true,
+                leftSide: "They",
+                middle: "(to be)",
+                rightSide: "in the library."
+            },
             correctForms: [
                 ["will", "not", "be"],
                 ["won't", "be"],
@@ -1354,9 +1606,12 @@ const completeFutureToBeNegativeStatementVerbForm = [
         id: "70cb770355038f43edb1d8b8186dea13",
         type: "completeFutureToBeNegativeStatementVerbForm",
         data: {
-            leftSide: "You",
-            middle: "(to be)",
-            rightSide: "brave.",
+            prompt: {
+                twoSided: true,
+                leftSide: "You",
+                middle: "(to be)",
+                rightSide: "brave."
+            },
             correctForms: [
                 ["will", "not", "be"],
                 ["won't", "be"],
@@ -1370,9 +1625,12 @@ const completeFutureToBeNegativeStatementVerbForm = [
         id: "61162454d583beb19b5058adb4f35b4c",
         type: "completeFutureToBeNegativeStatementVerbForm",
         data: {
-            leftSide: "The teacher",
-            middle: "(to be)",
-            rightSide: "angry.",
+            prompt: {
+                twoSided: true,
+                leftSide: "The teacher",
+                middle: "(to be)",
+                rightSide: "angry."
+            },
             correctForms: [
                 ["will", "not", "be"],
                 ["won't", "be"],
@@ -1386,9 +1644,12 @@ const completeFutureToBeNegativeStatementVerbForm = [
         id: "861bddcd5bc558b67342e3abb9adeab9",
         type: "completeFutureToBeNegativeStatementVerbForm",
         data: {
-            leftSide: "I",
-            middle: "(to be)",
-            rightSide: "certain.",
+            prompt: {
+                twoSided: true,
+                leftSide: "I",
+                middle: "(to be)",
+                rightSide: "certain."
+            },
             correctForms: [
                 ["will", "not", "be"],
                 ["won't", "be"],
@@ -1402,9 +1663,12 @@ const completeFutureToBeNegativeStatementVerbForm = [
         id: "dfc69145391c7e7481457ff5db761238",
         type: "completeFutureToBeNegativeStatementVerbForm",
         data: {
-            leftSide: "The children",
-            middle: "(to be)",
-            rightSide: "at home.",
+            prompt: {
+                twoSided: true,
+                leftSide: "The children",
+                middle: "(to be)",
+                rightSide: "at home."
+            },
             correctForms: [
                 ["will", "not", "be"],
                 ["won't", "be"],
@@ -1418,9 +1682,12 @@ const completeFutureToBeNegativeStatementVerbForm = [
         id: "c56adf4bb73591fe840196f3210788bc",
         type: "completeFutureToBeNegativeStatementVerbForm",
         data: {
-            leftSide: "She",
-            middle: "(to be)",
-            rightSide: "a doctor.",
+            prompt: {
+                twoSided: true,
+                leftSide: "She",
+                middle: "(to be)",
+                rightSide: "a doctor."
+            },
             correctForms: [
                 ["will", "not", "be"],
                 ["won't", "be"],
@@ -1434,9 +1701,12 @@ const completeFutureToBeNegativeStatementVerbForm = [
         id: "e07fdc00cdd31d0112199b9814735e46",
         type: "completeFutureToBeNegativeStatementVerbForm",
         data: {
-            leftSide: "The weather",
-            middle: "(to be)",
-            rightSide: "windy.",
+            prompt: {
+                twoSided: true,
+                leftSide: "The weather",
+                middle: "(to be)",
+                rightSide: "windy."
+            },
             correctForms: [
                 ["will", "not", "be"],
                 ["won't", "be"],
@@ -1450,9 +1720,12 @@ const completeFutureToBeNegativeStatementVerbForm = [
         id: "6b3bff7923d15719ce06d25ce590cb1f",
         type: "completeFutureToBeNegativeStatementVerbForm",
         data: {
-            leftSide: "We",
-            middle: "(to be)",
-            rightSide: "at the airport.",
+            prompt: {
+                twoSided: true,
+                leftSide: "We",
+                middle: "(to be)",
+                rightSide: "at the airport."
+            },
             correctForms: [
                 ["will", "not", "be"],
                 ["won't", "be"],
@@ -1466,9 +1739,12 @@ const completeFutureToBeNegativeStatementVerbForm = [
         id: "18e5f3b82765e4f51b1d620db26cc8ff",
         type: "completeFutureToBeNegativeStatementVerbForm",
         data: {
-            leftSide: "It",
-            middle: "(to be)",
-            rightSide: "a secret.",
+            prompt: {
+                twoSided: true,
+                leftSide: "It",
+                middle: "(to be)",
+                rightSide: "a secret."
+            },
             correctForms: [
                 ["will", "not", "be"],
                 ["won't", "be"],
@@ -1482,9 +1758,12 @@ const completeFutureToBeNegativeStatementVerbForm = [
         id: "5f8467367ae09afda7582d49f623d0be",
         type: "completeFutureToBeNegativeStatementVerbForm",
         data: {
-            leftSide: "You",
-            middle: "(to be)",
-            rightSide: "at the museum.",
+            prompt: {
+                twoSided: true,
+                leftSide: "You",
+                middle: "(to be)",
+                rightSide: "at the museum."
+            },
             correctForms: [
                 ["will", "not", "be"],
                 ["won't", "be"],
@@ -1498,9 +1777,12 @@ const completeFutureToBeNegativeStatementVerbForm = [
         id: "382a460e2657678a053780368b972b82",
         type: "completeFutureToBeNegativeStatementVerbForm",
         data: {
-            leftSide: "The mountains",
-            middle: "(to be)",
-            rightSide: "high.",
+            prompt: {
+                twoSided: true,
+                leftSide: "The mountains",
+                middle: "(to be)",
+                rightSide: "high."
+            },
             correctForms: [
                 ["will", "not", "be"],
                 ["won't", "be"],
@@ -1514,9 +1796,12 @@ const completeFutureToBeNegativeStatementVerbForm = [
         id: "9d3a366b6d839dd220ee72dd0f8a9a51",
         type: "completeFutureToBeNegativeStatementVerbForm",
         data: {
-            leftSide: "I",
-            middle: "(to be)",
-            rightSide: "there.",
+            prompt: {
+                twoSided: true,
+                leftSide: "I",
+                middle: "(to be)",
+                rightSide: "there."
+            },
             correctForms: [
                 ["will", "not", "be"],
                 ["won't", "be"],
@@ -1530,9 +1815,12 @@ const completeFutureToBeNegativeStatementVerbForm = [
         id: "afdad30f8d050f088802bbca9b6bff5e",
         type: "completeFutureToBeNegativeStatementVerbForm",
         data: {
-            leftSide: "The story",
-            middle: "(to be)",
-            rightSide: "long.",
+            prompt: {
+                twoSided: true,
+                leftSide: "The story",
+                middle: "(to be)",
+                rightSide: "long."
+            },
             correctForms: [
                 ["will", "not", "be"],
                 ["won't", "be"],
@@ -1546,9 +1834,12 @@ const completeFutureToBeNegativeStatementVerbForm = [
         id: "56d899db362880c743da497238e1d6a6",
         type: "completeFutureToBeNegativeStatementVerbForm",
         data: {
-            leftSide: "They",
-            middle: "(to be)",
-            rightSide: "ready.",
+            prompt: {
+                twoSided: true,
+                leftSide: "They",
+                middle: "(to be)",
+                rightSide: "ready."
+            },
             correctForms: [
                 ["will", "not", "be"],
                 ["won't", "be"],
@@ -1562,9 +1853,12 @@ const completeFutureToBeNegativeStatementVerbForm = [
         id: "e8ad037aaa370ac50accec05a823a53b",
         type: "completeFutureToBeNegativeStatementVerbForm",
         data: {
-            leftSide: "He",
-            middle: "(to be)",
-            rightSide: "a student.",
+            prompt: {
+                twoSided: true,
+                leftSide: "He",
+                middle: "(to be)",
+                rightSide: "a student."
+            },
             correctForms: [
                 ["will", "not", "be"],
                 ["won't", "be"],
@@ -1578,9 +1872,12 @@ const completeFutureToBeNegativeStatementVerbForm = [
         id: "44ceb82948a46c4deb1ab150d6bc8e57",
         type: "completeFutureToBeNegativeStatementVerbForm",
         data: {
-            leftSide: "We",
-            middle: "(to be)",
-            rightSide: "at the stadium.",
+            prompt: {
+                twoSided: true,
+                leftSide: "We",
+                middle: "(to be)",
+                rightSide: "at the stadium."
+            },
             correctForms: [
                 ["will", "not", "be"],
                 ["won't", "be"],
@@ -1594,9 +1891,12 @@ const completeFutureToBeNegativeStatementVerbForm = [
         id: "db18d89274d1657b94060e4e832757a7",
         type: "completeFutureToBeNegativeStatementVerbForm",
         data: {
-            leftSide: "It",
-            middle: "(to be)",
-            rightSide: "very cold.",
+            prompt: {
+                twoSided: true,
+                leftSide: "It",
+                middle: "(to be)",
+                rightSide: "very cold."
+            },
             correctForms: [
                 ["will", "not", "be"],
                 ["won't", "be"],

@@ -5,9 +5,12 @@ const completePastPerfectContinuousPositiveStatementVerbForm = [
         id: "55d0becf875e323c8a965f0c68e97cde",
         type: "completePastPerfectContinuousPositiveStatementVerbForm",
         data: {
-            leftSide: "I",
-            middle: "(wait)",
-            rightSide: "for an hour when the bus finally arrived.",
+            prompt: {
+                twoSided: true,
+                leftSide: "I",
+                middle: "(wait)",
+                rightSide: "for an hour when the bus finally arrived."
+            },
             minWordCount: 3,
             maxWordCount: 3,
             correctAuxiliars: [["had", "been"]],
@@ -19,9 +22,12 @@ const completePastPerfectContinuousPositiveStatementVerbForm = [
         id: "50cf0704ffd64ba61b2c1c2d39001e78",
         type: "completePastPerfectContinuousPositiveStatementVerbForm",
         data: {
-            leftSide: "They",
-            middle: "(play)",
-            rightSide: "football for thirty minutes before it started to rain.",
+            prompt: {
+                twoSided: true,
+                leftSide: "They",
+                middle: "(play)",
+                rightSide: "football for thirty minutes before it started to rain."
+            },
             minWordCount: 3,
             maxWordCount: 3,
             correctAuxiliars: [["had", "been"]],
@@ -33,9 +39,12 @@ const completePastPerfectContinuousPositiveStatementVerbForm = [
         id: "dd27d68499a299cf6e9b85a7fe976915",
         type: "completePastPerfectContinuousPositiveStatementVerbForm",
         data: {
-            leftSide: "He",
-            middle: "(drive)",
-            rightSide: "all day, so he was very tired.",
+            prompt: {
+                twoSided: true,
+                leftSide: "He",
+                middle: "(drive)",
+                rightSide: "all day, so he was very tired."
+            },
             minWordCount: 3,
             maxWordCount: 3,
             correctAuxiliars: [["had", "been"]],
@@ -47,9 +56,12 @@ const completePastPerfectContinuousPositiveStatementVerbForm = [
         id: "aa446d7c4582cbed2e37607ae25ad03e",
         type: "completePastPerfectContinuousPositiveStatementVerbForm",
         data: {
-            leftSide: "The engine",
-            middle: "(make)",
-            rightSide: "a strange noise for weeks before it broke down.",
+            prompt: {
+                twoSided: true,
+                leftSide: "The engine",
+                middle: "(make)",
+                rightSide: "a strange noise for weeks before it broke down."
+            },
             minWordCount: 3,
             maxWordCount: 3,
             correctAuxiliars: [["had", "been"]],
@@ -61,9 +73,12 @@ const completePastPerfectContinuousPositiveStatementVerbForm = [
         id: "f9754da85378e915943fb74457844c71",
         type: "completePastPerfectContinuousPositiveStatementVerbForm",
         data: {
-            leftSide: "We",
-            middle: "(look)",
-            rightSide: "for the keys for hours before we found them.",
+            prompt: {
+                twoSided: true,
+                leftSide: "We",
+                middle: "(look)",
+                rightSide: "for the keys for hours before we found them."
+            },
             minWordCount: 3,
             maxWordCount: 3,
             correctAuxiliars: [["had", "been"]],
@@ -75,9 +90,12 @@ const completePastPerfectContinuousPositiveStatementVerbForm = [
         id: "80823fa2eb54f06af2486f3b2be36241",
         type: "completePastPerfectContinuousPositiveStatementVerbForm",
         data: {
-            leftSide: "She",
-            middle: "(study)",
-            rightSide: "all night, so she fell asleep in class.",
+            prompt: {
+                twoSided: true,
+                leftSide: "She",
+                middle: "(study)",
+                rightSide: "all night, so she fell asleep in class."
+            },
             minWordCount: 3,
             maxWordCount: 3,
             correctAuxiliars: [["had", "been"]],
@@ -89,9 +107,12 @@ const completePastPerfectContinuousPositiveStatementVerbForm = [
         id: "f38ee998828e328a6e181f7a2d3fa3aa",
         type: "completePastPerfectContinuousPositiveStatementVerbForm",
         data: {
-            leftSide: "It",
-            middle: "(snow)",
-            rightSide: "for days before the roads were cleared.",
+            prompt: {
+                twoSided: true,
+                leftSide: "It",
+                middle: "(snow)",
+                rightSide: "for days before the roads were cleared."
+            },
             minWordCount: 3,
             maxWordCount: 3,
             correctAuxiliars: [["had", "been"]],
@@ -103,9 +124,12 @@ const completePastPerfectContinuousPositiveStatementVerbForm = [
         id: "536896e5063b691e74347b1048dfb6b0",
         type: "completePastPerfectContinuousPositiveStatementVerbForm",
         data: {
-            leftSide: "The kids",
-            middle: "(watch)",
-            rightSide: "TV for two hours when I told them to stop.",
+            prompt: {
+                twoSided: true,
+                leftSide: "The kids",
+                middle: "(watch)",
+                rightSide: "TV for two hours when I told them to stop."
+            },
             minWordCount: 3,
             maxWordCount: 3,
             correctAuxiliars: [["had", "been"]],
@@ -117,9 +141,12 @@ const completePastPerfectContinuousPositiveStatementVerbForm = [
         id: "46d5562d250d041c69ff83dd0d667267",
         type: "completePastPerfectContinuousPositiveStatementVerbForm",
         data: {
-            leftSide: "The chef",
-            middle: "(prepare)",
-            rightSide: "the meal since morning.",
+            prompt: {
+                twoSided: true,
+                leftSide: "The chef",
+                middle: "(prepare)",
+                rightSide: "the meal since morning."
+            },
             minWordCount: 3,
             maxWordCount: 3,
             correctAuxiliars: [["had", "been"]],
@@ -131,9 +158,12 @@ const completePastPerfectContinuousPositiveStatementVerbForm = [
         id: "815029d66c22974430c6edd50907ecaa",
         type: "completePastPerfectContinuousPositiveStatementVerbForm",
         data: {
-            leftSide: "You",
-            middle: "(talk)",
-            rightSide: "on the phone for an hour before I interrupted.",
+            prompt: {
+                twoSided: true,
+                leftSide: "You",
+                middle: "(talk)",
+                rightSide: "on the phone for an hour before I interrupted."
+            },
             minWordCount: 3,
             maxWordCount: 3,
             correctAuxiliars: [["had", "been"]],
@@ -145,9 +175,12 @@ const completePastPerfectContinuousPositiveStatementVerbForm = [
         id: "5ae052bdd399bbb936040ecda57a9f47",
         type: "completePastPerfectContinuousPositiveStatementVerbForm",
         data: {
-            leftSide: "The birds",
-            middle: "(sing)",
-            rightSide: "since dawn.",
+            prompt: {
+                twoSided: true,
+                leftSide: "The birds",
+                middle: "(sing)",
+                rightSide: "since dawn."
+            },
             minWordCount: 3,
             maxWordCount: 3,
             correctAuxiliars: [["had", "been"]],
@@ -159,9 +192,12 @@ const completePastPerfectContinuousPositiveStatementVerbForm = [
         id: "c87559ce9768f98483d4304f7dd2763a",
         type: "completePastPerfectContinuousPositiveStatementVerbForm",
         data: {
-            leftSide: "He",
-            middle: "(smoke)",
-            rightSide: "for thirty years before he finally quit.",
+            prompt: {
+                twoSided: true,
+                leftSide: "He",
+                middle: "(smoke)",
+                rightSide: "for thirty years before he finally quit."
+            },
             minWordCount: 3,
             maxWordCount: 3,
             correctAuxiliars: [["had", "been"]],
@@ -173,9 +209,12 @@ const completePastPerfectContinuousPositiveStatementVerbForm = [
         id: "ae7bfc47cf0550ca19167fe5bd73b3ce",
         type: "completePastPerfectContinuousPositiveStatementVerbForm",
         data: {
-            leftSide: "They",
-            middle: "(travel)",
-            rightSide: "for months before they ran out of money.",
+            prompt: {
+                twoSided: true,
+                leftSide: "They",
+                middle: "(travel)",
+                rightSide: "for months before they ran out of money."
+            },
             minWordCount: 3,
             maxWordCount: 3,
             correctAuxiliars: [["had", "been"]],
@@ -187,9 +226,12 @@ const completePastPerfectContinuousPositiveStatementVerbForm = [
         id: "ae7a95d1db82454660be53af8fe78ad8",
         type: "completePastPerfectContinuousPositiveStatementVerbForm",
         data: {
-            leftSide: "I",
-            middle: "(live)",
-            rightSide: "in London for a year when I met her.",
+            prompt: {
+                twoSided: true,
+                leftSide: "I",
+                middle: "(live)",
+                rightSide: "in London for a year when I met her."
+            },
             minWordCount: 3,
             maxWordCount: 3,
             correctAuxiliars: [["had", "been"]],
@@ -201,9 +243,12 @@ const completePastPerfectContinuousPositiveStatementVerbForm = [
         id: "cba2f8c783b939c49b3cfca797023473",
         type: "completePastPerfectContinuousPositiveStatementVerbForm",
         data: {
-            leftSide: "The water",
-            middle: "(leak)",
-            rightSide: "from the ceiling for days.",
+            prompt: {
+                twoSided: true,
+                leftSide: "The water",
+                middle: "(leak)",
+                rightSide: "from the ceiling for days."
+            },
             minWordCount: 3,
             maxWordCount: 3,
             correctAuxiliars: [["had", "been"]],
@@ -215,9 +260,12 @@ const completePastPerfectContinuousPositiveStatementVerbForm = [
         id: "460db824a4f6cd006d628d4c85757234",
         type: "completePastPerfectContinuousPositiveStatementVerbForm",
         data: {
-            leftSide: "She",
-            middle: "(dance)",
-            rightSide: "for hours and her feet were sore.",
+            prompt: {
+                twoSided: true,
+                leftSide: "She",
+                middle: "(dance)",
+                rightSide: "for hours and her feet were sore."
+            },
             minWordCount: 3,
             maxWordCount: 3,
             correctAuxiliars: [["had", "been"]],
@@ -229,9 +277,12 @@ const completePastPerfectContinuousPositiveStatementVerbForm = [
         id: "d3fe65d42c3bd4d36d5ec25e08630d36",
         type: "completePastPerfectContinuousPositiveStatementVerbForm",
         data: {
-            leftSide: "We",
-            middle: "(plan)",
-            rightSide: " the wedding for a long time.",
+            prompt: {
+                twoSided: true,
+                leftSide: "We",
+                middle: "(plan)",
+                rightSide: " the wedding for a long time."
+            },
             minWordCount: 3,
             maxWordCount: 3,
             correctAuxiliars: [["had", "been"]],
@@ -243,9 +294,12 @@ const completePastPerfectContinuousPositiveStatementVerbForm = [
         id: "c9cb102566c6e2f61c1d366c8cd81976",
         type: "completePastPerfectContinuousPositiveStatementVerbForm",
         data: {
-            leftSide: "He",
-            middle: "(expect)",
-            rightSide: "a promotion for months.",
+            prompt: {
+                twoSided: true,
+                leftSide: "He",
+                middle: "(expect)",
+                rightSide: "a promotion for months."
+            },
             minWordCount: 3,
             maxWordCount: 3,
             correctAuxiliars: [["had", "been"]],
@@ -257,9 +311,12 @@ const completePastPerfectContinuousPositiveStatementVerbForm = [
         id: "949875032778587d48b0efcd063848e2",
         type: "completePastPerfectContinuousPositiveStatementVerbForm",
         data: {
-            leftSide: "They",
-            middle: "(argue)",
-            rightSide: "all morning until they reached an agreement.",
+            prompt: {
+                twoSided: true,
+                leftSide: "They",
+                middle: "(argue)",
+                rightSide: "all morning until they reached an agreement."
+            },
             minWordCount: 3,
             maxWordCount: 3,
             correctAuxiliars: [["had", "been"]],
@@ -271,9 +328,12 @@ const completePastPerfectContinuousPositiveStatementVerbForm = [
         id: "4575bb0cbef41ff9020657fe79c47537",
         type: "completePastPerfectContinuousPositiveStatementVerbForm",
         data: {
-            leftSide: "I",
-            middle: "(run)",
-            rightSide: "for five miles before I felt a pain in my leg.",
+            prompt: {
+                twoSided: true,
+                leftSide: "I",
+                middle: "(run)",
+                rightSide: "for five miles before I felt a pain in my leg."
+            },
             minWordCount: 3,
             maxWordCount: 3,
             correctAuxiliars: [["had", "been"]],
@@ -285,9 +345,12 @@ const completePastPerfectContinuousPositiveStatementVerbForm = [
         id: "6224c0034e2cd56ca61556bfbeb8f8f1",
         type: "completePastPerfectContinuousPositiveStatementVerbForm",
         data: {
-            leftSide: "I",
-            middle: "(run)",
-            rightSide: "for five miles before I felt a pain in my leg.",
+            prompt: {
+                twoSided: true,
+                leftSide: "I",
+                middle: "(run)",
+                rightSide: "for five miles before I felt a pain in my leg."
+            },
             minWordCount: 3,
             maxWordCount: 3,
             correctAuxiliars: [["had", "been"]],
@@ -299,9 +362,12 @@ const completePastPerfectContinuousPositiveStatementVerbForm = [
         id: "b05860c6093332721c30a8f1ba666ca7",
         type: "completePastPerfectContinuousPositiveStatementVerbForm",
         data: {
-            leftSide: "She",
-            middle: "(wait)",
-            rightSide: "for an hour before the bus arrived.",
+            prompt: {
+                twoSided: true,
+                leftSide: "She",
+                middle: "(wait)",
+                rightSide: "for an hour before the bus arrived."
+            },
             minWordCount: 3,
             maxWordCount: 3,
             correctAuxiliars: [["had", "been"]],
@@ -313,9 +379,12 @@ const completePastPerfectContinuousPositiveStatementVerbForm = [
         id: "624512d71a769de0e578c4408ebe4038",
         type: "completePastPerfectContinuousPositiveStatementVerbForm",
         data: {
-            leftSide: "They",
-            middle: "(work)",
-            rightSide: "there for years before it closed.",
+            prompt: {
+                twoSided: true,
+                leftSide: "They",
+                middle: "(work)",
+                rightSide: "there for years before it closed."
+            },
             minWordCount: 3,
             maxWordCount: 3,
             correctAuxiliars: [["had", "been"]],
@@ -327,9 +396,12 @@ const completePastPerfectContinuousPositiveStatementVerbForm = [
         id: "3f6887a2a9064689278316414d8e0ffc",
         type: "completePastPerfectContinuousPositiveStatementVerbForm",
         data: {
-            leftSide: "He",
-            middle: "(study)",
-            rightSide: "all night before he fell asleep.",
+            prompt: {
+                twoSided: true,
+                leftSide: "He",
+                middle: "(study)",
+                rightSide: "all night before he fell asleep."
+            },
             minWordCount: 3,
             maxWordCount: 3,
             correctAuxiliars: [["had", "been"]],
@@ -341,9 +413,12 @@ const completePastPerfectContinuousPositiveStatementVerbForm = [
         id: "63805ab968729bfca3f149e1e6524af2",
         type: "completePastPerfectContinuousPositiveStatementVerbForm",
         data: {
-            leftSide: "We",
-            middle: "(talk)",
-            rightSide: "for hours before we decided.",
+            prompt: {
+                twoSided: true,
+                leftSide: "We",
+                middle: "(talk)",
+                rightSide: "for hours before we decided."
+            },
             minWordCount: 3,
             maxWordCount: 3,
             correctAuxiliars: [["had", "been"]],
@@ -355,9 +430,12 @@ const completePastPerfectContinuousPositiveStatementVerbForm = [
         id: "a37d9b91a845c0e7132616b96c16b53e",
         type: "completePastPerfectContinuousPositiveStatementVerbForm",
         data: {
-            leftSide: "The gardener",
-            middle: "(plant)",
-            rightSide: "trees since morning.",
+            prompt: {
+                twoSided: true,
+                leftSide: "The gardener",
+                middle: "(plant)",
+                rightSide: "trees since morning."
+            },
             minWordCount: 3,
             maxWordCount: 3,
             correctAuxiliars: [["had", "been"]],
@@ -369,9 +447,12 @@ const completePastPerfectContinuousPositiveStatementVerbForm = [
         id: "c91ba2b59a4ff5150819b941e790b1f4",
         type: "completePastPerfectContinuousPositiveStatementVerbForm",
         data: {
-            leftSide: "The fire",
-            middle: "(burn)",
-            rightSide: "for hours before help arrived.",
+            prompt: {
+                twoSided: true,
+                leftSide: "The fire",
+                middle: "(burn)",
+                rightSide: "for hours before help arrived."
+            },
             minWordCount: 3,
             maxWordCount: 3,
             correctAuxiliars: [["had", "been"]],
@@ -383,9 +464,12 @@ const completePastPerfectContinuousPositiveStatementVerbForm = [
         id: "4f0921634910dda975abc99df8bc927b",
         type: "completePastPerfectContinuousPositiveStatementVerbForm",
         data: {
-            leftSide: "It",
-            middle: "(rain)",
-            rightSide: "all day before the sun came out.",
+            prompt: {
+                twoSided: true,
+                leftSide: "It",
+                middle: "(rain)",
+                rightSide: "all day before the sun came out."
+            },
             minWordCount: 3,
             maxWordCount: 3,
             correctAuxiliars: [["had", "been"]],
@@ -397,9 +481,12 @@ const completePastPerfectContinuousPositiveStatementVerbForm = [
         id: "6efce9e6bfce1fad7db2ea840fda02eb",
         type: "completePastPerfectContinuousPositiveStatementVerbForm",
         data: {
-            leftSide: "The dog",
-            middle: "(bark)",
-            rightSide: "for long when I got home.",
+            prompt: {
+                twoSided: true,
+                leftSide: "The dog",
+                middle: "(bark)",
+                rightSide: "for long when I got home."
+            },
             minWordCount: 3,
             maxWordCount: 3,
             correctAuxiliars: [["had", "been"]],
@@ -411,9 +498,12 @@ const completePastPerfectContinuousPositiveStatementVerbForm = [
         id: "abd17ecc55d2bc2951d3ff2687a05090",
         type: "completePastPerfectContinuousPositiveStatementVerbForm",
         data: {
-            leftSide: "I",
-            middle: "(write)",
-            rightSide: "the report since noon.",
+            prompt: {
+                twoSided: true,
+                leftSide: "I",
+                middle: "(write)",
+                rightSide: "the report since noon."
+            },
             minWordCount: 3,
             maxWordCount: 3,
             correctAuxiliars: [["had", "been"]],
@@ -425,9 +515,12 @@ const completePastPerfectContinuousPositiveStatementVerbForm = [
         id: "c7b41eae9898ab8fa4cd69d5fac16890",
         type: "completePastPerfectContinuousPositiveStatementVerbForm",
         data: {
-            leftSide: "She",
-            middle: "(cook)",
-            rightSide: "all afternoon for the party.",
+            prompt: {
+                twoSided: true,
+                leftSide: "She",
+                middle: "(cook)",
+                rightSide: "all afternoon for the party."
+            },
             minWordCount: 3,
             maxWordCount: 3,
             correctAuxiliars: [["had", "been"]],
@@ -439,9 +532,12 @@ const completePastPerfectContinuousPositiveStatementVerbForm = [
         id: "fc359f78d0ae013d2dce9e3fbc27866f",
         type: "completePastPerfectContinuousPositiveStatementVerbForm",
         data: {
-            leftSide: "They",
-            middle: "(practice)",
-            rightSide: "the song for weeks.",
+            prompt: {
+                twoSided: true,
+                leftSide: "They",
+                middle: "(practice)",
+                rightSide: "the song for weeks."
+            },
             minWordCount: 3,
             maxWordCount: 3,
             correctAuxiliars: [["had", "been"]],
@@ -453,9 +549,12 @@ const completePastPerfectContinuousPositiveStatementVerbForm = [
         id: "0dbc123034b116bd3002e4fcbe2dc78c",
         type: "completePastPerfectContinuousPositiveStatementVerbForm",
         data: {
-            leftSide: "He",
-            middle: "(drive)",
-            rightSide: "all night when he saw the sign.",
+            prompt: {
+                twoSided: true,
+                leftSide: "He",
+                middle: "(drive)",
+                rightSide: "all night when he saw the sign."
+            },
             minWordCount: 3,
             maxWordCount: 3,
             correctAuxiliars: [["had", "been"]],
@@ -467,9 +566,12 @@ const completePastPerfectContinuousPositiveStatementVerbForm = [
         id: "2d2718d6bba0bea46ff715def9ff875a",
         type: "completePastPerfectContinuousPositiveStatementVerbForm",
         data: {
-            leftSide: "We",
-            middle: "(live)",
-            rightSide: "in Paris for two years then.",
+            prompt: {
+                twoSided: true,
+                leftSide: "We",
+                middle: "(live)",
+                rightSide: "in Paris for two years then."
+            },
             minWordCount: 3,
             maxWordCount: 3,
             correctAuxiliars: [["had", "been"]],
@@ -481,9 +583,12 @@ const completePastPerfectContinuousPositiveStatementVerbForm = [
         id: "2d80a8fbc419b25fa38ea07dab96e067",
         type: "completePastPerfectContinuousPositiveStatementVerbForm",
         data: {
-            leftSide: "The artist",
-            middle: "(paint)",
-            rightSide: "the mural for months.",
+            prompt: {
+                twoSided: true,
+                leftSide: "The artist",
+                middle: "(paint)",
+                rightSide: "the mural for months."
+            },
             minWordCount: 3,
             maxWordCount: 3,
             correctAuxiliars: [["had", "been"]],
@@ -495,9 +600,12 @@ const completePastPerfectContinuousPositiveStatementVerbForm = [
         id: "6479984d9f4041da097141f3c3ac3afc",
         type: "completePastPerfectContinuousPositiveStatementVerbForm",
         data: {
-            leftSide: "The kids",
-            middle: "(play)",
-            rightSide: "outside until it rained.",
+            prompt: {
+                twoSided: true,
+                leftSide: "The kids",
+                middle: "(play)",
+                rightSide: "outside until it rained."
+            },
             minWordCount: 3,
             maxWordCount: 3,
             correctAuxiliars: [["had", "been"]],
@@ -509,9 +617,12 @@ const completePastPerfectContinuousPositiveStatementVerbForm = [
         id: "c106aa96ea30dc7f6c745752da3f8ddb",
         type: "completePastPerfectContinuousPositiveStatementVerbForm",
         data: {
-            leftSide: "I",
-            middle: "(exercise)",
-            rightSide: "for an hour before dinner.",
+            prompt: {
+                twoSided: true,
+                leftSide: "I",
+                middle: "(exercise)",
+                rightSide: "for an hour before dinner."
+            },
             minWordCount: 3,
             maxWordCount: 3,
             correctAuxiliars: [["had", "been"]],
@@ -523,9 +634,12 @@ const completePastPerfectContinuousPositiveStatementVerbForm = [
         id: "48203888a031d7b0d0d83100a7d0fb00",
         type: "completePastPerfectContinuousPositiveStatementVerbForm",
         data: {
-            leftSide: "She",
-            middle: "(knit)",
-            rightSide: "the scarf all winter.",
+            prompt: {
+                twoSided: true,
+                leftSide: "She",
+                middle: "(knit)",
+                rightSide: "the scarf all winter."
+            },
             minWordCount: 3,
             maxWordCount: 3,
             correctAuxiliars: [["had", "been"]],
@@ -537,9 +651,12 @@ const completePastPerfectContinuousPositiveStatementVerbForm = [
         id: "ed495880db39685e22f4b87ba521dd76",
         type: "completePastPerfectContinuousPositiveStatementVerbForm",
         data: {
-            leftSide: "The engine",
-            middle: "(leak)",
-            rightSide: "oil for a week.",
+            prompt: {
+                twoSided: true,
+                leftSide: "The engine",
+                middle: "(leak)",
+                rightSide: "oil for a week."
+            },
             minWordCount: 3,
             maxWordCount: 3,
             correctAuxiliars: [["had", "been"]],
@@ -551,9 +668,12 @@ const completePastPerfectContinuousPositiveStatementVerbForm = [
         id: "eba0a61786409b415db71c2e2fd2395e",
         type: "completePastPerfectContinuousPositiveStatementVerbForm",
         data: {
-            leftSide: "They",
-            middle: "(climb)",
-            rightSide: "since dawn when they stopped.",
+            prompt: {
+                twoSided: true,
+                leftSide: "They",
+                middle: "(climb)",
+                rightSide: "since dawn when they stopped."
+            },
             minWordCount: 3,
             maxWordCount: 3,
             correctAuxiliars: [["had", "been"]],
@@ -565,9 +685,12 @@ const completePastPerfectContinuousPositiveStatementVerbForm = [
         id: "bd2db933c3c3cb1e7b59fe754e3e679e",
         type: "completePastPerfectContinuousPositiveStatementVerbForm",
         data: {
-            leftSide: "He",
-            middle: "(repair)",
-            rightSide: "the clock for two hours.",
+            prompt: {
+                twoSided: true,
+                leftSide: "He",
+                middle: "(repair)",
+                rightSide: "the clock for two hours."
+            },
             minWordCount: 3,
             maxWordCount: 3,
             correctAuxiliars: [["had", "been"]],
@@ -579,9 +702,12 @@ const completePastPerfectContinuousPositiveStatementVerbForm = [
         id: "4b582783b279ab9ef53d53a78759293f",
         type: "completePastPerfectContinuousPositiveStatementVerbForm",
         data: {
-            leftSide: "We",
-            middle: "(watch)",
-            rightSide: "the game for long then.",
+            prompt: {
+                twoSided: true,
+                leftSide: "We",
+                middle: "(watch)",
+                rightSide: "the game for long then."
+            },
             minWordCount: 3,
             maxWordCount: 3,
             correctAuxiliars: [["had", "been"]],
@@ -593,9 +719,12 @@ const completePastPerfectContinuousPositiveStatementVerbForm = [
         id: "75de35d2b23cc2513c597af8408ec85f",
         type: "completePastPerfectContinuousPositiveStatementVerbForm",
         data: {
-            leftSide: "The cat",
-            middle: "(sleep)",
-            rightSide: "all day on the sofa.",
+            prompt: {
+                twoSided: true,
+                leftSide: "The cat",
+                middle: "(sleep)",
+                rightSide: "all day on the sofa."
+            },
             minWordCount: 3,
             maxWordCount: 3,
             correctAuxiliars: [["had", "been"]],
@@ -607,9 +736,12 @@ const completePastPerfectContinuousPositiveStatementVerbForm = [
         id: "92c514520caf29671269f4f9b7c3d243",
         type: "completePastPerfectContinuousPositiveStatementVerbForm",
         data: {
-            leftSide: "I",
-            middle: "(swim)",
-            rightSide: "for thirty minutes before cold.",
+            prompt: {
+                twoSided: true,
+                leftSide: "I",
+                middle: "(swim)",
+                rightSide: "for thirty minutes before cold."
+            },
             minWordCount: 3,
             maxWordCount: 3,
             correctAuxiliars: [["had", "been"]],
@@ -621,9 +753,12 @@ const completePastPerfectContinuousPositiveStatementVerbForm = [
         id: "e1f2adaf9dda19691395c8d835789c6f",
         type: "completePastPerfectContinuousPositiveStatementVerbForm",
         data: {
-            leftSide: "She",
-            middle: "(teach)",
-            rightSide: "there for twenty years.",
+            prompt: {
+                twoSided: true,
+                leftSide: "She",
+                middle: "(teach)",
+                rightSide: "there for twenty years."
+            },
             minWordCount: 3,
             maxWordCount: 3,
             correctAuxiliars: [["had", "been"]],
@@ -635,9 +770,12 @@ const completePastPerfectContinuousPositiveStatementVerbForm = [
         id: "b07f2f49136450e42c9da81656e2edfe",
         type: "completePastPerfectContinuousPositiveStatementVerbForm",
         data: {
-            leftSide: "They",
-            middle: "(sail)",
-            rightSide: "for days before land.",
+            prompt: {
+                twoSided: true,
+                leftSide: "They",
+                middle: "(sail)",
+                rightSide: "for days before land."
+            },
             minWordCount: 3,
             maxWordCount: 3,
             correctAuxiliars: [["had", "been"]],
@@ -649,9 +787,12 @@ const completePastPerfectContinuousPositiveStatementVerbForm = [
         id: "763d72979de9146071e26e54972f7d0b",
         type: "completePastPerfectContinuousPositiveStatementVerbForm",
         data: {
-            leftSide: "The water",
-            middle: "(boil)",
-            rightSide: "for long before I saw.",
+            prompt: {
+                twoSided: true,
+                leftSide: "The water",
+                middle: "(boil)",
+                rightSide: "for long before I saw."
+            },
             minWordCount: 3,
             maxWordCount: 3,
             correctAuxiliars: [["had", "been"]],
@@ -663,9 +804,12 @@ const completePastPerfectContinuousPositiveStatementVerbForm = [
         id: "bdc1b9fef71a6afdf51bbe8d70ce49ca",
         type: "completePastPerfectContinuousPositiveStatementVerbForm",
         data: {
-            leftSide: "He",
-            middle: "(read)",
-            rightSide: "since breakfast.",
+            prompt: {
+                twoSided: true,
+                leftSide: "He",
+                middle: "(read)",
+                rightSide: "since breakfast."
+            },
             minWordCount: 3,
             maxWordCount: 3,
             correctAuxiliars: [["had", "been"]],
@@ -677,9 +821,12 @@ const completePastPerfectContinuousPositiveStatementVerbForm = [
         id: "4770eec7eea05016d107f700da33f367",
         type: "completePastPerfectContinuousPositiveStatementVerbForm",
         data: {
-            leftSide: "We",
-            middle: "(hike)",
-            rightSide: "the trail since 8 AM.",
+            prompt: {
+                twoSided: true,
+                leftSide: "We",
+                middle: "(hike)",
+                rightSide: "the trail since 8 AM."
+            },
             minWordCount: 3,
             maxWordCount: 3,
             correctAuxiliars: [["had", "been"]],
@@ -691,9 +838,12 @@ const completePastPerfectContinuousPositiveStatementVerbForm = [
         id: "7be0af9f9ef9291bd27e6c2c7af79613",
         type: "completePastPerfectContinuousPositiveStatementVerbForm",
         data: {
-            leftSide: "I",
-            middle: "(clean)",
-            rightSide: "the attic all morning.",
+            prompt: {
+                twoSided: true,
+                leftSide: "I",
+                middle: "(clean)",
+                rightSide: "the attic all morning."
+            },
             minWordCount: 3,
             maxWordCount: 3,
             correctAuxiliars: [["had", "been"]],
@@ -705,9 +855,12 @@ const completePastPerfectContinuousPositiveStatementVerbForm = [
         id: "14fba59963c00d12373bbd7b1940e621",
         type: "completePastPerfectContinuousPositiveStatementVerbForm",
         data: {
-            leftSide: "She",
-            middle: "(draw)",
-            rightSide: "the landscape for hours.",
+            prompt: {
+                twoSided: true,
+                leftSide: "She",
+                middle: "(draw)",
+                rightSide: "the landscape for hours."
+            },
             minWordCount: 3,
             maxWordCount: 3,
             correctAuxiliars: [["had", "been"]],
@@ -719,9 +872,12 @@ const completePastPerfectContinuousPositiveStatementVerbForm = [
         id: "5c2912cc89c687e289a4fa9d94984155",
         type: "completePastPerfectContinuousPositiveStatementVerbForm",
         data: {
-            leftSide: "They",
-            middle: "(argue)",
-            rightSide: "since the party began.",
+            prompt: {
+                twoSided: true,
+                leftSide: "They",
+                middle: "(argue)",
+                rightSide: "since the party began."
+            },
             minWordCount: 3,
             maxWordCount: 3,
             correctAuxiliars: [["had", "been"]],
@@ -733,9 +889,12 @@ const completePastPerfectContinuousPositiveStatementVerbForm = [
         id: "638b641be3f748b254ce7136364cb7ba",
         type: "completePastPerfectContinuousPositiveStatementVerbForm",
         data: {
-            leftSide: "The baby",
-            middle: "(cry)",
-            rightSide: "until he fell asleep.",
+            prompt: {
+                twoSided: true,
+                leftSide: "The baby",
+                middle: "(cry)",
+                rightSide: "until he fell asleep."
+            },
             minWordCount: 3,
             maxWordCount: 3,
             correctAuxiliars: [["had", "been"]],
@@ -747,9 +906,12 @@ const completePastPerfectContinuousPositiveStatementVerbForm = [
         id: "365c99f68c4da24f7331c47ed93fb1c0",
         type: "completePastPerfectContinuousPositiveStatementVerbForm",
         data: {
-            leftSide: "He",
-            middle: "(shop)",
-            rightSide: "all day before buying.",
+            prompt: {
+                twoSided: true,
+                leftSide: "He",
+                middle: "(shop)",
+                rightSide: "all day before buying."
+            },
             minWordCount: 3,
             maxWordCount: 3,
             correctAuxiliars: [["had", "been"]],
@@ -761,9 +923,12 @@ const completePastPerfectContinuousPositiveStatementVerbForm = [
         id: "c3c1fd53125bb675a0e88a281e40222e",
         type: "completePastPerfectContinuousPositiveStatementVerbForm",
         data: {
-            leftSide: "We",
-            middle: "(travel)",
-            rightSide: "for weeks through Asia.",
+            prompt: {
+                twoSided: true,
+                leftSide: "We",
+                middle: "(travel)",
+                rightSide: "for weeks through Asia."
+            },
             minWordCount: 3,
             maxWordCount: 3,
             correctAuxiliars: [["had", "been"]],
@@ -775,9 +940,12 @@ const completePastPerfectContinuousPositiveStatementVerbForm = [
         id: "b1565fcafb269703261e07798d2798be",
         type: "completePastPerfectContinuousPositiveStatementVerbForm",
         data: {
-            leftSide: "I",
-            middle: "(search)",
-            rightSide: "for my keys for long.",
+            prompt: {
+                twoSided: true,
+                leftSide: "I",
+                middle: "(search)",
+                rightSide: "for my keys for long."
+            },
             minWordCount: 3,
             maxWordCount: 3,
             correctAuxiliars: [["had", "been"]],
@@ -789,9 +957,12 @@ const completePastPerfectContinuousPositiveStatementVerbForm = [
         id: "6764c0f5882326c40af089dcfb7fed8b",
         type: "completePastPerfectContinuousPositiveStatementVerbForm",
         data: {
-            leftSide: "The wind",
-            middle: "(blow)",
-            rightSide: "hard all night.",
+            prompt: {
+                twoSided: true,
+                leftSide: "The wind",
+                middle: "(blow)",
+                rightSide: "hard all night."
+            },
             minWordCount: 3,
             maxWordCount: 3,
             correctAuxiliars: [["had", "been"]],
@@ -803,9 +974,12 @@ const completePastPerfectContinuousPositiveStatementVerbForm = [
         id: "0bf39c08a87c2773c381f6cca4c6d8f7",
         type: "completePastPerfectContinuousPositiveStatementVerbForm",
         data: {
-            leftSide: "She",
-            middle: "(sing)",
-            rightSide: "since she arrived.",
+            prompt: {
+                twoSided: true,
+                leftSide: "She",
+                middle: "(sing)",
+                rightSide: "since she arrived."
+            },
             minWordCount: 3,
             maxWordCount: 3,
             correctAuxiliars: [["had", "been"]],
@@ -817,9 +991,12 @@ const completePastPerfectContinuousPositiveStatementVerbForm = [
         id: "57a090a4e399624186ebbe19955f06f9",
         type: "completePastPerfectContinuousPositiveStatementVerbForm",
         data: {
-            leftSide: "They",
-            middle: "(build)",
-            rightSide: "the house for a year.",
+            prompt: {
+                twoSided: true,
+                leftSide: "They",
+                middle: "(build)",
+                rightSide: "the house for a year."
+            },
             minWordCount: 3,
             maxWordCount: 3,
             correctAuxiliars: [["had", "been"]],
@@ -831,9 +1008,12 @@ const completePastPerfectContinuousPositiveStatementVerbForm = [
         id: "ba2ffd3b3dddbc006bec725d7f1ec29d",
         type: "completePastPerfectContinuousPositiveStatementVerbForm",
         data: {
-            leftSide: "He",
-            middle: "(listen)",
-            rightSide: "to music for hours.",
+            prompt: {
+                twoSided: true,
+                leftSide: "He",
+                middle: "(listen)",
+                rightSide: "to music for hours."
+            },
             minWordCount: 3,
             maxWordCount: 3,
             correctAuxiliars: [["had", "been"]],
@@ -845,9 +1025,12 @@ const completePastPerfectContinuousPositiveStatementVerbForm = [
         id: "eaf087422b682b2baf7da22ca0787ad4",
         type: "completePastPerfectContinuousPositiveStatementVerbForm",
         data: {
-            leftSide: "We",
-            middle: "(dance)",
-            rightSide: "until our feet hurt.",
+            prompt: {
+                twoSided: true,
+                leftSide: "We",
+                middle: "(dance)",
+                rightSide: "until our feet hurt."
+            },
             minWordCount: 3,
             maxWordCount: 3,
             correctAuxiliars: [["had", "been"]],
@@ -859,9 +1042,12 @@ const completePastPerfectContinuousPositiveStatementVerbForm = [
         id: "c4ead35d8979942ee94348a284ec60bd",
         type: "completePastPerfectContinuousPositiveStatementVerbForm",
         data: {
-            leftSide: "The scientist",
-            middle: "(test)",
-            rightSide: "the theory for years.",
+            prompt: {
+                twoSided: true,
+                leftSide: "The scientist",
+                middle: "(test)",
+                rightSide: "the theory for years."
+            },
             minWordCount: 3,
             maxWordCount: 3,
             correctAuxiliars: [["had", "been"]],
@@ -873,9 +1059,12 @@ const completePastPerfectContinuousPositiveStatementVerbForm = [
         id: "a57378411adea9d7a782a3cfcf4d6fd8",
         type: "completePastPerfectContinuousPositiveStatementVerbForm",
         data: {
-            leftSide: "I",
-            middle: "(wait)",
-            rightSide: "at the station since 5.",
+            prompt: {
+                twoSided: true,
+                leftSide: "I",
+                middle: "(wait)",
+                rightSide: "at the station since 5."
+            },
             minWordCount: 3,
             maxWordCount: 3,
             correctAuxiliars: [["had", "been"]],
@@ -887,9 +1076,12 @@ const completePastPerfectContinuousPositiveStatementVerbForm = [
         id: "d23e52e176eb41e7e3ce3c85246d6a88",
         type: "completePastPerfectContinuousPositiveStatementVerbForm",
         data: {
-            leftSide: "She",
-            middle: "(study)",
-            rightSide: "English for a decade.",
+            prompt: {
+                twoSided: true,
+                leftSide: "She",
+                middle: "(study)",
+                rightSide: "English for a decade."
+            },
             minWordCount: 3,
             maxWordCount: 3,
             correctAuxiliars: [["had", "been"]],
@@ -901,9 +1093,12 @@ const completePastPerfectContinuousPositiveStatementVerbForm = [
         id: "8172656fdeff7df8200978187313fce6",
         type: "completePastPerfectContinuousPositiveStatementVerbForm",
         data: {
-            leftSide: "They",
-            middle: "(cycle)",
-            rightSide: "for fifty miles then.",
+            prompt: {
+                twoSided: true,
+                leftSide: "They",
+                middle: "(cycle)",
+                rightSide: "for fifty miles then."
+            },
             minWordCount: 3,
             maxWordCount: 3,
             correctAuxiliars: [["had", "been"]],
@@ -915,9 +1110,12 @@ const completePastPerfectContinuousPositiveStatementVerbForm = [
         id: "ee5f24b0fa3510cad6cb856bf82883d7",
         type: "completePastPerfectContinuousPositiveStatementVerbForm",
         data: {
-            leftSide: "He",
-            middle: "(run)",
-            rightSide: "the business since 2010.",
+            prompt: {
+                twoSided: true,
+                leftSide: "He",
+                middle: "(run)",
+                rightSide: "the business since 2010."
+            },
             minWordCount: 3,
             maxWordCount: 3,
             correctAuxiliars: [["had", "been"]],
@@ -929,9 +1127,12 @@ const completePastPerfectContinuousPositiveStatementVerbForm = [
         id: "47725677ac5f9ff379f1d9e17cf6c4eb",
         type: "completePastPerfectContinuousPositiveStatementVerbForm",
         data: {
-            leftSide: "We",
-            middle: "(plan)",
-            rightSide: "the trip since January.",
+            prompt: {
+                twoSided: true,
+                leftSide: "We",
+                middle: "(plan)",
+                rightSide: "the trip since January."
+            },
             minWordCount: 3,
             maxWordCount: 3,
             correctAuxiliars: [["had", "been"]],
@@ -943,9 +1144,12 @@ const completePastPerfectContinuousPositiveStatementVerbForm = [
         id: "86e52813e1aae378cbb2dbede5f65937",
         type: "completePastPerfectContinuousPositiveStatementVerbForm",
         data: {
-            leftSide: "The musician",
-            middle: "(play)",
-            rightSide: "for long when it broke.",
+            prompt: {
+                twoSided: true,
+                leftSide: "The musician",
+                middle: "(play)",
+                rightSide: "for long when it broke."
+            },
             minWordCount: 3,
             maxWordCount: 3,
             correctAuxiliars: [["had", "been"]],
@@ -957,9 +1161,12 @@ const completePastPerfectContinuousPositiveStatementVerbForm = [
         id: "9536014b517c4ee564c7f6dce2b839fa",
         type: "completePastPerfectContinuousPositiveStatementVerbForm",
         data: {
-            leftSide: "I",
-            middle: "(bake)",
-            rightSide: "all day for the fair.",
+            prompt: {
+                twoSided: true,
+                leftSide: "I",
+                middle: "(bake)",
+                rightSide: "all day for the fair."
+            },
             minWordCount: 3,
             maxWordCount: 3,
             correctAuxiliars: [["had", "been"]],
@@ -971,9 +1178,12 @@ const completePastPerfectContinuousPositiveStatementVerbForm = [
         id: "7c10895a6678eb5315a8916fbd818778",
         type: "completePastPerfectContinuousPositiveStatementVerbForm",
         data: {
-            leftSide: "She",
-            middle: "(sew)",
-            rightSide: "the dress since morning.",
+            prompt: {
+                twoSided: true,
+                leftSide: "She",
+                middle: "(sew)",
+                rightSide: "the dress since morning."
+            },
             minWordCount: 3,
             maxWordCount: 3,
             correctAuxiliars: [["had", "been"]],
@@ -985,9 +1195,12 @@ const completePastPerfectContinuousPositiveStatementVerbForm = [
         id: "6f987b9004b469cf03be1f4ffeddd03b",
         type: "completePastPerfectContinuousPositiveStatementVerbForm",
         data: {
-            leftSide: "They",
-            middle: "(hunt)",
-            rightSide: "since dawn in the woods.",
+            prompt: {
+                twoSided: true,
+                leftSide: "They",
+                middle: "(hunt)",
+                rightSide: "since dawn in the woods."
+            },
             minWordCount: 3,
             maxWordCount: 3,
             correctAuxiliars: [["had", "been"]],
@@ -999,9 +1212,12 @@ const completePastPerfectContinuousPositiveStatementVerbForm = [
         id: "53bd8128f94eb94c3e6b034768f1cb91",
         type: "completePastPerfectContinuousPositiveStatementVerbForm",
         data: {
-            leftSide: "The boat",
-            middle: "(leak)",
-            rightSide: "water for an hour.",
+            prompt: {
+                twoSided: true,
+                leftSide: "The boat",
+                middle: "(leak)",
+                rightSide: "water for an hour."
+            },
             minWordCount: 3,
             maxWordCount: 3,
             correctAuxiliars: [["had", "been"]],
@@ -1013,9 +1229,12 @@ const completePastPerfectContinuousPositiveStatementVerbForm = [
         id: "4e95ee184772c71d95f29aee18f1f56f",
         type: "completePastPerfectContinuousPositiveStatementVerbForm",
         data: {
-            leftSide: "He",
-            middle: "(type)",
-            rightSide: "for long when it crashed.",
+            prompt: {
+                twoSided: true,
+                leftSide: "He",
+                middle: "(type)",
+                rightSide: "for long when it crashed."
+            },
             minWordCount: 3,
             maxWordCount: 3,
             correctAuxiliars: [["had", "been"]],
@@ -1027,9 +1246,12 @@ const completePastPerfectContinuousPositiveStatementVerbForm = [
         id: "5fe395e617ce4050a83966dd40ed2890",
         type: "completePastPerfectContinuousPositiveStatementVerbForm",
         data: {
-            leftSide: "We",
-            middle: "(climb)",
-            rightSide: "for five hours then.",
+            prompt: {
+                twoSided: true,
+                leftSide: "We",
+                middle: "(climb)",
+                rightSide: "for five hours then."
+            },
             minWordCount: 3,
             maxWordCount: 3,
             correctAuxiliars: [["had", "been"]],
@@ -1041,9 +1263,12 @@ const completePastPerfectContinuousPositiveStatementVerbForm = [
         id: "c552a56fab7e090892746686945ff28b",
         type: "completePastPerfectContinuousPositiveStatementVerbForm",
         data: {
-            leftSide: "I",
-            middle: "(wait)",
-            rightSide: "for the call since noon.",
+            prompt: {
+                twoSided: true,
+                leftSide: "I",
+                middle: "(wait)",
+                rightSide: "for the call since noon."
+            },
             minWordCount: 3,
             maxWordCount: 3,
             correctAuxiliars: [["had", "been"]],
@@ -1055,9 +1280,12 @@ const completePastPerfectContinuousPositiveStatementVerbForm = [
         id: "95cf3e86fd8ccebfa0af5ccff50e3938",
         type: "completePastPerfectContinuousPositiveStatementVerbForm",
         data: {
-            leftSide: "She",
-            middle: "(write)",
-            rightSide: "poetry since she was young.",
+            prompt: {
+                twoSided: true,
+                leftSide: "She",
+                middle: "(write)",
+                rightSide: "poetry since she was young."
+            },
             minWordCount: 3,
             maxWordCount: 3,
             correctAuxiliars: [["had", "been"]],
@@ -1069,9 +1297,12 @@ const completePastPerfectContinuousPositiveStatementVerbForm = [
         id: "5f2502a7a27deb5c62a68075bc890bc3",
         type: "completePastPerfectContinuousPositiveStatementVerbForm",
         data: {
-            leftSide: "They",
-            middle: "(save)",
-            rightSide: "money for a new house.",
+            prompt: {
+                twoSided: true,
+                leftSide: "They",
+                middle: "(save)",
+                rightSide: "money for a new house."
+            },
             minWordCount: 3,
             maxWordCount: 3,
             correctAuxiliars: [["had", "been"]],
@@ -1083,9 +1314,12 @@ const completePastPerfectContinuousPositiveStatementVerbForm = [
         id: "84bcb3d4f28a8c80db0ab0e5edd35f8c",
         type: "completePastPerfectContinuousPositiveStatementVerbForm",
         data: {
-            leftSide: "He",
-            middle: "(learn)",
-            rightSide: "Spanish since February.",
+            prompt: {
+                twoSided: true,
+                leftSide: "He",
+                middle: "(learn)",
+                rightSide: "Spanish since February."
+            },
             minWordCount: 3,
             maxWordCount: 3,
             correctAuxiliars: [["had", "been"]],
@@ -1097,9 +1331,12 @@ const completePastPerfectContinuousPositiveStatementVerbForm = [
         id: "d1e7b12a7fc957641051876a34f8b525",
         type: "completePastPerfectContinuousPositiveStatementVerbForm",
         data: {
-            leftSide: "We",
-            middle: "(sail)",
-            rightSide: "all day before docking.",
+            prompt: {
+                twoSided: true,
+                leftSide: "We",
+                middle: "(sail)",
+                rightSide: "all day before docking."
+            },
             minWordCount: 3,
             maxWordCount: 3,
             correctAuxiliars: [["had", "been"]],
@@ -1111,9 +1348,12 @@ const completePastPerfectContinuousPositiveStatementVerbForm = [
         id: "e2b0a06656d9c71f559fabd1901a7a31",
         type: "completePastPerfectContinuousPositiveStatementVerbForm",
         data: {
-            leftSide: "The moon",
-            middle: "(glow)",
-            rightSide: "brightly before clouds.",
+            prompt: {
+                twoSided: true,
+                leftSide: "The moon",
+                middle: "(glow)",
+                rightSide: "brightly before clouds."
+            },
             minWordCount: 3,
             maxWordCount: 3,
             correctAuxiliars: [["had", "been"]],
@@ -1125,9 +1365,12 @@ const completePastPerfectContinuousPositiveStatementVerbForm = [
         id: "103e76f0378c00a6680ed4922a88cf54",
         type: "completePastPerfectContinuousPositiveStatementVerbForm",
         data: {
-            leftSide: "I",
-            middle: "(work)",
-            rightSide: "on the car all Sunday.",
+            prompt: {
+                twoSided: true,
+                leftSide: "I",
+                middle: "(work)",
+                rightSide: "on the car all Sunday."
+            },
             minWordCount: 3,
             maxWordCount: 3,
             correctAuxiliars: [["had", "been"]],
@@ -1139,9 +1382,12 @@ const completePastPerfectContinuousPositiveStatementVerbForm = [
         id: "44b638bfff8a77c204105d1b4e06470d",
         type: "completePastPerfectContinuousPositiveStatementVerbForm",
         data: {
-            leftSide: "She",
-            middle: "(walk)",
-            rightSide: "home when it started.",
+            prompt: {
+                twoSided: true,
+                leftSide: "She",
+                middle: "(walk)",
+                rightSide: "home when it started."
+            },
             minWordCount: 3,
             maxWordCount: 3,
             correctAuxiliars: [["had", "been"]],
@@ -1153,9 +1399,12 @@ const completePastPerfectContinuousPositiveStatementVerbForm = [
         id: "0a2c32f363fa5f2f86307e10bb2ad3d9",
         type: "completePastPerfectContinuousPositiveStatementVerbForm",
         data: {
-            leftSide: "They",
-            middle: "(sleep)",
-            rightSide: "since last night.",
+            prompt: {
+                twoSided: true,
+                leftSide: "They",
+                middle: "(sleep)",
+                rightSide: "since last night."
+            },
             minWordCount: 3,
             maxWordCount: 3,
             correctAuxiliars: [["had", "been"]],
@@ -1167,9 +1416,12 @@ const completePastPerfectContinuousPositiveStatementVerbForm = [
         id: "a4acfb5b0b2e15c834105034a826532e",
         type: "completePastPerfectContinuousPositiveStatementVerbForm",
         data: {
-            leftSide: "He",
-            middle: "(play)",
-            rightSide: "chess for years then.",
+            prompt: {
+                twoSided: true,
+                leftSide: "He",
+                middle: "(play)",
+                rightSide: "chess for years then."
+            },
             minWordCount: 3,
             maxWordCount: 3,
             correctAuxiliars: [["had", "been"]],
@@ -1181,9 +1433,12 @@ const completePastPerfectContinuousPositiveStatementVerbForm = [
         id: "3d081aa3cce05067225449243454c925",
         type: "completePastPerfectContinuousPositiveStatementVerbForm",
         data: {
-            leftSide: "We",
-            middle: "(study)",
-            rightSide: "for hours before exams.",
+            prompt: {
+                twoSided: true,
+                leftSide: "We",
+                middle: "(study)",
+                rightSide: "for hours before exams."
+            },
             minWordCount: 3,
             maxWordCount: 3,
             correctAuxiliars: [["had", "been"]],
@@ -1195,9 +1450,12 @@ const completePastPerfectContinuousPositiveStatementVerbForm = [
         id: "8dd0d270031a7b728a6ff48be92173f7",
         type: "completePastPerfectContinuousPositiveStatementVerbForm",
         data: {
-            leftSide: "I",
-            middle: "(paint)",
-            rightSide: "the fence since noon.",
+            prompt: {
+                twoSided: true,
+                leftSide: "I",
+                middle: "(paint)",
+                rightSide: "the fence since noon."
+            },
             minWordCount: 3,
             maxWordCount: 3,
             correctAuxiliars: [["had", "been"]],
@@ -1209,9 +1467,12 @@ const completePastPerfectContinuousPositiveStatementVerbForm = [
         id: "174023b9a2b9de3c782a43ca3a829f43",
         type: "completePastPerfectContinuousPositiveStatementVerbForm",
         data: {
-            leftSide: "She",
-            middle: "(read)",
-            rightSide: "the novel all day.",
+            prompt: {
+                twoSided: true,
+                leftSide: "She",
+                middle: "(read)",
+                rightSide: "the novel all day."
+            },
             minWordCount: 3,
             maxWordCount: 3,
             correctAuxiliars: [["had", "been"]],
@@ -1223,9 +1484,12 @@ const completePastPerfectContinuousPositiveStatementVerbForm = [
         id: "e97460f70322e59a6581f81499edaad0",
         type: "completePastPerfectContinuousPositiveStatementVerbForm",
         data: {
-            leftSide: "They",
-            middle: "(talk)",
-            rightSide: "since the sun rose.",
+            prompt: {
+                twoSided: true,
+                leftSide: "They",
+                middle: "(talk)",
+                rightSide: "since the sun rose."
+            },
             minWordCount: 3,
             maxWordCount: 3,
             correctAuxiliars: [["had", "been"]],
@@ -1237,9 +1501,12 @@ const completePastPerfectContinuousPositiveStatementVerbForm = [
         id: "e3f97848ff8db564ac75fdbebbe36323",
         type: "completePastPerfectContinuousPositiveStatementVerbForm",
         data: {
-            leftSide: "He",
-            middle: "(clean)",
-            rightSide: "the kitchen for hours.",
+            prompt: {
+                twoSided: true,
+                leftSide: "He",
+                middle: "(clean)",
+                rightSide: "the kitchen for hours."
+            },
             minWordCount: 3,
             maxWordCount: 3,
             correctAuxiliars: [["had", "been"]],
@@ -1251,9 +1518,12 @@ const completePastPerfectContinuousPositiveStatementVerbForm = [
         id: "282429a47f4165d6f0c79ca635e067c6",
         type: "completePastPerfectContinuousPositiveStatementVerbForm",
         data: {
-            leftSide: "We",
-            middle: "(exercise)",
-            rightSide: "daily since Monday.",
+            prompt: {
+                twoSided: true,
+                leftSide: "We",
+                middle: "(exercise)",
+                rightSide: "daily since Monday."
+            },
             minWordCount: 3,
             maxWordCount: 3,
             correctAuxiliars: [["had", "been"]],
@@ -1265,9 +1535,12 @@ const completePastPerfectContinuousPositiveStatementVerbForm = [
         id: "d3616548695879ae16741ad313f4a2f6",
         type: "completePastPerfectContinuousPositiveStatementVerbForm",
         data: {
-            leftSide: "I",
-            middle: "(swim)",
-            rightSide: "laps for forty minutes.",
+            prompt: {
+                twoSided: true,
+                leftSide: "I",
+                middle: "(swim)",
+                rightSide: "laps for forty minutes."
+            },
             minWordCount: 3,
             maxWordCount: 3,
             correctAuxiliars: [["had", "been"]],
@@ -1279,9 +1552,12 @@ const completePastPerfectContinuousPositiveStatementVerbForm = [
         id: "8d99f943dacf11502e7eb7c553a6ea37",
         type: "completePastPerfectContinuousPositiveStatementVerbForm",
         data: {
-            leftSide: "She",
-            middle: "(wait)",
-            rightSide: "for the bus since 4.",
+            prompt: {
+                twoSided: true,
+                leftSide: "She",
+                middle: "(wait)",
+                rightSide: "for the bus since 4."
+            },
             minWordCount: 3,
             maxWordCount: 3,
             correctAuxiliars: [["had", "been"]],
@@ -1293,9 +1569,12 @@ const completePastPerfectContinuousPositiveStatementVerbForm = [
         id: "eea1592ceee0965971d10aa6888e5b1e",
         type: "completePastPerfectContinuousPositiveStatementVerbForm",
         data: {
-            leftSide: "They",
-            middle: "(hike)",
-            rightSide: "the mountain for days.",
+            prompt: {
+                twoSided: true,
+                leftSide: "They",
+                middle: "(hike)",
+                rightSide: "the mountain for days."
+            },
             minWordCount: 3,
             maxWordCount: 3,
             correctAuxiliars: [["had", "been"]],
@@ -1307,9 +1586,12 @@ const completePastPerfectContinuousPositiveStatementVerbForm = [
         id: "2904f17d597b0668fea4d882c9f7cac2",
         type: "completePastPerfectContinuousPositiveStatementVerbForm",
         data: {
-            leftSide: "He",
-            middle: "(draw)",
-            rightSide: "since breakfast time.",
+            prompt: {
+                twoSided: true,
+                leftSide: "He",
+                middle: "(draw)",
+                rightSide: "since breakfast time."
+            },
             minWordCount: 3,
             maxWordCount: 3,
             correctAuxiliars: [["had", "been"]],
@@ -1321,9 +1603,12 @@ const completePastPerfectContinuousPositiveStatementVerbForm = [
         id: "4954e42fd27f6954eb9c5795870eb084",
         type: "completePastPerfectContinuousPositiveStatementVerbForm",
         data: {
-            leftSide: "We",
-            middle: "(run)",
-            rightSide: "the race for long then.",
+            prompt: {
+                twoSided: true,
+                leftSide: "We",
+                middle: "(run)",
+                rightSide: "the race for long then."
+            },
             minWordCount: 3,
             maxWordCount: 3,
             correctAuxiliars: [["had", "been"]],
@@ -1335,9 +1620,12 @@ const completePastPerfectContinuousPositiveStatementVerbForm = [
         id: "f99451c6e4a7c7e8145bc27c7d64c78c",
         type: "completePastPerfectContinuousPositiveStatementVerbForm",
         data: {
-            leftSide: "I",
-            middle: "(wait)",
-            rightSide: "patiently for long.",
+            prompt: {
+                twoSided: true,
+                leftSide: "I",
+                middle: "(wait)",
+                rightSide: "patiently for long."
+            },
             minWordCount: 3,
             maxWordCount: 3,
             correctAuxiliars: [["had", "been"]],
@@ -1349,9 +1637,12 @@ const completePastPerfectContinuousPositiveStatementVerbForm = [
         id: "817b5c449ffa24a23bb5ffcb3655ec60",
         type: "completePastPerfectContinuousPositiveStatementVerbForm",
         data: {
-            leftSide: "She",
-            middle: "(search)",
-            rightSide: "for the cat all day.",
+            prompt: {
+                twoSided: true,
+                leftSide: "She",
+                middle: "(search)",
+                rightSide: "for the cat all day."
+            },
             minWordCount: 3,
             maxWordCount: 3,
             correctAuxiliars: [["had", "been"]],
@@ -1363,9 +1654,12 @@ const completePastPerfectContinuousPositiveStatementVerbForm = [
         id: "a3e0725078e00d12380f4b7c64e5b918",
         type: "completePastPerfectContinuousPositiveStatementVerbForm",
         data: {
-            leftSide: "They",
-            middle: "(listen)",
-            rightSide: "to the radio for long.",
+            prompt: {
+                twoSided: true,
+                leftSide: "They",
+                middle: "(listen)",
+                rightSide: "to the radio for long."
+            },
             minWordCount: 3,
             maxWordCount: 3,
             correctAuxiliars: [["had", "been"]],
@@ -1377,9 +1671,12 @@ const completePastPerfectContinuousPositiveStatementVerbForm = [
         id: "ca2f993e5c4d55a6e60f205f1d245197",
         type: "completePastPerfectContinuousPositiveStatementVerbForm",
         data: {
-            leftSide: "He",
-            middle: "(work)",
-            rightSide: "on the project since 6.",
+            prompt: {
+                twoSided: true,
+                leftSide: "He",
+                middle: "(work)",
+                rightSide: "on the project since 6."
+            },
             minWordCount: 3,
             maxWordCount: 3,
             correctAuxiliars: [["had", "been"]],
@@ -1391,9 +1688,12 @@ const completePastPerfectContinuousPositiveStatementVerbForm = [
         id: "a2a53840a108e58dd9a37ee913739670",
         type: "completePastPerfectContinuousPositiveStatementVerbForm",
         data: {
-            leftSide: "We",
-            middle: "(wait)",
-            rightSide: "for the rain to stop.",
+            prompt: {
+                twoSided: true,
+                leftSide: "We",
+                middle: "(wait)",
+                rightSide: "for the rain to stop."
+            },
             minWordCount: 3,
             maxWordCount: 3,
             correctAuxiliars: [["had", "been"]],

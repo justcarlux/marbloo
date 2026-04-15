@@ -5,9 +5,12 @@ const completeFuturePerfectNegativeStatementVerbForm = [
         id: "ec7907eb4b74d874c862d3fb3853948e",
         type: "completeFuturePerfectNegativeStatementVerbForm",
         data: {
-            leftSide: "They",
-            middle: "(finish)",
-            rightSide: "the project by Friday.",
+            prompt: {
+                twoSided: true,
+                leftSide: "They",
+                middle: "(finish)",
+                rightSide: "the project by Friday."
+            },
             minWordCount: 3,
             maxWordCount: 4,
             correctAuxiliars: [
@@ -22,9 +25,12 @@ const completeFuturePerfectNegativeStatementVerbForm = [
         id: "cb1744517849278f09debd3b18a5e6fc",
         type: "completeFuturePerfectNegativeStatementVerbForm",
         data: {
-            leftSide: "I",
-            middle: "(buy)",
-            rightSide: "the tickets before then.",
+            prompt: {
+                twoSided: true,
+                leftSide: "I",
+                middle: "(buy)",
+                rightSide: "the tickets before then."
+            },
             minWordCount: 3,
             maxWordCount: 4,
             correctAuxiliars: [
@@ -39,9 +45,12 @@ const completeFuturePerfectNegativeStatementVerbForm = [
         id: "8f42e578f9a498a1121cd8aada9e02ee",
         type: "completeFuturePerfectNegativeStatementVerbForm",
         data: {
-            leftSide: "He",
-            middle: "(read)",
-            rightSide: "the whole book by tonight.",
+            prompt: {
+                twoSided: true,
+                leftSide: "He",
+                middle: "(read)",
+                rightSide: "the whole book by tonight."
+            },
             minWordCount: 3,
             maxWordCount: 4,
             correctAuxiliars: [
@@ -56,9 +65,12 @@ const completeFuturePerfectNegativeStatementVerbForm = [
         id: "5e50432be4f5e2744987043db1a9ebf1",
         type: "completeFuturePerfectNegativeStatementVerbForm",
         data: {
-            leftSide: "We",
-            middle: "(arrive)",
-            rightSide: "at the hotel by noon.",
+            prompt: {
+                twoSided: true,
+                leftSide: "We",
+                middle: "(arrive)",
+                rightSide: "at the hotel by noon."
+            },
             minWordCount: 3,
             maxWordCount: 4,
             correctAuxiliars: [
@@ -73,9 +85,12 @@ const completeFuturePerfectNegativeStatementVerbForm = [
         id: "906e04c07f5fee70ff44d79702d22d42",
         type: "completeFuturePerfectNegativeStatementVerbForm",
         data: {
-            leftSide: "The sun",
-            middle: "(set)",
-            rightSide: "by 6 PM.",
+            prompt: {
+                twoSided: true,
+                leftSide: "The sun",
+                middle: "(set)",
+                rightSide: "by 6 PM."
+            },
             minWordCount: 3,
             maxWordCount: 4,
             correctAuxiliars: [
@@ -90,9 +105,12 @@ const completeFuturePerfectNegativeStatementVerbForm = [
         id: "2f8a4fbaa87af017499dfb848f5f44b4",
         type: "completeFuturePerfectNegativeStatementVerbForm",
         data: {
-            leftSide: "You",
-            middle: "(complete)",
-            rightSide: "the course by July.",
+            prompt: {
+                twoSided: true,
+                leftSide: "You",
+                middle: "(complete)",
+                rightSide: "the course by July."
+            },
             minWordCount: 3,
             maxWordCount: 4,
             correctAuxiliars: [
@@ -107,9 +125,12 @@ const completeFuturePerfectNegativeStatementVerbForm = [
         id: "a7a0416af6109e742eb6a0cab702d0c7",
         type: "completeFuturePerfectNegativeStatementVerbForm",
         data: {
-            leftSide: "The team",
-            middle: "(win)",
-            rightSide: "the trophy by the end of the year.",
+            prompt: {
+                twoSided: true,
+                leftSide: "The team",
+                middle: "(win)",
+                rightSide: "the trophy by the end of the year."
+            },
             minWordCount: 3,
             maxWordCount: 4,
             correctAuxiliars: [
@@ -124,9 +145,12 @@ const completeFuturePerfectNegativeStatementVerbForm = [
         id: "b42607151554c140794c70f508ab84f4",
         type: "completeFuturePerfectNegativeStatementVerbForm",
         data: {
-            leftSide: "I",
-            middle: "(forget)",
-            rightSide: "your help.",
+            prompt: {
+                twoSided: true,
+                leftSide: "I",
+                middle: "(forget)",
+                rightSide: "your help."
+            },
             minWordCount: 3,
             maxWordCount: 4,
             correctAuxiliars: [
@@ -141,9 +165,12 @@ const completeFuturePerfectNegativeStatementVerbForm = [
         id: "c57fd0e6f9e37a40bbdc6cd85538b908",
         type: "completeFuturePerfectNegativeStatementVerbForm",
         data: {
-            leftSide: "She",
-            middle: "(send)",
-            rightSide: "the email yet.",
+            prompt: {
+                twoSided: true,
+                leftSide: "She",
+                middle: "(send)",
+                rightSide: "the email yet."
+            },
             minWordCount: 3,
             maxWordCount: 4,
             correctAuxiliars: [
@@ -158,9 +185,12 @@ const completeFuturePerfectNegativeStatementVerbForm = [
         id: "fa1cea87fa53e3a355eeda9eb2773df7",
         type: "completeFuturePerfectNegativeStatementVerbForm",
         data: {
-            leftSide: "The snow",
-            middle: "(melt)",
-            rightSide: "completely by morning.",
+            prompt: {
+                twoSided: true,
+                leftSide: "The snow",
+                middle: "(melt)",
+                rightSide: "completely by morning."
+            },
             minWordCount: 3,
             maxWordCount: 4,
             correctAuxiliars: [
@@ -175,9 +205,12 @@ const completeFuturePerfectNegativeStatementVerbForm = [
         id: "483560fd7c030e252ce22cc20b41bd9b",
         type: "completeFuturePerfectNegativeStatementVerbForm",
         data: {
-            leftSide: "The flowers",
-            middle: "(bloom)",
-            rightSide: "before the wedding.",
+            prompt: {
+                twoSided: true,
+                leftSide: "The flowers",
+                middle: "(bloom)",
+                rightSide: "before the wedding."
+            },
             minWordCount: 3,
             maxWordCount: 4,
             correctAuxiliars: [
@@ -192,9 +225,12 @@ const completeFuturePerfectNegativeStatementVerbForm = [
         id: "f2aa466bed5b6a0df7a274c04408285f",
         type: "completeFuturePerfectNegativeStatementVerbForm",
         data: {
-            leftSide: "We",
-            middle: "(spend)",
-            rightSide: "all our money by Tuesday.",
+            prompt: {
+                twoSided: true,
+                leftSide: "We",
+                middle: "(spend)",
+                rightSide: "all our money by Tuesday."
+            },
             minWordCount: 3,
             maxWordCount: 4,
             correctAuxiliars: [
@@ -209,9 +245,12 @@ const completeFuturePerfectNegativeStatementVerbForm = [
         id: "1b2ebe1fe1eeb5ee6a991bf8a8cb5f2a",
         type: "completeFuturePerfectNegativeStatementVerbForm",
         data: {
-            leftSide: "The mechanic",
-            middle: "(repair)",
-            rightSide: "the car by then.",
+            prompt: {
+                twoSided: true,
+                leftSide: "The mechanic",
+                middle: "(repair)",
+                rightSide: "the car by then."
+            },
             minWordCount: 3,
             maxWordCount: 4,
             correctAuxiliars: [
@@ -226,9 +265,12 @@ const completeFuturePerfectNegativeStatementVerbForm = [
         id: "aecd36876469bd6fd036fe29fcf0dd25",
         type: "completeFuturePerfectNegativeStatementVerbForm",
         data: {
-            leftSide: "He",
-            middle: "(return)",
-            rightSide: "from his trip.",
+            prompt: {
+                twoSided: true,
+                leftSide: "He",
+                middle: "(return)",
+                rightSide: "from his trip."
+            },
             minWordCount: 3,
             maxWordCount: 4,
             correctAuxiliars: [
@@ -243,9 +285,12 @@ const completeFuturePerfectNegativeStatementVerbForm = [
         id: "b0f539422694c210f8368884c3e80db1",
         type: "completeFuturePerfectNegativeStatementVerbForm",
         data: {
-            leftSide: "They",
-            middle: "(build)",
-            rightSide: "the wall by Christmas.",
+            prompt: {
+                twoSided: true,
+                leftSide: "They",
+                middle: "(build)",
+                rightSide: "the wall by Christmas."
+            },
             minWordCount: 3,
             maxWordCount: 4,
             correctAuxiliars: [
@@ -260,9 +305,12 @@ const completeFuturePerfectNegativeStatementVerbForm = [
         id: "42dfe5e1438f399a98e113d5679f3db9",
         type: "completeFuturePerfectNegativeStatementVerbForm",
         data: {
-            leftSide: "I",
-            middle: "(learn)",
-            rightSide: "French perfectly.",
+            prompt: {
+                twoSided: true,
+                leftSide: "I",
+                middle: "(learn)",
+                rightSide: "French perfectly."
+            },
             minWordCount: 3,
             maxWordCount: 4,
             correctAuxiliars: [
@@ -277,9 +325,12 @@ const completeFuturePerfectNegativeStatementVerbForm = [
         id: "b15cd5a2a2dcb1c18abaa8047520eb0d",
         type: "completeFuturePerfectNegativeStatementVerbForm",
         data: {
-            leftSide: "She",
-            middle: "(write)",
-            rightSide: "the report by 5 PM.",
+            prompt: {
+                twoSided: true,
+                leftSide: "She",
+                middle: "(write)",
+                rightSide: "the report by 5 PM."
+            },
             minWordCount: 3,
             maxWordCount: 4,
             correctAuxiliars: [
@@ -294,9 +345,12 @@ const completeFuturePerfectNegativeStatementVerbForm = [
         id: "cc8befb403b854f2f23afad4bd4f0ddb",
         type: "completeFuturePerfectNegativeStatementVerbForm",
         data: {
-            leftSide: "The chef",
-            middle: "(cook)",
-            rightSide: "the main course.",
+            prompt: {
+                twoSided: true,
+                leftSide: "The chef",
+                middle: "(cook)",
+                rightSide: "the main course."
+            },
             minWordCount: 3,
             maxWordCount: 4,
             correctAuxiliars: [
@@ -311,9 +365,12 @@ const completeFuturePerfectNegativeStatementVerbForm = [
         id: "cf08e0ff869d2a640c7897d52d263aff",
         type: "completeFuturePerfectNegativeStatementVerbForm",
         data: {
-            leftSide: "We",
-            middle: "(see)",
-            rightSide: "every painting in the museum.",
+            prompt: {
+                twoSided: true,
+                leftSide: "We",
+                middle: "(see)",
+                rightSide: "every painting in the museum."
+            },
             minWordCount: 3,
             maxWordCount: 4,
             correctAuxiliars: [
@@ -328,9 +385,12 @@ const completeFuturePerfectNegativeStatementVerbForm = [
         id: "32c67bb6188d609570dfdb274ba16bd0",
         type: "completeFuturePerfectNegativeStatementVerbForm",
         data: {
-            leftSide: "The rain",
-            middle: "(stop)",
-            rightSide: "by tonight.",
+            prompt: {
+                twoSided: true,
+                leftSide: "The rain",
+                middle: "(stop)",
+                rightSide: "by tonight."
+            },
             minWordCount: 3,
             maxWordCount: 4,
             correctAuxiliars: [
@@ -345,9 +405,12 @@ const completeFuturePerfectNegativeStatementVerbForm = [
         id: "33c0c68e7e5bfcdcf1c854e0a46259ac",
         type: "completeFuturePerfectNegativeStatementVerbForm",
         data: {
-            leftSide: "You",
-            middle: "(eat)",
-            rightSide: "dinner before we arrive.",
+            prompt: {
+                twoSided: true,
+                leftSide: "You",
+                middle: "(eat)",
+                rightSide: "dinner before we arrive."
+            },
             minWordCount: 3,
             maxWordCount: 4,
             correctAuxiliars: [
@@ -362,9 +425,12 @@ const completeFuturePerfectNegativeStatementVerbForm = [
         id: "5671902722018334dfbac4eea079d653",
         type: "completeFuturePerfectNegativeStatementVerbForm",
         data: {
-            leftSide: "The company",
-            middle: "(expand)",
-            rightSide: "internationally.",
+            prompt: {
+                twoSided: true,
+                leftSide: "The company",
+                middle: "(expand)",
+                rightSide: "internationally."
+            },
             minWordCount: 3,
             maxWordCount: 4,
             correctAuxiliars: [
@@ -379,9 +445,12 @@ const completeFuturePerfectNegativeStatementVerbForm = [
         id: "0a2a8dcb7e48c1cac675b38b04eaa71a",
         type: "completeFuturePerfectNegativeStatementVerbForm",
         data: {
-            leftSide: "I",
-            middle: "(start)",
-            rightSide: "my new job by then.",
+            prompt: {
+                twoSided: true,
+                leftSide: "I",
+                middle: "(start)",
+                rightSide: "my new job by then."
+            },
             minWordCount: 3,
             maxWordCount: 4,
             correctAuxiliars: [
@@ -396,9 +465,12 @@ const completeFuturePerfectNegativeStatementVerbForm = [
         id: "3b59e70c9cd4a00d380e1703775b09b6",
         type: "completeFuturePerfectNegativeStatementVerbForm",
         data: {
-            leftSide: "He",
-            middle: "(sell)",
-            rightSide: "his old computer.",
+            prompt: {
+                twoSided: true,
+                leftSide: "He",
+                middle: "(sell)",
+                rightSide: "his old computer."
+            },
             minWordCount: 3,
             maxWordCount: 4,
             correctAuxiliars: [
@@ -413,9 +485,12 @@ const completeFuturePerfectNegativeStatementVerbForm = [
         id: "4ca033627cbd23ba5ca386cad2593a23",
         type: "completeFuturePerfectNegativeStatementVerbForm",
         data: {
-            leftSide: "They",
-            middle: "(find)",
-            rightSide: "a solution by tomorrow.",
+            prompt: {
+                twoSided: true,
+                leftSide: "They",
+                middle: "(find)",
+                rightSide: "a solution by tomorrow."
+            },
             minWordCount: 3,
             maxWordCount: 4,
             correctAuxiliars: [
@@ -430,9 +505,12 @@ const completeFuturePerfectNegativeStatementVerbForm = [
         id: "e432d6a9639d23e9c18a7f93094cbf6e",
         type: "completeFuturePerfectNegativeStatementVerbForm",
         data: {
-            leftSide: "The pilot",
-            middle: "(land)",
-            rightSide: "the plane before the storm.",
+            prompt: {
+                twoSided: true,
+                leftSide: "The pilot",
+                middle: "(land)",
+                rightSide: "the plane before the storm."
+            },
             minWordCount: 3,
             maxWordCount: 4,
             correctAuxiliars: [
@@ -447,9 +525,12 @@ const completeFuturePerfectNegativeStatementVerbForm = [
         id: "f73b700043d15d551f54a63a854e177e",
         type: "completeFuturePerfectNegativeStatementVerbForm",
         data: {
-            leftSide: "She",
-            middle: "(clean)",
-            rightSide: "the whole house.",
+            prompt: {
+                twoSided: true,
+                leftSide: "She",
+                middle: "(clean)",
+                rightSide: "the whole house."
+            },
             minWordCount: 3,
             maxWordCount: 4,
             correctAuxiliars: [
@@ -464,9 +545,12 @@ const completeFuturePerfectNegativeStatementVerbForm = [
         id: "efc85b33d845e8c9f3086a45c95f0d2d",
         type: "completeFuturePerfectNegativeStatementVerbForm",
         data: {
-            leftSide: "We",
-            middle: "(meet)",
-            rightSide: "the deadlines.",
+            prompt: {
+                twoSided: true,
+                leftSide: "We",
+                middle: "(meet)",
+                rightSide: "the deadlines."
+            },
             minWordCount: 3,
             maxWordCount: 4,
             correctAuxiliars: [
@@ -481,9 +565,12 @@ const completeFuturePerfectNegativeStatementVerbForm = [
         id: "29ca2a18125f6619db1d36c8c6ef4ae7",
         type: "completeFuturePerfectNegativeStatementVerbForm",
         data: {
-            leftSide: "The grass",
-            middle: "(grow)",
-            rightSide: "much by next month.",
+            prompt: {
+                twoSided: true,
+                leftSide: "The grass",
+                middle: "(grow)",
+                rightSide: "much by next month."
+            },
             minWordCount: 3,
             maxWordCount: 4,
             correctAuxiliars: [
@@ -498,9 +585,12 @@ const completeFuturePerfectNegativeStatementVerbForm = [
         id: "f78d3d87686840a005787741dc01c8c1",
         type: "completeFuturePerfectNegativeStatementVerbForm",
         data: {
-            leftSide: "You",
-            middle: "(hear)",
-            rightSide: "the news until tomorrow.",
+            prompt: {
+                twoSided: true,
+                leftSide: "You",
+                middle: "(hear)",
+                rightSide: "the news until tomorrow."
+            },
             minWordCount: 3,
             maxWordCount: 4,
             correctAuxiliars: [
@@ -515,9 +605,12 @@ const completeFuturePerfectNegativeStatementVerbForm = [
         id: "e6ce62dd722632a5312d64f8de648833",
         type: "completeFuturePerfectNegativeStatementVerbForm",
         data: {
-            leftSide: "I",
-            middle: "(pay)",
-            rightSide: "the bill by Monday.",
+            prompt: {
+                twoSided: true,
+                leftSide: "I",
+                middle: "(pay)",
+                rightSide: "the bill by Monday."
+            },
             minWordCount: 3,
             maxWordCount: 4,
             correctAuxiliars: [
@@ -532,9 +625,12 @@ const completeFuturePerfectNegativeStatementVerbForm = [
         id: "03d4cba852d5402c8f5f5e2cd8bd9643",
         type: "completeFuturePerfectNegativeStatementVerbForm",
         data: {
-            leftSide: "The teacher",
-            middle: "(grade)",
-            rightSide: "the papers.",
+            prompt: {
+                twoSided: true,
+                leftSide: "The teacher",
+                middle: "(grade)",
+                rightSide: "the papers."
+            },
             minWordCount: 3,
             maxWordCount: 4,
             correctAuxiliars: [
@@ -549,9 +645,12 @@ const completeFuturePerfectNegativeStatementVerbForm = [
         id: "c1f2786488e6cb0afd58be5489ae1202",
         type: "completeFuturePerfectNegativeStatementVerbForm",
         data: {
-            leftSide: "She",
-            middle: "(make)",
-            rightSide: "a decision by then.",
+            prompt: {
+                twoSided: true,
+                leftSide: "She",
+                middle: "(make)",
+                rightSide: "a decision by then."
+            },
             minWordCount: 3,
             maxWordCount: 4,
             correctAuxiliars: [
@@ -566,9 +665,12 @@ const completeFuturePerfectNegativeStatementVerbForm = [
         id: "84644382d08924a86a2c79a86df97a04",
         type: "completeFuturePerfectNegativeStatementVerbForm",
         data: {
-            leftSide: "They",
-            middle: "(receive)",
-            rightSide: "the package.",
+            prompt: {
+                twoSided: true,
+                leftSide: "They",
+                middle: "(receive)",
+                rightSide: "the package."
+            },
             minWordCount: 3,
             maxWordCount: 4,
             correctAuxiliars: [
@@ -583,9 +685,12 @@ const completeFuturePerfectNegativeStatementVerbForm = [
         id: "2b27a5d3c7e7685107931dd6215db3ce",
         type: "completeFuturePerfectNegativeStatementVerbForm",
         data: {
-            leftSide: "We",
-            middle: "(travel)",
-            rightSide: "around the world.",
+            prompt: {
+                twoSided: true,
+                leftSide: "We",
+                middle: "(travel)",
+                rightSide: "around the world."
+            },
             minWordCount: 3,
             maxWordCount: 4,
             correctAuxiliars: [
@@ -600,9 +705,12 @@ const completeFuturePerfectNegativeStatementVerbForm = [
         id: "7e755147b15d4eda3829fb8b2dd500c6",
         type: "completeFuturePerfectNegativeStatementVerbForm",
         data: {
-            leftSide: "He",
-            middle: "(fix)",
-            rightSide: "the sink by Friday.",
+            prompt: {
+                twoSided: true,
+                leftSide: "He",
+                middle: "(fix)",
+                rightSide: "the sink by Friday."
+            },
             minWordCount: 3,
             maxWordCount: 4,
             correctAuxiliars: [
@@ -617,9 +725,12 @@ const completeFuturePerfectNegativeStatementVerbForm = [
         id: "8139e181c8c56a13cc183a4b2f9e0a9e",
         type: "completeFuturePerfectNegativeStatementVerbForm",
         data: {
-            leftSide: "The artist",
-            middle: "(paint)",
-            rightSide: "the mural yet.",
+            prompt: {
+                twoSided: true,
+                leftSide: "The artist",
+                middle: "(paint)",
+                rightSide: "the mural yet."
+            },
             minWordCount: 3,
             maxWordCount: 4,
             correctAuxiliars: [
@@ -634,9 +745,12 @@ const completeFuturePerfectNegativeStatementVerbForm = [
         id: "4751f080a0cbb97dbbb6699e58e326ba",
         type: "completeFuturePerfectNegativeStatementVerbForm",
         data: {
-            leftSide: "You",
-            middle: "(get)",
-            rightSide: "your test results.",
+            prompt: {
+                twoSided: true,
+                leftSide: "You",
+                middle: "(get)",
+                rightSide: "your test results."
+            },
             minWordCount: 3,
             maxWordCount: 4,
             correctAuxiliars: [
@@ -651,9 +765,12 @@ const completeFuturePerfectNegativeStatementVerbForm = [
         id: "d1a7fa5c8256ba1a050d1ca7908bd9fc",
         type: "completeFuturePerfectNegativeStatementVerbForm",
         data: {
-            leftSide: "The train",
-            middle: "(leave)",
-            rightSide: "the station before we arrive.",
+            prompt: {
+                twoSided: true,
+                leftSide: "The train",
+                middle: "(leave)",
+                rightSide: "the station before we arrive."
+            },
             minWordCount: 3,
             maxWordCount: 4,
             correctAuxiliars: [
@@ -668,9 +785,12 @@ const completeFuturePerfectNegativeStatementVerbForm = [
         id: "461cf809e4cd450667bd27975359c502",
         type: "completeFuturePerfectNegativeStatementVerbForm",
         data: {
-            leftSide: "I",
-            middle: "(tell)",
-            rightSide: "him the truth yet.",
+            prompt: {
+                twoSided: true,
+                leftSide: "I",
+                middle: "(tell)",
+                rightSide: "him the truth yet."
+            },
             minWordCount: 3,
             maxWordCount: 4,
             correctAuxiliars: [
@@ -685,9 +805,12 @@ const completeFuturePerfectNegativeStatementVerbForm = [
         id: "3558ed25eb34991e1a5ecc48c605b355",
         type: "completeFuturePerfectNegativeStatementVerbForm",
         data: {
-            leftSide: "They",
-            middle: "(lose)",
-            rightSide: "hope by then.",
+            prompt: {
+                twoSided: true,
+                leftSide: "They",
+                middle: "(lose)",
+                rightSide: "hope by then."
+            },
             minWordCount: 3,
             maxWordCount: 4,
             correctAuxiliars: [
@@ -702,9 +825,12 @@ const completeFuturePerfectNegativeStatementVerbForm = [
         id: "ac37fa75eb10a549493d62c44d89ae87",
         type: "completeFuturePerfectNegativeStatementVerbForm",
         data: {
-            leftSide: "She",
-            middle: "(change)",
-            rightSide: "her mind.",
+            prompt: {
+                twoSided: true,
+                leftSide: "She",
+                middle: "(change)",
+                rightSide: "her mind."
+            },
             minWordCount: 3,
             maxWordCount: 4,
             correctAuxiliars: [
@@ -719,9 +845,12 @@ const completeFuturePerfectNegativeStatementVerbForm = [
         id: "8da72e75a0dca0f947e4763b5596e65d",
         type: "completeFuturePerfectNegativeStatementVerbForm",
         data: {
-            leftSide: "We",
-            middle: "(save)",
-            rightSide: "enough money for the trip.",
+            prompt: {
+                twoSided: true,
+                leftSide: "We",
+                middle: "(save)",
+                rightSide: "enough money for the trip."
+            },
             minWordCount: 3,
             maxWordCount: 4,
             correctAuxiliars: [
@@ -736,9 +865,12 @@ const completeFuturePerfectNegativeStatementVerbForm = [
         id: "289efa84fa43c86639563ddd19f539ab",
         type: "completeFuturePerfectNegativeStatementVerbForm",
         data: {
-            leftSide: "He",
-            middle: "(become)",
-            rightSide: "a doctor by age 25.",
+            prompt: {
+                twoSided: true,
+                leftSide: "He",
+                middle: "(become)",
+                rightSide: "a doctor by age 25."
+            },
             minWordCount: 3,
             maxWordCount: 4,
             correctAuxiliars: [
@@ -753,9 +885,12 @@ const completeFuturePerfectNegativeStatementVerbForm = [
         id: "ef6b1771cd5f0e2d6dcea4b15e55d4e7",
         type: "completeFuturePerfectNegativeStatementVerbForm",
         data: {
-            leftSide: "The cat",
-            middle: "(eat)",
-            rightSide: "all its food.",
+            prompt: {
+                twoSided: true,
+                leftSide: "The cat",
+                middle: "(eat)",
+                rightSide: "all its food."
+            },
             minWordCount: 3,
             maxWordCount: 4,
             correctAuxiliars: [
@@ -770,9 +905,12 @@ const completeFuturePerfectNegativeStatementVerbForm = [
         id: "b344650e5fda48b0c3aad2988f5f132e",
         type: "completeFuturePerfectNegativeStatementVerbForm",
         data: {
-            leftSide: "You",
-            middle: "(visit)",
-            rightSide: "all fifty states.",
+            prompt: {
+                twoSided: true,
+                leftSide: "You",
+                middle: "(visit)",
+                rightSide: "all fifty states."
+            },
             minWordCount: 3,
             maxWordCount: 4,
             correctAuxiliars: [
@@ -787,9 +925,12 @@ const completeFuturePerfectNegativeStatementVerbForm = [
         id: "f6a1869c9370bbcb7b66e8d3804f59f6",
         type: "completeFuturePerfectNegativeStatementVerbForm",
         data: {
-            leftSide: "The company",
-            middle: "(hire)",
-            rightSide: "new staff by June.",
+            prompt: {
+                twoSided: true,
+                leftSide: "The company",
+                middle: "(hire)",
+                rightSide: "new staff by June."
+            },
             minWordCount: 3,
             maxWordCount: 4,
             correctAuxiliars: [
@@ -804,9 +945,12 @@ const completeFuturePerfectNegativeStatementVerbForm = [
         id: "9cf63b92134fd81ce38f7548c6d71f67",
         type: "completeFuturePerfectNegativeStatementVerbForm",
         data: {
-            leftSide: "I",
-            middle: "(write)",
-            rightSide: "ten chapters.",
+            prompt: {
+                twoSided: true,
+                leftSide: "I",
+                middle: "(write)",
+                rightSide: "ten chapters."
+            },
             minWordCount: 3,
             maxWordCount: 4,
             correctAuxiliars: [
@@ -821,9 +965,12 @@ const completeFuturePerfectNegativeStatementVerbForm = [
         id: "7e7912865ed0ad881c0bde495e543c57",
         type: "completeFuturePerfectNegativeStatementVerbForm",
         data: {
-            leftSide: "They",
-            middle: "(understand)",
-            rightSide: "the instructions.",
+            prompt: {
+                twoSided: true,
+                leftSide: "They",
+                middle: "(understand)",
+                rightSide: "the instructions."
+            },
             minWordCount: 3,
             maxWordCount: 4,
             correctAuxiliars: [
@@ -838,9 +985,12 @@ const completeFuturePerfectNegativeStatementVerbForm = [
         id: "d18de0e803f371f1d9d50065e41c6eda",
         type: "completeFuturePerfectNegativeStatementVerbForm",
         data: {
-            leftSide: "We",
-            middle: "(climb)",
-            rightSide: "the mountain by sunset.",
+            prompt: {
+                twoSided: true,
+                leftSide: "We",
+                middle: "(climb)",
+                rightSide: "the mountain by sunset."
+            },
             minWordCount: 3,
             maxWordCount: 4,
             correctAuxiliars: [
@@ -855,9 +1005,12 @@ const completeFuturePerfectNegativeStatementVerbForm = [
         id: "af18b3ca4732b978a9db09270188ed17",
         type: "completeFuturePerfectNegativeStatementVerbForm",
         data: {
-            leftSide: "He",
-            middle: "(see)",
-            rightSide: "the results yet.",
+            prompt: {
+                twoSided: true,
+                leftSide: "He",
+                middle: "(see)",
+                rightSide: "the results yet."
+            },
             minWordCount: 3,
             maxWordCount: 4,
             correctAuxiliars: [
@@ -872,9 +1025,12 @@ const completeFuturePerfectNegativeStatementVerbForm = [
         id: "7abd20b3db97d6b4a596b50b507c91d3",
         type: "completeFuturePerfectNegativeStatementVerbForm",
         data: {
-            leftSide: "She",
-            middle: "(take)",
-            rightSide: "the exam before Monday.",
+            prompt: {
+                twoSided: true,
+                leftSide: "She",
+                middle: "(take)",
+                rightSide: "the exam before Monday."
+            },
             minWordCount: 3,
             maxWordCount: 4,
             correctAuxiliars: [
@@ -889,9 +1045,12 @@ const completeFuturePerfectNegativeStatementVerbForm = [
         id: "d189442574c9b0eba7ae21a9c875134e",
         type: "completeFuturePerfectNegativeStatementVerbForm",
         data: {
-            leftSide: "They",
-            middle: "(improve)",
-            rightSide: "their scores.",
+            prompt: {
+                twoSided: true,
+                leftSide: "They",
+                middle: "(improve)",
+                rightSide: "their scores."
+            },
             minWordCount: 3,
             maxWordCount: 4,
             correctAuxiliars: [
@@ -906,9 +1065,12 @@ const completeFuturePerfectNegativeStatementVerbForm = [
         id: "9a3eeeb1bde379a52a247c5e6159e216",
         type: "completeFuturePerfectNegativeStatementVerbForm",
         data: {
-            leftSide: "We",
-            middle: "(discover)",
-            rightSide: "the truth by tonight.",
+            prompt: {
+                twoSided: true,
+                leftSide: "We",
+                middle: "(discover)",
+                rightSide: "the truth by tonight."
+            },
             minWordCount: 3,
             maxWordCount: 4,
             correctAuxiliars: [
@@ -923,9 +1085,12 @@ const completeFuturePerfectNegativeStatementVerbForm = [
         id: "616fdc3a772607a152c514be5242fb62",
         type: "completeFuturePerfectNegativeStatementVerbForm",
         data: {
-            leftSide: "The building",
-            middle: "(collapse)",
-            rightSide: "before we leave.",
+            prompt: {
+                twoSided: true,
+                leftSide: "The building",
+                middle: "(collapse)",
+                rightSide: "before we leave."
+            },
             minWordCount: 3,
             maxWordCount: 4,
             correctAuxiliars: [
@@ -940,9 +1105,12 @@ const completeFuturePerfectNegativeStatementVerbForm = [
         id: "1ace330fb067216520f34b9d028ceb66",
         type: "completeFuturePerfectNegativeStatementVerbForm",
         data: {
-            leftSide: "I",
-            middle: "(know)",
-            rightSide: "the answer by then.",
+            prompt: {
+                twoSided: true,
+                leftSide: "I",
+                middle: "(know)",
+                rightSide: "the answer by then."
+            },
             minWordCount: 3,
             maxWordCount: 4,
             correctAuxiliars: [
@@ -957,9 +1125,12 @@ const completeFuturePerfectNegativeStatementVerbForm = [
         id: "263f89dcd3007bbbb6cf881302f6044e",
         type: "completeFuturePerfectNegativeStatementVerbForm",
         data: {
-            leftSide: "You",
-            middle: "(win)",
-            rightSide: "the race.",
+            prompt: {
+                twoSided: true,
+                leftSide: "You",
+                middle: "(win)",
+                rightSide: "the race."
+            },
             minWordCount: 3,
             maxWordCount: 4,
             correctAuxiliars: [
@@ -974,9 +1145,12 @@ const completeFuturePerfectNegativeStatementVerbForm = [
         id: "f1b3f12eb768c8f6f766eb97a5ef6884",
         type: "completeFuturePerfectNegativeStatementVerbForm",
         data: {
-            leftSide: "The plant",
-            middle: "(die)",
-            rightSide: "before you water it.",
+            prompt: {
+                twoSided: true,
+                leftSide: "The plant",
+                middle: "(die)",
+                rightSide: "before you water it."
+            },
             minWordCount: 3,
             maxWordCount: 4,
             correctAuxiliars: [
@@ -991,9 +1165,12 @@ const completeFuturePerfectNegativeStatementVerbForm = [
         id: "802bcdc570a3ee301c9fbce38c24b347",
         type: "completeFuturePerfectNegativeStatementVerbForm",
         data: {
-            leftSide: "He",
-            middle: "(prepare)",
-            rightSide: "the presentation.",
+            prompt: {
+                twoSided: true,
+                leftSide: "He",
+                middle: "(prepare)",
+                rightSide: "the presentation."
+            },
             minWordCount: 3,
             maxWordCount: 4,
             correctAuxiliars: [
@@ -1008,9 +1185,12 @@ const completeFuturePerfectNegativeStatementVerbForm = [
         id: "a6e5aa3ec30e9204a591052aedb280db",
         type: "completeFuturePerfectNegativeStatementVerbForm",
         data: {
-            leftSide: "She",
-            middle: "(break)",
-            rightSide: "the record.",
+            prompt: {
+                twoSided: true,
+                leftSide: "She",
+                middle: "(break)",
+                rightSide: "the record."
+            },
             minWordCount: 3,
             maxWordCount: 4,
             correctAuxiliars: [
@@ -1025,9 +1205,12 @@ const completeFuturePerfectNegativeStatementVerbForm = [
         id: "b88d6d31a6ee50ea6c90ca95ba654e3c",
         type: "completeFuturePerfectNegativeStatementVerbForm",
         data: {
-            leftSide: "They",
-            middle: "(reach)",
-            rightSide: "the summit by noon.",
+            prompt: {
+                twoSided: true,
+                leftSide: "They",
+                middle: "(reach)",
+                rightSide: "the summit by noon."
+            },
             minWordCount: 3,
             maxWordCount: 4,
             correctAuxiliars: [
@@ -1042,9 +1225,12 @@ const completeFuturePerfectNegativeStatementVerbForm = [
         id: "64f279b2b5cfbaf5e2654cc451d2162b",
         type: "completeFuturePerfectNegativeStatementVerbForm",
         data: {
-            leftSide: "We",
-            middle: "(organize)",
-            rightSide: "the files by Friday.",
+            prompt: {
+                twoSided: true,
+                leftSide: "We",
+                middle: "(organize)",
+                rightSide: "the files by Friday."
+            },
             minWordCount: 3,
             maxWordCount: 4,
             correctAuxiliars: [
@@ -1059,9 +1245,12 @@ const completeFuturePerfectNegativeStatementVerbForm = [
         id: "8b9faee4f6f279fd9a4129eb1ea4e145",
         type: "completeFuturePerfectNegativeStatementVerbForm",
         data: {
-            leftSide: "I",
-            middle: "(send)",
-            rightSide: "all the invitations.",
+            prompt: {
+                twoSided: true,
+                leftSide: "I",
+                middle: "(send)",
+                rightSide: "all the invitations."
+            },
             minWordCount: 3,
             maxWordCount: 4,
             correctAuxiliars: [
@@ -1076,9 +1265,12 @@ const completeFuturePerfectNegativeStatementVerbForm = [
         id: "b1aa0f30cda6bcfc7a90611b6930579d",
         type: "completeFuturePerfectNegativeStatementVerbForm",
         data: {
-            leftSide: "He",
-            middle: "(do)",
-            rightSide: "his homework by dinner.",
+            prompt: {
+                twoSided: true,
+                leftSide: "He",
+                middle: "(do)",
+                rightSide: "his homework by dinner."
+            },
             minWordCount: 3,
             maxWordCount: 4,
             correctAuxiliars: [
@@ -1093,9 +1285,12 @@ const completeFuturePerfectNegativeStatementVerbForm = [
         id: "572ad2ea274d5ef1b2ebd21a624c600e",
         type: "completeFuturePerfectNegativeStatementVerbForm",
         data: {
-            leftSide: "The sun",
-            middle: "(rise)",
-            rightSide: "when we get there.",
+            prompt: {
+                twoSided: true,
+                leftSide: "The sun",
+                middle: "(rise)",
+                rightSide: "when we get there."
+            },
             minWordCount: 3,
             maxWordCount: 4,
             correctAuxiliars: [
@@ -1110,9 +1305,12 @@ const completeFuturePerfectNegativeStatementVerbForm = [
         id: "2b557af3616f0f882bc580d0d48e0c0f",
         type: "completeFuturePerfectNegativeStatementVerbForm",
         data: {
-            leftSide: "You",
-            middle: "(pay)",
-            rightSide: "the mortgage by next year.",
+            prompt: {
+                twoSided: true,
+                leftSide: "You",
+                middle: "(pay)",
+                rightSide: "the mortgage by next year."
+            },
             minWordCount: 3,
             maxWordCount: 4,
             correctAuxiliars: [
@@ -1127,9 +1325,12 @@ const completeFuturePerfectNegativeStatementVerbForm = [
         id: "ac31f2a747fc8fc06bff5876b3671130",
         type: "completeFuturePerfectNegativeStatementVerbForm",
         data: {
-            leftSide: "They",
-            middle: "(learn)",
-            rightSide: "to swim before summer.",
+            prompt: {
+                twoSided: true,
+                leftSide: "They",
+                middle: "(learn)",
+                rightSide: "to swim before summer."
+            },
             minWordCount: 3,
             maxWordCount: 4,
             correctAuxiliars: [
@@ -1144,9 +1345,12 @@ const completeFuturePerfectNegativeStatementVerbForm = [
         id: "bb68d74698a5ef5f732141d419ef7a08",
         type: "completeFuturePerfectNegativeStatementVerbForm",
         data: {
-            leftSide: "She",
-            middle: "(finish)",
-            rightSide: "the marathon.",
+            prompt: {
+                twoSided: true,
+                leftSide: "She",
+                middle: "(finish)",
+                rightSide: "the marathon."
+            },
             minWordCount: 3,
             maxWordCount: 4,
             correctAuxiliars: [
@@ -1161,9 +1365,12 @@ const completeFuturePerfectNegativeStatementVerbForm = [
         id: "bbe57411dd5567d2f76ee23838d67bab",
         type: "completeFuturePerfectNegativeStatementVerbForm",
         data: {
-            leftSide: "We",
-            middle: "(leave)",
-            rightSide: "the city by then.",
+            prompt: {
+                twoSided: true,
+                leftSide: "We",
+                middle: "(leave)",
+                rightSide: "the city by then."
+            },
             minWordCount: 3,
             maxWordCount: 4,
             correctAuxiliars: [
@@ -1178,9 +1385,12 @@ const completeFuturePerfectNegativeStatementVerbForm = [
         id: "40a70c404099b28f8d004cecf80d6e00",
         type: "completeFuturePerfectNegativeStatementVerbForm",
         data: {
-            leftSide: "He",
-            middle: "(clean)",
-            rightSide: "the garage by Sunday.",
+            prompt: {
+                twoSided: true,
+                leftSide: "He",
+                middle: "(clean)",
+                rightSide: "the garage by Sunday."
+            },
             minWordCount: 3,
             maxWordCount: 4,
             correctAuxiliars: [
@@ -1195,9 +1405,12 @@ const completeFuturePerfectNegativeStatementVerbForm = [
         id: "b6b75ef91490e477a2f00b82a4c237c4",
         type: "completeFuturePerfectNegativeStatementVerbForm",
         data: {
-            leftSide: "The snow",
-            middle: "(stop)",
-            rightSide: "falling by morning.",
+            prompt: {
+                twoSided: true,
+                leftSide: "The snow",
+                middle: "(stop)",
+                rightSide: "falling by morning."
+            },
             minWordCount: 3,
             maxWordCount: 4,
             correctAuxiliars: [
@@ -1212,9 +1425,12 @@ const completeFuturePerfectNegativeStatementVerbForm = [
         id: "862980413baebceaa96abae781f1dd1a",
         type: "completeFuturePerfectNegativeStatementVerbForm",
         data: {
-            leftSide: "I",
-            middle: "(spend)",
-            rightSide: "all my vacation days.",
+            prompt: {
+                twoSided: true,
+                leftSide: "I",
+                middle: "(spend)",
+                rightSide: "all my vacation days."
+            },
             minWordCount: 3,
             maxWordCount: 4,
             correctAuxiliars: [
@@ -1229,9 +1445,12 @@ const completeFuturePerfectNegativeStatementVerbForm = [
         id: "fdb77ca7ed83a0d825f6919a16986299",
         type: "completeFuturePerfectNegativeStatementVerbForm",
         data: {
-            leftSide: "They",
-            middle: "(buy)",
-            rightSide: "a house by next June.",
+            prompt: {
+                twoSided: true,
+                leftSide: "They",
+                middle: "(buy)",
+                rightSide: "a house by next June."
+            },
             minWordCount: 3,
             maxWordCount: 4,
             correctAuxiliars: [
@@ -1246,9 +1465,12 @@ const completeFuturePerfectNegativeStatementVerbForm = [
         id: "5277d8022e98087d936b796e7a88076d",
         type: "completeFuturePerfectNegativeStatementVerbForm",
         data: {
-            leftSide: "She",
-            middle: "(decide)",
-            rightSide: "which college to attend.",
+            prompt: {
+                twoSided: true,
+                leftSide: "She",
+                middle: "(decide)",
+                rightSide: "which college to attend."
+            },
             minWordCount: 3,
             maxWordCount: 4,
             correctAuxiliars: [
@@ -1263,9 +1485,12 @@ const completeFuturePerfectNegativeStatementVerbForm = [
         id: "e1f3e984b391a152f37c23404de80f01",
         type: "completeFuturePerfectNegativeStatementVerbForm",
         data: {
-            leftSide: "The lake",
-            middle: "(freeze)",
-            rightSide: "by tomorrow night.",
+            prompt: {
+                twoSided: true,
+                leftSide: "The lake",
+                middle: "(freeze)",
+                rightSide: "by tomorrow night."
+            },
             minWordCount: 3,
             maxWordCount: 4,
             correctAuxiliars: [
@@ -1280,9 +1505,12 @@ const completeFuturePerfectNegativeStatementVerbForm = [
         id: "4a957ce62296c9c4ebd2dde237e6c346",
         type: "completeFuturePerfectNegativeStatementVerbForm",
         data: {
-            leftSide: "We",
-            middle: "(collect)",
-            rightSide: "all the signatures.",
+            prompt: {
+                twoSided: true,
+                leftSide: "We",
+                middle: "(collect)",
+                rightSide: "all the signatures."
+            },
             minWordCount: 3,
             maxWordCount: 4,
             correctAuxiliars: [
@@ -1297,9 +1525,12 @@ const completeFuturePerfectNegativeStatementVerbForm = [
         id: "aac77e1138d80c82bcec2c4e9f09e22f",
         type: "completeFuturePerfectNegativeStatementVerbForm",
         data: {
-            leftSide: "I",
-            middle: "(watch)",
-            rightSide: "the whole series by Friday.",
+            prompt: {
+                twoSided: true,
+                leftSide: "I",
+                middle: "(watch)",
+                rightSide: "the whole series by Friday."
+            },
             minWordCount: 3,
             maxWordCount: 4,
             correctAuxiliars: [
@@ -1314,9 +1545,12 @@ const completeFuturePerfectNegativeStatementVerbForm = [
         id: "91d29140b9b2b72782ea2782e2e225a2",
         type: "completeFuturePerfectNegativeStatementVerbForm",
         data: {
-            leftSide: "The teacher",
-            middle: "(finish)",
-            rightSide: "the lesson by then.",
+            prompt: {
+                twoSided: true,
+                leftSide: "The teacher",
+                middle: "(finish)",
+                rightSide: "the lesson by then."
+            },
             minWordCount: 3,
             maxWordCount: 4,
             correctAuxiliars: [
@@ -1331,9 +1565,12 @@ const completeFuturePerfectNegativeStatementVerbForm = [
         id: "43a59959e368e7b4df3d8a1f7143fc9a",
         type: "completeFuturePerfectNegativeStatementVerbForm",
         data: {
-            leftSide: "He",
-            middle: "(fix)",
-            rightSide: "the computer yet.",
+            prompt: {
+                twoSided: true,
+                leftSide: "He",
+                middle: "(fix)",
+                rightSide: "the computer yet."
+            },
             minWordCount: 3,
             maxWordCount: 4,
             correctAuxiliars: [
@@ -1348,9 +1585,12 @@ const completeFuturePerfectNegativeStatementVerbForm = [
         id: "91f919b39bf2016d17b533ff3bd97ab9",
         type: "completeFuturePerfectNegativeStatementVerbForm",
         data: {
-            leftSide: "She",
-            middle: "(forget)",
-            rightSide: "her promise.",
+            prompt: {
+                twoSided: true,
+                leftSide: "She",
+                middle: "(forget)",
+                rightSide: "her promise."
+            },
             minWordCount: 3,
             maxWordCount: 4,
             correctAuxiliars: [
@@ -1365,9 +1605,12 @@ const completeFuturePerfectNegativeStatementVerbForm = [
         id: "e55c2bc12f52f026501b10e9e45ae295",
         type: "completeFuturePerfectNegativeStatementVerbForm",
         data: {
-            leftSide: "They",
-            middle: "(make)",
-            rightSide: "enough food for the party.",
+            prompt: {
+                twoSided: true,
+                leftSide: "They",
+                middle: "(make)",
+                rightSide: "enough food for the party."
+            },
             minWordCount: 3,
             maxWordCount: 4,
             correctAuxiliars: [
@@ -1382,9 +1625,12 @@ const completeFuturePerfectNegativeStatementVerbForm = [
         id: "0c0d832bec88bb29c554cc53dea46670",
         type: "completeFuturePerfectNegativeStatementVerbForm",
         data: {
-            leftSide: "We",
-            middle: "(read)",
-            rightSide: "the entire report by noon.",
+            prompt: {
+                twoSided: true,
+                leftSide: "We",
+                middle: "(read)",
+                rightSide: "the entire report by noon."
+            },
             minWordCount: 3,
             maxWordCount: 4,
             correctAuxiliars: [
@@ -1399,9 +1645,12 @@ const completeFuturePerfectNegativeStatementVerbForm = [
         id: "8ab96a7049ed72effe4248e8a6ab5c37",
         type: "completeFuturePerfectNegativeStatementVerbForm",
         data: {
-            leftSide: "I",
-            middle: "(write)",
-            rightSide: "the final chapter.",
+            prompt: {
+                twoSided: true,
+                leftSide: "I",
+                middle: "(write)",
+                rightSide: "the final chapter."
+            },
             minWordCount: 3,
             maxWordCount: 4,
             correctAuxiliars: [
@@ -1416,9 +1665,12 @@ const completeFuturePerfectNegativeStatementVerbForm = [
         id: "b3730f5845d30d3ee2b50a1ae47dd5f1",
         type: "completeFuturePerfectNegativeStatementVerbForm",
         data: {
-            leftSide: "The sun",
-            middle: "(set)",
-            rightSide: "when we get home.",
+            prompt: {
+                twoSided: true,
+                leftSide: "The sun",
+                middle: "(set)",
+                rightSide: "when we get home."
+            },
             minWordCount: 3,
             maxWordCount: 4,
             correctAuxiliars: [
@@ -1433,9 +1685,12 @@ const completeFuturePerfectNegativeStatementVerbForm = [
         id: "b742bfe21b5fd1f5148e2aafc794ff5b",
         type: "completeFuturePerfectNegativeStatementVerbForm",
         data: {
-            leftSide: "You",
-            middle: "(receive)",
-            rightSide: "the results before Monday.",
+            prompt: {
+                twoSided: true,
+                leftSide: "You",
+                middle: "(receive)",
+                rightSide: "the results before Monday."
+            },
             minWordCount: 3,
             maxWordCount: 4,
             correctAuxiliars: [
@@ -1450,9 +1705,12 @@ const completeFuturePerfectNegativeStatementVerbForm = [
         id: "242ead46317a2ddacaec913ddd00f76d",
         type: "completeFuturePerfectNegativeStatementVerbForm",
         data: {
-            leftSide: "He",
-            middle: "(learn)",
-            rightSide: "how to play the guitar by next year.",
+            prompt: {
+                twoSided: true,
+                leftSide: "He",
+                middle: "(learn)",
+                rightSide: "how to play the guitar by next year."
+            },
             minWordCount: 3,
             maxWordCount: 4,
             correctAuxiliars: [
@@ -1467,9 +1725,12 @@ const completeFuturePerfectNegativeStatementVerbForm = [
         id: "c1deb116a8f9f9c7859ebeb5d351d2d4",
         type: "completeFuturePerfectNegativeStatementVerbForm",
         data: {
-            leftSide: "She",
-            middle: "(buy)",
-            rightSide: "a new car by October.",
+            prompt: {
+                twoSided: true,
+                leftSide: "She",
+                middle: "(buy)",
+                rightSide: "a new car by October."
+            },
             minWordCount: 3,
             maxWordCount: 4,
             correctAuxiliars: [
@@ -1484,9 +1745,12 @@ const completeFuturePerfectNegativeStatementVerbForm = [
         id: "3c5e56bbb1b58f87c685142209e6d019",
         type: "completeFuturePerfectNegativeStatementVerbForm",
         data: {
-            leftSide: "We",
-            middle: "(sell)",
-            rightSide: "our old house by then.",
+            prompt: {
+                twoSided: true,
+                leftSide: "We",
+                middle: "(sell)",
+                rightSide: "our old house by then."
+            },
             minWordCount: 3,
             maxWordCount: 4,
             correctAuxiliars: [
@@ -1501,9 +1765,12 @@ const completeFuturePerfectNegativeStatementVerbForm = [
         id: "0a2757760e445ab83af192da4962c0c2",
         type: "completeFuturePerfectNegativeStatementVerbForm",
         data: {
-            leftSide: "They",
-            middle: "(see)",
-            rightSide: "all the sights before they leave.",
+            prompt: {
+                twoSided: true,
+                leftSide: "They",
+                middle: "(see)",
+                rightSide: "all the sights before they leave."
+            },
             minWordCount: 3,
             maxWordCount: 4,
             correctAuxiliars: [
@@ -1518,9 +1785,12 @@ const completeFuturePerfectNegativeStatementVerbForm = [
         id: "c4dfa6e060c9c57c50c20fcc1073afbd",
         type: "completeFuturePerfectNegativeStatementVerbForm",
         data: {
-            leftSide: "I",
-            middle: "(eat)",
-            rightSide: "everything before you arrive.",
+            prompt: {
+                twoSided: true,
+                leftSide: "I",
+                middle: "(eat)",
+                rightSide: "everything before you arrive."
+            },
             minWordCount: 3,
             maxWordCount: 4,
             correctAuxiliars: [
@@ -1535,9 +1805,12 @@ const completeFuturePerfectNegativeStatementVerbForm = [
         id: "58dd0308158f6bc8cade53eedac02f31",
         type: "completeFuturePerfectNegativeStatementVerbForm",
         data: {
-            leftSide: "You",
-            middle: "(find)",
-            rightSide: "the lost key by tomorrow.",
+            prompt: {
+                twoSided: true,
+                leftSide: "You",
+                middle: "(find)",
+                rightSide: "the lost key by tomorrow."
+            },
             minWordCount: 3,
             maxWordCount: 4,
             correctAuxiliars: [
@@ -1552,9 +1825,12 @@ const completeFuturePerfectNegativeStatementVerbForm = [
         id: "eebbab9a1776102126d66eeffe1023fa",
         type: "completeFuturePerfectNegativeStatementVerbForm",
         data: {
-            leftSide: "He",
-            middle: "(meet)",
-            rightSide: "the new manager by Friday.",
+            prompt: {
+                twoSided: true,
+                leftSide: "He",
+                middle: "(meet)",
+                rightSide: "the new manager by Friday."
+            },
             minWordCount: 3,
             maxWordCount: 4,
             correctAuxiliars: [
@@ -1569,9 +1845,12 @@ const completeFuturePerfectNegativeStatementVerbForm = [
         id: "e42c629e492312dfca9a8a9ccceaa00d",
         type: "completeFuturePerfectNegativeStatementVerbForm",
         data: {
-            leftSide: "She",
-            middle: "(prepare)",
-            rightSide: "for the interview.",
+            prompt: {
+                twoSided: true,
+                leftSide: "She",
+                middle: "(prepare)",
+                rightSide: "for the interview."
+            },
             minWordCount: 3,
             maxWordCount: 4,
             correctAuxiliars: [
@@ -1586,9 +1865,12 @@ const completeFuturePerfectNegativeStatementVerbForm = [
         id: "5e3ea669ad7ecbd87a3a5687ae737f21",
         type: "completeFuturePerfectNegativeStatementVerbForm",
         data: {
-            leftSide: "The building",
-            middle: "(be)",
-            rightSide: "finished by 2027.",
+            prompt: {
+                twoSided: true,
+                leftSide: "The building",
+                middle: "(be)",
+                rightSide: "finished by 2027."
+            },
             minWordCount: 3,
             maxWordCount: 4,
             correctAuxiliars: [
@@ -1603,9 +1885,12 @@ const completeFuturePerfectNegativeStatementVerbForm = [
         id: "c0f9d142c7a56fc4d21f79481fd03dd8",
         type: "completeFuturePerfectNegativeStatementVerbForm",
         data: {
-            leftSide: "We",
-            middle: "(go)",
-            rightSide: "to the park by the time you arrive.",
+            prompt: {
+                twoSided: true,
+                leftSide: "We",
+                middle: "(go)",
+                rightSide: "to the park by the time you arrive."
+            },
             minWordCount: 3,
             maxWordCount: 4,
             correctAuxiliars: [
@@ -1620,9 +1905,12 @@ const completeFuturePerfectNegativeStatementVerbForm = [
         id: "ebbebe6c36b400e0ea9ee9f14d9b233e",
         type: "completeFuturePerfectNegativeStatementVerbForm",
         data: {
-            leftSide: "I",
-            middle: "(understand)",
-            rightSide: "everything by the end of the day.",
+            prompt: {
+                twoSided: true,
+                leftSide: "I",
+                middle: "(understand)",
+                rightSide: "everything by the end of the day."
+            },
             minWordCount: 3,
             maxWordCount: 4,
             correctAuxiliars: [
@@ -1637,9 +1925,12 @@ const completeFuturePerfectNegativeStatementVerbForm = [
         id: "904cc4a4d11d1109f27de188fb77abff",
         type: "completeFuturePerfectNegativeStatementVerbForm",
         data: {
-            leftSide: "You",
-            middle: "(tell)",
-            rightSide: "him the secret by tonight.",
+            prompt: {
+                twoSided: true,
+                leftSide: "You",
+                middle: "(tell)",
+                rightSide: "him the secret by tonight."
+            },
             minWordCount: 3,
             maxWordCount: 4,
             correctAuxiliars: [
@@ -1654,9 +1945,12 @@ const completeFuturePerfectNegativeStatementVerbForm = [
         id: "a9f2707c373b349a7f2832aaefb4c295",
         type: "completeFuturePerfectNegativeStatementVerbForm",
         data: {
-            leftSide: "He",
-            middle: "(do)",
-            rightSide: "enough work for today.",
+            prompt: {
+                twoSided: true,
+                leftSide: "He",
+                middle: "(do)",
+                rightSide: "enough work for today."
+            },
             minWordCount: 3,
             maxWordCount: 4,
             correctAuxiliars: [
@@ -1671,9 +1965,12 @@ const completeFuturePerfectNegativeStatementVerbForm = [
         id: "c4dd4b974c650d5e85a86e921e090008",
         type: "completeFuturePerfectNegativeStatementVerbForm",
         data: {
-            leftSide: "She",
-            middle: "(forget)",
-            rightSide: "what happened by next week.",
+            prompt: {
+                twoSided: true,
+                leftSide: "She",
+                middle: "(forget)",
+                rightSide: "what happened by next week."
+            },
             minWordCount: 3,
             maxWordCount: 4,
             correctAuxiliars: [
@@ -1688,9 +1985,12 @@ const completeFuturePerfectNegativeStatementVerbForm = [
         id: "560d574acb04caab0f7a064c87f94c1c",
         type: "completeFuturePerfectNegativeStatementVerbForm",
         data: {
-            leftSide: "They",
-            middle: "(leave)",
-            rightSide: "by the time we get home.",
+            prompt: {
+                twoSided: true,
+                leftSide: "They",
+                middle: "(leave)",
+                rightSide: "by the time we get home."
+            },
             minWordCount: 3,
             maxWordCount: 4,
             correctAuxiliars: [

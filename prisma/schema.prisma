@@ -17,6 +17,8 @@ enum QuestionType {
   completePastToBeNegativeStatementVerbForm
   completeFutureToBePositiveStatementVerbForm
   completeFutureToBeNegativeStatementVerbForm
+  turnPositivePresentToBeStatementIntoQuestion
+  turnNegativePresentToBeStatementIntoQuestion
   // Simple tenses
   completePresentSimplePositiveStatementVerbForm
   completePresentSimpleNegativeStatementVerbForm

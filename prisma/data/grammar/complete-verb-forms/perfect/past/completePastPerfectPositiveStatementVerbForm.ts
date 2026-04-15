@@ -5,9 +5,12 @@ const completePastPerfectPositiveStatementVerbForm = [
         id: "6c27ffff4a13498669a99ff6a32c5351",
         type: "completePastPerfectPositiveStatementVerbForm",
         data: {
-            leftSide: "The train",
-            middle: "(depart)",
-            rightSide: "when we reached the platform.",
+            prompt: {
+                twoSided: true,
+                leftSide: "The train",
+                middle: "(depart)",
+                rightSide: "when we reached the platform."
+            },
             minWordCount: 2,
             maxWordCount: 2,
             correctAuxiliars: [["had"]],
@@ -19,9 +22,12 @@ const completePastPerfectPositiveStatementVerbForm = [
         id: "f2a84366b0b95c4148fa7cce63e234e3",
         type: "completePastPerfectPositiveStatementVerbForm",
         data: {
-            leftSide: "I",
-            middle: "(eat)",
-            rightSide: "lunch before the meeting started.",
+            prompt: {
+                twoSided: true,
+                leftSide: "I",
+                middle: "(eat)",
+                rightSide: "lunch before the meeting started."
+            },
             minWordCount: 2,
             maxWordCount: 2,
             correctAuxiliars: [["had"]],
@@ -33,9 +39,12 @@ const completePastPerfectPositiveStatementVerbForm = [
         id: "0dece618d60ef808263247f6b2a75055",
         type: "completePastPerfectPositiveStatementVerbForm",
         data: {
-            leftSide: "They",
-            middle: "(finish)",
-            rightSide: "the project before the deadline.",
+            prompt: {
+                twoSided: true,
+                leftSide: "They",
+                middle: "(finish)",
+                rightSide: "the project before the deadline."
+            },
             minWordCount: 2,
             maxWordCount: 2,
             correctAuxiliars: [["had"]],
@@ -47,9 +56,12 @@ const completePastPerfectPositiveStatementVerbForm = [
         id: "9889b5a51ee2d2eece5c293caabd311c",
         type: "completePastPerfectPositiveStatementVerbForm",
         data: {
-            leftSide: "He",
-            middle: "(lose)",
-            rightSide: "his keys before he got home.",
+            prompt: {
+                twoSided: true,
+                leftSide: "He",
+                middle: "(lose)",
+                rightSide: "his keys before he got home."
+            },
             minWordCount: 2,
             maxWordCount: 2,
             correctAuxiliars: [["had"]],
@@ -61,9 +73,12 @@ const completePastPerfectPositiveStatementVerbForm = [
         id: "e9d82bf6ad7921cd8571af926eb48bf7",
         type: "completePastPerfectPositiveStatementVerbForm",
         data: {
-            leftSide: "We",
-            middle: "(see)",
-            rightSide: "that movie three times already.",
+            prompt: {
+                twoSided: true,
+                leftSide: "We",
+                middle: "(see)",
+                rightSide: "that movie three times already."
+            },
             minWordCount: 2,
             maxWordCount: 2,
             correctAuxiliars: [["had"]],
@@ -75,9 +90,12 @@ const completePastPerfectPositiveStatementVerbForm = [
         id: "e6f7f64565b761e6cf9a1674659b56e9",
         type: "completePastPerfectPositiveStatementVerbForm",
         data: {
-            leftSide: "The sun",
-            middle: "(set)",
-            rightSide: "by the time we arrived at the camp.",
+            prompt: {
+                twoSided: true,
+                leftSide: "The sun",
+                middle: "(set)",
+                rightSide: "by the time we arrived at the camp."
+            },
             minWordCount: 2,
             maxWordCount: 2,
             correctAuxiliars: [["had"]],
@@ -89,9 +107,12 @@ const completePastPerfectPositiveStatementVerbForm = [
         id: "87e9ace33b1c38390f7f774232e3d455",
         type: "completePastPerfectPositiveStatementVerbForm",
         data: {
-            leftSide: "She",
-            middle: "(read)",
-            rightSide: "the book before watching the film.",
+            prompt: {
+                twoSided: true,
+                leftSide: "She",
+                middle: "(read)",
+                rightSide: "the book before watching the film."
+            },
             minWordCount: 2,
             maxWordCount: 2,
             correctAuxiliars: [["had"]],
@@ -103,9 +124,12 @@ const completePastPerfectPositiveStatementVerbForm = [
         id: "382f0fa3b9d166d7aca063f7051a839f",
         type: "completePastPerfectPositiveStatementVerbForm",
         data: {
-            leftSide: "The rain",
-            middle: "(stop)",
-            rightSide: "before the game began.",
+            prompt: {
+                twoSided: true,
+                leftSide: "The rain",
+                middle: "(stop)",
+                rightSide: "before the game began."
+            },
             minWordCount: 2,
             maxWordCount: 2,
             correctAuxiliars: [["had"]],
@@ -117,9 +141,12 @@ const completePastPerfectPositiveStatementVerbForm = [
         id: "28f6a31157aa4d2b7655d095597a8ba8",
         type: "completePastPerfectPositiveStatementVerbForm",
         data: {
-            leftSide: "I",
-            middle: "(buy)",
-            rightSide: "the tickets weeks in advance.",
+            prompt: {
+                twoSided: true,
+                leftSide: "I",
+                middle: "(buy)",
+                rightSide: "the tickets weeks in advance."
+            },
             minWordCount: 2,
             maxWordCount: 2,
             correctAuxiliars: [["had"]],
@@ -131,9 +158,12 @@ const completePastPerfectPositiveStatementVerbForm = [
         id: "f6e487ca3aab8e95940d2137c3e95bb6",
         type: "completePastPerfectPositiveStatementVerbForm",
         data: {
-            leftSide: "The cat",
-            middle: "(catch)",
-            rightSide: "the bird before I could intervene.",
+            prompt: {
+                twoSided: true,
+                leftSide: "The cat",
+                middle: "(catch)",
+                rightSide: "the bird before I could intervene."
+            },
             minWordCount: 2,
             maxWordCount: 2,
             correctAuxiliars: [["had"]],
@@ -145,9 +175,12 @@ const completePastPerfectPositiveStatementVerbForm = [
         id: "a2d4d5a1aaf60476d5cd229cf52e790e",
         type: "completePastPerfectPositiveStatementVerbForm",
         data: {
-            leftSide: "You",
-            middle: "(warn)",
-            rightSide: "us about the danger before.",
+            prompt: {
+                twoSided: true,
+                leftSide: "You",
+                middle: "(warn)",
+                rightSide: "us about the danger before."
+            },
             minWordCount: 2,
             maxWordCount: 2,
             correctAuxiliars: [["had"]],
@@ -159,9 +192,12 @@ const completePastPerfectPositiveStatementVerbForm = [
         id: "03d68423cc98fe87339b403f5a2e7ab5",
         type: "completePastPerfectPositiveStatementVerbForm",
         data: {
-            leftSide: "The snow",
-            middle: "(melt)",
-            rightSide: "before the temperature dropped again.",
+            prompt: {
+                twoSided: true,
+                leftSide: "The snow",
+                middle: "(melt)",
+                rightSide: "before the temperature dropped again."
+            },
             minWordCount: 2,
             maxWordCount: 2,
             correctAuxiliars: [["had"]],
@@ -173,9 +209,12 @@ const completePastPerfectPositiveStatementVerbForm = [
         id: "5edf830b3c10d28bf6ae8ab75f2025c3",
         type: "completePastPerfectPositiveStatementVerbForm",
         data: {
-            leftSide: "He",
-            middle: "(fix)",
-            rightSide: "the car before the trip started.",
+            prompt: {
+                twoSided: true,
+                leftSide: "He",
+                middle: "(fix)",
+                rightSide: "the car before the trip started."
+            },
             minWordCount: 2,
             maxWordCount: 2,
             correctAuxiliars: [["had"]],
@@ -187,9 +226,12 @@ const completePastPerfectPositiveStatementVerbForm = [
         id: "c0f5c9e7d00fcfe2510566f443f1187d",
         type: "completePastPerfectPositiveStatementVerbForm",
         data: {
-            leftSide: "The flowers",
-            middle: "(die)",
-            rightSide: "because nobody watered them.",
+            prompt: {
+                twoSided: true,
+                leftSide: "The flowers",
+                middle: "(die)",
+                rightSide: "because nobody watered them."
+            },
             minWordCount: 2,
             maxWordCount: 2,
             correctAuxiliars: [["had"]],
@@ -201,9 +243,12 @@ const completePastPerfectPositiveStatementVerbForm = [
         id: "f239ab9fb3c8ed0368db8038f68051cb",
         type: "completePastPerfectPositiveStatementVerbForm",
         data: {
-            leftSide: "We",
-            middle: "(clean)",
-            rightSide: "the kitchen before they arrived.",
+            prompt: {
+                twoSided: true,
+                leftSide: "We",
+                middle: "(clean)",
+                rightSide: "the kitchen before they arrived."
+            },
             minWordCount: 2,
             maxWordCount: 2,
             correctAuxiliars: [["had"]],
@@ -215,9 +260,12 @@ const completePastPerfectPositiveStatementVerbForm = [
         id: "f6ed0d5c463561133c92d8fc5eaeaba1",
         type: "completePastPerfectPositiveStatementVerbForm",
         data: {
-            leftSide: "I",
-            middle: "(forget)",
-            rightSide: "my umbrella in the office.",
+            prompt: {
+                twoSided: true,
+                leftSide: "I",
+                middle: "(forget)",
+                rightSide: "my umbrella in the office."
+            },
             minWordCount: 2,
             maxWordCount: 2,
             correctAuxiliars: [["had"]],
@@ -229,9 +277,12 @@ const completePastPerfectPositiveStatementVerbForm = [
         id: "982d39063bdced6212b9a56d931b3fbf",
         type: "completePastPerfectPositiveStatementVerbForm",
         data: {
-            leftSide: "The guests",
-            middle: "(leave)",
-            rightSide: "by the time I got back.",
+            prompt: {
+                twoSided: true,
+                leftSide: "The guests",
+                middle: "(leave)",
+                rightSide: "by the time I got back."
+            },
             minWordCount: 2,
             maxWordCount: 2,
             correctAuxiliars: [["had"]],
@@ -243,9 +294,12 @@ const completePastPerfectPositiveStatementVerbForm = [
         id: "1655b1e982c3a5de3db324ca53926625",
         type: "completePastPerfectPositiveStatementVerbForm",
         data: {
-            leftSide: "My brother",
-            middle: "(write)",
-            rightSide: "the letter before I saw him.",
+            prompt: {
+                twoSided: true,
+                leftSide: "My brother",
+                middle: "(write)",
+                rightSide: "the letter before I saw him."
+            },
             minWordCount: 2,
             maxWordCount: 2,
             correctAuxiliars: [["had"]],
@@ -257,9 +311,12 @@ const completePastPerfectPositiveStatementVerbForm = [
         id: "185ad3264dcadf0abb4de1c5f7790182",
         type: "completePastPerfectPositiveStatementVerbForm",
         data: {
-            leftSide: "The building",
-            middle: "(collapse)",
-            rightSide: "before the rescue team arrived.",
+            prompt: {
+                twoSided: true,
+                leftSide: "The building",
+                middle: "(collapse)",
+                rightSide: "before the rescue team arrived."
+            },
             minWordCount: 2,
             maxWordCount: 2,
             correctAuxiliars: [["had"]],
@@ -276,9 +333,12 @@ const completePastPerfectPositiveStatementVerbForm = [
         id: "9c65d219647e8f1abc1edf6d86a21424",
         type: "completePastPerfectPositiveStatementVerbForm",
         data: {
-            leftSide: "You",
-            middle: "(do)",
-            rightSide: "your homework before dinner.",
+            prompt: {
+                twoSided: true,
+                leftSide: "You",
+                middle: "(do)",
+                rightSide: "your homework before dinner."
+            },
             minWordCount: 2,
             maxWordCount: 2,
             correctAuxiliars: [["had"]],
@@ -290,9 +350,12 @@ const completePastPerfectPositiveStatementVerbForm = [
         id: "95cd85d55092c373e4a6498265551e1b",
         type: "completePastPerfectPositiveStatementVerbForm",
         data: {
-            leftSide: "They",
-            middle: "(study)",
-            rightSide: "hard before the examination.",
+            prompt: {
+                twoSided: true,
+                leftSide: "They",
+                middle: "(study)",
+                rightSide: "hard before the examination."
+            },
             minWordCount: 2,
             maxWordCount: 2,
             correctAuxiliars: [["had"]],
@@ -304,9 +367,12 @@ const completePastPerfectPositiveStatementVerbForm = [
         id: "cf40dce218bb1394a8f87cfc0eb3b0c9",
         type: "completePastPerfectPositiveStatementVerbForm",
         data: {
-            leftSide: "The fire",
-            middle: "(spread)",
-            rightSide: "to the next floor quickly.",
+            prompt: {
+                twoSided: true,
+                leftSide: "The fire",
+                middle: "(spread)",
+                rightSide: "to the next floor quickly."
+            },
             minWordCount: 2,
             maxWordCount: 2,
             correctAuxiliars: [["had"]],
@@ -318,9 +384,12 @@ const completePastPerfectPositiveStatementVerbForm = [
         id: "2d3f9825037478c159e5bdb864e1e156",
         type: "completePastPerfectPositiveStatementVerbForm",
         data: {
-            leftSide: "I",
-            middle: "(find)",
-            rightSide: "the solution before he explained it.",
+            prompt: {
+                twoSided: true,
+                leftSide: "I",
+                middle: "(find)",
+                rightSide: "the solution before he explained it."
+            },
             minWordCount: 2,
             maxWordCount: 2,
             correctAuxiliars: [["had"]],
@@ -332,9 +401,12 @@ const completePastPerfectPositiveStatementVerbForm = [
         id: "35ec45d7976342428c45a326a8dacd8f",
         type: "completePastPerfectPositiveStatementVerbForm",
         data: {
-            leftSide: "The water",
-            middle: "(boil)",
-            rightSide: "away completely.",
+            prompt: {
+                twoSided: true,
+                leftSide: "The water",
+                middle: "(boil)",
+                rightSide: "away completely."
+            },
             minWordCount: 2,
             maxWordCount: 2,
             correctAuxiliars: [["had"]],
@@ -346,9 +418,12 @@ const completePastPerfectPositiveStatementVerbForm = [
         id: "2ac71f9975587976367f9e073f73121e",
         type: "completePastPerfectPositiveStatementVerbForm",
         data: {
-            leftSide: "We",
-            middle: "(hide)",
-            rightSide: "the presents before the kids woke up.",
+            prompt: {
+                twoSided: true,
+                leftSide: "We",
+                middle: "(hide)",
+                rightSide: "the presents before the kids woke up."
+            },
             minWordCount: 2,
             maxWordCount: 2,
             correctAuxiliars: [["had"]],
@@ -360,9 +435,12 @@ const completePastPerfectPositiveStatementVerbForm = [
         id: "14fef3e281b74f35ba5c85dcb0c396a2",
         type: "completePastPerfectPositiveStatementVerbForm",
         data: {
-            leftSide: "She",
-            middle: "(sell)",
-            rightSide: "her house before moving abroad.",
+            prompt: {
+                twoSided: true,
+                leftSide: "She",
+                middle: "(sell)",
+                rightSide: "her house before moving abroad."
+            },
             minWordCount: 2,
             maxWordCount: 2,
             correctAuxiliars: [["had"]],
@@ -374,9 +452,12 @@ const completePastPerfectPositiveStatementVerbForm = [
         id: "b7d7fabe6665a22a2376ab083c837f96",
         type: "completePastPerfectPositiveStatementVerbForm",
         data: {
-            leftSide: "The pilot",
-            middle: "(land)",
-            rightSide: "the plane before the storm hit.",
+            prompt: {
+                twoSided: true,
+                leftSide: "The pilot",
+                middle: "(land)",
+                rightSide: "the plane before the storm hit."
+            },
             minWordCount: 2,
             maxWordCount: 2,
             correctAuxiliars: [["had"]],
@@ -388,9 +469,12 @@ const completePastPerfectPositiveStatementVerbForm = [
         id: "eeeafb4a13bc1aee7b317e52463729ab",
         type: "completePastPerfectPositiveStatementVerbForm",
         data: {
-            leftSide: "I",
-            middle: "(hear)",
-            rightSide: "the news before I saw it on TV.",
+            prompt: {
+                twoSided: true,
+                leftSide: "I",
+                middle: "(hear)",
+                rightSide: "the news before I saw it on TV."
+            },
             minWordCount: 2,
             maxWordCount: 2,
             correctAuxiliars: [["had"]],
@@ -402,9 +486,12 @@ const completePastPerfectPositiveStatementVerbForm = [
         id: "4b02f5f7c25f3a219d46cb1799ebd58d",
         type: "completePastPerfectPositiveStatementVerbForm",
         data: {
-            leftSide: "The thief",
-            middle: "(escape)",
-            rightSide: "before the police arrived.",
+            prompt: {
+                twoSided: true,
+                leftSide: "The thief",
+                middle: "(escape)",
+                rightSide: "before the police arrived."
+            },
             minWordCount: 2,
             maxWordCount: 2,
             correctAuxiliars: [["had"]],
@@ -416,9 +503,12 @@ const completePastPerfectPositiveStatementVerbForm = [
         id: "356730f0f427317e22544bdce99039ec",
         type: "completePastPerfectPositiveStatementVerbForm",
         data: {
-            leftSide: "You",
-            middle: "(make)",
-            rightSide: "a mistake in the calculation.",
+            prompt: {
+                twoSided: true,
+                leftSide: "You",
+                middle: "(make)",
+                rightSide: "a mistake in the calculation."
+            },
             minWordCount: 2,
             maxWordCount: 2,
             correctAuxiliars: [["had"]],
@@ -430,9 +520,12 @@ const completePastPerfectPositiveStatementVerbForm = [
         id: "a12c83d898fb890ddf0f7329d855c8af",
         type: "completePastPerfectPositiveStatementVerbForm",
         data: {
-            leftSide: "The technician",
-            middle: "(repair)",
-            rightSide: "the network before noon.",
+            prompt: {
+                twoSided: true,
+                leftSide: "The technician",
+                middle: "(repair)",
+                rightSide: "the network before noon."
+            },
             minWordCount: 2,
             maxWordCount: 2,
             correctAuxiliars: [["had"]],
@@ -444,9 +537,12 @@ const completePastPerfectPositiveStatementVerbForm = [
         id: "371227e9a262e453677cc5c78e8d900b",
         type: "completePastPerfectPositiveStatementVerbForm",
         data: {
-            leftSide: "We",
-            middle: "(book)",
-            rightSide: "the hotel months ago.",
+            prompt: {
+                twoSided: true,
+                leftSide: "We",
+                middle: "(book)",
+                rightSide: "the hotel months ago."
+            },
             minWordCount: 2,
             maxWordCount: 2,
             correctAuxiliars: [["had"]],
@@ -458,9 +554,12 @@ const completePastPerfectPositiveStatementVerbForm = [
         id: "9df643a34651609323918ebf85a89b40",
         type: "completePastPerfectPositiveStatementVerbForm",
         data: {
-            leftSide: "He",
-            middle: "(take)",
-            rightSide: "the medicine before he felt better.",
+            prompt: {
+                twoSided: true,
+                leftSide: "He",
+                middle: "(take)",
+                rightSide: "the medicine before he felt better."
+            },
             minWordCount: 2,
             maxWordCount: 2,
             correctAuxiliars: [["had"]],
@@ -472,9 +571,12 @@ const completePastPerfectPositiveStatementVerbForm = [
         id: "d64aef54a1c6a2e6c0bbda7fec46a615",
         type: "completePastPerfectPositiveStatementVerbForm",
         data: {
-            leftSide: "The dog",
-            middle: "(bark)",
-            rightSide: "all night until morning.",
+            prompt: {
+                twoSided: true,
+                leftSide: "The dog",
+                middle: "(bark)",
+                rightSide: "all night until morning."
+            },
             minWordCount: 2,
             maxWordCount: 2,
             correctAuxiliars: [["had"]],
@@ -486,9 +588,12 @@ const completePastPerfectPositiveStatementVerbForm = [
         id: "ebe4072669e378f26536df62d6a88c21",
         type: "completePastPerfectPositiveStatementVerbForm",
         data: {
-            leftSide: "I",
-            middle: "(pay)",
-            rightSide: "the bill before leaving the shop.",
+            prompt: {
+                twoSided: true,
+                leftSide: "I",
+                middle: "(pay)",
+                rightSide: "the bill before leaving the shop."
+            },
             minWordCount: 2,
             maxWordCount: 2,
             correctAuxiliars: [["had"]],
@@ -500,9 +605,12 @@ const completePastPerfectPositiveStatementVerbForm = [
         id: "d18cb30208140a471d02d2288b5e47cf",
         type: "completePastPerfectPositiveStatementVerbForm",
         data: {
-            leftSide: "They",
-            middle: "(prepare)",
-            rightSide: "the meal before we arrived.",
+            prompt: {
+                twoSided: true,
+                leftSide: "They",
+                middle: "(prepare)",
+                rightSide: "the meal before we arrived."
+            },
             minWordCount: 2,
             maxWordCount: 2,
             correctAuxiliars: [["had"]],
@@ -514,9 +622,12 @@ const completePastPerfectPositiveStatementVerbForm = [
         id: "70d863764b86115538a45779b5a320b4",
         type: "completePastPerfectPositiveStatementVerbForm",
         data: {
-            leftSide: "The leaves",
-            middle: "(fall)",
-            rightSide: "by the end of autumn.",
+            prompt: {
+                twoSided: true,
+                leftSide: "The leaves",
+                middle: "(fall)",
+                rightSide: "by the end of autumn."
+            },
             minWordCount: 2,
             maxWordCount: 2,
             correctAuxiliars: [["had"]],
@@ -528,9 +639,12 @@ const completePastPerfectPositiveStatementVerbForm = [
         id: "fb76b9ed40b6379c2ec9b97f8fcbd69d",
         type: "completePastPerfectPositiveStatementVerbForm",
         data: {
-            leftSide: "She",
-            middle: "(save)",
-            rightSide: "enough money for the car.",
+            prompt: {
+                twoSided: true,
+                leftSide: "She",
+                middle: "(save)",
+                rightSide: "enough money for the car."
+            },
             minWordCount: 2,
             maxWordCount: 2,
             correctAuxiliars: [["had"]],
@@ -542,9 +656,12 @@ const completePastPerfectPositiveStatementVerbForm = [
         id: "3f71dd463e932a50518576e10265d995",
         type: "completePastPerfectPositiveStatementVerbForm",
         data: {
-            leftSide: "The company",
-            middle: "(expand)",
-            rightSide: "significantly last year.",
+            prompt: {
+                twoSided: true,
+                leftSide: "The company",
+                middle: "(expand)",
+                rightSide: "significantly last year."
+            },
             minWordCount: 2,
             maxWordCount: 2,
             correctAuxiliars: [["had"]],
@@ -556,9 +673,12 @@ const completePastPerfectPositiveStatementVerbForm = [
         id: "7cf594f7c77a88696b0f654ef911b88b",
         type: "completePastPerfectPositiveStatementVerbForm",
         data: {
-            leftSide: "I",
-            middle: "(send)",
-            rightSide: "the email before you called.",
+            prompt: {
+                twoSided: true,
+                leftSide: "I",
+                middle: "(send)",
+                rightSide: "the email before you called."
+            },
             minWordCount: 2,
             maxWordCount: 2,
             correctAuxiliars: [["had"]],
@@ -570,9 +690,12 @@ const completePastPerfectPositiveStatementVerbForm = [
         id: "d82badac1c66ef9342c6ec1a93d842d6",
         type: "completePastPerfectPositiveStatementVerbForm",
         data: {
-            leftSide: "The scientist",
-            middle: "(discover)",
-            rightSide: "the cure by 1950.",
+            prompt: {
+                twoSided: true,
+                leftSide: "The scientist",
+                middle: "(discover)",
+                rightSide: "the cure by 1950."
+            },
             minWordCount: 2,
             maxWordCount: 2,
             correctAuxiliars: [["had"]],
@@ -589,9 +712,12 @@ const completePastPerfectPositiveStatementVerbForm = [
         id: "a2284aed92dec39d100c38b942144dfb",
         type: "completePastPerfectPositiveStatementVerbForm",
         data: {
-            leftSide: "We",
-            middle: "(spend)",
-            rightSide: "all our savings.",
+            prompt: {
+                twoSided: true,
+                leftSide: "We",
+                middle: "(spend)",
+                rightSide: "all our savings."
+            },
             minWordCount: 2,
             maxWordCount: 2,
             correctAuxiliars: [["had"]],
@@ -603,9 +729,12 @@ const completePastPerfectPositiveStatementVerbForm = [
         id: "cff810d070038b8db97b4663df08be2f",
         type: "completePastPerfectPositiveStatementVerbForm",
         data: {
-            leftSide: "He",
-            middle: "(wear)",
-            rightSide: "the same shirt for three days.",
+            prompt: {
+                twoSided: true,
+                leftSide: "He",
+                middle: "(wear)",
+                rightSide: "the same shirt for three days."
+            },
             minWordCount: 2,
             maxWordCount: 2,
             correctAuxiliars: [["had"]],
@@ -617,9 +746,12 @@ const completePastPerfectPositiveStatementVerbForm = [
         id: "57857d58ba22b44b19c7f9ff9a478bd8",
         type: "completePastPerfectPositiveStatementVerbForm",
         data: {
-            leftSide: "The team",
-            middle: "(win)",
-            rightSide: "every game that season.",
+            prompt: {
+                twoSided: true,
+                leftSide: "The team",
+                middle: "(win)",
+                rightSide: "every game that season."
+            },
             minWordCount: 2,
             maxWordCount: 2,
             correctAuxiliars: [["had"]],
@@ -631,9 +763,12 @@ const completePastPerfectPositiveStatementVerbForm = [
         id: "9dc67b830a74a9ce6a00d92c10d39f4e",
         type: "completePastPerfectPositiveStatementVerbForm",
         data: {
-            leftSide: "I",
-            middle: "(learn)",
-            rightSide: "the rules before the match.",
+            prompt: {
+                twoSided: true,
+                leftSide: "I",
+                middle: "(learn)",
+                rightSide: "the rules before the match."
+            },
             minWordCount: 2,
             maxWordCount: 2,
             correctAuxiliars: [["had"]],
@@ -645,9 +780,12 @@ const completePastPerfectPositiveStatementVerbForm = [
         id: "afb93e86caf77fc54fb8a5388311da12",
         type: "completePastPerfectPositiveStatementVerbForm",
         data: {
-            leftSide: "The clock",
-            middle: "(stop)",
-            rightSide: "at midnight.",
+            prompt: {
+                twoSided: true,
+                leftSide: "The clock",
+                middle: "(stop)",
+                rightSide: "at midnight."
+            },
             minWordCount: 2,
             maxWordCount: 2,
             correctAuxiliars: [["had"]],
@@ -659,9 +797,12 @@ const completePastPerfectPositiveStatementVerbForm = [
         id: "579b9878491d87d0c81589d7a5052757",
         type: "completePastPerfectPositiveStatementVerbForm",
         data: {
-            leftSide: "She",
-            middle: "(choose)",
-            rightSide: "the dress before the sale ended.",
+            prompt: {
+                twoSided: true,
+                leftSide: "She",
+                middle: "(choose)",
+                rightSide: "the dress before the sale ended."
+            },
             minWordCount: 2,
             maxWordCount: 2,
             correctAuxiliars: [["had"]],
@@ -673,9 +814,12 @@ const completePastPerfectPositiveStatementVerbForm = [
         id: "dcc1149fcc97701299ba1894e0abd336",
         type: "completePastPerfectPositiveStatementVerbForm",
         data: {
-            leftSide: "They",
-            middle: "(build)",
-            rightSide: "the wall around the garden.",
+            prompt: {
+                twoSided: true,
+                leftSide: "They",
+                middle: "(build)",
+                rightSide: "the wall around the garden."
+            },
             minWordCount: 2,
             maxWordCount: 2,
             correctAuxiliars: [["had"]],
@@ -687,9 +831,12 @@ const completePastPerfectPositiveStatementVerbForm = [
         id: "fc2bc480d278f4cc4b868d36cb4c33dc",
         type: "completePastPerfectPositiveStatementVerbForm",
         data: {
-            leftSide: "I",
-            middle: "(tell)",
-            rightSide: "you the truth from the start.",
+            prompt: {
+                twoSided: true,
+                leftSide: "I",
+                middle: "(tell)",
+                rightSide: "you the truth from the start."
+            },
             minWordCount: 2,
             maxWordCount: 2,
             correctAuxiliars: [["had"]],
@@ -701,9 +848,12 @@ const completePastPerfectPositiveStatementVerbForm = [
         id: "b5ae3d145ae5fbd65c88314109f57027",
         type: "completePastPerfectPositiveStatementVerbForm",
         data: {
-            leftSide: "The storm",
-            middle: "(destroy)",
-            rightSide: "the crops.",
+            prompt: {
+                twoSided: true,
+                leftSide: "The storm",
+                middle: "(destroy)",
+                rightSide: "the crops."
+            },
             minWordCount: 2,
             maxWordCount: 2,
             correctAuxiliars: [["had"]],
@@ -715,9 +865,12 @@ const completePastPerfectPositiveStatementVerbForm = [
         id: "6f1575ed47330a8d1f5233e162c60aca",
         type: "completePastPerfectPositiveStatementVerbForm",
         data: {
-            leftSide: "We",
-            middle: "(drive)",
-            rightSide: "all night to get here.",
+            prompt: {
+                twoSided: true,
+                leftSide: "We",
+                middle: "(drive)",
+                rightSide: "all night to get here."
+            },
             minWordCount: 2,
             maxWordCount: 2,
             correctAuxiliars: [["had"]],
@@ -729,9 +882,12 @@ const completePastPerfectPositiveStatementVerbForm = [
         id: "98fb95b6457950f0c528a43da60a9fc1",
         type: "completePastPerfectPositiveStatementVerbForm",
         data: {
-            leftSide: "He",
-            middle: "(show)",
-            rightSide: "me the photos already.",
+            prompt: {
+                twoSided: true,
+                leftSide: "He",
+                middle: "(show)",
+                rightSide: "me the photos already."
+            },
             minWordCount: 2,
             maxWordCount: 2,
             correctAuxiliars: [["had"]],
@@ -743,9 +899,12 @@ const completePastPerfectPositiveStatementVerbForm = [
         id: "6b1d02cb423056c0a3649dbe09571337",
         type: "completePastPerfectPositiveStatementVerbForm",
         data: {
-            leftSide: "I",
-            middle: "(keep)",
-            rightSide: "the secret for years.",
+            prompt: {
+                twoSided: true,
+                leftSide: "I",
+                middle: "(keep)",
+                rightSide: "the secret for years."
+            },
             minWordCount: 2,
             maxWordCount: 2,
             correctAuxiliars: [["had"]],
@@ -757,9 +916,12 @@ const completePastPerfectPositiveStatementVerbForm = [
         id: "ea13cca02562b79e390265dab0928e56",
         type: "completePastPerfectPositiveStatementVerbForm",
         data: {
-            leftSide: "The virus",
-            middle: "(infect)",
-            rightSide: "the system by then.",
+            prompt: {
+                twoSided: true,
+                leftSide: "The virus",
+                middle: "(infect)",
+                rightSide: "the system by then."
+            },
             minWordCount: 2,
             maxWordCount: 2,
             correctAuxiliars: [["had"]],
@@ -771,9 +933,12 @@ const completePastPerfectPositiveStatementVerbForm = [
         id: "c8836cf5e394c03fb3fa0c885f319094",
         type: "completePastPerfectPositiveStatementVerbForm",
         data: {
-            leftSide: "She",
-            middle: "(give)",
-            rightSide: "up before trying.",
+            prompt: {
+                twoSided: true,
+                leftSide: "She",
+                middle: "(give)",
+                rightSide: "up before trying."
+            },
             minWordCount: 2,
             maxWordCount: 2,
             correctAuxiliars: [["had"]],
@@ -785,9 +950,12 @@ const completePastPerfectPositiveStatementVerbForm = [
         id: "e0ff33aba8408a9af1e0c666ad579776",
         type: "completePastPerfectPositiveStatementVerbForm",
         data: {
-            leftSide: "They",
-            middle: "(plan)",
-            rightSide: "the robbery in detail.",
+            prompt: {
+                twoSided: true,
+                leftSide: "They",
+                middle: "(plan)",
+                rightSide: "the robbery in detail."
+            },
             minWordCount: 2,
             maxWordCount: 2,
             correctAuxiliars: [["had"]],
@@ -799,9 +967,12 @@ const completePastPerfectPositiveStatementVerbForm = [
         id: "e6b39eb5666b6e61723fc09f2460f34a",
         type: "completePastPerfectPositiveStatementVerbForm",
         data: {
-            leftSide: "I",
-            middle: "(sleep)",
-            rightSide: "only three hours.",
+            prompt: {
+                twoSided: true,
+                leftSide: "I",
+                middle: "(sleep)",
+                rightSide: "only three hours."
+            },
             minWordCount: 2,
             maxWordCount: 2,
             correctAuxiliars: [["had"]],
@@ -813,9 +984,12 @@ const completePastPerfectPositiveStatementVerbForm = [
         id: "ed14ffb586eb62575c1596581d88978e",
         type: "completePastPerfectPositiveStatementVerbForm",
         data: {
-            leftSide: "The boat",
-            middle: "(sink)",
-            rightSide: "before help arrived.",
+            prompt: {
+                twoSided: true,
+                leftSide: "The boat",
+                middle: "(sink)",
+                rightSide: "before help arrived."
+            },
             minWordCount: 2,
             maxWordCount: 2,
             correctAuxiliars: [["had"]],
@@ -827,9 +1001,12 @@ const completePastPerfectPositiveStatementVerbForm = [
         id: "d151c8967baf79abcb58508668960362",
         type: "completePastPerfectPositiveStatementVerbForm",
         data: {
-            leftSide: "We",
-            middle: "(organize)",
-            rightSide: "the files by category.",
+            prompt: {
+                twoSided: true,
+                leftSide: "We",
+                middle: "(organize)",
+                rightSide: "the files by category."
+            },
             minWordCount: 2,
             maxWordCount: 2,
             correctAuxiliars: [["had"]],
@@ -846,9 +1023,12 @@ const completePastPerfectPositiveStatementVerbForm = [
         id: "74f86e3808f97b35dfe0783409e65858",
         type: "completePastPerfectPositiveStatementVerbForm",
         data: {
-            leftSide: "He",
-            middle: "(meet)",
-            rightSide: "her once before.",
+            prompt: {
+                twoSided: true,
+                leftSide: "He",
+                middle: "(meet)",
+                rightSide: "her once before."
+            },
             minWordCount: 2,
             maxWordCount: 2,
             correctAuxiliars: [["had"]],
@@ -860,9 +1040,12 @@ const completePastPerfectPositiveStatementVerbForm = [
         id: "ddecd3d8c6e26771f8f982506a8248ae",
         type: "completePastPerfectPositiveStatementVerbForm",
         data: {
-            leftSide: "I",
-            middle: "(write)",
-            rightSide: "the report the night before.",
+            prompt: {
+                twoSided: true,
+                leftSide: "I",
+                middle: "(write)",
+                rightSide: "the report the night before."
+            },
             minWordCount: 2,
             maxWordCount: 2,
             correctAuxiliars: [["had"]],
@@ -874,9 +1057,12 @@ const completePastPerfectPositiveStatementVerbForm = [
         id: "29a6af4d63806676d816faf19ae32af6",
         type: "completePastPerfectPositiveStatementVerbForm",
         data: {
-            leftSide: "The baby",
-            middle: "(wake)",
-            rightSide: "up before the alarm.",
+            prompt: {
+                twoSided: true,
+                leftSide: "The baby",
+                middle: "(wake)",
+                rightSide: "up before the alarm."
+            },
             minWordCount: 2,
             maxWordCount: 2,
             correctAuxiliars: [["had"]],
@@ -888,9 +1074,12 @@ const completePastPerfectPositiveStatementVerbForm = [
         id: "6f6a3e4cbc5c447311bb363ab3f2135a",
         type: "completePastPerfectPositiveStatementVerbForm",
         data: {
-            leftSide: "She",
-            middle: "(wash)",
-            rightSide: "the dishes already.",
+            prompt: {
+                twoSided: true,
+                leftSide: "She",
+                middle: "(wash)",
+                rightSide: "the dishes already."
+            },
             minWordCount: 2,
             maxWordCount: 2,
             correctAuxiliars: [["had"]],
@@ -902,9 +1091,12 @@ const completePastPerfectPositiveStatementVerbForm = [
         id: "7922204d8900cdaf901106540399fb29",
         type: "completePastPerfectPositiveStatementVerbForm",
         data: {
-            leftSide: "They",
-            middle: "(sell)",
-            rightSide: "out of bread by 10 AM.",
+            prompt: {
+                twoSided: true,
+                leftSide: "They",
+                middle: "(sell)",
+                rightSide: "out of bread by 10 AM."
+            },
             minWordCount: 2,
             maxWordCount: 2,
             correctAuxiliars: [["had"]],
@@ -916,9 +1108,12 @@ const completePastPerfectPositiveStatementVerbForm = [
         id: "c447984e2487708920de3cd52f42bd9b",
         type: "completePastPerfectPositiveStatementVerbForm",
         data: {
-            leftSide: "I",
-            middle: "(know)",
-            rightSide: "the answer all along.",
+            prompt: {
+                twoSided: true,
+                leftSide: "I",
+                middle: "(know)",
+                rightSide: "the answer all along."
+            },
             minWordCount: 2,
             maxWordCount: 2,
             correctAuxiliars: [["had"]],
@@ -930,9 +1125,12 @@ const completePastPerfectPositiveStatementVerbForm = [
         id: "ad8fb0db549c28d9b944e256cd471115",
         type: "completePastPerfectPositiveStatementVerbForm",
         data: {
-            leftSide: "The teacher",
-            middle: "(explain)",
-            rightSide: "it twice.",
+            prompt: {
+                twoSided: true,
+                leftSide: "The teacher",
+                middle: "(explain)",
+                rightSide: "it twice."
+            },
             minWordCount: 2,
             maxWordCount: 2,
             correctAuxiliars: [["had"]],
@@ -944,9 +1142,12 @@ const completePastPerfectPositiveStatementVerbForm = [
         id: "8ef8289715832a570e4606156adf3479",
         type: "completePastPerfectPositiveStatementVerbForm",
         data: {
-            leftSide: "We",
-            middle: "(collect)",
-            rightSide: "all the evidence.",
+            prompt: {
+                twoSided: true,
+                leftSide: "We",
+                middle: "(collect)",
+                rightSide: "all the evidence."
+            },
             minWordCount: 2,
             maxWordCount: 2,
             correctAuxiliars: [["had"]],
@@ -958,9 +1159,12 @@ const completePastPerfectPositiveStatementVerbForm = [
         id: "b48e19564c702f165df0742ff9a9cc49",
         type: "completePastPerfectPositiveStatementVerbForm",
         data: {
-            leftSide: "He",
-            middle: "(draw)",
-            rightSide: " the sketch earlier.",
+            prompt: {
+                twoSided: true,
+                leftSide: "He",
+                middle: "(draw)",
+                rightSide: " the sketch earlier."
+            },
             minWordCount: 2,
             maxWordCount: 2,
             correctAuxiliars: [["had"]],
@@ -972,9 +1176,12 @@ const completePastPerfectPositiveStatementVerbForm = [
         id: "ba356def314d8f98481885393dd4cf3c",
         type: "completePastPerfectPositiveStatementVerbForm",
         data: {
-            leftSide: "I",
-            middle: "(put)",
-            rightSide: "the keys on the table.",
+            prompt: {
+                twoSided: true,
+                leftSide: "I",
+                middle: "(put)",
+                rightSide: "the keys on the table."
+            },
             minWordCount: 2,
             maxWordCount: 2,
             correctAuxiliars: [["had"]],
@@ -986,9 +1193,12 @@ const completePastPerfectPositiveStatementVerbForm = [
         id: "fb7b0b16539222ed000bd9de13304f16",
         type: "completePastPerfectPositiveStatementVerbForm",
         data: {
-            leftSide: "The company",
-            middle: "(hire)",
-            rightSide: "him before the merger.",
+            prompt: {
+                twoSided: true,
+                leftSide: "The company",
+                middle: "(hire)",
+                rightSide: "him before the merger."
+            },
             minWordCount: 2,
             maxWordCount: 2,
             correctAuxiliars: [["had"]],
@@ -1000,9 +1210,12 @@ const completePastPerfectPositiveStatementVerbForm = [
         id: "ed3c21db901e5ef908ed12413be5faa6",
         type: "completePastPerfectPositiveStatementVerbForm",
         data: {
-            leftSide: "She",
-            middle: "(bring)",
-            rightSide: "the documents to the office.",
+            prompt: {
+                twoSided: true,
+                leftSide: "She",
+                middle: "(bring)",
+                rightSide: "the documents to the office."
+            },
             minWordCount: 2,
             maxWordCount: 2,
             correctAuxiliars: [["had"]],
@@ -1014,9 +1227,12 @@ const completePastPerfectPositiveStatementVerbForm = [
         id: "023fdc7842d434b2074360d0a49c3847",
         type: "completePastPerfectPositiveStatementVerbForm",
         data: {
-            leftSide: "They",
-            middle: "(hide)",
-            rightSide: "the treasure deep underground.",
+            prompt: {
+                twoSided: true,
+                leftSide: "They",
+                middle: "(hide)",
+                rightSide: "the treasure deep underground."
+            },
             minWordCount: 2,
             maxWordCount: 2,
             correctAuxiliars: [["had"]],
@@ -1028,9 +1244,12 @@ const completePastPerfectPositiveStatementVerbForm = [
         id: "791db36b47e67a26609a8260387de7d0",
         type: "completePastPerfectPositiveStatementVerbForm",
         data: {
-            leftSide: "I",
-            middle: "(pack)",
-            rightSide: "my bags the day before.",
+            prompt: {
+                twoSided: true,
+                leftSide: "I",
+                middle: "(pack)",
+                rightSide: "my bags the day before."
+            },
             minWordCount: 2,
             maxWordCount: 2,
             correctAuxiliars: [["had"]],
@@ -1042,9 +1261,12 @@ const completePastPerfectPositiveStatementVerbForm = [
         id: "53d1ba0188a51ba176a63084e6815e02",
         type: "completePastPerfectPositiveStatementVerbForm",
         data: {
-            leftSide: "The light",
-            middle: "(fail)",
-            rightSide: "completely.",
+            prompt: {
+                twoSided: true,
+                leftSide: "The light",
+                middle: "(fail)",
+                rightSide: "completely."
+            },
             minWordCount: 2,
             maxWordCount: 2,
             correctAuxiliars: [["had"]],
@@ -1056,9 +1278,12 @@ const completePastPerfectPositiveStatementVerbForm = [
         id: "18ed8daa596913615c224c2466788e26",
         type: "completePastPerfectPositiveStatementVerbForm",
         data: {
-            leftSide: "We",
-            middle: "(order)",
-            rightSide: "the pizza an hour ago.",
+            prompt: {
+                twoSided: true,
+                leftSide: "We",
+                middle: "(order)",
+                rightSide: "the pizza an hour ago."
+            },
             minWordCount: 2,
             maxWordCount: 2,
             correctAuxiliars: [["had"]],
@@ -1070,9 +1295,12 @@ const completePastPerfectPositiveStatementVerbForm = [
         id: "defb8fd323bb7b3309965640babd8c55",
         type: "completePastPerfectPositiveStatementVerbForm",
         data: {
-            leftSide: "He",
-            middle: "(cut)",
-            rightSide: "the cake before the song.",
+            prompt: {
+                twoSided: true,
+                leftSide: "He",
+                middle: "(cut)",
+                rightSide: "the cake before the song."
+            },
             minWordCount: 2,
             maxWordCount: 2,
             correctAuxiliars: [["had"]],
@@ -1084,9 +1312,12 @@ const completePastPerfectPositiveStatementVerbForm = [
         id: "878ae57ad4e12ab46e196409e6779e0c",
         type: "completePastPerfectPositiveStatementVerbForm",
         data: {
-            leftSide: "I",
-            middle: "(spend)",
-            rightSide: "too much time on it.",
+            prompt: {
+                twoSided: true,
+                leftSide: "I",
+                middle: "(spend)",
+                rightSide: "too much time on it."
+            },
             minWordCount: 2,
             maxWordCount: 2,
             correctAuxiliars: [["had"]],
@@ -1098,9 +1329,12 @@ const completePastPerfectPositiveStatementVerbForm = [
         id: "559e7788a0a39606693165cb131fd2ed",
         type: "completePastPerfectPositiveStatementVerbForm",
         data: {
-            leftSide: "The audience",
-            middle: "(stand)",
-            rightSide: "up to applaud.",
+            prompt: {
+                twoSided: true,
+                leftSide: "The audience",
+                middle: "(stand)",
+                rightSide: "up to applaud."
+            },
             minWordCount: 2,
             maxWordCount: 2,
             correctAuxiliars: [["had"]],
@@ -1112,9 +1346,12 @@ const completePastPerfectPositiveStatementVerbForm = [
         id: "6baf610b41bacf75d7bd0044f137c1ab",
         type: "completePastPerfectPositiveStatementVerbForm",
         data: {
-            leftSide: "She",
-            middle: "(wear)",
-            rightSide: "that dress once before.",
+            prompt: {
+                twoSided: true,
+                leftSide: "She",
+                middle: "(wear)",
+                rightSide: "that dress once before."
+            },
             minWordCount: 2,
             maxWordCount: 2,
             correctAuxiliars: [["had"]],
@@ -1126,9 +1363,12 @@ const completePastPerfectPositiveStatementVerbForm = [
         id: "78fbb8a70dc58f648b4dc839f2871f4e",
         type: "completePastPerfectPositiveStatementVerbForm",
         data: {
-            leftSide: "They",
-            middle: "(discover)",
-            rightSide: "the truth too late.",
+            prompt: {
+                twoSided: true,
+                leftSide: "They",
+                middle: "(discover)",
+                rightSide: "the truth too late."
+            },
             minWordCount: 2,
             maxWordCount: 2,
             correctAuxiliars: [["had"]],
@@ -1145,9 +1385,12 @@ const completePastPerfectPositiveStatementVerbForm = [
         id: "91b7357d3d677c85015b01ed4a58d790",
         type: "completePastPerfectPositiveStatementVerbForm",
         data: {
-            leftSide: "I",
-            middle: "(send)",
-            rightSide: "the parcel by express mail.",
+            prompt: {
+                twoSided: true,
+                leftSide: "I",
+                middle: "(send)",
+                rightSide: "the parcel by express mail."
+            },
             minWordCount: 2,
             maxWordCount: 2,
             correctAuxiliars: [["had"]],
@@ -1159,9 +1402,12 @@ const completePastPerfectPositiveStatementVerbForm = [
         id: "81b8b23a0fde8cde4f8464ad26eca61b",
         type: "completePastPerfectPositiveStatementVerbForm",
         data: {
-            leftSide: "The dog",
-            middle: "(dig)",
-            rightSide: "a hole in the yard.",
+            prompt: {
+                twoSided: true,
+                leftSide: "The dog",
+                middle: "(dig)",
+                rightSide: "a hole in the yard."
+            },
             minWordCount: 2,
             maxWordCount: 2,
             correctAuxiliars: [["had"]],
@@ -1173,9 +1419,12 @@ const completePastPerfectPositiveStatementVerbForm = [
         id: "00094a71f9d51344500e501b1f45a054",
         type: "completePastPerfectPositiveStatementVerbForm",
         data: {
-            leftSide: "We",
-            middle: "(check)",
-            rightSide: "the locks twice.",
+            prompt: {
+                twoSided: true,
+                leftSide: "We",
+                middle: "(check)",
+                rightSide: "the locks twice."
+            },
             minWordCount: 2,
             maxWordCount: 2,
             correctAuxiliars: [["had"]],
@@ -1187,9 +1436,12 @@ const completePastPerfectPositiveStatementVerbForm = [
         id: "2c4c6d2a374abda2845240077fa4f301",
         type: "completePastPerfectPositiveStatementVerbForm",
         data: {
-            leftSide: "He",
-            middle: "(choose)",
-            rightSide: "the red one.",
+            prompt: {
+                twoSided: true,
+                leftSide: "He",
+                middle: "(choose)",
+                rightSide: "the red one."
+            },
             minWordCount: 2,
             maxWordCount: 2,
             correctAuxiliars: [["had"]],
@@ -1201,9 +1453,12 @@ const completePastPerfectPositiveStatementVerbForm = [
         id: "7b971fd40366a816d53667d235e6098a",
         type: "completePastPerfectPositiveStatementVerbForm",
         data: {
-            leftSide: "I",
-            middle: "(pay)",
-            rightSide: "in cash.",
+            prompt: {
+                twoSided: true,
+                leftSide: "I",
+                middle: "(pay)",
+                rightSide: "in cash."
+            },
             minWordCount: 2,
             maxWordCount: 2,
             correctAuxiliars: [["had"]],
@@ -1215,9 +1470,12 @@ const completePastPerfectPositiveStatementVerbForm = [
         id: "568ea10ee5990a884509ad07a59649ac",
         type: "completePastPerfectPositiveStatementVerbForm",
         data: {
-            leftSide: "The lake",
-            middle: "(freeze)",
-            rightSide: "solid by January.",
+            prompt: {
+                twoSided: true,
+                leftSide: "The lake",
+                middle: "(freeze)",
+                rightSide: "solid by January."
+            },
             minWordCount: 2,
             maxWordCount: 2,
             correctAuxiliars: [["had"]],
@@ -1229,9 +1487,12 @@ const completePastPerfectPositiveStatementVerbForm = [
         id: "ab79b82101e9941e021e8c9ee7ef92a7",
         type: "completePastPerfectPositiveStatementVerbForm",
         data: {
-            leftSide: "She",
-            middle: "(cook)",
-            rightSide: "dinner before we arrived.",
+            prompt: {
+                twoSided: true,
+                leftSide: "She",
+                middle: "(cook)",
+                rightSide: "dinner before we arrived."
+            },
             minWordCount: 2,
             maxWordCount: 2,
             correctAuxiliars: [["had"]],
@@ -1243,9 +1504,12 @@ const completePastPerfectPositiveStatementVerbForm = [
         id: "1c73b28d5a51dff17ab2b0c7b5a4b113",
         type: "completePastPerfectPositiveStatementVerbForm",
         data: {
-            leftSide: "They",
-            middle: "(arrive)",
-            rightSide: "early for the meeting.",
+            prompt: {
+                twoSided: true,
+                leftSide: "They",
+                middle: "(arrive)",
+                rightSide: "early for the meeting."
+            },
             minWordCount: 2,
             maxWordCount: 2,
             correctAuxiliars: [["had"]],
@@ -1257,9 +1521,12 @@ const completePastPerfectPositiveStatementVerbForm = [
         id: "0d5926cff1daf6f5ef9fc7ffe122dc57",
         type: "completePastPerfectPositiveStatementVerbForm",
         data: {
-            leftSide: "I",
-            middle: "(break)",
-            rightSide: " the vase by accident.",
+            prompt: {
+                twoSided: true,
+                leftSide: "I",
+                middle: "(break)",
+                rightSide: " the vase by accident."
+            },
             minWordCount: 2,
             maxWordCount: 2,
             correctAuxiliars: [["had"]],
@@ -1271,9 +1538,12 @@ const completePastPerfectPositiveStatementVerbForm = [
         id: "29c29e120262e8659936916f0aa0e3b3",
         type: "completePastPerfectPositiveStatementVerbForm",
         data: {
-            leftSide: "The movie",
-            middle: "(start)",
-            rightSide: "before we sat down.",
+            prompt: {
+                twoSided: true,
+                leftSide: "The movie",
+                middle: "(start)",
+                rightSide: "before we sat down."
+            },
             minWordCount: 2,
             maxWordCount: 2,
             correctAuxiliars: [["had"]],
@@ -1285,9 +1555,12 @@ const completePastPerfectPositiveStatementVerbForm = [
         id: "c33cae2ba6539768beca5be5407ec722",
         type: "completePastPerfectPositiveStatementVerbForm",
         data: {
-            leftSide: "We",
-            middle: "(finish)",
-            rightSide: "our drinks.",
+            prompt: {
+                twoSided: true,
+                leftSide: "We",
+                middle: "(finish)",
+                rightSide: "our drinks."
+            },
             minWordCount: 2,
             maxWordCount: 2,
             correctAuxiliars: [["had"]],
@@ -1299,9 +1572,12 @@ const completePastPerfectPositiveStatementVerbForm = [
         id: "cc2d7910dbbdca6b6ca5f29ecf4819df",
         type: "completePastPerfectPositiveStatementVerbForm",
         data: {
-            leftSide: "He",
-            middle: "(buy)",
-            rightSide: "a new car.",
+            prompt: {
+                twoSided: true,
+                leftSide: "He",
+                middle: "(buy)",
+                rightSide: "a new car."
+            },
             minWordCount: 2,
             maxWordCount: 2,
             correctAuxiliars: [["had"]],
@@ -1313,9 +1589,12 @@ const completePastPerfectPositiveStatementVerbForm = [
         id: "7a5f5b6a21d8e90fc45d9b2f0f986ff1",
         type: "completePastPerfectPositiveStatementVerbForm",
         data: {
-            leftSide: "I",
-            middle: "(read)",
-            rightSide: "the email.",
+            prompt: {
+                twoSided: true,
+                leftSide: "I",
+                middle: "(read)",
+                rightSide: "the email."
+            },
             minWordCount: 2,
             maxWordCount: 2,
             correctAuxiliars: [["had"]],
@@ -1327,9 +1606,12 @@ const completePastPerfectPositiveStatementVerbForm = [
         id: "24eb9b487bc2ea1180eaf26530366cc9",
         type: "completePastPerfectPositiveStatementVerbForm",
         data: {
-            leftSide: "The door",
-            middle: "(close)",
-            rightSide: "automatically.",
+            prompt: {
+                twoSided: true,
+                leftSide: "The door",
+                middle: "(close)",
+                rightSide: "automatically."
+            },
             minWordCount: 2,
             maxWordCount: 2,
             correctAuxiliars: [["had"]],
@@ -1341,9 +1623,12 @@ const completePastPerfectPositiveStatementVerbForm = [
         id: "c1d42f7f803c7b45721a0c7a5a83f667",
         type: "completePastPerfectPositiveStatementVerbForm",
         data: {
-            leftSide: "She",
-            middle: "(mop)",
-            rightSide: "the floor.",
+            prompt: {
+                twoSided: true,
+                leftSide: "She",
+                middle: "(mop)",
+                rightSide: "the floor."
+            },
             minWordCount: 2,
             maxWordCount: 2,
             correctAuxiliars: [["had"]],
@@ -1355,9 +1640,12 @@ const completePastPerfectPositiveStatementVerbForm = [
         id: "9930fb921fdc5fce01de3ff3e56bf098",
         type: "completePastPerfectPositiveStatementVerbForm",
         data: {
-            leftSide: "They",
-            middle: "(sell)",
-            rightSide: "everything.",
+            prompt: {
+                twoSided: true,
+                leftSide: "They",
+                middle: "(sell)",
+                rightSide: "everything."
+            },
             minWordCount: 2,
             maxWordCount: 2,
             correctAuxiliars: [["had"]],
@@ -1369,9 +1657,12 @@ const completePastPerfectPositiveStatementVerbForm = [
         id: "cd0fb069e36846d54d060c023ffc9efd",
         type: "completePastPerfectPositiveStatementVerbForm",
         data: {
-            leftSide: "I",
-            middle: "(make)",
-            rightSide: "a list.",
+            prompt: {
+                twoSided: true,
+                leftSide: "I",
+                middle: "(make)",
+                rightSide: "a list."
+            },
             minWordCount: 2,
             maxWordCount: 2,
             correctAuxiliars: [["had"]],
@@ -1383,9 +1674,12 @@ const completePastPerfectPositiveStatementVerbForm = [
         id: "6b0cd82bcf36ad4fc0536fb5fb1611f2",
         type: "completePastPerfectPositiveStatementVerbForm",
         data: {
-            leftSide: "The bird",
-            middle: "(fly)",
-            rightSide: "away.",
+            prompt: {
+                twoSided: true,
+                leftSide: "The bird",
+                middle: "(fly)",
+                rightSide: "away."
+            },
             minWordCount: 2,
             maxWordCount: 2,
             correctAuxiliars: [["had"]],
@@ -1397,9 +1691,12 @@ const completePastPerfectPositiveStatementVerbForm = [
         id: "ffbeb5cf06de3225988ac797a4937833",
         type: "completePastPerfectPositiveStatementVerbForm",
         data: {
-            leftSide: "The bird",
-            middle: "(fly)",
-            rightSide: "away.",
+            prompt: {
+                twoSided: true,
+                leftSide: "The bird",
+                middle: "(fly)",
+                rightSide: "away."
+            },
             minWordCount: 2,
             maxWordCount: 2,
             correctAuxiliars: [["had"]],
@@ -1411,9 +1708,12 @@ const completePastPerfectPositiveStatementVerbForm = [
         id: "6c61755246aa9c3a3b0ac281efa13319",
         type: "completePastPerfectPositiveStatementVerbForm",
         data: {
-            leftSide: "She",
-            middle: "(finish)",
-            rightSide: "her homework.",
+            prompt: {
+                twoSided: true,
+                leftSide: "She",
+                middle: "(finish)",
+                rightSide: "her homework."
+            },
             minWordCount: 2,
             maxWordCount: 2,
             correctAuxiliars: [["had"]],

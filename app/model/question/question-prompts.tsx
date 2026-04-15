@@ -46,6 +46,12 @@ const questionTitles: {
             <b>negative future tense</b> sentence
         </>
     ),
+    turnPresentToBeStatementIntoQuestion: (
+        <>
+            Turn the <b>present tense &quot;to be&quot; statement</b> into a
+            question
+        </>
+    ),
     // Simple tenses
     completePresentSimplePositiveStatementVerbForm: (
         <>

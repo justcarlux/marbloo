@@ -5,9 +5,12 @@ const completeFutureSimplePositiveStatementVerbForm = [
         id: "9f91e366c3b0daf62ee554c24463fd17",
         type: "completeFutureSimplePositiveStatementVerbForm",
         data: {
-            leftSide: "She",
-            middle: "(go)",
-            rightSide: "to school tomorrow.",
+            prompt: {
+                twoSided: true,
+                leftSide: "She",
+                middle: "(go)",
+                rightSide: "to school tomorrow."
+            },
             minWordCount: 2,
             maxWordCount: 2,
             correctAuxiliars: [["will"]],
@@ -19,9 +22,12 @@ const completeFutureSimplePositiveStatementVerbForm = [
         id: "b7ead6009eeb16c94ecb9f9655ee3556",
         type: "completeFutureSimplePositiveStatementVerbForm",
         data: {
-            leftSide: "I",
-            middle: "(help)",
-            rightSide: "you with those bags.",
+            prompt: {
+                twoSided: true,
+                leftSide: "I",
+                middle: "(help)",
+                rightSide: "you with those bags."
+            },
             minWordCount: 2,
             maxWordCount: 2,
             correctAuxiliars: [["will"]],
@@ -33,9 +39,12 @@ const completeFutureSimplePositiveStatementVerbForm = [
         id: "e04adb9047b6460a4af8c5e90d1648e2",
         type: "completeFutureSimplePositiveStatementVerbForm",
         data: {
-            leftSide: "They",
-            middle: "(visit)",
-            rightSide: "their grandparents soon.",
+            prompt: {
+                twoSided: true,
+                leftSide: "They",
+                middle: "(visit)",
+                rightSide: "their grandparents soon."
+            },
             minWordCount: 2,
             maxWordCount: 2,
             correctAuxiliars: [["will"]],
@@ -47,9 +56,12 @@ const completeFutureSimplePositiveStatementVerbForm = [
         id: "546dce1c1f2f2db6c8f24be43be1ffbb",
         type: "completeFutureSimplePositiveStatementVerbForm",
         data: {
-            leftSide: "He",
-            middle: "(call)",
-            rightSide: "you later tonight.",
+            prompt: {
+                twoSided: true,
+                leftSide: "He",
+                middle: "(call)",
+                rightSide: "you later tonight."
+            },
             minWordCount: 2,
             maxWordCount: 2,
             correctAuxiliars: [["will"]],
@@ -61,9 +73,12 @@ const completeFutureSimplePositiveStatementVerbForm = [
         id: "1dd4f6a7f156bb2b2c3cb6fc6354829a",
         type: "completeFutureSimplePositiveStatementVerbForm",
         data: {
-            leftSide: "We",
-            middle: "(win)",
-            rightSide: "the game easily.",
+            prompt: {
+                twoSided: true,
+                leftSide: "We",
+                middle: "(win)",
+                rightSide: "the game easily."
+            },
             minWordCount: 2,
             maxWordCount: 2,
             correctAuxiliars: [["will"]],
@@ -75,9 +90,12 @@ const completeFutureSimplePositiveStatementVerbForm = [
         id: "fd838dfbbcc4a4ed6c6b33d4f00f6ed6",
         type: "completeFutureSimplePositiveStatementVerbForm",
         data: {
-            leftSide: "The sun",
-            middle: "(rise)",
-            rightSide: "at six o'clock.",
+            prompt: {
+                twoSided: true,
+                leftSide: "The sun",
+                middle: "(rise)",
+                rightSide: "at six o'clock."
+            },
             minWordCount: 2,
             maxWordCount: 2,
             correctAuxiliars: [["will"]],
@@ -89,9 +107,12 @@ const completeFutureSimplePositiveStatementVerbForm = [
         id: "530c485e613fb0d0b87e820c99cb38e4",
         type: "completeFutureSimplePositiveStatementVerbForm",
         data: {
-            leftSide: "You",
-            middle: "(love)",
-            rightSide: "this new movie.",
+            prompt: {
+                twoSided: true,
+                leftSide: "You",
+                middle: "(love)",
+                rightSide: "this new movie."
+            },
             minWordCount: 2,
             maxWordCount: 2,
             correctAuxiliars: [["will"]],
@@ -103,9 +124,12 @@ const completeFutureSimplePositiveStatementVerbForm = [
         id: "d6655fc7be767dea370ff09c0ca4ae3d",
         type: "completeFutureSimplePositiveStatementVerbForm",
         data: {
-            leftSide: "It",
-            middle: "(snow)",
-            rightSide: "in the mountains tonight.",
+            prompt: {
+                twoSided: true,
+                leftSide: "It",
+                middle: "(snow)",
+                rightSide: "in the mountains tonight."
+            },
             minWordCount: 2,
             maxWordCount: 2,
             correctAuxiliars: [["will"]],
@@ -117,9 +141,12 @@ const completeFutureSimplePositiveStatementVerbForm = [
         id: "63872ab1a83f869f762e72f55c1e54d3",
         type: "completeFutureSimplePositiveStatementVerbForm",
         data: {
-            leftSide: "The train",
-            middle: "(leave)",
-            rightSide: "in ten minutes.",
+            prompt: {
+                twoSided: true,
+                leftSide: "The train",
+                middle: "(leave)",
+                rightSide: "in ten minutes."
+            },
             minWordCount: 2,
             maxWordCount: 2,
             correctAuxiliars: [["will"]],
@@ -131,9 +158,12 @@ const completeFutureSimplePositiveStatementVerbForm = [
         id: "ad17eb223446b969afbe8b14b7bd17ca",
         type: "completeFutureSimplePositiveStatementVerbForm",
         data: {
-            leftSide: "I",
-            middle: "(buy)",
-            rightSide: "some milk on the way.",
+            prompt: {
+                twoSided: true,
+                leftSide: "I",
+                middle: "(buy)",
+                rightSide: "some milk on the way."
+            },
             minWordCount: 2,
             maxWordCount: 2,
             correctAuxiliars: [["will"]],
@@ -145,9 +175,12 @@ const completeFutureSimplePositiveStatementVerbForm = [
         id: "bcf517699307f69d976d3a2a439bab6e",
         type: "completeFutureSimplePositiveStatementVerbForm",
         data: {
-            leftSide: "She",
-            middle: "(finish)",
-            rightSide: "her project on time.",
+            prompt: {
+                twoSided: true,
+                leftSide: "She",
+                middle: "(finish)",
+                rightSide: "her project on time."
+            },
             minWordCount: 2,
             maxWordCount: 2,
             correctAuxiliars: [["will"]],
@@ -159,9 +192,12 @@ const completeFutureSimplePositiveStatementVerbForm = [
         id: "d1c2558b760a1f59343d380398b1bed3",
         type: "completeFutureSimplePositiveStatementVerbForm",
         data: {
-            leftSide: "They",
-            middle: "(arrive)",
-            rightSide: "at the airport late.",
+            prompt: {
+                twoSided: true,
+                leftSide: "They",
+                middle: "(arrive)",
+                rightSide: "at the airport late."
+            },
             minWordCount: 2,
             maxWordCount: 2,
             correctAuxiliars: [["will"]],
@@ -173,9 +209,12 @@ const completeFutureSimplePositiveStatementVerbForm = [
         id: "bcd3e067e93e0ea4622bf2593ddbc762",
         type: "completeFutureSimplePositiveStatementVerbForm",
         data: {
-            leftSide: "We",
-            middle: "(stay)",
-            rightSide: "at a nice hotel.",
+            prompt: {
+                twoSided: true,
+                leftSide: "We",
+                middle: "(stay)",
+                rightSide: "at a nice hotel."
+            },
             minWordCount: 2,
             maxWordCount: 2,
             correctAuxiliars: [["will"]],
@@ -187,9 +226,12 @@ const completeFutureSimplePositiveStatementVerbForm = [
         id: "387425e73481b050b3fb0e405a16bb91",
         type: "completeFutureSimplePositiveStatementVerbForm",
         data: {
-            leftSide: "He",
-            middle: "(become)",
-            rightSide: "a famous doctor one day.",
+            prompt: {
+                twoSided: true,
+                leftSide: "He",
+                middle: "(become)",
+                rightSide: "a famous doctor one day."
+            },
             minWordCount: 2,
             maxWordCount: 2,
             correctAuxiliars: [["will"]],
@@ -201,9 +243,12 @@ const completeFutureSimplePositiveStatementVerbForm = [
         id: "ec11a3cf7bfc16270d34eaea328b88b8",
         type: "completeFutureSimplePositiveStatementVerbForm",
         data: {
-            leftSide: "The plane",
-            middle: "(land)",
-            rightSide: "at 5 PM sharp.",
+            prompt: {
+                twoSided: true,
+                leftSide: "The plane",
+                middle: "(land)",
+                rightSide: "at 5 PM sharp."
+            },
             minWordCount: 2,
             maxWordCount: 2,
             correctAuxiliars: [["will"]],
@@ -215,9 +260,12 @@ const completeFutureSimplePositiveStatementVerbForm = [
         id: "1c3d6456965a2090d81ef416fa6b1780",
         type: "completeFutureSimplePositiveStatementVerbForm",
         data: {
-            leftSide: "I",
-            middle: "(bring)",
-            rightSide: "the snacks for everyone.",
+            prompt: {
+                twoSided: true,
+                leftSide: "I",
+                middle: "(bring)",
+                rightSide: "the snacks for everyone."
+            },
             minWordCount: 2,
             maxWordCount: 2,
             correctAuxiliars: [["will"]],
@@ -229,9 +277,12 @@ const completeFutureSimplePositiveStatementVerbForm = [
         id: "55379c2b2632347d882e4cbaa601184b",
         type: "completeFutureSimplePositiveStatementVerbForm",
         data: {
-            leftSide: "You",
-            middle: "(find)",
-            rightSide: "the keys in the drawer.",
+            prompt: {
+                twoSided: true,
+                leftSide: "You",
+                middle: "(find)",
+                rightSide: "the keys in the drawer."
+            },
             minWordCount: 2,
             maxWordCount: 2,
             correctAuxiliars: [["will"]],
@@ -243,9 +294,12 @@ const completeFutureSimplePositiveStatementVerbForm = [
         id: "62b1a618d7d565bf0bbf8e840801435c",
         type: "completeFutureSimplePositiveStatementVerbForm",
         data: {
-            leftSide: "The cat",
-            middle: "(catch)",
-            rightSide: "the mouse eventually.",
+            prompt: {
+                twoSided: true,
+                leftSide: "The cat",
+                middle: "(catch)",
+                rightSide: "the mouse eventually."
+            },
             minWordCount: 2,
             maxWordCount: 2,
             correctAuxiliars: [["will"]],
@@ -257,9 +311,12 @@ const completeFutureSimplePositiveStatementVerbForm = [
         id: "cb5f318eb703c8b00d6009d06925f7ac",
         type: "completeFutureSimplePositiveStatementVerbForm",
         data: {
-            leftSide: "She",
-            middle: "(sing)",
-            rightSide: "a beautiful song today.",
+            prompt: {
+                twoSided: true,
+                leftSide: "She",
+                middle: "(sing)",
+                rightSide: "a beautiful song today."
+            },
             minWordCount: 2,
             maxWordCount: 2,
             correctAuxiliars: [["will"]],
@@ -271,9 +328,12 @@ const completeFutureSimplePositiveStatementVerbForm = [
         id: "3a44d5201c25adb1a6a76b1a2ed7c258",
         type: "completeFutureSimplePositiveStatementVerbForm",
         data: {
-            leftSide: "We",
-            middle: "(order)",
-            rightSide: "pizza for dinner tonight.",
+            prompt: {
+                twoSided: true,
+                leftSide: "We",
+                middle: "(order)",
+                rightSide: "pizza for dinner tonight."
+            },
             minWordCount: 2,
             maxWordCount: 2,
             correctAuxiliars: [["will"]],
@@ -285,9 +345,12 @@ const completeFutureSimplePositiveStatementVerbForm = [
         id: "babae131a97ce2d74718f67bcaf893d4",
         type: "completeFutureSimplePositiveStatementVerbForm",
         data: {
-            leftSide: "They",
-            middle: "(build)",
-            rightSide: "a new bridge here.",
+            prompt: {
+                twoSided: true,
+                leftSide: "They",
+                middle: "(build)",
+                rightSide: "a new bridge here."
+            },
             minWordCount: 2,
             maxWordCount: 2,
             correctAuxiliars: [["will"]],
@@ -299,9 +362,12 @@ const completeFutureSimplePositiveStatementVerbForm = [
         id: "bdc44e2c6edda7a9313f6a48a4fd62a0",
         type: "completeFutureSimplePositiveStatementVerbForm",
         data: {
-            leftSide: "He",
-            middle: "(meet)",
-            rightSide: "us at the station.",
+            prompt: {
+                twoSided: true,
+                leftSide: "He",
+                middle: "(meet)",
+                rightSide: "us at the station."
+            },
             minWordCount: 2,
             maxWordCount: 2,
             correctAuxiliars: [["will"]],
@@ -313,9 +379,12 @@ const completeFutureSimplePositiveStatementVerbForm = [
         id: "3eb1e992a489af875dcb39d8c09a1da2",
         type: "completeFutureSimplePositiveStatementVerbForm",
         data: {
-            leftSide: "The garden",
-            middle: "(look)",
-            rightSide: "great in the spring.",
+            prompt: {
+                twoSided: true,
+                leftSide: "The garden",
+                middle: "(look)",
+                rightSide: "great in the spring."
+            },
             minWordCount: 2,
             maxWordCount: 2,
             correctAuxiliars: [["will"]],
@@ -327,9 +396,12 @@ const completeFutureSimplePositiveStatementVerbForm = [
         id: "8b8b679cb871b883375527912789236b",
         type: "completeFutureSimplePositiveStatementVerbForm",
         data: {
-            leftSide: "I",
-            middle: "(learn)",
-            rightSide: "how to code soon.",
+            prompt: {
+                twoSided: true,
+                leftSide: "I",
+                middle: "(learn)",
+                rightSide: "how to code soon."
+            },
             minWordCount: 2,
             maxWordCount: 2,
             correctAuxiliars: [["will"]],
@@ -341,9 +413,12 @@ const completeFutureSimplePositiveStatementVerbForm = [
         id: "bd2ba74a4c4c60d4449628770bb11754",
         type: "completeFutureSimplePositiveStatementVerbForm",
         data: {
-            leftSide: "You",
-            middle: "(feel)",
-            rightSide: "better after a rest.",
+            prompt: {
+                twoSided: true,
+                leftSide: "You",
+                middle: "(feel)",
+                rightSide: "better after a rest."
+            },
             minWordCount: 2,
             maxWordCount: 2,
             correctAuxiliars: [["will"]],
@@ -355,9 +430,12 @@ const completeFutureSimplePositiveStatementVerbForm = [
         id: "13e90404c7fd373893e283e62c17ffa1",
         type: "completeFutureSimplePositiveStatementVerbForm",
         data: {
-            leftSide: "The meeting",
-            middle: "(start)",
-            rightSide: "on time tomorrow.",
+            prompt: {
+                twoSided: true,
+                leftSide: "The meeting",
+                middle: "(start)",
+                rightSide: "on time tomorrow."
+            },
             minWordCount: 2,
             maxWordCount: 2,
             correctAuxiliars: [["will"]],
@@ -369,9 +447,12 @@ const completeFutureSimplePositiveStatementVerbForm = [
         id: "856852edf547f6206de81fdd67db0a0d",
         type: "completeFutureSimplePositiveStatementVerbForm",
         data: {
-            leftSide: "She",
-            middle: "(tell)",
-            rightSide: "you the truth later.",
+            prompt: {
+                twoSided: true,
+                leftSide: "She",
+                middle: "(tell)",
+                rightSide: "you the truth later."
+            },
             minWordCount: 2,
             maxWordCount: 2,
             correctAuxiliars: [["will"]],
@@ -383,9 +464,12 @@ const completeFutureSimplePositiveStatementVerbForm = [
         id: "ee5525cda5eca4993b601dfb053f103e",
         type: "completeFutureSimplePositiveStatementVerbForm",
         data: {
-            leftSide: "They",
-            middle: "(watch)",
-            rightSide: "the game tonight.",
+            prompt: {
+                twoSided: true,
+                leftSide: "They",
+                middle: "(watch)",
+                rightSide: "the game tonight."
+            },
             minWordCount: 2,
             maxWordCount: 2,
             correctAuxiliars: [["will"]],
@@ -397,9 +481,12 @@ const completeFutureSimplePositiveStatementVerbForm = [
         id: "dc645181ce45f26655d4b0c0d3f0945e",
         type: "completeFutureSimplePositiveStatementVerbForm",
         data: {
-            leftSide: "We",
-            middle: "(travel)",
-            rightSide: "to Europe in July.",
+            prompt: {
+                twoSided: true,
+                leftSide: "We",
+                middle: "(travel)",
+                rightSide: "to Europe in July."
+            },
             minWordCount: 2,
             maxWordCount: 2,
             correctAuxiliars: [["will"]],
@@ -411,9 +498,12 @@ const completeFutureSimplePositiveStatementVerbForm = [
         id: "50a1e2b76cff095cabd9a08d961f8207",
         type: "completeFutureSimplePositiveStatementVerbForm",
         data: {
-            leftSide: "He",
-            middle: "(read)",
-            rightSide: "that book quickly.",
+            prompt: {
+                twoSided: true,
+                leftSide: "He",
+                middle: "(read)",
+                rightSide: "that book quickly."
+            },
             minWordCount: 2,
             maxWordCount: 2,
             correctAuxiliars: [["will"]],
@@ -425,9 +515,12 @@ const completeFutureSimplePositiveStatementVerbForm = [
         id: "a9f545a76cf61a921c2031c0f517a0ee",
         type: "completeFutureSimplePositiveStatementVerbForm",
         data: {
-            leftSide: "The wind",
-            middle: "(blow)",
-            rightSide: "strongly tonight.",
+            prompt: {
+                twoSided: true,
+                leftSide: "The wind",
+                middle: "(blow)",
+                rightSide: "strongly tonight."
+            },
             minWordCount: 2,
             maxWordCount: 2,
             correctAuxiliars: [["will"]],
@@ -439,9 +532,12 @@ const completeFutureSimplePositiveStatementVerbForm = [
         id: "3decb17bef9089860b83041cb134ebe2",
         type: "completeFutureSimplePositiveStatementVerbForm",
         data: {
-            leftSide: "I",
-            middle: "(wait)",
-            rightSide: "for you outside.",
+            prompt: {
+                twoSided: true,
+                leftSide: "I",
+                middle: "(wait)",
+                rightSide: "for you outside."
+            },
             minWordCount: 2,
             maxWordCount: 2,
             correctAuxiliars: [["will"]],
@@ -453,9 +549,12 @@ const completeFutureSimplePositiveStatementVerbForm = [
         id: "a86747ab9e32a87870fe463af57404d5",
         type: "completeFutureSimplePositiveStatementVerbForm",
         data: {
-            leftSide: "You",
-            middle: "(pass)",
-            rightSide: "the exam easily.",
+            prompt: {
+                twoSided: true,
+                leftSide: "You",
+                middle: "(pass)",
+                rightSide: "the exam easily."
+            },
             minWordCount: 2,
             maxWordCount: 2,
             correctAuxiliars: [["will"]],
@@ -467,9 +566,12 @@ const completeFutureSimplePositiveStatementVerbForm = [
         id: "b60dac62e440f2a695f46898b12a3595",
         type: "completeFutureSimplePositiveStatementVerbForm",
         data: {
-            leftSide: "She",
-            middle: "(paint)",
-            rightSide: "the living room today.",
+            prompt: {
+                twoSided: true,
+                leftSide: "She",
+                middle: "(paint)",
+                rightSide: "the living room today."
+            },
             minWordCount: 2,
             maxWordCount: 2,
             correctAuxiliars: [["will"]],
@@ -481,9 +583,12 @@ const completeFutureSimplePositiveStatementVerbForm = [
         id: "ddccb6c189fccf14300f8754c29380a9",
         type: "completeFutureSimplePositiveStatementVerbForm",
         data: {
-            leftSide: "They",
-            middle: "(sell)",
-            rightSide: "their old car soon.",
+            prompt: {
+                twoSided: true,
+                leftSide: "They",
+                middle: "(sell)",
+                rightSide: "their old car soon."
+            },
             minWordCount: 2,
             maxWordCount: 2,
             correctAuxiliars: [["will"]],
@@ -495,9 +600,12 @@ const completeFutureSimplePositiveStatementVerbForm = [
         id: "a707114c450e84261bc55edaadfd1f71",
         type: "completeFutureSimplePositiveStatementVerbForm",
         data: {
-            leftSide: "We",
-            middle: "(save)",
-            rightSide: "money for the trip.",
+            prompt: {
+                twoSided: true,
+                leftSide: "We",
+                middle: "(save)",
+                rightSide: "money for the trip."
+            },
             minWordCount: 2,
             maxWordCount: 2,
             correctAuxiliars: [["will"]],
@@ -509,9 +617,12 @@ const completeFutureSimplePositiveStatementVerbForm = [
         id: "b200064a270dc8e0eeaaceb0a2ca187d",
         type: "completeFutureSimplePositiveStatementVerbForm",
         data: {
-            leftSide: "The party",
-            middle: "(be)",
-            rightSide: "great fun tonight.",
+            prompt: {
+                twoSided: true,
+                leftSide: "The party",
+                middle: "(be)",
+                rightSide: "great fun tonight."
+            },
             minWordCount: 2,
             maxWordCount: 2,
             correctAuxiliars: [["will"]],
@@ -523,9 +634,12 @@ const completeFutureSimplePositiveStatementVerbForm = [
         id: "046b0736755222284959b7d4631123ca",
         type: "completeFutureSimplePositiveStatementVerbForm",
         data: {
-            leftSide: "He",
-            middle: "(fix)",
-            rightSide: "the computer later.",
+            prompt: {
+                twoSided: true,
+                leftSide: "He",
+                middle: "(fix)",
+                rightSide: "the computer later."
+            },
             minWordCount: 2,
             maxWordCount: 2,
             correctAuxiliars: [["will"]],
@@ -537,9 +651,12 @@ const completeFutureSimplePositiveStatementVerbForm = [
         id: "321da3e3fc56ff4ea03e70e031c89345",
         type: "completeFutureSimplePositiveStatementVerbForm",
         data: {
-            leftSide: "I",
-            middle: "(send)",
-            rightSide: "the email tomorrow.",
+            prompt: {
+                twoSided: true,
+                leftSide: "I",
+                middle: "(send)",
+                rightSide: "the email tomorrow."
+            },
             minWordCount: 2,
             maxWordCount: 2,
             correctAuxiliars: [["will"]],
@@ -551,9 +668,12 @@ const completeFutureSimplePositiveStatementVerbForm = [
         id: "50777132c104a1191bac9c605295f3dc",
         type: "completeFutureSimplePositiveStatementVerbForm",
         data: {
-            leftSide: "You",
-            middle: "(remember)",
-            rightSide: "this day forever.",
+            prompt: {
+                twoSided: true,
+                leftSide: "You",
+                middle: "(remember)",
+                rightSide: "this day forever."
+            },
             minWordCount: 2,
             maxWordCount: 2,
             correctAuxiliars: [["will"]],
@@ -565,9 +685,12 @@ const completeFutureSimplePositiveStatementVerbForm = [
         id: "ad07e38d67e0c72229ef040369b67491",
         type: "completeFutureSimplePositiveStatementVerbForm",
         data: {
-            leftSide: "She",
-            middle: "(wear)",
-            rightSide: "her new dress.",
+            prompt: {
+                twoSided: true,
+                leftSide: "She",
+                middle: "(wear)",
+                rightSide: "her new dress."
+            },
             minWordCount: 2,
             maxWordCount: 2,
             correctAuxiliars: [["will"]],
@@ -579,9 +702,12 @@ const completeFutureSimplePositiveStatementVerbForm = [
         id: "dc8ec0b1fb759a2f58070431e2ac7552",
         type: "completeFutureSimplePositiveStatementVerbForm",
         data: {
-            leftSide: "They",
-            middle: "(play)",
-            rightSide: "football on Friday.",
+            prompt: {
+                twoSided: true,
+                leftSide: "They",
+                middle: "(play)",
+                rightSide: "football on Friday."
+            },
             minWordCount: 2,
             maxWordCount: 2,
             correctAuxiliars: [["will"]],
@@ -593,9 +719,12 @@ const completeFutureSimplePositiveStatementVerbForm = [
         id: "75899cd773a5f8777345d288a7027fdc",
         type: "completeFutureSimplePositiveStatementVerbForm",
         data: {
-            leftSide: "We",
-            middle: "(know)",
-            rightSide: "the results soon.",
+            prompt: {
+                twoSided: true,
+                leftSide: "We",
+                middle: "(know)",
+                rightSide: "the results soon."
+            },
             minWordCount: 2,
             maxWordCount: 2,
             correctAuxiliars: [["will"]],
@@ -607,9 +736,12 @@ const completeFutureSimplePositiveStatementVerbForm = [
         id: "2aaddc75c29637e41ac3344a14363d93",
         type: "completeFutureSimplePositiveStatementVerbForm",
         data: {
-            leftSide: "The library",
-            middle: "(close)",
-            rightSide: "at 8 PM.",
+            prompt: {
+                twoSided: true,
+                leftSide: "The library",
+                middle: "(close)",
+                rightSide: "at 8 PM."
+            },
             minWordCount: 2,
             maxWordCount: 2,
             correctAuxiliars: [["will"]],
@@ -621,9 +753,12 @@ const completeFutureSimplePositiveStatementVerbForm = [
         id: "3de09993bdc779c5b81a3fdd424f8cad",
         type: "completeFutureSimplePositiveStatementVerbForm",
         data: {
-            leftSide: "He",
-            middle: "(teach)",
-            rightSide: "us how to surf.",
+            prompt: {
+                twoSided: true,
+                leftSide: "He",
+                middle: "(teach)",
+                rightSide: "us how to surf."
+            },
             minWordCount: 2,
             maxWordCount: 2,
             correctAuxiliars: [["will"]],
@@ -635,9 +770,12 @@ const completeFutureSimplePositiveStatementVerbForm = [
         id: "fe76f7c840ec5d11630fd53b135e25d8",
         type: "completeFutureSimplePositiveStatementVerbForm",
         data: {
-            leftSide: "I",
-            middle: "(take)",
-            rightSide: "the bus to work.",
+            prompt: {
+                twoSided: true,
+                leftSide: "I",
+                middle: "(take)",
+                rightSide: "the bus to work."
+            },
             minWordCount: 2,
             maxWordCount: 2,
             correctAuxiliars: [["will"]],
@@ -649,9 +787,12 @@ const completeFutureSimplePositiveStatementVerbForm = [
         id: "bb25bd21bc131c6a4f0c02ec6f6c924e",
         type: "completeFutureSimplePositiveStatementVerbForm",
         data: {
-            leftSide: "You",
-            middle: "(enjoy)",
-            rightSide: "the concert.",
+            prompt: {
+                twoSided: true,
+                leftSide: "You",
+                middle: "(enjoy)",
+                rightSide: "the concert."
+            },
             minWordCount: 2,
             maxWordCount: 2,
             correctAuxiliars: [["will"]],
@@ -663,9 +804,12 @@ const completeFutureSimplePositiveStatementVerbForm = [
         id: "b7f2968df560f4c0c571a434bcb4f28f",
         type: "completeFutureSimplePositiveStatementVerbForm",
         data: {
-            leftSide: "The flowers",
-            middle: "(bloom)",
-            rightSide: "in a week.",
+            prompt: {
+                twoSided: true,
+                leftSide: "The flowers",
+                middle: "(bloom)",
+                rightSide: "in a week."
+            },
             minWordCount: 2,
             maxWordCount: 2,
             correctAuxiliars: [["will"]],
@@ -677,9 +821,12 @@ const completeFutureSimplePositiveStatementVerbForm = [
         id: "d539edf54a8211ced2c6713f0e9334a1",
         type: "completeFutureSimplePositiveStatementVerbForm",
         data: {
-            leftSide: "She",
-            middle: "(write)",
-            rightSide: "a letter to him.",
+            prompt: {
+                twoSided: true,
+                leftSide: "She",
+                middle: "(write)",
+                rightSide: "a letter to him."
+            },
             minWordCount: 2,
             maxWordCount: 2,
             correctAuxiliars: [["will"]],
@@ -691,9 +838,12 @@ const completeFutureSimplePositiveStatementVerbForm = [
         id: "c368c09aa92b8f74fca831276de5883c",
         type: "completeFutureSimplePositiveStatementVerbForm",
         data: {
-            leftSide: "They",
-            middle: "(dance)",
-            rightSide: "all night long.",
+            prompt: {
+                twoSided: true,
+                leftSide: "They",
+                middle: "(dance)",
+                rightSide: "all night long."
+            },
             minWordCount: 2,
             maxWordCount: 2,
             correctAuxiliars: [["will"]],
@@ -705,9 +855,12 @@ const completeFutureSimplePositiveStatementVerbForm = [
         id: "5f667fc8eb72523722ae2f5aec1a6876",
         type: "completeFutureSimplePositiveStatementVerbForm",
         data: {
-            leftSide: "We",
-            middle: "(clean)",
-            rightSide: "the house together.",
+            prompt: {
+                twoSided: true,
+                leftSide: "We",
+                middle: "(clean)",
+                rightSide: "the house together."
+            },
             minWordCount: 2,
             maxWordCount: 2,
             correctAuxiliars: [["will"]],
@@ -719,9 +872,12 @@ const completeFutureSimplePositiveStatementVerbForm = [
         id: "c61448dc25bcf86ee964f679317e1bf1",
         type: "completeFutureSimplePositiveStatementVerbForm",
         data: {
-            leftSide: "He",
-            middle: "(smoke)",
-            rightSide: "outside later.",
+            prompt: {
+                twoSided: true,
+                leftSide: "He",
+                middle: "(smoke)",
+                rightSide: "outside later."
+            },
             minWordCount: 2,
             maxWordCount: 2,
             correctAuxiliars: [["will"]],
@@ -733,9 +889,12 @@ const completeFutureSimplePositiveStatementVerbForm = [
         id: "4287535d6a3ec4064ccfbfd18c2bdfac",
         type: "completeFutureSimplePositiveStatementVerbForm",
         data: {
-            leftSide: "I",
-            middle: "(see)",
-            rightSide: "you tomorrow morning.",
+            prompt: {
+                twoSided: true,
+                leftSide: "I",
+                middle: "(see)",
+                rightSide: "you tomorrow morning."
+            },
             minWordCount: 2,
             maxWordCount: 2,
             correctAuxiliars: [["will"]],
@@ -747,9 +906,12 @@ const completeFutureSimplePositiveStatementVerbForm = [
         id: "2c0e0addb9b1e6edb77783c332ee3eec",
         type: "completeFutureSimplePositiveStatementVerbForm",
         data: {
-            leftSide: "You",
-            middle: "(succeed)",
-            rightSide: "eventually.",
+            prompt: {
+                twoSided: true,
+                leftSide: "You",
+                middle: "(succeed)",
+                rightSide: "eventually."
+            },
             minWordCount: 2,
             maxWordCount: 2,
             correctAuxiliars: [["will"]],
@@ -761,9 +923,12 @@ const completeFutureSimplePositiveStatementVerbForm = [
         id: "b04797fc2929fc9a43374f670569e107",
         type: "completeFutureSimplePositiveStatementVerbForm",
         data: {
-            leftSide: "The baby",
-            middle: "(sleep)",
-            rightSide: "through the night.",
+            prompt: {
+                twoSided: true,
+                leftSide: "The baby",
+                middle: "(sleep)",
+                rightSide: "through the night."
+            },
             minWordCount: 2,
             maxWordCount: 2,
             correctAuxiliars: [["will"]],
@@ -775,9 +940,12 @@ const completeFutureSimplePositiveStatementVerbForm = [
         id: "feacb08f2c13c29dc20ecea11038188a",
         type: "completeFutureSimplePositiveStatementVerbForm",
         data: {
-            leftSide: "She",
-            middle: "(cook)",
-            rightSide: "a special meal.",
+            prompt: {
+                twoSided: true,
+                leftSide: "She",
+                middle: "(cook)",
+                rightSide: "a special meal."
+            },
             minWordCount: 2,
             maxWordCount: 2,
             correctAuxiliars: [["will"]],
@@ -789,9 +957,12 @@ const completeFutureSimplePositiveStatementVerbForm = [
         id: "74ce943d54950fd4d99684f99e3d11be",
         type: "completeFutureSimplePositiveStatementVerbForm",
         data: {
-            leftSide: "They",
-            middle: "(win)",
-            rightSide: "the first prize.",
+            prompt: {
+                twoSided: true,
+                leftSide: "They",
+                middle: "(win)",
+                rightSide: "the first prize."
+            },
             minWordCount: 2,
             maxWordCount: 2,
             correctAuxiliars: [["will"]],
@@ -803,9 +974,12 @@ const completeFutureSimplePositiveStatementVerbForm = [
         id: "3f267a5d36d70f094ce59b5878bf16ea",
         type: "completeFutureSimplePositiveStatementVerbForm",
         data: {
-            leftSide: "We",
-            middle: "(stop)",
-            rightSide: "at the park today.",
+            prompt: {
+                twoSided: true,
+                leftSide: "We",
+                middle: "(stop)",
+                rightSide: "at the park today."
+            },
             minWordCount: 2,
             maxWordCount: 2,
             correctAuxiliars: [["will"]],
@@ -817,9 +991,12 @@ const completeFutureSimplePositiveStatementVerbForm = [
         id: "b72526038d54b5d7f2481f802d525bb2",
         type: "completeFutureSimplePositiveStatementVerbForm",
         data: {
-            leftSide: "He",
-            middle: "(drive)",
-            rightSide: "us to the beach.",
+            prompt: {
+                twoSided: true,
+                leftSide: "He",
+                middle: "(drive)",
+                rightSide: "us to the beach."
+            },
             minWordCount: 2,
             maxWordCount: 2,
             correctAuxiliars: [["will"]],
@@ -831,9 +1008,12 @@ const completeFutureSimplePositiveStatementVerbForm = [
         id: "df2069888c4806f1dbdf0fc40812b997",
         type: "completeFutureSimplePositiveStatementVerbForm",
         data: {
-            leftSide: "The phone",
-            middle: "(ring)",
-            rightSide: "any moment now.",
+            prompt: {
+                twoSided: true,
+                leftSide: "The phone",
+                middle: "(ring)",
+                rightSide: "any moment now."
+            },
             minWordCount: 2,
             maxWordCount: 2,
             correctAuxiliars: [["will"]],
@@ -845,9 +1025,12 @@ const completeFutureSimplePositiveStatementVerbForm = [
         id: "bf9ee637cdade0deba01e4a79c79a861",
         type: "completeFutureSimplePositiveStatementVerbForm",
         data: {
-            leftSide: "I",
-            middle: "(give)",
-            rightSide: "you a gift tomorrow.",
+            prompt: {
+                twoSided: true,
+                leftSide: "I",
+                middle: "(give)",
+                rightSide: "you a gift tomorrow."
+            },
             minWordCount: 2,
             maxWordCount: 2,
             correctAuxiliars: [["will"]],
@@ -859,9 +1042,12 @@ const completeFutureSimplePositiveStatementVerbForm = [
         id: "926809b9e1386e04ccb9fa36a9fab3b5",
         type: "completeFutureSimplePositiveStatementVerbForm",
         data: {
-            leftSide: "You",
-            middle: "(choose)",
-            rightSide: "the best option.",
+            prompt: {
+                twoSided: true,
+                leftSide: "You",
+                middle: "(choose)",
+                rightSide: "the best option."
+            },
             minWordCount: 2,
             maxWordCount: 2,
             correctAuxiliars: [["will"]],
@@ -873,9 +1059,12 @@ const completeFutureSimplePositiveStatementVerbForm = [
         id: "fd6d96cb8299038f00d56bb5903e94aa",
         type: "completeFutureSimplePositiveStatementVerbForm",
         data: {
-            leftSide: "She",
-            middle: "(listen)",
-            rightSide: "to your advice.",
+            prompt: {
+                twoSided: true,
+                leftSide: "She",
+                middle: "(listen)",
+                rightSide: "to your advice."
+            },
             minWordCount: 2,
             maxWordCount: 2,
             correctAuxiliars: [["will"]],
@@ -887,9 +1076,12 @@ const completeFutureSimplePositiveStatementVerbForm = [
         id: "4b4c8569a06f031c0125370adda5abc7",
         type: "completeFutureSimplePositiveStatementVerbForm",
         data: {
-            leftSide: "They",
-            middle: "(jump)",
-            rightSide: "over the fence.",
+            prompt: {
+                twoSided: true,
+                leftSide: "They",
+                middle: "(jump)",
+                rightSide: "over the fence."
+            },
             minWordCount: 2,
             maxWordCount: 2,
             correctAuxiliars: [["will"]],
@@ -901,9 +1093,12 @@ const completeFutureSimplePositiveStatementVerbForm = [
         id: "e41d952d9f05bb40f8efec8524b79121",
         type: "completeFutureSimplePositiveStatementVerbForm",
         data: {
-            leftSide: "We",
-            middle: "(wait)",
-            rightSide: "for the results.",
+            prompt: {
+                twoSided: true,
+                leftSide: "We",
+                middle: "(wait)",
+                rightSide: "for the results."
+            },
             minWordCount: 2,
             maxWordCount: 2,
             correctAuxiliars: [["will"]],
@@ -915,9 +1110,12 @@ const completeFutureSimplePositiveStatementVerbForm = [
         id: "785528455d48b9869043f83dbec84658",
         type: "completeFutureSimplePositiveStatementVerbForm",
         data: {
-            leftSide: "He",
-            middle: "(return)",
-            rightSide: "home late today.",
+            prompt: {
+                twoSided: true,
+                leftSide: "He",
+                middle: "(return)",
+                rightSide: "home late today."
+            },
             minWordCount: 2,
             maxWordCount: 2,
             correctAuxiliars: [["will"]],
@@ -929,9 +1127,12 @@ const completeFutureSimplePositiveStatementVerbForm = [
         id: "b2e9310d3a9df6ff6f9c2f6a433c54c7",
         type: "completeFutureSimplePositiveStatementVerbForm",
         data: {
-            leftSide: "The star",
-            middle: "(shine)",
-            rightSide: "brightly tonight.",
+            prompt: {
+                twoSided: true,
+                leftSide: "The star",
+                middle: "(shine)",
+                rightSide: "brightly tonight."
+            },
             minWordCount: 2,
             maxWordCount: 2,
             correctAuxiliars: [["will"]],
@@ -943,9 +1144,12 @@ const completeFutureSimplePositiveStatementVerbForm = [
         id: "3aba84d0c3681c6e51c9d2fd3cf59056",
         type: "completeFutureSimplePositiveStatementVerbForm",
         data: {
-            leftSide: "I",
-            middle: "(ask)",
-            rightSide: "him about it later.",
+            prompt: {
+                twoSided: true,
+                leftSide: "I",
+                middle: "(ask)",
+                rightSide: "him about it later."
+            },
             minWordCount: 2,
             maxWordCount: 2,
             correctAuxiliars: [["will"]],
@@ -957,9 +1161,12 @@ const completeFutureSimplePositiveStatementVerbForm = [
         id: "891af1c0b4366b7e42457f56b500c10c",
         type: "completeFutureSimplePositiveStatementVerbForm",
         data: {
-            leftSide: "You",
-            middle: "(succeed)",
-            rightSide: "this time around.",
+            prompt: {
+                twoSided: true,
+                leftSide: "You",
+                middle: "(succeed)",
+                rightSide: "this time around."
+            },
             minWordCount: 2,
             maxWordCount: 2,
             correctAuxiliars: [["will"]],
@@ -971,9 +1178,12 @@ const completeFutureSimplePositiveStatementVerbForm = [
         id: "f415f56596f941c9ddc54aa8ec232aa6",
         type: "completeFutureSimplePositiveStatementVerbForm",
         data: {
-            leftSide: "She",
-            middle: "(draw)",
-            rightSide: " a picture tonight.",
+            prompt: {
+                twoSided: true,
+                leftSide: "She",
+                middle: "(draw)",
+                rightSide: " a picture tonight."
+            },
             minWordCount: 2,
             maxWordCount: 2,
             correctAuxiliars: [["will"]],
@@ -985,9 +1195,12 @@ const completeFutureSimplePositiveStatementVerbForm = [
         id: "8526c3bb848b7992843e1665884cbdc0",
         type: "completeFutureSimplePositiveStatementVerbForm",
         data: {
-            leftSide: "They",
-            middle: "(agree)",
-            rightSide: "with our plan.",
+            prompt: {
+                twoSided: true,
+                leftSide: "They",
+                middle: "(agree)",
+                rightSide: "with our plan."
+            },
             minWordCount: 2,
             maxWordCount: 2,
             correctAuxiliars: [["will"]],
@@ -999,9 +1212,12 @@ const completeFutureSimplePositiveStatementVerbForm = [
         id: "ca531b181f76f5b2ca879d86f9eab9bc",
         type: "completeFutureSimplePositiveStatementVerbForm",
         data: {
-            leftSide: "We",
-            middle: "(dance)",
-            rightSide: "at the wedding.",
+            prompt: {
+                twoSided: true,
+                leftSide: "We",
+                middle: "(dance)",
+                rightSide: "at the wedding."
+            },
             minWordCount: 2,
             maxWordCount: 2,
             correctAuxiliars: [["will"]],
@@ -1013,9 +1229,12 @@ const completeFutureSimplePositiveStatementVerbForm = [
         id: "3c1d8b8842d857fda1d608127b033ff7",
         type: "completeFutureSimplePositiveStatementVerbForm",
         data: {
-            leftSide: "He",
-            middle: "(wash)",
-            rightSide: "the car today.",
+            prompt: {
+                twoSided: true,
+                leftSide: "He",
+                middle: "(wash)",
+                rightSide: "the car today."
+            },
             minWordCount: 2,
             maxWordCount: 2,
             correctAuxiliars: [["will"]],
@@ -1027,9 +1246,12 @@ const completeFutureSimplePositiveStatementVerbForm = [
         id: "b59c04fec99cdb5828036c85cd4b95e5",
         type: "completeFutureSimplePositiveStatementVerbForm",
         data: {
-            leftSide: "The bell",
-            middle: "(ring)",
-            rightSide: "at noon sharp.",
+            prompt: {
+                twoSided: true,
+                leftSide: "The bell",
+                middle: "(ring)",
+                rightSide: "at noon sharp."
+            },
             minWordCount: 2,
             maxWordCount: 2,
             correctAuxiliars: [["will"]],
@@ -1041,9 +1263,12 @@ const completeFutureSimplePositiveStatementVerbForm = [
         id: "4b506820b1dace608263a04b5e95ac27",
         type: "completeFutureSimplePositiveStatementVerbForm",
         data: {
-            leftSide: "She",
-            middle: "(smile)",
-            rightSide: "at you later.",
+            prompt: {
+                twoSided: true,
+                leftSide: "She",
+                middle: "(smile)",
+                rightSide: "at you later."
+            },
             minWordCount: 2,
             maxWordCount: 2,
             correctAuxiliars: [["will"]],
@@ -1055,9 +1280,12 @@ const completeFutureSimplePositiveStatementVerbForm = [
         id: "b3bd42038464c23506d3ee7bd8bb48ee",
         type: "completeFutureSimplePositiveStatementVerbForm",
         data: {
-            leftSide: "I",
-            middle: "(start)",
-            rightSide: "the lesson now.",
+            prompt: {
+                twoSided: true,
+                leftSide: "I",
+                middle: "(start)",
+                rightSide: "the lesson now."
+            },
             minWordCount: 2,
             maxWordCount: 2,
             correctAuxiliars: [["will"]],
@@ -1069,9 +1297,12 @@ const completeFutureSimplePositiveStatementVerbForm = [
         id: "ee1e933a6867f1217b7765eaa0925d63",
         type: "completeFutureSimplePositiveStatementVerbForm",
         data: {
-            leftSide: "They",
-            middle: "(practice)",
-            rightSide: "very often.",
+            prompt: {
+                twoSided: true,
+                leftSide: "They",
+                middle: "(practice)",
+                rightSide: "very often."
+            },
             minWordCount: 2,
             maxWordCount: 2,
             correctAuxiliars: [["will"]],
@@ -1083,9 +1314,12 @@ const completeFutureSimplePositiveStatementVerbForm = [
         id: "204b46ff342df6c12b90776bfec620b0",
         type: "completeFutureSimplePositiveStatementVerbForm",
         data: {
-            leftSide: "We",
-            middle: "(hope)",
-            rightSide: "for the best.",
+            prompt: {
+                twoSided: true,
+                leftSide: "We",
+                middle: "(hope)",
+                rightSide: "for the best."
+            },
             minWordCount: 2,
             maxWordCount: 2,
             correctAuxiliars: [["will"]],
@@ -1097,9 +1331,12 @@ const completeFutureSimplePositiveStatementVerbForm = [
         id: "28df1fef69d71fe2b0974d68115473f4",
         type: "completeFutureSimplePositiveStatementVerbForm",
         data: {
-            leftSide: "You",
-            middle: "(receive)",
-            rightSide: "the package today.",
+            prompt: {
+                twoSided: true,
+                leftSide: "You",
+                middle: "(receive)",
+                rightSide: "the package today."
+            },
             minWordCount: 2,
             maxWordCount: 2,
             correctAuxiliars: [["will"]],
@@ -1111,9 +1348,12 @@ const completeFutureSimplePositiveStatementVerbForm = [
         id: "34fa4c6eac87866d128736846bad976d",
         type: "completeFutureSimplePositiveStatementVerbForm",
         data: {
-            leftSide: "He",
-            middle: "(forget)",
-            rightSide: "the appointment.",
+            prompt: {
+                twoSided: true,
+                leftSide: "He",
+                middle: "(forget)",
+                rightSide: "the appointment."
+            },
             minWordCount: 2,
             maxWordCount: 2,
             correctAuxiliars: [["will"]],
@@ -1125,9 +1365,12 @@ const completeFutureSimplePositiveStatementVerbForm = [
         id: "8eb5edc54c273d29533f680c3c757b9e",
         type: "completeFutureSimplePositiveStatementVerbForm",
         data: {
-            leftSide: "The sky",
-            middle: "(clear)",
-            rightSide: "up very soon.",
+            prompt: {
+                twoSided: true,
+                leftSide: "The sky",
+                middle: "(clear)",
+                rightSide: "up very soon."
+            },
             minWordCount: 2,
             maxWordCount: 2,
             correctAuxiliars: [["will"]],
@@ -1139,9 +1382,12 @@ const completeFutureSimplePositiveStatementVerbForm = [
         id: "9f0ab52092d23d6c17a7f5b24865921e",
         type: "completeFutureSimplePositiveStatementVerbForm",
         data: {
-            leftSide: "She",
-            middle: "(knit)",
-            rightSide: "a warm scarf.",
+            prompt: {
+                twoSided: true,
+                leftSide: "She",
+                middle: "(knit)",
+                rightSide: "a warm scarf."
+            },
             minWordCount: 2,
             maxWordCount: 2,
             correctAuxiliars: [["will"]],
@@ -1153,9 +1399,12 @@ const completeFutureSimplePositiveStatementVerbForm = [
         id: "566a4922cb2f83071301d5f0bdca228f",
         type: "completeFutureSimplePositiveStatementVerbForm",
         data: {
-            leftSide: "I",
-            middle: "(spend)",
-            rightSide: "some money later.",
+            prompt: {
+                twoSided: true,
+                leftSide: "I",
+                middle: "(spend)",
+                rightSide: "some money later."
+            },
             minWordCount: 2,
             maxWordCount: 2,
             correctAuxiliars: [["will"]],
@@ -1167,9 +1416,12 @@ const completeFutureSimplePositiveStatementVerbForm = [
         id: "ff82386451044f63357e53d0c1c6f419",
         type: "completeFutureSimplePositiveStatementVerbForm",
         data: {
-            leftSide: "They",
-            middle: "(study)",
-            rightSide: "hard for exams.",
+            prompt: {
+                twoSided: true,
+                leftSide: "They",
+                middle: "(study)",
+                rightSide: "hard for exams."
+            },
             minWordCount: 2,
             maxWordCount: 2,
             correctAuxiliars: [["will"]],
@@ -1181,9 +1433,12 @@ const completeFutureSimplePositiveStatementVerbForm = [
         id: "15ffdfc8fbc1a259e9957217a4750082",
         type: "completeFutureSimplePositiveStatementVerbForm",
         data: {
-            leftSide: "We",
-            middle: "(talk)",
-            rightSide: " to them tonight.",
+            prompt: {
+                twoSided: true,
+                leftSide: "We",
+                middle: "(talk)",
+                rightSide: " to them tonight."
+            },
             minWordCount: 2,
             maxWordCount: 2,
             correctAuxiliars: [["will"]],
@@ -1195,9 +1450,12 @@ const completeFutureSimplePositiveStatementVerbForm = [
         id: "bf613d8bb42f6618e39c9599478651df",
         type: "completeFutureSimplePositiveStatementVerbForm",
         data: {
-            leftSide: "You",
-            middle: "(lose)",
-            rightSide: "the match today.",
+            prompt: {
+                twoSided: true,
+                leftSide: "You",
+                middle: "(lose)",
+                rightSide: "the match today."
+            },
             minWordCount: 2,
             maxWordCount: 2,
             correctAuxiliars: [["will"]],
@@ -1209,9 +1467,12 @@ const completeFutureSimplePositiveStatementVerbForm = [
         id: "78d2a80a3e90939490ad29d2e26d0c0e",
         type: "completeFutureSimplePositiveStatementVerbForm",
         data: {
-            leftSide: "He",
-            middle: "(fix)",
-            rightSide: "the leak tomorrow.",
+            prompt: {
+                twoSided: true,
+                leftSide: "He",
+                middle: "(fix)",
+                rightSide: "the leak tomorrow."
+            },
             minWordCount: 2,
             maxWordCount: 2,
             correctAuxiliars: [["will"]],
@@ -1223,9 +1484,12 @@ const completeFutureSimplePositiveStatementVerbForm = [
         id: "5ae70ba2cfd62bbc62497907559d11ae",
         type: "completeFutureSimplePositiveStatementVerbForm",
         data: {
-            leftSide: "The lake",
-            middle: "(freeze)",
-            rightSide: "over tonight.",
+            prompt: {
+                twoSided: true,
+                leftSide: "The lake",
+                middle: "(freeze)",
+                rightSide: "over tonight."
+            },
             minWordCount: 2,
             maxWordCount: 2,
             correctAuxiliars: [["will"]],
@@ -1237,9 +1501,12 @@ const completeFutureSimplePositiveStatementVerbForm = [
         id: "47bdcc0b422e3d4e104541403c97f67f",
         type: "completeFutureSimplePositiveStatementVerbForm",
         data: {
-            leftSide: "She",
-            middle: "(smile)",
-            rightSide: "at us again.",
+            prompt: {
+                twoSided: true,
+                leftSide: "She",
+                middle: "(smile)",
+                rightSide: "at us again."
+            },
             minWordCount: 2,
             maxWordCount: 2,
             correctAuxiliars: [["will"]],
@@ -1251,9 +1518,12 @@ const completeFutureSimplePositiveStatementVerbForm = [
         id: "6087c6d2ea5ff9c1ad6c87afc0492207",
         type: "completeFutureSimplePositiveStatementVerbForm",
         data: {
-            leftSide: "I",
-            middle: "(walk)",
-            rightSide: "to the shop later.",
+            prompt: {
+                twoSided: true,
+                leftSide: "I",
+                middle: "(walk)",
+                rightSide: "to the shop later."
+            },
             minWordCount: 2,
             maxWordCount: 2,
             correctAuxiliars: [["will"]],
@@ -1265,9 +1535,12 @@ const completeFutureSimplePositiveStatementVerbForm = [
         id: "050ad01292f4ed0741013ab0f3299e4a",
         type: "completeFutureSimplePositiveStatementVerbForm",
         data: {
-            leftSide: "They",
-            middle: "(hide)",
-            rightSide: "under the table.",
+            prompt: {
+                twoSided: true,
+                leftSide: "They",
+                middle: "(hide)",
+                rightSide: "under the table."
+            },
             minWordCount: 2,
             maxWordCount: 2,
             correctAuxiliars: [["will"]],
@@ -1279,9 +1552,12 @@ const completeFutureSimplePositiveStatementVerbForm = [
         id: "47814f052e24fe6eaeb6f7eb61adfd01",
         type: "completeFutureSimplePositiveStatementVerbForm",
         data: {
-            leftSide: "We",
-            middle: "(leave)",
-            rightSide: "at dawn today.",
+            prompt: {
+                twoSided: true,
+                leftSide: "We",
+                middle: "(leave)",
+                rightSide: "at dawn today."
+            },
             minWordCount: 2,
             maxWordCount: 2,
             correctAuxiliars: [["will"]],
@@ -1293,9 +1569,12 @@ const completeFutureSimplePositiveStatementVerbForm = [
         id: "2c0cd07210182ce9163b3b9c9c199dbf",
         type: "completeFutureSimplePositiveStatementVerbForm",
         data: {
-            leftSide: "You",
-            middle: "(remember)",
-            rightSide: "me one day.",
+            prompt: {
+                twoSided: true,
+                leftSide: "You",
+                middle: "(remember)",
+                rightSide: "me one day."
+            },
             minWordCount: 2,
             maxWordCount: 2,
             correctAuxiliars: [["will"]],
@@ -1307,9 +1586,12 @@ const completeFutureSimplePositiveStatementVerbForm = [
         id: "6f5988aff0e34a8674446c083558c659",
         type: "completeFutureSimplePositiveStatementVerbForm",
         data: {
-            leftSide: "He",
-            middle: "(climb)",
-            rightSide: "the hill soon.",
+            prompt: {
+                twoSided: true,
+                leftSide: "He",
+                middle: "(climb)",
+                rightSide: "the hill soon."
+            },
             minWordCount: 2,
             maxWordCount: 2,
             correctAuxiliars: [["will"]],
@@ -1321,9 +1603,12 @@ const completeFutureSimplePositiveStatementVerbForm = [
         id: "9d8bb7f6b18d48a7ee979ceda882501b",
         type: "completeFutureSimplePositiveStatementVerbForm",
         data: {
-            leftSide: "The door",
-            middle: "(open)",
-            rightSide: "automatically.",
+            prompt: {
+                twoSided: true,
+                leftSide: "The door",
+                middle: "(open)",
+                rightSide: "automatically."
+            },
             minWordCount: 2,
             maxWordCount: 2,
             correctAuxiliars: [["will"]],
@@ -1335,9 +1620,12 @@ const completeFutureSimplePositiveStatementVerbForm = [
         id: "7123e0814a1d16d0ddb1a179ef779102",
         type: "completeFutureSimplePositiveStatementVerbForm",
         data: {
-            leftSide: "She",
-            middle: "(jump)",
-            rightSide: "over the hurdle.",
+            prompt: {
+                twoSided: true,
+                leftSide: "She",
+                middle: "(jump)",
+                rightSide: "over the hurdle."
+            },
             minWordCount: 2,
             maxWordCount: 2,
             correctAuxiliars: [["will"]],
@@ -1349,9 +1637,12 @@ const completeFutureSimplePositiveStatementVerbForm = [
         id: "91e0092a9f1588085a831e720d110128",
         type: "completeFutureSimplePositiveStatementVerbForm",
         data: {
-            leftSide: "I",
-            middle: "(run)",
-            rightSide: "in the marathon.",
+            prompt: {
+                twoSided: true,
+                leftSide: "I",
+                middle: "(run)",
+                rightSide: "in the marathon."
+            },
             minWordCount: 2,
             maxWordCount: 2,
             correctAuxiliars: [["will"]],
@@ -1363,9 +1654,12 @@ const completeFutureSimplePositiveStatementVerbForm = [
         id: "6ae967874b0528ddad2cd4595a8c9fa4",
         type: "completeFutureSimplePositiveStatementVerbForm",
         data: {
-            leftSide: "They",
-            middle: "(laugh)",
-            rightSide: "at the funny joke.",
+            prompt: {
+                twoSided: true,
+                leftSide: "They",
+                middle: "(laugh)",
+                rightSide: "at the funny joke."
+            },
             minWordCount: 2,
             maxWordCount: 2,
             correctAuxiliars: [["will"]],
@@ -1377,9 +1671,12 @@ const completeFutureSimplePositiveStatementVerbForm = [
         id: "761ac3077a0c073fb2be0dbcd0e53380",
         type: "completeFutureSimplePositiveStatementVerbForm",
         data: {
-            leftSide: "Scientists",
-            middle: "(discover)",
-            rightSide: "new ways to harness energy.",
+            prompt: {
+                twoSided: true,
+                leftSide: "Scientists",
+                middle: "(discover)",
+                rightSide: "new ways to harness energy."
+            },
             minWordCount: 2,
             maxWordCount: 2,
             correctAuxiliars: [["will"]],
@@ -1391,9 +1688,12 @@ const completeFutureSimplePositiveStatementVerbForm = [
         id: "5f62a49ad300dcf2f3e1bf20aec23c7b",
         type: "completeFutureSimplePositiveStatementVerbForm",
         data: {
-            leftSide: "The chef",
-            middle: "(prepare)",
-            rightSide: "a special menu for the event.",
+            prompt: {
+                twoSided: true,
+                leftSide: "The chef",
+                middle: "(prepare)",
+                rightSide: "a special menu for the event."
+            },
             minWordCount: 2,
             maxWordCount: 2,
             correctAuxiliars: [["will"]],

@@ -52,7 +52,11 @@ export default function ProfileSettingsForm({
                 setAvatarUrl(result.publicUrl);
                 toast.success("Photo uploaded!");
             } else {
-                toast.error(result.error || "Failed to upload image.");
+                toast.error(
+                    result.error
+                        ? `Error: ${result.error}`
+                        : "Error: Failed to upload image.",
+                );
             }
         } catch (error) {
             toast.error(
@@ -72,7 +76,6 @@ export default function ProfileSettingsForm({
 
             const result = await updateProfile({
                 displayName,
-                avatarUrl,
             });
 
             if (result.success) {
@@ -83,7 +86,7 @@ export default function ProfileSettingsForm({
 
             setIsLoading(false);
         },
-        [setIsLoading, displayName, avatarUrl],
+        [setIsLoading, displayName],
     );
 
     return (

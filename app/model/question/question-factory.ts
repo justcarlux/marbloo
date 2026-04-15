@@ -12,6 +12,9 @@ import QuestionInstance, { QuestionData } from "./QuestionInstance";
 import AnswerChoicedQuestion, {
     AnswerChoicedQuestionData,
 } from "./impl/AnswerChoicedQuestion";
+import TurnPresentToBeStatementIntoQuestionFormQuestion, {
+    TurnPresentToBeStatementIntoQuestionFormQuestionData,
+} from "./impl/TurnPresentToBeStatementIntoQuestion";
 
 interface QuestionDataTypes {
     // Grammar trivia
@@ -23,6 +26,8 @@ interface QuestionDataTypes {
     completePastToBeNegativeStatementVerbForm: CompleteCorrectToBeVerbFormQuestionData;
     completeFutureToBePositiveStatementVerbForm: CompleteCorrectToBeVerbFormQuestionData;
     completeFutureToBeNegativeStatementVerbForm: CompleteCorrectToBeVerbFormQuestionData;
+    turnPositivePresentToBeStatementIntoQuestion: TurnPresentToBeStatementIntoQuestionFormQuestionData;
+    turnNegativePresentToBeStatementIntoQuestion: TurnPresentToBeStatementIntoQuestionFormQuestionData;
     // Simple tenses
     completePresentSimplePositiveStatementVerbForm: CompleteCorrectVerbFormQuestionData;
     completePresentSimpleNegativeStatementVerbForm: CompleteCorrectVerbFormWithAuxiliarsQuestionData;
@@ -273,6 +278,32 @@ const completeCorrectVerbFormWithAuxiliarsVerbForm = {
     },
 };
 
+const turnPresentToBeStatementIntoQuestion = {
+    positive: ({
+        id,
+        type,
+        data,
+    }: QuestionData<TurnPresentToBeStatementIntoQuestionFormQuestionData>) => {
+        return new TurnPresentToBeStatementIntoQuestionFormQuestion({
+            id,
+            type,
+            data,
+            isNegative: false,
+        });
+    },
+    negative: ({
+        id,
+        type,
+        data,
+    }: QuestionData<TurnPresentToBeStatementIntoQuestionFormQuestionData>) => {
+        return new TurnPresentToBeStatementIntoQuestionFormQuestion({
+            id,
+            type,
+            data,
+            isNegative: true,
+        });
+    },
+};
 const questionInstanceProviders: {
     [Type in QuestionType]: (
         data: QuestionData<QuestionDataTypes[Type]>,
@@ -293,6 +324,10 @@ const questionInstanceProviders: {
         completeCorrectToBeVerbForm.positiveProvider,
     completeFutureToBeNegativeStatementVerbForm:
         completeCorrectToBeVerbForm.negativeProvider,
+    turnPositivePresentToBeStatementIntoQuestion:
+        turnPresentToBeStatementIntoQuestion.positive,
+    turnNegativePresentToBeStatementIntoQuestion:
+        turnPresentToBeStatementIntoQuestion.negative,
     // Simple tenses
     completePresentSimplePositiveStatementVerbForm:
         completeCorrectVerbFormProvider,

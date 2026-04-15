@@ -5,9 +5,12 @@ const completePastToBeNegativeStatementVerbForm = [
         id: "a506b7c9d5dd1a706fd5a9255adcbb5a",
         type: "completePastToBeNegativeStatementVerbForm",
         data: {
-            leftSide: "I",
-            middle: "(to be)",
-            rightSide: "at the party.",
+            prompt: {
+                twoSided: true,
+                leftSide: "I",
+                middle: "(to be)",
+                rightSide: "at the party."
+            },
             correctForms: [["was", "not"], ["wasn't"]],
             incorrectForms: [
                 ["was"],
@@ -24,9 +27,12 @@ const completePastToBeNegativeStatementVerbForm = [
         id: "09f50b9d1d39c5e57d6836685456d30b",
         type: "completePastToBeNegativeStatementVerbForm",
         data: {
-            leftSide: "He",
-            middle: "(to be)",
-            rightSide: "a teacher.",
+            prompt: {
+                twoSided: true,
+                leftSide: "He",
+                middle: "(to be)",
+                rightSide: "a teacher."
+            },
             correctForms: [["was", "not"], ["wasn't"]],
             incorrectForms: [
                 ["was"],
@@ -43,9 +49,12 @@ const completePastToBeNegativeStatementVerbForm = [
         id: "a442e996cd1d4b9042eaaf7a42d19f6b",
         type: "completePastToBeNegativeStatementVerbForm",
         data: {
-            leftSide: "They",
-            middle: "(to be)",
-            rightSide: "happy.",
+            prompt: {
+                twoSided: true,
+                leftSide: "They",
+                middle: "(to be)",
+                rightSide: "happy."
+            },
             correctForms: [["were", "not"], ["weren't"]],
             incorrectForms: [
                 ["were"],
@@ -62,9 +71,12 @@ const completePastToBeNegativeStatementVerbForm = [
         id: "5ae78fdfea4b19f471af48a585d8df23",
         type: "completePastToBeNegativeStatementVerbForm",
         data: {
-            leftSide: "She",
-            middle: "(to be)",
-            rightSide: "rich.",
+            prompt: {
+                twoSided: true,
+                leftSide: "She",
+                middle: "(to be)",
+                rightSide: "rich."
+            },
             correctForms: [["was", "not"], ["wasn't"]],
             incorrectForms: [["was"], ["is"], ["isn't"], ["were"], ["weren't"]],
             maxWordCount: 2,
@@ -75,9 +87,12 @@ const completePastToBeNegativeStatementVerbForm = [
         id: "5f4f861df00920a1bed36aed89a2b9d1",
         type: "completePastToBeNegativeStatementVerbForm",
         data: {
-            leftSide: "We",
-            middle: "(to be)",
-            rightSide: "late.",
+            prompt: {
+                twoSided: true,
+                leftSide: "We",
+                middle: "(to be)",
+                rightSide: "late."
+            },
             correctForms: [["were", "not"], ["weren't"]],
             incorrectForms: [
                 ["were"],
@@ -94,9 +109,12 @@ const completePastToBeNegativeStatementVerbForm = [
         id: "bdf52791800895d25a29add87c85276a",
         type: "completePastToBeNegativeStatementVerbForm",
         data: {
-            leftSide: "It",
-            middle: "(to be)",
-            rightSide: "expensive.",
+            prompt: {
+                twoSided: true,
+                leftSide: "It",
+                middle: "(to be)",
+                rightSide: "expensive."
+            },
             correctForms: [["was", "not"], ["wasn't"]],
             incorrectForms: [
                 ["was"],
@@ -113,9 +131,12 @@ const completePastToBeNegativeStatementVerbForm = [
         id: "6be1ab9db0a7be495fd63c7564fa3c4e",
         type: "completePastToBeNegativeStatementVerbForm",
         data: {
-            leftSide: "You",
-            middle: "(to be)",
-            rightSide: "at school.",
+            prompt: {
+                twoSided: true,
+                leftSide: "You",
+                middle: "(to be)",
+                rightSide: "at school."
+            },
             correctForms: [["were", "not"], ["weren't"]],
             incorrectForms: [
                 ["were"],
@@ -132,9 +153,12 @@ const completePastToBeNegativeStatementVerbForm = [
         id: "6a1510157bc18a0936dc16eabcc54c19",
         type: "completePastToBeNegativeStatementVerbForm",
         data: {
-            leftSide: "The weather",
-            middle: "(to be)",
-            rightSide: "good.",
+            prompt: {
+                twoSided: true,
+                leftSide: "The weather",
+                middle: "(to be)",
+                rightSide: "good."
+            },
             correctForms: [["was", "not"], ["wasn't"]],
             incorrectForms: [["was"], ["is"], ["isn't"], ["were"], ["weren't"]],
             maxWordCount: 2,
@@ -145,9 +169,12 @@ const completePastToBeNegativeStatementVerbForm = [
         id: "f612c9a79a97117476d6671eeca3e029",
         type: "completePastToBeNegativeStatementVerbForm",
         data: {
-            leftSide: "The keys",
-            middle: "(to be)",
-            rightSide: "on the table.",
+            prompt: {
+                twoSided: true,
+                leftSide: "The keys",
+                middle: "(to be)",
+                rightSide: "on the table."
+            },
             correctForms: [["were", "not"], ["weren't"]],
             incorrectForms: [["were"], ["was"], ["wasn't"], ["are"], ["is"]],
             maxWordCount: 2,
@@ -158,9 +185,12 @@ const completePastToBeNegativeStatementVerbForm = [
         id: "16838141acfd2526cf70983a7c4a8415",
         type: "completePastToBeNegativeStatementVerbForm",
         data: {
-            leftSide: "I",
-            middle: "(to be)",
-            rightSide: "hungry.",
+            prompt: {
+                twoSided: true,
+                leftSide: "I",
+                middle: "(to be)",
+                rightSide: "hungry."
+            },
             correctForms: [["was", "not"], ["wasn't"]],
             incorrectForms: [
                 ["was"],
@@ -177,9 +207,12 @@ const completePastToBeNegativeStatementVerbForm = [
         id: "f1d85d94b9dd28cf8444593d3599db6a",
         type: "completePastToBeNegativeStatementVerbForm",
         data: {
-            leftSide: "The cat",
-            middle: "(to be)",
-            rightSide: "on the sofa.",
+            prompt: {
+                twoSided: true,
+                leftSide: "The cat",
+                middle: "(to be)",
+                rightSide: "on the sofa."
+            },
             correctForms: [["was", "not"], ["wasn't"]],
             incorrectForms: [["was"], ["is"], ["isn't"], ["were"], ["weren't"]],
             maxWordCount: 2,
@@ -190,9 +223,12 @@ const completePastToBeNegativeStatementVerbForm = [
         id: "1438dbda52723ce05376ab54cb2ede5d",
         type: "completePastToBeNegativeStatementVerbForm",
         data: {
-            leftSide: "My parents",
-            middle: "(to be)",
-            rightSide: "at work.",
+            prompt: {
+                twoSided: true,
+                leftSide: "My parents",
+                middle: "(to be)",
+                rightSide: "at work."
+            },
             correctForms: [["were", "not"], ["weren't"]],
             incorrectForms: [
                 ["were"],
@@ -209,9 +245,12 @@ const completePastToBeNegativeStatementVerbForm = [
         id: "e5cacf86c5b21343cf086b4c5484c6c7",
         type: "completePastToBeNegativeStatementVerbForm",
         data: {
-            leftSide: "This book",
-            middle: "(to be)",
-            rightSide: "interesting.",
+            prompt: {
+                twoSided: true,
+                leftSide: "This book",
+                middle: "(to be)",
+                rightSide: "interesting."
+            },
             correctForms: [["was", "not"], ["wasn't"]],
             incorrectForms: [["was"], ["is"], ["isn't"], ["were"], ["weren't"]],
             maxWordCount: 2,
@@ -222,9 +261,12 @@ const completePastToBeNegativeStatementVerbForm = [
         id: "0745d15da8428061c95d2c9f664cac13",
         type: "completePastToBeNegativeStatementVerbForm",
         data: {
-            leftSide: "We",
-            middle: "(to be)",
-            rightSide: "tired.",
+            prompt: {
+                twoSided: true,
+                leftSide: "We",
+                middle: "(to be)",
+                rightSide: "tired."
+            },
             correctForms: [["were", "not"], ["weren't"]],
             incorrectForms: [
                 ["were"],
@@ -241,9 +283,12 @@ const completePastToBeNegativeStatementVerbForm = [
         id: "c19684e5be6c22a34e82cdd3514e4e92",
         type: "completePastToBeNegativeStatementVerbForm",
         data: {
-            leftSide: "He",
-            middle: "(to be)",
-            rightSide: "from Italy.",
+            prompt: {
+                twoSided: true,
+                leftSide: "He",
+                middle: "(to be)",
+                rightSide: "from Italy."
+            },
             correctForms: [["was", "not"], ["wasn't"]],
             incorrectForms: [["was"], ["is"], ["isn't"], ["were"], ["weren't"]],
             maxWordCount: 2,
@@ -254,9 +299,12 @@ const completePastToBeNegativeStatementVerbForm = [
         id: "22c0ac3fe2e66290eb4d84833b6bfa1a",
         type: "completePastToBeNegativeStatementVerbForm",
         data: {
-            leftSide: "You",
-            middle: "(to be)",
-            rightSide: "early.",
+            prompt: {
+                twoSided: true,
+                leftSide: "You",
+                middle: "(to be)",
+                rightSide: "early."
+            },
             correctForms: [["were", "not"], ["weren't"]],
             incorrectForms: [
                 ["were"],
@@ -273,9 +321,12 @@ const completePastToBeNegativeStatementVerbForm = [
         id: "0628d6973a496bb2d9b9610be55ce7d5",
         type: "completePastToBeNegativeStatementVerbForm",
         data: {
-            leftSide: "The sky",
-            middle: "(to be)",
-            rightSide: "blue.",
+            prompt: {
+                twoSided: true,
+                leftSide: "The sky",
+                middle: "(to be)",
+                rightSide: "blue."
+            },
             correctForms: [["was", "not"], ["wasn't"]],
             incorrectForms: [["was"], ["is"], ["isn't"], ["were"], ["weren't"]],
             maxWordCount: 2,
@@ -286,9 +337,12 @@ const completePastToBeNegativeStatementVerbForm = [
         id: "dfbee5181577c1a9847e01daea5ab040",
         type: "completePastToBeNegativeStatementVerbForm",
         data: {
-            leftSide: "They",
-            middle: "(to be)",
-            rightSide: "dancers.",
+            prompt: {
+                twoSided: true,
+                leftSide: "They",
+                middle: "(to be)",
+                rightSide: "dancers."
+            },
             correctForms: [["were", "not"], ["weren't"]],
             incorrectForms: [
                 ["were"],
@@ -305,9 +359,12 @@ const completePastToBeNegativeStatementVerbForm = [
         id: "52372df5e1d198c459083b43802a6814",
         type: "completePastToBeNegativeStatementVerbForm",
         data: {
-            leftSide: "She",
-            middle: "(to be)",
-            rightSide: "at the dentist.",
+            prompt: {
+                twoSided: true,
+                leftSide: "She",
+                middle: "(to be)",
+                rightSide: "at the dentist."
+            },
             correctForms: [["was", "not"], ["wasn't"]],
             incorrectForms: [["was"], ["is"], ["isn't"], ["were"], ["weren't"]],
             maxWordCount: 2,
@@ -318,9 +375,12 @@ const completePastToBeNegativeStatementVerbForm = [
         id: "286c0f7a9dc670394742a4bbaa339895",
         type: "completePastToBeNegativeStatementVerbForm",
         data: {
-            leftSide: "I",
-            middle: "(to be)",
-            rightSide: "sure about it.",
+            prompt: {
+                twoSided: true,
+                leftSide: "I",
+                middle: "(to be)",
+                rightSide: "sure about it."
+            },
             correctForms: [["was", "not"], ["wasn't"]],
             incorrectForms: [
                 ["was"],
@@ -337,9 +397,12 @@ const completePastToBeNegativeStatementVerbForm = [
         id: "d71a0cb0f805f238936e1fefc7e0c186",
         type: "completePastToBeNegativeStatementVerbForm",
         data: {
-            leftSide: "The coffee",
-            middle: "(to be)",
-            rightSide: "too hot.",
+            prompt: {
+                twoSided: true,
+                leftSide: "The coffee",
+                middle: "(to be)",
+                rightSide: "too hot."
+            },
             correctForms: [["was", "not"], ["wasn't"]],
             incorrectForms: [["was"], ["is"], ["isn't"], ["were"], ["weren't"]],
             maxWordCount: 2,
@@ -350,9 +413,12 @@ const completePastToBeNegativeStatementVerbForm = [
         id: "365a271cd6a6d011497928c6a437fac7",
         type: "completePastToBeNegativeStatementVerbForm",
         data: {
-            leftSide: "My shoes",
-            middle: "(to be)",
-            rightSide: "clean.",
+            prompt: {
+                twoSided: true,
+                leftSide: "My shoes",
+                middle: "(to be)",
+                rightSide: "clean."
+            },
             correctForms: [["were", "not"], ["weren't"]],
             incorrectForms: [
                 ["were"],
@@ -369,9 +435,12 @@ const completePastToBeNegativeStatementVerbForm = [
         id: "aeeef0ca0b584a76a93df18b2d8c1660",
         type: "completePastToBeNegativeStatementVerbForm",
         data: {
-            leftSide: "It",
-            middle: "(to be)",
-            rightSide: "a sunny day.",
+            prompt: {
+                twoSided: true,
+                leftSide: "It",
+                middle: "(to be)",
+                rightSide: "a sunny day."
+            },
             correctForms: [["was", "not"], ["wasn't"]],
             incorrectForms: [["was"], ["is"], ["isn't"], ["were"], ["weren't"]],
             maxWordCount: 2,
@@ -382,9 +451,12 @@ const completePastToBeNegativeStatementVerbForm = [
         id: "1f33106fbb409c3613a5be794d19d062",
         type: "completePastToBeNegativeStatementVerbForm",
         data: {
-            leftSide: "You",
-            middle: "(to be)",
-            rightSide: "polite.",
+            prompt: {
+                twoSided: true,
+                leftSide: "You",
+                middle: "(to be)",
+                rightSide: "polite."
+            },
             correctForms: [["were", "not"], ["weren't"]],
             incorrectForms: [
                 ["were"],
@@ -401,9 +473,12 @@ const completePastToBeNegativeStatementVerbForm = [
         id: "d09974de40a22b63d83726b69580de00",
         type: "completePastToBeNegativeStatementVerbForm",
         data: {
-            leftSide: "They",
-            middle: "(to be)",
-            rightSide: "cousins.",
+            prompt: {
+                twoSided: true,
+                leftSide: "They",
+                middle: "(to be)",
+                rightSide: "cousins."
+            },
             correctForms: [["were", "not"], ["weren't"]],
             incorrectForms: [
                 ["were"],
@@ -420,9 +495,12 @@ const completePastToBeNegativeStatementVerbForm = [
         id: "1c9fe5eaad8440f16d49d60de0198ad5",
         type: "completePastToBeNegativeStatementVerbForm",
         data: {
-            leftSide: "The water",
-            middle: "(to be)",
-            rightSide: "cold.",
+            prompt: {
+                twoSided: true,
+                leftSide: "The water",
+                middle: "(to be)",
+                rightSide: "cold."
+            },
             correctForms: [["was", "not"], ["wasn't"]],
             incorrectForms: [["was"], ["is"], ["isn't"], ["were"], ["weren't"]],
             maxWordCount: 2,
@@ -433,9 +511,12 @@ const completePastToBeNegativeStatementVerbForm = [
         id: "c1d53b702ce2824f6b4352841debad6d",
         type: "completePastToBeNegativeStatementVerbForm",
         data: {
-            leftSide: "He",
-            middle: "(to be)",
-            rightSide: "an engineer.",
+            prompt: {
+                twoSided: true,
+                leftSide: "He",
+                middle: "(to be)",
+                rightSide: "an engineer."
+            },
             correctForms: [["was", "not"], ["wasn't"]],
             incorrectForms: [["was"], ["is"], ["isn't"], ["were"], ["weren't"]],
             maxWordCount: 2,
@@ -446,9 +527,12 @@ const completePastToBeNegativeStatementVerbForm = [
         id: "bc62ea2a1a58658a8ed62a1512a99d94",
         type: "completePastToBeNegativeStatementVerbForm",
         data: {
-            leftSide: "We",
-            middle: "(to be)",
-            rightSide: "in the kitchen.",
+            prompt: {
+                twoSided: true,
+                leftSide: "We",
+                middle: "(to be)",
+                rightSide: "in the kitchen."
+            },
             correctForms: [["were", "not"], ["weren't"]],
             incorrectForms: [
                 ["were"],
@@ -465,9 +549,12 @@ const completePastToBeNegativeStatementVerbForm = [
         id: "a38f42638c1993a60ec806e7bd114b10",
         type: "completePastToBeNegativeStatementVerbForm",
         data: {
-            leftSide: "I",
-            middle: "(to be)",
-            rightSide: "sick.",
+            prompt: {
+                twoSided: true,
+                leftSide: "I",
+                middle: "(to be)",
+                rightSide: "sick."
+            },
             correctForms: [["was", "not"], ["wasn't"]],
             incorrectForms: [
                 ["was"],
@@ -484,9 +571,12 @@ const completePastToBeNegativeStatementVerbForm = [
         id: "f48b25e93e6513ae4d37aa3e8220fe1e",
         type: "completePastToBeNegativeStatementVerbForm",
         data: {
-            leftSide: "She",
-            middle: "(to be)",
-            rightSide: "smart.",
+            prompt: {
+                twoSided: true,
+                leftSide: "She",
+                middle: "(to be)",
+                rightSide: "smart."
+            },
             correctForms: [["was", "not"], ["wasn't"]],
             incorrectForms: [["was"], ["is"], ["isn't"], ["were"], ["weren't"]],
             maxWordCount: 2,
@@ -497,9 +587,12 @@ const completePastToBeNegativeStatementVerbForm = [
         id: "c4adc7f53545aaf3b7f0084a7a63a7b6",
         type: "completePastToBeNegativeStatementVerbForm",
         data: {
-            leftSide: "The flowers",
-            middle: "(to be)",
-            rightSide: "yellow.",
+            prompt: {
+                twoSided: true,
+                leftSide: "The flowers",
+                middle: "(to be)",
+                rightSide: "yellow."
+            },
             correctForms: [["were", "not"], ["weren't"]],
             incorrectForms: [
                 ["were"],
@@ -516,9 +609,12 @@ const completePastToBeNegativeStatementVerbForm = [
         id: "439f93ea09337e61672a94d0aab41b78",
         type: "completePastToBeNegativeStatementVerbForm",
         data: {
-            leftSide: "It",
-            middle: "(to be)",
-            rightSide: "midnight.",
+            prompt: {
+                twoSided: true,
+                leftSide: "It",
+                middle: "(to be)",
+                rightSide: "midnight."
+            },
             correctForms: [["was", "not"], ["wasn't"]],
             incorrectForms: [["was"], ["is"], ["isn't"], ["were"], ["weren't"]],
             maxWordCount: 2,
@@ -529,9 +625,12 @@ const completePastToBeNegativeStatementVerbForm = [
         id: "fb7248c988ece3c772c81e88b91ad04f",
         type: "completePastToBeNegativeStatementVerbForm",
         data: {
-            leftSide: "The students",
-            middle: "(to be)",
-            rightSide: "in the library.",
+            prompt: {
+                twoSided: true,
+                leftSide: "The students",
+                middle: "(to be)",
+                rightSide: "in the library."
+            },
             correctForms: [["were", "not"], ["weren't"]],
             incorrectForms: [
                 ["were"],
@@ -548,9 +647,12 @@ const completePastToBeNegativeStatementVerbForm = [
         id: "d190721310b968b83b3df301db1f16d1",
         type: "completePastToBeNegativeStatementVerbForm",
         data: {
-            leftSide: "The laptop",
-            middle: "(to be)",
-            rightSide: "broken.",
+            prompt: {
+                twoSided: true,
+                leftSide: "The laptop",
+                middle: "(to be)",
+                rightSide: "broken."
+            },
             correctForms: [["was", "not"], ["wasn't"]],
             incorrectForms: [["was"], ["is"], ["isn't"], ["were"], ["weren't"]],
             maxWordCount: 2,
@@ -561,9 +663,12 @@ const completePastToBeNegativeStatementVerbForm = [
         id: "820a8b3be5ad9d08f9b06b43c340e606",
         type: "completePastToBeNegativeStatementVerbForm",
         data: {
-            leftSide: "They",
-            middle: "(to be)",
-            rightSide: "hungry.",
+            prompt: {
+                twoSided: true,
+                leftSide: "They",
+                middle: "(to be)",
+                rightSide: "hungry."
+            },
             correctForms: [["were", "not"], ["weren't"]],
             incorrectForms: [
                 ["were"],
@@ -580,9 +685,12 @@ const completePastToBeNegativeStatementVerbForm = [
         id: "6fe0250b76af57f211f1556f37a6ea7e",
         type: "completePastToBeNegativeStatementVerbForm",
         data: {
-            leftSide: "You",
-            middle: "(to be)",
-            rightSide: "right.",
+            prompt: {
+                twoSided: true,
+                leftSide: "You",
+                middle: "(to be)",
+                rightSide: "right."
+            },
             correctForms: [["were", "not"], ["weren't"]],
             incorrectForms: [
                 ["were"],
@@ -599,9 +707,12 @@ const completePastToBeNegativeStatementVerbForm = [
         id: "8967621f38ca3cf4d6fd436b6d86c8ed",
         type: "completePastToBeNegativeStatementVerbForm",
         data: {
-            leftSide: "He",
-            middle: "(to be)",
-            rightSide: "a musician.",
+            prompt: {
+                twoSided: true,
+                leftSide: "He",
+                middle: "(to be)",
+                rightSide: "a musician."
+            },
             correctForms: [["was", "not"], ["wasn't"]],
             incorrectForms: [["was"], ["is"], ["isn't"], ["were"], ["weren't"]],
             maxWordCount: 2,
@@ -612,9 +723,12 @@ const completePastToBeNegativeStatementVerbForm = [
         id: "9bcf7e60820de5f20db1ceaae7845751",
         type: "completePastToBeNegativeStatementVerbForm",
         data: {
-            leftSide: "I",
-            middle: "(to be)",
-            rightSide: "from London.",
+            prompt: {
+                twoSided: true,
+                leftSide: "I",
+                middle: "(to be)",
+                rightSide: "from London."
+            },
             correctForms: [["was", "not"], ["wasn't"]],
             incorrectForms: [
                 ["was"],
@@ -631,9 +745,12 @@ const completePastToBeNegativeStatementVerbForm = [
         id: "8f14e6a960376b340fca549507859138",
         type: "completePastToBeNegativeStatementVerbForm",
         data: {
-            leftSide: "The boxes",
-            middle: "(to be)",
-            rightSide: "heavy.",
+            prompt: {
+                twoSided: true,
+                leftSide: "The boxes",
+                middle: "(to be)",
+                rightSide: "heavy."
+            },
             correctForms: [["were", "not"], ["weren't"]],
             incorrectForms: [
                 ["were"],
@@ -650,9 +767,12 @@ const completePastToBeNegativeStatementVerbForm = [
         id: "e38e61be4aa676a929c7fd5552b84908",
         type: "completePastToBeNegativeStatementVerbForm",
         data: {
-            leftSide: "She",
-            middle: "(to be)",
-            rightSide: "afraid.",
+            prompt: {
+                twoSided: true,
+                leftSide: "She",
+                middle: "(to be)",
+                rightSide: "afraid."
+            },
             correctForms: [["was", "not"], ["wasn't"]],
             incorrectForms: [["was"], ["is"], ["isn't"], ["were"], ["weren't"]],
             maxWordCount: 2,
@@ -663,9 +783,12 @@ const completePastToBeNegativeStatementVerbForm = [
         id: "729185179976d62698f3398f6c876f56",
         type: "completePastToBeNegativeStatementVerbForm",
         data: {
-            leftSide: "We",
-            middle: "(to be)",
-            rightSide: "ready.",
+            prompt: {
+                twoSided: true,
+                leftSide: "We",
+                middle: "(to be)",
+                rightSide: "ready."
+            },
             correctForms: [["were", "not"], ["weren't"]],
             incorrectForms: [
                 ["were"],
@@ -682,9 +805,12 @@ const completePastToBeNegativeStatementVerbForm = [
         id: "07fe90a34d23afb61e7fa07267e74257",
         type: "completePastToBeNegativeStatementVerbForm",
         data: {
-            leftSide: "The street",
-            middle: "(to be)",
-            rightSide: "empty.",
+            prompt: {
+                twoSided: true,
+                leftSide: "The street",
+                middle: "(to be)",
+                rightSide: "empty."
+            },
             correctForms: [["was", "not"], ["wasn't"]],
             incorrectForms: [["was"], ["is"], ["isn't"], ["were"], ["weren't"]],
             maxWordCount: 2,
@@ -695,9 +821,12 @@ const completePastToBeNegativeStatementVerbForm = [
         id: "ad378312047e8ed852b54ac2369e368f",
         type: "completePastToBeNegativeStatementVerbForm",
         data: {
-            leftSide: "It",
-            middle: "(to be)",
-            rightSide: "dark.",
+            prompt: {
+                twoSided: true,
+                leftSide: "It",
+                middle: "(to be)",
+                rightSide: "dark."
+            },
             correctForms: [["was", "not"], ["wasn't"]],
             incorrectForms: [["was"], ["is"], ["isn't"], ["were"], ["weren't"]],
             maxWordCount: 2,
@@ -708,9 +837,12 @@ const completePastToBeNegativeStatementVerbForm = [
         id: "a5a4c32d051557dfd9bc27348ab85f8b",
         type: "completePastToBeNegativeStatementVerbForm",
         data: {
-            leftSide: "You",
-            middle: "(to be)",
-            rightSide: "helpful.",
+            prompt: {
+                twoSided: true,
+                leftSide: "You",
+                middle: "(to be)",
+                rightSide: "helpful."
+            },
             correctForms: [["were", "not"], ["weren't"]],
             incorrectForms: [
                 ["were"],
@@ -727,9 +859,12 @@ const completePastToBeNegativeStatementVerbForm = [
         id: "ed3eb67c2bdd2999af7ae379e7eaa347",
         type: "completePastToBeNegativeStatementVerbForm",
         data: {
-            leftSide: "The apples",
-            middle: "(to be)",
-            rightSide: "sweet.",
+            prompt: {
+                twoSided: true,
+                leftSide: "The apples",
+                middle: "(to be)",
+                rightSide: "sweet."
+            },
             correctForms: [["were", "not"], ["weren't"]],
             incorrectForms: [
                 ["were"],
@@ -746,9 +881,12 @@ const completePastToBeNegativeStatementVerbForm = [
         id: "420f53680cefdbc6934eec6ccec9d388",
         type: "completePastToBeNegativeStatementVerbForm",
         data: {
-            leftSide: "She",
-            middle: "(to be)",
-            rightSide: "alone.",
+            prompt: {
+                twoSided: true,
+                leftSide: "She",
+                middle: "(to be)",
+                rightSide: "alone."
+            },
             correctForms: [["was", "not"], ["wasn't"]],
             incorrectForms: [["was"], ["is"], ["isn't"], ["were"], ["weren't"]],
             maxWordCount: 2,
@@ -759,9 +897,12 @@ const completePastToBeNegativeStatementVerbForm = [
         id: "4cfe9ea3b3e4aa33cd3707cad3a7ecc2",
         type: "completePastToBeNegativeStatementVerbForm",
         data: {
-            leftSide: "I",
-            middle: "(to be)",
-            rightSide: "at home.",
+            prompt: {
+                twoSided: true,
+                leftSide: "I",
+                middle: "(to be)",
+                rightSide: "at home."
+            },
             correctForms: [["was", "not"], ["wasn't"]],
             incorrectForms: [
                 ["was"],
@@ -778,9 +919,12 @@ const completePastToBeNegativeStatementVerbForm = [
         id: "eb0e2b5143c411fb995371d7af1aad03",
         type: "completePastToBeNegativeStatementVerbForm",
         data: {
-            leftSide: "They",
-            middle: "(to be)",
-            rightSide: "outside.",
+            prompt: {
+                twoSided: true,
+                leftSide: "They",
+                middle: "(to be)",
+                rightSide: "outside."
+            },
             correctForms: [["were", "not"], ["weren't"]],
             incorrectForms: [
                 ["were"],
@@ -797,9 +941,12 @@ const completePastToBeNegativeStatementVerbForm = [
         id: "375885c31146ef3086fd55213edecd0c",
         type: "completePastToBeNegativeStatementVerbForm",
         data: {
-            leftSide: "He",
-            middle: "(to be)",
-            rightSide: "my friend.",
+            prompt: {
+                twoSided: true,
+                leftSide: "He",
+                middle: "(to be)",
+                rightSide: "my friend."
+            },
             correctForms: [["was", "not"], ["wasn't"]],
             incorrectForms: [["was"], ["is"], ["isn't"], ["were"], ["weren't"]],
             maxWordCount: 2,
@@ -810,9 +957,12 @@ const completePastToBeNegativeStatementVerbForm = [
         id: "685ef2388eea47c396739958c1bf31d1",
         type: "completePastToBeNegativeStatementVerbForm",
         data: {
-            leftSide: "We",
-            middle: "(to be)",
-            rightSide: "busy.",
+            prompt: {
+                twoSided: true,
+                leftSide: "We",
+                middle: "(to be)",
+                rightSide: "busy."
+            },
             correctForms: [["were", "not"], ["weren't"]],
             incorrectForms: [
                 ["were"],
@@ -829,9 +979,12 @@ const completePastToBeNegativeStatementVerbForm = [
         id: "aacda72d493a3e84382220623f643882",
         type: "completePastToBeNegativeStatementVerbForm",
         data: {
-            leftSide: "It",
-            middle: "(to be)",
-            rightSide: "dangerous.",
+            prompt: {
+                twoSided: true,
+                leftSide: "It",
+                middle: "(to be)",
+                rightSide: "dangerous."
+            },
             correctForms: [["was", "not"], ["wasn't"]],
             incorrectForms: [["was"], ["is"], ["isn't"], ["were"], ["weren't"]],
             maxWordCount: 2,
@@ -842,9 +995,12 @@ const completePastToBeNegativeStatementVerbForm = [
         id: "db36a084e6f866b6ad6705033cf8fb1d",
         type: "completePastToBeNegativeStatementVerbForm",
         data: {
-            leftSide: "You",
-            middle: "(to be)",
-            rightSide: "lucky.",
+            prompt: {
+                twoSided: true,
+                leftSide: "You",
+                middle: "(to be)",
+                rightSide: "lucky."
+            },
             correctForms: [["were", "not"], ["weren't"]],
             incorrectForms: [
                 ["were"],
@@ -861,9 +1017,12 @@ const completePastToBeNegativeStatementVerbForm = [
         id: "3f6fd8b2f987f9d14e1c9b15924d48e7",
         type: "completePastToBeNegativeStatementVerbForm",
         data: {
-            leftSide: "They",
-            middle: "(to be)",
-            rightSide: "best friends.",
+            prompt: {
+                twoSided: true,
+                leftSide: "They",
+                middle: "(to be)",
+                rightSide: "best friends."
+            },
             correctForms: [["were", "not"], ["weren't"]],
             incorrectForms: [
                 ["were"],
@@ -880,9 +1039,12 @@ const completePastToBeNegativeStatementVerbForm = [
         id: "4858bf1d49cfbdc7342e93bce16f34aa",
         type: "completePastToBeNegativeStatementVerbForm",
         data: {
-            leftSide: "The cake",
-            middle: "(to be)",
-            rightSide: "delicious.",
+            prompt: {
+                twoSided: true,
+                leftSide: "The cake",
+                middle: "(to be)",
+                rightSide: "delicious."
+            },
             correctForms: [["was", "not"], ["wasn't"]],
             incorrectForms: [["was"], ["is"], ["isn't"], ["were"], ["weren't"]],
             maxWordCount: 2,
@@ -893,9 +1055,12 @@ const completePastToBeNegativeStatementVerbForm = [
         id: "e5bc5b7e68068563d46d9a2153d5176c",
         type: "completePastToBeNegativeStatementVerbForm",
         data: {
-            leftSide: "I",
-            middle: "(to be)",
-            rightSide: "ready.",
+            prompt: {
+                twoSided: true,
+                leftSide: "I",
+                middle: "(to be)",
+                rightSide: "ready."
+            },
             correctForms: [["was", "not"], ["wasn't"]],
             incorrectForms: [
                 ["was"],
@@ -912,9 +1077,12 @@ const completePastToBeNegativeStatementVerbForm = [
         id: "34961802ee9de54028bc5e5a2de6ac22",
         type: "completePastToBeNegativeStatementVerbForm",
         data: {
-            leftSide: "She",
-            middle: "(to be)",
-            rightSide: "a writer.",
+            prompt: {
+                twoSided: true,
+                leftSide: "She",
+                middle: "(to be)",
+                rightSide: "a writer."
+            },
             correctForms: [["was", "not"], ["wasn't"]],
             incorrectForms: [["was"], ["is"], ["isn't"], ["were"], ["weren't"]],
             maxWordCount: 2,
@@ -925,9 +1093,12 @@ const completePastToBeNegativeStatementVerbForm = [
         id: "d5811b0fae28034387e1bec7be730d54",
         type: "completePastToBeNegativeStatementVerbForm",
         data: {
-            leftSide: "The door",
-            middle: "(to be)",
-            rightSide: "open.",
+            prompt: {
+                twoSided: true,
+                leftSide: "The door",
+                middle: "(to be)",
+                rightSide: "open."
+            },
             correctForms: [["was", "not"], ["wasn't"]],
             incorrectForms: [["was"], ["is"], ["isn't"], ["were"], ["weren't"]],
             maxWordCount: 2,
@@ -938,9 +1109,12 @@ const completePastToBeNegativeStatementVerbForm = [
         id: "04eeacfb7c3aec9b231d1cefb9510620",
         type: "completePastToBeNegativeStatementVerbForm",
         data: {
-            leftSide: "We",
-            middle: "(to be)",
-            rightSide: "lost.",
+            prompt: {
+                twoSided: true,
+                leftSide: "We",
+                middle: "(to be)",
+                rightSide: "lost."
+            },
             correctForms: [["were", "not"], ["weren't"]],
             incorrectForms: [
                 ["were"],
@@ -957,9 +1131,12 @@ const completePastToBeNegativeStatementVerbForm = [
         id: "764a008e7055fd7aef1e7c26bde1b2ca",
         type: "completePastToBeNegativeStatementVerbForm",
         data: {
-            leftSide: "They",
-            middle: "(to be)",
-            rightSide: "honest.",
+            prompt: {
+                twoSided: true,
+                leftSide: "They",
+                middle: "(to be)",
+                rightSide: "honest."
+            },
             correctForms: [["were", "not"], ["weren't"]],
             incorrectForms: [
                 ["were"],
@@ -976,9 +1153,12 @@ const completePastToBeNegativeStatementVerbForm = [
         id: "2e9bf435afc2cf7c942d6b9e0866ba54",
         type: "completePastToBeNegativeStatementVerbForm",
         data: {
-            leftSide: "He",
-            middle: "(to be)",
-            rightSide: "thirteen.",
+            prompt: {
+                twoSided: true,
+                leftSide: "He",
+                middle: "(to be)",
+                rightSide: "thirteen."
+            },
             correctForms: [["was", "not"], ["wasn't"]],
             incorrectForms: [["was"], ["is"], ["isn't"], ["were"], ["weren't"]],
             maxWordCount: 2,
@@ -989,9 +1169,12 @@ const completePastToBeNegativeStatementVerbForm = [
         id: "da166d9da79104ca4de5b87a5830d8a7",
         type: "completePastToBeNegativeStatementVerbForm",
         data: {
-            leftSide: "I",
-            middle: "(to be)",
-            rightSide: "angry.",
+            prompt: {
+                twoSided: true,
+                leftSide: "I",
+                middle: "(to be)",
+                rightSide: "angry."
+            },
             correctForms: [["was", "not"], ["wasn't"]],
             incorrectForms: [
                 ["was"],
@@ -1008,9 +1191,12 @@ const completePastToBeNegativeStatementVerbForm = [
         id: "25f50dfc00bc845ee401eb7a624b6456",
         type: "completePastToBeNegativeStatementVerbForm",
         data: {
-            leftSide: "The dogs",
-            middle: "(to be)",
-            rightSide: "quiet.",
+            prompt: {
+                twoSided: true,
+                leftSide: "The dogs",
+                middle: "(to be)",
+                rightSide: "quiet."
+            },
             correctForms: [["were", "not"], ["weren't"]],
             incorrectForms: [
                 ["were"],
@@ -1027,9 +1213,12 @@ const completePastToBeNegativeStatementVerbForm = [
         id: "878f958d3613b5b00048c245b14db369",
         type: "completePastToBeNegativeStatementVerbForm",
         data: {
-            leftSide: "It",
-            middle: "(to be)",
-            rightSide: "difficult.",
+            prompt: {
+                twoSided: true,
+                leftSide: "It",
+                middle: "(to be)",
+                rightSide: "difficult."
+            },
             correctForms: [["was", "not"], ["wasn't"]],
             incorrectForms: [["was"], ["is"], ["isn't"], ["were"], ["weren't"]],
             maxWordCount: 2,
@@ -1040,9 +1229,12 @@ const completePastToBeNegativeStatementVerbForm = [
         id: "948a673588f4313975cae7ddc643f4cc",
         type: "completePastToBeNegativeStatementVerbForm",
         data: {
-            leftSide: "She",
-            middle: "(to be)",
-            rightSide: "tired.",
+            prompt: {
+                twoSided: true,
+                leftSide: "She",
+                middle: "(to be)",
+                rightSide: "tired."
+            },
             correctForms: [["was", "not"], ["wasn't"]],
             incorrectForms: [["was"], ["is"], ["isn't"], ["were"], ["weren't"]],
             maxWordCount: 2,
@@ -1053,9 +1245,12 @@ const completePastToBeNegativeStatementVerbForm = [
         id: "b92933c05f8a1f925e69be2942ea849f",
         type: "completePastToBeNegativeStatementVerbForm",
         data: {
-            leftSide: "You",
-            middle: "(to be)",
-            rightSide: "patient.",
+            prompt: {
+                twoSided: true,
+                leftSide: "You",
+                middle: "(to be)",
+                rightSide: "patient."
+            },
             correctForms: [["were", "not"], ["weren't"]],
             incorrectForms: [
                 ["were"],
@@ -1072,9 +1267,12 @@ const completePastToBeNegativeStatementVerbForm = [
         id: "4d3e5a3e53e7696048db52b7a952efa0",
         type: "completePastToBeNegativeStatementVerbForm",
         data: {
-            leftSide: "The soup",
-            middle: "(to be)",
-            rightSide: "salty.",
+            prompt: {
+                twoSided: true,
+                leftSide: "The soup",
+                middle: "(to be)",
+                rightSide: "salty."
+            },
             correctForms: [["was", "not"], ["wasn't"]],
             incorrectForms: [["was"], ["is"], ["isn't"], ["were"], ["weren't"]],
             maxWordCount: 2,
@@ -1085,9 +1283,12 @@ const completePastToBeNegativeStatementVerbForm = [
         id: "7b4dde447972172f1ee00b224f242a8e",
         type: "completePastToBeNegativeStatementVerbForm",
         data: {
-            leftSide: "We",
-            middle: "(to be)",
-            rightSide: "at the airport.",
+            prompt: {
+                twoSided: true,
+                leftSide: "We",
+                middle: "(to be)",
+                rightSide: "at the airport."
+            },
             correctForms: [["were", "not"], ["weren't"]],
             incorrectForms: [
                 ["were"],
@@ -1104,9 +1305,12 @@ const completePastToBeNegativeStatementVerbForm = [
         id: "cebea2d1dea276a29b9d6386c31a3619",
         type: "completePastToBeNegativeStatementVerbForm",
         data: {
-            leftSide: "He",
-            middle: "(to be)",
-            rightSide: "brave.",
+            prompt: {
+                twoSided: true,
+                leftSide: "He",
+                middle: "(to be)",
+                rightSide: "brave."
+            },
             correctForms: [["was", "not"], ["wasn't"]],
             incorrectForms: [["was"], ["is"], ["isn't"], ["were"], ["weren't"]],
             maxWordCount: 2,
@@ -1117,9 +1321,12 @@ const completePastToBeNegativeStatementVerbForm = [
         id: "d75bb6d4510664cd86e2b891c8393cc7",
         type: "completePastToBeNegativeStatementVerbForm",
         data: {
-            leftSide: "They",
-            middle: "(to be)",
-            rightSide: "friendly.",
+            prompt: {
+                twoSided: true,
+                leftSide: "They",
+                middle: "(to be)",
+                rightSide: "friendly."
+            },
             correctForms: [["were", "not"], ["weren't"]],
             incorrectForms: [
                 ["were"],
@@ -1136,9 +1343,12 @@ const completePastToBeNegativeStatementVerbForm = [
         id: "a37558a469cc0c8fb89372044307c389",
         type: "completePastToBeNegativeStatementVerbForm",
         data: {
-            leftSide: "I",
-            middle: "(to be)",
-            rightSide: "cold.",
+            prompt: {
+                twoSided: true,
+                leftSide: "I",
+                middle: "(to be)",
+                rightSide: "cold."
+            },
             correctForms: [["was", "not"], ["wasn't"]],
             incorrectForms: [
                 ["was"],
@@ -1155,9 +1365,12 @@ const completePastToBeNegativeStatementVerbForm = [
         id: "b8b7c409e97c948d1459a930a0ef8e4d",
         type: "completePastToBeNegativeStatementVerbForm",
         data: {
-            leftSide: "The phone",
-            middle: "(to be)",
-            rightSide: "on the table.",
+            prompt: {
+                twoSided: true,
+                leftSide: "The phone",
+                middle: "(to be)",
+                rightSide: "on the table."
+            },
             correctForms: [["was", "not"], ["wasn't"]],
             incorrectForms: [["was"], ["is"], ["isn't"], ["were"], ["weren't"]],
             maxWordCount: 2,
@@ -1168,9 +1381,12 @@ const completePastToBeNegativeStatementVerbForm = [
         id: "cbccde9ef67fa02711ddbf401d699306",
         type: "completePastToBeNegativeStatementVerbForm",
         data: {
-            leftSide: "She",
-            middle: "(to be)",
-            rightSide: "an artist.",
+            prompt: {
+                twoSided: true,
+                leftSide: "She",
+                middle: "(to be)",
+                rightSide: "an artist."
+            },
             correctForms: [["was", "not"], ["wasn't"]],
             incorrectForms: [["was"], ["is"], ["isn't"], ["were"], ["weren't"]],
             maxWordCount: 2,
@@ -1181,9 +1397,12 @@ const completePastToBeNegativeStatementVerbForm = [
         id: "ac59e07b9023216120b5496989173bb4",
         type: "completePastToBeNegativeStatementVerbForm",
         data: {
-            leftSide: "We",
-            middle: "(to be)",
-            rightSide: "happy.",
+            prompt: {
+                twoSided: true,
+                leftSide: "We",
+                middle: "(to be)",
+                rightSide: "happy."
+            },
             correctForms: [["were", "not"], ["weren't"]],
             incorrectForms: [
                 ["were"],
@@ -1200,9 +1419,12 @@ const completePastToBeNegativeStatementVerbForm = [
         id: "8a7873e149076280a0a0110ee9428415",
         type: "completePastToBeNegativeStatementVerbForm",
         data: {
-            leftSide: "It",
-            middle: "(to be)",
-            rightSide: "far.",
+            prompt: {
+                twoSided: true,
+                leftSide: "It",
+                middle: "(to be)",
+                rightSide: "far."
+            },
             correctForms: [["was", "not"], ["wasn't"]],
             incorrectForms: [["was"], ["is"], ["isn't"], ["were"], ["weren't"]],
             maxWordCount: 2,
@@ -1213,9 +1435,12 @@ const completePastToBeNegativeStatementVerbForm = [
         id: "dd48e5f53cbdae64f0b01e95ee78cec1",
         type: "completePastToBeNegativeStatementVerbForm",
         data: {
-            leftSide: "You",
-            middle: "(to be)",
-            rightSide: "strong.",
+            prompt: {
+                twoSided: true,
+                leftSide: "You",
+                middle: "(to be)",
+                rightSide: "strong."
+            },
             correctForms: [["were", "not"], ["weren't"]],
             incorrectForms: [
                 ["were"],
@@ -1232,9 +1457,12 @@ const completePastToBeNegativeStatementVerbForm = [
         id: "16eb07371976e19bed7954940c9ff981",
         type: "completePastToBeNegativeStatementVerbForm",
         data: {
-            leftSide: "The tea",
-            middle: "(to be)",
-            rightSide: "sweet.",
+            prompt: {
+                twoSided: true,
+                leftSide: "The tea",
+                middle: "(to be)",
+                rightSide: "sweet."
+            },
             correctForms: [["was", "not"], ["wasn't"]],
             incorrectForms: [["was"], ["is"], ["isn't"], ["were"], ["weren't"]],
             maxWordCount: 2,
@@ -1245,9 +1473,12 @@ const completePastToBeNegativeStatementVerbForm = [
         id: "400f1e2630f5040b32d18f2317b0c8cb",
         type: "completePastToBeNegativeStatementVerbForm",
         data: {
-            leftSide: "They",
-            middle: "(to be)",
-            rightSide: "at the cinema.",
+            prompt: {
+                twoSided: true,
+                leftSide: "They",
+                middle: "(to be)",
+                rightSide: "at the cinema."
+            },
             correctForms: [["were", "not"], ["weren't"]],
             incorrectForms: [
                 ["were"],
@@ -1264,9 +1495,12 @@ const completePastToBeNegativeStatementVerbForm = [
         id: "0f38f2124578cd44e021357a132110c4",
         type: "completePastToBeNegativeStatementVerbForm",
         data: {
-            leftSide: "He",
-            middle: "(to be)",
-            rightSide: "a cook.",
+            prompt: {
+                twoSided: true,
+                leftSide: "He",
+                middle: "(to be)",
+                rightSide: "a cook."
+            },
             correctForms: [["was", "not"], ["wasn't"]],
             incorrectForms: [["was"], ["is"], ["isn't"], ["were"], ["weren't"]],
             maxWordCount: 2,
@@ -1277,9 +1511,12 @@ const completePastToBeNegativeStatementVerbForm = [
         id: "51cab92b35a80f887fa6faedcadd8e20",
         type: "completePastToBeNegativeStatementVerbForm",
         data: {
-            leftSide: "I",
-            middle: "(to be)",
-            rightSide: "sleepy.",
+            prompt: {
+                twoSided: true,
+                leftSide: "I",
+                middle: "(to be)",
+                rightSide: "sleepy."
+            },
             correctForms: [["was", "not"], ["wasn't"]],
             incorrectForms: [
                 ["was"],
@@ -1296,9 +1533,12 @@ const completePastToBeNegativeStatementVerbForm = [
         id: "0a6c217980459c14ea83d01d35859382",
         type: "completePastToBeNegativeStatementVerbForm",
         data: {
-            leftSide: "The mirror",
-            middle: "(to be)",
-            rightSide: "clean.",
+            prompt: {
+                twoSided: true,
+                leftSide: "The mirror",
+                middle: "(to be)",
+                rightSide: "clean."
+            },
             correctForms: [["was", "not"], ["wasn't"]],
             incorrectForms: [["was"], ["is"], ["isn't"], ["were"], ["weren't"]],
             maxWordCount: 2,
@@ -1309,9 +1549,12 @@ const completePastToBeNegativeStatementVerbForm = [
         id: "7ad15e766b54f9299d04264bc9a423ba",
         type: "completePastToBeNegativeStatementVerbForm",
         data: {
-            leftSide: "We",
-            middle: "(to be)",
-            rightSide: "at the beach.",
+            prompt: {
+                twoSided: true,
+                leftSide: "We",
+                middle: "(to be)",
+                rightSide: "at the beach."
+            },
             correctForms: [["were", "not"], ["weren't"]],
             incorrectForms: [
                 ["were"],
@@ -1328,9 +1571,12 @@ const completePastToBeNegativeStatementVerbForm = [
         id: "dfbfd8a13c8bbbe5ddec373aff22a00e",
         type: "completePastToBeNegativeStatementVerbForm",
         data: {
-            leftSide: "She",
-            middle: "(to be)",
-            rightSide: "my cousin.",
+            prompt: {
+                twoSided: true,
+                leftSide: "She",
+                middle: "(to be)",
+                rightSide: "my cousin."
+            },
             correctForms: [["was", "not"], ["wasn't"]],
             incorrectForms: [["was"], ["is"], ["isn't"], ["were"], ["weren't"]],
             maxWordCount: 2,
@@ -1341,9 +1587,12 @@ const completePastToBeNegativeStatementVerbForm = [
         id: "d3e9de2cbda74a6ec26d083aeab8b596",
         type: "completePastToBeNegativeStatementVerbForm",
         data: {
-            leftSide: "It",
-            middle: "(to be)",
-            rightSide: "a mistake.",
+            prompt: {
+                twoSided: true,
+                leftSide: "It",
+                middle: "(to be)",
+                rightSide: "a mistake."
+            },
             correctForms: [["was", "not"], ["wasn't"]],
             incorrectForms: [["was"], ["is"], ["isn't"], ["were"], ["weren't"]],
             maxWordCount: 2,
@@ -1354,9 +1603,12 @@ const completePastToBeNegativeStatementVerbForm = [
         id: "8b15451d7935403ac93444e73215bf6f",
         type: "completePastToBeNegativeStatementVerbForm",
         data: {
-            leftSide: "You",
-            middle: "(to be)",
-            rightSide: "welcome.",
+            prompt: {
+                twoSided: true,
+                leftSide: "You",
+                middle: "(to be)",
+                rightSide: "welcome."
+            },
             correctForms: [["were", "not"], ["weren't"]],
             incorrectForms: [
                 ["were"],
@@ -1373,9 +1625,12 @@ const completePastToBeNegativeStatementVerbForm = [
         id: "6621c4ad8c954aa1f0b4c4617558797c",
         type: "completePastToBeNegativeStatementVerbForm",
         data: {
-            leftSide: "They",
-            middle: "(to be)",
-            rightSide: "late.",
+            prompt: {
+                twoSided: true,
+                leftSide: "They",
+                middle: "(to be)",
+                rightSide: "late."
+            },
             correctForms: [["were", "not"], ["weren't"]],
             incorrectForms: [
                 ["were"],
@@ -1392,9 +1647,12 @@ const completePastToBeNegativeStatementVerbForm = [
         id: "4359876ce9b33f07e54fc99781d867ee",
         type: "completePastToBeNegativeStatementVerbForm",
         data: {
-            leftSide: "The car",
-            middle: "(to be)",
-            rightSide: "red.",
+            prompt: {
+                twoSided: true,
+                leftSide: "The car",
+                middle: "(to be)",
+                rightSide: "red."
+            },
             correctForms: [["was", "not"], ["wasn't"]],
             incorrectForms: [["was"], ["is"], ["isn't"], ["were"], ["weren't"]],
             maxWordCount: 2,
@@ -1405,9 +1663,12 @@ const completePastToBeNegativeStatementVerbForm = [
         id: "31a4640bae4689d3435b8cf576d92a23",
         type: "completePastToBeNegativeStatementVerbForm",
         data: {
-            leftSide: "I",
-            middle: "(to be)",
-            rightSide: "thirsty.",
+            prompt: {
+                twoSided: true,
+                leftSide: "I",
+                middle: "(to be)",
+                rightSide: "thirsty."
+            },
             correctForms: [["was", "not"], ["wasn't"]],
             incorrectForms: [
                 ["was"],
@@ -1424,9 +1685,12 @@ const completePastToBeNegativeStatementVerbForm = [
         id: "5cbe43e20e36b384b80b8bd38aeb633e",
         type: "completePastToBeNegativeStatementVerbForm",
         data: {
-            leftSide: "He",
-            middle: "(to be)",
-            rightSide: "at school.",
+            prompt: {
+                twoSided: true,
+                leftSide: "He",
+                middle: "(to be)",
+                rightSide: "at school."
+            },
             correctForms: [["was", "not"], ["wasn't"]],
             incorrectForms: [["was"], ["is"], ["isn't"], ["were"], ["weren't"]],
             maxWordCount: 2,
@@ -1437,9 +1701,12 @@ const completePastToBeNegativeStatementVerbForm = [
         id: "5f10fea103b59e26b67362ad02b19405",
         type: "completePastToBeNegativeStatementVerbForm",
         data: {
-            leftSide: "We",
-            middle: "(to be)",
-            rightSide: "at home.",
+            prompt: {
+                twoSided: true,
+                leftSide: "We",
+                middle: "(to be)",
+                rightSide: "at home."
+            },
             correctForms: [["were", "not"], ["weren't"]],
             incorrectForms: [
                 ["were"],
@@ -1456,9 +1723,12 @@ const completePastToBeNegativeStatementVerbForm = [
         id: "07164a5eb870b023a33215c2e70c6693",
         type: "completePastToBeNegativeStatementVerbForm",
         data: {
-            leftSide: "She",
-            middle: "(to be)",
-            rightSide: "in Paris.",
+            prompt: {
+                twoSided: true,
+                leftSide: "She",
+                middle: "(to be)",
+                rightSide: "in Paris."
+            },
             correctForms: [["was", "not"], ["wasn't"]],
             incorrectForms: [["was"], ["is"], ["isn't"], ["were"], ["weren't"]],
             maxWordCount: 2,
@@ -1469,9 +1739,12 @@ const completePastToBeNegativeStatementVerbForm = [
         id: "d7b70daa697fb15991ccb495686843f4",
         type: "completePastToBeNegativeStatementVerbForm",
         data: {
-            leftSide: "The building",
-            middle: "(to be)",
-            rightSide: "old.",
+            prompt: {
+                twoSided: true,
+                leftSide: "The building",
+                middle: "(to be)",
+                rightSide: "old."
+            },
             correctForms: [["was", "not"], ["wasn't"]],
             incorrectForms: [["was"], ["is"], ["isn't"], ["were"], ["weren't"]],
             maxWordCount: 2,
@@ -1482,9 +1755,12 @@ const completePastToBeNegativeStatementVerbForm = [
         id: "217bc3e859749952f7d039a978345b3f",
         type: "completePastToBeNegativeStatementVerbForm",
         data: {
-            leftSide: "They",
-            middle: "(to be)",
-            rightSide: "polite.",
+            prompt: {
+                twoSided: true,
+                leftSide: "They",
+                middle: "(to be)",
+                rightSide: "polite."
+            },
             correctForms: [["were", "not"], ["weren't"]],
             incorrectForms: [
                 ["were"],
@@ -1501,9 +1777,12 @@ const completePastToBeNegativeStatementVerbForm = [
         id: "f28d8c2bc5c1742bba0cd5173c656a1e",
         type: "completePastToBeNegativeStatementVerbForm",
         data: {
-            leftSide: "It",
-            middle: "(to be)",
-            rightSide: "free.",
+            prompt: {
+                twoSided: true,
+                leftSide: "It",
+                middle: "(to be)",
+                rightSide: "free."
+            },
             correctForms: [["was", "not"], ["wasn't"]],
             incorrectForms: [["was"], ["is"], ["isn't"], ["were"], ["weren't"]],
             maxWordCount: 2,
@@ -1514,9 +1793,12 @@ const completePastToBeNegativeStatementVerbForm = [
         id: "19b79cdef1b275075487781f894c26a7",
         type: "completePastToBeNegativeStatementVerbForm",
         data: {
-            leftSide: "You",
-            middle: "(to be)",
-            rightSide: "funny.",
+            prompt: {
+                twoSided: true,
+                leftSide: "You",
+                middle: "(to be)",
+                rightSide: "funny."
+            },
             correctForms: [["were", "not"], ["weren't"]],
             incorrectForms: [
                 ["were"],
@@ -1533,9 +1815,12 @@ const completePastToBeNegativeStatementVerbForm = [
         id: "06c787ee48bc13e7524fa447a0ae9db5",
         type: "completePastToBeNegativeStatementVerbForm",
         data: {
-            leftSide: "I",
-            middle: "(to be)",
-            rightSide: "proud.",
+            prompt: {
+                twoSided: true,
+                leftSide: "I",
+                middle: "(to be)",
+                rightSide: "proud."
+            },
             correctForms: [["was", "not"], ["wasn't"]],
             incorrectForms: [
                 ["was"],
@@ -1552,9 +1837,12 @@ const completePastToBeNegativeStatementVerbForm = [
         id: "1e2eda0228210e862c44c431a9d08f5f",
         type: "completePastToBeNegativeStatementVerbForm",
         data: {
-            leftSide: "The birds",
-            middle: "(to be)",
-            rightSide: "in the tree.",
+            prompt: {
+                twoSided: true,
+                leftSide: "The birds",
+                middle: "(to be)",
+                rightSide: "in the tree."
+            },
             correctForms: [["were", "not"], ["weren't"]],
             incorrectForms: [
                 ["were"],
@@ -1571,9 +1859,12 @@ const completePastToBeNegativeStatementVerbForm = [
         id: "bef737c767be125c22e454d7553a0b8a",
         type: "completePastToBeNegativeStatementVerbForm",
         data: {
-            leftSide: "She",
-            middle: "(to be)",
-            rightSide: "a nurse.",
+            prompt: {
+                twoSided: true,
+                leftSide: "She",
+                middle: "(to be)",
+                rightSide: "a nurse."
+            },
             correctForms: [["was", "not"], ["wasn't"]],
             incorrectForms: [["was"], ["is"], ["isn't"], ["were"], ["weren't"]],
             maxWordCount: 2,
@@ -1584,9 +1875,12 @@ const completePastToBeNegativeStatementVerbForm = [
         id: "fa560169e6c185f2053854b7a2a3ca9d",
         type: "completePastToBeNegativeStatementVerbForm",
         data: {
-            leftSide: "He",
-            middle: "(to be)",
-            rightSide: "at the library.",
+            prompt: {
+                twoSided: true,
+                leftSide: "He",
+                middle: "(to be)",
+                rightSide: "at the library."
+            },
             correctForms: [["was", "not"], ["wasn't"]],
             incorrectForms: [["was"], ["is"], ["isn't"], ["were"], ["weren't"]],
             maxWordCount: 2,
@@ -1597,9 +1891,12 @@ const completePastToBeNegativeStatementVerbForm = [
         id: "aa7a450f54e5493adbe4210b84a37f1c",
         type: "completePastToBeNegativeStatementVerbForm",
         data: {
-            leftSide: "They",
-            middle: "(to be)",
-            rightSide: "scared.",
+            prompt: {
+                twoSided: true,
+                leftSide: "They",
+                middle: "(to be)",
+                rightSide: "scared."
+            },
             correctForms: [["were", "not"], ["weren't"]],
             incorrectForms: [
                 ["were"],
@@ -1616,9 +1913,12 @@ const completePastToBeNegativeStatementVerbForm = [
         id: "98cb4b523553294e9509fba613971313",
         type: "completePastToBeNegativeStatementVerbForm",
         data: {
-            leftSide: "It",
-            middle: "(to be)",
-            rightSide: "a cat.",
+            prompt: {
+                twoSided: true,
+                leftSide: "It",
+                middle: "(to be)",
+                rightSide: "a cat."
+            },
             correctForms: [["was", "not"], ["wasn't"]],
             incorrectForms: [["was"], ["is"], ["isn't"], ["were"], ["weren't"]],
             maxWordCount: 2,
