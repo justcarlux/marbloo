@@ -46,10 +46,16 @@ const questionTitles: {
             <b>negative future tense</b> sentence
         </>
     ),
-    turnPresentToBeStatementIntoQuestion: (
+    turnPositivePresentToBeStatementIntoQuestion: (
         <>
-            Turn the <b>present tense &quot;to be&quot; statement</b> into a
-            question
+            Turn the positive <b>present tense &quot;to be&quot; statement</b>{" "}
+            into a question
+        </>
+    ),
+    turnNegativePresentToBeStatementIntoQuestion: (
+        <>
+            Turn the negative <b>present tense &quot;to be&quot; statement</b>{" "}
+            into a question
         </>
     ),
     // Simple tenses
@@ -214,6 +220,8 @@ const questionHints: {
     completePastToBeNegativeStatementVerbForm: "was/were + not",
     completeFutureToBePositiveStatementVerbForm: "will + be",
     completeFutureToBeNegativeStatementVerbForm: "will + not + be",
+    turnPositivePresentToBeStatementIntoQuestion: "am/is/are + subject",
+    turnNegativePresentToBeStatementIntoQuestion: "am/is/are + subject + not",
     // Simple tenses
     completePresentSimplePositiveStatementVerbForm:
         "main verb (base form + -s/-es in third-person singular)",

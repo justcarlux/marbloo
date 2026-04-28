@@ -1,6 +1,6 @@
 "use client";
 
-import { signOut } from "@/app/actions/supabase-auth";
+import { signOut } from "@/app/actions/accounts";
 import { getAvatarUrl, getDisplayName } from "@/app/utils/users";
 import { User } from "@supabase/supabase-js";
 import { AnimatePresence, motion } from "framer-motion";

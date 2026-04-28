@@ -5,9 +5,12 @@ const completePresentContinuousPositiveStatementVerbForm = [
         id: "7248b4378b5fa24c034c37cb0b6a03f1",
         type: "completePresentContinuousPositiveStatementVerbForm",
         data: {
-            leftSide: "She",
-            middle: "(bake)",
-            rightSide: "a chocolate cake for the party.",
+            prompt: {
+                twoSided: true,
+                leftSide: "She",
+                middle: "(bake)",
+                rightSide: "a chocolate cake for the party."
+            },
             minWordCount: 2,
             maxWordCount: 2,
             correctAuxiliars: [["is"]],
@@ -19,9 +22,12 @@ const completePresentContinuousPositiveStatementVerbForm = [
         id: "4de1a458646b9d2a69d7d7d758a5e614",
         type: "completePresentContinuousPositiveStatementVerbForm",
         data: {
-            leftSide: "They",
-            middle: "(play)",
-            rightSide: "soccer in the park right now.",
+            prompt: {
+                twoSided: true,
+                leftSide: "They",
+                middle: "(play)",
+                rightSide: "soccer in the park right now."
+            },
             minWordCount: 2,
             maxWordCount: 2,
             correctAuxiliars: [["are"]],
@@ -33,9 +39,12 @@ const completePresentContinuousPositiveStatementVerbForm = [
         id: "8ef3ab84360888eaf18ad302bcc1fec3",
         type: "completePresentContinuousPositiveStatementVerbForm",
         data: {
-            leftSide: "The sun",
-            middle: "(shine)",
-            rightSide: "brightly through the window.",
+            prompt: {
+                twoSided: true,
+                leftSide: "The sun",
+                middle: "(shine)",
+                rightSide: "brightly through the window."
+            },
             minWordCount: 2,
             maxWordCount: 2,
             correctAuxiliars: [["is"]],
@@ -47,9 +56,12 @@ const completePresentContinuousPositiveStatementVerbForm = [
         id: "64fe0e1c4bd38080e4184ff4932e5cd3",
         type: "completePresentContinuousPositiveStatementVerbForm",
         data: {
-            leftSide: "We",
-            middle: "(study)",
-            rightSide: "for our final exams this week.",
+            prompt: {
+                twoSided: true,
+                leftSide: "We",
+                middle: "(study)",
+                rightSide: "for our final exams this week."
+            },
             minWordCount: 2,
             maxWordCount: 2,
             correctAuxiliars: [["are"]],
@@ -61,9 +73,12 @@ const completePresentContinuousPositiveStatementVerbForm = [
         id: "fe64d74e797f944219fc0b1f8ff306a1",
         type: "completePresentContinuousPositiveStatementVerbForm",
         data: {
-            leftSide: "The birds",
-            middle: "(sing)",
-            rightSide: "beautiful songs in the garden.",
+            prompt: {
+                twoSided: true,
+                leftSide: "The birds",
+                middle: "(sing)",
+                rightSide: "beautiful songs in the garden."
+            },
             minWordCount: 2,
             maxWordCount: 2,
             correctAuxiliars: [["are"]],
@@ -75,9 +90,12 @@ const completePresentContinuousPositiveStatementVerbForm = [
         id: "a403c59c138ab2e69e5b612c74791639",
         type: "completePresentContinuousPositiveStatementVerbForm",
         data: {
-            leftSide: "I",
-            middle: "(listen)",
-            rightSide: "to a new podcast on Spotify.",
+            prompt: {
+                twoSided: true,
+                leftSide: "I",
+                middle: "(listen)",
+                rightSide: "to a new podcast on Spotify."
+            },
             minWordCount: 2,
             maxWordCount: 2,
             correctAuxiliars: [["am"]],
@@ -89,9 +107,12 @@ const completePresentContinuousPositiveStatementVerbForm = [
         id: "e14f946235234c048508a28ef3beadab",
         type: "completePresentContinuousPositiveStatementVerbForm",
         data: {
-            leftSide: "He",
-            middle: "(fix)",
-            rightSide: "his broken bicycle in the garage.",
+            prompt: {
+                twoSided: true,
+                leftSide: "He",
+                middle: "(fix)",
+                rightSide: "his broken bicycle in the garage."
+            },
             minWordCount: 2,
             maxWordCount: 2,
             correctAuxiliars: [["is"]],
@@ -103,9 +124,12 @@ const completePresentContinuousPositiveStatementVerbForm = [
         id: "5c36a49992474476c90106378972112f",
         type: "completePresentContinuousPositiveStatementVerbForm",
         data: {
-            leftSide: "You",
-            middle: "(wear)",
-            rightSide: " a very nice jacket today.",
+            prompt: {
+                twoSided: true,
+                leftSide: "You",
+                middle: "(wear)",
+                rightSide: " a very nice jacket today."
+            },
             minWordCount: 2,
             maxWordCount: 2,
             correctAuxiliars: [["are"]],
@@ -117,9 +141,12 @@ const completePresentContinuousPositiveStatementVerbForm = [
         id: "58904a188958dbe9c9d6605b8ba04273",
         type: "completePresentContinuousPositiveStatementVerbForm",
         data: {
-            leftSide: "The water",
-            middle: "(boil)",
-            rightSide: "on the stove for the pasta.",
+            prompt: {
+                twoSided: true,
+                leftSide: "The water",
+                middle: "(boil)",
+                rightSide: "on the stove for the pasta."
+            },
             minWordCount: 2,
             maxWordCount: 2,
             correctAuxiliars: [["is"]],
@@ -131,9 +158,12 @@ const completePresentContinuousPositiveStatementVerbForm = [
         id: "8ccab7725d433e1f123be5bb1c876465",
         type: "completePresentContinuousPositiveStatementVerbForm",
         data: {
-            leftSide: "Scientists",
-            middle: "(search)",
-            rightSide: "for a cure for the virus.",
+            prompt: {
+                twoSided: true,
+                leftSide: "Scientists",
+                middle: "(search)",
+                rightSide: "for a cure for the virus."
+            },
             minWordCount: 2,
             maxWordCount: 2,
             correctAuxiliars: [["are"]],
@@ -145,9 +175,12 @@ const completePresentContinuousPositiveStatementVerbForm = [
         id: "780fa36870c4bf477833e8347175c5e4",
         type: "completePresentContinuousPositiveStatementVerbForm",
         data: {
-            leftSide: "My brother",
-            middle: "(draw)",
-            rightSide: "a map of the island.",
+            prompt: {
+                twoSided: true,
+                leftSide: "My brother",
+                middle: "(draw)",
+                rightSide: "a map of the island."
+            },
             minWordCount: 2,
             maxWordCount: 2,
             correctAuxiliars: [["is"]],
@@ -159,9 +192,12 @@ const completePresentContinuousPositiveStatementVerbForm = [
         id: "ad112a3dd1c264aa475bb3c3360a26a4",
         type: "completePresentContinuousPositiveStatementVerbForm",
         data: {
-            leftSide: "The cat",
-            middle: "(chase)",
-            rightSide: "a butterfly in the yard.",
+            prompt: {
+                twoSided: true,
+                leftSide: "The cat",
+                middle: "(chase)",
+                rightSide: "a butterfly in the yard."
+            },
             minWordCount: 2,
             maxWordCount: 2,
             correctAuxiliars: [["is"]],
@@ -173,9 +209,12 @@ const completePresentContinuousPositiveStatementVerbForm = [
         id: "ee9f7e29db42bcfaec6fbf5533cd0ffe",
         type: "completePresentContinuousPositiveStatementVerbForm",
         data: {
-            leftSide: "We",
-            middle: "(wait)",
-            rightSide: "for the bus at the station.",
+            prompt: {
+                twoSided: true,
+                leftSide: "We",
+                middle: "(wait)",
+                rightSide: "for the bus at the station."
+            },
             minWordCount: 2,
             maxWordCount: 2,
             correctAuxiliars: [["are"]],
@@ -187,9 +226,12 @@ const completePresentContinuousPositiveStatementVerbForm = [
         id: "5428b990f34da699ca9d180830d33ffe",
         type: "completePresentContinuousPositiveStatementVerbForm",
         data: {
-            leftSide: "I",
-            middle: "(learn)",
-            rightSide: "how to play the guitar.",
+            prompt: {
+                twoSided: true,
+                leftSide: "I",
+                middle: "(learn)",
+                rightSide: "how to play the guitar."
+            },
             minWordCount: 2,
             maxWordCount: 2,
             correctAuxiliars: [["am"]],
@@ -201,9 +243,12 @@ const completePresentContinuousPositiveStatementVerbForm = [
         id: "2a154c0f121161fbbe8975a6b0ca40bb",
         type: "completePresentContinuousPositiveStatementVerbForm",
         data: {
-            leftSide: "The technician",
-            middle: "(install)",
-            rightSide: "new software on the computer.",
+            prompt: {
+                twoSided: true,
+                leftSide: "The technician",
+                middle: "(install)",
+                rightSide: "new software on the computer."
+            },
             minWordCount: 2,
             maxWordCount: 2,
             correctAuxiliars: [["is"]],
@@ -215,9 +260,12 @@ const completePresentContinuousPositiveStatementVerbForm = [
         id: "e27e045abc7e4d2e136992aac8761fa6",
         type: "completePresentContinuousPositiveStatementVerbForm",
         data: {
-            leftSide: "My parents",
-            middle: "(travel)",
-            rightSide: "across Europe this summer.",
+            prompt: {
+                twoSided: true,
+                leftSide: "My parents",
+                middle: "(travel)",
+                rightSide: "across Europe this summer."
+            },
             minWordCount: 2,
             maxWordCount: 2,
             correctAuxiliars: [["are"]],
@@ -229,9 +277,12 @@ const completePresentContinuousPositiveStatementVerbForm = [
         id: "b92361bb13b60a08f605e7fce05bb24c",
         type: "completePresentContinuousPositiveStatementVerbForm",
         data: {
-            leftSide: "It",
-            middle: "(snow)",
-            rightSide: "heavily in the mountains.",
+            prompt: {
+                twoSided: true,
+                leftSide: "It",
+                middle: "(snow)",
+                rightSide: "heavily in the mountains."
+            },
             minWordCount: 2,
             maxWordCount: 2,
             correctAuxiliars: [["is"]],
@@ -243,9 +294,12 @@ const completePresentContinuousPositiveStatementVerbForm = [
         id: "5f72f839fd68e3d02779651aec7f7c1f",
         type: "completePresentContinuousPositiveStatementVerbForm",
         data: {
-            leftSide: "The chef",
-            middle: "(prepare)",
-            rightSide: "the main course for the guests.",
+            prompt: {
+                twoSided: true,
+                leftSide: "The chef",
+                middle: "(prepare)",
+                rightSide: "the main course for the guests."
+            },
             minWordCount: 2,
             maxWordCount: 2,
             correctAuxiliars: [["is"]],
@@ -257,9 +311,12 @@ const completePresentContinuousPositiveStatementVerbForm = [
         id: "2b07cd8976c5563a249033a30cb80778",
         type: "completePresentContinuousPositiveStatementVerbForm",
         data: {
-            leftSide: "You",
-            middle: "(talk)",
-            rightSide: "too fast for me to understand.",
+            prompt: {
+                twoSided: true,
+                leftSide: "You",
+                middle: "(talk)",
+                rightSide: "too fast for me to understand."
+            },
             minWordCount: 2,
             maxWordCount: 2,
             correctAuxiliars: [["are"]],
@@ -271,9 +328,12 @@ const completePresentContinuousPositiveStatementVerbForm = [
         id: "85c26f756a4179d1fd5aeaa6d5afea53",
         type: "completePresentContinuousPositiveStatementVerbForm",
         data: {
-            leftSide: "I",
-            middle: "(feel)",
-            rightSide: "much better after the rest.",
+            prompt: {
+                twoSided: true,
+                leftSide: "I",
+                middle: "(feel)",
+                rightSide: "much better after the rest."
+            },
             minWordCount: 2,
             maxWordCount: 2,
             correctAuxiliars: [["am"]],
@@ -285,9 +345,12 @@ const completePresentContinuousPositiveStatementVerbForm = [
         id: "8d4fc59a5bdb066294ed7f16b9d6562d",
         type: "completePresentContinuousPositiveStatementVerbForm",
         data: {
-            leftSide: "The students",
-            middle: "(discuss)",
-            rightSide: "the project requirements.",
+            prompt: {
+                twoSided: true,
+                leftSide: "The students",
+                middle: "(discuss)",
+                rightSide: "the project requirements."
+            },
             minWordCount: 2,
             maxWordCount: 2,
             correctAuxiliars: [["are"]],
@@ -304,9 +367,12 @@ const completePresentContinuousPositiveStatementVerbForm = [
         id: "a2c5524224aad33479e0552322c0b318",
         type: "completePresentContinuousPositiveStatementVerbForm",
         data: {
-            leftSide: "He",
-            middle: "(clean)",
-            rightSide: "his apartment for the weekend.",
+            prompt: {
+                twoSided: true,
+                leftSide: "He",
+                middle: "(clean)",
+                rightSide: "his apartment for the weekend."
+            },
             minWordCount: 2,
             maxWordCount: 2,
             correctAuxiliars: [["is"]],
@@ -318,9 +384,12 @@ const completePresentContinuousPositiveStatementVerbForm = [
         id: "0256281d49f319e70d266ea85daa7757",
         type: "completePresentContinuousPositiveStatementVerbForm",
         data: {
-            leftSide: "The wind",
-            middle: "(blow)",
-            rightSide: "the leaves off the trees.",
+            prompt: {
+                twoSided: true,
+                leftSide: "The wind",
+                middle: "(blow)",
+                rightSide: "the leaves off the trees."
+            },
             minWordCount: 2,
             maxWordCount: 2,
             correctAuxiliars: [["is"]],
@@ -332,9 +401,12 @@ const completePresentContinuousPositiveStatementVerbForm = [
         id: "3a3463df83fcb47ce049d0144d76b170",
         type: "completePresentContinuousPositiveStatementVerbForm",
         data: {
-            leftSide: "They",
-            middle: "(build)",
-            rightSide: "a new skyscraper downtown.",
+            prompt: {
+                twoSided: true,
+                leftSide: "They",
+                middle: "(build)",
+                rightSide: "a new skyscraper downtown."
+            },
             minWordCount: 2,
             maxWordCount: 2,
             correctAuxiliars: [["are"]],
@@ -346,9 +418,12 @@ const completePresentContinuousPositiveStatementVerbForm = [
         id: "706c8238cb20f07405a726d2ea2e22e8",
         type: "completePresentContinuousPositiveStatementVerbForm",
         data: {
-            leftSide: "My friend",
-            middle: "(save)",
-            rightSide: "money to buy a new car.",
+            prompt: {
+                twoSided: true,
+                leftSide: "My friend",
+                middle: "(save)",
+                rightSide: "money to buy a new car."
+            },
             minWordCount: 2,
             maxWordCount: 2,
             correctAuxiliars: [["is"]],
@@ -360,9 +435,12 @@ const completePresentContinuousPositiveStatementVerbForm = [
         id: "a31aad6abcd862ea8be8fedb06afb602",
         type: "completePresentContinuousPositiveStatementVerbForm",
         data: {
-            leftSide: "I",
-            middle: "(help)",
-            rightSide: "my sister with her homework.",
+            prompt: {
+                twoSided: true,
+                leftSide: "I",
+                middle: "(help)",
+                rightSide: "my sister with her homework."
+            },
             minWordCount: 2,
             maxWordCount: 2,
             correctAuxiliars: [["am"]],
@@ -374,9 +452,12 @@ const completePresentContinuousPositiveStatementVerbForm = [
         id: "268c0f57a53e97616c451420a4315710",
         type: "completePresentContinuousPositiveStatementVerbForm",
         data: {
-            leftSide: "The baby",
-            middle: "(sleep)",
-            rightSide: "peacefully in the crib.",
+            prompt: {
+                twoSided: true,
+                leftSide: "The baby",
+                middle: "(sleep)",
+                rightSide: "peacefully in the crib."
+            },
             minWordCount: 2,
             maxWordCount: 2,
             correctAuxiliars: [["is"]],
@@ -388,9 +469,12 @@ const completePresentContinuousPositiveStatementVerbForm = [
         id: "83f95c8a20d74ae534ec218f22907e62",
         type: "completePresentContinuousPositiveStatementVerbForm",
         data: {
-            leftSide: "We",
-            middle: "(eat)",
-            rightSide: "dinner at a local restaurant.",
+            prompt: {
+                twoSided: true,
+                leftSide: "We",
+                middle: "(eat)",
+                rightSide: "dinner at a local restaurant."
+            },
             minWordCount: 2,
             maxWordCount: 2,
             correctAuxiliars: [["are"]],
@@ -402,9 +486,12 @@ const completePresentContinuousPositiveStatementVerbForm = [
         id: "124a5e3784845d8aa88d32ff66ba3620",
         type: "completePresentContinuousPositiveStatementVerbForm",
         data: {
-            leftSide: "The athlete",
-            middle: "(run)",
-            rightSide: "the marathon for charity.",
+            prompt: {
+                twoSided: true,
+                leftSide: "The athlete",
+                middle: "(run)",
+                rightSide: "the marathon for charity."
+            },
             minWordCount: 2,
             maxWordCount: 2,
             correctAuxiliars: [["is"]],
@@ -416,9 +503,12 @@ const completePresentContinuousPositiveStatementVerbForm = [
         id: "88cc3db8682a36a60f333ec1482be1a6",
         type: "completePresentContinuousPositiveStatementVerbForm",
         data: {
-            leftSide: "You",
-            middle: "(make)",
-            rightSide: "a lot of progress lately.",
+            prompt: {
+                twoSided: true,
+                leftSide: "You",
+                middle: "(make)",
+                rightSide: "a lot of progress lately."
+            },
             minWordCount: 2,
             maxWordCount: 2,
             correctAuxiliars: [["are"]],
@@ -430,9 +520,12 @@ const completePresentContinuousPositiveStatementVerbForm = [
         id: "6c6610f8554f6c150bd9c51828c511eb",
         type: "completePresentContinuousPositiveStatementVerbForm",
         data: {
-            leftSide: "The engine",
-            middle: "(make)",
-            rightSide: "a strange noise.",
+            prompt: {
+                twoSided: true,
+                leftSide: "The engine",
+                middle: "(make)",
+                rightSide: "a strange noise."
+            },
             minWordCount: 2,
             maxWordCount: 2,
             correctAuxiliars: [["is"]],
@@ -444,9 +537,12 @@ const completePresentContinuousPositiveStatementVerbForm = [
         id: "47f49e11b49c9bd1f062a39be0f0d4d3",
         type: "completePresentContinuousPositiveStatementVerbForm",
         data: {
-            leftSide: "They",
-            middle: "(watch)",
-            rightSide: "the sunset from the balcony.",
+            prompt: {
+                twoSided: true,
+                leftSide: "They",
+                middle: "(watch)",
+                rightSide: "the sunset from the balcony."
+            },
             minWordCount: 2,
             maxWordCount: 2,
             correctAuxiliars: [["are"]],
@@ -458,9 +554,12 @@ const completePresentContinuousPositiveStatementVerbForm = [
         id: "89b5bf6ebe004cd649e3fe18527ab407",
         type: "completePresentContinuousPositiveStatementVerbForm",
         data: {
-            leftSide: "He",
-            middle: "(practice)",
-            rightSide: "the piano for the concert.",
+            prompt: {
+                twoSided: true,
+                leftSide: "He",
+                middle: "(practice)",
+                rightSide: "the piano for the concert."
+            },
             minWordCount: 2,
             maxWordCount: 2,
             correctAuxiliars: [["is"]],
@@ -477,9 +576,12 @@ const completePresentContinuousPositiveStatementVerbForm = [
         id: "1a30081b3d10a2a01ac6a5e1c46f3e43",
         type: "completePresentContinuousPositiveStatementVerbForm",
         data: {
-            leftSide: "I",
-            middle: "(think)",
-            rightSide: "about moving to a new city.",
+            prompt: {
+                twoSided: true,
+                leftSide: "I",
+                middle: "(think)",
+                rightSide: "about moving to a new city."
+            },
             minWordCount: 2,
             maxWordCount: 2,
             correctAuxiliars: [["am"]],
@@ -491,9 +593,12 @@ const completePresentContinuousPositiveStatementVerbForm = [
         id: "a2e19752914b613facbb4357c5222256",
         type: "completePresentContinuousPositiveStatementVerbForm",
         data: {
-            leftSide: "The flowers",
-            middle: "(grow)",
-            rightSide: "quickly in this weather.",
+            prompt: {
+                twoSided: true,
+                leftSide: "The flowers",
+                middle: "(grow)",
+                rightSide: "quickly in this weather."
+            },
             minWordCount: 2,
             maxWordCount: 2,
             correctAuxiliars: [["are"]],
@@ -505,9 +610,12 @@ const completePresentContinuousPositiveStatementVerbForm = [
         id: "bdb567b6e3efdbf44378933ff76f9fe9",
         type: "completePresentContinuousPositiveStatementVerbForm",
         data: {
-            leftSide: "She",
-            middle: "(read)",
-            rightSide: "an interesting novel.",
+            prompt: {
+                twoSided: true,
+                leftSide: "She",
+                middle: "(read)",
+                rightSide: "an interesting novel."
+            },
             minWordCount: 2,
             maxWordCount: 2,
             correctAuxiliars: [["is"]],
@@ -519,9 +627,12 @@ const completePresentContinuousPositiveStatementVerbForm = [
         id: "fa7cdb978a043f0f84c0459faf59923f",
         type: "completePresentContinuousPositiveStatementVerbForm",
         data: {
-            leftSide: "We",
-            middle: "(plan)",
-            rightSide: "a surprise party for him.",
+            prompt: {
+                twoSided: true,
+                leftSide: "We",
+                middle: "(plan)",
+                rightSide: "a surprise party for him."
+            },
             minWordCount: 2,
             maxWordCount: 2,
             correctAuxiliars: [["are"]],
@@ -533,9 +644,12 @@ const completePresentContinuousPositiveStatementVerbForm = [
         id: "bb01a799df4e6a5df8de013d8c8c2738",
         type: "completePresentContinuousPositiveStatementVerbForm",
         data: {
-            leftSide: "The gardener",
-            middle: "(water)",
-            rightSide: "the plants in the greenhouse.",
+            prompt: {
+                twoSided: true,
+                leftSide: "The gardener",
+                middle: "(water)",
+                rightSide: "the plants in the greenhouse."
+            },
             minWordCount: 2,
             maxWordCount: 2,
             correctAuxiliars: [["is"]],
@@ -547,9 +661,12 @@ const completePresentContinuousPositiveStatementVerbForm = [
         id: "b83d3839215e9ec76fe8e5bdbbb9c0dd",
         type: "completePresentContinuousPositiveStatementVerbForm",
         data: {
-            leftSide: "I",
-            middle: "(try)",
-            rightSide: "to fix the internet connection.",
+            prompt: {
+                twoSided: true,
+                leftSide: "I",
+                middle: "(try)",
+                rightSide: "to fix the internet connection."
+            },
             minWordCount: 2,
             maxWordCount: 2,
             correctAuxiliars: [["am"]],
@@ -561,9 +678,12 @@ const completePresentContinuousPositiveStatementVerbForm = [
         id: "9c9ba093c8c58311062681795960d89e",
         type: "completePresentContinuousPositiveStatementVerbForm",
         data: {
-            leftSide: "The team",
-            middle: "(win)",
-            rightSide: "the match at the moment.",
+            prompt: {
+                twoSided: true,
+                leftSide: "The team",
+                middle: "(win)",
+                rightSide: "the match at the moment."
+            },
             minWordCount: 2,
             maxWordCount: 2,
             correctAuxiliars: [["is"]],
@@ -575,9 +695,12 @@ const completePresentContinuousPositiveStatementVerbForm = [
         id: "e41396aa9bcd0068a7aa33b75324493f",
         type: "completePresentContinuousPositiveStatementVerbForm",
         data: {
-            leftSide: "You",
-            middle: "(drink)",
-            rightSide: "too much coffee today.",
+            prompt: {
+                twoSided: true,
+                leftSide: "You",
+                middle: "(drink)",
+                rightSide: "too much coffee today."
+            },
             minWordCount: 2,
             maxWordCount: 2,
             correctAuxiliars: [["are"]],
@@ -589,9 +712,12 @@ const completePresentContinuousPositiveStatementVerbForm = [
         id: "6fe58ece32223ec71382e4b5de2fb341",
         type: "completePresentContinuousPositiveStatementVerbForm",
         data: {
-            leftSide: "The company",
-            middle: "(expand)",
-            rightSide: "its operations abroad.",
+            prompt: {
+                twoSided: true,
+                leftSide: "The company",
+                middle: "(expand)",
+                rightSide: "its operations abroad."
+            },
             minWordCount: 2,
             maxWordCount: 2,
             correctAuxiliars: [["is"]],
@@ -603,9 +729,12 @@ const completePresentContinuousPositiveStatementVerbForm = [
         id: "85c92b50bfe8973f94697e97759a0a4c",
         type: "completePresentContinuousPositiveStatementVerbForm",
         data: {
-            leftSide: "I",
-            middle: "(look)",
-            rightSide: "for my car keys.",
+            prompt: {
+                twoSided: true,
+                leftSide: "I",
+                middle: "(look)",
+                rightSide: "for my car keys."
+            },
             minWordCount: 2,
             maxWordCount: 2,
             correctAuxiliars: [["am"]],
@@ -617,9 +746,12 @@ const completePresentContinuousPositiveStatementVerbForm = [
         id: "1610bfa729dfa2a50c858f7886d5f7f4",
         type: "completePresentContinuousPositiveStatementVerbForm",
         data: {
-            leftSide: "The neighbors",
-            middle: "(argue)",
-            rightSide: "about the fence again.",
+            prompt: {
+                twoSided: true,
+                leftSide: "The neighbors",
+                middle: "(argue)",
+                rightSide: "about the fence again."
+            },
             minWordCount: 2,
             maxWordCount: 2,
             correctAuxiliars: [["are"]],
@@ -631,9 +763,12 @@ const completePresentContinuousPositiveStatementVerbForm = [
         id: "497bd396789e404ec32178666d113c25",
         type: "completePresentContinuousPositiveStatementVerbForm",
         data: {
-            leftSide: "He",
-            middle: "(test)",
-            rightSide: "the new prototype in the lab.",
+            prompt: {
+                twoSided: true,
+                leftSide: "He",
+                middle: "(test)",
+                rightSide: "the new prototype in the lab."
+            },
             minWordCount: 2,
             maxWordCount: 2,
             correctAuxiliars: [["is"]],
@@ -645,9 +780,12 @@ const completePresentContinuousPositiveStatementVerbForm = [
         id: "c8b99a1dd4b691d7592284b7c7f176e7",
         type: "completePresentContinuousPositiveStatementVerbForm",
         data: {
-            leftSide: "We",
-            middle: "(visit)",
-            rightSide: "the museum this afternoon.",
+            prompt: {
+                twoSided: true,
+                leftSide: "We",
+                middle: "(visit)",
+                rightSide: "the museum this afternoon."
+            },
             minWordCount: 2,
             maxWordCount: 2,
             correctAuxiliars: [["are"]],
@@ -659,9 +797,12 @@ const completePresentContinuousPositiveStatementVerbForm = [
         id: "5914ae1ba4a7f39365d39f307e31b271",
         type: "completePresentContinuousPositiveStatementVerbForm",
         data: {
-            leftSide: "The rain",
-            middle: "(stop)",
-            rightSide: "gradually.",
+            prompt: {
+                twoSided: true,
+                leftSide: "The rain",
+                middle: "(stop)",
+                rightSide: "gradually."
+            },
             minWordCount: 2,
             maxWordCount: 2,
             correctAuxiliars: [["is"]],
@@ -673,9 +814,12 @@ const completePresentContinuousPositiveStatementVerbForm = [
         id: "9024266648ab54ab3bfc9713691164b1",
         type: "completePresentContinuousPositiveStatementVerbForm",
         data: {
-            leftSide: "I",
-            middle: "(enjoy)",
-            rightSide: "this beautiful evening.",
+            prompt: {
+                twoSided: true,
+                leftSide: "I",
+                middle: "(enjoy)",
+                rightSide: "this beautiful evening."
+            },
             minWordCount: 2,
             maxWordCount: 2,
             correctAuxiliars: [["am"]],
@@ -687,9 +831,12 @@ const completePresentContinuousPositiveStatementVerbForm = [
         id: "c51ee64295e3b0039ce3fc5d8670563a",
         type: "completePresentContinuousPositiveStatementVerbForm",
         data: {
-            leftSide: "The manager",
-            middle: "(review)",
-            rightSide: "the sales report.",
+            prompt: {
+                twoSided: true,
+                leftSide: "The manager",
+                middle: "(review)",
+                rightSide: "the sales report."
+            },
             minWordCount: 2,
             maxWordCount: 2,
             correctAuxiliars: [["is"]],
@@ -701,9 +848,12 @@ const completePresentContinuousPositiveStatementVerbForm = [
         id: "4802476fd5ca22ba0e2f6cab35e4c694",
         type: "completePresentContinuousPositiveStatementVerbForm",
         data: {
-            leftSide: "They",
-            middle: "(dance)",
-            rightSide: "to the music at the club.",
+            prompt: {
+                twoSided: true,
+                leftSide: "They",
+                middle: "(dance)",
+                rightSide: "to the music at the club."
+            },
             minWordCount: 2,
             maxWordCount: 2,
             correctAuxiliars: [["are"]],
@@ -715,9 +865,12 @@ const completePresentContinuousPositiveStatementVerbForm = [
         id: "2c790274b3915bcbf77766a370c4b51e",
         type: "completePresentContinuousPositiveStatementVerbForm",
         data: {
-            leftSide: "She",
-            middle: "(paint)",
-            rightSide: "the kitchen walls blue.",
+            prompt: {
+                twoSided: true,
+                leftSide: "She",
+                middle: "(paint)",
+                rightSide: "the kitchen walls blue."
+            },
             minWordCount: 2,
             maxWordCount: 2,
             correctAuxiliars: [["is"]],
@@ -729,9 +882,12 @@ const completePresentContinuousPositiveStatementVerbForm = [
         id: "40b82e877057aa1b8e93a8e1a5472d9f",
         type: "completePresentContinuousPositiveStatementVerbForm",
         data: {
-            leftSide: "I",
-            middle: "(wait)",
-            rightSide: "for my friend to call.",
+            prompt: {
+                twoSided: true,
+                leftSide: "I",
+                middle: "(wait)",
+                rightSide: "for my friend to call."
+            },
             minWordCount: 2,
             maxWordCount: 2,
             correctAuxiliars: [["am"]],
@@ -743,9 +899,12 @@ const completePresentContinuousPositiveStatementVerbForm = [
         id: "baf1cde4b14a7d56562c8df28232f8d7",
         type: "completePresentContinuousPositiveStatementVerbForm",
         data: {
-            leftSide: "The kids",
-            middle: "(play)",
-            rightSide: "video games in their room.",
+            prompt: {
+                twoSided: true,
+                leftSide: "The kids",
+                middle: "(play)",
+                rightSide: "video games in their room."
+            },
             minWordCount: 2,
             maxWordCount: 2,
             correctAuxiliars: [["are"]],
@@ -757,9 +916,12 @@ const completePresentContinuousPositiveStatementVerbForm = [
         id: "fbeebea42f9651a845915ed3a5efd15f",
         type: "completePresentContinuousPositiveStatementVerbForm",
         data: {
-            leftSide: "He",
-            middle: "(cook)",
-            rightSide: "lunch for everyone.",
+            prompt: {
+                twoSided: true,
+                leftSide: "He",
+                middle: "(cook)",
+                rightSide: "lunch for everyone."
+            },
             minWordCount: 2,
             maxWordCount: 2,
             correctAuxiliars: [["is"]],
@@ -771,9 +933,12 @@ const completePresentContinuousPositiveStatementVerbForm = [
         id: "9131a925b5d59b1466c53fc663198ad2",
         type: "completePresentContinuousPositiveStatementVerbForm",
         data: {
-            leftSide: "We",
-            middle: "(walk)",
-            rightSide: "the dog along the beach.",
+            prompt: {
+                twoSided: true,
+                leftSide: "We",
+                middle: "(walk)",
+                rightSide: "the dog along the beach."
+            },
             minWordCount: 2,
             maxWordCount: 2,
             correctAuxiliars: [["are"]],
@@ -785,9 +950,12 @@ const completePresentContinuousPositiveStatementVerbForm = [
         id: "3f67584e494eac1a0ed8033618d15995",
         type: "completePresentContinuousPositiveStatementVerbForm",
         data: {
-            leftSide: "The stars",
-            middle: "(twinkle)",
-            rightSide: "in the night sky.",
+            prompt: {
+                twoSided: true,
+                leftSide: "The stars",
+                middle: "(twinkle)",
+                rightSide: "in the night sky."
+            },
             minWordCount: 2,
             maxWordCount: 2,
             correctAuxiliars: [["are"]],
@@ -799,9 +967,12 @@ const completePresentContinuousPositiveStatementVerbForm = [
         id: "bd76e5aeee03359388a80539e5ea55ce",
         type: "completePresentContinuousPositiveStatementVerbForm",
         data: {
-            leftSide: "I",
-            middle: "(write)",
-            rightSide: "a blog post about travel.",
+            prompt: {
+                twoSided: true,
+                leftSide: "I",
+                middle: "(write)",
+                rightSide: "a blog post about travel."
+            },
             minWordCount: 2,
             maxWordCount: 2,
             correctAuxiliars: [["am"]],
@@ -813,9 +984,12 @@ const completePresentContinuousPositiveStatementVerbForm = [
         id: "0e3e4cd9184e83dee87bc27a936f625b",
         type: "completePresentContinuousPositiveStatementVerbForm",
         data: {
-            leftSide: "The fire",
-            middle: "(burn)",
-            rightSide: "brightly in the fireplace.",
+            prompt: {
+                twoSided: true,
+                leftSide: "The fire",
+                middle: "(burn)",
+                rightSide: "brightly in the fireplace."
+            },
             minWordCount: 2,
             maxWordCount: 2,
             correctAuxiliars: [["is"]],
@@ -827,9 +1001,12 @@ const completePresentContinuousPositiveStatementVerbForm = [
         id: "9efddf30c71020285bf853e63b72defc",
         type: "completePresentContinuousPositiveStatementVerbForm",
         data: {
-            leftSide: "You",
-            middle: "(get)",
-            rightSide: "better at English every day.",
+            prompt: {
+                twoSided: true,
+                leftSide: "You",
+                middle: "(get)",
+                rightSide: "better at English every day."
+            },
             minWordCount: 2,
             maxWordCount: 2,
             correctAuxiliars: [["are"]],
@@ -841,9 +1018,12 @@ const completePresentContinuousPositiveStatementVerbForm = [
         id: "b8c98acccce6f73a729d2ed8d3b2f11a",
         type: "completePresentContinuousPositiveStatementVerbForm",
         data: {
-            leftSide: "The plane",
-            middle: "(fly)",
-            rightSide: "over the Atlantic Ocean.",
+            prompt: {
+                twoSided: true,
+                leftSide: "The plane",
+                middle: "(fly)",
+                rightSide: "over the Atlantic Ocean."
+            },
             minWordCount: 2,
             maxWordCount: 2,
             correctAuxiliars: [["is"]],
@@ -855,9 +1035,12 @@ const completePresentContinuousPositiveStatementVerbForm = [
         id: "0cec7bdd478804019714d6c12fdfbf25",
         type: "completePresentContinuousPositiveStatementVerbForm",
         data: {
-            leftSide: "I",
-            middle: "(clean)",
-            rightSide: "the windows.",
+            prompt: {
+                twoSided: true,
+                leftSide: "I",
+                middle: "(clean)",
+                rightSide: "the windows."
+            },
             minWordCount: 2,
             maxWordCount: 2,
             correctAuxiliars: [["am"]],
@@ -869,9 +1052,12 @@ const completePresentContinuousPositiveStatementVerbForm = [
         id: "bae0f582f9266e0170691159bfeb7d08",
         type: "completePresentContinuousPositiveStatementVerbForm",
         data: {
-            leftSide: "The students",
-            middle: "(write)",
-            rightSide: "their essays.",
+            prompt: {
+                twoSided: true,
+                leftSide: "The students",
+                middle: "(write)",
+                rightSide: "their essays."
+            },
             minWordCount: 2,
             maxWordCount: 2,
             correctAuxiliars: [["are"]],
@@ -883,9 +1069,12 @@ const completePresentContinuousPositiveStatementVerbForm = [
         id: "8734352343fd3549b034164298b125ba",
         type: "completePresentContinuousPositiveStatementVerbForm",
         data: {
-            leftSide: "He",
-            middle: "(smoke)",
-            rightSide: "outside.",
+            prompt: {
+                twoSided: true,
+                leftSide: "He",
+                middle: "(smoke)",
+                rightSide: "outside."
+            },
             minWordCount: 2,
             maxWordCount: 2,
             correctAuxiliars: [["is"]],
@@ -897,9 +1086,12 @@ const completePresentContinuousPositiveStatementVerbForm = [
         id: "364a442cf13987836feb943b023c69d1",
         type: "completePresentContinuousPositiveStatementVerbForm",
         data: {
-            leftSide: "We",
-            middle: "(have)",
-            rightSide: "a great time.",
+            prompt: {
+                twoSided: true,
+                leftSide: "We",
+                middle: "(have)",
+                rightSide: "a great time."
+            },
             minWordCount: 2,
             maxWordCount: 2,
             correctAuxiliars: [["are"]],
@@ -911,9 +1103,12 @@ const completePresentContinuousPositiveStatementVerbForm = [
         id: "91e956fc2c3a804662f2b2d2f03f799e",
         type: "completePresentContinuousPositiveStatementVerbForm",
         data: {
-            leftSide: "The clock",
-            middle: "(tick)",
-            rightSide: "on the wall.",
+            prompt: {
+                twoSided: true,
+                leftSide: "The clock",
+                middle: "(tick)",
+                rightSide: "on the wall."
+            },
             minWordCount: 2,
             maxWordCount: 2,
             correctAuxiliars: [["is"]],
@@ -925,9 +1120,12 @@ const completePresentContinuousPositiveStatementVerbForm = [
         id: "a2dc6357d71ef33248eb35df9e2e7b65",
         type: "completePresentContinuousPositiveStatementVerbForm",
         data: {
-            leftSide: "I",
-            middle: "(prepare)",
-            rightSide: "for the meeting.",
+            prompt: {
+                twoSided: true,
+                leftSide: "I",
+                middle: "(prepare)",
+                rightSide: "for the meeting."
+            },
             minWordCount: 2,
             maxWordCount: 2,
             correctAuxiliars: [["am"]],
@@ -939,9 +1137,12 @@ const completePresentContinuousPositiveStatementVerbForm = [
         id: "944913af1fcd57e24041586e3c14066e",
         type: "completePresentContinuousPositiveStatementVerbForm",
         data: {
-            leftSide: "She",
-            middle: "(iron)",
-            rightSide: "her clothes.",
+            prompt: {
+                twoSided: true,
+                leftSide: "She",
+                middle: "(iron)",
+                rightSide: "her clothes."
+            },
             minWordCount: 2,
             maxWordCount: 2,
             correctAuxiliars: [["is"]],
@@ -953,9 +1154,12 @@ const completePresentContinuousPositiveStatementVerbForm = [
         id: "65dbb4a7b1a1f00573e8d5695fb53200",
         type: "completePresentContinuousPositiveStatementVerbForm",
         data: {
-            leftSide: "They",
-            middle: "(cut)",
-            rightSide: "the grass.",
+            prompt: {
+                twoSided: true,
+                leftSide: "They",
+                middle: "(cut)",
+                rightSide: "the grass."
+            },
             minWordCount: 2,
             maxWordCount: 2,
             correctAuxiliars: [["are"]],
@@ -967,9 +1171,12 @@ const completePresentContinuousPositiveStatementVerbForm = [
         id: "4dc8e56ddfe438746fd3ad268c00c03f",
         type: "completePresentContinuousPositiveStatementVerbForm",
         data: {
-            leftSide: "The dog",
-            middle: "(bark)",
-            rightSide: "at the mailman.",
+            prompt: {
+                twoSided: true,
+                leftSide: "The dog",
+                middle: "(bark)",
+                rightSide: "at the mailman."
+            },
             minWordCount: 2,
             maxWordCount: 2,
             correctAuxiliars: [["is"]],
@@ -981,9 +1188,12 @@ const completePresentContinuousPositiveStatementVerbForm = [
         id: "ca7f76ef8d90c6f11ea1be5bf13c51ff",
         type: "completePresentContinuousPositiveStatementVerbForm",
         data: {
-            leftSide: "We",
-            middle: "(organize)",
-            rightSide: " our bookshelves.",
+            prompt: {
+                twoSided: true,
+                leftSide: "We",
+                middle: "(organize)",
+                rightSide: " our bookshelves."
+            },
             minWordCount: 2,
             maxWordCount: 2,
             correctAuxiliars: [["are"]],
@@ -1000,9 +1210,12 @@ const completePresentContinuousPositiveStatementVerbForm = [
         id: "af328aa7b5db7dec6b38679bd2e9a8ff",
         type: "completePresentContinuousPositiveStatementVerbForm",
         data: {
-            leftSide: "I",
-            middle: "(wash)",
-            rightSide: "my hair.",
+            prompt: {
+                twoSided: true,
+                leftSide: "I",
+                middle: "(wash)",
+                rightSide: "my hair."
+            },
             minWordCount: 2,
             maxWordCount: 2,
             correctAuxiliars: [["am"]],
@@ -1014,9 +1227,12 @@ const completePresentContinuousPositiveStatementVerbForm = [
         id: "8247ab8893009cc660839e98d7382497",
         type: "completePresentContinuousPositiveStatementVerbForm",
         data: {
-            leftSide: "The artist",
-            middle: "(create)",
-            rightSide: "a masterpiece.",
+            prompt: {
+                twoSided: true,
+                leftSide: "The artist",
+                middle: "(create)",
+                rightSide: "a masterpiece."
+            },
             minWordCount: 2,
             maxWordCount: 2,
             correctAuxiliars: [["is"]],
@@ -1028,9 +1244,12 @@ const completePresentContinuousPositiveStatementVerbForm = [
         id: "051175a79aa4c40a852a7ba2ac4ac634",
         type: "completePresentContinuousPositiveStatementVerbForm",
         data: {
-            leftSide: "You",
-            middle: "(buy)",
-            rightSide: "too many things.",
+            prompt: {
+                twoSided: true,
+                leftSide: "You",
+                middle: "(buy)",
+                rightSide: "too many things."
+            },
             minWordCount: 2,
             maxWordCount: 2,
             correctAuxiliars: [["are"]],
@@ -1042,9 +1261,12 @@ const completePresentContinuousPositiveStatementVerbForm = [
         id: "fece69c65c23e18d2a15dce5d33af17e",
         type: "completePresentContinuousPositiveStatementVerbForm",
         data: {
-            leftSide: "He",
-            middle: "(exercise)",
-            rightSide: "at the gym.",
+            prompt: {
+                twoSided: true,
+                leftSide: "He",
+                middle: "(exercise)",
+                rightSide: "at the gym."
+            },
             minWordCount: 2,
             maxWordCount: 2,
             correctAuxiliars: [["is"]],
@@ -1061,9 +1283,12 @@ const completePresentContinuousPositiveStatementVerbForm = [
         id: "f66a0f327e1e8629dc0ee0804c613a07",
         type: "completePresentContinuousPositiveStatementVerbForm",
         data: {
-            leftSide: "The audience",
-            middle: "(clap)",
-            rightSide: "after the performance.",
+            prompt: {
+                twoSided: true,
+                leftSide: "The audience",
+                middle: "(clap)",
+                rightSide: "after the performance."
+            },
             minWordCount: 2,
             maxWordCount: 2,
             correctAuxiliars: [["is"]],
@@ -1075,9 +1300,12 @@ const completePresentContinuousPositiveStatementVerbForm = [
         id: "9e34c56a22dd8c4a698ced154a7d25c4",
         type: "completePresentContinuousPositiveStatementVerbForm",
         data: {
-            leftSide: "We",
-            middle: "(watch)",
-            rightSide: "a movie.",
+            prompt: {
+                twoSided: true,
+                leftSide: "We",
+                middle: "(watch)",
+                rightSide: "a movie."
+            },
             minWordCount: 2,
             maxWordCount: 2,
             correctAuxiliars: [["are"]],
@@ -1089,9 +1317,12 @@ const completePresentContinuousPositiveStatementVerbForm = [
         id: "c8a60095731a8dbe8d1f7de7dffafbde",
         type: "completePresentContinuousPositiveStatementVerbForm",
         data: {
-            leftSide: "I",
-            middle: "(sit)",
-            rightSide: "on the sofa.",
+            prompt: {
+                twoSided: true,
+                leftSide: "I",
+                middle: "(sit)",
+                rightSide: "on the sofa."
+            },
             minWordCount: 2,
             maxWordCount: 2,
             correctAuxiliars: [["am"]],
@@ -1103,9 +1334,12 @@ const completePresentContinuousPositiveStatementVerbForm = [
         id: "63033f417c9459a4b83362d6f715c4ab",
         type: "completePresentContinuousPositiveStatementVerbForm",
         data: {
-            leftSide: "The cat",
-            middle: "(lick)",
-            rightSide: "its paws.",
+            prompt: {
+                twoSided: true,
+                leftSide: "The cat",
+                middle: "(lick)",
+                rightSide: "its paws."
+            },
             minWordCount: 2,
             maxWordCount: 2,
             correctAuxiliars: [["is"]],
@@ -1117,9 +1351,12 @@ const completePresentContinuousPositiveStatementVerbForm = [
         id: "b6136e86983dcb16e3ed8754d5c525a2",
         type: "completePresentContinuousPositiveStatementVerbForm",
         data: {
-            leftSide: "She",
-            middle: "(knit)",
-            rightSide: "a sweater.",
+            prompt: {
+                twoSided: true,
+                leftSide: "She",
+                middle: "(knit)",
+                rightSide: "a sweater."
+            },
             minWordCount: 2,
             maxWordCount: 2,
             correctAuxiliars: [["is"]],
@@ -1131,9 +1368,12 @@ const completePresentContinuousPositiveStatementVerbForm = [
         id: "7a9d051e09a1a46f5b8de7e9d0804639",
         type: "completePresentContinuousPositiveStatementVerbForm",
         data: {
-            leftSide: "They",
-            middle: "(sell)",
-            rightSide: "their house.",
+            prompt: {
+                twoSided: true,
+                leftSide: "They",
+                middle: "(sell)",
+                rightSide: "their house."
+            },
             minWordCount: 2,
             maxWordCount: 2,
             correctAuxiliars: [["are"]],
@@ -1145,9 +1385,12 @@ const completePresentContinuousPositiveStatementVerbForm = [
         id: "4765327ca2758957086130494c68cda0",
         type: "completePresentContinuousPositiveStatementVerbForm",
         data: {
-            leftSide: "I",
-            middle: "(pour)",
-            rightSide: "some juice.",
+            prompt: {
+                twoSided: true,
+                leftSide: "I",
+                middle: "(pour)",
+                rightSide: "some juice."
+            },
             minWordCount: 2,
             maxWordCount: 2,
             correctAuxiliars: [["am"]],
@@ -1159,9 +1402,12 @@ const completePresentContinuousPositiveStatementVerbForm = [
         id: "653232d5d5cc2aee70765984480a9c4a",
         type: "completePresentContinuousPositiveStatementVerbForm",
         data: {
-            leftSide: "He",
-            middle: "(shave)",
-            rightSide: "in the bathroom.",
+            prompt: {
+                twoSided: true,
+                leftSide: "He",
+                middle: "(shave)",
+                rightSide: "in the bathroom."
+            },
             minWordCount: 2,
             maxWordCount: 2,
             correctAuxiliars: [["is"]],
@@ -1173,9 +1419,12 @@ const completePresentContinuousPositiveStatementVerbForm = [
         id: "0a7cd3ec8f835e8ccb67ba426dd84046",
         type: "completePresentContinuousPositiveStatementVerbForm",
         data: {
-            leftSide: "We",
-            middle: "(wait)",
-            rightSide: "for the elevator.",
+            prompt: {
+                twoSided: true,
+                leftSide: "We",
+                middle: "(wait)",
+                rightSide: "for the elevator."
+            },
             minWordCount: 2,
             maxWordCount: 2,
             correctAuxiliars: [["are"]],
@@ -1187,9 +1436,12 @@ const completePresentContinuousPositiveStatementVerbForm = [
         id: "bf5d7dd50c9067ce3e5f4460e3f31153",
         type: "completePresentContinuousPositiveStatementVerbForm",
         data: {
-            leftSide: "The leaves",
-            middle: "(fall)",
-            rightSide: "from the trees.",
+            prompt: {
+                twoSided: true,
+                leftSide: "The leaves",
+                middle: "(fall)",
+                rightSide: "from the trees."
+            },
             minWordCount: 2,
             maxWordCount: 2,
             correctAuxiliars: [["are"]],
@@ -1201,9 +1453,12 @@ const completePresentContinuousPositiveStatementVerbForm = [
         id: "70e04bd94370674ac84578a22a2e027e",
         type: "completePresentContinuousPositiveStatementVerbForm",
         data: {
-            leftSide: "I",
-            middle: "(check)",
-            rightSide: "my emails.",
+            prompt: {
+                twoSided: true,
+                leftSide: "I",
+                middle: "(check)",
+                rightSide: "my emails."
+            },
             minWordCount: 2,
             maxWordCount: 2,
             correctAuxiliars: [["am"]],
@@ -1215,9 +1470,12 @@ const completePresentContinuousPositiveStatementVerbForm = [
         id: "e33d29f70b708342b3051fa9ff5c4c7d",
         type: "completePresentContinuousPositiveStatementVerbForm",
         data: {
-            leftSide: "She",
-            middle: "(solve)",
-            rightSide: "a puzzle.",
+            prompt: {
+                twoSided: true,
+                leftSide: "She",
+                middle: "(solve)",
+                rightSide: "a puzzle."
+            },
             minWordCount: 2,
             maxWordCount: 2,
             correctAuxiliars: [["is"]],
@@ -1229,9 +1487,12 @@ const completePresentContinuousPositiveStatementVerbForm = [
         id: "76791bb665da1244af543e77e97cfe46",
         type: "completePresentContinuousPositiveStatementVerbForm",
         data: {
-            leftSide: "The moon",
-            middle: "(rise)",
-            rightSide: "over the horizon.",
+            prompt: {
+                twoSided: true,
+                leftSide: "The moon",
+                middle: "(rise)",
+                rightSide: "over the horizon."
+            },
             minWordCount: 2,
             maxWordCount: 2,
             correctAuxiliars: [["is"]],
@@ -1243,9 +1504,12 @@ const completePresentContinuousPositiveStatementVerbForm = [
         id: "701389b1dba512734ab44ebb8885a481",
         type: "completePresentContinuousPositiveStatementVerbForm",
         data: {
-            leftSide: "They",
-            middle: "(build)",
-            rightSide: "a sandcastle.",
+            prompt: {
+                twoSided: true,
+                leftSide: "They",
+                middle: "(build)",
+                rightSide: "a sandcastle."
+            },
             minWordCount: 2,
             maxWordCount: 2,
             correctAuxiliars: [["are"]],
@@ -1257,9 +1521,12 @@ const completePresentContinuousPositiveStatementVerbForm = [
         id: "9b3b672af30a749e6293ac96c82b1897",
         type: "completePresentContinuousPositiveStatementVerbForm",
         data: {
-            leftSide: "I",
-            middle: "(fix)",
-            rightSide: "the leaky faucet.",
+            prompt: {
+                twoSided: true,
+                leftSide: "I",
+                middle: "(fix)",
+                rightSide: "the leaky faucet."
+            },
             minWordCount: 2,
             maxWordCount: 2,
             correctAuxiliars: [["am"]],
@@ -1271,9 +1538,12 @@ const completePresentContinuousPositiveStatementVerbForm = [
         id: "ed8f26f16084f51ab7e0d40b837682b1",
         type: "completePresentContinuousPositiveStatementVerbForm",
         data: {
-            leftSide: "He",
-            middle: "(ride)",
-            rightSide: "his motorcycle.",
+            prompt: {
+                twoSided: true,
+                leftSide: "He",
+                middle: "(ride)",
+                rightSide: "his motorcycle."
+            },
             minWordCount: 2,
             maxWordCount: 2,
             correctAuxiliars: [["is"]],
@@ -1285,9 +1555,12 @@ const completePresentContinuousPositiveStatementVerbForm = [
         id: "56e635225d32fecf037a361b318cfa97",
         type: "completePresentContinuousPositiveStatementVerbForm",
         data: {
-            leftSide: "We",
-            middle: "(collect)",
-            rightSide: "seashells.",
+            prompt: {
+                twoSided: true,
+                leftSide: "We",
+                middle: "(collect)",
+                rightSide: "seashells."
+            },
             minWordCount: 2,
             maxWordCount: 2,
             correctAuxiliars: [["are"]],
@@ -1299,9 +1572,12 @@ const completePresentContinuousPositiveStatementVerbForm = [
         id: "41cdca6e020f284e6f08781b3f77bd42",
         type: "completePresentContinuousPositiveStatementVerbForm",
         data: {
-            leftSide: "The teacher",
-            middle: "(explain)",
-            rightSide: "the lesson.",
+            prompt: {
+                twoSided: true,
+                leftSide: "The teacher",
+                middle: "(explain)",
+                rightSide: "the lesson."
+            },
             minWordCount: 2,
             maxWordCount: 2,
             correctAuxiliars: [["is"]],
@@ -1313,9 +1589,12 @@ const completePresentContinuousPositiveStatementVerbForm = [
         id: "1e3ebb450929feb7c669a8360e702a0b",
         type: "completePresentContinuousPositiveStatementVerbForm",
         data: {
-            leftSide: "I",
-            middle: "(dry)",
-            rightSide: "the dishes.",
+            prompt: {
+                twoSided: true,
+                leftSide: "I",
+                middle: "(dry)",
+                rightSide: "the dishes."
+            },
             minWordCount: 2,
             maxWordCount: 2,
             correctAuxiliars: [["am"]],
@@ -1327,9 +1606,12 @@ const completePresentContinuousPositiveStatementVerbForm = [
         id: "6a0e43fe6065bde3617e26551862e547",
         type: "completePresentContinuousPositiveStatementVerbForm",
         data: {
-            leftSide: "She",
-            middle: "(feed)",
-            rightSide: "the rabbits.",
+            prompt: {
+                twoSided: true,
+                leftSide: "She",
+                middle: "(feed)",
+                rightSide: "the rabbits."
+            },
             minWordCount: 2,
             maxWordCount: 2,
             correctAuxiliars: [["is"]],
@@ -1341,9 +1623,12 @@ const completePresentContinuousPositiveStatementVerbForm = [
         id: "35cd90bd4ae3571d5f0fae98896bbeeb",
         type: "completePresentContinuousPositiveStatementVerbForm",
         data: {
-            leftSide: "They",
-            middle: "(laugh)",
-            rightSide: "at the joke.",
+            prompt: {
+                twoSided: true,
+                leftSide: "They",
+                middle: "(laugh)",
+                rightSide: "at the joke."
+            },
             minWordCount: 2,
             maxWordCount: 2,
             correctAuxiliars: [["are"]],
@@ -1355,9 +1640,12 @@ const completePresentContinuousPositiveStatementVerbForm = [
         id: "894315e7597805eb533b16ee550453ef",
         type: "completePresentContinuousPositiveStatementVerbForm",
         data: {
-            leftSide: "I",
-            middle: "(send)",
-            rightSide: "a text message.",
+            prompt: {
+                twoSided: true,
+                leftSide: "I",
+                middle: "(send)",
+                rightSide: "a text message."
+            },
             minWordCount: 2,
             maxWordCount: 2,
             correctAuxiliars: [["am"]],
@@ -1369,9 +1657,12 @@ const completePresentContinuousPositiveStatementVerbForm = [
         id: "cd53d16021ea3284155c9f5bb63b832e",
         type: "completePresentContinuousPositiveStatementVerbForm",
         data: {
-            leftSide: "He",
-            middle: "(mop)",
-            rightSide: "the floor.",
+            prompt: {
+                twoSided: true,
+                leftSide: "He",
+                middle: "(mop)",
+                rightSide: "the floor."
+            },
             minWordCount: 2,
             maxWordCount: 2,
             correctAuxiliars: [["is"]],
@@ -1383,9 +1674,12 @@ const completePresentContinuousPositiveStatementVerbForm = [
         id: "a06259b72118ae1f608c78e54d527342",
         type: "completePresentContinuousPositiveStatementVerbForm",
         data: {
-            leftSide: "We",
-            middle: "(talk)",
-            rightSide: "about our future.",
+            prompt: {
+                twoSided: true,
+                leftSide: "We",
+                middle: "(talk)",
+                rightSide: "about our future."
+            },
             minWordCount: 2,
             maxWordCount: 2,
             correctAuxiliars: [["are"]],
@@ -1397,9 +1691,12 @@ const completePresentContinuousPositiveStatementVerbForm = [
         id: "316731e90fcaa721d89706aa843575ed",
         type: "completePresentContinuousPositiveStatementVerbForm",
         data: {
-            leftSide: "The juice",
-            middle: "(drip)",
-            rightSide: "on the table.",
+            prompt: {
+                twoSided: true,
+                leftSide: "The juice",
+                middle: "(drip)",
+                rightSide: "on the table."
+            },
             minWordCount: 2,
             maxWordCount: 2,
             correctAuxiliars: [["is"]],
@@ -1411,9 +1708,12 @@ const completePresentContinuousPositiveStatementVerbForm = [
         id: "e5ce1fe28604d8abf5f47b135b155f1c",
         type: "completePresentContinuousPositiveStatementVerbForm",
         data: {
-            leftSide: "The kids",
-            middle: "(play)",
-            rightSide: "in the garden.",
+            prompt: {
+                twoSided: true,
+                leftSide: "The kids",
+                middle: "(play)",
+                rightSide: "in the garden."
+            },
             minWordCount: 2,
             maxWordCount: 2,
             correctAuxiliars: [["are"]],

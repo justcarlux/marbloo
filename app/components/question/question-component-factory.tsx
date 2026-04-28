@@ -46,6 +46,10 @@ const componentProviders: {
         completeMissingPhraseQuestionFormComponentProvider,
     completeFutureToBeNegativeStatementVerbForm:
         completeMissingPhraseQuestionFormComponentProvider,
+    turnPositivePresentToBeStatementIntoQuestion:
+        completeMissingPhraseQuestionFormComponentProvider,
+    turnNegativePresentToBeStatementIntoQuestion:
+        completeMissingPhraseQuestionFormComponentProvider,
     // Simple tenses
     completePresentSimplePositiveStatementVerbForm:
         completeMissingPhraseQuestionFormComponentProvider,

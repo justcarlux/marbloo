@@ -1,6 +1,6 @@
 "use client";
 
-import { signInWithOAuth, signUp } from "@/app/actions/supabase-auth";
+import { signInWithOAuth, signUp } from "@/app/actions/accounts";
 import { motion } from "framer-motion";
 import Link from "next/link";
 import { useRouter } from "next/navigation";

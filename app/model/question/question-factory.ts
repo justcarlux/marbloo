@@ -12,9 +12,9 @@ import QuestionInstance, { QuestionData } from "./QuestionInstance";
 import AnswerChoicedQuestion, {
     AnswerChoicedQuestionData,
 } from "./impl/AnswerChoicedQuestion";
-import TurnPresentToBeStatementIntoQuestionFormQuestion, {
-    TurnPresentToBeStatementIntoQuestionFormQuestionData,
-} from "./impl/TurnPresentToBeStatementIntoQuestion";
+import TurnStatementIntoQuestionFormQuestion, {
+    TurnStatementIntoQuestionFormQuestionData,
+} from "./impl/TurnStatementIntoQuestionFormQuestion";
 
 interface QuestionDataTypes {
     // Grammar trivia
@@ -26,8 +26,8 @@ interface QuestionDataTypes {
     completePastToBeNegativeStatementVerbForm: CompleteCorrectToBeVerbFormQuestionData;
     completeFutureToBePositiveStatementVerbForm: CompleteCorrectToBeVerbFormQuestionData;
     completeFutureToBeNegativeStatementVerbForm: CompleteCorrectToBeVerbFormQuestionData;
-    turnPositivePresentToBeStatementIntoQuestion: TurnPresentToBeStatementIntoQuestionFormQuestionData;
-    turnNegativePresentToBeStatementIntoQuestion: TurnPresentToBeStatementIntoQuestionFormQuestionData;
+    turnPositivePresentToBeStatementIntoQuestion: TurnStatementIntoQuestionFormQuestionData;
+    turnNegativePresentToBeStatementIntoQuestion: TurnStatementIntoQuestionFormQuestionData;
     // Simple tenses
     completePresentSimplePositiveStatementVerbForm: CompleteCorrectVerbFormQuestionData;
     completePresentSimpleNegativeStatementVerbForm: CompleteCorrectVerbFormWithAuxiliarsQuestionData;
@@ -283,8 +283,8 @@ const turnPresentToBeStatementIntoQuestion = {
         id,
         type,
         data,
-    }: QuestionData<TurnPresentToBeStatementIntoQuestionFormQuestionData>) => {
-        return new TurnPresentToBeStatementIntoQuestionFormQuestion({
+    }: QuestionData<TurnStatementIntoQuestionFormQuestionData>) => {
+        return new TurnStatementIntoQuestionFormQuestion({
             id,
             type,
             data,
@@ -295,8 +295,8 @@ const turnPresentToBeStatementIntoQuestion = {
         id,
         type,
         data,
-    }: QuestionData<TurnPresentToBeStatementIntoQuestionFormQuestionData>) => {
-        return new TurnPresentToBeStatementIntoQuestionFormQuestion({
+    }: QuestionData<TurnStatementIntoQuestionFormQuestionData>) => {
+        return new TurnStatementIntoQuestionFormQuestion({
             id,
             type,
             data,

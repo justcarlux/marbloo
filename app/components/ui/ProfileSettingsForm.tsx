@@ -1,6 +1,6 @@
 "use client";
 
-import { updateProfile, uploadAvatar } from "@/app/actions/supabase-auth";
+import { updateProfile, uploadAvatar } from "@/app/actions/accounts";
 import { useBottomToolbar } from "@/app/contexts/BottomToolbarContext";
 import { getAvatarUrl, getDisplayName } from "@/app/utils/users";
 import { User } from "@supabase/supabase-js";

@@ -92,7 +92,7 @@ function LessonEntry({
         >
             <Icon
                 className="w-12 h-12 text-primary group-hover:text-primary transition-colors
-                            mb-4 shrink-0"
+                            mb-2 shrink-0"
             />
             <h3 className="text-lg sm:text-xl font-bold text-primary mb-2 leading-tight px-2">
                 {title}

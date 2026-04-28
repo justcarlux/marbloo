@@ -1,6 +1,23 @@
 "use client";
 
-import { TbBook } from "react-icons/tb";
+import {
+    TbAtom,
+    TbBolt,
+    TbBook,
+    TbBooks,
+    TbBrain,
+    TbChecklist,
+    TbCircleCheck,
+    TbClock,
+    TbHistory,
+    TbInfinity,
+    TbLoader,
+    TbPencil,
+    TbRefresh,
+    TbRocket,
+    TbRotate,
+    TbSun,
+} from "react-icons/tb";
 import LessonList from "./LessonList";
 
 export default function GrammarLessonList() {
@@ -11,13 +28,13 @@ export default function GrammarLessonList() {
                 {
                     title: "Lectures:",
                     description: "Read and learn!",
-                    icon: TbBook,
+                    icon: TbBooks,
                     entries: [
                         {
                             title: 'Verb "To Be"',
                             description:
                                 "Build your foundation with the most essential verb.",
-                            icon: TbBook,
+                            icon: TbAtom,
                             action: {
                                 type: "href",
                                 href: "/learning/lectures/verb-to-be",
@@ -26,7 +43,7 @@ export default function GrammarLessonList() {
                         {
                             title: "Simple Tenses",
                             description: "Express actions and states.",
-                            icon: TbBook,
+                            icon: TbClock,
                             action: {
                                 type: "href",
                                 href: "/learning/lectures/simple-tenses",
@@ -36,7 +53,7 @@ export default function GrammarLessonList() {
                             title: "Continuous Tenses",
                             description:
                                 "Describe actions happening right now or over time.",
-                            icon: TbBook,
+                            icon: TbRotate,
                             action: {
                                 type: "href",
                                 href: "/learning/lectures/continuous-tenses",
@@ -45,7 +62,7 @@ export default function GrammarLessonList() {
                         {
                             title: "Perfect Tenses",
                             description: "Connect the past to the present.",
-                            icon: TbBook,
+                            icon: TbChecklist,
                             action: {
                                 type: "href",
                                 href: "/learning/lectures/perfect-tenses",
@@ -55,7 +72,7 @@ export default function GrammarLessonList() {
                             title: "Perfect Continuous Tenses",
                             description:
                                 "Focus on the duration of ongoing actions.",
-                            icon: TbBook,
+                            icon: TbInfinity,
                             action: {
                                 type: "href",
                                 href: "/learning/lectures/perfect-continuous-tenses",
@@ -64,7 +81,7 @@ export default function GrammarLessonList() {
                         {
                             title: "Trivia",
                             description: "Practice your theory knowledge!",
-                            icon: TbBook,
+                            icon: TbBrain,
                             action: {
                                 type: "create-question-set",
                                 questionTypes: ["grammarTrivia"],
@@ -76,7 +93,7 @@ export default function GrammarLessonList() {
                 {
                     title: '"To Be" Verb Practice:',
                     description: "Complete statements and make questions!",
-                    icon: TbBook,
+                    icon: TbPencil,
                     entries: [
                         {
                             title: (
@@ -87,7 +104,7 @@ export default function GrammarLessonList() {
                             ),
                             description:
                                 'Complete positive and negative "to be" verb forms in present tense sentences!',
-                            icon: TbBook,
+                            icon: TbSun,
                             action: {
                                 type: "create-question-set",
                                 questionTypes: [
@@ -105,7 +122,7 @@ export default function GrammarLessonList() {
                             ),
                             description:
                                 'Complete positive and negative "to be" verb forms in past tense sentences!',
-                            icon: TbBook,
+                            icon: TbHistory,
                             action: {
                                 type: "create-question-set",
                                 questionTypes: [
@@ -123,7 +140,7 @@ export default function GrammarLessonList() {
                             ),
                             description:
                                 'Complete positive and negative "to be" verb forms in future tense sentences!',
-                            icon: TbBook,
+                            icon: TbRocket,
                             action: {
                                 type: "create-question-set",
                                 questionTypes: [
@@ -132,12 +149,60 @@ export default function GrammarLessonList() {
                                 ],
                             },
                         },
+                        {
+                            title: (
+                                <div>
+                                    <div>Turn into Questions:</div>
+                                    <div>Present Tense</div>
+                                </div>
+                            ),
+                            description:
+                                'Create positive and negative questions from "to be" sentences in simple tense!',
+                            icon: TbBook,
+                            action: {
+                                type: "create-question-set",
+                                questionTypes: [
+                                    "turnPositivePresentToBeStatementIntoQuestion",
+                                    "turnNegativePresentToBeStatementIntoQuestion",
+                                ],
+                            },
+                        },
+                        {
+                            title: (
+                                <div>
+                                    <div>Turn into Questions:</div>
+                                    <div>Past Tense</div>
+                                </div>
+                            ),
+                            description:
+                                'Create positive and negative questions from "to be" sentences in past tense!',
+                            icon: TbBook,
+                            action: {
+                                type: "create-question-set",
+                                questionTypes: [],
+                            },
+                        },
+                        {
+                            title: (
+                                <div>
+                                    <div>Turn into Questions:</div>
+                                    <div>Future Tense</div>
+                                </div>
+                            ),
+                            description:
+                                'Create positive and negative questions from "to be" sentences in future tense!',
+                            icon: TbBook,
+                            action: {
+                                type: "create-question-set",
+                                questionTypes: [],
+                            },
+                        },
                     ],
                 },
                 {
                     title: "Simple Tenses Practice:",
                     description: "Complete statements and make questions!",
-                    icon: TbBook,
+                    icon: TbBolt,
                     entries: [
                         {
                             title: (
@@ -148,7 +213,7 @@ export default function GrammarLessonList() {
                             ),
                             description:
                                 "Complete positive and negative verb forms in simple present sentences!",
-                            icon: TbBook,
+                            icon: TbSun,
                             action: {
                                 type: "create-question-set",
                                 questionTypes: [
@@ -166,7 +231,7 @@ export default function GrammarLessonList() {
                             ),
                             description:
                                 "Complete positive and negative verb forms in simple past sentences!",
-                            icon: TbBook,
+                            icon: TbHistory,
                             action: {
                                 type: "create-question-set",
                                 questionTypes: [
@@ -184,7 +249,7 @@ export default function GrammarLessonList() {
                             ),
                             description:
                                 "Complete positive and negative verb forms in simple future sentences!",
-                            icon: TbBook,
+                            icon: TbRocket,
                             action: {
                                 type: "create-question-set",
                                 questionTypes: [
@@ -198,7 +263,7 @@ export default function GrammarLessonList() {
                 {
                     title: "Continuous Tenses Practice:",
                     description: "Complete statements and make questions!",
-                    icon: TbBook,
+                    icon: TbRefresh,
                     entries: [
                         {
                             title: (
@@ -209,7 +274,7 @@ export default function GrammarLessonList() {
                             ),
                             description:
                                 "Complete positive and negative verb forms in present continuous sentences!",
-                            icon: TbBook,
+                            icon: TbSun,
                             action: {
                                 type: "create-question-set",
                                 questionTypes: [
@@ -227,7 +292,7 @@ export default function GrammarLessonList() {
                             ),
                             description:
                                 "Complete positive and negative verb forms in past continuous sentences!",
-                            icon: TbBook,
+                            icon: TbHistory,
                             action: {
                                 type: "create-question-set",
                                 questionTypes: [
@@ -245,7 +310,7 @@ export default function GrammarLessonList() {
                             ),
                             description:
                                 "Complete positive and negative verb forms in future continuous sentences!",
-                            icon: TbBook,
+                            icon: TbRocket,
                             action: {
                                 type: "create-question-set",
                                 questionTypes: [
@@ -259,7 +324,7 @@ export default function GrammarLessonList() {
                 {
                     title: "Perfect Tenses Practice:",
                     description: "Complete statements and make questions!",
-                    icon: TbBook,
+                    icon: TbCircleCheck,
                     entries: [
                         {
                             title: (
@@ -270,7 +335,7 @@ export default function GrammarLessonList() {
                             ),
                             description:
                                 "Complete positive and negative verb forms in present perfect sentences!",
-                            icon: TbBook,
+                            icon: TbSun,
                             action: {
                                 type: "create-question-set",
                                 questionTypes: [
@@ -288,7 +353,7 @@ export default function GrammarLessonList() {
                             ),
                             description:
                                 "Complete positive and negative verb forms in past perfect sentences!",
-                            icon: TbBook,
+                            icon: TbHistory,
                             action: {
                                 type: "create-question-set",
                                 questionTypes: [
@@ -306,7 +371,7 @@ export default function GrammarLessonList() {
                             ),
                             description:
                                 "Complete positive and negative verb forms in future perfect sentences!",
-                            icon: TbBook,
+                            icon: TbRocket,
                             action: {
                                 type: "create-question-set",
                                 questionTypes: [
@@ -320,7 +385,7 @@ export default function GrammarLessonList() {
                 {
                     title: "Perfect Continuous Tenses Practice:",
                     description: "Complete statements and make questions!",
-                    icon: TbBook,
+                    icon: TbLoader,
                     entries: [
                         {
                             title: (
@@ -331,7 +396,7 @@ export default function GrammarLessonList() {
                             ),
                             description:
                                 "Complete positive and negative verb forms in present perfect continuous sentences!",
-                            icon: TbBook,
+                            icon: TbSun,
                             action: {
                                 type: "create-question-set",
                                 questionTypes: [
@@ -349,7 +414,7 @@ export default function GrammarLessonList() {
                             ),
                             description:
                                 "Complete positive and negative verb forms in past perfect continuous sentences!",
-                            icon: TbBook,
+                            icon: TbHistory,
                             action: {
                                 type: "create-question-set",
                                 questionTypes: [
@@ -367,7 +432,7 @@ export default function GrammarLessonList() {
                             ),
                             description:
                                 "Complete positive and negative verb forms in future perfect continuous sentences!",
-                            icon: TbBook,
+                            icon: TbRocket,
                             action: {
                                 type: "create-question-set",
                                 questionTypes: [

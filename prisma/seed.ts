@@ -33,6 +33,8 @@ import completePastToBeNegativeStatementVerbForm from "./data/grammar/complete-v
 import completeFutureToBePositiveStatementVerbForm from "./data/grammar/complete-verb-forms/to-be/future/completeFutureToBePositiveStatementVerbForm";
 import completeFutureToBeNegativeStatementVerbForm from "./data/grammar/complete-verb-forms/to-be/future/completeFutureToBeNegativeStatementVerbForm";
 import grammarTrivia from "./data/grammar/grammarTrivia";
+import turnPositivePresentToBeStatementIntoQuestion from "./data/grammar/complete-verb-forms/to-be/present/turnPositivePresentToBeStatementIntoQuestion";
+import turnNegativePresentToBeStatementIntoQuestion from "./data/grammar/complete-verb-forms/to-be/present/turnNegativePresentToBeStatementIntoQuestion";
 
 const questionData: QuestionData<unknown>[] = [
     // Grammar trivia
@@ -44,6 +46,8 @@ const questionData: QuestionData<unknown>[] = [
     ...completePastToBeNegativeStatementVerbForm,
     ...completeFutureToBePositiveStatementVerbForm,
     ...completeFutureToBeNegativeStatementVerbForm,
+    ...turnPositivePresentToBeStatementIntoQuestion,
+    ...turnNegativePresentToBeStatementIntoQuestion,
     // Simple tenses
     ...completePresentSimplePositiveStatementVerbForm,
     ...completePresentSimpleNegativeStatementVerbForm,
