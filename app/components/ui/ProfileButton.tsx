@@ -4,9 +4,7 @@ import { signOut } from "@/app/actions/accounts";
 import { getAvatarUrl, getDisplayName } from "@/app/utils/users";
 import { User } from "@supabase/supabase-js";
 import { AnimatePresence, motion } from "framer-motion";
-import { Route } from "next";
 import Link from "next/link";
-import { usePathname } from "next/navigation";
 import { useEffect, useRef, useState } from "react";
 import { IoMdLogOut, IoMdPerson, IoMdSettings } from "react-icons/io";
 
@@ -17,7 +15,6 @@ interface ProfileButtonProps {
 export default function ProfileButton({ user }: ProfileButtonProps) {
     const [isOpen, setIsOpen] = useState(false);
     const dropdownRef = useRef<HTMLDivElement>(null);
-    const pathname = usePathname() as Route;
 
     const displayName = getDisplayName(user);
     const avatarUrl = getAvatarUrl(user);
@@ -37,11 +34,7 @@ export default function ProfileButton({ user }: ProfileButtonProps) {
     }, []);
 
     return (
-        <motion.div
-            className="relative"
-            ref={dropdownRef}
-            animate={{ top: pathname === "/learning/practice" ? "25px" : "" }}
-        >
+        <motion.div className="relative" ref={dropdownRef}>
             <motion.button
                 whileHover={{ scale: 1.02 }}
                 whileTap={{ scale: 0.98 }}

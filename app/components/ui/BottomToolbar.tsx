@@ -9,7 +9,14 @@ import Image from "next/image";
 import { useRouter } from "next/navigation";
 import { Dispatch, SetStateAction, useState } from "react";
 import { FaGithub } from "react-icons/fa";
-import { FiArrowUp, FiInfo, FiMoon, FiSun, FiX } from "react-icons/fi";
+import {
+    FiArrowUp,
+    FiExternalLink,
+    FiInfo,
+    FiMoon,
+    FiSun,
+    FiX,
+} from "react-icons/fi";
 import { IoMdExit } from "react-icons/io";
 import { Slide, ToastContainer } from "react-toastify";
 
@@ -62,6 +69,7 @@ function InfoModal({ isOpen, setOpen }: InfoModalProps) {
                                 target="_blank"
                             >
                                 alecsodev
+                                <FiExternalLink className="inline-block w-3 h-3 ml-1" />
                             </a>
                         </div>
 
@@ -72,25 +80,44 @@ function InfoModal({ isOpen, setOpen }: InfoModalProps) {
                         <div className="text-secondary leading-relaxed mb-6 flex flex-col gap-2 text-sm sm:text-base">
                             <p>
                                 Marbloo is an interactive free{" "}
-                                <b className="text-primary text-bold">
+                                <strong className="text-primary text-bold">
                                     English learning platform
-                                </b>{" "}
+                                </strong>{" "}
                                 designed to make grammar and phonetics learning
                                 fun and effective.
                             </p>
 
                             <p>
-                                It is made as an internship project dedicated to
-                                students of{" "}
+                                This work is part of my{" "}
+                                <strong className="text-primary text-bold">
+                                    Occupational Internship Report
+                                </strong>{" "}
+                                submitted as a partial requirement to obtain the
+                                degree of{" "}
+                                <strong className="text-primary text-bold">
+                                    Higher Technician in Languages with a major
+                                    in English
+                                </strong>{" "}
+                                at the{" "}
+                                <a
+                                    href="https://www.iutso.com/"
+                                    className="text-primary font-bold hover:underline transition-all"
+                                    target="_blank"
+                                >
+                                    IUTSO (Instituto Universitario de Tecnología
+                                    Superior de Oriente)
+                                    <FiExternalLink className="inline-block w-3 h-3 ml-1" />
+                                </a>{" "}
+                                dedicated to the students of{" "}
                                 <a
                                     href="https://uesbl.com"
                                     className="text-primary font-bold hover:underline transition-all"
                                     target="_blank"
                                 >
                                     U.E. Simón Bolívar Libertador
-                                </a>{" "}
-                                as a way to reinforce their English skills at
-                                home.
+                                    <FiExternalLink className="inline-block w-3 h-3 ml-1" />
+                                </a>
+                                .
                             </p>
 
                             <p>Made with ❤️ by Carlos Barranca.</p>
@@ -100,7 +127,7 @@ function InfoModal({ isOpen, setOpen }: InfoModalProps) {
                             href="https://github.com/justcarlux"
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="cursor-pointer flex items-center justify-center p-4 bg-surface border-2
+                            className="relative cursor-pointer flex items-center justify-center p-4 bg-surface border-2
                                          border-secondary/30 rounded-2xl hover:border-primary transition-colors
                                          hover:bg-primary/5 shadow-sm"
                             title="GitHub"

@@ -157,8 +157,8 @@ function LessonCategory({
             <motion.h2
                 className="text-3xl sm:text-4xl text-primary leading-tight font-medium
                             sm:text-left text-center"
-                initial={{ opacity: 0, x: -20 }}
-                animate={{ opacity: 1, x: 0 }}
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
             >
                 {description ? (
                     <>

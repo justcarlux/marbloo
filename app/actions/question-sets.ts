@@ -185,3 +185,16 @@ export async function createQuestionStatistic(
 
     return result.count === 1;
 }
+
+export async function getQuestionSetStatistics() {
+    const supabase = await createSupabaseServerClient();
+    const {
+        data: { user },
+    } = await supabase.auth.getUser();
+
+    if (!user) return [];
+
+    return prisma.questionSetStatistic.findMany({
+        where: { questionSetUserId: user.id },
+    });
+}
