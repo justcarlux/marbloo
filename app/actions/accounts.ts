@@ -1,16 +1,15 @@
 "use server";
 
 import {
-    getOrCreateSupabaseAdminClient,
     createSupabaseServerClient,
+    getOrCreateSupabaseAdminClient,
 } from "@/lib/supabase/server-client";
-import { redirect } from "next/navigation";
-import { z } from "zod";
 import { Provider } from "@supabase/supabase-js";
-import { headers } from "next/headers";
+import crypto from "crypto";
 import { Route } from "next";
 import { revalidatePath } from "next/cache";
-import crypto from "crypto";
+import { redirect } from "next/navigation";
+import { z } from "zod";
 
 const authSchema = z.object({
     email: z.email("Invalid email format"),
@@ -98,14 +97,11 @@ export async function signUp(
 
 export async function signInWithOAuth(provider: Provider) {
     const supabase = await createSupabaseServerClient();
-    const headerList = await headers();
-    const host = headerList.get("host");
-    const protocol = process.env.NODE_ENV === "development" ? "http" : "https";
 
     const { data, error } = await supabase.auth.signInWithOAuth({
         provider,
         options: {
-            redirectTo: `${protocol}://${host}/auth/callback`,
+            redirectTo: `${process.env.WEBSITE_URL}/auth/callback`,
         },
     });
 
