@@ -1,7 +1,6 @@
 "use client";
 
-import React, { createContext, useContext } from "react";
-import useSound from "use-sound";
+import React, { createContext, useCallback, useContext, useEffect, useRef } from "react";
 
 interface SfxContextType {
     playSuccess: () => void;
@@ -16,9 +15,36 @@ export function SfxContextProvider({
 }: {
     children: React.ReactNode;
 }) {
-    const [playSuccess] = useSound("/sfx/success.mp3");
-    const [playFailure] = useSound("/sfx/failure.mp3");
-    const [playHint] = useSound("/sfx/hint.mp3");
+    const successAudio = useRef<HTMLAudioElement | null>(null);
+    const failureAudio = useRef<HTMLAudioElement | null>(null);
+    const hintAudio = useRef<HTMLAudioElement | null>(null);
+
+    useEffect(() => {
+        successAudio.current = new Audio("/sfx/success.mp3");
+        failureAudio.current = new Audio("/sfx/failure.mp3");
+        hintAudio.current = new Audio("/sfx/hint.mp3");
+    }, []);
+
+    const playSuccess = useCallback(() => {
+        if (successAudio.current) {
+            successAudio.current.currentTime = 0;
+            successAudio.current.play().catch(console.error);
+        }
+    }, []);
+
+    const playFailure = useCallback(() => {
+        if (failureAudio.current) {
+            failureAudio.current.currentTime = 0;
+            failureAudio.current.play().catch(console.error);
+        }
+    }, []);
+
+    const playHint = useCallback(() => {
+        if (hintAudio.current) {
+            hintAudio.current.currentTime = 0;
+            hintAudio.current.play().catch(console.error);
+        }
+    }, []);
 
     return (
         <SfxContext.Provider

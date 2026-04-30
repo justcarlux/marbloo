@@ -3,7 +3,6 @@
 import {
     TbAtom,
     TbBolt,
-    TbBook,
     TbBooks,
     TbBrain,
     TbChecklist,
@@ -26,12 +25,12 @@ export default function GrammarLessonList() {
             category="grammar"
             categories={[
                 {
-                    title: "Lectures:",
+                    title: "Lectures",
                     description: "Read and learn!",
                     icon: TbBooks,
                     entries: [
                         {
-                            title: 'Verb "To Be"',
+                            title: ['Verb "To Be"'],
                             description:
                                 "Build your foundation with the most essential verb.",
                             icon: TbAtom,
@@ -41,7 +40,7 @@ export default function GrammarLessonList() {
                             },
                         },
                         {
-                            title: "Simple Tenses",
+                            title: ["Simple Tenses"],
                             description: "Express actions and states.",
                             icon: TbClock,
                             action: {
@@ -50,7 +49,7 @@ export default function GrammarLessonList() {
                             },
                         },
                         {
-                            title: "Continuous Tenses",
+                            title: ["Continuous Tenses"],
                             description:
                                 "Describe actions happening right now or over time.",
                             icon: TbRotate,
@@ -60,7 +59,7 @@ export default function GrammarLessonList() {
                             },
                         },
                         {
-                            title: "Perfect Tenses",
+                            title: ["Perfect Tenses"],
                             description: "Connect the past to the present.",
                             icon: TbChecklist,
                             action: {
@@ -69,7 +68,7 @@ export default function GrammarLessonList() {
                             },
                         },
                         {
-                            title: "Perfect Continuous Tenses",
+                            title: ["Perfect Continuous Tenses"],
                             description:
                                 "Focus on the duration of ongoing actions.",
                             icon: TbInfinity,
@@ -79,7 +78,7 @@ export default function GrammarLessonList() {
                             },
                         },
                         {
-                            title: "Trivia",
+                            title: ["Trivia"],
                             description: "Practice your theory knowledge!",
                             icon: TbBrain,
                             action: {
@@ -91,17 +90,12 @@ export default function GrammarLessonList() {
                     ],
                 },
                 {
-                    title: '"To Be" Verb Practice:',
-                    description: "Complete statements and make questions!",
+                    title: '"To Be" Verb Practice',
+                    description: "Complete statements!",
                     icon: TbPencil,
                     entries: [
                         {
-                            title: (
-                                <div>
-                                    <div>Complete:</div>
-                                    <div>Present Tense</div>
-                                </div>
-                            ),
+                            title: ["Complete:", "Present Tense"],
                             description:
                                 'Complete positive and negative "to be" verb forms in present tense sentences!',
                             icon: TbSun,
@@ -114,12 +108,7 @@ export default function GrammarLessonList() {
                             },
                         },
                         {
-                            title: (
-                                <div>
-                                    <div>Complete:</div>
-                                    <div>Past Tense</div>
-                                </div>
-                            ),
+                            title: ["Complete:", "Past Tense"],
                             description:
                                 'Complete positive and negative "to be" verb forms in past tense sentences!',
                             icon: TbHistory,
@@ -132,12 +121,7 @@ export default function GrammarLessonList() {
                             },
                         },
                         {
-                            title: (
-                                <div>
-                                    <div>Complete:</div>
-                                    <div>Future Tense</div>
-                                </div>
-                            ),
+                            title: ["Complete:", "Future Tense"],
                             description:
                                 'Complete positive and negative "to be" verb forms in future tense sentences!',
                             icon: TbRocket,
@@ -149,68 +133,29 @@ export default function GrammarLessonList() {
                                 ],
                             },
                         },
-                        {
-                            title: (
-                                <div>
-                                    <div>Turn into Questions:</div>
-                                    <div>Present Tense</div>
-                                </div>
-                            ),
-                            description:
-                                'Create positive and negative questions from "to be" sentences in simple tense!',
-                            icon: TbBook,
-                            action: {
-                                type: "create-question-set",
-                                questionTypes: [
-                                    "turnPositivePresentToBeStatementIntoQuestion",
-                                    "turnNegativePresentToBeStatementIntoQuestion",
-                                ],
-                            },
-                        },
-                        {
-                            title: (
-                                <div>
-                                    <div>Turn into Questions:</div>
-                                    <div>Past Tense</div>
-                                </div>
-                            ),
-                            description:
-                                'Create positive and negative questions from "to be" sentences in past tense!',
-                            icon: TbBook,
-                            action: {
-                                type: "create-question-set",
-                                questionTypes: [],
-                            },
-                        },
-                        {
-                            title: (
-                                <div>
-                                    <div>Turn into Questions:</div>
-                                    <div>Future Tense</div>
-                                </div>
-                            ),
-                            description:
-                                'Create positive and negative questions from "to be" sentences in future tense!',
-                            icon: TbBook,
-                            action: {
-                                type: "create-question-set",
-                                questionTypes: [],
-                            },
-                        },
+                        // TODO
+                        // {
+                        //     title: ["Turn into Questions:", "Present Tense"],
+                        //     description:
+                        //         'Create positive and negative questions from "to be" sentences in simple tense!',
+                        //     icon: TbBook,
+                        //     action: {
+                        //         type: "create-question-set",
+                        //         questionTypes: [
+                        //             "turnPositivePresentToBeStatementIntoQuestion",
+                        //             "turnNegativePresentToBeStatementIntoQuestion",
+                        //         ],
+                        //     },
+                        // },
                     ],
                 },
                 {
-                    title: "Simple Tenses Practice:",
-                    description: "Complete statements and make questions!",
+                    title: "Simple Tenses Practice",
+                    description: "Complete statements!",
                     icon: TbBolt,
                     entries: [
                         {
-                            title: (
-                                <div>
-                                    <div>Complete:</div>
-                                    <div>Simple Present</div>
-                                </div>
-                            ),
+                            title: ["Complete:", "Simple Present"],
                             description:
                                 "Complete positive and negative verb forms in simple present sentences!",
                             icon: TbSun,
@@ -223,12 +168,7 @@ export default function GrammarLessonList() {
                             },
                         },
                         {
-                            title: (
-                                <div>
-                                    <div>Complete:</div>
-                                    <div>Simple Past</div>
-                                </div>
-                            ),
+                            title: ["Complete:", "Simple Past"],
                             description:
                                 "Complete positive and negative verb forms in simple past sentences!",
                             icon: TbHistory,
@@ -241,12 +181,7 @@ export default function GrammarLessonList() {
                             },
                         },
                         {
-                            title: (
-                                <div>
-                                    <div>Complete:</div>
-                                    <div>Simple Future</div>
-                                </div>
-                            ),
+                            title: ["Complete:", "Simple Future"],
                             description:
                                 "Complete positive and negative verb forms in simple future sentences!",
                             icon: TbRocket,
@@ -261,17 +196,12 @@ export default function GrammarLessonList() {
                     ],
                 },
                 {
-                    title: "Continuous Tenses Practice:",
-                    description: "Complete statements and make questions!",
+                    title: "Continuous Tenses Practice",
+                    description: "Complete statements!",
                     icon: TbRefresh,
                     entries: [
                         {
-                            title: (
-                                <div>
-                                    <div>Complete:</div>
-                                    <div>Present Continuous</div>
-                                </div>
-                            ),
+                            title: ["Complete:", "Present Continuous"],
                             description:
                                 "Complete positive and negative verb forms in present continuous sentences!",
                             icon: TbSun,
@@ -284,12 +214,7 @@ export default function GrammarLessonList() {
                             },
                         },
                         {
-                            title: (
-                                <div>
-                                    <div>Complete:</div>
-                                    <div>Past Continuous</div>
-                                </div>
-                            ),
+                            title: ["Complete:", "Past Continuous"],
                             description:
                                 "Complete positive and negative verb forms in past continuous sentences!",
                             icon: TbHistory,
@@ -302,12 +227,7 @@ export default function GrammarLessonList() {
                             },
                         },
                         {
-                            title: (
-                                <div>
-                                    <div>Complete:</div>
-                                    <div>Future Continuous</div>
-                                </div>
-                            ),
+                            title: ["Complete:", "Future Continuous"],
                             description:
                                 "Complete positive and negative verb forms in future continuous sentences!",
                             icon: TbRocket,
@@ -322,17 +242,12 @@ export default function GrammarLessonList() {
                     ],
                 },
                 {
-                    title: "Perfect Tenses Practice:",
-                    description: "Complete statements and make questions!",
+                    title: "Perfect Tenses Practice",
+                    description: "Complete statements!",
                     icon: TbCircleCheck,
                     entries: [
                         {
-                            title: (
-                                <div>
-                                    <div>Complete:</div>
-                                    <div>Present Perfect</div>
-                                </div>
-                            ),
+                            title: ["Complete:", "Present Perfect"],
                             description:
                                 "Complete positive and negative verb forms in present perfect sentences!",
                             icon: TbSun,
@@ -345,12 +260,7 @@ export default function GrammarLessonList() {
                             },
                         },
                         {
-                            title: (
-                                <div>
-                                    <div>Complete:</div>
-                                    <div>Past Perfect</div>
-                                </div>
-                            ),
+                            title: ["Complete:", "Past Perfect"],
                             description:
                                 "Complete positive and negative verb forms in past perfect sentences!",
                             icon: TbHistory,
@@ -363,12 +273,7 @@ export default function GrammarLessonList() {
                             },
                         },
                         {
-                            title: (
-                                <div>
-                                    <div>Complete:</div>
-                                    <div>Future Perfect</div>
-                                </div>
-                            ),
+                            title: ["Complete:", "Future Perfect"],
                             description:
                                 "Complete positive and negative verb forms in future perfect sentences!",
                             icon: TbRocket,
@@ -383,17 +288,12 @@ export default function GrammarLessonList() {
                     ],
                 },
                 {
-                    title: "Perfect Continuous Tenses Practice:",
-                    description: "Complete statements and make questions!",
+                    title: "Perfect Continuous Tenses Practice",
+                    description: "Complete statements!",
                     icon: TbLoader,
                     entries: [
                         {
-                            title: (
-                                <div>
-                                    <div>Complete:</div>
-                                    <div>Present Perfect Continuous</div>
-                                </div>
-                            ),
+                            title: ["Complete:", "Present Perfect Continuous"],
                             description:
                                 "Complete positive and negative verb forms in present perfect continuous sentences!",
                             icon: TbSun,
@@ -406,12 +306,7 @@ export default function GrammarLessonList() {
                             },
                         },
                         {
-                            title: (
-                                <div>
-                                    <div>Complete:</div>
-                                    <div>Past Perfect Continuous</div>
-                                </div>
-                            ),
+                            title: ["Complete:", "Past Perfect Continuous"],
                             description:
                                 "Complete positive and negative verb forms in past perfect continuous sentences!",
                             icon: TbHistory,
@@ -424,12 +319,7 @@ export default function GrammarLessonList() {
                             },
                         },
                         {
-                            title: (
-                                <div>
-                                    <div>Complete:</div>
-                                    <div>Future Perfect Continuous</div>
-                                </div>
-                            ),
+                            title: ["Complete:", "Future Perfect Continuous"],
                             description:
                                 "Complete positive and negative verb forms in future perfect continuous sentences!",
                             icon: TbRocket,

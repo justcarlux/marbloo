@@ -102,6 +102,13 @@ const componentProviders: {
         completeMissingPhraseQuestionFormComponentProvider,
     completeFuturePerfectContinuousNegativeStatementVerbForm:
         completeMissingPhraseQuestionFormComponentProvider,
+    // Phonetics trivia
+    phoneticsTrivia: answerChoicedQuestionComponentProvider,
+    // Identify IPA symbol by sound
+    identifyIPASymbolBySoundEasy: answerChoicedQuestionComponentProvider,
+    identifyIPASymbolBySoundMedium: answerChoicedQuestionComponentProvider,
+    identifyIPASymbolBySoundHard: answerChoicedQuestionComponentProvider,
+    identifyIPASymbolBySoundHarder: answerChoicedQuestionComponentProvider,
 };
 
 export function createComponentForQuestionData(

@@ -16,9 +16,10 @@ import React, { useCallback, useEffect, useState } from "react";
 import { IconType } from "react-icons";
 import { toast } from "react-toastify";
 import LoadingOverlay from "../../ui/LoadingOverlay";
+import Children from "react-children-utilities";
 
 interface LessonEntryData {
-    title: React.ReactNode;
+    title: string[];
     description: string;
     icon: IconType;
     action:
@@ -34,8 +35,8 @@ interface LessonEntryData {
 }
 
 interface LessonCategoryData {
-    title: React.ReactNode;
-    description?: React.ReactNode;
+    title: string;
+    description?: string;
     icon: IconType;
     entries: LessonEntryData[];
 }
@@ -56,7 +57,11 @@ const errorMessages: {
 
 interface LessonEntryProps extends LessonEntryData {
     loading: boolean;
-    handleCreateQuestionSet: (types: QuestionType[], amount: number) => void;
+    handleCreateQuestionSet: (
+        title: string,
+        types: QuestionType[],
+        amount: number,
+    ) => void;
 }
 
 function LessonEntry({
@@ -95,7 +100,9 @@ function LessonEntry({
                             mb-2 shrink-0"
             />
             <h3 className="text-lg sm:text-xl font-bold text-primary mb-2 leading-tight px-2">
-                {title}
+                {title.map((text, index) => (
+                    <div key={index}>{text}</div>
+                ))}
             </h3>
             <p className="text-sm text-secondary px-2">{description}</p>
         </motion.div>
@@ -117,6 +124,7 @@ function LessonEntry({
                 <div
                     onClick={() =>
                         handleCreateQuestionSet(
+                            title.join(" "),
                             action.questionTypes,
                             action.amount ?? 20,
                         )
@@ -133,7 +141,11 @@ function LessonEntry({
 
 interface LessonCategoryProps extends LessonCategoryData {
     loading: boolean;
-    handleCreateQuestionSet: (types: QuestionType[], amount: number) => void;
+    handleCreateQuestionSet: (
+        title: string,
+        types: QuestionType[],
+        amount: number,
+    ) => void;
 }
 
 function LessonCategory({
@@ -144,14 +156,6 @@ function LessonCategory({
     loading,
     handleCreateQuestionSet,
 }: LessonCategoryProps) {
-    const { setAllowsScrollingToTop } = useBottomToolbar();
-    useEffect(() => {
-        setAllowsScrollingToTop(true);
-        return () => {
-            setAllowsScrollingToTop(false);
-        };
-    }, [setAllowsScrollingToTop]);
-
     return (
         <section>
             <motion.h2
@@ -171,7 +175,7 @@ function LessonCategory({
                         </div>
                         <div className="hidden sm:inline-block">
                             <Icon className="text-4xl text-primary inline-block relative -top-1 mr-3" />
-                            <b>{title}</b>{" "}
+                            <b>{title}:</b>{" "}
                             <span className="text-3xl">{description}</span>
                         </div>
                     </>
@@ -228,11 +232,12 @@ export default function LessonList({ category, categories }: LessonListProps) {
     }, [isLoading, setAllowsScrollingToTop]);
 
     const handleCreateQuestionSet = useCallback(
-        async (types: QuestionType[], amount: number) => {
+        async (title: string, types: QuestionType[], amount: number) => {
             setIsLoading(true);
             try {
                 await wait(1_500);
                 const questionSetResponse = await createQuestionSet({
+                    title,
                     types,
                     category,
                     amount,

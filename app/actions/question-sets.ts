@@ -13,9 +13,10 @@ const questionTypeSchema = z.enum(QuestionType);
 const questionSetCategorySchema = z.enum(QuestionSetCategory);
 
 const createQuestionSetSchema = z.object({
+    title: z.string().nonempty(),
     types: z.array(questionTypeSchema).nonempty(),
     category: questionSetCategorySchema,
-    amount: z.int().min(10),
+    amount: z.int(),
 });
 
 const updateQuestionSetSchema = z.object({
@@ -71,7 +72,7 @@ export async function createQuestionSet(
         };
     }
 
-    const { types, category, amount } = result.data;
+    const { title, types, category, amount } = result.data;
 
     const distribution = distributeTotal(amount, types.length);
     const questions = shuffleArray(
@@ -95,9 +96,11 @@ export async function createQuestionSet(
             type: category,
             questions,
             currentQuestionIndex: 0,
+            currentQuestionHasUsedHint: false,
         },
         create: {
             userId: user.id,
+            title,
             type: category,
             questions,
             currentQuestionIndex: 0,
@@ -124,22 +127,26 @@ export async function updateQuestionSet(
 
     if (!user) return;
 
-    const {
-        currentQuestionIndex,
-        currentQuestionHasUsedHint,
-        currentQuestionStartedAt,
-    } = updateQuestionSetSchema.parse(input);
-
-    await prisma.questionSet.update({
-        where: {
-            userId: user.id,
-        },
-        data: {
+    try {
+        const {
             currentQuestionIndex,
             currentQuestionHasUsedHint,
             currentQuestionStartedAt,
-        },
-    });
+        } = updateQuestionSetSchema.parse(input);
+
+        await prisma.questionSet.update({
+            where: {
+                userId: user.id,
+            },
+            data: {
+                currentQuestionIndex,
+                currentQuestionHasUsedHint,
+                currentQuestionStartedAt,
+            },
+        });
+    } catch (err) {
+        console.log(err);
+    }
 }
 
 export async function deleteQuestionSet() {
@@ -150,10 +157,15 @@ export async function deleteQuestionSet() {
 
     if (!user) return;
 
-    await prisma.questionSetStatistic.deleteMany({
-        where: { questionSetUserId: user.id },
-    });
-    await prisma.questionSet.delete({ where: { userId: user.id } });
+    try {
+        await prisma.questionSetStatistic.deleteMany({
+            where: { questionSetUserId: user.id },
+        });
+    } catch {}
+
+    try {
+        await prisma.questionSet.delete({ where: { userId: user.id } });
+    } catch {}
 }
 
 export async function createQuestionStatistic(

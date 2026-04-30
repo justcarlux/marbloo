@@ -14,7 +14,6 @@ const acknowledgementPhrases = [
     "Perfect!",
     "Excellent!",
     "Brilliant!",
-    "Splendid!",
     "Wonderful!",
     "Fantastic!",
     "Exceptional!",

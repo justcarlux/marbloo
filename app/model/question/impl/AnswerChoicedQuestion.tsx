@@ -2,6 +2,8 @@ import QuestionInstance from "../QuestionInstance";
 
 export interface AnswerChoicedQuestionData {
     prompt: string;
+    isPromptAudio?: boolean;
+    source?: { name: string; url: string };
     choices: string[];
     correctChoiceIndex: number;
 }
@@ -17,7 +19,7 @@ export default class AnswerChoicedQuestion extends QuestionInstance<AnswerChoice
             return {
                 success: true,
                 message: this.prefixWithAcknowledgementPhrase(
-                    "Your answer is correct.",
+                    "That's the right answer.",
                 ),
             };
         } else {

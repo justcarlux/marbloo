@@ -35,6 +35,11 @@ import completeFutureToBeNegativeStatementVerbForm from "./data/grammar/complete
 import grammarTrivia from "./data/grammar/grammarTrivia";
 import turnPositivePresentToBeStatementIntoQuestion from "./data/grammar/complete-verb-forms/to-be/present/turnPositivePresentToBeStatementIntoQuestion";
 import turnNegativePresentToBeStatementIntoQuestion from "./data/grammar/complete-verb-forms/to-be/present/turnNegativePresentToBeStatementIntoQuestion";
+import phoneticsTrivia from "./data/phonetics/phoneticsTrivia";
+import identifyIPASymbolBySoundEasy from "./data/phonetics/identify-ipa-symbol-by-sound/identifyIPASymbolBySoundEasy";
+import identifyIPASymbolBySoundMedium from "./data/phonetics/identify-ipa-symbol-by-sound/identifyIPASymbolBySoundMedium";
+import identifyIPASymbolBySoundHard from "./data/phonetics/identify-ipa-symbol-by-sound/identifyIPASymbolBySoundHard";
+import identifyIPASymbolBySoundHarder from "./data/phonetics/identify-ipa-symbol-by-sound/identifyIPASymbolBySoundHarder";
 
 const questionData: QuestionData<unknown>[] = [
     // Grammar trivia
@@ -76,6 +81,13 @@ const questionData: QuestionData<unknown>[] = [
     ...completePastPerfectContinuousNegativeStatementVerbForm,
     ...completeFuturePerfectContinuousPositiveStatementVerbForm,
     ...completeFuturePerfectContinuousNegativeStatementVerbForm,
+    // Phonetics trivia
+    ...phoneticsTrivia,
+    // Identify IPA symbol by sound
+    ...identifyIPASymbolBySoundEasy,
+    ...identifyIPASymbolBySoundMedium,
+    ...identifyIPASymbolBySoundHard,
+    ...identifyIPASymbolBySoundHarder,
 ];
 
 const adapter = new PrismaPg({ connectionString: process.env.DATABASE_URL });

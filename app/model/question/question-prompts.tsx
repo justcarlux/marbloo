@@ -208,6 +208,33 @@ const questionTitles: {
             <b>negative future perfect continuous</b> sentence
         </>
     ),
+    // Phonetics trivia
+    phoneticsTrivia: (
+        <>
+            Select the <b>correct answer</b> for the question
+        </>
+    ),
+    // Identify IPA symbol by sound
+    identifyIPASymbolBySoundEasy: (
+        <>
+            Select the <b>IPA Symbol</b> that corresponds to the sound
+        </>
+    ),
+    identifyIPASymbolBySoundMedium: (
+        <>
+            Select the <b>IPA Symbol</b> that corresponds to the sound
+        </>
+    ),
+    identifyIPASymbolBySoundHard: (
+        <>
+            Select the <b>IPA Symbol</b> that corresponds to the sound
+        </>
+    ),
+    identifyIPASymbolBySoundHarder: (
+        <>
+            Select the <b>IPA Symbol</b> that corresponds to the sound
+        </>
+    ),
 };
 
 const questionHints: {

@@ -8,17 +8,20 @@ import {
 } from "@/app/actions/question-sets";
 import { useBottomToolbar } from "@/app/contexts/BottomToolbarContext";
 import { QuestionSetContextProvider } from "@/app/contexts/QuestionSetContext";
+import { isQuestionHintAvailable } from "@/app/model/question/question-prompts";
 import { QuestionData } from "@/app/model/question/QuestionInstance";
 import type {
     Question,
     QuestionSet,
+    QuestionSetCategory,
     QuestionSetStatistic,
 } from "@/generated/prisma/client";
 import { motion } from "framer-motion";
 import { useRouter } from "next/navigation";
-import { useEffect, useState } from "react";
-import { createComponentForQuestionData } from "./question-component-factory";
+import prettyMs from "pretty-ms";
+import { useEffect, useMemo, useState } from "react";
 import {
+    FiAward,
     FiCheckCircle,
     FiClock,
     FiHelpCircle,
@@ -26,18 +29,29 @@ import {
     FiZap,
 } from "react-icons/fi";
 import { OrbitProgress } from "react-loading-indicators";
-import prettyMs from "pretty-ms";
+import { createComponentForQuestionData } from "./question-component-factory";
+
+const categoryNames: { [key in QuestionSetCategory]: string } = {
+    grammar: "Grammar",
+    phonetics: "Phonetics",
+};
 
 interface QuestionSetResultsProps {
+    title: string;
+    category: QuestionSetCategory;
     statistics: QuestionSetStatistic[];
     totalQuestions: number;
+    shouldShowHintStat: boolean;
     isLoading: boolean;
     onClose: () => void;
 }
 
 function QuestionSetResults({
+    title,
+    category,
     statistics,
     totalQuestions,
+    shouldShowHintStat,
     isLoading,
     onClose,
 }: QuestionSetResultsProps) {
@@ -45,47 +59,116 @@ function QuestionSetResults({
     const avgTimeMs = totalQuestions > 0 ? totalTimeMs / totalQuestions : 0;
     const hintsUsed = statistics.filter((s) => s.hasUsedHint).length;
     const totalAttempts = statistics.reduce((acc, s) => acc + s.attempts, 0);
+    const accuracy =
+        totalAttempts > 0
+            ? Math.round((totalQuestions / totalAttempts) * 100)
+            : 0;
 
     return (
-        <div className="bg-white dark:bg-gray-900 rounded-3xl p-8 shadow-2xl border border-gray-200 dark:border-gray-800 max-w-md mx-auto">
-            <FiCheckCircle className="w-16 h-16 text-green-500 mx-auto mb-4" />
-            <h2 className="text-2xl font-bold text-primary mb-6">
-                Session Complete!
-            </h2>
+        <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ type: "spring" }}
+            className="bg-white dark:bg-gray-900 rounded-3xl p-8 shadow-2xl border border-gray-200 dark:border-gray-800 max-w-md mx-auto"
+        >
+            <motion.div
+                initial={{ scale: 0, opacity: 0 }}
+                animate={{ scale: 1, opacity: 1 }}
+                transition={{ type: "spring" }}
+            >
+                <FiCheckCircle className="w-16 h-16 text-green-500 mx-auto mb-4" />
+            </motion.div>
 
-            {isLoading ? (
-                <div className="py-12 flex flex-col items-center gap-4">
-                    <OrbitProgress dense size="medium" color="#32b5c7" />
-                    <p className="text-secondary animate-pulse font-medium">
-                        Calculating results...
-                    </p>
-                </div>
-            ) : (
-                <div className="grid grid-cols-2 gap-4 mb-8">
-                    <QuestionSetResultsStatCard
-                        icon={<FiTarget className="text-blue-500" />}
-                        label="Attempts"
-                        value={totalAttempts}
-                    />
-                    <QuestionSetResultsStatCard
-                        icon={<FiClock className="text-purple-500" />}
-                        label="Total Time"
-                        value={prettyMs(totalTimeMs)}
-                    />
-                    <QuestionSetResultsStatCard
-                        icon={<FiZap className="text-yellow-500" />}
-                        label="Average Time"
-                        value={prettyMs(avgTimeMs)}
-                    />
-                    <QuestionSetResultsStatCard
-                        icon={<FiHelpCircle className="text-orange-500" />}
-                        label="Hints Used"
-                        value={hintsUsed.toString()}
-                    />
-                </div>
-            )}
+            <motion.h2
+                initial={{ opacity: 0, y: 10 }}
+                animate={{ opacity: 1, y: 0 }}
+                className="text-2xl font-bold text-primary mb-6 text-center"
+            >
+                Session Complete!
+            </motion.h2>
+
+            <motion.div
+                initial={{ opacity: 0, scale: 0.95 }}
+                animate={{ opacity: 1, scale: 1 }}
+                className="mb-8 p-4 bg-linear-to-br from-secondary/5 to-primary/5 dark:from-secondary/10 dark:to-primary/10 rounded-2xl border border-secondary/10 flex flex-col items-center relative overflow-hidden group shadow-sm"
+            >
+                <div className="absolute -right-6 -top-6 w-16 h-16 bg-primary/10 rounded-full blur-2xl group-hover:bg-primary/20 transition-all duration-500" />
+                <div className="absolute -left-6 -bottom-6 w-16 h-16 bg-blue-500/10 rounded-full blur-2xl group-hover:bg-blue-500/20 transition-all duration-500" />
+
+                <span className="text-xs text-secondary uppercase mb-2 relative z-10">
+                    {categoryNames[category]}
+                </span>
+                <p className="text-xl font-bold text-primary text-center leading-tight relative z-10 drop-shadow-sm">
+                    {title}
+                </p>
+            </motion.div>
+
+            <div className="relative min-h-50 mb-8">
+                {isLoading && (
+                    <div className="absolute inset-0 z-10 flex flex-col items-center justify-center gap-4">
+                        <OrbitProgress dense size="medium" color="#32b5c7" />
+                        <p className="text-secondary animate-pulse font-medium text-sm">
+                            Calculating results...
+                        </p>
+                    </div>
+                )}
+                <motion.div
+                    initial={{ opacity: 0, y: 20 }}
+                    animate={{
+                        opacity: isLoading ? 0 : 1,
+                        y: isLoading ? 20 : 0,
+                    }}
+                    className={`flex flex-wrap justify-center gap-4 ${isLoading ? "pointer-events-none" : ""}`}
+                >
+                    <div className="w-[calc(50%-0.5rem)]">
+                        <QuestionSetResultsStatCard
+                            icon={<FiAward className="text-green-500" />}
+                            label="Accuracy"
+                            value={`${accuracy}%`}
+                        />
+                    </div>
+                    <div className="w-[calc(50%-0.5rem)]">
+                        <QuestionSetResultsStatCard
+                            icon={<FiTarget className="text-blue-500" />}
+                            label="Attempts"
+                            value={totalAttempts}
+                        />
+                    </div>
+                    <div className="w-[calc(50%-0.5rem)]">
+                        <QuestionSetResultsStatCard
+                            icon={<FiClock className="text-purple-500" />}
+                            label="Total Time"
+                            value={prettyMs(totalTimeMs, {
+                                secondsDecimalDigits: 0,
+                            })}
+                        />
+                    </div>
+                    <div className="w-[calc(50%-0.5rem)]">
+                        <QuestionSetResultsStatCard
+                            icon={<FiZap className="text-yellow-500" />}
+                            label="Average Time"
+                            value={prettyMs(avgTimeMs, {
+                                secondsDecimalDigits: 0,
+                            })}
+                        />
+                    </div>
+                    {shouldShowHintStat && (
+                        <div className="w-[calc(50%-0.5rem)]">
+                            <QuestionSetResultsStatCard
+                                icon={
+                                    <FiHelpCircle className="text-orange-500" />
+                                }
+                                label="Hints Used"
+                                value={hintsUsed.toString()}
+                            />
+                        </div>
+                    )}
+                </motion.div>
+            </div>
 
             <motion.button
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
                 onClick={onClose}
                 whileHover={{ scale: 1.02 }}
                 whileTap={{ scale: 0.98 }}
@@ -93,7 +176,7 @@ function QuestionSetResults({
             >
                 Go Back
             </motion.button>
-        </div>
+        </motion.div>
     );
 }
 
@@ -179,6 +262,7 @@ export default function QuestionSetWrapper({
             getQuestionSetStatistics().then((stats) => {
                 setStatistics(stats);
                 setIsLoadingStats(false);
+                deleteQuestionSet();
             });
         }
     }, [isFinished]);
@@ -220,8 +304,19 @@ export default function QuestionSetWrapper({
     };
 
     const currentQuestion = questions[currentQuestionIndex];
-    const type = currentQuestion?.type;
-    const shouldUseUnfixedLayout = type === "grammarTrivia";
+
+    const atLeastOneQuestionHasHints = useMemo(() => {
+        return questions.some((q) => isQuestionHintAvailable(q.type));
+    }, [questions]);
+
+    const shouldUseUnfixedLayout =
+        currentQuestion?.type === "grammarTrivia" ||
+        currentQuestion?.type === "phoneticsTrivia" ||
+        currentQuestion?.type === "identifyIPASymbolBySoundEasy" ||
+        currentQuestion?.type === "identifyIPASymbolBySoundMedium" ||
+        currentQuestion?.type === "identifyIPASymbolBySoundHard" ||
+        currentQuestion?.type === "identifyIPASymbolBySoundHarder" ||
+        isFinished;
 
     return (
         <div className="min-h-screen overflow-hidden">
@@ -266,11 +361,13 @@ export default function QuestionSetWrapper({
                 >
                     {isFinished ? (
                         <QuestionSetResults
+                            title={questionSet.title}
+                            category={questionSet.type}
                             statistics={statistics}
                             totalQuestions={questions.length}
+                            shouldShowHintStat={atLeastOneQuestionHasHints}
                             isLoading={isLoadingStats}
                             onClose={() => {
-                                deleteQuestionSet();
                                 router.back();
                             }}
                         />

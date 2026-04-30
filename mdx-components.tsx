@@ -1,4 +1,6 @@
 import type { MDXComponents } from "mdx/types";
+import PhoneticSound from "./app/components/markdown/PhoneticSound";
+import ExternalLink from "./app/components/markdown/ExternalLink";
 
 export function useMDXComponents(components: MDXComponents): MDXComponents {
     return {
@@ -14,6 +16,12 @@ export function useMDXComponents(components: MDXComponents): MDXComponents {
                 className="text-2xl sm:text-3xl font-bold text-primary mb-4 mt-10"
             />
         ),
+        h3: (props) => (
+            <h2
+                {...props}
+                className="text-xl sm:text-2xl font-bold text-primary mb-4 mt-10"
+            />
+        ),
         p: (props) => (
             <p
                 {...props}
@@ -26,6 +34,8 @@ export function useMDXComponents(components: MDXComponents): MDXComponents {
                 className="sm:text-lg text-base text-primary/80 mb-1 leading-relaxed"
             />
         ),
+        PhoneticSound: PhoneticSound,
+        ExternalLink: ExternalLink,
         ...components,
     };
 }

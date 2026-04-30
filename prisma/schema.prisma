@@ -47,10 +47,18 @@ enum QuestionType {
   completePastPerfectContinuousNegativeStatementVerbForm
   completeFuturePerfectContinuousPositiveStatementVerbForm
   completeFuturePerfectContinuousNegativeStatementVerbForm
+  // Phonetics trivia
+  phoneticsTrivia
+  // Identify IPA symbol by sound
+  identifyIPASymbolBySoundEasy
+  identifyIPASymbolBySoundMedium
+  identifyIPASymbolBySoundHard
+  identifyIPASymbolBySoundHarder
 }
 
 enum QuestionSetCategory {
   grammar
+  phonetics
 }
 
 model Question {
@@ -61,6 +69,7 @@ model Question {
 
 model QuestionSet {
   userId                     String                 @id
+  title                      String
   type                       QuestionSetCategory
   questions                  String[]
   currentQuestionIndex       Int

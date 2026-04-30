@@ -56,6 +56,13 @@ interface QuestionDataTypes {
     completePastPerfectContinuousNegativeStatementVerbForm: CompleteCorrectVerbFormWithAuxiliarsQuestionData;
     completeFuturePerfectContinuousPositiveStatementVerbForm: CompleteCorrectVerbFormWithAuxiliarsQuestionData;
     completeFuturePerfectContinuousNegativeStatementVerbForm: CompleteCorrectVerbFormWithAuxiliarsQuestionData;
+    // Grammar trivia
+    phoneticsTrivia: AnswerChoicedQuestionData;
+    // Identify IPA symbol by sound
+    identifyIPASymbolBySoundEasy: AnswerChoicedQuestionData;
+    identifyIPASymbolBySoundMedium: AnswerChoicedQuestionData;
+    identifyIPASymbolBySoundHard: AnswerChoicedQuestionData;
+    identifyIPASymbolBySoundHarder: AnswerChoicedQuestionData;
 }
 
 const answerChoicedQuestionProvider = (
@@ -402,6 +409,13 @@ const questionInstanceProviders: {
     completeFuturePerfectContinuousNegativeStatementVerbForm:
         completeCorrectVerbFormWithAuxiliarsVerbForm.perfectContinuous.future
             .negativeProvider,
+    // Phonetics trivia
+    phoneticsTrivia: answerChoicedQuestionProvider,
+    // Identify IPA symbol by sound
+    identifyIPASymbolBySoundEasy: answerChoicedQuestionProvider,
+    identifyIPASymbolBySoundMedium: answerChoicedQuestionProvider,
+    identifyIPASymbolBySoundHard: answerChoicedQuestionProvider,
+    identifyIPASymbolBySoundHarder: answerChoicedQuestionProvider,
 };
 
 export function createQuestionInstance(data: QuestionData<unknown>) {

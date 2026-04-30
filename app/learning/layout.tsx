@@ -1,5 +1,5 @@
 export const metadata = {
-    title: "Learning | Marbloo",
+    title: "Marbloo",
 };
 
 export default function LearningLayout({

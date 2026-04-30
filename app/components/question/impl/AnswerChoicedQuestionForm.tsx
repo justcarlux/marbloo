@@ -14,10 +14,12 @@ import {
 import { QuestionData } from "@/app/model/question/QuestionInstance";
 import { isButtonDebounceExpired } from "@/app/utils/button-debounce";
 import { AnimatePresence, motion } from "framer-motion";
-import { useCallback, useEffect, useRef, useState } from "react";
-import { TbBulb, TbBulbOff } from "react-icons/tb";
+import { useCallback, useEffect, useMemo, useRef, useState } from "react";
+import { TbBulb, TbBulbOff, TbVolume } from "react-icons/tb";
 import QuestionFormBottomPanel from "../QuestionFormBottomPanel";
 import { useSfx } from "@/app/contexts/SfxContext";
+import { shuffleArray } from "@/app/utils/shuffle-array";
+import ExternalLink from "@/app/components/markdown/ExternalLink";
 
 interface AnswerChoicedQuestionFormProps {
     questionData: QuestionData<AnswerChoicedQuestionData>;
@@ -40,11 +42,45 @@ export default function AnswerChoicedQuestionForm({
     const [result, setResult] = useState<AnswerChoicedQuestionResult | null>(
         null,
     );
+    const [isPlaying, setIsPlaying] = useState(false);
+    const audioRef = useRef<HTMLAudioElement | null>(null);
     const questionRef = useRef(
         createQuestionInstance(
             questionData,
         ) as unknown as AnswerChoicedQuestion,
     );
+
+    const shuffledChoices = useMemo(() => {
+        return shuffleArray(
+            questionData.data.choices.map((choice, index) => ({
+                text: choice,
+                originalIndex: index,
+            })),
+        );
+    }, [questionData.data.choices]);
+
+    const playPromptAudio = useCallback(async () => {
+        if (!questionData.data.isPromptAudio) return;
+
+        if (audioRef.current) {
+            audioRef.current.pause();
+            audioRef.current.currentTime = 0;
+        }
+
+        const audio = new Audio(questionData.data.prompt);
+        audioRef.current = audio;
+
+        audio.onplay = () => setIsPlaying(true);
+        audio.onended = () => setIsPlaying(false);
+        audio.onpause = () => setIsPlaying(false);
+
+        try {
+            await audio.play();
+        } catch (err) {
+            console.error("Audio playback failed", err);
+            setIsPlaying(false);
+        }
+    }, [questionData.data.prompt, questionData.data.isPromptAudio]);
 
     const handleShowHint = useCallback(async () => {
         if (showHint || result?.success) return;
@@ -104,6 +140,9 @@ export default function AnswerChoicedQuestionForm({
         window.addEventListener("keydown", handleKeyDown);
         return () => {
             window.removeEventListener("keydown", handleKeyDown);
+            if (audioRef.current) {
+                audioRef.current.pause();
+            }
         };
     }, [handleSubmit, selectedChoice]);
 
@@ -118,7 +157,28 @@ export default function AnswerChoicedQuestionForm({
                     {getQuestionPromptByType(questionData.type)}
                 </div>
                 <div className="font-bold">
-                    <span>{questionData.data.prompt}</span>
+                    {questionData.data.isPromptAudio ? (
+                        <div className="flex items-center justify-center gap-4">
+                            <motion.button
+                                whileHover={{ scale: 1.05 }}
+                                whileTap={{ scale: 0.95 }}
+                                onClick={playPromptAudio}
+                                className={`p-4 rounded-2xl shadow-lg transition-all duration-300
+                                    ${
+                                        isPlaying
+                                            ? "bg-accent text-primary ring-4 ring-accent/30"
+                                            : "bg-primary text-surface hover:bg-primary/90"
+                                    }`}
+                            >
+                                <TbVolume size={32} />
+                            </motion.button>
+                            <span className="text-lg font-semibold text-secondary">
+                                {isPlaying ? "Listening..." : "Click to Listen"}
+                            </span>
+                        </div>
+                    ) : (
+                        <span>{questionData.data.prompt}</span>
+                    )}
                     {isQuestionHintAvailable(questionData.type) && (
                         <div
                             className="inline-block ml-3"
@@ -135,6 +195,16 @@ export default function AnswerChoicedQuestionForm({
                         </div>
                     )}
                 </div>
+                {questionData.data.source && (
+                    <div className="mt-4 flex justify-center text-sm font-normal">
+                        <ExternalLink href={questionData.data.source.url}>
+                            {questionData.data.isPromptAudio
+                                ? "Audio Source:"
+                                : "Source:"}{" "}
+                            {questionData.data.source.name}
+                        </ExternalLink>
+                    </div>
+                )}
 
                 <AnimatePresence mode="wait">
                     {showHint && (
@@ -157,12 +227,12 @@ export default function AnswerChoicedQuestionForm({
                 className="mb-8 space-y-3"
                 transition={{ duration: 0.3 }}
             >
-                {questionData.data.choices.map((choice, index) => (
+                {shuffledChoices.map((choice) => (
                     <motion.div
-                        key={index}
+                        key={choice.originalIndex}
                         onClick={() => {
                             if (!result?.success) {
-                                setSelectedChoice(index);
+                                setSelectedChoice(choice.originalIndex);
                                 setResult(null);
                             }
                         }}
@@ -173,15 +243,17 @@ export default function AnswerChoicedQuestionForm({
                                             ? "border-green-500 bg-green-50 dark:bg-green-900/20"
                                             : result &&
                                                 !result.success &&
-                                                selectedChoice === index
+                                                selectedChoice ===
+                                                    choice.originalIndex
                                               ? "border-red-500 bg-red-50 dark:bg-red-900/20"
-                                              : selectedChoice === index
+                                              : selectedChoice ===
+                                                  choice.originalIndex
                                                 ? "border-primary bg-primary/10"
                                                 : "border-gray-300 dark:border-gray-600 hover:border-primary/50"
                                     }
                                     ${result?.success ? "cursor-default" : "cursor-pointer"}`}
                     >
-                        {choice}
+                        {choice.text}
                     </motion.div>
                 ))}
             </motion.div>
