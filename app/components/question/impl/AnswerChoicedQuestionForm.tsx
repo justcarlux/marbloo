@@ -1,6 +1,7 @@
 "use client";
 
 import { useQuestionSet } from "@/app/contexts/QuestionSetContext";
+import { useSfx } from "@/app/contexts/SfxContext";
 import AnswerChoicedQuestion, {
     AnswerChoicedQuestionData,
     AnswerChoicedQuestionResult,
@@ -13,13 +14,11 @@ import {
 } from "@/app/model/question/question-prompts";
 import { QuestionData } from "@/app/model/question/QuestionInstance";
 import { isButtonDebounceExpired } from "@/app/utils/button-debounce";
+import { shuffleArray } from "@/app/utils/shuffle-array";
 import { AnimatePresence, motion } from "framer-motion";
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import { TbBulb, TbBulbOff, TbVolume } from "react-icons/tb";
 import QuestionFormBottomPanel from "../QuestionFormBottomPanel";
-import { useSfx } from "@/app/contexts/SfxContext";
-import { shuffleArray } from "@/app/utils/shuffle-array";
-import ExternalLink from "@/app/components/markdown/ExternalLink";
 
 interface AnswerChoicedQuestionFormProps {
     questionData: QuestionData<AnswerChoicedQuestionData>;
@@ -195,16 +194,6 @@ export default function AnswerChoicedQuestionForm({
                         </div>
                     )}
                 </div>
-                {questionData.data.source && (
-                    <div className="mt-4 flex justify-center text-sm font-normal">
-                        <ExternalLink href={questionData.data.source.url}>
-                            {questionData.data.isPromptAudio
-                                ? "Audio Source:"
-                                : "Source:"}{" "}
-                            {questionData.data.source.name}
-                        </ExternalLink>
-                    </div>
-                )}
 
                 <AnimatePresence mode="wait">
                     {showHint && (
