@@ -1,23 +1,21 @@
 "use client";
 
 import { signOut } from "@/app/actions/accounts";
-import { getAvatarUrl, getDisplayName } from "@/app/utils/users";
-import { User } from "@supabase/supabase-js";
+import type { CurrentUser } from "@/lib/auth/session";
 import { AnimatePresence, motion } from "framer-motion";
 import Link from "next/link";
 import { useEffect, useRef, useState } from "react";
 import { IoMdLogOut, IoMdPerson, IoMdSettings } from "react-icons/io";
 
 interface ProfileButtonProps {
-    user: User;
+    user: CurrentUser;
 }
 
 export default function ProfileButton({ user }: ProfileButtonProps) {
     const [isOpen, setIsOpen] = useState(false);
     const dropdownRef = useRef<HTMLDivElement>(null);
 
-    const displayName = getDisplayName(user);
-    const avatarUrl = getAvatarUrl(user);
+    const { displayName, avatarUrl } = user;
 
     useEffect(() => {
         const handleClickOutside = (event: MouseEvent) => {

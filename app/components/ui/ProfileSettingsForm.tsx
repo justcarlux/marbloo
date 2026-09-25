@@ -1,28 +1,23 @@
 "use client";
 
-import { updateProfile, uploadAvatar } from "@/app/actions/accounts";
+import { updateProfile } from "@/app/actions/accounts";
 import { useBottomToolbar } from "@/app/contexts/BottomToolbarContext";
-import { getAvatarUrl, getDisplayName } from "@/app/utils/users";
-import { User } from "@supabase/supabase-js";
+import type { CurrentUser } from "@/lib/auth/session";
 import { motion } from "framer-motion";
-import { SubmitEvent, useCallback, useEffect, useRef, useState } from "react";
+import { SubmitEvent, useCallback, useEffect, useState } from "react";
 import { IoMdMail, IoMdPerson } from "react-icons/io";
-import { RiImageAddFill } from "react-icons/ri";
 import { OrbitProgress } from "react-loading-indicators";
 import { toast } from "react-toastify";
 
 interface ProfileSettingsFormProps {
-    user: User;
+    user: CurrentUser;
 }
 
 export default function ProfileSettingsForm({
     user,
 }: ProfileSettingsFormProps) {
     const [isLoading, setIsLoading] = useState(false);
-    const [isUploading, setIsUploading] = useState(false);
-    const [displayName, setDisplayName] = useState(getDisplayName(user));
-    const [avatarUrl, setAvatarUrl] = useState(getAvatarUrl(user));
-    const fileInputRef = useRef<HTMLInputElement>(null);
+    const [displayName, setDisplayName] = useState(user.displayName);
     const { setShouldBackButtonAppear } = useBottomToolbar();
 
     useEffect(() => {
@@ -31,43 +26,6 @@ export default function ProfileSettingsForm({
             setShouldBackButtonAppear(false);
         };
     }, [setShouldBackButtonAppear]);
-
-    const handleUpload = async (event: React.ChangeEvent<HTMLInputElement>) => {
-        const file = event.target.files?.[0];
-        if (!file) return;
-
-        if (!file.type.startsWith("image/")) {
-            toast.error("Please upload an image file.");
-            return;
-        }
-
-        setIsUploading(true);
-        try {
-            const formData = new FormData();
-            formData.append("file", file);
-
-            const result = await uploadAvatar(formData);
-
-            if (result.success && result.publicUrl) {
-                setAvatarUrl(result.publicUrl);
-                toast.success("Photo uploaded!");
-            } else {
-                toast.error(
-                    result.error
-                        ? `Error: ${result.error}`
-                        : "Error: Failed to upload image.",
-                );
-            }
-        } catch (error) {
-            toast.error(
-                error instanceof Error
-                    ? "Error: " + error.message
-                    : "Failed to upload image.",
-            );
-        } finally {
-            setIsUploading(false);
-        }
-    };
 
     const handleSubmit = useCallback(
         async (event: SubmitEvent<HTMLFormElement>) => {
@@ -106,42 +64,17 @@ export default function ProfileSettingsForm({
 
             <form onSubmit={handleSubmit} className="space-y-8">
                 <div className="flex flex-col items-center mb-8">
-                    <div className="relative">
-                        <input
-                            type="file"
-                            ref={fileInputRef}
-                            onChange={handleUpload}
-                            accept="image/*"
-                            className="hidden"
-                        />
-                        <div
-                            onClick={() => fileInputRef.current?.click()}
-                            className="w-24 h-24 bg-primary/10 rounded-3xl border-2 border-primary/20 overflow-hidden flex items-center justify-center transition-transform duration-300 cursor-pointer hover:scale-105 relative"
-                        >
-                            {isUploading && (
-                                <div className="absolute inset-0 bg-white/50 flex items-center justify-center">
-                                    <div className="scale-50">
-                                        <OrbitProgress dense color="#32b5c7" />
-                                    </div>
-                                </div>
-                            )}
-                            {avatarUrl ? (
-                                // eslint-disable-next-line @next/next/no-img-element
-                                <img
-                                    src={avatarUrl}
-                                    alt="Preview"
-                                    className="w-full h-full object-cover"
-                                />
-                            ) : (
-                                <IoMdPerson className="w-12 h-12 text-primary/50" />
-                            )}
-                        </div>
-                        <div
-                            className="absolute -bottom-2 -right-2 bg-primary text-surface p-2 rounded-xl shadow-lg cursor-pointer"
-                            onClick={() => fileInputRef.current?.click()}
-                        >
-                            <RiImageAddFill className="w-4 h-4" />
-                        </div>
+                    <div className="w-24 h-24 bg-primary/10 rounded-3xl border-2 border-primary/20 overflow-hidden flex items-center justify-center">
+                        {user.avatarUrl ? (
+                            // eslint-disable-next-line @next/next/no-img-element
+                            <img
+                                src={user.avatarUrl}
+                                alt={user.displayName}
+                                className="w-full h-full object-cover"
+                            />
+                        ) : (
+                            <IoMdPerson className="w-12 h-12 text-primary/50" />
+                        )}
                     </div>
                 </div>
 
@@ -159,7 +92,7 @@ export default function ProfileSettingsForm({
                                 disabled:opacity-50"
                                 required
                                 disabled
-                                value={user.email}
+                                value={user.email ?? ""}
                             />
                         </div>
                     </div>

@@ -1,4 +1,4 @@
-import { createSupabaseServerClient } from "@/lib/supabase/server-client";
+import { getCurrentUser } from "@/lib/auth/session";
 import ProfileSettingsForm from "@/app/components/ui/ProfileSettingsForm";
 import { redirect } from "next/navigation";
 
@@ -7,10 +7,7 @@ export const metadata = {
 };
 
 export default async function ProfileSettingsPage() {
-    const supabase = await createSupabaseServerClient();
-    const {
-        data: { user },
-    } = await supabase.auth.getUser();
+    const user = await getCurrentUser();
 
     if (!user) {
         redirect("/login");

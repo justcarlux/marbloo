@@ -1,28 +1,50 @@
 "use server";
 
 import {
-    createSupabaseServerClient,
-    getOrCreateSupabaseAdminClient,
-} from "@/lib/supabase/server-client";
-import { Provider } from "@supabase/supabase-js";
+    isOAuthProvider,
+    OAUTH_CODE_VERIFIER_COOKIE_NAME,
+    OAUTH_COOKIE_MAX_AGE_SECONDS,
+    OAUTH_STATE_COOKIE_NAME,
+    OAuthProviderName,
+} from "@/lib/auth/constants";
+import {
+    createAuthorizationUrl,
+    generateCodeVerifier,
+    generateState,
+} from "@/lib/auth/oauth";
+import { hashPassword, verifyPassword } from "@/lib/auth/password";
+import {
+    createSession,
+    getCurrentUser,
+    invalidateCurrentSession,
+} from "@/lib/auth/session";
+import { normalizeEmail } from "@/lib/auth/users";
+import prisma from "@/lib/prisma";
 import crypto from "crypto";
 import { Route } from "next";
 import { revalidatePath } from "next/cache";
+import { cookies } from "next/headers";
 import { redirect } from "next/navigation";
 import { z } from "zod";
 
 const authSchema = z.object({
     email: z.email("Invalid email format"),
-    password: z.string().min(6, "Password must be at least 6 characters long"),
+    password: z
+        .string()
+        .min(6, "Password must be at least 6 characters long")
+        .max(256, "Password must be at most 256 characters long"),
     displayName: z
         .string()
         .min(2, "Display name must be at least 2 characters long")
+        .max(30, "Display name must be at most 30 characters long")
         .optional(),
 });
 
 const updateProfileSchema = z.object({
     displayName: z.string().max(30).optional(),
 });
+
+let dummyPasswordHash: Promise<string> | null = null;
 
 export type AuthResponseErrorReason = "validation_error" | "auth_error";
 
@@ -49,16 +71,28 @@ export async function signIn(
 
     const { email, password } = result.data;
 
-    const supabase = await createSupabaseServerClient();
-    const { error } = await supabase.auth.signInWithPassword({
-        email,
-        password,
+    const user = await prisma.user.findUnique({
+        where: { email: normalizeEmail(email) },
+        select: { id: true, passwordHash: true },
     });
 
-    if (error) {
-        return { success: false, reason: "auth_error", error: error.message };
+    if (!user?.passwordHash) {
+        dummyPasswordHash ??= hashPassword(crypto.randomUUID());
+        await verifyPassword(password, await dummyPasswordHash);
     }
 
+    if (
+        !user?.passwordHash ||
+        !(await verifyPassword(password, user.passwordHash))
+    ) {
+        return {
+            success: false,
+            reason: "auth_error",
+            error: "Invalid login credentials",
+        };
+    }
+
+    await createSession(user.id);
     return { success: true };
 }
 
@@ -76,47 +110,69 @@ export async function signUp(
     }
 
     const { email, password, displayName } = result.data;
+    const normalizedEmail = normalizeEmail(email);
 
-    const supabase = await createSupabaseServerClient();
-    const { error } = await supabase.auth.signUp({
-        email,
-        password,
-        options: {
-            data: {
-                display_name: displayName,
-            },
+    const existing = await prisma.user.findUnique({
+        where: { email: normalizedEmail },
+        select: { id: true },
+    });
+
+    if (existing) {
+        return {
+            success: false,
+            reason: "auth_error",
+            error: "User already registered",
+        };
+    }
+
+    const user = await prisma.user.create({
+        data: {
+            email: normalizedEmail,
+            passwordHash: await hashPassword(password),
+            displayName,
         },
     });
 
-    if (error) {
-        return { success: false, reason: "auth_error", error: error.message };
-    }
-
+    await createSession(user.id);
     return { success: true };
 }
 
-export async function signInWithOAuth(provider: Provider) {
-    const supabase = await createSupabaseServerClient();
-
-    const { data, error } = await supabase.auth.signInWithOAuth({
-        provider,
-        options: {
-            redirectTo: `${process.env.WEBSITE_URL}/auth/callback`,
-        },
-    });
-
-    if (error) {
-        throw new Error(error.message);
+export async function signInWithOAuth(provider: OAuthProviderName) {
+    if (!isOAuthProvider(provider)) {
+        throw new Error("Unsupported OAuth provider");
     }
 
-    if (data.url) {
-        redirect(data.url! as Route);
-    }
+    const state = generateState();
+    const codeVerifier = generateCodeVerifier();
+    const url = createAuthorizationUrl(provider, state, codeVerifier);
+
+    const cookieStore = await cookies();
+    const cookieOptions = {
+        httpOnly: true,
+        secure: process.env.NODE_ENV === "production",
+        sameSite: "lax" as const,
+        path: "/",
+        maxAge: OAUTH_COOKIE_MAX_AGE_SECONDS,
+    };
+    cookieStore.set(OAUTH_STATE_COOKIE_NAME, state, cookieOptions);
+    cookieStore.set(
+        OAUTH_CODE_VERIFIER_COOKIE_NAME,
+        codeVerifier,
+        cookieOptions,
+    );
+
+    redirect(url.toString() as Route);
 }
 
 export async function updateProfile(
     input: z.input<typeof updateProfileSchema>,
 ) {
+    const user = await getCurrentUser();
+
+    if (!user) {
+        return { success: false, error: "User not authenticated" };
+    }
+
     const result = updateProfileSchema.safeParse(input);
 
     if (!result.success) {
@@ -127,95 +183,17 @@ export async function updateProfile(
     }
 
     const { displayName } = result.data;
-    const supabase = await createSupabaseServerClient();
 
-    const { error } = await supabase.auth.updateUser({
-        data: {
-            display_name: displayName,
-        },
+    await prisma.user.update({
+        where: { id: user.id },
+        data: { displayName },
     });
-
-    if (error) {
-        return { success: false, error: error.message };
-    }
 
     revalidatePath("/", "layout");
     return { success: true };
 }
 
-export async function uploadAvatar(formData: FormData) {
-    const supabaseSession = await createSupabaseServerClient();
-    const {
-        data: { user },
-    } = await supabaseSession.auth.getUser();
-
-    if (!user) {
-        return { success: false, error: "User not authenticated" };
-    }
-
-    const supabaseAdmin = getOrCreateSupabaseAdminClient();
-    const file = formData.get("file") as File;
-
-    if (!file || !(file instanceof File)) {
-        return { success: false, error: "No file provided" };
-    }
-
-    const arrayBuffer = await file.arrayBuffer();
-    const hash = crypto
-        .createHash("sha256")
-        .update(Buffer.from(arrayBuffer))
-        .digest("hex");
-
-    const fileExt = file.name.split(".").pop();
-    const fileName = `${hash}.${fileExt}`;
-    const filePath = fileName;
-
-    const oldCustomAvatarUrl: string | undefined =
-        user.user_metadata?.custom_avatar_url;
-
-    const { error: uploadError } = await supabaseAdmin.storage
-        .from("avatars")
-        .upload(filePath, file, {
-            upsert: true,
-        });
-
-    if (uploadError) {
-        return { success: false, error: uploadError.message };
-    }
-
-    const {
-        data: { publicUrl },
-    } = supabaseAdmin.storage.from("avatars").getPublicUrl(filePath);
-
-    const { error: updateError } =
-        await supabaseAdmin.auth.admin.updateUserById(user.id, {
-            user_metadata: {
-                ...user.user_metadata,
-                custom_avatar_url: publicUrl,
-            },
-        });
-
-    if (updateError) {
-        return { success: false, error: updateError.message };
-    }
-
-    if (oldCustomAvatarUrl && oldCustomAvatarUrl !== publicUrl) {
-        const encodedPath = oldCustomAvatarUrl
-            .split("avatars/")
-            .pop()
-            ?.split("?")[0];
-        const oldPath = encodedPath ? decodeURIComponent(encodedPath) : null;
-        if (oldPath) {
-            await supabaseAdmin.storage.from("avatars").remove([oldPath]);
-        }
-    }
-
-    revalidatePath("/", "layout");
-    return { success: true, publicUrl };
-}
-
 export async function signOut() {
-    const supabase = await createSupabaseServerClient();
-    await supabase.auth.signOut();
+    await invalidateCurrentSession();
     return redirect("/login");
 }

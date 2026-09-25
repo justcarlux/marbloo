@@ -1,6 +1,6 @@
 import QuestionSetWrapper from "@/app/components/question/QuestionSetWrapper";
 import prisma from "@/lib/prisma";
-import { createSupabaseServerClient } from "@/lib/supabase/server-client";
+import { getCurrentUser } from "@/lib/auth/session";
 import { notFound } from "next/navigation";
 
 export const metadata = {
@@ -8,10 +8,7 @@ export const metadata = {
 };
 
 export default async function GrammarPracticePage() {
-    const supabase = await createSupabaseServerClient();
-    const {
-        data: { user },
-    } = await supabase.auth.getUser();
+    const user = await getCurrentUser();
     if (!user) {
         notFound();
     }

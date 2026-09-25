@@ -1,6 +1,6 @@
 import { Metadata } from "next";
 import LogInForm from "../components/ui/LogInForm";
-import { createSupabaseServerClient } from "@/lib/supabase/server-client";
+import { getCurrentUser } from "@/lib/auth/session";
 import { redirect } from "next/navigation";
 
 export const metadata: Metadata = {
@@ -8,10 +8,7 @@ export const metadata: Metadata = {
 };
 
 export default async function LoginPage() {
-    const supabase = await createSupabaseServerClient();
-    const {
-        data: { user },
-    } = await supabase.auth.getUser();
+    const user = await getCurrentUser();
 
     if (user) {
         redirect("/");

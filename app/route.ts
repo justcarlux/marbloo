@@ -1,11 +1,8 @@
-import { createSupabaseServerClient } from "@/lib/supabase/server-client";
+import { getCurrentUser } from "@/lib/auth/session";
 import { redirect } from "next/navigation";
 
 export async function GET() {
-    const supabase = await createSupabaseServerClient();
-    const {
-        data: { user },
-    } = await supabase.auth.getUser();
+    const user = await getCurrentUser();
 
     if (user) {
         return redirect("/learning");

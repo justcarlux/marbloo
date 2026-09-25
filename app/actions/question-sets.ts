@@ -4,7 +4,7 @@ import type { ZodError } from "zod";
 
 import { QuestionSetCategory, QuestionType } from "@/generated/prisma/enums";
 import prisma from "@/lib/prisma";
-import { createSupabaseServerClient } from "@/lib/supabase/server-client";
+import { getCurrentUser } from "@/lib/auth/session";
 import { z } from "zod";
 import { distributeTotal } from "../utils/distribute-total";
 import { shuffleArray } from "../utils/shuffle-array";
@@ -50,10 +50,7 @@ export type CreateQuestionSetResponse =
 export async function createQuestionSet(
     input: z.input<typeof createQuestionSetSchema>,
 ): Promise<CreateQuestionSetResponse> {
-    const supabase = await createSupabaseServerClient();
-    const {
-        data: { user },
-    } = await supabase.auth.getUser();
+    const user = await getCurrentUser();
 
     if (!user) {
         return {
@@ -120,10 +117,7 @@ export async function createQuestionSet(
 export async function updateQuestionSet(
     input: z.input<typeof updateQuestionSetSchema>,
 ) {
-    const supabase = await createSupabaseServerClient();
-    const {
-        data: { user },
-    } = await supabase.auth.getUser();
+    const user = await getCurrentUser();
 
     if (!user) return;
 
@@ -150,10 +144,7 @@ export async function updateQuestionSet(
 }
 
 export async function deleteQuestionSet() {
-    const supabase = await createSupabaseServerClient();
-    const {
-        data: { user },
-    } = await supabase.auth.getUser();
+    const user = await getCurrentUser();
 
     if (!user) return;
 
@@ -171,10 +162,7 @@ export async function deleteQuestionSet() {
 export async function createQuestionStatistic(
     input: z.input<typeof createQuestionStatisticSchema>,
 ): Promise<boolean> {
-    const supabase = await createSupabaseServerClient();
-    const {
-        data: { user },
-    } = await supabase.auth.getUser();
+    const user = await getCurrentUser();
 
     if (!user) return false;
 
@@ -199,10 +187,7 @@ export async function createQuestionStatistic(
 }
 
 export async function getQuestionSetStatistics() {
-    const supabase = await createSupabaseServerClient();
-    const {
-        data: { user },
-    } = await supabase.auth.getUser();
+    const user = await getCurrentUser();
 
     if (!user) return [];
 

@@ -61,6 +61,47 @@ enum QuestionSetCategory {
   phonetics
 }
 
+enum OAuthProvider {
+  google
+  github
+  discord
+}
+
+model User {
+  id            String         @id @default(uuid())
+  email         String?        @unique
+  emailVerified Boolean        @default(false)
+  passwordHash  String?
+  displayName   String?
+  avatarUrl     String?
+  createdAt     DateTime       @default(now())
+  updatedAt     DateTime       @updatedAt
+  accounts      OAuthAccount[]
+  sessions      Session[]
+  questionSet   QuestionSet?
+}
+
+model OAuthAccount {
+  provider          OAuthProvider
+  providerAccountId String
+  user              User          @relation(fields: [userId], references: [id], onDelete: Cascade)
+  userId            String
+  createdAt         DateTime      @default(now())
+
+  @@id([provider, providerAccountId])
+  @@index([userId])
+}
+
+model Session {
+  id        String   @id
+  user      User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  userId    String
+  expiresAt DateTime
+  createdAt DateTime @default(now())
+
+  @@index([userId])
+}
+
 model Question {
   id   String       @id
   type QuestionType
@@ -68,6 +109,7 @@ model Question {
 }
 
 model QuestionSet {
+  user                       User                   @relation(fields: [userId], references: [id], onDelete: Cascade)
   userId                     String                 @id
   title                      String
   type                       QuestionSetCategory
@@ -81,7 +123,7 @@ model QuestionSet {
 
 model QuestionSetStatistic {
   id                Int         @id @default(autoincrement())
-  questionSet       QuestionSet @relation(fields: [questionSetUserId], references: [userId])
+  questionSet       QuestionSet @relation(fields: [questionSetUserId], references: [userId], onDelete: Cascade)
   questionSetUserId String
   questionId        String
   time              Int
